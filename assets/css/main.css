@@ -1,0 +1,196 @@
+/* ============ Taiwan Bilingual · Cross-county hub styles ============ */
+/* A neutral national directory in the same family as the school sites:    */
+/* Playfair Display + Lato, PingFang TC for Chinese, pure-white throughout. */
+/* Hub accent is a calm island-jade; each school card carries its own color.*/
+
+:root{
+  --ink:#1d1b18;
+  --ink-soft:#5c574f;
+  --jade:#2f5d4f;
+  --jade-deep:#1f4338;
+  --jade-soft:#e7efeb;
+  --line:#e6e2da;
+  --max:1140px;
+  --shadow:0 14px 40px -16px rgba(31,67,56,.30);
+  --shadow-sm:0 4px 14px -4px rgba(31,67,56,.16);
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Lato','PingFang TC','Apple LiGothic Medium','Microsoft JhengHei',sans-serif;
+  color:var(--ink);
+  background:#fff;
+  line-height:1.65;
+  font-size:18px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:var(--jade-deep);text-decoration:none;transition:color .2s;}
+a:hover{color:var(--jade);}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+
+/* ============ TOPBAR ============ */
+.topbar{
+  background:rgba(255,255,255,.94);
+  border-bottom:1px solid var(--line);
+  padding:14px 0;
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(8px);
+}
+.topbar-inner{
+  display:flex;align-items:center;justify-content:space-between;gap:18px;
+}
+.topbar-name{
+  font-family:'Playfair Display','PingFang TC',serif;
+  font-size:21px;font-weight:600;
+  color:var(--jade-deep);
+  line-height:1.1;
+}
+.topbar-name small{
+  display:block;
+  font-family:'PingFang TC',sans-serif;
+  font-size:12.5px;font-weight:400;letter-spacing:.04em;
+  color:var(--ink-soft);
+  margin-top:2px;
+}
+.topbar-nav{display:flex;gap:22px;align-items:center;}
+.topbar-nav a{
+  font-size:15px;font-weight:500;color:var(--ink-soft);
+}
+.topbar-nav a:hover{color:var(--jade-deep);}
+
+/* ============ HERO ============ */
+.hero{
+  background:
+    radial-gradient(120% 90% at 85% -10%, var(--jade-soft) 0%, rgba(231,239,235,0) 55%),
+    #fff;
+  border-bottom:1px solid var(--line);
+  padding:84px 0 76px;
+}
+.hero-kicker{
+  font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--jade);
+  margin-bottom:20px;
+}
+.hero-title{
+  font-family:'Playfair Display','PingFang TC',serif;
+  font-size:clamp(34px,5.2vw,56px);
+  font-weight:600;line-height:1.1;letter-spacing:-.01em;
+  color:var(--ink);
+  max-width:16ch;
+}
+.hero-sub{
+  margin-top:26px;
+  font-size:19px;color:var(--ink-soft);
+  max-width:56ch;
+}
+.hero-sub-zh{
+  margin-top:12px;
+  font-size:17px;color:var(--ink-soft);
+  max-width:48ch;
+}
+.hero-cta{
+  display:inline-block;margin-top:34px;
+  background:var(--jade-deep);color:#fff;
+  font-weight:600;font-size:16px;
+  padding:14px 28px;border-radius:999px;
+  box-shadow:var(--shadow-sm);
+}
+.hero-cta:hover{background:var(--jade);color:#fff;}
+
+/* ============ SECTION ============ */
+.section{padding:78px 0 90px;}
+.section-head{margin-bottom:40px;}
+.section-head h2{
+  font-family:'Playfair Display','PingFang TC',serif;
+  font-size:clamp(28px,3.6vw,38px);font-weight:600;color:var(--ink);
+}
+.section-head p{
+  margin-top:8px;font-size:16px;color:var(--ink-soft);letter-spacing:.02em;
+}
+
+/* ============ GRID + CARDS ============ */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:26px;
+}
+.card{
+  display:flex;flex-direction:column;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:30px 30px 26px;
+  position:relative;overflow:hidden;
+  box-shadow:var(--shadow-sm);
+  transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+  color:var(--ink);
+}
+.card::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:6px;
+  background:var(--accent);
+}
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow);
+  border-color:var(--accent);
+}
+.card-tag{
+  display:inline-block;align-self:flex-start;
+  font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);
+  background:var(--accent-soft);
+  padding:5px 12px;border-radius:999px;
+  margin-bottom:16px;
+}
+.card-name{
+  font-family:'Playfair Display','PingFang TC',serif;
+  font-size:24px;font-weight:600;line-height:1.2;
+  color:var(--ink);
+}
+.card-zh{
+  margin-top:6px;
+  font-size:16px;font-weight:500;color:var(--accent);
+}
+.card-line{
+  margin-top:16px;
+  font-size:16px;color:var(--ink-soft);line-height:1.6;
+  flex:1;
+}
+.card-loc{
+  margin-top:20px;
+  font-size:13.5px;font-weight:600;letter-spacing:.03em;
+  color:var(--ink-soft);
+}
+.card-go{
+  margin-top:14px;
+  font-size:15px;font-weight:700;color:var(--accent);
+}
+.card:hover .card-go{color:var(--accent);}
+
+/* ============ FOOTER ============ */
+.footer{
+  background:#fff;
+  border-top:1px solid var(--line);
+  padding:54px 0 64px;
+}
+.footer-brand{
+  font-family:'Playfair Display','PingFang TC',serif;
+  font-size:18px;font-weight:600;color:var(--jade-deep);
+}
+.footer-note{
+  margin-top:12px;font-size:15px;color:var(--ink-soft);line-height:1.7;
+}
+.footer-sibling{
+  margin-top:18px;font-size:15px;color:var(--ink-soft);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:780px){
+  body{font-size:17px;}
+  .hero{padding:60px 0 54px;}
+  .grid{grid-template-columns:1fr;gap:20px;}
+  .topbar-nav{gap:14px;}
+  .topbar-nav a{font-size:14px;}
+}
