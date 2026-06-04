@@ -12,8 +12,8 @@ hosted on a subdomain:
 
 | Subdomain | School | Repo | County |
 |-----------|--------|------|--------|
-| `tbps.taiwan-bilingual.org`  | 太保國小 Taibao Elementary       | `tbps-bilingual`  | 嘉義縣 |
-| `tpjh.taiwan-bilingual.org`  | 太保國中 Taibao Junior High      | `tpjh-bilingual`  | 嘉義縣 |
+| `tbes.taiwan-bilingual.org`  | 太保國小 Taibao Elementary       | `tbps-bilingual`  | 嘉義縣 |
+| `tbjh.taiwan-bilingual.org`  | 太保國中 Taibao Junior High      | `tpjh-bilingual`  | 嘉義縣 |
 | `klnes.taiwan-bilingual.org` | 槺榔國小 KangLang Elementary     | `klnes-bilingual` | 臺中市 |
 | `ycsh.taiwan-bilingual.org`  | 永慶高中 Young Docents           | `ycsh-bilingual`  | 嘉義縣 |
 
