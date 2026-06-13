@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Request a Bilingual Website · 委託製作雙語網站 — 學校準備指南 | Taiwan Bilingual Hub</title>
+<meta name="description" content="想為學校建立一個雙語網站嗎？人師教育協會 My Culture Connect 提供義務、免費的雙語網站製作服務。這份指南說明學校端需要準備哪些資料。A free, volunteer service from My Culture Connect — here is what your school needs to prepare.">
+<meta property="og:title" content="Request a Bilingual Website · 委託製作雙語網站 — 學校準備指南">
+<meta property="og:description" content="人師教育協會義務免費為全臺學校製作雙語網站。這份指南說明學校端需要準備的資料。">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../assets/css/main.css">
+
+<style>
+/* ============ get-started page — same family, jade accent ============ */
+.gs-hero{
+  background:
+    radial-gradient(120% 90% at 85% -10%, var(--jade-soft) 0%, rgba(231,239,235,0) 55%),
+    #fff;
+  border-bottom:1px solid var(--line);
+  padding:72px 0 60px;
+}
+.gs-hero .eyebrow{
+  font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--jade);margin-bottom:18px;
+}
+.gs-hero h1{
+  font-family:'Playfair Display','PingFang TC',serif;
+  font-size:clamp(32px,5vw,50px);font-weight:600;line-height:1.12;
+  letter-spacing:-.01em;color:var(--ink);max-width:18ch;
+}
+.gs-hero .h1-zh{
+  font-family:'PingFang TC','Apple LiGothic Medium','Microsoft JhengHei',sans-serif;
+  font-size:clamp(21px,2.6vw,26px);font-weight:600;color:var(--jade-deep);
+  margin-top:14px;line-height:1.4;
+}
+.gs-lead{margin-top:26px;font-size:20px;line-height:1.8;color:#3c4a44;max-width:62ch;}
+.gs-lead-zh{margin-top:14px;font-size:18px;line-height:1.95;color:var(--ink-soft);max-width:54ch;}
+.gs-lead strong,.gs-lead-zh strong{color:var(--jade-deep);font-weight:700;}
+
+/* intro / free-service note */
+.gs-note{
+  background:var(--jade-soft);border-bottom:1px solid var(--line);
+  padding:46px 0;
+}
+.gs-note .wrap{max-width:880px;}
+.gs-note p{font-size:19px;line-height:1.85;color:#3c4a44;}
+.gs-note p.zh{font-size:18px;line-height:1.95;color:var(--ink-soft);margin-top:12px;}
+.gs-note strong{color:var(--jade-deep);font-weight:700;}
+
+/* steps */
+.gs-steps{padding:70px 0 40px;}
+.gs-steps .intro{max-width:760px;margin-bottom:46px;}
+.gs-steps .intro h2{
+  font-family:'Playfair Display','PingFang TC',serif;
+  font-size:clamp(27px,3.6vw,36px);font-weight:600;color:var(--ink);line-height:1.2;
+}
+.gs-steps .intro .zh{
+  font-family:'PingFang TC',sans-serif;
+  font-size:20px;font-weight:600;color:var(--jade-deep);margin-top:8px;
+}
+.gs-steps .intro p{margin-top:16px;font-size:18px;line-height:1.8;color:var(--ink-soft);}
+
+.step{
+  display:grid;grid-template-columns:64px 1fr;gap:26px;
+  background:#fff;border:1px solid var(--line);border-radius:18px;
+  padding:30px 32px;margin-bottom:24px;
+  box-shadow:var(--shadow-sm);
+  position:relative;overflow:hidden;
+}
+.step::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--jade);}
+.step-num{
+  width:64px;height:64px;border-radius:16px;
+  background:var(--jade-deep);color:#fff;
+  font-family:'Playfair Display',serif;font-size:30px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+}
+.step-body h3{
+  font-family:'Playfair Display','PingFang TC',serif;
+  font-size:23px;font-weight:600;color:var(--ink);line-height:1.25;
+}
+.step-body .h3-zh{
+  font-family:'PingFang TC',sans-serif;
+  font-size:20px;font-weight:600;color:var(--jade-deep);margin-top:4px;
+}
+.step-body .desc{margin-top:14px;font-size:18px;line-height:1.8;color:var(--ink-soft);}
+.step-body .desc strong{color:var(--jade-deep);font-weight:700;}
+.step-list{margin-top:16px;list-style:none;}
+.step-list li{
+  position:relative;padding-left:30px;margin-bottom:12px;
+  font-size:18px;line-height:1.7;color:var(--ink-soft);
+}
+.step-list li::before{
+  content:"";position:absolute;left:4px;top:11px;
+  width:9px;height:9px;border-radius:3px;background:var(--jade);
+}
+.step-list li strong{color:var(--ink);font-weight:700;}
+.step-list .sub{display:block;font-size:16px;color:var(--ink-soft);margin-top:3px;}
+.tip{
+  margin-top:16px;background:var(--jade-soft);border-radius:12px;
+  padding:14px 18px;font-size:16.5px;line-height:1.65;color:#3c4a44;
+}
+.tip strong{color:var(--jade-deep);}
+
+/* submit / how to send */
+.gs-submit{background:var(--jade-deep);color:#fff;padding:64px 0;}
+.gs-submit .wrap{max-width:840px;}
+.gs-submit .eyebrow{
+  font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:#bfe3d6;margin-bottom:16px;
+}
+.gs-submit h2{
+  font-family:'Playfair Display','PingFang TC',serif;
+  font-size:clamp(26px,3.6vw,34px);font-weight:600;color:#fff;line-height:1.25;
+}
+.gs-submit .h2-zh{
+  font-family:'PingFang TC',sans-serif;font-size:20px;font-weight:600;
+  color:#d8efe7;margin-top:8px;
+}
+.gs-submit p{margin-top:20px;font-size:19px;line-height:1.85;color:#e4f1ec;}
+.gs-submit p.zh{font-size:18px;line-height:1.95;color:#cfe5dd;margin-top:12px;}
+.gs-submit strong{color:#fff;font-weight:700;}
+.send-steps{margin-top:28px;display:grid;gap:14px;}
+.send-step{
+  display:flex;gap:16px;align-items:flex-start;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);
+  border-radius:14px;padding:18px 22px;
+}
+.send-step .n{
+  flex:0 0 32px;width:32px;height:32px;border-radius:9px;
+  background:#bfe3d6;color:var(--jade-deep);font-weight:700;font-size:17px;
+  display:flex;align-items:center;justify-content:center;
+}
+.send-step .t{font-size:18px;line-height:1.6;color:#eef7f3;}
+.send-step .t strong{color:#fff;}
+.contact-cta{
+  display:inline-block;margin-top:34px;
+  background:#fff;color:var(--jade-deep);
+  font-weight:700;font-size:17px;
+  padding:15px 30px;border-radius:999px;
+}
+.contact-cta:hover{background:#eafff4;color:var(--jade-deep);}
+.contact-line{margin-top:18px;font-size:16px;color:#cfe5dd;}
+.contact-line a{color:#fff;text-decoration:underline;}
+
+@media (max-width:780px){
+  .gs-hero{padding:54px 0 44px;}
+  .step{grid-template-columns:1fr;gap:18px;padding:26px 22px;}
+  .step-num{width:54px;height:54px;font-size:26px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ TOPBAR ============ -->
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="topbar-brand">
+      <a href="../" style="color:inherit;">
+        <div class="topbar-name">
+          Taiwan Bilingual Hub
+          <small>臺灣雙語資源網</small>
+        </div>
+      </a>
+    </div>
+    <nav class="topbar-nav">
+      <a href="../#purpose">About</a>
+      <a href="../#people">Partners</a>
+      <a href="../#schools">Schools</a>
+      <a href="./" aria-current="page" style="color:var(--jade-deep);">Get Started</a>
+    </nav>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="gs-hero">
+  <div class="wrap">
+    <p class="eyebrow">Request a Bilingual Website · 委託製作雙語網站</p>
+    <h1>What your school needs to prepare.</h1>
+    <p class="h1-zh">委託製作雙語網站 — 學校準備指南</p>
+    <p class="gs-lead">
+      Want a bilingual website for your school? <strong>My Culture Connect</strong> builds
+      them as a free, volunteer service. Here is the short list of materials we need from
+      your school so we can get started.
+    </p>
+    <p class="gs-lead-zh">
+      想為學校建立一個雙語網站嗎？<strong>人師教育協會 My Culture Connect</strong>
+      義務、免費為全臺學校製作。以下是學校端需要配合準備的資料清單。
+    </p>
+  </div>
+</header>
+
+<!-- ============ FREE SERVICE NOTE ============ -->
+<section class="gs-note">
+  <div class="wrap">
+    <p>
+      <strong>人師教育協會 My Culture Connect</strong>
+      基於推廣雙語教育的宗旨，特別提供義務性質的免費服務，幫助全臺灣的學校製作雙語網站。
+    </p>
+    <p class="zh">
+      為了讓製作流程順利進行，請學校配合準備以下四項資料。資料越完整，網站就能做得越貼近貴校的特色。
+    </p>
+  </div>
+</section>
+
+<!-- ============ STEPS ============ -->
+<section class="section gs-steps">
+  <div class="wrap">
+
+    <div class="intro">
+      <h2>What to prepare</h2>
+      <p class="zh">學校需要準備的四項資料</p>
+      <p>請依下列四個項目蒐集資料。第 2、3 項採「一個主題一個資料夾」的方式整理，方便對應到網站上的各個區塊。</p>
+    </div>
+
+    <!-- 1 -->
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h3>Basic images</h3>
+        <p class="h3-zh">基礎影像資料</p>
+        <p class="desc">網站的視覺基礎，請提供兩類圖檔：</p>
+        <ul class="step-list">
+          <li><strong>學校校徽 School logo</strong>
+            <span class="sub">解析度越高越好；若有去背（透明底）的版本更佳。</span>
+          </li>
+          <li><strong>校園美景照片 Campus photos</strong>
+            <span class="sub">校門、校舍、操場、特色地景等。橫式、清晰、光線充足的照片最適合做頁面 banner。</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h3>School features &amp; clubs</h3>
+        <p class="h3-zh">學校特色或社團介紹</p>
+        <p class="desc">
+          請為<strong>每一個</strong>特色主題或社團，各自建立一個<strong>獨立的資料夾</strong>。
+          每個資料夾內含：
+        </p>
+        <ul class="step-list">
+          <li><strong>一份說明文件（文字稿）</strong>
+            <span class="sub">介紹這項特色／社團的內容，Word、文字檔或 Google 文件皆可。</span>
+          </li>
+          <li><strong>搭配的照片（不限張數）</strong>
+            <span class="sub">活動照、成果照都可以，越能呈現特色越好。</span>
+          </li>
+        </ul>
+        <div class="tip">
+          <strong>範例：</strong>「戰鼓隊」一個資料夾、「英語村」一個資料夾、「足球隊」一個資料夾，
+          各自放進該主題的文字稿與照片。
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <h3>School news</h3>
+        <p class="h3-zh">學校新聞</p>
+        <p class="desc">
+          若希望網站呈現學校新聞，可從臉書等平臺下載圖文，同樣採資料夾管理：
+        </p>
+        <ul class="step-list">
+          <li><strong>每則新聞一個資料夾</strong>
+            <span class="sub">內含一份文字文件與搭配的照片。</span>
+          </li>
+          <li><strong>務必標註明確日期</strong>
+            <span class="sub">每則新聞請註明年、月、日（例如 2026 年 3 月 14 日），我們才能正確排序呈現。</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <h3>Official English name</h3>
+        <p class="h3-zh">學校英文正式名稱</p>
+        <p class="desc">
+          請務必提供明確的學校<strong>英文拼法</strong>。由於拼音方式眾多
+          （威妥瑪、漢語拼音、通用拼音…），我們需要依據貴校<strong>官方慣用</strong>的拼法來製作，
+          以免與校方既有的對外名稱不一致。
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ HOW TO SUBMIT ============ -->
+<section class="gs-submit">
+  <div class="wrap">
+    <p class="eyebrow">How to submit · 資料繳交方式</p>
+    <h2>Send us one Google Drive link.</h2>
+    <p class="h2-zh">整理好後，傳一個 Google 雲端硬碟「總連結」</p>
+    <p>
+      Please upload all of the folders and files above to <strong>Google Drive</strong>,
+      then send the <strong>single shared link</strong> to Luke. Once we have it, we'll begin
+      building your school's site.
+    </p>
+    <p class="zh">
+      請將上述所有資料夾與文件上傳至 <strong>Google 雲端硬碟</strong>，整理好後將「總連結」
+      傳送給 <strong>Luke（林吉祥老師）</strong>，我們就會開始著手為學校製作。
+    </p>
+
+    <div class="send-steps">
+      <div class="send-step">
+        <div class="n">1</div>
+        <div class="t">把四項資料整理成資料夾，全部放進 <strong>Google 雲端硬碟</strong>的一個母資料夾。</div>
+      </div>
+      <div class="send-step">
+        <div class="n">2</div>
+        <div class="t">將該母資料夾設定為<strong>知道連結的人可檢視</strong>，取得分享連結。</div>
+      </div>
+      <div class="send-step">
+        <div class="n">3</div>
+        <div class="t">把這個<strong>總連結</strong>傳給 Luke（林吉祥老師）即可。</div>
+      </div>
+    </div>
+
+    <a class="contact-cta" href="mailto:luke@mycultureconnect.org?subject=委託製作雙語網站%20Bilingual%20Website%20Request">把連結寄給 Luke · Email Luke</a>
+    <p class="contact-line">
+      luke@mycultureconnect.org　·　人師教育協會 My Culture Connect
+    </p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p class="footer-brand">Taiwan Bilingual Hub · 臺灣雙語資源網</p>
+    <p class="footer-note">
+      A teacher-led bilingual education effort supporting Taiwan's 2030 Bilingual Nation policy.<br>
+      支援「2030 雙語國家」政策 · 由老師發起的雙語教育計畫。
+    </p>
+    <p class="footer-sibling">
+      Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
