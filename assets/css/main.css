@@ -54,11 +54,14 @@ a:hover{color:var(--jade);}
   color:var(--ink-soft);
   margin-top:2px;
 }
-.topbar-nav{display:flex;gap:22px;align-items:center;}
+.topbar-brand{text-decoration:none;display:block;}
+.topbar-nav{display:flex;gap:20px;align-items:center;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;}
+.topbar-nav::-webkit-scrollbar{display:none;}
 .topbar-nav a{
-  font-size:15px;font-weight:500;color:var(--ink-soft);
+  font-size:15px;font-weight:500;color:var(--ink-soft);white-space:nowrap;
 }
 .topbar-nav a:hover{color:var(--jade-deep);}
+.topbar-nav a[aria-current="page"]{color:var(--jade-deep);font-weight:700;}
 
 /* ============ HERO ============ */
 .hero{
@@ -205,6 +208,15 @@ a:hover{color:var(--jade);}
 .policy-card .ic{font-size:28px;display:block;margin-bottom:10px;}
 .policy-card h3{font-size:19px;font-weight:700;color:var(--jade-deep);margin-bottom:6px;line-height:1.35;}
 .policy-card p{font-size:16.5px;line-height:1.65;color:var(--ink-soft);}
+.policy-feature{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+  margin-top:22px;background:var(--jade-deep);color:#fff;border-radius:16px;padding:28px 32px;
+  box-shadow:var(--shadow-sm);transition:transform .2s,box-shadow .2s;}
+.policy-feature:hover{transform:translateY(-3px);box-shadow:var(--shadow);color:#fff;}
+.pf-eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#bfe3d4;}
+.policy-feature h3{font-family:'Playfair Display','PingFang TC',serif;font-size:24px;font-weight:600;color:#fff;margin:8px 0 8px;}
+.policy-feature p{font-size:16.5px;line-height:1.65;color:#dceee6;max-width:70ch;}
+.pf-go{flex:0 0 auto;background:#fff;color:var(--jade-deep);font-weight:700;font-size:16px;padding:12px 24px;border-radius:999px;white-space:nowrap;}
+.policy-feature:hover .pf-go{background:var(--jade-soft);}
 
 /* ============ TAIWAN MAP ============ */
 .map-grid{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:center;}

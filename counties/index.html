@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Counties · 各縣市 — Taiwan Bilingual Hub</title>
+<meta name="description" content="The counties this hub serves and their character — Chiayi (Alishan, the Palace Museum's Southern Branch), Taichung (the National Theater, Gaomei Wetlands) and Changhua (Lukang, the Great Buddha). 資源網服務的各縣市特色介紹。">
+<meta property="og:title" content="Counties · 各縣市 — Taiwan Bilingual Hub">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
+<style>
+  .pg-band{background:linear-gradient(135deg,var(--jade-deep) 0%,var(--jade) 70%,#3a7766 100%);color:#fff;padding:56px 0 58px;position:relative;overflow:hidden;}
+  .pg-band::before{content:"";position:absolute;top:-120px;right:-100px;width:420px;height:420px;background:radial-gradient(circle,rgba(255,255,255,.10) 0%,transparent 70%);}
+  .pg-band .eyebrow{font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#cdeadd;margin-bottom:14px;}
+  .pg-band h1{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(32px,5vw,50px);font-weight:600;line-height:1.08;position:relative;z-index:1;}
+  .pg-band .sub{margin-top:16px;font-size:20px;color:#e7f3ee;max-width:62ch;position:relative;z-index:1;}
+  .pg-band .sub-zh{margin-top:8px;font-size:18px;color:#cfe6dd;max-width:56ch;line-height:1.85;position:relative;z-index:1;}
+
+  .county{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow-sm);margin-bottom:30px;border-top:6px solid var(--cc,var(--jade));}
+  .county-head{padding:30px 34px 22px;}
+  .county-head .num{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cc,var(--jade));margin-bottom:8px;}
+  .county-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:32px;color:var(--ink);line-height:1.05;}
+  .county-head h2 small{font-family:'Lato','PingFang TC',sans-serif;font-size:20px;font-weight:500;color:var(--ink-soft);margin-left:8px;}
+  .county-head .tag{margin-top:10px;font-size:18px;color:var(--cc,var(--jade));font-weight:600;}
+  .county-head .tag-zh{margin-top:2px;font-size:16px;color:var(--ink-soft);}
+  .county-body{padding:0 34px 30px;}
+  .feat{display:grid;grid-template-columns:1fr;gap:14px;margin-top:6px;}
+  @media(min-width:680px){.feat{grid-template-columns:1fr 1fr;}}
+  .feat-item{background:var(--cc-soft,var(--jade-soft));border-radius:12px;padding:18px 20px;}
+  .feat-item h4{font-size:17px;color:var(--ink);font-weight:700;line-height:1.3;}
+  .feat-item h4 .zh{display:block;font-weight:600;font-size:15px;color:var(--cc-deep,var(--jade-deep));margin-top:2px;}
+  .feat-item p{margin-top:8px;font-size:15.5px;color:var(--ink-soft);line-height:1.6;}
+  .county-schools{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);}
+  .county-schools .lbl{font-size:13.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:12px;}
+  .school-chips{display:flex;flex-wrap:wrap;gap:10px;}
+  .school-chips a{display:inline-flex;align-items:center;gap:7px;font-size:15px;font-weight:600;color:var(--cc-deep,var(--jade-deep));background:#fff;border:1px solid var(--line);padding:9px 16px;border-radius:999px;transition:border-color .2s,transform .15s;}
+  .school-chips a:hover{border-color:var(--cc,var(--jade));transform:translateY(-1px);}
+  .cc-chiayi{--cc:#1F3A5F;--cc-deep:#142840;--cc-soft:#eaeff5;}
+  .cc-taichung{--cc:#B07D3C;--cc-deep:#7d5827;--cc-soft:#f7f0e2;}
+  .cc-changhua{--cc:#1e7f5c;--cc-deep:#155a41;--cc-soft:#e6f3ec;}
+
+  .more{background:var(--jade-soft);border-radius:16px;padding:28px 32px;}
+  .more h3{font-family:'Playfair Display','PingFang TC',serif;font-size:22px;color:var(--jade-deep);margin-bottom:8px;}
+  .more p{font-size:17px;color:#3c4a44;line-height:1.7;}
+  .more .pending{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+  .more .pending span{font-size:14px;color:var(--ink-soft);background:#fff;border:1px solid var(--line);padding:5px 13px;border-radius:999px;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
+    <nav class="topbar-nav">
+      <a href="/">Home</a>
+      <a href="/bilingual-2030/">Bilingual 2030</a>
+      <a href="/counties/" aria-current="page">Counties</a>
+      <a href="/#schools">Schools</a>
+      <a href="/partners/">Partners</a>
+      <a href="/resources/">Resources</a>
+      <a href="https://changhua-bilingual.org/">Changhua Hub ↗</a>
+    </nav>
+  </div>
+</div>
+
+<header class="pg-band">
+  <div class="wrap">
+    <div class="eyebrow">Across Taiwan · 各縣市</div>
+    <h1>Every school carries its own town</h1>
+    <p class="sub">The hub grows county by county. Each campus learns English through its own town's landmarks, food and stories — so bilingual learning stays rooted in a real place.</p>
+    <p class="sub-zh">資源網一個縣市一個縣市地成長。每一所學校都透過自己城鎮的地標、美食與故事學英語——讓雙語學習扎根在真實的土地上。</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+
+    <!-- CHIAYI -->
+    <article class="county cc-chiayi">
+      <div class="county-head">
+        <div class="num">County 01</div>
+        <h2>Chiayi<small>嘉義縣</small></h2>
+        <div class="tag">From Alishan's sunrise to the Palace Museum's Southern Branch</div>
+        <div class="tag-zh">從阿里山的雲海日出,到嘉南平原的故宮南院</div>
+      </div>
+      <div class="county-body">
+        <div class="feat">
+          <div class="feat-item">
+            <h4>Alishan<span class="zh">阿里山</span></h4>
+            <p>Sunrise, seas of cloud, thousand-year sacred trees and a century-old forest railway — four distinct seasons above 2,000 metres.</p>
+          </div>
+          <div class="feat-item">
+            <h4>Palace Museum · Southern Branch<span class="zh">故宮南院</span></h4>
+            <p>In Taibao City — the "Museum of Asian Art and Culture," beside the high-speed rail, with hands-on children's programs.</p>
+          </div>
+          <div class="feat-item">
+            <h4>Taibao City<span class="zh">太保市</span></h4>
+            <p>The county seat and HSR district — and the hometown of the hub's founding teacher.</p>
+          </div>
+          <div class="feat-item">
+            <h4>Turkey rice &amp; KANO<span class="zh">火雞肉飯・KANO 棒球</span></h4>
+            <p>Chiayi's signature turkey rice, high-mountain tea, and a proud baseball history.</p>
+          </div>
+        </div>
+        <div class="county-schools">
+          <div class="lbl">Schools in the hub · 服務學校</div>
+          <div class="school-chips">
+            <a href="https://tbes.taiwan-bilingual.org/">🏫 Taibao Elementary 太保國小 →</a>
+            <a href="https://tbjh.taiwan-bilingual.org/">🏫 Taibao Junior High 太保國中 →</a>
+            <a href="https://ycsh.taiwan-bilingual.org/">🏫 Young Docents · 永慶高中 →</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- TAICHUNG -->
+    <article class="county cc-taichung">
+      <div class="county-head">
+        <div class="num">County 02</div>
+        <h2>Taichung<small>臺中市</small></h2>
+        <div class="tag">Central Taiwan's metropolis — architecture, art and coastal wetlands</div>
+        <div class="tag-zh">中台灣核心都會——建築、藝術與海岸生態並陳</div>
+      </div>
+      <div class="county-body">
+        <div class="feat">
+          <div class="feat-item">
+            <h4>National Taichung Theater<span class="zh">國家歌劇院</span></h4>
+            <p>Toyo Ito's "sound cave" — a one-of-a-kind curved-wall building with no straight 90° walls anywhere inside.</p>
+          </div>
+          <div class="feat-item">
+            <h4>Gaomei Wetlands<span class="zh">高美濕地</span></h4>
+            <p>1,500 hectares at the Dajia River mouth — wind turbines, a famous orange sunset, and a model boardwalk for eco-conservation.</p>
+          </div>
+          <div class="feat-item">
+            <h4>City life<span class="zh">都會生活</span></h4>
+            <p>Fengjia Night Market, Miyahara, and the birthplace of bubble tea — everyday Taiwanese city culture.</p>
+          </div>
+          <div class="feat-item">
+            <h4>Shengang &amp; Qingshui<span class="zh">神岡・清水</span></h4>
+            <p>Village and coastal communities where the hub's immersive-English campuses sit.</p>
+          </div>
+        </div>
+        <div class="county-schools">
+          <div class="lbl">Schools in the hub · 服務學校</div>
+          <div class="school-chips">
+            <a href="https://fces.taiwan-bilingual.org/">🏫 FengChou Elementary 豐洲國小 →</a>
+            <a href="https://klnes.taiwan-bilingual.org/">🏫 KangLang Elementary 槺榔國小 →</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- CHANGHUA -->
+    <article class="county cc-changhua">
+      <div class="county-head">
+        <div class="num">County 03</div>
+        <h2>Changhua<small>彰化縣</small></h2>
+        <div class="tag">Taiwan's rice barn and a county of heritage towns</div>
+        <div class="tag-zh">台灣的米倉與古蹟之鄉</div>
+      </div>
+      <div class="county-body">
+        <div class="feat">
+          <div class="feat-item">
+            <h4>Baguashan Great Buddha<span class="zh">八卦山大佛</span></h4>
+            <p>Changhua City's landmark — a towering Buddha on Bagua Mountain, with hiking and cycling trails along the ridge.</p>
+          </div>
+          <div class="feat-item">
+            <h4>Lukang Old Town<span class="zh">鹿港古鎮</span></h4>
+            <p>A Qing-era trading port — Longshan Temple ("Taiwan's Forbidden City"), the Mazu Temple, and old-street snacks.</p>
+          </div>
+          <div class="feat-item">
+            <h4>Fan-shaped Roundhouse<span class="zh">扇形車庫</span></h4>
+            <p>Taiwan's only surviving fan-shaped train depot, with its locomotive turntable — a railfan pilgrimage.</p>
+          </div>
+          <div class="feat-item">
+            <h4>Food &amp; literature<span class="zh">美食與文學</span></h4>
+            <p>Changhua meatballs, Lukang oyster omelette — and the writer Lai He, "father of Taiwanese new literature."</p>
+          </div>
+        </div>
+        <div class="county-schools">
+          <div class="lbl">A full hub of its own · 專屬資源網</div>
+          <div class="school-chips">
+            <a href="https://changhua-bilingual.org/">🌐 Changhua Bilingual Hub · 數十所學校 →</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div class="more">
+      <h3>More counties being added</h3>
+      <p>The hub starts where its schools are — Chiayi, Taichung and Changhua — and grows outward across Taiwan, one county at a time. 資源網從學校所在地起步,逐步向全臺擴展,一個縣市一個縣市加入。</p>
+      <div class="pending">
+        <span>Yunlin 雲林</span><span>Nantou 南投</span><span>Tainan 臺南</span><span>Kaohsiung 高雄</span><span>Pingtung 屏東</span><span>… 全臺</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p class="footer-brand">Taiwan Bilingual Hub · 臺灣雙語資源網</p>
+    <p class="footer-note">A teacher-led bilingual education effort supporting Taiwan's 2030 Bilingual Nation policy.<br>支援「2030 雙語國家」政策 · 由老師發起的雙語教育計畫。</p>
+    <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
