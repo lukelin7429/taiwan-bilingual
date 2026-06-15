@@ -36,13 +36,13 @@ body.lang-ja .lang-en{display:none}
 /* ---------- nav ---------- */
 .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);
   backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
-.nav-in{display:flex;align-items:center;justify-content:space-between;height:78px;gap:18px}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:78px;gap:14px}
 .brand{display:flex;align-items:center;gap:13px}
 .brand .logo{height:50px;width:auto}
 .brand .names{display:flex;flex-direction:column;line-height:1.16}
 .brand .en-name{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:22px;letter-spacing:.3px;color:var(--ink)}
 .brand .zh-name{font-size:14px;color:var(--ink-soft);letter-spacing:2px}
-.menu{display:flex;gap:24px;align-items:center}
+.menu{display:flex;gap:19px;align-items:center}
 .menu a{font-size:17px;color:var(--ink-soft);font-weight:500;transition:color .2s;white-space:nowrap}
 .menu a:hover,.menu a.active{color:var(--plum)}
 .lang-toggle{border:1px solid var(--line);border-radius:999px;display:flex;overflow:hidden;flex-shrink:0}
