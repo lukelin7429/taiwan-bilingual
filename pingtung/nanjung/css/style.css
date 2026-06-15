@@ -199,3 +199,16 @@ footer .frow{margin-top:8px;color:#b3aab5}
 a.card{color:inherit}
 a.card .more{color:var(--plum)}
 @media(max-width:880px){.article p{font-size:19px}.article .lang-ja p{font-size:18px}}
+
+/* deep story article */
+.article h3{font-size:25px;margin:40px 0 4px}
+.lang-ja .article h3{font-size:22px}
+.article .rule{margin:10px 0 20px}
+.article figure{margin:32px 0}
+.article figure img{border-radius:6px;width:100%}
+.article figcaption{font-size:15px;color:var(--ink-soft);font-style:italic;padding-top:10px;text-align:center}
+.article .pull{border-left:3px solid var(--gold);padding:4px 0 4px 26px;margin:36px 0;
+  font-family:'Fraunces',Georgia,serif;font-size:25px;line-height:1.45;color:var(--ink);font-style:italic}
+.lang-ja .article .pull{font-family:'Hiragino Mincho ProN','Hiragino Sans',serif;font-size:21px;font-style:normal}
+.article .pull cite{display:block;font-family:'Inter',sans-serif;font-style:normal;font-size:16px;color:var(--ink-soft);margin-top:12px}
+.lang-ja .article .pull cite{font-family:'Hiragino Sans',sans-serif}
