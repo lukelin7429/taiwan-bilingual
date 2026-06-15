@@ -212,3 +212,12 @@ a.card .more{color:var(--plum)}
 .lang-ja .article .pull{font-family:'Hiragino Mincho ProN','Hiragino Sans',serif;font-size:21px;font-style:normal}
 .article .pull cite{display:block;font-family:'Inter',sans-serif;font-style:normal;font-size:16px;color:var(--ink-soft);margin-top:12px}
 .lang-ja .article .pull cite{font-family:'Hiragino Sans',sans-serif}
+
+/* testimonials */
+.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:980px;margin:0 auto}
+.tcard{border:1px solid var(--line);border-radius:8px;padding:30px 30px 26px;background:#fff}
+.tcard .tq{font-family:'Fraunces',Georgia,serif;font-size:21px;line-height:1.5;color:var(--ink)}
+.lang-ja .tcard .tq{font-family:'Hiragino Mincho ProN','Hiragino Sans',serif;font-size:18px}
+.tcard .tn{font-size:16px;color:var(--ink-soft);margin-top:16px}
+.tcard .tn strong{color:var(--plum)}
+@media(max-width:880px){.tgrid{grid-template-columns:1fr}.tcard .tq{font-size:19px}}
