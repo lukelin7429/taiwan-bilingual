@@ -96,6 +96,16 @@ p.lead{font-size:23px;color:var(--ink);line-height:1.65}
   width:96px;height:96px;line-height:92px;border:2px solid var(--gold);border-radius:50%}
 .motto .gloss{font-size:19px;color:var(--ink-soft);letter-spacing:1px}
 
+/* school song */
+.song{max-width:780px;margin:0 auto;text-align:center}
+.song-orig{font-family:'Hiragino Sans','Apple LiGothic Medium',serif;font-size:24px;line-height:2.15;
+  color:var(--plum-deep);letter-spacing:2px;margin:0 auto 34px;max-width:640px}
+.song-divider{width:54px;height:2px;background:var(--gold);margin:0 auto 30px;opacity:.7}
+.song-tr{font-size:21px;line-height:1.85;color:var(--ink-soft);text-align:left;max-width:640px;margin:0 auto}
+.song-tr p{margin:0 0 16px}
+.song-tr p:last-child{margin-bottom:0}
+@media(max-width:640px){.song-orig{font-size:21px;line-height:2}.song-tr{font-size:19px}}
+
 /* feature rows */
 .feature{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .feature+.feature{margin-top:80px}
