@@ -191,3 +191,11 @@ footer .frow{margin-top:8px;color:#b3aab5}
   .motto .ch{width:78px;height:78px;line-height:74px;font-size:40px}.motto .chars{gap:22px}
   .quote blockquote{font-size:24px}.lang-ja blockquote{font-size:21px}
 }
+
+/* article (full news story) */
+.article{max-width:780px;margin:0 auto}
+.article p{font-size:21px;line-height:1.9;color:var(--ink);margin:0 0 24px}
+.article .lang-ja p{font-size:20px;line-height:1.95}
+a.card{color:inherit}
+a.card .more{color:var(--plum)}
+@media(max-width:880px){.article p{font-size:19px}.article .lang-ja p{font-size:18px}}
