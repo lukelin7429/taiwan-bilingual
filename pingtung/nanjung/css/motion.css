@@ -1,0 +1,84 @@
+/* ===== Motion layer — loaded after style.css =====
+   All motion is gated on prefers-reduced-motion to stay accessible. */
+
+@media (prefers-reduced-motion: no-preference){
+
+  /* ---- hero / banner: slow Ken Burns ---- */
+  .hero img{animation:nj-kenburns 28s ease-in-out infinite alternate;transform-origin:center 45%}
+  .subhero img{animation:nj-kenburns 34s ease-in-out infinite alternate;transform-origin:center 50%}
+  @keyframes nj-kenburns{from{transform:scale(1.02)}to{transform:scale(1.13)}}
+
+  /* ---- hero text: staggered entrance on load ---- */
+  .hero-text .lang-en>*,.hero-text .lang-ja>*{opacity:0;transform:translateY(26px);
+    animation:nj-rise .95s cubic-bezier(.2,.75,.2,1) forwards}
+  .hero-text .kicker{animation-delay:.20s}
+  .hero-text h1{animation-delay:.36s}
+  .hero-text .sub{animation-delay:.56s}
+  .subhero-text .eyebrow{opacity:0;animation:nj-rise .85s cubic-bezier(.2,.75,.2,1) forwards .18s}
+  .subhero-text h1{opacity:0;animation:nj-rise .85s cubic-bezier(.2,.75,.2,1) forwards .34s}
+  @keyframes nj-rise{to{opacity:1;transform:none}}
+
+  /* ---- scroll reveal: richer easing + travel ---- */
+  html.js .rvl{opacity:0;transform:translateY(34px);
+    transition:opacity .85s cubic-bezier(.2,.75,.2,1),transform .85s cubic-bezier(.2,.75,.2,1)}
+  html.js .rvl.in{opacity:1;transform:none}
+
+  /* gold rule draws out */
+  html.js .rvl .rule{width:0;transition:width .7s ease .35s}
+  html.js .rvl.in .rule{width:64px}
+
+  /* ---- feature rows: image & text slide in from opposite sides ---- */
+  html.js .feature.rvl{opacity:1;transform:none;transition:none}
+  html.js .feature.rvl .fimg{opacity:0;transform:translateX(-32px);
+    transition:opacity .85s cubic-bezier(.2,.75,.2,1),transform .85s cubic-bezier(.2,.75,.2,1)}
+  html.js .feature.rvl .ftxt{opacity:0;transform:translateX(32px);
+    transition:opacity .85s cubic-bezier(.2,.75,.2,1) .12s,transform .85s cubic-bezier(.2,.75,.2,1) .12s}
+  html.js .feature.rvl.in .fimg,html.js .feature.rvl.in .ftxt{opacity:1;transform:none}
+
+  /* ---- gallery: items pop in, staggered ---- */
+  html.js .gallery.rvl{opacity:1;transform:none}
+  html.js .gallery.rvl .g{opacity:0;transform:translateY(24px) scale(.97);
+    transition:opacity .7s cubic-bezier(.2,.75,.2,1),transform .7s cubic-bezier(.2,.75,.2,1)}
+  html.js .gallery.rvl.in .g{opacity:1;transform:none}
+  html.js .gallery.rvl.in .g:nth-child(2){transition-delay:.07s}
+  html.js .gallery.rvl.in .g:nth-child(3){transition-delay:.14s}
+  html.js .gallery.rvl.in .g:nth-child(4){transition-delay:.21s}
+  html.js .gallery.rvl.in .g:nth-child(5){transition-delay:.28s}
+  html.js .gallery.rvl.in .g:nth-child(6){transition-delay:.35s}
+
+  /* ---- cards / pillars / facts: column-staggered reveal ---- */
+  html.js .cards .rvl:nth-child(3n+2),
+  html.js .pillars .rvl:nth-child(3n+2),
+  html.js .facts .rvl:nth-child(3n+2),
+  html.js .videos .rvl:nth-child(2n+2){transition-delay:.10s}
+  html.js .cards .rvl:nth-child(3n+3),
+  html.js .pillars .rvl:nth-child(3n+3),
+  html.js .facts .rvl:nth-child(3n+3){transition-delay:.20s}
+
+  /* ---- timeline: dots & rows ease in ---- */
+  html.js .timeline.rvl .tl-item{opacity:0;transform:translateY(20px);
+    transition:opacity .6s ease,transform .6s ease}
+  html.js .timeline.rvl.in .tl-item{opacity:1;transform:none}
+  html.js .timeline.rvl.in .tl-item:nth-child(2){transition-delay:.08s}
+  html.js .timeline.rvl.in .tl-item:nth-child(3){transition-delay:.16s}
+  html.js .timeline.rvl.in .tl-item:nth-child(4){transition-delay:.24s}
+  html.js .timeline.rvl.in .tl-item:nth-child(5){transition-delay:.32s}
+  html.js .timeline.rvl.in .tl-item:nth-child(6){transition-delay:.40s}
+  html.js .timeline.rvl.in .tl-item:nth-child(7){transition-delay:.48s}
+
+  /* ---- hover micro-interactions ---- */
+  .feature .fimg img{transition:transform .6s cubic-bezier(.2,.75,.2,1)}
+  .feature:hover .fimg img{transform:scale(1.035)}
+  .menu a{position:relative}
+  .menu a::after{content:"";position:absolute;left:0;bottom:-7px;height:2px;width:0;
+    background:var(--plum);transition:width .28s ease}
+  .menu a:hover::after,.menu a.active::after{width:100%}
+
+  /* motto circles gently breathe in on first view */
+  .motto .ch{transition:transform .3s ease}
+  .motto .ch:hover{transform:translateY(-5px)}
+}
+
+/* nav gains a stronger shadow once scrolled (works regardless of motion pref) */
+.nav{transition:box-shadow .3s ease,background .3s ease}
+.nav.scrolled{box-shadow:0 6px 26px -16px rgba(0,0,0,.5)}
