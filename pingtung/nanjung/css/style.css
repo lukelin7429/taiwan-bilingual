@@ -221,3 +221,10 @@ a.card .more{color:var(--plum)}
 .tcard .tn{font-size:16px;color:var(--ink-soft);margin-top:16px}
 .tcard .tn strong{color:var(--plum)}
 @media(max-width:880px){.tgrid{grid-template-columns:1fr}.tcard .tq{font-size:19px}}
+
+/* mobile nav: logo-only brand to free space for toggle + menu button */
+@media(max-width:880px){
+  .brand .names{display:none}
+  .brand .logo{height:48px}
+  .lang-toggle button{padding:8px 12px;font-size:14px}
+}
