@@ -449,3 +449,67 @@ html.lang-zh .only-en{display:none !important;}
   .ecta-card dt{margin-top:10px;}
   .esub{top:56px;}
 }
+
+/* ============================================================
+   2026 master-doc additions: forum / tiers / trust / profile
+   ============================================================ */
+
+/* document figure (poster / letter) */
+.efigure{margin:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;box-shadow:var(--shadow);}
+.efigure img{width:100%;display:block;}
+.efigure figcaption{padding:13px 18px;font-size:15.5px;color:var(--ink-soft);line-height:1.55;background:var(--navy-soft);}
+.efigure figcaption strong{color:var(--ink);}
+
+/* forum / 啟動會 */
+.eforum{display:grid;grid-template-columns:1fr;gap:26px;align-items:start;}
+.emeta{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px;}
+.emeta span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 15px;font-size:15px;font-weight:600;color:var(--ink);}
+.eagenda{list-style:none;margin:0;padding:0;}
+.eagenda li{display:grid;grid-template-columns:auto 1fr;gap:16px;padding:11px 2px;border-bottom:1px dashed var(--line);font-size:18px;line-height:1.5;}
+.eagenda li:last-child{border-bottom:0;}
+.eagenda .tm{font-weight:800;color:var(--navy);font-variant-numeric:tabular-nums;white-space:nowrap;}
+.eagenda li.hl{background:var(--gold-soft);border:1px solid #ecd58a;border-radius:12px;padding:15px 18px;border-bottom:1px solid #ecd58a;margin:6px 0;}
+.eagenda li.hl .tm{color:#8a6a0a;}
+.eagenda li.hl .ev{font-weight:700;color:var(--navy-deep);}
+
+/* partnership tiers */
+.etiers{display:grid;grid-template-columns:1fr;gap:18px;}
+.etier{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;border-top:5px solid var(--tc,var(--navy));transition:transform .2s,box-shadow .2s;}
+.etier:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+.etier .lvl{font-size:12.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--tc,var(--navy));margin-bottom:8px;}
+.etier h3{font-family:var(--serif);font-size:23px;color:var(--navy-deep);line-height:1.2;margin-bottom:6px;}
+.etier .sub{font-size:16px;color:var(--ink-soft);margin-bottom:14px;}
+.etier ul{margin:0;padding-left:1.1em;}
+.etier li{font-size:17px;line-height:1.6;color:var(--ink);margin-bottom:9px;}
+.etier li:last-child{margin-bottom:0;}
+.t1{--tc:#1e8449;} .t2{--tc:#0a6e8a;} .t3{--tc:#9a6a12;}
+
+/* trust badges */
+.etrust{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px;}
+.etrust .tb{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 18px;font-size:16px;font-weight:700;color:var(--navy-deep);box-shadow:var(--shadow-sm);}
+.etrust .tb b{color:var(--green);}
+
+/* profile (contact) */
+.eprofile{display:grid;grid-template-columns:1fr;gap:22px;align-items:center;margin-bottom:26px;}
+.eprofile-photo{border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);}
+.eprofile-photo img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;}
+.eprofile .nm{font-family:var(--serif);font-size:28px;font-weight:700;color:var(--navy-deep);}
+.eprofile .nm small{display:block;font-family:var(--sans);font-size:17px;font-weight:500;color:var(--ink-soft);margin-top:4px;}
+.eprofile-titles{list-style:none;margin:14px 0 0;padding:0;}
+.eprofile-titles li{font-size:16.5px;line-height:1.5;color:var(--ink);padding:8px 0 8px 24px;position:relative;border-bottom:1px solid var(--line);}
+.eprofile-titles li:last-child{border-bottom:0;}
+.eprofile-titles li::before{content:"›";position:absolute;left:5px;color:var(--gold);font-weight:800;}
+
+/* PAC inline link */
+a.epac{color:var(--green);font-weight:700;border-bottom:1px solid rgba(30,132,73,.4);}
+
+/* instagram in footer */
+.efoot .ig{display:inline-flex;align-items:center;gap:7px;margin-top:12px;color:#ffd966;font-weight:700;}
+.efoot .ig:hover{color:#fff;}
+
+@media(min-width:760px){
+  .eforum{grid-template-columns:0.82fr 1.18fr;}
+  .etiers{grid-template-columns:repeat(3,1fr);}
+  .eprofile{grid-template-columns:0.85fr 1.15fr;}
+  .eagenda li{font-size:19px;}
+}
