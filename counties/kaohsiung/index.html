@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Kaohsiung 高雄市 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Kaohsiung (高雄市) — landmarks, food and culture, and how to say it in English. 南台灣的大港都,海港、藝術倉庫、湖畔寶塔與大佛沿水岸並陳。">
+<meta name="description" content="Kaohsiung (高雄市) — southern Taiwan's great harbor city, reinvented from steel and ships into arts, music and culture, with a giant Buddha, a Hakka umbrella town and a glowing Dome of Light. Its history, landmarks, culture, famous people and food, and how to say it in English. 港都高雄的深度文化介紹。">
 <meta property="og:title" content="Kaohsiung 高雄市 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Kaohsiung = south / amber) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#3a342b;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#7d5827);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#bd863f);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#bd863f);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#7d5827);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#f7f0e2);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#7d5827);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#3a342b;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#7d5827);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#bd863f);background:var(--cc-soft,#f7f0e2);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#bd863f);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#7d5827);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,6 +77,7 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-south">
   <div class="wrap">
     <div class="cty-region">Southern Taiwan · 南部</div>
@@ -35,64 +86,194 @@
       <span class="zh">高雄市</span>
       <button class="say" data-say="Kaohsiung" aria-label="Hear Kaohsiung in English">🔊</button>
     </div>
-    <p class="cty-pos">Southern Taiwan&#x27;s great harbour city, where ships, art warehouses, lakeside pagodas and a giant Buddha sit side by side along the water.</p>
-    <p class="cty-pos-zh">南台灣的大港都,海港、藝術倉庫、湖畔寶塔與大佛沿水岸並陳。</p>
+    <p class="cty-pos">Southern Taiwan's great harbor city, reinvented from steel, ships and smokestacks into a waterfront of art, music and light.</p>
+    <p class="cty-pos-zh">南臺灣的大港都,從鋼鐵、船舶與煙囪,脫胎成藝術、音樂與光的水岸城市。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-south">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>From "Takau" to the great port</h2></div>
+    <div class="narr">
+      <p>Kaohsiung began as <strong>Takau (打狗)</strong>, a harbourside settlement whose name comes from the language of the Indigenous Makatao people (linked to the Siraya), referring to a dense <strong>bamboo grove</strong> that once ringed the bay. Early Hoklo settlers wrote the sound with characters that literally read "beat the dog." In <strong>1920</strong> the Japanese kept the sound but elegantly rewrote it as <strong>高雄</strong>, read "Takao" in Japanese; after 1945 the same characters were read the Mandarin way — Gaoxiong, romanised <strong>Kaohsiung</strong>.</p>
+      <p class="zh">高雄最早名為<strong>「打狗(Takau)」</strong>,這名字源自原住民馬卡道族(與西拉雅族相關)的語言,指海灣邊曾經茂密的<strong>竹林</strong>。早期閩南移民以字面「打狗」二字記其音。<strong>1920 年</strong>,日本人保留發音、雅化改寫為<strong>「高雄」</strong>,日語讀作「Takao」;1945 年後同樣的字改以國語發音——Gaoxiong,羅馬拼音作 <strong>Kaohsiung</strong>。</p>
+      <p>The city grew up around the <strong>Port of Kaohsiung (高雄港)</strong>, Taiwan's largest harbour and one of the world's busiest container ports. From the mid-20th century it became the island's industrial engine — <strong>steel</strong> (home of China Steel), <strong>shipbuilding</strong>, <strong>petrochemicals</strong> and Taiwan's first export processing zone (1966). For decades Kaohsiung was a hard-working harbour town of freighters and smokestacks, with a proud blue-collar identity.</p>
+      <p class="zh">這座城市環繞著<strong>高雄港</strong>成長——它是臺灣最大的港口,也是世界最繁忙的貨櫃港之一。自二十世紀中葉起,高雄成為全島的工業引擎——<strong>鋼鐵</strong>(中鋼所在地)、<strong>造船</strong>、<strong>石化</strong>,以及臺灣第一個加工出口區(1966 年)。數十年來,高雄是一座勤奮的港都,有貨輪與煙囪,也有自豪的藍領性格。</p>
+      <p>In recent decades the city has turned its waterfront from heavy industry toward <strong>arts, culture and tourism</strong> — old harbour warehouses became the Pier-2 Art Center, the once-polluted Love River was cleaned into a leisure landmark, and major venues such as Weiwuying rose. Kaohsiung is woven into Taiwan's democratic story too: the <strong>Kaohsiung Incident of 1979</strong> was a turning point on the road to ending martial law. In <strong>2010</strong> the city merged with Kaohsiung County, adding mountains, rivers, the Hakka town of Meinong and Indigenous mountain districts to the harbour city.</p>
+      <p class="zh">近數十年,高雄將水岸從重工業轉向<strong>藝術、文化與觀光</strong>——老港口倉庫變身駁二藝術特區、曾經污染的愛河整治為休閒地標、衛武營等大型場館拔地而起。高雄也深植於臺灣的民主歷程:<strong>1979 年的美麗島事件</strong>是邁向終結戒嚴的轉捩點。<strong>2010 年</strong>,高雄市與高雄縣合併,把山岳、河川、客家小鎮美濃與原住民山區一併納入這座港都。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Kaohsiung</h2></div>
+    <div class="lmk cc-south">
+      <div class="lmk-item">
+        <h3>Love River<span class="zh">愛河</span><button class="say sm" data-say="Love River" aria-label="Hear">🔊</button></h3>
+        <p>A river running through the heart of downtown Kaohsiung, once badly polluted by industry and now a beloved leisure spot with riverside walkways, cafés and <strong>evening boat cruises</strong> lit up after dark.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Pier-2 Art Center<span class="zh">駁二藝術特區</span><button class="say sm" data-say="Pier-2 Art Center" aria-label="Hear">🔊</button></h3>
+        <p>A cluster of 1970s-era port <strong>warehouses</strong>, rediscovered in 2000 and turned into a vibrant arts district by 2002. Today it is full of galleries, studios, street art, shops, cafés and music venues along the old harbourfront.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Dragon &amp; Tiger Pagodas<span class="zh">蓮池潭龍虎塔</span><button class="say sm" data-say="The Dragon and Tiger Pagodas" aria-label="Hear">🔊</button></h3>
+        <p>A pair of colourful pagodas on Lotus Pond where visitors <strong>enter through the dragon's mouth and exit through the tiger's</strong>, said to turn bad luck into good. Nearby stand the Spring and Autumn Pavilions, ringing the temple-lined lake.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Fo Guang Shan Buddha Museum<span class="zh">佛光山佛陀紀念館</span><button class="say sm" data-say="Fo Guang Shan Buddha Museum" aria-label="Hear">🔊</button></h3>
+        <p>The cultural centre of the Fo Guang Shan Buddhist order, crowned by the <strong>Fo Guang Big Buddha</strong> — a seated bronze statue 50 m tall (108 m with its base), said to be the world's tallest seated bronze Buddha.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Cijin Island<span class="zh">旗津</span><button class="say sm" data-say="Cijin Island" aria-label="Hear">🔊</button></h3>
+        <p>A long, narrow barrier island reached by a short <strong>ferry</strong> from Gushan, famous for its beach, the old Cihou Lighthouse and fort, bicycle paths and streets of fresh seafood.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Former British Consulate at Takao<span class="zh">打狗英國領事館</span><button class="say sm" data-say="The Former British Consulate at Takao" aria-label="Hear">🔊</button></h3>
+        <p>A red-brick complex from Taiwan's treaty-port era: the hilltop consular <strong>residence, completed in 1879</strong>, overlooks Sizihwan Bay and the harbour entrance, with the consulate office below. It is now a museum.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Dome of Light<span class="zh">美麗島站光之穹頂</span><button class="say sm" data-say="The Dome of Light" aria-label="Hear">🔊</button></h3>
+        <p>Inside the metro's Formosa Boulevard Station glows the <strong>world's largest single glass artwork</strong> — 30 m across and made of 4,500 glass panels, by artist Narcissus Quagliata. The station's name honours the Kaohsiung (Formosa) Incident.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Weiwuying Arts Center<span class="zh">衛武營國家藝術文化中心</span><button class="say sm" data-say="The Weiwuying National Kaohsiung Center for the Arts" aria-label="Hear">🔊</button></h3>
+        <p>Opened in 2018, this banyan-inspired building is the <strong>world's largest performing arts centre under a single roof</strong>, with four halls including a 2,236-seat opera house — a symbol of Kaohsiung's cultural reinvention.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Shoushan (Monkey Mountain)<span class="zh">壽山</span><button class="say sm" data-say="Shoushan, or Monkey Mountain" aria-label="Hear">🔊</button></h3>
+        <p>A forested hill overlooking the harbour, home to a famous population of wild <strong>Formosan macaques</strong> and hiking trails with sweeping views over the city and bay.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Meinong Hakka Town<span class="zh">美濃客家小鎮</span><button class="say sm" data-say="Meinong Hakka Town" aria-label="Hear">🔊</button></h3>
+        <p>One of Taiwan's most distinctive <strong>Hakka</strong> towns in the eastern hills, famous for handmade oil-paper umbrellas, traditional blue Hakka shirts and old tobacco-curing barns.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Liuhe Night Market<span class="zh">六合夜市</span><button class="say sm" data-say="Liuhe Night Market" aria-label="Hear">🔊</button></h3>
+        <p>A classic downtown night market near Formosa Boulevard metro, known for seafood, snacks and especially its famous <strong>papaya milk</strong> stalls.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>Harbour grit and Hakka craft</h2>
+      <p>Kaohsiung blends a hard-working harbour identity with a flourishing arts scene — and, up in the hills, one of Taiwan's most distinctive Hakka cultures.</p></div>
+    <div class="ppl cc-south">
+      <div class="ppl-card">
+        <h3>☂️ Meinong's Hakka heritage · 美濃客家</h3>
+        <p>In the eastern hills, <strong>Meinong</strong> is one of Taiwan's most distinctive Hakka towns, where over 80% of residents are Hakka. It is famous for handmade <strong>oil-paper umbrellas (油紙傘)</strong> — a craft introduced in the Japanese era, where "oil-paper" puns on "to have a son" — as well as traditional blue Hakka shirts and old tobacco-curing barns.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>⚓ Harbour city, reinvented · 港都轉身</h3>
+        <p>Kaohsiung's identity grew from <strong>steel, ships and freight</strong>, and that working-class spirit still runs deep. Today it powers a flourishing arts scene — the Pier-2 warehouses, Weiwuying and the Music Center — while the <strong>Dome of Light</strong> doubles as public art and a quiet memorial to Taiwan's democratic struggle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Famous People · 高雄名人</div><h2>Faces of the harbour city</h2></div>
+    <div class="ppl cc-south">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Chu Ke-liang 豬哥亮</h3>
+        <div class="yr">1946–2017 · Zuoying 左營</div>
+        <p>A beloved Taiwanese comedian, television host and actor born in Zuoying, Kaohsiung. Famous for his quick wit and variety-show charisma, he became one of the best-known entertainers of his generation.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Frankie Kao 高凌風</h3>
+        <div class="yr">1950–2014 · Kaohsiung</div>
+        <p>A popular singer, host and actor born in Kaohsiung, known for his energetic, flamboyant stage presence across decades of Taiwanese pop and television.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Seasons · 節慶與時令</div><h2>When Kaohsiung comes alive</h2></div>
+    <div class="lmk cc-south">
+      <div class="lmk-item">
+        <h3>Maolin Purple Butterfly Valley<span class="zh">茂林紫斑蝶季</span></h3>
+        <p>From roughly November to March, millions of overwintering purple crow butterflies gather in Maolin's valleys — one of only two major butterfly-overwintering valleys in the world, alongside the monarch valley in Mexico.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Neimen Songjiang Battle Array<span class="zh">內門宋江陣</span></h3>
+        <p>Around late March to early April, a spectacular martial folk-performance festival centred on Zizhu Temple in Neimen, long known as the "hometown of the Song Jiang Array."</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Lantern Festival on Love River<span class="zh">高雄燈會(愛河)</span></h3>
+        <p>Around Lunar New Year, lantern displays and events light up the banks of the Love River, drawing crowds to the glowing riverfront.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Love River Dragon Boats<span class="zh">愛河龍舟賽</span></h3>
+        <p>Each Dragon Boat Festival, teams race their dragon boats down the Love River in the heart of the city — one of southern Taiwan's liveliest summer events.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>From harbour catch to Hakka table</h2>
+      <p>Kaohsiung's food runs from the seafood streets of Cijin to the Hakka kitchens of Meinong and the goat-meat town of Gangshan.</p></div>
+    <div class="food cc-south">
+      <div class="food-item"><span class="em">🥤</span><div><h4>Papaya milk <span class="zh">木瓜牛奶</span></h4><p>Fresh papaya blended with milk — a Kaohsiung signature; the famous Zheng's stall at Liuhe Night Market dates to 1965.</p><span class="town">Liuhe Night Market 六合夜市</span></div></div>
+      <div class="food-item"><span class="em">🦑</span><div><h4>Cijin fresh seafood <span class="zh">旗津海產</span></h4><p>Streets of seafood restaurants by the ferry on Cijin Island, serving the day's catch — grilled squid, oysters and more.</p><span class="town">Cijin 旗津</span></div></div>
+      <div class="food-item"><span class="em">🐐</span><div><h4>Gangshan goat hotpot <span class="zh">岡山羊肉爐</span></h4><p>The northern district of Gangshan has been Taiwan's goat-meat centre since the 1920s; goat-meat eateries across Taiwan still invoke its name.</p><span class="town">Gangshan 岡山</span></div></div>
+      <div class="food-item"><span class="em">🌶️</span><div><h4>Gangshan chili bean paste <span class="zh">岡山豆瓣醬</span></h4><p>A spicy fermented broad-bean paste that is a famous Gangshan specialty and a staple seasoning in southern kitchens.</p><span class="town">Gangshan 岡山</span></div></div>
+      <div class="food-item"><span class="em">🍚</span><div><h4>Meinong flat rice noodles <span class="zh">美濃粄條</span></h4><p>Wide, slippery flat rice noodles, a classic Hakka dish of Meinong, often served alongside hearty Hakka stir-fry.</p><span class="town">Meinong 美濃</span></div></div>
+      <div class="food-item"><span class="em">🍌</span><div><h4>Qishan banana &amp; ice <span class="zh">旗山香蕉・枝仔冰</span></h4><p>Qishan is Taiwan's "banana capital," with banana-themed treats and old-fashioned popsicles (枝仔冰) on its historic main street.</p><span class="town">Qishan 旗山</span></div></div>
+      <div class="food-item"><span class="em">🥟</span><div><h4>Hakka stir-fry <span class="zh">客家小炒</span></h4><p>A savoury Meinong staple of pork, dried squid, tofu and celery — salty, fragrant and full of Hakka flavour.</p><span class="town">Meinong 美濃</span></div></div>
+      <div class="food-item"><span class="em">🦐</span><div><h4>Harbour-style snacks <span class="zh">港邊小吃</span></h4><p>Around the ferry piers and old town: shrimp and oyster dishes, fried snacks and seafood soups by the water.</p><span class="town">Gushan・Yancheng 鼓山・鹽埕</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Kaohsiung is known for · 高雄的招牌</div><h2>Port, industry, arts and hills</h2></div>
+    <div class="kf cc-south">
+      <div class="kf-item"><span class="em">⚓</span><h4>The great port <span class="zh">高雄港</span></h4><p>Taiwan's largest harbour and a hub of maritime trade.</p></div>
+      <div class="kf-item"><span class="em">🏭</span><h4>Industry reinvented <span class="zh">工業轉型</span></h4><p>Steel, petrochemicals and shipbuilding, now turning toward arts and culture.</p></div>
+      <div class="kf-item"><span class="em">🎭</span><h4>Arts &amp; music <span class="zh">藝術與音樂</span></h4><p>Weiwuying, the Pier-2 warehouses and a growing music-and-arts scene.</p></div>
+      <div class="kf-item"><span class="em">☂️</span><h4>Meinong umbrellas <span class="zh">美濃油紙傘</span></h4><p>The handmade Hakka oil-paper umbrellas of the eastern hill town.</p></div>
+      <div class="kf-item"><span class="em">🍌</span><h4>Qishan bananas <span class="zh">旗山香蕉</span></h4><p>Taiwan's banana capital, with treats and popsicles to match.</p></div>
+      <div class="kf-item"><span class="em">🌌</span><h4>Love River &amp; Dome of Light <span class="zh">愛河與光之穹頂</span></h4><p>The lit-up riverfront and the world's largest single glass artwork.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-south" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Kaohsiung to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹高雄,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Kaohsiung." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Kaohsiung.<span class="zh">我來自高雄市。</span></span></li>
-        <li><button class="say sm" data-say="Kaohsiung is in Southern Taiwan." aria-label="Hear sentence">🔊</button><span class="en">Kaohsiung is in Southern Taiwan.<span class="zh">高雄市在臺灣南部。</span></span></li>
-        <li><button class="say sm" data-say="Kaohsiung is famous for Love River." aria-label="Hear sentence">🔊</button><span class="en">Kaohsiung is famous for Love River.<span class="zh">高雄市以愛河聞名。</span></span></li>
+        <li><button class="say sm" data-say="Kaohsiung is home to Taiwan's largest harbor, and the city grew from a tough industrial port into a center for arts and culture." aria-label="Hear">🔊</button><span class="en">Kaohsiung is home to Taiwan's largest harbor, and the city grew from a tough industrial port into a center for arts and culture.<span class="zh">高雄擁有臺灣最大的港口,這座城市從一個硬派的工業港都,成長為藝術與文化的中心。</span></span></li>
+        <li><button class="say sm" data-say="Don't miss a sunset cruise on the Love River and the old harbor warehouses at the Pier-2 Art Center." aria-label="Hear">🔊</button><span class="en">Don't miss a sunset cruise on the Love River and the old harbor warehouses at the Pier-2 Art Center.<span class="zh">別錯過愛河上的夕陽遊船,以及駁二藝術特區的老港口倉庫。</span></span></li>
+        <li><button class="say sm" data-say="Just outside the city you can see the world's tallest seated bronze Buddha at Fo Guang Shan." aria-label="Hear">🔊</button><span class="en">Just outside the city you can see the world's tallest seated bronze Buddha at Fo Guang Shan.<span class="zh">在市郊,你可以在佛光山看到世界最高的青銅坐佛。</span></span></li>
+        <li><button class="say sm" data-say="Weiwuying, the world's largest performing arts center under one roof, shows how Kaohsiung reinvented itself." aria-label="Hear">🔊</button><span class="en">Weiwuying, the world's largest performing arts center under one roof, shows how Kaohsiung reinvented itself.<span class="zh">衛武營是全球最大的單一屋頂表演藝術中心,展現了高雄如何脫胎換骨。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Love River<button class="say sm" data-say="Love River" aria-label="Hear Love River">🔊</button></h3>
-          <div class="zh">愛河</div>
-          <p>A scenic river through the city centre, lit up at night for evening cruises.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Pier-2 Art Center<button class="say sm" data-say="Pier-2 Art Center" aria-label="Hear Pier-2 Art Center">🔊</button></h3>
-          <div class="zh">駁二藝術特區</div>
-          <p>Old harbour warehouses turned into a colourful arts district.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Lotus Pond Pagodas<button class="say sm" data-say="Lotus Pond Pagodas" aria-label="Hear Lotus Pond Pagodas">🔊</button></h3>
-          <div class="zh">蓮池潭龍虎塔</div>
-          <p>A temple-ringed lake — enter the dragon&#x27;s mouth, exit the tiger&#x27;s for luck.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Fo Guang Shan<button class="say sm" data-say="Fo Guang Shan" aria-label="Hear Fo Guang Shan">🔊</button></h3>
-          <div class="zh">佛光山</div>
-          <p>A major Buddhist centre and museum with a giant golden Buddha.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-south">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Papaya milk <button class="say sm" data-say="Papaya milk" aria-label="Hear food name">🔊</button> <span class="zh">· 木瓜牛奶</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:高雄市政府觀光局、交通部觀光署、客家委員會、衛武營國家藝術文化中心、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <a href="/counties/tainan/">← Tainan</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +289,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>

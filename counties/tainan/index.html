@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Tainan 臺南市 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Tainan (臺南市) — landmarks, food and culture, and how to say it in English. 全台最古老的城市與舊都,四百年歷史藏在古堡、廟宇與小吃裡。">
+<meta name="description" content="Tainan (臺南市) — Taiwan's oldest city and former capital, where 400 years of Dutch forts, Koxinga, temples and legendary sweet street food live on. Its history, landmarks, culture, famous people and food, and how to say it in English. 臺灣古都臺南的深度文化介紹。">
 <meta property="og:title" content="Tainan 臺南市 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Tainan = south / amber) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#3a342b;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#7d5827);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#bd863f);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#bd863f);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#7d5827);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#f7f0e2);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#7d5827);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#3a342b;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#7d5827);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#bd863f);background:var(--cc-soft,#f7f0e2);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#bd863f);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#7d5827);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,6 +77,7 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-south">
   <div class="wrap">
     <div class="cty-region">Southern Taiwan · 南部</div>
@@ -35,64 +86,202 @@
       <span class="zh">臺南市</span>
       <button class="say" data-say="Tainan" aria-label="Hear Tainan in English">🔊</button>
     </div>
-    <p class="cty-pos">Taiwan&#x27;s oldest city and former capital, where 400 years of history live on in ancient forts, hundreds of temples and legendary street food.</p>
-    <p class="cty-pos-zh">全台最古老的城市與舊都,四百年歷史藏在古堡、廟宇與小吃裡。</p>
+    <p class="cty-pos">Taiwan's oldest city and former capital, where 400 years of history live on in Dutch forts, hundreds of temples and legendary, sweet-tasting street food.</p>
+    <p class="cty-pos-zh">臺灣最古老的城市與舊都,四百年歷史藏在荷蘭古堡、數百座廟宇,與帶著甜味的傳奇小吃裡。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-south">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>Where Taiwan's story begins</h2></div>
+    <div class="narr">
+      <p>Tainan is Taiwan's oldest city and was its capital for more than two centuries — the place where the island's recorded history begins. In <strong>1624 the Dutch East India Company</strong> built a trading base on the sandbar of present-day Anping, raising <strong>Fort Zeelandia</strong> (today's Anping Old Fort) to govern the island and run a rich trade in deerskin, sugar and silk. In 1653 they built a second, inland fort, <strong>Fort Provintia</strong>, on the site of today's Chihkan Tower. Long before the Europeans came, this coastal plain was the homeland of the <strong>Siraya</strong>, the largest of Taiwan's plains Indigenous peoples.</p>
+      <p class="zh">臺南是臺灣最古老的城市,曾擔任首府超過兩個世紀,是全島信史的起點。<strong>1624 年,荷蘭東印度公司</strong>在今日安平的沙洲上設立貿易據點,興建<strong>熱蘭遮城</strong>(今安平古堡),統治全島並經營鹿皮、糖與絲綢貿易。1653 年又在內陸建第二座要塞<strong>普羅民遮城</strong>(今赤崁樓所在)。在歐洲人到來之前,這片海岸平原早已是<strong>西拉雅族</strong>的家園——他們是臺灣平埔原住民中人口最多的一支。</p>
+      <p>In 1661 the Ming loyalist <strong>Koxinga (Zheng Cheng-gong)</strong> landed near Anping with a great fleet and laid siege to Fort Zeelandia. After about nine months the Dutch surrendered in <strong>February 1662</strong>, ending 38 years of Dutch rule. Koxinga made Tainan the seat of his new regime; though he died only months later, his descendants ruled here until 1683.</p>
+      <p class="zh">1661 年,明朝遺臣<strong>鄭成功(國姓爺)</strong>率龐大艦隊登陸安平,圍攻熱蘭遮城。約九個月後,荷蘭人於 <strong>1662 年 2 月</strong>投降,結束 38 年的荷蘭統治。鄭成功以臺南為新政權的中心;他雖在數月後病逝,其後代仍統治此地直到 1683 年。</p>
+      <p>Under the Qing, Tainan (then <strong>Taiwan-fu, 臺灣府城</strong>) became the capital and the island's political and commercial heart for two hundred years — captured in the old saying <strong>"一府二鹿三艋舺"</strong> ("first the prefectural city, second Lukang, third Bangka"). When Taiwan became a province in 1885 the capital moved north and settled in Taipei, and the name "Tainan" was formally adopted in 1887. In 2010 the old city and surrounding county merged into a single special municipality. Today Tainan wears its history openly as Taiwan's <strong>"ancient capital" (古都)</strong>.</p>
+      <p class="zh">清代,臺南(當時稱<strong>臺灣府城</strong>)成為首府,擔任全島政治與商業核心達兩百年——正是俗諺<strong>「一府二鹿三艋舺」</strong>(一府臺南、二鹿鹿港、三艋舺)所指。1885 年臺灣建省後,首府北移、最終定於臺北,「臺南」一名則於 1887 年正式啟用。2010 年,舊市與周邊縣份合併為單一直轄市。今日的臺南坦然承載歷史,是臺灣的<strong>「古都」</strong>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Tainan</h2></div>
+    <div class="lmk cc-south">
+      <div class="lmk-item">
+        <h3>Anping Old Fort<span class="zh">安平古堡(熱蘭遮城)</span><button class="say sm" data-say="Anping Old Fort" aria-label="Hear">🔊</button></h3>
+        <p>Taiwan's first European fortress, begun by the Dutch in 1624 as <strong>Fort Zeelandia</strong>. It was the centre of Dutch rule and the place where Koxinga forced their surrender in 1662; today its old brick walls and a Japanese-era lookout tower remain.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Chihkan Tower<span class="zh">赤崁樓(普羅民遮城)</span><button class="say sm" data-say="Chihkan Tower" aria-label="Hear">🔊</button></h3>
+        <p>Built by the Dutch in 1653 as the administrative <strong>Fort Provintia</strong>. The graceful Chinese pavilions seen today — the Sea God Temple and Wenchang Pavilion — are Qing-era buildings raised on the original Dutch foundations.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Anping Tree House<span class="zh">安平樹屋</span><button class="say sm" data-say="Anping Tree House" aria-label="Hear">🔊</button></h3>
+        <p>A 19th-century warehouse of the British firm Tait &amp; Co., later abandoned and slowly swallowed by a giant <strong>banyan tree</strong> whose aerial roots now form its walls and roof. Opened to visitors in 2004, it is one of Taiwan's most photographed "ruins reclaimed by nature."</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Eternal Golden Castle<span class="zh">億載金城</span><button class="say sm" data-say="The Eternal Golden Castle" aria-label="Hear">🔊</button></h3>
+        <p>Taiwan's first Western-style coastal fortress, built 1874–1876. The Qing official Shen Baozhen commissioned it after a Japanese expedition, had a <strong>French engineer</strong> design it, and armed it with British Armstrong cannon.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Tainan Confucius Temple<span class="zh">臺南孔子廟</span><button class="say sm" data-say="Tainan Confucius Temple" aria-label="Hear">🔊</button></h3>
+        <p>Founded in 1665, this is Taiwan's first Confucian temple and its first school, honoured with the title <strong>"全臺首學" — "the First Academy of Taiwan."</strong> Its tranquil red walls and old courtyards still host Confucius's birthday rites each September.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Grand Mazu Temple<span class="zh">祀典大天后宮</span><button class="say sm" data-say="The Grand Mazu Temple" aria-label="Hear">🔊</button></h3>
+        <p>Originally built in 1664 as a Southern Ming prince's mansion, it was converted into a temple in 1684 and became Taiwan's <strong>first official, government-sponsored Mazu temple</strong> — and the first to honour the sea goddess as "Empress of Heaven."</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Shennong Street<span class="zh">神農街</span><button class="say sm" data-say="Shennong Street" aria-label="Hear">🔊</button></h3>
+        <p>A lovingly preserved Qing-dynasty lane in the heart of the old Wutiaogang port district. Having escaped modern road-widening, its low wooden shophouses now hold cafés, craft shops and galleries, glowing with <strong>lanterns</strong> at night.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Hayashi Department Store<span class="zh">林百貨</span><button class="say sm" data-say="Hayashi Department Store" aria-label="Hear">🔊</button></h3>
+        <p>Opened in December 1932, "Hayashi" was Tainan's first department store, with one of Taiwan's earliest passenger <strong>elevators</strong> and a Shinto shrine on its rooftop. Beautifully restored, it reopened in 2014 as a boutique of local design.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Chimei Museum<span class="zh">奇美博物館</span><button class="say sm" data-say="Chimei Museum" aria-label="Hear">🔊</button></h3>
+        <p>A grand private museum founded by industrialist Shi Wen-long, its palatial building opened in 2015. It is famous for Western fine art, arms and armour, natural history, and what is billed as the world's largest collection of <strong>violins</strong>.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Jingzaijiao Salt Fields<span class="zh">井仔腳瓦盤鹽田</span><button class="say sm" data-say="The Jingzaijiao salt fields" aria-label="Hear">🔊</button></h3>
+        <p>Established in Beimen in 1818, these are Taiwan's oldest surviving salt fields and the last "tile-paved" evaporation ponds. At sunset the mirror-like pans turn <strong>gold and pink</strong>, and visitors can still rake the salt.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Sicao Green Tunnel<span class="zh">四草綠色隧道</span><button class="say sm" data-say="The Sicao Green Tunnel" aria-label="Hear">🔊</button></h3>
+        <p>A narrow mangrove waterway in Taijiang National Park where decades-old trees arch overhead to form a green "tunnel." Toured by flat-bottomed boat, it is nicknamed Taiwan's <strong>"Mini Amazon."</strong></p>
+      </div>
+      <div class="lmk-item">
+        <h3>Qigu Salt Mountain &amp; Lagoon<span class="zh">七股鹽山與潟湖</span><button class="say sm" data-say="Qigu Salt Mountain and Lagoon" aria-label="Hear">🔊</button></h3>
+        <p>A snow-white "mountain" of sun-dried sea salt left from over three centuries of salt-making (the fields closed in 2002), beside <strong>Qigu Lagoon</strong>, the largest lagoon in Taiwan and a remnant of the historic Taijiang Inner Sea.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Black-faced Spoonbill Reserve<span class="zh">黑面琵鷺保護區</span><button class="say sm" data-say="The black-faced spoonbill reserve" aria-label="Hear">🔊</button></h3>
+        <p>The Zengwen River estuary at Qigu is the single most important wintering ground in the world for the endangered <strong>black-faced spoonbill</strong>. Each winter, from roughly October to April, thousands gather here — the planet's largest concentration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>The spiritual heart of Taiwan</h2>
+      <p>With the highest density of temples in Taiwan, Tainan is the island's home of folk religion, Confucian learning and traditional craft.</p></div>
+    <div class="ppl cc-south">
+      <div class="ppl-card">
+        <h3>🛕 City of temples · 廟宇之都</h3>
+        <p>Tainan holds the highest density of temples in Taiwan and is a stronghold of belief in the <strong>Wang Ye (Royal Lords, 王爺)</strong>, plague-dispelling deities honoured across the south. Its most spectacular folk ritual is the triennial <strong>Xigang Pilgrimage (西港刈香)</strong>, first held in 1784 — a procession of dozens of villages with a King Boat ceremony, now a designated national heritage and nicknamed "Taiwan's Foremost Offering of Incense."</p>
+      </div>
+      <div class="ppl-card">
+        <h3>📜 Cradle of Confucian learning · 儒學搖籃</h3>
+        <p>Tainan is the home of Taiwan's Confucian tradition, with the island's <strong>first Confucius temple (1665)</strong> and centuries of scholarly heritage behind the title "the First Academy of Taiwan." The city's old craft trades — lantern-making, paper effigies, embroidery and the carving of Buddhist and Daoist statues — still cluster in its historic lanes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Famous People · 臺南名人</div><h2>From a Ming hero to modern writers</h2></div>
+    <div class="ppl cc-south">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Koxinga 鄭成功</h3>
+        <div class="yr">1624–1662 · Ming loyalist</div>
+        <p>The Ming loyalist who drove the Dutch from Taiwan in 1662 and made Tainan his capital. Born in Hirado, Japan, he <strong>died in Tainan (Anping) in 1662</strong> and is honoured throughout the city, especially at the Koxinga Shrine (Yanping Junwang Temple).</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Yang Kui 楊逵</h3>
+        <div class="yr">1906–1985 · Xinhua 新化</div>
+        <p>An influential social-realist writer born in Xinhua, Tainan. Known for works such as <strong>"The Newspaper Carrier"</strong> and "The Indomitable Rose," he is remembered at the Yang Kui Literature Memorial Museum in his hometown.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Events · 節慶活動</div><h2>When Tainan comes alive</h2></div>
+    <div class="lmk cc-south">
+      <div class="lmk-item">
+        <h3>Yanshui Beehive Fireworks<span class="zh">鹽水蜂炮</span></h3>
+        <p>Held in Yanshui at the Lantern Festival, this is one of the world's most thrilling — and dangerous — festivals. Racks ("beehives") of tens of thousands of bottle rockets are fired straight into the helmet-clad crowd. The tradition began in the 19th century, when residents set off firecrackers to drive away a cholera epidemic.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Koxinga Cultural Festival<span class="zh">鄭成功文化節</span></h3>
+        <p>Held each year around late April, centred on the memorial ceremony at the Koxinga Shrine, with rituals, performances and cultural events commemorating Koxinga's 1661 landing.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Black-faced Spoonbill Season<span class="zh">黑面琵鷺季</span></h3>
+        <p>From roughly October to April, thousands of endangered black-faced spoonbills winter at the Qigu wetlands, drawing birdwatchers from around the world to the largest wintering flock on Earth.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Salt-field &amp; Lantern Events<span class="zh">鹽田與燈會活動</span></h3>
+        <p>The historic salt fields at Jingzaijiao and Qigu host seasonal sunset and lantern events, and the city regularly takes part in Taiwan's Lantern Festival celebrations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>Taiwan's street-food capital</h2>
+      <p>Tainan is the island's street-food capital, and its cooking is famously sweeter than anywhere else in Taiwan.</p></div>
+    <div class="food cc-south">
+      <div class="food-item"><span class="em">🍜</span><div><h4>Danzai noodles <span class="zh">擔仔麵</span></h4><p>The signature of Du Hsiao Yueh, founded in 1895 — a fisherman sold noodles to "get through the slack season," topped with savoury minced pork and a single shrimp.</p><span class="town">Central Tainan 中西區</span></div></div>
+      <div class="food-item"><span class="em">⚰️</span><div><h4>Coffin bread <span class="zh">棺材板</span></h4><p>A thick slab of deep-fried toast, hollowed out and filled with creamy seafood or chicken stew, with the cut-out lid set back on top.</p><span class="town">Central Tainan 中西區</span></div></div>
+      <div class="food-item"><span class="em">🐟</span><div><h4>Milkfish congee <span class="zh">虱目魚粥</span></h4><p>Tainan is Taiwan's largest milkfish-farming centre; silky milkfish-belly congee is a classic, comforting local breakfast.</p><span class="town">Citywide 全市</span></div></div>
+      <div class="food-item"><span class="em">🥩</span><div><h4>Beef soup <span class="zh">牛肉湯</span></h4><p>Thin slices of fresh, never-frozen "warm-body" beef cooked in seconds by hot bone broth. Diners line up before dawn — some as early as 4 a.m.</p><span class="town">Citywide 全市</span></div></div>
+      <div class="food-item"><span class="em">🍤</span><div><h4>Shrimp rolls <span class="zh">蝦捲</span></h4><p>Whole shrimp, minced pork and fish paste wrapped in a thin pork-belly membrane and deep-fried until crisp — an Anping institution.</p><span class="town">Anping 安平</span></div></div>
+      <div class="food-item"><span class="em">🔥</span><div><h4>Eel noodles <span class="zh">鱔魚意麵</span></h4><p>Crisp-fried eel and noodles flash-cooked over a roaring flame in a sweet-and-sour sauce — a Tainan night-market classic.</p><span class="town">Night markets 夜市</span></div></div>
+      <div class="food-item"><span class="em">🍮</span><div><h4>Tofu pudding <span class="zh">豆花</span></h4><p>Silky tofu pudding with sweet syrup and toppings like beans, taro or peanuts; iced in summer, with warm ginger syrup in winter.</p><span class="town">Citywide 全市</span></div></div>
+      <div class="food-item"><span class="em">🍥</span><div><h4>Rice cake &amp; Guanmiao noodles <span class="zh">碗粿・關廟麵</span></h4><p>Steamed savoury rice pudding topped with pork, egg yolk and shrimp; plus the chewy sun-dried noodles born in Tainan's Guanmiao District.</p><span class="town">Guanmiao 關廟</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Tainan is known for · 臺南的招牌</div><h2>Old capital, sweet table, wild coast</h2></div>
+    <div class="kf cc-south">
+      <div class="kf-item"><span class="em">🏯</span><h4>The ancient capital <span class="zh">古都</span></h4><p>Taiwan's oldest city and former capital — the birthplace of the island's history.</p></div>
+      <div class="kf-item"><span class="em">🛕</span><h4>City of temples <span class="zh">廟宇之都</span></h4><p>The densest concentration of historic temples and the heart of folk religion.</p></div>
+      <div class="kf-item"><span class="em">🍢</span><h4>Street-food capital <span class="zh">小吃之都</span></h4><p>Famous bites on every corner — and a local taste for sweeter seasoning.</p></div>
+      <div class="kf-item"><span class="em">🧂</span><h4>Salt &amp; milkfish <span class="zh">鹽業與虱目魚</span></h4><p>Centuries of salt-making and Taiwan's biggest milkfish and oyster aquaculture.</p></div>
+      <div class="kf-item"><span class="em">🦩</span><h4>Wetlands &amp; spoonbills <span class="zh">濕地與黑面琵鷺</span></h4><p>The Qigu and Sicao wetlands and the world's largest wintering spoonbill flock.</p></div>
+      <div class="kf-item"><span class="em">🎻</span><h4>Art &amp; the Chimei <span class="zh">奇美與藝文</span></h4><p>The Chimei Museum's grand collection and southern Taiwan's design culture.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-south" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Tainan to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹臺南,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Tainan." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Tainan.<span class="zh">我來自臺南市。</span></span></li>
-        <li><button class="say sm" data-say="Tainan is in Southern Taiwan." aria-label="Hear sentence">🔊</button><span class="en">Tainan is in Southern Taiwan.<span class="zh">臺南市在臺灣南部。</span></span></li>
-        <li><button class="say sm" data-say="Tainan is famous for Anping Fort." aria-label="Hear sentence">🔊</button><span class="en">Tainan is famous for Anping Fort.<span class="zh">臺南市以安平古堡聞名。</span></span></li>
+        <li><button class="say sm" data-say="Tainan is Taiwan's oldest city and was its capital for over two hundred years, so people call it the birthplace of Taiwan." aria-label="Hear">🔊</button><span class="en">Tainan is Taiwan's oldest city and was its capital for over two hundred years, so people call it the birthplace of Taiwan.<span class="zh">臺南是臺灣最古老的城市,曾當了兩百多年的首府,所以人們稱它為臺灣的發源地。</span></span></li>
+        <li><button class="say sm" data-say="You can still visit Anping Old Fort, where the Dutch ruled four hundred years ago until Koxinga drove them out in 1662." aria-label="Hear">🔊</button><span class="en">You can still visit Anping Old Fort, where the Dutch ruled four hundred years ago until Koxinga drove them out in 1662.<span class="zh">你還能參觀安平古堡——四百年前荷蘭人在此統治,直到 1662 年被鄭成功驅逐。</span></span></li>
+        <li><button class="say sm" data-say="Tainan is famous as Taiwan's street-food capital, and the local food is known for being a little sweet." aria-label="Hear">🔊</button><span class="en">Tainan is famous as Taiwan's street-food capital, and the local food is known for being a little sweet.<span class="zh">臺南以臺灣的小吃之都聞名,當地食物的口味偏甜是它的特色。</span></span></li>
+        <li><button class="say sm" data-say="If you love history and temples, Tainan has more old temples than any other city in Taiwan." aria-label="Hear">🔊</button><span class="en">If you love history and temples, Tainan has more old temples than any other city in Taiwan.<span class="zh">如果你喜歡歷史和廟宇,臺南擁有的古廟比臺灣任何城市都多。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Anping Fort<button class="say sm" data-say="Anping Fort" aria-label="Hear Anping Fort">🔊</button></h3>
-          <div class="zh">安平古堡</div>
-          <p>Built by the Dutch in 1624, Taiwan&#x27;s oldest fortress, wrapped in old banyan trees.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Chihkan Tower<button class="say sm" data-say="Chihkan Tower" aria-label="Hear Chihkan Tower">🔊</button></h3>
-          <div class="zh">赤崁樓</div>
-          <p>A 1653 Dutch fort topped with elegant Chinese-style towers.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>City of Temples<button class="say sm" data-say="City of Temples" aria-label="Hear City of Temples">🔊</button></h3>
-          <div class="zh">廟宇之都</div>
-          <p>Tainan has more historic temples than any other city in Taiwan.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Street-food Capital<button class="say sm" data-say="Street-food Capital" aria-label="Hear Street-food Capital">🔊</button></h3>
-          <div class="zh">小吃之都</div>
-          <p>Known as Taiwan&#x27;s street-food capital, with famous bites on every corner.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-south">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Danzai noodles &amp; coffin bread <button class="say sm" data-say="Danzai noodles &amp; coffin bread" aria-label="Hear food name">🔊</button> <span class="zh">· 擔仔麵與棺材板</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:臺南市政府觀光旅遊局、台江國家公園、文化部、交通部觀光署、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <a href="/counties/chiayi-city/">← Chiayi City</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +297,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>
