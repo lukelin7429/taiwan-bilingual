@@ -127,33 +127,23 @@ a:hover{color:var(--jade);}
 .hero-cta2 .arr{display:inline-block;transition:transform .18s;}
 .hero-cta2:hover .arr{transform:translateX(5px);}
 
-/* floating bilingual flashcards (right side) */
-.hero-art{position:relative;min-height:360px;display:none;}
-@media(min-width:900px){.hero-art{display:block;}}
-.hero-card{
-  position:absolute;background:#fff;border:1px solid var(--line);
-  border-top:4px solid var(--cc,var(--jade));border-radius:16px;
-  box-shadow:var(--shadow);padding:15px 18px;
-  display:flex;align-items:center;gap:14px;max-width:300px;
-  animation:heroFloat 7s ease-in-out infinite;
-}
-.hero-card:hover{animation-play-state:paused;}
-.hero-card .en{font-family:'Playfair Display','PingFang TC',serif;font-size:19px;font-weight:600;color:var(--ink);line-height:1.25;}
-.hero-card .en .zh{display:block;font-family:'Lato','PingFang TC',sans-serif;font-size:14px;font-weight:400;color:var(--ink-soft);margin-top:3px;}
-.hero-card .say{
-  flex:0 0 auto;width:36px;height:36px;border-radius:50%;
-  border:1.5px solid var(--cc,var(--jade));background:#fff;color:var(--cc,var(--jade));
-  font-size:15px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;
-  transition:transform .12s,background .15s,color .15s;
-}
-.hero-card .say:hover,.hero-card .say.saying{background:var(--cc,var(--jade));color:#fff;transform:scale(1.12);}
-.hc1{top:4%;left:2%;--cc:#3f6fa3;animation-delay:0s;}
-.hc2{top:40%;right:-2%;--cc:#bd863f;animation-delay:1.5s;}
-.hc3{bottom:3%;left:16%;--cc:#1e7f5c;animation-delay:.8s;}
-@keyframes heroFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-15px);}}
+/* Taiwan island emblem (right side) */
+.hero-art{position:relative;min-height:380px;display:none;}
+@media(min-width:900px){.hero-art{display:flex;align-items:center;justify-content:center;}}
+.hero-map{position:relative;width:100%;max-width:330px;animation:heroFloat 9s ease-in-out infinite;}
+.hero-map::before{content:"";position:absolute;inset:-14% -10%;z-index:0;
+  background:radial-gradient(circle at 55% 45%, rgba(47,93,79,.30) 0%, rgba(47,93,79,0) 66%);
+  animation:islePulse 6.5s ease-in-out infinite;}
+.hero-isle{position:relative;z-index:1;width:100%;height:auto;display:block;
+  filter:drop-shadow(0 24px 36px rgba(31,67,56,.32));}
+.hero-isle path{fill:url(#isleGrad);stroke:rgba(255,255,255,.45);stroke-width:.4;vector-effect:non-scaling-stroke;}
+.hero-isle-label{position:absolute;z-index:2;right:2%;top:18%;font-size:13px;font-weight:700;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--jade);writing-mode:vertical-rl;opacity:.7;}
+@keyframes heroFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-14px);}}
+@keyframes islePulse{0%,100%{opacity:.65;transform:scale(1);}50%{opacity:1;transform:scale(1.05);}}
 
 @media (prefers-reduced-motion: reduce){
-  .hero::before,.hero::after,.hero-card{animation:none;}
+  .hero::before,.hero::after,.hero-map,.hero-map::before{animation:none;}
   .hero-copy>*{opacity:1;transform:none;animation:none;}
 }
 
