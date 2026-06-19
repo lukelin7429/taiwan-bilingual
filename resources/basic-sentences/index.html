@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Basic English Sentences · 基礎英語造句篇 — Taiwan Bilingual Hub</title>
+<meta name="description" content="Build basic English sentences through a whole school day — from getting up to bedtime. 20 short videos, each a real daily situation, with 🔊 and inline play. 用一整天的校園生活學基礎英語造句。">
+<meta property="og:title" content="Basic English Sentences · 基礎英語造句篇">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  .pg-band{background:linear-gradient(135deg,#b45309 0%,#d97706 60%,#ea7317 100%);color:#fff;padding:50px 0 52px;position:relative;overflow:hidden;}
+  .pg-band::before{content:"";position:absolute;top:-120px;right:-100px;width:420px;height:420px;background:radial-gradient(circle,rgba(255,255,255,.14) 0%,transparent 70%);}
+  .pg-band .eyebrow{font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#ffe7c2;margin-bottom:12px;}
+  .pg-band h1{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(32px,5vw,48px);font-weight:600;line-height:1.08;position:relative;z-index:1;}
+  .pg-band .sub{margin-top:14px;font-size:19px;color:#fff3e3;max-width:62ch;position:relative;z-index:1;}
+  .pg-band .sub-zh{margin-top:6px;font-size:16.5px;color:#ffe8cd;max-width:56ch;line-height:1.8;position:relative;z-index:1;}
+
+  .bs-intro{font-size:18px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+  .bs-intro b{color:#b45309;}
+
+  .bs-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:24px;}
+  @media(min-width:560px){.bs-grid{grid-template-columns:1fr 1fr;}}
+  @media(min-width:900px){.bs-grid{grid-template-columns:1fr 1fr 1fr;}}
+  .bs-card{--cc:#d97706;--cc-deep:#b45309;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s;}
+  .bs-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
+  .bs-head{display:flex;align-items:center;gap:12px;padding:18px 20px 14px;}
+  .bs-num{flex:0 0 auto;width:32px;height:32px;border-radius:9px;background:#fbe7d2;color:#b45309;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;}
+  .bs-emoji{font-size:26px;}
+  .bs-topic{flex:1;font-size:18px;font-weight:700;color:var(--ink);line-height:1.25;}
+  .bs-head .say{flex:0 0 auto;}
+  .bs-thumb{position:relative;aspect-ratio:16/9;background:#2a1705;cursor:pointer;overflow:hidden;border-top:1px solid var(--line);}
+  .bs-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .bs-thumb .pl{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:30px;color:#fff;background:rgba(42,23,5,.30);transition:background .18s;}
+  .bs-thumb:hover .pl{background:rgba(42,23,5,.14);}
+  .bs-thumb iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  .bs-credit{margin-top:28px;font-size:14.5px;color:var(--ink-soft);border-left:3px solid var(--line);padding-left:14px;line-height:1.7;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
+    <nav class="topbar-nav">
+      <a href="/">Home</a>
+      <a href="/bilingual-2030/">Bilingual 2030</a>
+      <a href="/counties/">Counties</a>
+      <a href="/schools/">Schools</a>
+      <a href="/partners/">Partners</a>
+      <a href="/resources/" aria-current="page">Resources</a>
+      <a href="https://changhua-bilingual.org/">Changhua Hub ↗</a>
+    </nav>
+  </div>
+</div>
+
+<header class="pg-band">
+  <div class="wrap">
+    <div class="eyebrow">Resources · Basic Sentences · 基礎英語造句篇</div>
+    <h1>Basic English Sentences</h1>
+    <p class="sub">Build simple English sentences through a whole school day — from getting up in the morning to bedtime at night. Twenty short videos, each a real everyday situation.</p>
+    <p class="sub-zh">用一整天的校園生活學基礎英語造句——從早上起床到晚上睡覺,二十段短片,每段都是真實的日常情境。</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <p class="bs-intro">Follow the day in order, or jump to any moment. Tap 🔊 to hear the situation, then play the clip to learn how to make sentences about it. ｜<b>照順序看完一整天</b>,或跳到任何一個時刻。點 🔊 聽情境,再播放影片學會用英文造句。</p>
+    <div class="bs-grid" id="bsgrid"></div>
+    <p class="bs-credit" id="bscredit"></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p class="footer-brand">Taiwan Bilingual Hub · 臺灣雙語資源網</p>
+    <p class="footer-note">A teacher-led bilingual education effort supporting Taiwan's 2030 Bilingual Nation policy.<br>支援「2030 雙語國家」政策 · 由老師發起的雙語教育計畫。</p>
+    <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
+  </div>
+</footer>
+
+<script src="/assets/js/say.js"></script>
+<script>
+(function(){
+  var EMO={
+    'Getting Up':'🌅','Eating Breakfast':'🍳','Preparing for School':'🎒','Going to School':'🚸',
+    'In Class-1':'📚','In Class-2':'📚','In Class-3':'📚','In The Library':'📖','PE Class':'⚽',
+    'Music Class':'🎵','Lunch Break':'🍱','Cleaning the Classroom-1':'🧹','Cleaning the Classroom-2':'🧹',
+    'Going Home':'🚶','Getting Home':'🏠','Doing Homework':'✏️','Using the Computer':'💻',
+    'Dinnertime':'🍽️','Family Time':'👨‍👩‍👧‍👦','Bedtime':'🌙'
+  };
+  function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+  function cardHTML(it,i){
+    var t=esc(it.t), emo=EMO[it.t]||'🟠';
+    return '<article class="bs-card">'
+      + '<div class="bs-head"><span class="bs-num">'+(i+1)+'</span><span class="bs-emoji">'+emo+'</span>'
+      + '<span class="bs-topic">'+t+'</span><button class="say sm" data-say="'+t+'" aria-label="Hear">🔊</button></div>'
+      + '<div class="bs-thumb" data-v="'+esc(it.v)+'"><img src="https://i.ytimg.com/vi/'+esc(it.v)+'/mqdefault.jpg" loading="lazy" alt=""><span class="pl">▶</span></div>'
+      + '</article>';
+  }
+  var grid=document.getElementById('bsgrid');
+  grid.addEventListener('click',function(e){
+    var t=e.target.closest('.bs-thumb'); if(!t||t.querySelector('iframe'))return;
+    var v=t.getAttribute('data-v');
+    t.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+v+'?autoplay=1&rel=0" title="Basic English sentences video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  });
+  fetch('/assets/data/basic_sentences.json').then(function(r){return r.json();}).then(function(d){
+    var items=d.items||[];
+    grid.innerHTML=items.map(cardHTML).join('');
+    document.getElementById('bscredit').innerHTML='<b>'+items.length+'</b> short videos in the “基礎英語造句篇” series, produced by teacher Luke Lin. ｜「基礎英語造句篇」系列共 '+items.length+' 段短片,由林吉祥老師製作。';
+  }).catch(function(){grid.innerHTML='<p style="color:var(--ink-soft)">Could not load the videos. 無法載入影片。</p>';});
+})();
+</script>
+</body>
+</html>
