@@ -112,6 +112,7 @@
   <div class="wrap">
     <div class="map-grid">
       <div class="map-visual">
+        <div class="imap-label" id="imapLabel"></div>
         <svg class="tw-imap" viewBox="0 0 238.1 440.0" role="img" aria-labelledby="imapTitle">
           <title id="imapTitle">Map of Taiwan — tap a county to learn its English name</title>
           <g class="counties">
@@ -254,5 +255,17 @@
   </div>
 </footer>
 
+<script src="/assets/js/say.js"></script>
+<script>
+  var imapLabel=document.getElementById('imapLabel');
+  document.querySelectorAll('.tw-imap a.ic-link').forEach(function(a){
+    a.addEventListener('mouseenter', function(){
+      if(!imapLabel)return; var en=a.getAttribute('data-en');
+      imapLabel.innerHTML=a.getAttribute('aria-label')+' <button class="say" data-say="'+en+'" aria-label="Hear">🔊</button>';
+      imapLabel.classList.add('on');
+    });
+    a.addEventListener('mouseleave', function(){ if(imapLabel)imapLabel.classList.remove('on'); });
+  });
+</script>
 </body>
 </html>

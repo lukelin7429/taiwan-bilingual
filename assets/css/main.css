@@ -243,6 +243,12 @@ a:hover{color:var(--jade);}
 .tw-imap .ic-link:hover .r-central,.tw-imap .ic-link:focus .r-central{fill:#2f8f6c;}
 .tw-imap .ic-link:hover .r-south,.tw-imap .ic-link:focus .r-south{fill:#c89a3f;}
 .tw-imap .ic-link:hover .r-east,.tw-imap .ic-link:focus .r-east{fill:#3f9fb0;}
+/* hover label + speaker (shared by home + /counties/) */
+.map-visual,.imap-visual{position:relative;}
+.imap-label{position:absolute;left:50%;top:6px;transform:translateX(-50%);display:flex;align-items:center;gap:8px;background:var(--jade-deep);color:#fff;font-size:14px;font-weight:600;padding:5px 8px 5px 14px;border-radius:999px;opacity:0;transition:opacity .15s;white-space:nowrap;pointer-events:none;z-index:2;}
+.imap-label.on{opacity:1;pointer-events:auto;}
+.imap-label .say{width:26px;height:26px;font-size:13px;border:1.5px solid rgba(255,255,255,.5);background:rgba(255,255,255,.15);color:#fff;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;}
+.imap-label .say:hover,.imap-label .say.saying{background:#fff;color:var(--jade-deep);}
 
 /* ============ PEOPLE / PARTNERS ============ */
 .people{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;}
