@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Luke Lin · 聯絡林吉祥 | Taiwan Bilingual Hub</title>
+  <meta name="description" content="聯絡林吉祥 Luke Lin，人師教育協會 My Culture Connect。雙語網站、英語教育、國際教育與 AI 教師增能合作。">
+  <meta property="og:title" content="Contact Luke Lin · 聯絡林吉祥">
+  <meta property="og:description" content="人師教育協會 My Culture Connect · 雙語網站、英語教育、國際教育與 AI 教師增能合作。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/luke-lin-profile.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --jade: #008477;
+      --jade-deep: #075f58;
+      --jade-soft: #e7f3ef;
+      --ink: #1f2b2a;
+      --muted: #5f6d69;
+      --line: #d9e4df;
+      --paper: #fbfdfb;
+      --gold: #d79b35;
+      --white: #ffffff;
+      --shadow: 0 24px 70px rgba(31, 43, 42, .14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Lato, "PingFang TC", "Microsoft JhengHei", sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .topbar {
+      background: rgba(255, 255, 255, .92);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(14px);
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .topbar-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      font-weight: 900;
+      letter-spacing: .01em;
+      color: var(--jade-deep);
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 500;
+      margin-top: 2px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .nav a:hover {
+      color: var(--jade-deep);
+    }
+
+    .hero {
+      padding: 72px 0 64px;
+      background:
+        radial-gradient(120% 90% at 95% -15%, var(--jade-soft) 0%, rgba(231, 243, 239, 0) 58%),
+        linear-gradient(180deg, #fff 0%, var(--paper) 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.04fr) minmax(340px, .8fr);
+      gap: 54px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--jade);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      margin: 0 0 18px;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 720px;
+      font-family: "Playfair Display", "PingFang TC", serif;
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 1.02;
+      letter-spacing: 0;
+      color: var(--ink);
+    }
+
+    .zh-title {
+      margin: 18px 0 0;
+      color: var(--jade-deep);
+      font-size: clamp(22px, 3vw, 30px);
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .lead {
+      max-width: 680px;
+      margin: 26px 0 0;
+      color: #3f4f4b;
+      font-size: 20px;
+      line-height: 1.85;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-size: 16px;
+      font-weight: 900;
+      border: 1px solid transparent;
+    }
+
+    .button.primary {
+      background: var(--jade-deep);
+      color: #fff;
+    }
+
+    .button.secondary {
+      background: #fff;
+      color: var(--jade-deep);
+      border-color: var(--line);
+    }
+
+    .photo-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .photo {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: 73% center;
+      display: block;
+    }
+
+    .photo-caption {
+      padding: 20px 22px 22px;
+      border-top: 1px solid var(--line);
+    }
+
+    .photo-caption strong {
+      display: block;
+      color: var(--ink);
+      font-size: 20px;
+      line-height: 1.35;
+    }
+
+    .photo-caption span {
+      display: block;
+      color: var(--muted);
+      font-size: 15px;
+      margin-top: 5px;
+    }
+
+    .section {
+      padding: 64px 0;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, .72fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    .panel {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      box-shadow: 0 12px 40px rgba(31, 43, 42, .07);
+      padding: 30px;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      color: var(--ink);
+      font-size: 28px;
+      line-height: 1.3;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .contact-item {
+      display: grid;
+      grid-template-columns: 112px 1fr;
+      gap: 18px;
+      padding: 17px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .contact-item:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .label {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .value {
+      color: var(--ink);
+      font-size: 18px;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    .value a {
+      color: var(--jade-deep);
+      border-bottom: 1px solid rgba(0, 132, 119, .28);
+    }
+
+    .note {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .work-list {
+      list-style: none;
+      margin: 18px 0 0;
+      padding: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .work-list li {
+      position: relative;
+      padding-left: 25px;
+      color: #40524e;
+      font-size: 17px;
+      line-height: 1.72;
+    }
+
+    .work-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 9px;
+      height: 9px;
+      border-radius: 3px;
+      background: var(--gold);
+    }
+
+    .cta-panel {
+      background: var(--jade-deep);
+      color: #fff;
+      border-color: transparent;
+    }
+
+    .cta-panel h2 {
+      color: #fff;
+    }
+
+    .cta-panel p {
+      color: #dbede8;
+      font-size: 17px;
+      line-height: 1.85;
+      margin: 0 0 22px;
+    }
+
+    .cta-panel .button {
+      width: 100%;
+      background: #fff;
+      color: var(--jade-deep);
+    }
+
+    .footer {
+      padding: 34px 0;
+      background: #fff;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 860px) {
+      .topbar-inner,
+      .nav {
+        align-items: flex-start;
+      }
+
+      .topbar-inner {
+        flex-direction: column;
+        padding: 16px 0;
+      }
+
+      .nav {
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+
+      .hero {
+        padding: 48px 0 46px;
+      }
+
+      .hero-grid,
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-card {
+        max-width: 520px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .wrap {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .contact-item {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
+
+      .panel {
+        padding: 24px 20px;
+      }
+
+      .actions {
+        display: grid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="../">
+        Taiwan Bilingual Hub
+        <small>臺灣雙語資源網</small>
+      </a>
+      <nav class="nav" aria-label="主要導覽">
+        <a href="../">Home</a>
+        <a href="../get-started/">Get Started</a>
+        <a href="mailto:luke@mycultureconnect.org">Email</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Contact · 合作聯絡</p>
+          <h1>Luke Lin</h1>
+          <p class="zh-title">林吉祥｜人師教育協會</p>
+          <p class="lead">
+            歡迎學校與老師聯繫雙語網站、英語教育、國際教育、AI 教師增能與學生口說交流合作。
+            人師教育協會提供學校雙語網站製作服務，協助學校把特色、活動與學習成果整理成可持續累積的英文入口。
+          </p>
+          <div class="actions">
+            <a class="button primary" href="mailto:luke@mycultureconnect.org?subject=學校雙語網站與教育合作諮詢">Email Luke</a>
+            <a class="button secondary" href="../get-started/">學校合作說明</a>
+          </div>
+        </div>
+
+        <figure class="photo-card">
+          <img class="photo" src="assets/luke-lin-profile.jpg" alt="林吉祥 Luke Lin">
+          <figcaption class="photo-caption">
+            <strong>林吉祥 Luke Lin</strong>
+            <span>人師教育協會 My Culture Connect</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap content-grid">
+        <section class="panel">
+          <h2>聯絡資訊</h2>
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="label">Name</div>
+              <div class="value">林吉祥 Luke Lin</div>
+            </div>
+            <div class="contact-item">
+              <div class="label">Organization</div>
+              <div class="value">人師教育協會 My Culture Connect</div>
+            </div>
+            <div class="contact-item">
+              <div class="label">Email</div>
+              <div class="value"><a href="mailto:luke@mycultureconnect.org">luke@mycultureconnect.org</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="label">LINE</div>
+              <div class="value">luke7429</div>
+            </div>
+            <div class="contact-item">
+              <div class="label">中文網站</div>
+              <div class="value"><a href="https://www.twrses.org/">www.twrses.org</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="label">English Site</div>
+              <div class="value"><a href="https://www.mycultureconnect.org/">www.mycultureconnect.org</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="label">合作說明</div>
+              <div class="value"><a href="../get-started/">委託製作雙語網站 — 學校準備指南</a></div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="panel cta-panel">
+          <h2>學校想合作嗎？</h2>
+          <p>
+            若學校希望製作雙語網站，請先確認校長、主任與承辦人員有共識，並成立該校雙語網站 LINE 群組。
+            接著依合作說明整理校徽、照片、校長資料、學校特色、新聞與正式英文校名。
+          </p>
+          <a class="button" href="../get-started/">查看合作流程</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="wrap">
+        <section class="panel">
+          <h2>合作方向</h2>
+          <ul class="work-list">
+            <li>協助學校建立雙語網站，呈現校園特色、活動紀錄與學生學習成果。</li>
+            <li>推動英語、雙語與國際教育，讓學生有更多真實溝通與接待外賓的機會。</li>
+            <li>提供免費英文學習資源，並協助老師運用 AI 製作教材、網站與課堂活動。</li>
+            <li>串連國際志工、實習老師、海外中文學校與臺灣學校，創造可持續的學習連結。</li>
+          </ul>
+          <p class="note">
+            人師教育協會提供學校雙語網站製作服務，秉持義務與免費原則。學校端需要提供資料、確認授權與建立明確窗口，合作才會順利。
+          </p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      Taiwan Bilingual Hub · 臺灣雙語資源網 · My Culture Connect
+    </div>
+  </footer>
+</body>
+</html>
