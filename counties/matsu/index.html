@@ -3,17 +3,67 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Matsu (Lienchiang) 連江縣・馬祖 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Matsu (Lienchiang) (連江縣・馬祖) — landmarks, food and culture, and how to say it in English. 雲霧繚繞的島群,以夢幻「藍眼淚」與閩東石頭聚落聞名。">
-<meta property="og:title" content="Matsu (Lienchiang) 連江縣・馬祖 · Taiwan Bilingual Hub">
+<title>Matsu 連江縣・馬祖 · Counties — Taiwan Bilingual Hub</title>
+<meta name="description" content="Matsu / Lienchiang County (連江縣・馬祖) — remote islands off Fuzhou with a distinct Fuzhou-dialect culture, named for the goddess Mazu, famous for the 'Blue Tears' bioluminescence, Eastern-Fujian stone villages and Cold War tunnels. Its history, landmarks, culture, food, and how to say it in English. 馬祖的深度文化介紹。">
+<meta property="og:title" content="Matsu 連江縣・馬祖 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Matsu = island / violet) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#352d3a;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#592a66);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#8a4d9a);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#8a4d9a);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#592a66);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#f3e9f6);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#592a66);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#352d3a;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#592a66);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#8a4d9a);background:var(--cc-soft,#f3e9f6);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#8a4d9a);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#592a66);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,72 +77,199 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-island">
   <div class="wrap">
     <div class="cty-region">Outlying Islands · 離島</div>
     <div class="cty-name">
-      <h1>Matsu (Lienchiang)</h1>
+      <h1>Matsu</h1>
       <span class="zh">連江縣・馬祖</span>
-      <button class="say" data-say="Matsu" aria-label="Hear Matsu in English">🔊</button>
+      <button class="say" data-say="Matsu, Lienchiang County" aria-label="Hear Matsu in English">🔊</button>
     </div>
-    <p class="cty-pos">A misty cluster of islands famous for glowing &#x27;blue tears&#x27; seas and stone villages in eastern-Fujian style.</p>
-    <p class="cty-pos-zh">雲霧繚繞的島群,以夢幻「藍眼淚」與閩東石頭聚落聞名。</p>
+    <p class="cty-pos">Remote islands off Fuzhou — named for the goddess Mazu, with a Fuzhou-dialect culture all their own, the glowing "Blue Tears," stone villages and Cold War tunnels.</p>
+    <p class="cty-pos-zh">福州外海的偏遠島嶼——以女神媽祖命名,有獨樹一格的福州話文化、發光的「藍眼淚」、石頭聚落與冷戰坑道。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-island">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>The Fuzhou islands of the goddess</h2></div>
+    <div class="narr">
+      <p>The Matsu Islands are officially <strong>Lienchiang County (連江縣)</strong>, the smallest and most remote county of Taiwan (the ROC). The archipelago does not sit near Taiwan at all — it lies scattered off the mouth of the Min River, just a few kilometers from <strong>Fuzhou</strong> on the coast of mainland China. It is the only county in Taiwan whose dominant language and culture are <strong>Eastern Min / Fuzhou-dialect (馬祖話／閩東語)</strong> — not the Hokkien spoken across most of Taiwan. Culturally and linguistically, Matsu belongs to the Fuzhou world of northeastern Fujian.</p>
+      <p class="zh">馬祖列島正式名稱為<strong>連江縣</strong>,是台灣(中華民國)面積最小、位置最偏遠的縣。這片群島並不靠近台灣本島,而是散布在閩江口外,距離大陸海岸的<strong>福州</strong>僅數公里。它是台灣唯一以<strong>閩東語(馬祖話)</strong>為主流語言與文化的縣——而非台灣多數地區所說的閩南語。在文化與語言上,馬祖屬於閩東北的福州文化圈。</p>
+      <p>The name "Matsu" comes from the sea-goddess <strong>Mazu (媽祖)</strong>, patron of fishermen. Legend says that when the young Lin Moniang (Mazu's mortal name) drowned trying to save her shipwrecked father, her body drifted ashore on the island now called <strong>Nangan (南竿)</strong>. Villagers buried her there, and the Nangan Tianhou Temple is said to enshrine her tomb — the only Mazu temple in the world claimed to hold her body. The islands and the goddess share the same name.</p>
+      <p class="zh">「馬祖」之名來自海上女神<strong>媽祖</strong>,漁民的守護神。傳說年輕的林默娘(媽祖的俗名)為救遇難父親而溺水,遺體漂流上岸於今日的<strong>南竿</strong>島。村民將她安葬於此,南竿天后宮據說即供奉其衣冠塚——是世上唯一相傳藏有媽祖遺體的廟宇。島與神共用同一個名字。</p>
+      <p>For most of the twentieth century, Matsu was a sealed military frontline. After 1949, these tiny islands became one of the closest ROC outposts to the mainland, and from 1956 they lived under the <strong>Warzone Administration (戰地政務)</strong> — direct military rule — alongside Kinmen. Soldiers honeycombed the granite hills with hand-dug tunnels and carved slogans into the rock; military rule was finally lifted on <strong>7 November 1992</strong>. Today Matsu has reinvented itself around tourism — the <strong>"Blue Tears"</strong> bioluminescence, the Cold War tunnels and the photogenic Eastern-Fujian stone villages — though thick spring fog still routinely grounds its flights and ferries.</p>
+      <p class="zh">二十世紀大半時間,馬祖是封鎖的軍事前線。1949 年後,這些小島成為中華民國最接近大陸的前哨之一,自 1956 年起與金門一同實施<strong>戰地政務</strong>——軍事直接統治。官兵在花崗岩山體中徒手鑿出坑道、在岩壁刻下標語;軍管最終於 <strong>1992 年 11 月 7 日</strong>解除。如今馬祖圍繞觀光重新定位——<strong>「藍眼淚」</strong>生物螢光、冷戰坑道與上鏡的閩東石頭聚落——儘管春季濃霧仍經常使航班與渡輪停擺。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Matsu</h2></div>
+    <div class="lmk cc-island">
+      <div class="lmk-item">
+        <h3>Beihai Tunnel<span class="zh">北海坑道</span><button class="say sm" data-say="Beihai Tunnel" aria-label="Hear">🔊</button></h3>
+        <p>A vast "井"-shaped <strong>sea tunnel hand-dug by soldiers</strong> in the late 1960s to hide gunboats — about 640 m of waterways cut straight into granite. Today visitors paddle through it by sampan or kayak, and on summer nights it is one of the best places to see the Blue Tears glow.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>The "Blue Tears"<span class="zh">藍眼淚</span><button class="say sm" data-say="The Blue Tears" aria-label="Hear">🔊</button></h3>
+        <p>Matsu's signature natural wonder — a <strong>glowing blue light</strong> in the night sea caused by bioluminescent plankton that flash when disturbed by waves or oars. Seasonal, best seen roughly April to June, and never guaranteed — a matter of luck and conditions.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Qinbi Village<span class="zh">芹壁聚落</span><button class="say sm" data-say="Qinbi Village" aria-label="Hear">🔊</button></h3>
+        <p>The most iconic Eastern-Fujian <strong>stone village</strong> in Matsu, its granite houses stacked up a hillside above a turquoise bay on Beigan — nicknamed the "Mediterranean of Matsu." Once a fishing community, it now holds homestays, cafés and galleries among the old stone walls.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Iron Fort<span class="zh">鐵堡</span><button class="say sm" data-say="The Iron Fort" aria-label="Hear">🔊</button></h3>
+        <p>A tiny coastal fortress carved directly into a solitary lump of seaside rock, complete with gun ports, sleeping quarters and even kennels for guard dogs — a vivid sign of how thoroughly the islands were fortified during the Cold War.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Nangan Tianhou Temple &amp; Mazu Statue<span class="zh">馬祖天后宮・媽祖巨神像</span><button class="say sm" data-say="Nangan Tianhou Temple and the giant Mazu statue" aria-label="Hear">🔊</button></h3>
+        <p>The most important temple in Matsu, said to enshrine <strong>Mazu's tomb</strong>. On the hill above stands the Mazu statue, about 28.8 m tall — a height chosen to match the county's then-measured land area of 28.8 km² — built in 2009 from 365 granite blocks.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Dahan Stronghold<span class="zh">大漢據點</span><button class="say sm" data-say="Dahan Stronghold" aria-label="Hear">🔊</button></h3>
+        <p>A three-level coastal <strong>tunnel-fort</strong> blasted into the Nangan cliffs in 1975–76, with a roughly 430 m tunnel network, gun positions facing the sea, and a command level inside the rock. It lies near the Beihai Tunnel along the Tieban Coast.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Dongyong Lighthouse (Dongyin)<span class="zh">東湧燈塔(東引)</span><button class="say sm" data-say="Dongyong Lighthouse" aria-label="Hear">🔊</button></h3>
+        <p>A white <strong>British-built lighthouse</strong> on Dongyin's eastern tip, completed in 1904 in late-Victorian English style. About 14 m tall, it was the first lighthouse on the China coast to use an incandescent gas mantle, and is now a national historic site.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Dongquan Lighthouse (Dongju)<span class="zh">東犬燈塔(東莒)</span><button class="say sm" data-say="Dongquan Lighthouse" aria-label="Hear">🔊</button></h3>
+        <p>Built by the British in 1872 to guide ships to the newly opened treaty port of Fuzhou, this is the <strong>first granite lighthouse in Taiwan</strong>, about 19.5 m tall — a designated historic monument on Dongju Island.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Dapu Stone Inscription (Dongju)<span class="zh">大埔石刻(東莒)</span><button class="say sm" data-say="The Dapu Stone Inscription" aria-label="Hear">🔊</button></h3>
+        <p>A 41-character cliff inscription, the oldest and largest in Matsu. It commemorates the Ming general Shen Yourong, who in 1617 captured 69 Japanese pirates on this island without losing a single soldier; carved in 1630 and rediscovered by soldiers in 1953.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Andong Tunnel (Dongyin)<span class="zh">安東坑道(東引)</span><button class="say sm" data-say="Andong Tunnel" aria-label="Hear">🔊</button></h3>
+        <p>One of the most demanding military tunnels to visit in Matsu — a long, steep underground complex dug into Dongyin's hills, with chambers, gun positions and openings that frame dramatic sea views.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>A Fuzhou world of stone and faith</h2>
+      <p>Matsu's culture is unlike anywhere else in Taiwan — Fuzhou in language, stone in its houses, and the goddess Mazu in its very name.</p></div>
+    <div class="ppl cc-island">
+      <div class="ppl-card">
+        <h3>🏘️ Fuzhou culture &amp; stone houses · 福州文化與石頭屋</h3>
+        <p>Matsu's living language is <strong>Matsu dialect (馬祖話)</strong>, a form of Eastern Min / Fuzhou speech mutually unintelligible with Taiwan's Hokkien — making Matsu culturally tied to Fuzhou, not the rest of Taiwan. Traditional <strong>Mindong stone houses</strong> are built of yellow granite, with small high windows (against wind and pirates), roof tiles weighted down with stones, and flame-shaped "fire-sealing" gabled walls (封火山牆).</p>
+      </div>
+      <div class="ppl-card">
+        <h3>🪔 Mazu faith &amp; the Baimei procession · 媽祖信仰與擺暝</h3>
+        <p>The islands are named for the goddess <strong>Mazu</strong>, and Nangan's Tianhou Temple is uniquely said to hold her tomb. The islands' signature festival is the <strong>Baimei (擺暝)</strong> Lunar New Year deity-procession — nights of swaying wind-lanterns and "carrying the gods" (扛乩) — a folk tradition found only in Matsu, drawing on its Fuzhou roots.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE / HERITAGE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">People &amp; Heritage · 人物與傳承</div><h2>A goddess, generals and a tiny community</h2></div>
+    <div class="ppl cc-island">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>The goddess Mazu 媽祖（林默娘）</h3>
+        <div class="yr">the islands' namesake</div>
+        <p>Matsu is genuinely tiny — its total population is only around 14,000, the smallest of any county in Taiwan — so its most meaningful "names" belong to heritage. Foremost is the sea-goddess <strong>Mazu (Lin Moniang)</strong>, for whom the islands are named and whose legendary tomb lies on Nangan.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Generals Shen Yourong &amp; Qi Jiguang 沈有容與戚繼光</h3>
+        <div class="yr">Ming defenders of the coast</div>
+        <p>The Ming commander <strong>Shen Yourong</strong> is commemorated in the Dapu Stone Inscription on Dongju for his 1617 victory over pirates, and the great Ming general <strong>Qi Jiguang</strong> gave his name to the islands' "Matsu burger," the Jiguang flatbread — historical figures woven into Matsu's stone and food.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Seasons · 節慶與時令</div><h2>When Matsu comes alive</h2></div>
+    <div class="lmk cc-island">
+      <div class="lmk-item">
+        <h3>Baimei Lantern Festival<span class="zh">擺暝文化祭</span></h3>
+        <p>Matsu's signature festival, around the Lunar New Year and Lantern Festival. Originating in the Fuzhou region, it features nights of swaying wind-lanterns and deity processions; in Beigan's Qiaozi and Jinsha, palanquin-bearers perform a shaking "carrying the gods" dance. Registered as a national folk custom in 2019.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Blue Tears Season<span class="zh">藍眼淚季</span></h3>
+        <p>Roughly April to June — not a festival but the key natural season that now anchors Matsu tourism, when the dark sea glows blue at the touch of an oar.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Mazu Faith Events<span class="zh">媽祖信俗</span></h3>
+        <p>Pilgrimage and birthday celebrations centered on the Nangan Tianhou Temple, honoring the goddess for whom the islands are named.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Island &amp; Sporting Events<span class="zh">島嶼與運動賽事</span></h3>
+        <p>Matsu hosts marathon and fishing-season events tied to its island calendar — drawing visitors out to the far northern outpost of Dongyin and the stone villages of Beigan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>Rice wine, red lees and a "Matsu burger"</h2>
+      <p>Matsu's kitchen is pure Fuzhou — rice wine in everything, red wine-lees for color, and fish turned into noodles.</p></div>
+    <div class="food cc-island">
+      <div class="food-item"><span class="em">🍶</span><div><h4>Matsu laojiu <span class="zh">馬祖老酒</span></h4><p>Amber glutinous-rice wine fermented with red yeast — the soul of Matsu cooking, used in laojiu noodle soup and warming laojiu chicken and egg.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🥃</span><div><h4>Matsu kaoliang <span class="zh">馬祖高粱</span></h4><p>Strong sorghum liquor, aged in the constant cool of Tunnel 88 (八八坑道), a former military tunnel now used by the Matsu Distillery to store its spirits.</p><span class="town">Nangan 南竿</span></div></div>
+      <div class="food-item"><span class="em">🔴</span><div><h4>Red-lees cooking <span class="zh">紅糟料理</span></h4><p>Fuzhou-style dishes cooked with red wine-lees — the residue of red-yeast rice wine — giving a savory-sweet flavor and red color, as in red-lees chicken and eel.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🍥</span><div><h4>Fish noodles <span class="zh">魚麵</span></h4><p>A Matsu specialty — noodles made by mixing pounded fish paste with a little flour, then drying it; born from the need to preserve surplus catch.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🍔</span><div><h4>Jiguang bread ("Matsu burger") <span class="zh">繼光餅(馬祖漢堡)</span></h4><p>A round sesame flatbread named after Ming general Qi Jiguang, who strung it on cords as marching rations — today often split and filled with egg or pork.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🥣</span><div><h4>Dingbian gu <span class="zh">鼎邊糊</span></h4><p>A Fuzhou-style rice-batter dish, the batter cooked along the rim of a hot wok into soft sheets served in a savory soup.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🐚</span><div><h4>Mussels &amp; goose barnacles <span class="zh">淡菜與佛手</span></h4><p>Especially on Dongyin — large mussels and the prized "Buddha's hand" goose barnacles, prised from the wave-battered rocks.</p><span class="town">Dongyin 東引</span></div></div>
+      <div class="food-item"><span class="em">🐟</span><div><h4>Yellow croaker &amp; seafood <span class="zh">黃魚與海鮮</span></h4><p>Yellow croaker and other fresh catch are island staples of these Fuzhou-facing fishing waters.</p><span class="town">Countywide 全縣</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Matsu is known for · 馬祖的招牌</div><h2>Blue tears, stone villages, Fuzhou soul</h2></div>
+    <div class="kf cc-island">
+      <div class="kf-item"><span class="em">💧</span><h4>The "Blue Tears" <span class="zh">藍眼淚</span></h4><p>The bioluminescent glow that lights the night sea in spring and summer.</p></div>
+      <div class="kf-item"><span class="em">⛏️</span><h4>Cold War tunnels <span class="zh">冷戰坑道</span></h4><p>The Beihai Tunnel and a battlefield of hand-dug forts and slogans.</p></div>
+      <div class="kf-item"><span class="em">🏘️</span><h4>Stone villages <span class="zh">石頭聚落</span></h4><p>Qinbi and the Eastern-Fujian granite villages above the sea.</p></div>
+      <div class="kf-item"><span class="em">🗣️</span><h4>Fuzhou-dialect culture <span class="zh">福州話文化</span></h4><p>The only part of Taiwan where the Fuzhou dialect is spoken.</p></div>
+      <div class="kf-item"><span class="em">🙏</span><h4>The goddess Mazu <span class="zh">媽祖</span></h4><p>The islands' namesake, her temple and tomb and giant statue on Nangan.</p></div>
+      <div class="kf-item"><span class="em">🍶</span><h4>Laojiu &amp; Fuzhou food <span class="zh">老酒與福州菜</span></h4><p>Rice wine, red-lees cooking, fish noodles and the Jiguang "burger."</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-island" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Matsu to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹馬祖,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Matsu." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Matsu.<span class="zh">我來自連江縣・馬祖。</span></span></li>
-        <li><button class="say sm" data-say="Matsu is in Outlying Islands." aria-label="Hear sentence">🔊</button><span class="en">Matsu is in Outlying Islands.<span class="zh">連江縣・馬祖在臺灣離島。</span></span></li>
-        <li><button class="say sm" data-say="Matsu is famous for Blue Tears." aria-label="Hear sentence">🔊</button><span class="en">Matsu is famous for Blue Tears.<span class="zh">連江縣・馬祖以藍眼淚聞名。</span></span></li>
+        <li><button class="say sm" data-say="Matsu, officially Lienchiang County, is a cluster of small islands off the coast of Fuzhou in mainland China, and it's the only part of Taiwan where people speak the Fuzhou dialect." aria-label="Hear">🔊</button><span class="en">Matsu, officially Lienchiang County, is a cluster of small islands off the coast of Fuzhou in mainland China — and it's the only part of Taiwan where people speak the Fuzhou dialect.<span class="zh">馬祖,正式名稱連江縣,是中國大陸福州外海的一群小島——也是台灣唯一說福州話的地方。</span></span></li>
+        <li><button class="say sm" data-say="The islands are even named after the sea-goddess Mazu, whose legendary tomb is said to lie on the island of Nangan." aria-label="Hear">🔊</button><span class="en">The islands are even named after the sea-goddess Mazu, whose legendary tomb is said to lie on the island of Nangan.<span class="zh">這些島嶼甚至是以海上女神媽祖命名的,相傳她的衣冠塚就在南竿島上。</span></span></li>
+        <li><button class="say sm" data-say="Matsu is famous for the Blue Tears, a glowing blue light in the sea caused by tiny bioluminescent plankton, best seen on spring and summer nights." aria-label="Hear">🔊</button><span class="en">Matsu is famous for the "Blue Tears" — a glowing blue light in the sea caused by tiny bioluminescent plankton, best seen on spring and summer nights.<span class="zh">馬祖以「藍眼淚」聞名——那是海中由微小發光浮游生物造成的藍色螢光,在春夏夜晚最容易看見。</span></span></li>
+        <li><button class="say sm" data-say="Don't miss Qinbi, a beautiful old stone village of granite houses climbing a hillside above the sea, which people call the Mediterranean of Matsu." aria-label="Hear">🔊</button><span class="en">Don't miss Qinbi, a beautiful old stone village of granite houses climbing a hillside above the sea, which people call "the Mediterranean of Matsu."<span class="zh">別錯過芹壁,一座美麗的花崗岩石頭老聚落,順著山坡層層疊向大海——人們稱它為「馬祖地中海」。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Blue Tears<button class="say sm" data-say="Blue Tears" aria-label="Hear Blue Tears">🔊</button></h3>
-          <div class="zh">藍眼淚</div>
-          <p>A magical natural glow that lights up the night sea with blue light.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Qinbi Village<button class="say sm" data-say="Qinbi Village" aria-label="Hear Qinbi Village">🔊</button></h3>
-          <div class="zh">芹壁聚落</div>
-          <p>A hillside village of granite houses — the best-preserved eastern-Fujian architecture.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Tunnels &amp; Lighthouses<button class="say sm" data-say="Tunnels &amp; Lighthouses" aria-label="Hear Tunnels &amp; Lighthouses">🔊</button></h3>
-          <div class="zh">坑道與燈塔</div>
-          <p>Old military tunnels and historic lighthouses dot the coastlines.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Outer Islands<button class="say sm" data-say="Outer Islands" aria-label="Hear Outer Islands">🔊</button></h3>
-          <div class="zh">東莒與大坵</div>
-          <p>Quiet outer islands known for scenery and wild sika deer.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-island">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Red-yeast (hongzao) dishes <button class="say sm" data-say="Red-yeast dishes" aria-label="Hear food name">🔊</button> <span class="zh">· 紅糟料理</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:連江縣政府、馬祖國家風景區管理處、文化部、維基百科等公開資料整理。兩岸與軍事史採中性、事實陳述。</p>
     <div class="cty-nav">
       <a href="/counties/kinmen/">← Kinmen</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +285,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>

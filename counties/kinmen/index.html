@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Kinmen 金門縣 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Kinmen (金門縣) — landmarks, food and culture, and how to say it in English. 充滿戰地史蹟的前線島嶼,閩南古厝聚落與聞名的高粱酒。">
+<meta name="description" content="Kinmen County (金門縣) — the islands just off Xiamen, a Cold War frontline turned battlefield national park, famous for wind-lion-gods, preserved Fujian villages and overseas-Chinese mansions, kaoliang liquor and steel knives from artillery shells. Its history, landmarks, culture, food, and how to say it in English. 金門的深度文化介紹。">
 <meta property="og:title" content="Kinmen 金門縣 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Kinmen = island / violet) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#352d3a;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#592a66);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#8a4d9a);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#8a4d9a);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#592a66);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#f3e9f6);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#592a66);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#352d3a;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#592a66);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#8a4d9a);background:var(--cc-soft,#f3e9f6);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#8a4d9a);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#592a66);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,72 +77,199 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-island">
   <div class="wrap">
     <div class="cty-region">Outlying Islands · 離島</div>
     <div class="cty-name">
       <h1>Kinmen</h1>
       <span class="zh">金門縣</span>
-      <button class="say" data-say="Kinmen" aria-label="Hear Kinmen in English">🔊</button>
+      <button class="say" data-say="Kinmen County" aria-label="Hear Kinmen in English">🔊</button>
     </div>
-    <p class="cty-pos">A frontline island steeped in battlefield history, traditional Min-style villages and famous sorghum liquor.</p>
-    <p class="cty-pos-zh">充滿戰地史蹟的前線島嶼,閩南古厝聚落與聞名的高粱酒。</p>
+    <p class="cty-pos">Islands just off mainland China — a Cold War frontline turned battlefield park, of wind-lion-gods, overseas-Chinese mansions, kaoliang liquor and knives forged from artillery shells.</p>
+    <p class="cty-pos-zh">緊鄰中國大陸的島嶼——昔日冷戰前線、今日戰地公園,有風獅爺、僑鄉洋樓、高粱酒,與用砲彈鍛造的鋼刀。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-island">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>The frontline island of emigrants</h2></div>
+    <div class="narr">
+      <p>Kinmen (金門, "Golden Gate") is a county of Taiwan (the ROC) made up of islands that sit astonishingly close to mainland China. At its nearest point — Mashan — Kinmen lies only about <strong>2 kilometers from Xiamen</strong> in Fujian Province, yet the main island of Taiwan is about 187 km away across the strait. This geography is the key to Kinmen: it is far closer to the mainland than to the island it belongs to. Settled by Han Chinese as early as the 4th century, it was fortified under the Ming in 1387 and named "Golden Gate" — a stronghold guarding the sea gate of southeastern China. In the 1600s the Ming-loyalist hero <strong>Koxinga</strong> used Kinmen as a naval base against the Qing.</p>
+      <p class="zh">金門(意為「黃金之門」)是台灣(中華民國)的一個縣,由一群極其靠近中國大陸的島嶼組成。在最近的一點——馬山——金門距離福建<strong>廈門僅約 2 公里</strong>,但隔著海峽,與台灣本島卻相距約 187 公里。這樣的地理位置是理解金門的關鍵:它離大陸遠比離自己所屬的島嶼近得多。早在 4 世紀便有漢人移居,明代於 1387 年設防、命名「金門」——雄鎮閩東南的海門。1600 年代,明朝遺臣英雄<strong>鄭成功</strong>以金門為水師基地對抗清朝。</p>
+      <p>From the 19th century, Kinmen became a great "home village of overseas Chinese" (<strong>僑鄉, qiaoxiang</strong>). With farmland poor, large numbers of Kinmenese emigrated to Southeast Asia — Singapore, Malaysia, Indonesia and beyond. Those who prospered sent money home, and in the 1920s–30s this funded a boom in ornate <strong>"yanglou" (洋樓)</strong> — Western-Fujian fusion mansions. Today, nearly 200,000 Singaporeans trace their roots to Kinmen.</p>
+      <p class="zh">19 世紀起,金門成為著名的<strong>「僑鄉」</strong>。由於耕地貧瘠,大批金門人遠渡南洋——新加坡、馬來西亞、印尼等地。致富者匯款回鄉,於 1920、30 年代催生了華麗<strong>「洋樓」</strong>的興建熱潮——中西合璧的宅邸。如今,將近 20 萬名新加坡人的祖籍可追溯至金門。</p>
+      <p>History turned Kinmen into a Cold War front line. In the <strong>Battle of Guningtou (古寧頭戰役, 1949)</strong>, ROC forces repelled a Communist amphibious landing. Then came the <strong>August 23 Artillery Bombardment (八二三砲戰, 1958)</strong>, the Second Taiwan Strait Crisis, when the People's Liberation Army shelled the tiny island with hundreds of thousands of rounds. For decades Kinmen lived as a fortified garrison under martial law, riddled with granite tunnels and bunkers, until military rule was lifted in <strong>1992</strong>. In 1995 the islands became Kinmen National Park — Taiwan's only national park built around battlefield and cultural heritage — and in 2001 the "mini three links" ferry reopened to Xiamen.</p>
+      <p class="zh">歷史把金門推上了冷戰最前線。<strong>古寧頭戰役(1949)</strong>中,國軍擊退共軍的兩棲登陸。接著是<strong>八二三砲戰(1958)</strong>,第二次台海危機,解放軍對這座小島發射數十萬發砲彈。數十年間,金門以戍守要塞之姿生活在戒嚴之下,遍布花崗岩坑道與碉堡,直到 <strong>1992 年</strong>解除軍管。1995 年,這些島嶼成立金門國家公園——台灣唯一以戰地與文化遺產為主軸的國家公園——2001 年「小三通」渡輪重新開通往廈門。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Kinmen</h2></div>
+    <div class="lmk cc-island">
+      <div class="lmk-item">
+        <h3>Kinmen National Park<span class="zh">金門國家公園</span><button class="say sm" data-say="Kinmen National Park" aria-label="Hear">🔊</button></h3>
+        <p>Established in 1995, this is <strong>Taiwan's only national park centered on battlefield and cultural heritage</strong> rather than pure wilderness, protecting historic Fujian villages, overseas-Chinese mansions, war sites, tunnels and wildlife.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Zhaishan Tunnel<span class="zh">翟山坑道</span><button class="say sm" data-say="Zhaishan Tunnel" aria-label="Hear">🔊</button></h3>
+        <p>An A-shaped tunnel carved by hand into solid granite (1961–1966) to shelter military supply boats, its waterway about 357 m long. With the boats long gone, its remarkable <strong>acoustics</strong> now host the annual Kinmen Tunnel Music Festival.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Shuitou Village &amp; Deyue Mansion<span class="zh">水頭聚落・得月樓</span><button class="say sm" data-say="Shuitou Village and Deyue Mansion" aria-label="Hear">🔊</button></h3>
+        <p>One of Kinmen's best-preserved <strong>qiaoxiang villages</strong>, full of Western-Fujian "yanglou" mansions built with overseas remittances in the 1920s–30s. Its icon is the Deyue Tower, a tall defensive gun tower built to guard against bandits and pirates.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Qionglin Village &amp; Combat Tunnels<span class="zh">瓊林聚落・戰鬥坑道</span><button class="say sm" data-say="Qionglin Village and Combat Tunnels" aria-label="Hear">🔊</button></h3>
+        <p>A historic Minnan clan village whose civil-defense tunnel network — about 1,355 m with a dozen entrances, an underground command post and bunkers — is the largest in Kinmen, earning Qionglin its nickname <strong>"Combat Village."</strong></p>
+      </div>
+      <div class="lmk-item">
+        <h3>Guningtou Battle Museum<span class="zh">古寧頭戰史館</span><button class="say sm" data-say="The Guningtou Battle Museum" aria-label="Hear">🔊</button></h3>
+        <p>Opened in 1984 on the site of the 1949 battle, this museum recounts the Battle of Guningtou through dioramas, weapons and oil paintings, marking the defensive engagement that shaped Kinmen's fate.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>August 23 Artillery Battle Museum<span class="zh">八二三戰史館</span><button class="say sm" data-say="The August 23 Artillery Battle Museum" aria-label="Hear">🔊</button></h3>
+        <p>Commemorates the 1958 bombardment (the Second Taiwan Strait Crisis), displaying artillery, photographs and records of the hundreds of thousands of shells that fell on the islands.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Mashan Observation Post<span class="zh">馬山觀測站</span><button class="say sm" data-say="Mashan Observation Post" aria-label="Hear">🔊</button></h3>
+        <p>Kinmen's <strong>closest point to mainland China</strong>, on the northeast tip. Through observation binoculars you can see Xiamen across water only about 1,800 m wide at low tide; it once broadcast appeals to PLA soldiers.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Juguang Tower<span class="zh">莒光樓</span><button class="say sm" data-say="Juguang Tower" aria-label="Hear">🔊</button></h3>
+        <p>A palace-style landmark tower built 1952–53 to honor the soldiers who fell at Guningtou. With its emerald-tiled roof, it is one of Kinmen's most photographed buildings and long featured on ROC stamps.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Wentai Pagoda<span class="zh">文臺寶塔</span><button class="say sm" data-say="Wentai Pagoda" aria-label="Hear">🔊</button></h3>
+        <p>A Ming-era granite pagoda built in 1387, one of Kinmen's <strong>oldest structures</strong>, originally serving as a navigational landmark for ships and as part of coastal defense against pirates.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Wind Lion Gods<span class="zh">風獅爺</span><button class="say sm" data-say="The Wind Lion Gods" aria-label="Hear">🔊</button></h3>
+        <p>Roughly 100 carved <strong>stone lion-deities</strong> stand guard across Kinmen's villages, facing the fierce winds to ward off bad luck and evil. Some are weathered and fierce, others freshly painted in bright colors — the island's most beloved icon.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>Wind lions, mansions and shell-steel</h2>
+      <p>Kinmen's culture is unlike anywhere else in Taiwan — frozen by decades of military rule into a living museum of Fujian villages, and forged by war into a craft of peace.</p></div>
+    <div class="ppl cc-island">
+      <div class="ppl-card">
+        <h3>🦁 Wind-lion-gods &amp; Fujian villages · 風獅爺與閩南聚落</h3>
+        <p>The <strong>wind-lion-god (風獅爺)</strong> is Kinmen's most beloved icon — about 100 stone lion deities placed to ward off the island's fierce monsoon winds and bad luck. Because Kinmen spent decades frozen under military rule, it preserves some of the <strong>finest traditional Southern Min villages</strong> anywhere — swallowtail-roofed clan houses — alongside the 1920s–30s overseas-Chinese "yanglou" mansions.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>🍶 Kaoliang &amp; steel knives · 高粱酒與鋼刀</h3>
+        <p><strong>Kinmen Kaoliang</strong> is Taiwan's most famous spirit — a clear, potent sorghum liquor made by the state distillery since the 1950s. And in a genuine "swords into plowshares" story, Kinmen smiths forge prized kitchen <strong>knives from the steel of artillery shells</strong> fired during the bombardments — a single shell, it's said, can yield about 60 knives.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">People &amp; Heritage · 人物與傳承</div><h2>An island of emigrants and defenders</h2></div>
+    <div class="ppl cc-island">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>The Kinmen diaspora 金門僑民</h3>
+        <div class="yr">a homeland of overseas Chinese</div>
+        <p>Kinmen's greatest "famous people" story is collective: the <strong>qiaoxiang diaspora</strong>. Vast numbers of Kinmenese emigrated to Singapore, Malaysia and across Southeast Asia, where many families rose to wealth and prominence — nearly 200,000 Singaporeans trace their ancestry to these small islands.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Koxinga &amp; the defenders 鄭成功與守軍</h3>
+        <div class="yr">Ming loyalist · Cold War generals</div>
+        <p>The Ming-loyalist hero <strong>Koxinga (Zheng Chenggong)</strong> used Kinmen as a naval base against the Qing in the 1600s, and generations later the island's defenders held the line at Guningtou (1949) and through the 1958 bombardment — the soldiers and townspeople who made Kinmen a frontline that endured.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Heritage · 節慶與文化</div><h2>When Kinmen comes alive</h2></div>
+    <div class="lmk cc-island">
+      <div class="lmk-item">
+        <h3>Wudao City God Procession<span class="zh">浯島迎城隍</span></h3>
+        <p>Kinmen's largest religious festival, held on the 12th day of the 4th lunar month. With over 330 years of history, this grand City God parade is a <strong>nationally designated folk heritage</strong> event, filling Jincheng's old streets with palanquins, performers and temple troupes.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Wind-Lion-God Folk Culture<span class="zh">風獅爺民俗</span></h3>
+        <p>Throughout the year, village temples hold rituals honoring deities and the wind-lion-gods, woven into Kinmen's deep Minnan folk-religion calendar.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Battle Commemorations<span class="zh">古寧頭與八二三紀念</span></h3>
+        <p>Anniversaries of the 1949 Guningtou battle (October) and the 1958 August 23 bombardment are marked with ceremonies honoring veterans and the fallen of the Cold War frontline.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Kaoliang &amp; Tunnel Music<span class="zh">高粱與坑道音樂</span></h3>
+        <p>Kinmen hosts kaoliang-liquor and cultural festivals, and the Zhaishan Tunnel's superb acoustics stage an annual tunnel music festival deep in the granite.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>Liquor, peanut candy and oysters</h2>
+      <p>Kinmen's table is built on its famous sorghum spirit, its peanut candy, and the small sweet oysters of its tidal flats.</p></div>
+    <div class="food cc-island">
+      <div class="food-item"><span class="em">🍶</span><div><h4>Kinmen kaoliang liquor <span class="zh">金門高粱酒</span></h4><p>The signature — a clear, strong sorghum spirit (commonly ~38% to ~58% alcohol), made on the island since the 1950s and Taiwan's most famous liquor.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🥜</span><div><h4>Gongtang peanut candy <span class="zh">貢糖</span></h4><p>A famous souvenir sweet — peanuts pounded with maltose into a flaky, crisp brittle, thanks to Kinmen's high-quality local peanuts.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🦪</span><div><h4>Kinmen oysters <span class="zh">石蚵・蚵仔麵線</span></h4><p>Small intertidal "rock oysters," prized as smaller and sweeter than ordinary oysters, eaten in oyster vermicelli and oyster omelets.</p><span class="town">Coastal flats 潮間帶</span></div></div>
+      <div class="food-item"><span class="em">🥣</span><div><h4>Cantonese-style congee <span class="zh">廣東粥</span></h4><p>A beloved Kinmen breakfast — rice porridge simmered until smooth and soup-like, served with egg, pork, fish or prawn.</p><span class="town">Jincheng 金城</span></div></div>
+      <div class="food-item"><span class="em">🍜</span><div><h4>Hand-made noodles <span class="zh">金門麵線</span></h4><p>Thin, sun-dried hand-pulled noodles, a traditional Kinmen product often served in soups.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🥩</span><div><h4>Kinmen beef <span class="zh">金門牛肉</span></h4><p>Local cattle are fed on the leftover sorghum mash from kaoliang distilling, said to make the beef especially tender; served as beef noodle soup and braised dishes.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🍳</span><div><h4>Oyster omelet &amp; seafood <span class="zh">海蚵煎與海鮮</span></h4><p>Fresh local oysters and seafood feature heavily — the oyster omelet is a classic island snack.</p><span class="town">Coastal villages 沿海聚落</span></div></div>
+      <div class="food-item"><span class="em">🔪</span><div><h4>Shell-steel knives <span class="zh">金門鋼刀</span></h4><p>Not a food, but the table's tool: prized kitchen knives forged from artillery-shell steel — Kinmen's most famous craft souvenir.</p><span class="town">Jincheng 金城</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Kinmen is known for · 金門的招牌</div><h2>Frontline, lions, mansions and liquor</h2></div>
+    <div class="kf cc-island">
+      <div class="kf-item"><span class="em">🎖️</span><h4>Cold War frontline <span class="zh">冷戰前線</span></h4><p>Guningtou, the 823 bombardment, and a battlefield national park.</p></div>
+      <div class="kf-item"><span class="em">📍</span><h4>2 km from the mainland <span class="zh">距大陸 2 公里</span></h4><p>At Mashan you can see Xiamen across a narrow strait.</p></div>
+      <div class="kf-item"><span class="em">🦁</span><h4>Wind-lion-gods <span class="zh">風獅爺</span></h4><p>The carved stone wind-guardians that are the island's icon.</p></div>
+      <div class="kf-item"><span class="em">🏯</span><h4>Fujian villages &amp; mansions <span class="zh">閩南聚落與洋樓</span></h4><p>The best-preserved Fujian settlements and overseas-Chinese "yanglou."</p></div>
+      <div class="kf-item"><span class="em">🍶</span><h4>Kaoliang liquor <span class="zh">高粱酒</span></h4><p>Taiwan's most famous sorghum spirit, distilled here since the 1950s.</p></div>
+      <div class="kf-item"><span class="em">🔪</span><h4>Shell-steel knives <span class="zh">砲彈鋼刀</span></h4><p>Kitchen knives forged from artillery shells, plus gongtang and oysters.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-island" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Kinmen to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹金門,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Kinmen." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Kinmen.<span class="zh">我來自金門縣。</span></span></li>
-        <li><button class="say sm" data-say="Kinmen is in Outlying Islands." aria-label="Hear sentence">🔊</button><span class="en">Kinmen is in Outlying Islands.<span class="zh">金門縣在臺灣離島。</span></span></li>
-        <li><button class="say sm" data-say="Kinmen is famous for Battlefield History." aria-label="Hear sentence">🔊</button><span class="en">Kinmen is famous for Battlefield History.<span class="zh">金門縣以戰地史蹟聞名。</span></span></li>
+        <li><button class="say sm" data-say="Kinmen is a Taiwanese island that sits just about two kilometers off mainland China. You can stand on its shore and see the city of Xiamen across the water." aria-label="Hear">🔊</button><span class="en">Kinmen is a Taiwanese island that sits just about two kilometers off mainland China — you can stand on its shore and see the city of Xiamen across the water.<span class="zh">金門是台灣的一座島嶼,最近處距中國大陸僅約兩公里——你可以站在它的海岸,隔海望見廈門市。</span></span></li>
+        <li><button class="say sm" data-say="It was a Cold War front line: in 1958 the mainland shelled it with hundreds of thousands of artillery rounds, and today the old tunnels and bunkers are part of a battlefield national park." aria-label="Hear">🔊</button><span class="en">It was a Cold War front line: in 1958 the mainland shelled it with hundreds of thousands of artillery rounds, and today the old tunnels and bunkers are part of a battlefield national park.<span class="zh">它曾是冷戰前線:1958 年大陸以數十萬發砲彈轟擊此地,如今那些舊坑道與碉堡都成了戰地國家公園的一部分。</span></span></li>
+        <li><button class="say sm" data-say="Kinmen is famous for its wind-lion-god statues, its beautifully preserved Fujian villages and overseas-Chinese mansions, and its kaoliang sorghum liquor." aria-label="Hear">🔊</button><span class="en">Kinmen is famous for its wind-lion-god statues, its beautifully preserved Fujian villages and overseas-Chinese mansions, and its kaoliang sorghum liquor.<span class="zh">金門以風獅爺石像、保存精美的閩南聚落與僑鄉洋樓,以及高粱酒聞名。</span></span></li>
+        <li><button class="say sm" data-say="One of its most amazing crafts is kitchen knives forged from old artillery shells, a real swords into plowshares story." aria-label="Hear">🔊</button><span class="en">One of its most amazing crafts is kitchen knives forged from old artillery shells — a real "swords into plowshares" story.<span class="zh">它最令人驚嘆的工藝之一,是用昔日砲彈鍛造的菜刀——真正「化干戈為玉帛」的故事。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Battlefield History<button class="say sm" data-say="Battlefield History" aria-label="Hear Battlefield History">🔊</button></h3>
-          <div class="zh">戰地史蹟</div>
-          <p>Tunnels, forts and monuments recall Kinmen&#x27;s Cold War front-line role.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Min-Style Villages<button class="say sm" data-say="Min-Style Villages" aria-label="Hear Min-Style Villages">🔊</button></h3>
-          <div class="zh">閩南聚落</div>
-          <p>Preserved old houses with swallowtail roofs and Baroque facades.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Kaoliang Liquor<button class="say sm" data-say="Kaoliang Liquor" aria-label="Hear Kaoliang Liquor">🔊</button></h3>
-          <div class="zh">高粱酒</div>
-          <p>Taiwan&#x27;s most famous sorghum liquor, distilled from local grain.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Juguang Tower<button class="say sm" data-say="Juguang Tower" aria-label="Hear Juguang Tower">🔊</button></h3>
-          <div class="zh">莒光樓</div>
-          <p>A landmark traditional tower and symbol of the island.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-island">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Gongtang peanut candy <button class="say sm" data-say="Gongtang peanut candy" aria-label="Hear food name">🔊</button> <span class="zh">· 貢糖</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:金門縣政府、金門國家公園管理處、金門酒廠、文化部、維基百科等公開資料整理。兩岸與軍事史採中性、事實陳述。</p>
     <div class="cty-nav">
       <a href="/counties/penghu/">← Penghu</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +285,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>

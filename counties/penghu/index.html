@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Penghu 澎湖縣 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Penghu (澎湖縣) — landmarks, food and culture, and how to say it in English. 由群島組成的海上樂園,黑色玄武岩、白珊瑚沙灘與浪漫雙心石滬。">
+<meta name="description" content="Penghu County (澎湖縣) — the Pescadores archipelago in the Taiwan Strait, famous for columnar basalt, the oldest Mazu temple in Taiwan, the heart-shaped stone weir, summer beaches and fireworks. Its history, landmarks, culture, food, and how to say it in English. 澎湖群島的深度文化介紹。">
 <meta property="og:title" content="Penghu 澎湖縣 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Penghu = island / violet) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#352d3a;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#592a66);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#8a4d9a);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#8a4d9a);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#592a66);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#f3e9f6);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#592a66);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#352d3a;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#592a66);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#8a4d9a);background:var(--cc-soft,#f3e9f6);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#8a4d9a);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#592a66);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,72 +77,199 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-island">
   <div class="wrap">
     <div class="cty-region">Outlying Islands · 離島</div>
     <div class="cty-name">
       <h1>Penghu</h1>
       <span class="zh">澎湖縣</span>
-      <button class="say" data-say="Penghu" aria-label="Hear Penghu in English">🔊</button>
+      <button class="say" data-say="Penghu County" aria-label="Hear Penghu in English">🔊</button>
     </div>
-    <p class="cty-pos">An island archipelago of black basalt cliffs, white coral beaches and the romantic twin-heart stone weir.</p>
-    <p class="cty-pos-zh">由群島組成的海上樂園,黑色玄武岩、白珊瑚沙灘與浪漫雙心石滬。</p>
+    <p class="cty-pos">The Pescadores — an archipelago of around 90 islands in the Taiwan Strait, of black basalt cliffs, the oldest Mazu temple, heart-shaped fish traps and summer fireworks.</p>
+    <p class="cty-pos-zh">「漁夫群島」——台灣海峽中約九十座島嶼的群島,有黑色玄武岩崖、全台最古老的媽祖廟、心形石滬與夏夜花火。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-island">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>The windy archipelago, older than Taiwan</h2></div>
+    <div class="narr">
+      <p>Penghu is Taiwan's only island county, an archipelago of <strong>around 90 islands and islets</strong> scattered across the Taiwan Strait roughly halfway to the Chinese coast. Europeans called the group the <strong>Pescadores ("Fishermen")</strong>, a name given by the Portuguese in the 16th century. The islands are volcanic: their dark cliffs and reefs are made of <strong>columnar basalt</strong>, hexagonal stone pillars formed when ancient lava cooled and cracked — one of the world's richest displays of this geology.</p>
+      <p class="zh">澎湖是台灣唯一的島縣,由<strong>約九十座大小島嶼</strong>組成,散布在台灣海峽、約位於通往大陸海岸的中途。歐洲人稱這片群島為 <strong>Pescadores(漁夫群島)</strong>,是十六世紀葡萄牙人所取的名字。群島屬火山地質:黝黑的海崖與礁岩由<strong>柱狀玄武岩</strong>構成——這是古代熔岩冷卻收縮、裂出的六角石柱,是世界上最豐富的此類地質景觀之一。</p>
+      <p>Remarkably, Penghu was settled by Han Chinese <strong>earlier than Taiwan's main island</strong>. Fishermen and traders from Fujian were active here for centuries, and Magong's <strong>Tianhou (Mazu) Temple — founded in 1604 — is regarded as the oldest Mazu temple in Taiwan</strong>. The islands' strategic position made them a perennial prize: in <strong>1622–1624 the Dutch occupied Penghu</strong>, building a fort, until a Ming fleet forced them out — and the Dutch then withdrew to Tainan to build Fort Zeelandia. The islands were fought over again by the French in 1885 and taken by the Japanese in 1895.</p>
+      <p class="zh">值得注意的是,澎湖的漢人開發<strong>早於台灣本島</strong>。福建的漁民與商人在此活動已有數百年,馬公的<strong>天后宮(媽祖廟)建於 1604 年,被認為是全台最古老的媽祖廟</strong>。其戰略位置使它屢成兵家必爭之地:<strong>1622–1624 年荷蘭人佔領澎湖</strong>、築城,後被明朝艦隊逼退——荷蘭人才轉往台南、建熱蘭遮城。其後法國於 1885 年、日本於 1895 年又先後爭奪此地。</p>
+      <p>Life here has always been shaped by the <strong>wind</strong>. Each winter the fierce northeast monsoon — the "Penghu wind" — howls across the treeless islands, salting the soil. Islanders adapted by building thick-walled homes of <strong>coral stone (咾咕石)</strong> and basalt, and by ringing their vegetable plots with low stone walls (<strong>菜宅</strong>) against the wind. Along the tidal flats they built <strong>stone weirs (石滬)</strong> — curving walls of stacked basalt and coral that trap fish as the tide retreats. For generations Penghu lived from fishing, with heavy out-migration; today the economy leans on summer tourism — beaches, the freshest seafood, and the spectacular international fireworks festival over Magong harbor.</p>
+      <p class="zh">這裡的生活始終被<strong>風</strong>塑造。每年冬天凶猛的東北季風——「澎湖風」——掃過無樹的島嶼、鹽害土壤。居民因應之道,是用<strong>咾咕石</strong>與玄武岩築起厚牆的房子,並在菜園四周砌起低矮石牆(<strong>菜宅</strong>)擋風。潮間帶上他們築起<strong>石滬</strong>——以玄武岩與珊瑚礁石堆疊成的弧形石牆,退潮時將魚困住。世世代代,澎湖靠漁業維生、人口大量外移;如今經濟轉向夏季觀光——海灘、最新鮮的海鮮,以及馬公港上空壯觀的國際海上花火節。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Penghu</h2></div>
+    <div class="lmk cc-island">
+      <div class="lmk-item">
+        <h3>Penghu Tianhou Temple<span class="zh">澎湖天后宮</span><button class="say sm" data-say="Penghu Tianhou Temple" aria-label="Hear">🔊</button></h3>
+        <p><strong>Taiwan's oldest Mazu temple</strong>, dated to 1604, in the heart of Magong. A 1604 granite stele inside — commemorating Ming commander Shen You-rong's demand that the Dutch leave Penghu — is the oldest temple stele in Taiwan.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Twin-Hearts Stone Weir<span class="zh">七美雙心石滬</span><button class="say sm" data-say="The Twin-Hearts Stone Weir" aria-label="Hear">🔊</button></h3>
+        <p>On Qimei Island, the most famous and best-preserved of Penghu's tidal stone weirs, built of basalt and coral into a <strong>double-heart shape</strong> that traps fish at low tide. Now an icon of romance and Penghu's most photographed sight.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Daguoye Columnar Basalt<span class="zh">大菓葉柱狀玄武岩</span><button class="say sm" data-say="Daguoye Columnar Basalt" aria-label="Hear">🔊</button></h3>
+        <p>In Xiyu, a dramatic cliff of <strong>hexagonal basalt columns</strong>, accidentally uncovered during Japanese-era wharf works. After heavy rain, a pool at its base mirrors the pillars for a famous reflection.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Penghu Great Bridge<span class="zh">澎湖跨海大橋</span><button class="say sm" data-say="The Penghu Great Bridge" aria-label="Hear">🔊</button></h3>
+        <p>A 2,494-metre bridge across the Houmen Channel linking Baisha and Xiyu islands. First opened in 1970, it was once billed as the <strong>first sea-crossing bridge in the Far East</strong> and remains a signature Penghu landmark.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Whale Cave (Xiyu)<span class="zh">西嶼鯨魚洞</span><button class="say sm" data-say="The Whale Cave" aria-label="Hear">🔊</button></h3>
+        <p>In Xiaomen Village, a <strong>sea arch</strong> carved by wind and waves from a basalt cliff. Locals thought the eroded rock resembled a whale, giving the cave its name.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Xiyu Western Fort<span class="zh">西嶼西臺</span><button class="say sm" data-say="Xiyu Western Fort" aria-label="Hear">🔊</button></h3>
+        <p>Penghu's largest and best-preserved historic fortress (about 8 hectares), built under Qing official Liu Ming-chuan in the late 1880s after the French attack. Stone-arched gates and a <strong>maze of underground tunnels</strong> remain.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Tongliang Great Banyan<span class="zh">通梁古榕</span><button class="say sm" data-say="The Tongliang Great Banyan" aria-label="Hear">🔊</button></h3>
+        <p>A 300-plus-year-old banyan in front of Bao'an Temple in Tongliang — the oldest banyan on Penghu's main island. Dozens of aerial roots have spread it into a <strong>"mini forest"</strong> over 660 square metres; it is the county tree.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Magong Old Street &amp; Four-Eyed Well<span class="zh">馬公中央老街・四眼井</span><button class="say sm" data-say="Magong Old Street and the Four-Eyed Well" aria-label="Hear">🔊</button></h3>
+        <p>Penghu's oldest street, the first Ming-era settlement in the islands. At its north end is the <strong>Four-Eyed Well</strong>, Penghu's oldest well — a single source capped with a stone slab pierced by four round holes so several people could draw water at once.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Jibei Island &amp; Sand Tail<span class="zh">吉貝嶼・沙尾</span><button class="say sm" data-say="Jibei Island and the Sand Tail" aria-label="Hear">🔊</button></h3>
+        <p>The largest island in Penghu's North Sea, famous for its <strong>Sand Tail</strong> — a long white spit of coral and shell fragments reaching into turquoise shallows, shifting with the seasonal currents — a top spot for swimming and water sports.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Tongpan Island Geopark<span class="zh">桶盤嶼地質公園</span><button class="say sm" data-say="Tongpan Island Geopark" aria-label="Hear">🔊</button></h3>
+        <p>A small island south of Magong, ringed by towering <strong>columnar basalt pillars</strong> (some up to ~30 m). Often called the "Yellowstone of Penghu," it shows the islands' most spectacular basalt jointing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>Stone weirs, coral walls and the wind</h2>
+      <p>Penghu's culture was built stone by stone — fish traps in the tide, coral walls against the wind, and the oldest Mazu temple watching over the sea.</p></div>
+    <div class="ppl cc-island">
+      <div class="ppl-card">
+        <h3>🪨 Stone weirs &amp; coral-stone life · 石滬與咾咕石</h3>
+        <p>Penghu holds the <strong>world's largest concentration of tidal stone fish traps</strong> — over 500, many a century old — a living record of how islanders fished the intertidal zone with only stacked basalt and coral. Traditional homes were built from <strong>coral stone (咾咕石)</strong> and basalt, and vegetable plots ringed with low <strong>cài-zhái (菜宅)</strong> stone walls against the relentless wind and salt spray.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>🙏 Mazu faith &amp; the Penghu wind · 媽祖信仰與澎湖風</h3>
+        <p>As a community living from and at the mercy of the sea, Penghu centered life on <strong>Mazu</strong>, goddess of seafarers; Magong's 1604 Tianhou Temple anchors that faith. And the winter <strong>"Penghu wind"</strong> shaped everything — the thick-walled architecture, the wind-stunted vegetation, the cactus that thrives in salt and sun, and the whole rhythm of island life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Famous People · 澎湖名人</div><h2>The bay of a famous song</h2></div>
+    <div class="ppl cc-island">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Pan An-pang 潘安邦</h3>
+        <div class="yr">1954–2013 · Magong</div>
+        <p>A Taiwanese singer, TV host and actor born in Magong, Penghu. He is forever loved for the 1970s campus-folk song <strong>"Grandma's Penghu Bay" (外婆的澎湖灣)</strong>, which made the islands' scenery iconic in Mandarin pop; his memorial hall stands in Magong's old military-village quarter.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>The stone-weir builders 石滬匠人</h3>
+        <div class="yr">a collective heritage</div>
+        <p>Penghu's truest "famous figures" are collective: the anonymous <strong>stone-weir builders</strong> who shaped 500-plus tidal traps over centuries, the Mazu devotees who built Taiwan's oldest Mazu temple, and the fishing-and-emigrant families whose hard island life seeded communities across Taiwan and overseas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Seasons · 節慶與時令</div><h2>When Penghu comes alive</h2></div>
+    <div class="lmk cc-island">
+      <div class="lmk-item">
+        <h3>International Fireworks Festival<span class="zh">澎湖國際海上花火節</span></h3>
+        <p>Penghu's biggest summer draw — fireworks launched over Magong harbor against the romantic Xiying Rainbow Bridge, on set show-nights across the summer. (The month-span shifts year to year, so check the current schedule.)</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Lantern Festival "Turtle-Praying"<span class="zh">元宵乞龜</span></h3>
+        <p>Penghu's signature Lantern Festival custom: temples display large "turtles" — molded from glutinous rice, or made of rice sacks, gold or coins — and worshippers cast moon-blocks to "borrow" one for blessings, repaying it (often larger) the next year.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Mazu &amp; Temple Events<span class="zh">媽祖與廟會</span></h3>
+        <p>Centered on Magong's 1604 Tianhou Temple and temples across the islands, with processions and sea-blessing rites tied to the fishing calendar.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Summer Beach Season<span class="zh">夏季海灘季</span></h3>
+        <p>From late spring through summer, Penghu's white-sand beaches and clear shallows — Jibei's Sand Tail, Shanshui, Aimen — fill with swimmers and water-sports lovers escaping the heat of the main island.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>The freshest catch and a cactus ice</h2>
+      <p>Penghu's table is the sea's bounty plus a few island-only surprises grown in salt and wind.</p></div>
+    <div class="food cc-island">
+      <div class="food-item"><span class="em">🦞</span><div><h4>Fresh seafood <span class="zh">海鮮</span></h4><p>Penghu is famous for some of Taiwan's freshest, most varied and best-value seafood, straight from the surrounding waters.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🌵</span><div><h4>Prickly-pear cactus ice <span class="zh">仙人掌冰</span></h4><p>Penghu's signature treat — the wild prickly pear grows along the windswept coasts; its tart purple-red fruit becomes a sweet-sour shaved ice or ice cream.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🍵</span><div><h4>Fengru herbal tea <span class="zh">風茹茶</span></h4><p>A chilled herbal tea brewed from "hong-cao," a medicinal herb that grows especially well in Penghu — a local-only refreshment.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🟤</span><div><h4>Brown-sugar cake <span class="zh">黑糖糕</span></h4><p>A soft, dark steamed cake and Penghu's top edible souvenir, with roots in Okinawan influence.</p><span class="town">Magong 馬公</span></div></div>
+      <div class="food-item"><span class="em">🦑</span><div><h4>Squid noodles <span class="zh">小管麵線</span></h4><p>Fresh neritic squid in a clear seafood broth with thick rice noodles — a local staple of the fishing islands.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🎃</span><div><h4>Pumpkin rice noodles <span class="zh">金瓜米粉</span></h4><p>Rice vermicelli with sweet local pumpkin, often with seafood — a Penghu home-style favorite.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🐟</span><div><h4>Fried anchovies <span class="zh">丁香魚</span></h4><p>Tiny local anchovies, fried until crisp with concentrated flavor; also sold dried as a souvenir.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🥜</span><div><h4>Peanut &amp; savory snacks <span class="zh">花生酥・鹹餅</span></h4><p>Penghu peanut crisps and traditional savory crackers are classic gift-box treats from the islands.</p><span class="town">Magong 馬公</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Penghu is known for · 澎湖的招牌</div><h2>Basalt, weirs, beaches and fireworks</h2></div>
+    <div class="kf cc-island">
+      <div class="kf-item"><span class="em">🪨</span><h4>Columnar basalt <span class="zh">柱狀玄武岩</span></h4><p>The Pescadores' world-class hexagonal basalt cliffs and geopark.</p></div>
+      <div class="kf-item"><span class="em">🙏</span><h4>Oldest Mazu temple <span class="zh">最古老媽祖廟</span></h4><p>Magong's Tianhou Temple, founded in 1604.</p></div>
+      <div class="kf-item"><span class="em">💞</span><h4>Heart-shaped stone weir <span class="zh">雙心石滬</span></h4><p>The iconic Qimei fish trap and 500-plus tidal stone weirs.</p></div>
+      <div class="kf-item"><span class="em">🎆</span><h4>Beaches &amp; fireworks <span class="zh">海灘與花火</span></h4><p>Summer white-sand beaches and the International Fireworks Festival.</p></div>
+      <div class="kf-item"><span class="em">🌉</span><h4>Great Bridge &amp; old street <span class="zh">跨海大橋與老街</span></h4><p>The Penghu Great Bridge and Magong's old street and Four-Eyed Well.</p></div>
+      <div class="kf-item"><span class="em">🌵</span><h4>Sea &amp; cactus flavors <span class="zh">海味與仙人掌</span></h4><p>Fresh seafood, prickly-pear ice, brown-sugar cake and herbal tea.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-island" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Penghu to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹澎湖,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Penghu." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Penghu.<span class="zh">我來自澎湖縣。</span></span></li>
-        <li><button class="say sm" data-say="Penghu is in Outlying Islands." aria-label="Hear sentence">🔊</button><span class="en">Penghu is in Outlying Islands.<span class="zh">澎湖縣在臺灣離島。</span></span></li>
-        <li><button class="say sm" data-say="Penghu is famous for Basalt Columns." aria-label="Hear sentence">🔊</button><span class="en">Penghu is famous for Basalt Columns.<span class="zh">澎湖縣以玄武岩聞名。</span></span></li>
+        <li><button class="say sm" data-say="Penghu is Taiwan's only island county, an archipelago of around ninety islands in the Taiwan Strait that Europeans once called the Pescadores, or Fishermen's Islands." aria-label="Hear">🔊</button><span class="en">Penghu is Taiwan's only island county, an archipelago of around 90 islands in the Taiwan Strait that Europeans once called the Pescadores, or "Fishermen's Islands."<span class="zh">澎湖是台灣唯一的島縣——位於台灣海峽、由約九十座島嶼組成的群島,歐洲人曾稱它為 Pescadores,也就是「漁夫群島」。</span></span></li>
+        <li><button class="say sm" data-say="It's famous for its dramatic columnar basalt cliffs and for Taiwan's oldest Mazu temple, built in Magong back in 1604." aria-label="Hear">🔊</button><span class="en">It's famous for its dramatic columnar basalt cliffs and for Taiwan's oldest Mazu temple, built in Magong back in 1604.<span class="zh">它以壯觀的柱狀玄武岩海崖,以及全台最古老的媽祖廟(1604 年建於馬公)聞名。</span></span></li>
+        <li><button class="say sm" data-say="On Qimei Island you can see the famous heart-shaped stone weir, a centuries-old tidal fish trap built from basalt and coral." aria-label="Hear">🔊</button><span class="en">On Qimei Island you can see the famous heart-shaped stone weir — a centuries-old tidal fish trap built from basalt and coral that has become a symbol of romance.<span class="zh">在七美島可以看到著名的心形石滬——一座用玄武岩與珊瑚礁築成、有數百年歷史的潮間帶捕魚陷阱,如今成了浪漫的象徵。</span></span></li>
+        <li><button class="say sm" data-say="Today people visit Penghu in summer for its white-sand beaches, incredibly fresh seafood, and the spectacular international fireworks festival over Magong harbor." aria-label="Hear">🔊</button><span class="en">Today people visit Penghu in summer for its white-sand beaches, incredibly fresh seafood, and the spectacular international fireworks festival over Magong harbor.<span class="zh">如今人們在夏天造訪澎湖,為的是白沙灘、極新鮮的海鮮,以及馬公港上空壯觀的國際海上花火節。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Basalt Columns<button class="say sm" data-say="Basalt Columns" aria-label="Hear Basalt Columns">🔊</button></h3>
-          <div class="zh">玄武岩</div>
-          <p>Dramatic black volcanic rock rising in columns along the coast.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Twin-Heart Stone Weir<button class="say sm" data-say="Twin-Heart Stone Weir" aria-label="Hear Twin-Heart Stone Weir">🔊</button></h3>
-          <div class="zh">雙心石滬</div>
-          <p>An ancient heart-shaped fish trap on Qimei, now a symbol of love.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Coral Sand Beaches<button class="say sm" data-say="Coral Sand Beaches" aria-label="Hear Coral Sand Beaches">🔊</button></h3>
-          <div class="zh">珊瑚沙灘</div>
-          <p>Crystal-clear water and beaches of crushed coral and shells.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Tianhou Temple<button class="say sm" data-say="Tianhou Temple" aria-label="Hear Tianhou Temple">🔊</button></h3>
-          <div class="zh">天后宮</div>
-          <p>Taiwan&#x27;s oldest Mazu temple, at the heart of Magong city.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-island">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Brown sugar cake <button class="say sm" data-say="Brown sugar cake" aria-label="Hear food name">🔊</button> <span class="zh">· 黑糖糕</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:澎湖縣政府、澎湖國家風景區管理處、交通部觀光署、文化部、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <a href="/counties/taitung/">← Taitung</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +285,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>

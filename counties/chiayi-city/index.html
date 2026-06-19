@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Chiayi City 嘉義市 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Chiayi City (嘉義市) — landmarks, food and culture, and how to say it in English. 溫暖好逛的城市,檜木老屋、棒球傳奇與北回歸線在此相遇。">
+<meta name="description" content="Chiayi City (嘉義市) — the loyal old 'Peach City' and gateway to Alishan, true home of turkey rice, a forestry and baseball town, and the city of the painter Chen Cheng-po and an international band festival. Its history, landmarks, culture, food, and how to say it in English. 桃城嘉義市的深度文化介紹。">
 <meta property="og:title" content="Chiayi City 嘉義市 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Chiayi City = south / amber) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#3a342b;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#7d5827);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#bd863f);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#bd863f);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#7d5827);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#f7f0e2);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#7d5827);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#3a342b;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#7d5827);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#bd863f);background:var(--cc-soft,#f7f0e2);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#bd863f);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#7d5827);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,6 +77,7 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-south">
   <div class="wrap">
     <div class="cty-region">Southern Taiwan · 南部</div>
@@ -35,64 +86,190 @@
       <span class="zh">嘉義市</span>
       <button class="say" data-say="Chiayi City" aria-label="Hear Chiayi City in English">🔊</button>
     </div>
-    <p class="cty-pos">A warm, walkable city where Japanese-era cypress houses, a baseball legend and the Tropic of Cancer all meet over a bowl of turkey rice.</p>
-    <p class="cty-pos-zh">溫暖好逛的城市,檜木老屋、棒球傳奇與北回歸線在此相遇。</p>
+    <p class="cty-pos">The loyal old "Peach City" and gateway to Alishan — the true home of turkey rice, a forestry-and-baseball town with a great painter's name.</p>
+    <p class="cty-pos-zh">忠義的老「桃城」與阿里山的門戶——火雞肉飯真正的故鄉,一座有偉大畫家之名的林業與棒球之城。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-south">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>The loyal "Peach City"</h2></div>
+    <div class="narr">
+      <p>Chiayi City began as <strong>Tirosen (諸羅山)</strong>, the name of a Hoanya Indigenous community, which Chinese settlers shortened to <strong>Tsulo (諸羅)</strong>. The walled town that grew downtown earned an affectionate nickname — <strong>"Peach City" (桃城)</strong> — because the old city wall was shaped like a peach.</p>
+      <p class="zh">嘉義市起源於洪雅族原住民聚落「諸羅山」(Tirosen),漢人簡稱為「諸羅」。市區內所築的古城因形狀像一顆桃子,而獲得親切的別名——<strong>「桃城」</strong>。</p>
+      <p>The city's modern name was a reward for loyalty. During the <strong>Lin Shuangwen rebellion of 1786–1788</strong>, the largest anti-Qing uprising of the era, the walled town withstood a long, grueling siege. To honor the townspeople's steadfastness, the <strong>Qianlong Emperor in 1787 renamed the city 嘉義 ("Chiayi"), meaning "commendable righteousness"</strong> — a name it has carried for over two centuries.</p>
+      <p class="zh">嘉義今名是對忠義的褒獎。<strong>1786 至 1788 年的林爽文事件</strong>是當時規模最大的反清民變,諸羅城在叛軍長期圍攻下仍堅守不破。為表彰城民的忠貞,<strong>乾隆皇帝於 1787 年將諸羅改名「嘉義」</strong>,取「嘉獎其義」之意,此名沿用至今已逾兩百年。</p>
+      <p>Under Japanese rule, Chiayi was transformed into a <strong>forestry boomtown</strong>. When the Japanese discovered the vast cypress (hinoki) forests of Alishan, they built the <strong>Alishan Forest Railway — which begins in Chiayi City</strong> — and made the city the railhead and processing center for the mountain timber. The city grew wealthy on cypress; its Japanese-era forestry dormitories survive as <strong>Hinoki Village (檜意森活村)</strong>. Chiayi sits almost exactly on the <strong>Tropic of Cancer</strong>, and is a legendary <strong>baseball city</strong>: the 1931 Kagi Agriculture &amp; Forestry School team (嘉農, "KANO") electrified Japan by reaching the final of the national Koshien tournament.</p>
+      <p class="zh">日治時期,嘉義躍升為<strong>林業重鎮</strong>。日人發現阿里山廣大的檜木林後,興建了<strong>起點就在嘉義市的阿里山森林鐵路</strong>,使嘉義成為山林木材的集散與加工中心。城市因檜木而興盛,日治時期的林業宿舍今日保存為<strong>檜意森活村</strong>。嘉義幾乎正好位於<strong>北回歸線</strong>上,也是傳奇的<strong>棒球之城</strong>:1931 年嘉義農林學校棒球隊(嘉農,「KANO」)打進日本甲子園全國大賽決賽,震撼日本。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Chiayi City</h2></div>
+    <div class="lmk cc-south">
+      <div class="lmk-item">
+        <h3>Chiayi Park &amp; Sun-Shooting Tower<span class="zh">嘉義公園・射日塔</span><button class="say sm" data-say="Chiayi Park and the Sun-Shooting Tower" aria-label="Hear">🔊</button></h3>
+        <p>The city's grand old park sits on the former grounds of the Japanese-era Chiayi Shrine. On the shrine's site rises the 62-metre <strong>Sun-Shooting Tower</strong>, its split form evoking a giant Alishan cypress log and its theme drawn from the Indigenous myth of heroes shooting down an extra sun.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Hinoki Village<span class="zh">檜意森活村</span><button class="say sm" data-say="Hinoki Village" aria-label="Hear">🔊</button></h3>
+        <p>A restored cluster of Japanese-era forestry dormitories — about 29 wooden buildings across some 3.4 hectares — now <strong>Taiwan's largest Japanese-style architectural complex</strong> and its first forestry-themed cultural-creative park, a lovely place to feel the city's cypress-era past.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Alishan Railway Garage Park &amp; Beimen Station<span class="zh">阿里山森林鐵路車庫園區・北門驛</span><button class="say sm" data-say="The Alishan Forest Railway Garage Park and Beimen Station" aria-label="Hear">🔊</button></h3>
+        <p>Beimen Station is the historic in-city <strong>starting point of the Alishan Forest Railway</strong>, a charming wooden depot full of nostalgia. The nearby Garage Park displays vintage locomotives, including the steam engines that once hauled cypress down the mountain.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Chiayi City God Temple<span class="zh">嘉義城隍廟</span><button class="say sm" data-say="Chiayi City God Temple" aria-label="Hear">🔊</button></h3>
+        <p>Founded in 1715 by the county magistrate Zhou Zhongxuan, this is one of old Tsulo's great historic temples and a national monument, renowned for exquisite craftsmanship including koji (Cochin) pottery by master artisans.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Chiayi Old Prison<span class="zh">嘉義舊監獄</span><button class="say sm" data-say="The Chiayi Old Prison" aria-label="Hear">🔊</button></h3>
+        <p>Built 1919–1922, this is <strong>Taiwan's only fully preserved Japanese-era prison</strong> and a national monument, now the country's only Prison Museum. Its rare Pennsylvania-style radial layout is one of only two such surviving examples in the world. Free admission, with guided tours.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Chiayi Art Museum<span class="zh">嘉義市立美術館</span><button class="say sm" data-say="Chiayi Art Museum" aria-label="Hear">🔊</button></h3>
+        <p>The city's art museum occupies the elegant former Monopoly Bureau building, a 1936 modernist design — a fitting home for the legacy of <strong>Chen Cheng-po</strong>, the pioneering Chiayi-born painter, and a hub of the city's strong art identity.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>KANO Baseball Stadium &amp; Statue<span class="zh">嘉義市立棒球場・KANO雕像</span><button class="say sm" data-say="The KANO baseball stadium and statue" aria-label="Hear">🔊</button></h3>
+        <p>Chiayi is a baseball town, and its ballpark celebrates it. A <strong>golden statue</strong> at a central traffic circle — modeled on KANO ace pitcher Wu Mingjie — became a city symbol after the 2014 film, and the KANO Park features a giant aluminum "baseball" sculpture.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Koji Pottery Museum<span class="zh">交趾陶館</span><button class="say sm" data-say="The Koji Pottery Museum" aria-label="Hear">🔊</button></h3>
+        <p>Greater Chiayi is the heartland of <strong>koji (Cochin) pottery (交趾陶)</strong>, a vivid low-fired ceramic art used to decorate temple roofs and walls. The city's museum showcases this distinctive local craft.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Wenhua Road Night Market<span class="zh">文化路夜市</span><button class="say sm" data-say="Wenhua Road Night Market" aria-label="Hear">🔊</button></h3>
+        <p>The city's most famous night market, where Wenhua Road becomes a pedestrian zone each evening — the place to graze on Chiayi turkey rice, cold noodles and countless local snacks.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Tropic of Cancer<span class="zh">北回歸線</span><button class="say sm" data-say="The Tropic of Cancer" aria-label="Hear">🔊</button></h3>
+        <p>Chiayi sits right on the Tropic of Cancer, the line that divides the tropics from the subtropics. The famous marker monument and Solar Astronomical Park lie just south of the city in the county — but the line is woven deep into the city's identity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>Cypress, baseball and a painter's city</h2>
+      <p>Chiayi's culture grew from the cypress mountain, the baseball diamond and the easel — a small city with an outsized cultural story.</p></div>
+    <div class="ppl cc-south">
+      <div class="ppl-card">
+        <h3>🌲 Forestry &amp; KANO baseball · 林業與棒球</h3>
+        <p>Chiayi grew wealthy as the <strong>gateway and processing hub for Alishan's cypress</strong>; the forest railway starts here, and the legacy lives on at Hinoki Village and Beimen Station. It is also a baseball city to its core: the 1931 <strong>KANO</strong> team — a mixed squad of Han, Indigenous and Japanese players coached by Kondo Hyotaro — reached the Koshien final with a "never give up on any ball" spirit, a story revived by the 2014 film <em>KANO</em>.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>🎨 Chen Cheng-po &amp; koji pottery · 陳澄波與交趾陶</h3>
+        <p>Chiayi City is the home of <strong>Chen Cheng-po (陳澄波)</strong>, Taiwan's pioneering Western-style painter and the first Taiwanese to have an oil painting selected for Japan's Imperial Art Exhibition (1926). The city is also part of the greater-Chiayi heartland of <strong>koji (Cochin) pottery</strong>, the colorful glazed ceramic art that adorns temples across the south.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Famous People · 嘉義名人</div><h2>A painter and a baseball legend</h2></div>
+    <div class="ppl cc-south">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Chen Cheng-po 陳澄波</h3>
+        <div class="yr">1895–1947 · Chiayi City</div>
+        <p>Born in Chiayi City, Chen was Taiwan's pioneering Western-style painter and the first Taiwanese to have a Western-style work selected for Japan's <strong>Imperial Art Exhibition</strong> (1926, <em>Outside Chiayi Street</em>). During the 228 Incident he served as a negotiator for the townspeople, and on 25 March 1947 he was publicly executed in front of Chiayi Railway Station — remembered both as a great artist and as a symbol of the tragedy of 228.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>The KANO team 嘉農棒球隊</h3>
+        <div class="yr">1931 · Koshien runners-up</div>
+        <p>The Kagi Agriculture &amp; Forestry School team, coached by the Japanese mentor <strong>Kondo Hyotaro</strong>, reached the final of Japan's national Koshien tournament in 1931 with a mixed Han-Indigenous-Japanese squad — a story that helped make baseball Taiwan's national sport and that Chiayi City still wears with pride.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Events · 節慶活動</div><h2>When Chiayi City comes alive</h2></div>
+    <div class="lmk cc-south">
+      <div class="lmk-item">
+        <h3>International Band Festival<span class="zh">嘉義市國際管樂節</span></h3>
+        <p>Chiayi's signature festival, held every December since 1993, earning the city the title <strong>"Capital of Band Music" (管樂之都)</strong>. Around a hundred ensembles take part, with indoor and outdoor wind-band concerts, a street parade and marching-band displays — Taiwan's largest classical-music festival.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Baseball &amp; KANO Events<span class="zh">棒球與KANO活動</span></h3>
+        <p>As a baseball city, Chiayi celebrates its KANO heritage through games and gatherings around the historic ballpark and KANO Park, where the golden pitcher statue stands.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>City God Temple Festivities<span class="zh">城隍廟慶典</span></h3>
+        <p>The historic City God Temple anchors traditional folk-religion celebrations, including the City God's birthday and deity processions through the old "Peach City" streets.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Forestry &amp; Tropic of Cancer Events<span class="zh">林業與北回歸線活動</span></h3>
+        <p>Cultural events at Hinoki Village and the forest-railway sites celebrate the city's cypress past, while the Tropic of Cancer that crosses Chiayi is marked in local astronomy and seasonal activities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>The true home of turkey rice</h2>
+      <p>Chiayi City is where turkey rice was born — and where a whole food culture grew up around it.</p></div>
+    <div class="food cc-south">
+      <div class="food-item"><span class="em">🍚</span><div><h4>Chiayi turkey rice <span class="zh">嘉義火雞肉飯</span></h4><p>The city's signature — shredded turkey over rice, drizzled with savory oil and crispy shallots. It took off after WWII, when US forces near Chiayi brought in turkeys.</p><span class="town">Citywide 全市</span></div></div>
+      <div class="food-item"><span class="em">⛲</span><div><h4>Penshui turkey rice <span class="zh">噴水雞肉飯</span></h4><p>The famous founding shop, started in 1949 beside the city's iconic <strong>fountain traffic circle</strong> (噴水圓環) — hence the name "Penshui," meaning fountain.</p><span class="town">Fountain Circle 噴水圓環</span></div></div>
+      <div class="food-item"><span class="em">🐟</span><div><h4>Sandy-pot fish head <span class="zh">砂鍋魚頭</span></h4><p>A hearty hot-pot of fish head simmered with vegetables, bean curd and a rich broth; the famous Lin Cong-ming shop, now third-generation, draws long queues.</p><span class="town">Wenhua Rd 文化路</span></div></div>
+      <div class="food-item"><span class="em">🍜</span><div><h4>Chiayi cold noodles <span class="zh">嘉義涼麵</span></h4><p>A beloved local style of cold noodles dressed in a savory, slightly sweet sauce — a popular Chiayi street food, especially in summer.</p><span class="town">Citywide 全市</span></div></div>
+      <div class="food-item"><span class="em">🟫</span><div><h4>Square crispy pastry <span class="zh">方塊酥</span></h4><p>A signature Chiayi souvenir — a crispy, layered square cracker, with Old Yang (老楊) a well-known maker of this local specialty.</p><span class="town">Citywide 全市</span></div></div>
+      <div class="food-item"><span class="em">🥚</span><div><h4>Fu Yi Shan egg rolls <span class="zh">福義軒手工蛋捲</span></h4><p>Founded in 1951, this long-established bakery is famous for handmade egg rolls and crackers — a classic, often-sold-out local gift.</p><span class="town">Citywide 全市</span></div></div>
+      <div class="food-item"><span class="em">🍵</span><div><h4>Alishan high-mountain tea <span class="zh">阿里山高山茶</span></h4><p>Prized high-mountain oolong from the Alishan area is sold throughout the city, long the center of the mountain trade.</p><span class="town">Citywide 全市</span></div></div>
+      <div class="food-item"><span class="em">🍮</span><div><h4>Tofu pudding &amp; old-style sweets <span class="zh">豆花與古早味</span></h4><p>Traditional tofu pudding and nostalgic old-style snacks round out the Wenhua Road night-market food scene.</p><span class="town">Wenhua Rd 文化路</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Chiayi City is known for · 嘉義市的招牌</div><h2>Turkey rice, trains, baseball, brass</h2></div>
+    <div class="kf cc-south">
+      <div class="kf-item"><span class="em">🍚</span><h4>Turkey rice <span class="zh">火雞肉飯</span></h4><p>The city is the true home of Taiwan's iconic shredded-turkey rice.</p></div>
+      <div class="kf-item"><span class="em">🚂</span><h4>Gateway to Alishan <span class="zh">阿里山門戶</span></h4><p>The forest railway and the cypress-forestry heritage begin here.</p></div>
+      <div class="kf-item"><span class="em">🌲</span><h4>Hinoki Village <span class="zh">檜意森活村</span></h4><p>Taiwan's largest Japanese-era wooden architectural complex.</p></div>
+      <div class="kf-item"><span class="em">⚾</span><h4>KANO baseball <span class="zh">KANO棒球</span></h4><p>The legendary 1931 team and a city devoted to the sport.</p></div>
+      <div class="kf-item"><span class="em">🎨</span><h4>Chen Cheng-po <span class="zh">陳澄波</span></h4><p>The pioneering painter born and honored in the city.</p></div>
+      <div class="kf-item"><span class="em">🎺</span><h4>Band-music capital <span class="zh">管樂之都</span></h4><p>The International Band Festival and the "Peach City" identity.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-south" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Chiayi City to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹嘉義市,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Chiayi City." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Chiayi City.<span class="zh">我來自嘉義市。</span></span></li>
-        <li><button class="say sm" data-say="Chiayi City is in Southern Taiwan." aria-label="Hear sentence">🔊</button><span class="en">Chiayi City is in Southern Taiwan.<span class="zh">嘉義市在臺灣南部。</span></span></li>
-        <li><button class="say sm" data-say="Chiayi City is famous for Hinoki Village." aria-label="Hear sentence">🔊</button><span class="en">Chiayi City is famous for Hinoki Village.<span class="zh">嘉義市以檜意森活村聞名。</span></span></li>
+        <li><button class="say sm" data-say="Chiayi City is the true home of turkey rice, shredded turkey over rice with savory oil that locals are deeply proud of." aria-label="Hear">🔊</button><span class="en">Chiayi City is the true home of turkey rice — shredded turkey over rice with savory oil that locals are deeply proud of.<span class="zh">嘉義市是火雞肉飯真正的故鄉——白飯鋪上手撕火雞肉、淋上香醇雞汁,是在地人引以為傲的味道。</span></span></li>
+        <li><button class="say sm" data-say="It's the gateway to Alishan: the famous Alishan Forest Railway actually starts right here in the city." aria-label="Hear">🔊</button><span class="en">It's the gateway to Alishan: the famous Alishan Forest Railway actually starts right here in the city.<span class="zh">這裡是通往阿里山的門戶:著名的阿里山森林鐵路其實就從市區這裡出發。</span></span></li>
+        <li><button class="say sm" data-say="Chiayi is a baseball city. The legendary 1931 KANO team that reached Japan's Koshien final came from a school right here." aria-label="Hear">🔊</button><span class="en">Chiayi is a baseball city — the legendary 1931 KANO team that reached Japan's Koshien final came from a school right here.<span class="zh">嘉義是一座棒球之城——1931 年打進日本甲子園決賽的傳奇 KANO 隊,就出自這裡的一所學校。</span></span></li>
+        <li><button class="say sm" data-say="Every December, Chiayi becomes the Capital of Band Music for its International Band Festival, and it's also the hometown of the great painter Chen Cheng-po." aria-label="Hear">🔊</button><span class="en">Every December, Chiayi becomes the "Capital of Band Music" for its International Band Festival, and it's also the hometown of the great painter Chen Cheng-po.<span class="zh">每年 12 月,嘉義因國際管樂節而化身「管樂之都」,這裡也是偉大畫家陳澄波的故鄉。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Hinoki Village<button class="say sm" data-say="Hinoki Village" aria-label="Hear Hinoki Village">🔊</button></h3>
-          <div class="zh">檜意森活村</div>
-          <p>Taiwan&#x27;s largest cluster of Japanese-era cypress wooden houses, now shops and cafes.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>KANO Baseball<button class="say sm" data-say="KANO Baseball" aria-label="Hear KANO Baseball">🔊</button></h3>
-          <div class="zh">KANO 棒球</div>
-          <p>Chiayi&#x27;s farming-school team reached Japan&#x27;s Koshien finals in 1931 — a true story turned film.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Tropic of Cancer<button class="say sm" data-say="Tropic of Cancer" aria-label="Hear Tropic of Cancer">🔊</button></h3>
-          <div class="zh">北回歸線</div>
-          <p>The Tropic of Cancer runs through the Chiayi area, marked by a tall sun-themed landmark.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Turkey Rice<button class="say sm" data-say="Turkey Rice" aria-label="Hear Turkey Rice">🔊</button></h3>
-          <div class="zh">火雞肉飯</div>
-          <p>Tender shredded turkey over warm rice — found on almost every corner.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-south">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Turkey rice <button class="say sm" data-say="Turkey rice" aria-label="Hear food name">🔊</button> <span class="zh">· 火雞肉飯</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:嘉義市政府、嘉義市立美術館、林務局阿里山林業鐵路、文化部、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <a href="/counties/chiayi/">← Chiayi County</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +285,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Pingtung 屏東縣 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Pingtung (屏東縣) — landmarks, food and culture, and how to say it in English. 台灣溫暖陽光的最南端,熱帶海灘、古城牆與全島最豐盛的水果之鄉。">
+<meta name="description" content="Pingtung County (屏東縣) — Taiwan's tropical south, from Kenting's beaches and Cape Eluanbi to the Donggang bluefin tuna and King Boat Festival, the Paiwan and Rukai peoples, and the Hakka Liudui communities. Its history, landmarks, culture, food, and how to say it in English. 熱帶南境屏東的深度文化介紹。">
 <meta property="og:title" content="Pingtung 屏東縣 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Pingtung = south / amber) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#3a342b;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#7d5827);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#bd863f);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#bd863f);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#7d5827);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#f7f0e2);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#7d5827);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#3a342b;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#7d5827);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#bd863f);background:var(--cc-soft,#f7f0e2);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#bd863f);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#7d5827);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,72 +77,199 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-south">
   <div class="wrap">
     <div class="cty-region">Southern Taiwan · 南部</div>
     <div class="cty-name">
       <h1>Pingtung</h1>
       <span class="zh">屏東縣</span>
-      <button class="say" data-say="Pingtung" aria-label="Hear Pingtung in English">🔊</button>
+      <button class="say" data-say="Pingtung County" aria-label="Hear Pingtung in English">🔊</button>
     </div>
-    <p class="cty-pos">The warm, sunny tip of Taiwan — tropical beaches, an old walled town and the island&#x27;s richest fruit basket.</p>
-    <p class="cty-pos-zh">台灣溫暖陽光的最南端,熱帶海灘、古城牆與全島最豐盛的水果之鄉。</p>
+    <p class="cty-pos">Taiwan's tropical south — where the island ends in Kenting's beaches and the cape of Eluanbi, among Indigenous mountains, Hakka plains and tuna ports.</p>
+    <p class="cty-pos-zh">台灣的熱帶南境——島嶼在墾丁的海灘與鵝鑾鼻岬角畫下句點,原住民的山、客家的平原與鮪魚漁港齊聚於此。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-south">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>The tropical tip of Taiwan</h2></div>
+    <div class="narr">
+      <p>Pingtung is Taiwan's <strong>southernmost county</strong>, occupying the warm tail of the island where the land narrows into the tropical Hengchun Peninsula and finally tapers to <strong>Cape Eluanbi (鵝鑾鼻)</strong> — the southernmost point of the main island. Bordered by the Pacific, the Taiwan Strait and the Bashi Channel, this is Taiwan's tropical edge: hot, green and salted by three seas, with a growing season that lasts all year.</p>
+      <p class="zh">屏東是台灣最南端的縣,位於島嶼溫暖的尾端,陸地在此收窄成熱帶的恆春半島,最後尖削成台灣本島最南點<strong>鵝鑾鼻</strong>。東臨太平洋、西濱台灣海峽、南界巴士海峽,這裡是台灣的熱帶邊陲:炎熱、蒼翠、被三面海水浸潤,四季皆可耕作。</p>
+      <p>Pingtung is a county of many peoples. In the southern mountains live the Indigenous <strong>Paiwan (排灣族)</strong> and <strong>Rukai (魯凱族)</strong>, whose culture is among the most artistically rich in Taiwan — slate-slab houses built without nails or cement, and a sacred iconography of the hundred-pacer snake, glass beads and lilies. On the western plain live the Hakka of the <strong>"Liudui" (六堆)</strong>, a self-defense alliance born in 1721 when Hakka villages organized six militias; their communities — Neipu, Zhutian, Wanluan — remain the cultural heart of southern Taiwanese Hakka life.</p>
+      <p class="zh">屏東是多元族群之地。南方山區是原住民<strong>排灣族</strong>與<strong>魯凱族</strong>的家園,其文化是台灣藝術性最豐富者之一——不用釘子與水泥砌成的石板屋,以及百步蛇、琉璃珠、百合花的神聖圖騰。西部平原則住著<strong>「六堆」</strong>的客家人——這個自衛聯盟源於 1721 年客家庄組成的六支民兵;內埔、竹田、萬巒等聚落,至今仍是南台灣客家文化的核心。</p>
+      <p>Pingtung's south witnessed pivotal 19th-century history. In 1871 a Ryukyuan ship was wrecked near the southern tip and 54 of its crew were killed by Paiwan villagers of <strong>Mudan (牡丹)</strong>; Japan used this as the pretext for the 1874 Taiwan Expedition (the <strong>Mudan Incident</strong>), its first overseas military deployment. Stung by such intrusions, the Qing built <strong>Hengchun Old Town (恆春古城)</strong>, begun in 1875 — today one of Taiwan's best-preserved walled towns, with all four gates still standing. From these foundations grew the county's signature trades: the bluefin-tuna port of Donggang, the orchards of mango and wax apple, and the living folk-music of Hengchun.</p>
+      <p class="zh">屏東南端見證了關鍵的十九世紀史。1871 年一艘琉球船在南端附近遇難,54 名船員遭<strong>牡丹</strong>排灣族人殺害;日本以此為藉口發動 1874 年征台之役(<strong>牡丹社事件</strong>),這是日本首次海外用兵。清廷因這些入侵而興建<strong>恆春古城</strong>,1875 年動工——如今是台灣保存最完整的城池之一,四座城門至今仍在。從這些根基生長出全縣的招牌產業:東港黑鮪魚漁港、芒果與蓮霧果園,以及恆春活躍的民謠。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Pingtung</h2></div>
+    <div class="lmk cc-south">
+      <div class="lmk-item">
+        <h3>Kenting National Park<span class="zh">墾丁國家公園</span><button class="say sm" data-say="Kenting National Park" aria-label="Hear">🔊</button></h3>
+        <p>Established in 1984, Kenting is <strong>Taiwan's very first national park</strong>. Spanning the Hengchun Peninsula, it protects tropical forest, white-sand beaches and coral reefs, with landmarks like Sail Rock and Maobitou; Kenting Street's night market and beach nightlife make it Taiwan's premier tropical resort.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Cape Eluanbi &amp; Lighthouse<span class="zh">鵝鑾鼻・鵝鑾鼻燈塔</span><button class="say sm" data-say="Cape Eluanbi and Lighthouse" aria-label="Hear">🔊</button></h3>
+        <p>The <strong>southernmost point of Taiwan's main island</strong>. Its white lighthouse, first built in 1883, was uniquely fortified — ringed by a gun battery and trench — earning it the nickname "the only armed lighthouse in East Asia."</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Hengchun Old Town<span class="zh">恆春古城</span><button class="say sm" data-say="Hengchun Old Town" aria-label="Hear">🔊</button></h3>
+        <p>Begun in 1875 after the Mudan Incident, Hengchun is the <strong>only old walled town in Taiwan where all four original gates still stand</strong>. Its sleepy streets became famous worldwide as the setting of the 2008 blockbuster film <em>Cape No. 7</em>.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Donggang &amp; Dapeng Bay<span class="zh">東港・大鵬灣</span><button class="say sm" data-say="Donggang and Dapeng Bay" aria-label="Hear">🔊</button></h3>
+        <p>Donggang is Taiwan's most famous <strong>tuna port</strong> and home of the triennial King Boat Festival. Adjacent Dapeng Bay, a large lagoon and national scenic area, hosted the 2019 Taiwan Lantern Festival, whose main lantern was a giant bluefin tuna.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Xiaoliuqiu (Lambai Island)<span class="zh">小琉球</span><button class="say sm" data-say="Xiaoliuqiu, Lambai Island" aria-label="Hear">🔊</button></h3>
+        <p>A short ferry from Donggang, Xiaoliuqiu is <strong>Taiwan's only offshore coral island</strong>. Tiny but ringed by reefs, it has one of the world's highest concentrations of green sea turtles, making it a world-class snorkeling spot.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Sandimen &amp; Wutai<span class="zh">三地門・霧台</span><button class="say sm" data-say="Sandimen and Wutai" aria-label="Hear">🔊</button></h3>
+        <p>In the northern mountains, Sandimen is a <strong>Paiwan</strong> stronghold while remote, high Wutai is predominantly <strong>Rukai</strong>. These villages are Taiwan's heartland for slate-slab architecture, glass-bead craft and woodcarving, with totems of the hundred-pacer snake and lily everywhere.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Museum of Marine Biology &amp; Aquarium<span class="zh">國立海洋生物博物館</span><button class="say sm" data-say="The National Museum of Marine Biology and Aquarium" aria-label="Hear">🔊</button></h3>
+        <p>Opened in 2000 in Checheng, this is <strong>one of Asia's largest aquariums</strong>, with three halls — Waters of Taiwan, the Coral Kingdom and Waters of the World — and stars like beluga whales and penguins.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Wanjin Basilica<span class="zh">萬金聖母聖殿</span><button class="say sm" data-say="Wanjin Basilica" aria-label="Hear">🔊</button></h3>
+        <p>Completed in 1870 in Wanluan, this Spanish-style white church is the <strong>oldest surviving church building in Taiwan</strong>, founded by Dominican missionaries. In 1984 Pope John Paul II named it a minor basilica — the first in Taiwan.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Sichongxi Hot Spring<span class="zh">四重溪溫泉</span><button class="say sm" data-say="Sichongxi Hot Spring" aria-label="Hear">🔊</button></h3>
+        <p>Near Checheng, Sichongxi was one of Taiwan's <strong>"Four Great Hot Springs"</strong> of the Japanese era. Its clear, odorless sodium-bicarbonate water is gentle on the skin; a Japanese prince once honeymooned here.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Liudui Hakka Cultural Park<span class="zh">六堆客家文化園區</span><button class="say sm" data-say="The Liudui Hakka Cultural Park" aria-label="Hear">🔊</button></h3>
+        <p>In Neipu Township, this free-admission park celebrates the heritage of the <strong>southern Hakka Liudui communities</strong>, with traditional umbrella-shaped pavilions, paddy landscapes and exhibits on Hakka farming and customs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>Mountain peoples, plains and ballads</h2>
+      <p>Pingtung's culture braids three strands — Indigenous mountains, Hakka plains, and a Hoklo fishing coast — into one tropical south.</p></div>
+    <div class="ppl cc-south">
+      <div class="ppl-card">
+        <h3>🐍 Paiwan &amp; Rukai · 排灣與魯凱</h3>
+        <p>The Paiwan and Rukai of the mountains build distinctive <strong>slate-slab houses</strong> and center their sacred art on the <strong>hundred-pacer snake</strong> (revered as an ancestor), lilies, eagles and prized <strong>glass beads</strong>. The Paiwan's grandest rite is the <strong>Maleveq Five-Year Ceremony (五年祭)</strong>, held about every five years over ten-plus days to welcome ancestral spirits, climaxing in a bamboo-pole ritual to spear a flung rattan ball.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>🎶 Hakka Liudui &amp; Hengchun ballads · 六堆與恆春民謠</h3>
+        <p>The <strong>Liudui</strong> ("Six Units") are the historic Hakka self-defense communities of the plain, alive today in language, ancestral-hall traditions and farm-country food. And Hengchun is famous for a living <strong>ballad tradition</strong> sung to the moon lute (月琴) — the best-known tune "Susiangki," made iconic by the wandering bard Chen Da, praised for preserving the old flavor of Fujian folk music.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Famous People · 屏東名人</div><h2>An Oscar director and a wandering bard</h2></div>
+    <div class="ppl cc-south">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Ang Lee 李安</h3>
+        <div class="yr">b. 1954 · Chaozhou 潮州</div>
+        <p>The internationally acclaimed, two-time Best Director Oscar winner (<em>Brokeback Mountain</em>, <em>Life of Pi</em>) was born in <strong>Chaozhou Township, Pingtung</strong> in 1954. One of the most celebrated filmmakers in the world, he carries the quiet south of Taiwan in his story.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Chen Da 陳達</h3>
+        <div class="yr">Hengchun folk balladeer</div>
+        <p>The emblematic wandering <strong>moon-lute singer</strong> of Hengchun who made "Susiangki" famous, Chen Da carried the improvised folk-ballad tradition of the southern peninsula. Pingtung's deepest cultural fame rests on this living music — and on its Paiwan, Rukai and Hakka heritage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Seasons · 節慶與時令</div><h2>When Pingtung comes alive</h2></div>
+    <div class="lmk cc-south">
+      <div class="lmk-item">
+        <h3>Donggang King Boat Festival<span class="zh">東港迎王平安祭典・燒王船</span></h3>
+        <p>Pingtung's most spectacular folk event, held once every three years at Donglong Temple. Over about a week, Wang Ye plague-gods are welcomed to inspect the town; the climax is the dramatic dawn <strong>burning of a full-size wooden "king boat,"</strong> carrying away disease and misfortune. A designated national folk heritage.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Bluefin Tuna Cultural Festival<span class="zh">黑鮪魚文化觀光季</span></h3>
+        <p>Launched in 2001, this Donggang festival celebrates the bluefin tuna catch each year, roughly May to June, when the prized fish come in to the famous tuna port.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Paiwan Maleveq Five-Year Festival<span class="zh">排灣族五年祭</span></h3>
+        <p>The Paiwan's grandest ancestral rite, held about every five years over ten-plus days, climaxing in the bamboo-pole ball-spearing ritual that seeks ancestral blessing — a designated National Important Folk Custom.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Hengchun Folk Song Events<span class="zh">恆春民謠活動</span></h3>
+        <p>Festivals celebrating the moon-lute ballad tradition keep Hengchun's "Susiangki" alive; a 2015 event even set a Guinness record for the most people playing the moon lute together.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>Tuna, pork knuckle and tropical fruit</h2>
+      <p>Pingtung's table runs from the bluefin of Donggang to the Hakka kitchens of Wanluan and the orchards of the warm plain.</p></div>
+    <div class="food cc-south">
+      <div class="food-item"><span class="em">🐟</span><div><h4>Donggang's "Three Treasures" <span class="zh">東港三寶</span></h4><p>Bluefin tuna sashimi, sakura shrimp and oilfish roe. Remarkably, sakura shrimp are commercially harvested in only two places on Earth — off Donggang and Japan's Suruga Bay.</p><span class="town">Donggang 東港</span></div></div>
+      <div class="food-item"><span class="em">🦵</span><div><h4>Wanluan pork knuckle <span class="zh">萬巒豬腳</span></h4><p>The famous Hakka braised pig's trotter of Wanluan, soy-stewed until the skin and tendons turn chewy and glossy; its fame spread after a presidential visit in 1981.</p><span class="town">Wanluan 萬巒</span></div></div>
+      <div class="food-item"><span class="em">🍎</span><div><h4>Black-pearl wax apple <span class="zh">黑珍珠蓮霧</span></h4><p>The prized dark-red, extra-sweet wax apple of Linbian and Nanzhou; Pingtung grows about 80% of Taiwan's wax apples.</p><span class="town">Linbian 林邊</span></div></div>
+      <div class="food-item"><span class="em">🥭</span><div><h4>Tropical fruit <span class="zh">熱帶水果</span></h4><p>Pingtung is Taiwan's top producer of pineapples, bananas, papayas and lemons, and a leading grower of mangoes — all thriving in the year-round warmth.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🍮</span><div><h4>Hengchun mung-bean dessert <span class="zh">綠豆蒜</span></h4><p>A Checheng/Hengchun specialty; peeled mung beans (which resemble chopped garlic) served warm or iced with longan and brown-sugar syrup.</p><span class="town">Hengchun 恆春</span></div></div>
+      <div class="food-item"><span class="em">🧅</span><div><h4>Hengchun onions <span class="zh">恆春洋蔥</span></h4><p>The peninsula's strong sea winds produce famously sweet, firm onions — even turned into local onion ice cream.</p><span class="town">Hengchun 恆春</span></div></div>
+      <div class="food-item"><span class="em">🦑</span><div><h4>Xiaoliuqiu seafood &amp; mahua <span class="zh">小琉球海產與麻花捲</span></h4><p>The coral island is known for fresh seafood and crispy fried mahua dough twists, eaten with a sea breeze.</p><span class="town">Xiaoliuqiu 小琉球</span></div></div>
+      <div class="food-item"><span class="em">🥘</span><div><h4>Hakka Liudui dishes <span class="zh">六堆客家菜</span></h4><p>The Hakka plain serves hearty, frugal cooking — stir-fries, preserved greens and farm-country flavors at the heart of southern Hakka life.</p><span class="town">Neipu 內埔</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Pingtung is known for · 屏東的招牌</div><h2>Beaches, tuna, peoples and the cape</h2></div>
+    <div class="kf cc-south">
+      <div class="kf-item"><span class="em">🏖️</span><h4>Kenting &amp; the south tip <span class="zh">墾丁與最南點</span></h4><p>Taiwan's first national park and Cape Eluanbi, the island's southern end.</p></div>
+      <div class="kf-item"><span class="em">🐟</span><h4>Donggang tuna <span class="zh">東港黑鮪魚</span></h4><p>The bluefin port and the dramatic triennial King Boat Festival.</p></div>
+      <div class="kf-item"><span class="em">🐍</span><h4>Paiwan &amp; Rukai <span class="zh">排灣與魯凱</span></h4><p>Slate houses, glass beads and the hundred-pacer snake.</p></div>
+      <div class="kf-item"><span class="em">🎶</span><h4>Hakka &amp; Hengchun ballads <span class="zh">客家與恆春民謠</span></h4><p>The Liudui communities and the moon-lute songs of Cape No. 7.</p></div>
+      <div class="kf-item"><span class="em">🐢</span><h4>Xiaoliuqiu <span class="zh">小琉球</span></h4><p>Taiwan's coral island and its green sea turtles.</p></div>
+      <div class="kf-item"><span class="em">🌺</span><h4>Orchids &amp; fruit <span class="zh">蘭花與水果</span></h4><p>Butterfly orchids, mango, pineapple and black-pearl wax apple.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-south" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Pingtung to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹屏東,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Pingtung." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Pingtung.<span class="zh">我來自屏東縣。</span></span></li>
-        <li><button class="say sm" data-say="Pingtung is in Southern Taiwan." aria-label="Hear sentence">🔊</button><span class="en">Pingtung is in Southern Taiwan.<span class="zh">屏東縣在臺灣南部。</span></span></li>
-        <li><button class="say sm" data-say="Pingtung is famous for Kenting National Park." aria-label="Hear sentence">🔊</button><span class="en">Pingtung is famous for Kenting National Park.<span class="zh">屏東縣以墾丁國家公園聞名。</span></span></li>
+        <li><button class="say sm" data-say="Pingtung is Taiwan's southernmost county, where the island ends at the tropical beaches of Kenting and the cape of Eluanbi." aria-label="Hear">🔊</button><span class="en">Pingtung is Taiwan's southernmost county, where the island ends at the tropical beaches of Kenting and the cape of Eluanbi.<span class="zh">屏東是台灣最南端的縣,島嶼在此終結於墾丁的熱帶海灘與鵝鑾鼻岬角。</span></span></li>
+        <li><button class="say sm" data-say="It's home to the fishing port of Donggang, famous for bluefin tuna and a dramatic boat-burning festival held once every three years." aria-label="Hear">🔊</button><span class="en">It's home to the fishing port of Donggang, famous for bluefin tuna and a dramatic boat-burning festival held once every three years.<span class="zh">這裡有東港漁港,以黑鮪魚和每三年一次壯觀的燒王船祭典聞名。</span></span></li>
+        <li><button class="say sm" data-say="The mountains belong to the Indigenous Paiwan and Rukai peoples, while the plains are the heartland of the Hakka Liudui communities." aria-label="Hear">🔊</button><span class="en">The mountains belong to the Indigenous Paiwan and Rukai peoples, while the plains are the heartland of the Hakka "Liudui" communities.<span class="zh">山區屬於排灣與魯凱原住民,平原則是客家「六堆」聚落的核心地帶。</span></span></li>
+        <li><button class="say sm" data-say="Don't miss the old walled town of Hengchun and the coral island of Xiaoliuqiu, where you can snorkel with sea turtles." aria-label="Hear">🔊</button><span class="en">Don't miss the old walled town of Hengchun and the coral island of Xiaoliuqiu, where you can snorkel with sea turtles.<span class="zh">別錯過恆春古城,以及可以和海龜一起浮潛的珊瑚島小琉球。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Kenting National Park<button class="say sm" data-say="Kenting National Park" aria-label="Hear Kenting National Park">🔊</button></h3>
-          <div class="zh">墾丁國家公園</div>
-          <p>Taiwan&#x27;s top beach destination, loved for sunny sands and water sports.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Hengchun Old Town<button class="say sm" data-say="Hengchun Old Town" aria-label="Hear Hengchun Old Town">🔊</button></h3>
-          <div class="zh">恆春古城</div>
-          <p>A historic town with one of Taiwan&#x27;s best-preserved old city walls (1879).</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Fruit Basket<button class="say sm" data-say="Fruit Basket" aria-label="Hear Fruit Basket">🔊</button></h3>
-          <div class="zh">水果之鄉</div>
-          <p>A tropical region famous for mangoes, wax apples and sun-ripened fruit.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>White Sand Bay<button class="say sm" data-say="White Sand Bay" aria-label="Hear White Sand Bay">🔊</button></h3>
-          <div class="zh">白沙灣</div>
-          <p>One of Kenting&#x27;s most beautiful beaches, with soft white sand.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-south">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Mango shaved ice <button class="say sm" data-say="Mango shaved ice" aria-label="Hear food name">🔊</button> <span class="zh">· 芒果冰</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:屏東縣政府、墾丁國家公園管理處、東港東隆宮、客家委員會、文化部、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <a href="/counties/kaohsiung/">← Kaohsiung</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +285,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>
