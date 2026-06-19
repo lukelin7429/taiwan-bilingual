@@ -42,6 +42,25 @@
   .pc-edward{--pc:#0a3d62;--pc-deep:#062940;--pc-soft:#e8eef4;}
   .pc-dom{--pc:#0a1f5c;--pc-deep:#081848;--pc-soft:#eaedf6;}
 
+  /* program / institutional partners */
+  .pgroup{margin:48px 0 26px;}
+  .pgroup .ph-label{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#c2410c;margin-bottom:6px;}
+  .pgroup h2{font-family:'Playfair Display','PingFang TC',serif;font-size:26px;color:var(--ink);line-height:1.2;}
+  .pgroup p{font-size:17px;color:var(--ink-soft);line-height:1.7;margin-top:6px;max-width:64ch;}
+  .progcard{display:flex;flex-direction:column;gap:0;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow-sm);border-left:7px solid #c2410c;transition:transform .25s ease,box-shadow .25s ease;text-decoration:none;}
+  @media(min-width:760px){.progcard{flex-direction:row;}}
+  .progcard:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+  .progcard-thumb{position:relative;background:#7c2d12;flex:none;}
+  @media(min-width:760px){.progcard-thumb{width:300px;}}
+  .progcard-thumb img{width:100%;height:100%;object-fit:cover;display:block;min-height:190px;aspect-ratio:16/9;}
+  .progcard-thumb .pp{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:40px;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.5);}
+  .progcard-body{padding:28px 32px;}
+  .progcard-body .tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#c2410c;background:#fbe7da;padding:5px 12px;border-radius:999px;margin-bottom:12px;}
+  .progcard-body h3{font-family:'Playfair Display','PingFang TC',serif;font-size:27px;color:var(--ink);line-height:1.1;}
+  .progcard-body .role{margin-top:6px;font-size:16.5px;font-weight:600;color:#c2410c;}
+  .progcard-body p{margin-top:12px;font-size:17px;color:var(--ink-soft);line-height:1.7;}
+  .progcard-body .go{display:inline-block;margin-top:16px;color:#7c2d12;font-weight:700;font-size:16px;}
+
   .more{background:var(--jade-soft);border-radius:16px;padding:30px 32px;text-align:center;}
   .more h3{font-family:'Playfair Display','PingFang TC',serif;font-size:22px;color:var(--jade-deep);margin-bottom:8px;}
   .more p{font-size:17px;color:#3c4a44;line-height:1.7;max-width:60ch;margin:0 auto;}
@@ -103,6 +122,23 @@
         <a class="partner-go" href="/dom-jones/">View profile →</a>
       </div>
     </article>
+
+    <div class="pgroup">
+      <div class="ph-label">University &amp; Program Partners · 大學與計畫夥伴</div>
+      <h2>Partnerships that started it all</h2>
+      <p>Beyond individual advocates, the hub grew out of institutional exchanges — universities and cohorts that brought their student teachers to Taiwan's classrooms. 除了個人倡議者,資源網也源於與大學及師資生梯次的機構交流。</p>
+    </div>
+
+    <a class="progcard" href="/partners/utrgv/">
+      <div class="progcard-thumb"><img src="https://i.ytimg.com/vi/qn33x2o0Vr4/hqdefault.jpg" alt="UTRGV in Taiwan 2017"><span class="pp">▶</span></div>
+      <div class="progcard-body">
+        <span class="tag">🎓 UTRGV · 2017</span>
+        <h3>UTRGV comes to Taiwan</h3>
+        <div class="role">University of Texas Rio Grande Valley · 21 student teachers</div>
+        <p>One of the program's earliest international partnerships — a cohort of UTRGV student teachers who taught across Changhua, captured in 22 video reflections. 本計畫最早的國際合作之一,21 位 UTRGV 師資生在彰化教學的歷程,收錄於 22 支見證短片。</p>
+        <span class="go">View partnership · 22 videos →</span>
+      </div>
+    </a>
 
     <div class="more">
       <h3>More partners joining</h3>
