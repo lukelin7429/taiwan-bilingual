@@ -14,7 +14,7 @@ hosted on a subdomain:
 |-----------|--------|------|--------|
 | `tbes.taiwan-bilingual.org`  | 太保國小 Taibao Elementary       | `tbps-bilingual`  | 嘉義縣 |
 | `tbjh.taiwan-bilingual.org`  | 太保國中 Taibao Junior High      | `tpjh-bilingual`  | 嘉義縣 |
-| `klnes.taiwan-bilingual.org` | 槺榔國小 KangLang Elementary     | `klnes-bilingual` | 臺中市 |
+| `taiwan-bilingual.org/taichung/kles/` | 槺榔國小 KangLang Elementary | in-repo (`taichung/kles/`); old `klnes-bilingual` repo kept as a redirector | 臺中市 |
 | `ycsh.taiwan-bilingual.org`  | 永慶高中 Young Docents           | `ycsh-bilingual`  | 嘉義縣 |
 
 ## Adding a new school
