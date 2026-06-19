@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Changhua 彰化縣 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Changhua (彰化縣) — landmarks, food and culture, and how to say it in English. 台灣的米倉與古蹟之鄉。">
+<meta name="description" content="Changhua (彰化縣) — Taiwan's rice barn and a living museum of temple towns and craft masters. Its history, landmarks, culture, famous people and food, and how to say it in English. 台灣米倉彰化縣的深度文化介紹。">
 <meta property="og:title" content="Changhua 彰化縣 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Changhua = central / jade) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#33423c;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,var(--jade-deep));font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,var(--jade));margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,var(--jade));}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,var(--jade-deep));font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,var(--jade-soft));border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,var(--jade-deep));font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#33423c;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,var(--jade-deep));font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,var(--jade));background:var(--cc-soft,var(--jade-soft));padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,var(--jade));}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,var(--jade-deep));font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,6 +77,7 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-central">
   <div class="wrap">
     <div class="cty-region">Central Taiwan · 中部</div>
@@ -35,75 +86,197 @@
       <span class="zh">彰化縣</span>
       <button class="say" data-say="Changhua" aria-label="Hear Changhua in English">🔊</button>
     </div>
-    <p class="cty-pos">Taiwan&#x27;s rice barn and a county of heritage towns.</p>
-    <p class="cty-pos-zh">台灣的米倉與古蹟之鄉。</p>
+    <p class="cty-pos">Taiwan's rice barn — and a living museum of temple towns, craft masters and frozen-in-time old streets.</p>
+    <p class="cty-pos-zh">台灣的米倉,也是一座活的博物館:廟宇之城、工藝大師,與凍結在時光裡的老街。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-central">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>How a canal made Taiwan's rice barn</h2></div>
+    <div class="narr">
+      <p>Changhua is the <strong>smallest county on Taiwan's main island</strong> by area, yet one of its <strong>most populous</strong> — around 1.2 million people packed into a dense quilt of farming towns, where almost every township is famous for a single craft or crop. The land was first home to the Indigenous <strong>Babuza people</strong>, and its old name <strong>Poasoa (半線)</strong> comes from their language. The Qing renamed it <strong>Changhua (彰化)</strong> in 1723 — short for a phrase meaning "to make manifest the civilizing influence" of the emperor.</p>
+      <p class="zh">彰化是<strong>台灣本島面積最小</strong>的縣,人口卻名列前茅——約 120 萬人聚居在密密麻麻的農業鄉鎮,幾乎每個鄉鎮都以一項工藝或作物聞名。這片土地最早是原住民<strong>貓霧捒族(Babuza)</strong>的家園,舊名<strong>半線</strong>即源自其族語。清廷於 1723 年將此地命名為<strong>彰化</strong>,取「顯彰皇化」之意。</p>
+      <p>Changhua's wealth was literally engineered. In <strong>1709 the landowner Shih Shih-pang (施世榜)</strong> began the <strong>Babao Canal (八堡圳)</strong>, finished in 1719 — Taiwan's oldest major irrigation canal, drawing the Zhuoshui River across the plain. Folklore tells of a mysterious old man, <strong>Mr. Lin (林先生)</strong>, who taught the secret of rock-filled bamboo baskets to tame the river, then vanished without reward. The canal turned the plain into <strong>Taiwan's rice barn (米倉)</strong>.</p>
+      <p class="zh">彰化的富庶是「工程造就」的。<strong>1709 年地主施世榜</strong>開鑿<strong>八堡圳</strong>,1719 年完工——這是台灣最古老的大型水圳,引濁水溪灌溉整片平原。民間傳說有位神祕老者<strong>林先生</strong>,傳授以石笱(竹編石籠)馴服河流的祕訣,事成後不受酬謝便消失。八堡圳讓彰化平原成為<strong>台灣的米倉</strong>。</p>
+      <p>That rice flowed out through the port of <strong>Lukang (鹿港, "Deer Harbor")</strong> — captured in the old saying <strong>"一府二鹿三艋舺"</strong> ("first the prefecture of Tainan, second Lukang, third Bangka"). After Quanzhou trade opened in 1784, Lukang boomed into Taiwan's second city. Then the harbor silted up from the 1840s and the railway bypassed it — so the town <strong>froze in time</strong>, which is exactly why its Qing-era streets and temples survive so beautifully today.</p>
+      <p class="zh">這些稻米經由<strong>鹿港</strong>輸出——正是俗諺<strong>「一府二鹿三艋舺」</strong>(一府台南、二鹿鹿港、三艋舺)所指。1784 年開放與泉州通商後,鹿港躍升為台灣第二大城。後來港口自 1840 年代淤積、鐵路又繞道而過,小鎮便<strong>凍結在時光裡</strong>——這正是它的清代街屋與廟宇至今保存得如此完好的原因。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Changhua</h2></div>
+    <div class="lmk cc-central">
+      <div class="lmk-item">
+        <h3>Baguashan Great Buddha<span class="zh">八卦山大佛</span><button class="say sm" data-say="Baguashan Great Buddha" aria-label="Hear">🔊</button></h3>
+        <p>A 22-metre black Buddha seated on Bagua Mountain above Changhua City, completed in 1961 and weighing over 300 tons. It is hollow and walk-in, with temple halls and twin nine-storey pagodas behind it, reached along a path lined with 32 stone Guanyin statues. It is the enduring symbol of the county.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Lukang Old Street<span class="zh">鹿港老街</span><button class="say sm" data-say="Lukang Old Street" aria-label="Hear">🔊</button></h3>
+        <p>A 500-metre warren of preserved Qing-dynasty trade streets. Squeeze through <strong>Breast-Touching Lane (摸乳巷)</strong>, only about 70 cm wide; follow the winding <strong>Nine-Turns Lane (九曲巷)</strong>, curved to foil thieves and block the winter sea wind; and find the <strong>Half-Sided Well (半邊井)</strong>, built half outside a rich family's wall so poorer neighbours could draw water too.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Lukang Longshan Temple<span class="zh">鹿港龍山寺</span><button class="say sm" data-say="Lukang Longshan Temple" aria-label="Hear">🔊</button></h3>
+        <p>Moved here in 1786, this first-grade national heritage temple to Guanyin is treasured for its master woodcarving and the largest octagonal "spider-web" caisson ceiling in Taiwan. It is so exquisite it is often called <strong>"Taiwan's Forbidden City."</strong></p>
+      </div>
+      <div class="lmk-item">
+        <h3>Lukang Mazu Temple<span class="zh">鹿港天后宮</span><button class="say sm" data-say="Lukang Mazu Temple" aria-label="Hear">🔊</button></h3>
+        <p>One of Taiwan's most revered Mazu temples. By tradition, Admiral Shih Lang brought one of the original Meizhou Mazu statues here in 1683; centuries of incense smoke have darkened her face, so she is famous as the <strong>"Black-Faced Mazu" (黑面媽祖)</strong>.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Fan-shaped Roundhouse<span class="zh">扇形車庫</span><button class="say sm" data-say="The fan-shaped roundhouse" aria-label="Hear">🔊</button></h3>
+        <p>Built in 1922, this is the <strong>only surviving fan-shaped locomotive depot in Taiwan</strong>, with a working central turntable that swings engines into a fan of bays — earning it the nickname the "locomotive hotel." It still keeps two historic steam engines, CK101 and CK124.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Nanyao Temple<span class="zh">南瑤宮</span><button class="say sm" data-say="Nanyao Temple" aria-label="Hear">🔊</button></h3>
+        <p>A beloved Mazu temple in Changhua City, completed in 1738 and affectionately called <strong>"Changhua Ma" (彰化媽)</strong>. It is regarded as the first temple in Taiwan to make an annual pilgrimage back to its "mother temple" in Beigang.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Tianwei Highway Garden<span class="zh">田尾公路花園</span><button class="say sm" data-say="Tianwei Highway Garden" aria-label="Hear">🔊</button></h3>
+        <p>Taiwan's largest flower-and-nursery district, with 140+ garden shops along a cyclable loop. Its signature sight: hectares of chrysanthemums lit at night with grow-lights from October to December, turning Tianwei into an "ever-bright city of flowers."</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Xihu Sugar Refinery<span class="zh">溪湖糖廠</span><button class="say sm" data-say="Xihu Sugar Refinery" aria-label="Hear">🔊</button></h3>
+        <p>A Japanese-era sugar mill built in 1919; production ended in 2002 and it reopened as a heritage park. Ride the restored narrow-gauge <strong>"five-part" sugar train (五分車)</strong> and eat the famous Taisugar ice cream among preserved steam locomotives.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Wanggong Fishing Harbour<span class="zh">王功漁港</span><button class="say sm" data-say="Wanggong Fishing Harbour" aria-label="Hear">🔊</button></h3>
+        <p>Changhua's only fishing harbour, a centre of oyster farming in Fangyuan. Beside its black-and-white striped lighthouse, visitors ride <strong>ox-carts across the tidal flats</strong> to harvest and grill fresh oysters — and the "Fishing Boat Lights of Wanggong" is one of Changhua's classic eight scenic views.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>The "National Day Bird"<span class="zh">八卦山國慶鳥</span><button class="say sm" data-say="The grey-faced buzzard migration" aria-label="Hear">🔊</button></h3>
+        <p>Every spring and autumn, <strong>grey-faced buzzards</strong> stream over Bagua Mountain on one of the world's great raptor migrations. Because the autumn peak falls near National Day (10 October), locals nickname them the "National Day Bird," and Changhua built Taiwan's first visitor centre devoted to them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>A town of master craftsmen</h2>
+      <p>Lukang is called a "living fossil of Minnan craftsmanship" — the densest community of traditional artisans in Taiwan, home to several of the country's national heritage masters.</p></div>
+    <div class="ppl cc-central">
+      <div class="ppl-card">
+        <h3>🏮 Lukang craft masters · 鹿港工藝大師</h3>
+        <p>Generations of Lukang families have practised the crafts that decorate Taiwan's temples — including the <strong>tin / pewter art (錫藝)</strong> of master Chen Wan-neng (陳萬能), <strong>hand-painted lanterns (燈籠)</strong> from the famous Wu Tun-hou (吳敦厚) workshop, and the <strong>woodcarving (木雕)</strong> of Li Sung-lin (李松林), whose lineage restored the carvings of Longshan and Tianhou temples.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>🙏 The Mazu pilgrimage · 媽祖進香</h3>
+        <p>Lukang alone has over 200 temples. Changhua's headline living tradition is <strong>Nanyao Temple's pilgrimage</strong> to Beigang — believed to be Taiwan's first annual "return to the mother temple." Pilgrims carry an imperial "dragon robe" as new attire for the ancestral Mazu, and once every three years the procession <strong>wades across the Zhuoshui River</strong> on the way home.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Famous People · 彰化名人</div><h2>The cradle of modern Taiwanese literature</h2></div>
+    <div class="ppl cc-central">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Lai He 賴和</h3>
+        <div class="yr">1894–1943 · Changhua City</div>
+        <p>Honoured as the <strong>"Father of Taiwan's New Literature."</strong> A Western-trained physician who ran a clinic in Changhua City and often waived fees for the poor — so beloved that locals called him "the Changhua Mazu." He pioneered fiction and poetry in everyday Taiwanese, led the New Literature Movement under Japanese rule, and was jailed for anti-colonial activism. Changhua keeps a memorial museum and observes a "Lai He Day."</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Weng Nao 翁鬧</h3>
+        <div class="yr">1910–1940 · Shetou 社頭</div>
+        <p>A Japanese-era <strong>modernist writer</strong> born in Shetou, Changhua. After teaching in Yuanlin and Tianzhong he moved to Tokyo, writing pioneering psychological and urban fiction (such as "Remnant Snow"). He died in poverty at around 31, leaving a small but influential body of work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Events · 節慶活動</div><h2>When Changhua comes alive</h2></div>
+    <div class="lmk cc-central">
+      <div class="lmk-item">
+        <h3>Lukang Folk Arts Festival<span class="zh">鹿港慶端陽</span></h3>
+        <p>Launched in 1978 to revive Lukang's heritage, this festival is held around the Dragon Boat Festival (端午) with dragon-boat races, a temple "dotting the dragon's eyes" ritual, and showcases of Lukang's crafts, culture and food.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Nanyao Mazu Pilgrimage<span class="zh">南瑤宮進香</span></h3>
+        <p>Changhua's headline Mazu event — a centuries-old procession to Beigang, complete with the dramatic river-wading ritual held once every three years.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Changhua Flower Festival<span class="zh">彰化花季</span></h3>
+        <p>A Lunar-New-Year-season celebration of blooms centred on Tianwei (田尾) and the neighbouring flower towns.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Buzzard Watching<span class="zh">八卦山賞鷹</span></h3>
+        <p>Spring and autumn raptor-watching on Bagua Mountain, when thousands of grey-faced buzzards ride the skies over the city.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>A food trail, town by town</h2>
+      <p>Taiwan's "south-steam, north-fry" meatball line runs right through Changhua — and that's only the beginning.</p></div>
+    <div class="food cc-central">
+      <div class="food-item"><span class="em">🥟</span><div><h4>Bawan <span class="zh">彰化肉圓</span></h4><p>A translucent sweet-potato-starch dumpling stuffed with pork and bamboo shoot — Changhua's version is oil-poached for a bouncy "Q" skin.</p><span class="town">Changhua City 彰化市</span></div></div>
+      <div class="food-item"><span class="em">🔺</span><div><h4>Beidou meatball <span class="zh">北斗肉圓</span></h4><p>Said to be the birthplace of Taiwanese bawan (a flood-relief food from 1898) — smaller, triangular and hand-pinched with three finger marks.</p><span class="town">Beidou 北斗</span></div></div>
+      <div class="food-item"><span class="em">🍚</span><div><h4>Braised pork rice <span class="zh">爌肉飯</span></h4><p>A glistening slab of soy-braised pork belly over rice, slow-cooked for hours — Changhua locals even eat it for breakfast.</p><span class="town">Changhua City 彰化市</span></div></div>
+      <div class="food-item"><span class="em">🦪</span><div><h4>Lukang snacks <span class="zh">鹿港小吃</span></h4><p>Oyster omelette; <strong>xiahou (蝦猴)</strong>, a salty-crisp ghost shrimp; thin ox-tongue cookies; and phoenix-eye cake from Yu Jen Jai (玉珍齋, founded 1877).</p><span class="town">Lukang 鹿港</span></div></div>
+      <div class="food-item"><span class="em">🍲</span><div><h4>Mutton hotpot <span class="zh">溪湖羊肉爐</span></h4><p>A whole town of family goat-hotpot restaurants — fitting, since Changhua raises more meat goats than any county in Taiwan.</p><span class="town">Xihu 溪湖</span></div></div>
+      <div class="food-item"><span class="em">🍬</span><div><h4>Preserved fruit <span class="zh">員林蜜餞</span></h4><p>Historically Taiwan's candied-fruit capital — "Yuanlin salty-sour-sweet" — born from preserving the surplus fruit of Baiguoshan.</p><span class="town">Yuanlin 員林</span></div></div>
+      <div class="food-item"><span class="em">🦪</span><div><h4>Pearl oysters <span class="zh">王功蚵</span></h4><p>Small, sweet oysters from clean tidal flats, eaten freshly grilled by the harbour.</p><span class="town">Wanggong 王功</span></div></div>
+      <div class="food-item"><span class="em">🍜</span><div><h4>Cat-Mouse Noodles <span class="zh">貓鼠麵</span></h4><p>A century-old Changhua City noodle landmark with a curious nickname, serving springy noodles in a savoury broth since the 1920s.</p><span class="town">Changhua City 彰化市</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Changhua is known for · 彰化的招牌</div><h2>One county, a dozen specialities</h2></div>
+    <div class="kf cc-central">
+      <div class="kf-item"><span class="em">🌾</span><h4>Rice barn <span class="zh">米倉</span></h4><p>Taiwan's #2 rice-producing county, growing about half the island's japonica rice.</p></div>
+      <div class="kf-item"><span class="em">🌸</span><h4>Flowers <span class="zh">花卉(田尾)</span></h4><p>Tianwei's Highway Garden is Taiwan's largest flower and nursery cluster.</p></div>
+      <div class="kf-item"><span class="em">🧦</span><h4>Socks <span class="zh">襪子(社頭)</span></h4><p>Shetou is the "Kingdom of Socks" — about 80% of all socks made in Taiwan come from here.</p></div>
+      <div class="kf-item"><span class="em">🍇</span><h4>Grapes &amp; wine <span class="zh">葡萄(二林・大村)</span></h4><p>Erlin is Taiwan's wine-grape heartland; Dacun is the capital of Kyoho table grapes.</p></div>
+      <div class="kf-item"><span class="em">🤍</span><h4>Jasmine &amp; bricks <span class="zh">茉莉花・紅磚(花壇)</span></h4><p>Huatan leads the nation in jasmine for tea, and is a long-standing red-brick kiln town.</p></div>
+      <div class="kf-item"><span class="em">🦪</span><h4>Oysters <span class="zh">牡蠣(王功)</span></h4><p>Wanggong and Fangyuan are known across Taiwan as "the hometown of oysters."</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-central" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Changhua to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹彰化,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Changhua." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Changhua.<span class="zh">我來自彰化縣。</span></span></li>
-        <li><button class="say sm" data-say="Changhua is in Central Taiwan." aria-label="Hear sentence">🔊</button><span class="en">Changhua is in Central Taiwan.<span class="zh">彰化縣在臺灣中部。</span></span></li>
-        <li><button class="say sm" data-say="Changhua is famous for Baguashan Great Buddha." aria-label="Hear sentence">🔊</button><span class="en">Changhua is famous for Baguashan Great Buddha.<span class="zh">彰化縣以八卦山大佛聞名。</span></span></li>
+        <li><button class="say sm" data-say="Changhua is known as the rice barn of Taiwan, because a three-hundred-year-old canal called the Babao Canal turned our plains into rich farmland." aria-label="Hear">🔊</button><span class="en">Changhua is known as the "rice barn of Taiwan," because a 300-year-old canal called the Babao Canal turned our plains into rich farmland.<span class="zh">彰化被稱為「台灣的米倉」,因為一條三百年歷史的八堡圳,把我們的平原變成肥沃良田。</span></span></li>
+        <li><button class="say sm" data-say="In the old days people said, first Tainan, second Lukang. Lukang was Taiwan's second-biggest trading port, and its old streets and temples are still beautifully preserved." aria-label="Hear">🔊</button><span class="en">In the old days people said "first Tainan, second Lukang" — Lukang was Taiwan's second-biggest trading port, and its old streets and temples are still beautifully preserved.<span class="zh">古時候人們說「一府二鹿」,鹿港曾是台灣第二大貿易港,老街與廟宇至今保存得非常完好。</span></span></li>
+        <li><button class="say sm" data-say="If you visit Changhua, you must try our bawan, a chewy meatball, and climb up to the giant Great Buddha on Bagua Mountain." aria-label="Hear">🔊</button><span class="en">If you visit Changhua, you must try our bawan — a chewy meatball — and climb up to the giant Great Buddha on Bagua Mountain.<span class="zh">如果你來彰化,一定要嚐嚐我們的肉圓,並登上八卦山上的大佛。</span></span></li>
+        <li><button class="say sm" data-say="Changhua is also the home of Lai He, the Father of Taiwan's New Literature, who was a doctor in Changhua City and wrote in everyday Taiwanese." aria-label="Hear">🔊</button><span class="en">Changhua is also the home of Lai He, the "Father of Taiwan's New Literature," who was a doctor in Changhua City and wrote in everyday Taiwanese.<span class="zh">彰化也是「台灣新文學之父」賴和的故鄉,他曾是彰化市的醫生,並用日常台語寫作。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- schools + nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Baguashan Great Buddha<button class="say sm" data-say="Baguashan Great Buddha" aria-label="Hear Baguashan Great Buddha">🔊</button></h3>
-          <div class="zh">八卦山大佛</div>
-          <p>Changhua City&#x27;s landmark — a towering Buddha with ridge-top hiking trails.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Lukang Old Town<button class="say sm" data-say="Lukang Old Town" aria-label="Hear Lukang Old Town">🔊</button></h3>
-          <div class="zh">鹿港古鎮</div>
-          <p>A Qing-era port — Longshan Temple (&#x27;Taiwan&#x27;s Forbidden City&#x27;) and old-street snacks.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Fan-shaped Roundhouse<button class="say sm" data-say="Fan-shaped Roundhouse" aria-label="Hear Fan-shaped Roundhouse">🔊</button></h3>
-          <div class="zh">扇形車庫</div>
-          <p>Taiwan&#x27;s only surviving fan-shaped train depot, with its locomotive turntable.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Food &amp; literature<button class="say sm" data-say="Food &amp; literature" aria-label="Hear Food &amp; literature">🔊</button></h3>
-          <div class="zh">美食與文學</div>
-          <p>Changhua meatballs, Lukang oyster omelette and the writer Lai He.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-central">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Changhua meatballs (bah-wan) <button class="say sm" data-say="Changhua meatballs" aria-label="Hear food name">🔊</button> <span class="zh">· 彰化肉圓</span></div>
-    </div>
-  </div>
-</section>
-  <section class="section" style="padding-top:0;">
-    <div class="wrap">
-      <div class="cty-schools cc-central">
-        <h2>Bilingual schools here</h2>
-        <p>Campuses in Changhua that already have a bilingual site in the hub. ｜本縣已建置雙語校網的學校。</p>
-        <div class="chips">
-          <a href="https://changhua-bilingual.org/">🏫 Changhua Bilingual Hub · 數十所學校 →</a>
-        </div>
+    <div class="cty-schools cc-central">
+      <h2>Bilingual schools here</h2>
+      <p>Changhua has a full bilingual hub of its own, with sites for dozens of schools across the county. ｜彰化有專屬的雙語資源網,已為縣內數十所學校建置雙語校站。</p>
+      <div class="chips">
+        <a href="https://changhua-bilingual.org/">🌐 Changhua Bilingual Hub · 數十所學校 →</a>
       </div>
     </div>
-  </section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:交通部觀光署、彰化縣文化局、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <a href="/counties/taichung/">← Taichung</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -119,6 +292,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>
