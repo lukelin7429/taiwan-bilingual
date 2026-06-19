@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>One-Minute English Classroom · 一分鐘英語教室 — Taiwan Bilingual Hub</title>
+<meta name="description" content="Learn one handy English word a minute — everyday campus and life vocabulary across three series, each a one-minute video with 🔊 and inline play. 一分鐘學一個實用英語單字,三期共 60 部短片。">
+<meta property="og:title" content="One-Minute English Classroom · 一分鐘英語教室">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  .pg-band{background:linear-gradient(135deg,#9d174d 0%,#be185d 60%,#db2777 100%);color:#fff;padding:50px 0 52px;position:relative;overflow:hidden;}
+  .pg-band::before{content:"";position:absolute;top:-120px;right:-100px;width:420px;height:420px;background:radial-gradient(circle,rgba(255,255,255,.13) 0%,transparent 70%);}
+  .pg-band .eyebrow{font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fbcfe2;margin-bottom:12px;}
+  .pg-band h1{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(32px,5vw,48px);font-weight:600;line-height:1.08;position:relative;z-index:1;}
+  .pg-band .sub{margin-top:14px;font-size:19px;color:#fdeaf2;max-width:62ch;position:relative;z-index:1;}
+  .pg-band .sub-zh{margin-top:6px;font-size:16.5px;color:#fbd7e6;max-width:56ch;line-height:1.8;position:relative;z-index:1;}
+
+  .o-controls{position:sticky;top:57px;z-index:30;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:14px 0;}
+  .o-tabs{display:flex;gap:10px;flex-wrap:wrap;}
+  .o-tab{font-size:15.5px;font-weight:700;color:var(--ink-soft);background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:9px 18px;cursor:pointer;transition:all .15s;}
+  .o-tab:hover{border-color:#be185d;color:#be185d;}
+  .o-tab.on{background:#be185d;color:#fff;border-color:#be185d;}
+  .o-tab small{font-weight:500;opacity:.85;margin-left:3px;}
+  .o-search{position:relative;max-width:520px;margin-top:12px;}
+  .o-search input{width:100%;font-size:17px;font-family:inherit;color:var(--ink);padding:12px 16px 12px 44px;border:1.5px solid var(--line);border-radius:999px;outline:none;transition:border-color .2s;}
+  .o-search input:focus{border-color:#be185d;}
+  .o-search .mag{position:absolute;left:16px;top:50%;transform:translateY(-50%);font-size:17px;color:var(--ink-soft);}
+  .o-count{margin-top:8px;font-size:14px;color:var(--ink-soft);}
+  .o-count b{color:#be185d;}
+
+  .o-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:6px;}
+  @media(min-width:620px){.o-grid{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.o-grid{grid-template-columns:1fr 1fr 1fr;}}
+  .o-card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s;--cc:#be185d;--cc-deep:#9d174d;}
+  .o-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
+  .o-thumb{position:relative;aspect-ratio:16/9;background:#2a0816;cursor:pointer;overflow:hidden;}
+  .o-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .o-thumb .pl{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:6px;color:#fff;background:rgba(42,8,22,.32);transition:background .18s;}
+  .o-thumb .pl .ico{font-size:30px;}
+  .o-thumb:hover .pl{background:rgba(42,8,22,.15);}
+  .o-thumb .min{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.5);color:#fff;font-size:12px;font-weight:700;padding:2px 9px;border-radius:999px;}
+  .o-thumb iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  .o-body{padding:16px 18px 18px;}
+  .o-en{display:flex;align-items:center;gap:8px;font-size:19px;font-weight:700;color:var(--ink);line-height:1.25;}
+  .o-en .say{margin-left:auto;}
+  .o-zh{margin-top:3px;font-size:16px;color:#be185d;font-weight:600;}
+
+  .o-more{text-align:center;margin-top:30px;}
+  .o-more button{font-size:16px;font-weight:700;color:#fff;background:#be185d;border:0;border-radius:999px;padding:13px 30px;cursor:pointer;}
+  .o-empty{text-align:center;color:var(--ink-soft);font-size:17px;padding:40px 0;display:none;}
+  .o-credit{margin-top:28px;font-size:14.5px;color:var(--ink-soft);border-left:3px solid var(--line);padding-left:14px;line-height:1.7;}
+  @media(max-width:760px){.o-controls{top:56px;}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
+    <nav class="topbar-nav">
+      <a href="/">Home</a>
+      <a href="/bilingual-2030/">Bilingual 2030</a>
+      <a href="/counties/">Counties</a>
+      <a href="/schools/">Schools</a>
+      <a href="/partners/">Partners</a>
+      <a href="/resources/" aria-current="page">Resources</a>
+      <a href="https://changhua-bilingual.org/">Changhua Hub ↗</a>
+    </nav>
+  </div>
+</div>
+
+<header class="pg-band">
+  <div class="wrap">
+    <div class="eyebrow">Resources · One-Minute English · 一分鐘英語教室</div>
+    <h1>One-Minute English Classroom</h1>
+    <p class="sub">One handy English word a minute — everyday campus and life vocabulary, from drinking fountains to mooncakes. Three series, 60 short videos. Tap 🔊 to hear the word, then play the one-minute clip.</p>
+    <p class="sub-zh">一分鐘學一個實用英語單字——從飲水機到月餅,涵蓋校園與生活詞彙。三期共 60 部短片。點 🔊 聽單字,再播放一分鐘短片。</p>
+  </div>
+</header>
+
+<div class="o-controls">
+  <div class="wrap">
+    <div class="o-tabs">
+      <button class="o-tab on" data-s="s1">Series 1 <small>第一期</small></button>
+      <button class="o-tab" data-s="s2">Series 2 <small>第二期</small></button>
+      <button class="o-tab" data-s="s3">Series 3 <small>第三期</small></button>
+    </div>
+    <div class="o-search">
+      <span class="mag">🔍</span>
+      <input id="oq" type="search" placeholder="Search a word… 搜尋單字(中或英)" autocomplete="off" aria-label="Search words">
+    </div>
+    <div class="o-count" id="ocount"></div>
+  </div>
+</div>
+
+<section class="section" style="padding-top:24px;">
+  <div class="wrap">
+    <div class="o-grid" id="ogrid"></div>
+    <div class="o-empty" id="oempty">No words match your search. 找不到符合的單字。</div>
+    <div class="o-more" id="omore" style="display:none;"><button type="button" id="omorebtn">Load more 載入更多</button></div>
+    <p class="o-credit" id="ocredit"></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p class="footer-brand">Taiwan Bilingual Hub · 臺灣雙語資源網</p>
+    <p class="footer-note">A teacher-led bilingual education effort supporting Taiwan's 2030 Bilingual Nation policy.<br>支援「2030 雙語國家」政策 · 由老師發起的雙語教育計畫。</p>
+    <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
+  </div>
+</footer>
+
+<script src="/assets/js/say.js"></script>
+<script>
+(function(){
+  var PAGE=30, DATA={}, season='s1', q='', list=[], rendered=0;
+  var grid=document.getElementById('ogrid'),countEl=document.getElementById('ocount'),
+      emptyEl=document.getElementById('oempty'),moreWrap=document.getElementById('omore');
+  function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+  function cardHTML(it){
+    var en=esc(it.en||it.zh), zh=esc(it.zh||''), spk=esc(it.en||it.zh);
+    return '<article class="o-card">'
+      + '<div class="o-thumb" data-v="'+esc(it.v)+'"><img src="https://i.ytimg.com/vi/'+esc(it.v)+'/mqdefault.jpg" loading="lazy" alt=""><span class="min">1 min</span><span class="pl"><span class="ico">▶</span></span></div>'
+      + '<div class="o-body"><div class="o-en">'+en+'<button class="say sm" data-say="'+spk+'" aria-label="Hear">🔊</button></div>'
+      + (it.en&&zh?'<div class="o-zh">'+zh+'</div>':'')+'</div></article>';
+  }
+  function apply(){
+    var src=DATA[season]||[];
+    list = q ? src.filter(function(it){return ((it.en||'')+' '+(it.zh||'')).toLowerCase().indexOf(q)>=0;}) : src.slice();
+    rendered=0; grid.innerHTML='';
+    emptyEl.style.display=list.length?'none':'block';
+    countEl.innerHTML='<b>'+list.length+'</b> word'+(list.length===1?'':'s')+(q?' found':'')+' · 個';
+    more();
+  }
+  function more(){
+    var end=Math.min(rendered+PAGE,list.length),html='';
+    for(var i=rendered;i<end;i++) html+=cardHTML(list[i]);
+    grid.insertAdjacentHTML('beforeend',html);
+    rendered=end; moreWrap.style.display=rendered<list.length?'block':'none';
+  }
+  document.querySelector('.o-tabs').addEventListener('click',function(e){
+    var b=e.target.closest('.o-tab'); if(!b)return;
+    season=b.getAttribute('data-s');
+    document.querySelectorAll('.o-tab').forEach(function(x){x.classList.toggle('on',x===b);});apply();
+  });
+  var oi=document.getElementById('oq'),td;
+  oi.addEventListener('input',function(){clearTimeout(td);td=setTimeout(function(){q=oi.value.trim().toLowerCase();apply();},150);});
+  document.getElementById('omorebtn').addEventListener('click',more);
+  grid.addEventListener('click',function(e){
+    var t=e.target.closest('.o-thumb'); if(!t||t.querySelector('iframe'))return;
+    var v=t.getAttribute('data-v');
+    t.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+v+'?autoplay=1&rel=0" title="One-Minute English video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  });
+  fetch('/assets/data/one_minute.json').then(function(r){return r.json();}).then(function(d){
+    DATA=d;
+    var n=(d.s1||[]).length+(d.s2||[]).length+(d.s3||[]).length;
+    document.getElementById('ocredit').innerHTML='<b>'+n+'</b> one-minute videos across three series of the “彰化一分鐘英語教室”, produced by teacher Luke Lin. ｜「一分鐘英語教室」三期共 '+n+' 部短片,由林吉祥老師製作。';
+    apply();
+  }).catch(function(){emptyEl.textContent='Could not load the videos. 無法載入影片。';emptyEl.style.display='block';});
+})();
+</script>
+</body>
+</html>
