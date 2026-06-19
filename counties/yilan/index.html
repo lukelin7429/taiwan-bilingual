@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Yilan 宜蘭縣 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Yilan (宜蘭縣) — landmarks, food and culture, and how to say it in English. 好山好水的溫泉之鄉,山海相依、夜市熱鬧,是台北的後花園。">
+<meta name="description" content="Yilan County (宜蘭縣) — the green, rainy Lanyang Plain near Taipei, home to Jiaoxi hot springs and the rare Su'ao cold spring, Turtle Island, the birthplace of Taiwanese opera, and Sanxing green onions. Its history, landmarks, culture, food, and how to say it in English. 蘭陽平原宜蘭的深度文化介紹。">
 <meta property="og:title" content="Yilan 宜蘭縣 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Yilan = east / teal) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#2c3a3e;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#084e63);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#0a8aab);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#0a8aab);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#084e63);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#e3f1f5);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#084e63);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#2c3a3e;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#084e63);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#0a8aab);background:var(--cc-soft,#e3f1f5);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#0a8aab);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#084e63);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,72 +77,199 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-east">
   <div class="wrap">
     <div class="cty-region">Eastern Taiwan · 東部</div>
     <div class="cty-name">
       <h1>Yilan</h1>
       <span class="zh">宜蘭縣</span>
-      <button class="say" data-say="Yilan" aria-label="Hear Yilan in English">🔊</button>
+      <button class="say" data-say="Yilan County" aria-label="Hear Yilan in English">🔊</button>
     </div>
-    <p class="cty-pos">A green, rainy land of steaming hot springs, ocean-view islands and lively night markets just over the mountains from Taipei.</p>
-    <p class="cty-pos-zh">好山好水的溫泉之鄉,山海相依、夜市熱鬧,是台北的後花園。</p>
+    <p class="cty-pos">A green, rainy plain on the northeast coast — hot springs and a rare cold spring, a turtle-shaped island offshore, and the cradle of Taiwan's own opera.</p>
+    <p class="cty-pos-zh">東北海岸一片翠綠多雨的平原——溫泉與罕見的冷泉、外海一座形似烏龜的島,與台灣本土戲曲的搖籃。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-east">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>The plain a tunnel opened</h2></div>
+    <div class="narr">
+      <p>Yilan sits on Taiwan's rainy northeast coast, occupying the <strong>Lanyang Plain (蘭陽平原)</strong> — a triangular alluvial fan ringed by steep mountains on three sides and opening to the Pacific on the fourth, drained by the Lanyang River. For most of its history this green, wet plain was almost a world apart, cut off from Taipei by the Snow Mountain Range. Long before Han settlers, it was the homeland of the Indigenous <strong>Kavalan people (噶瑪蘭族)</strong>, from whom the region's old name comes; the Atayal lived in the surrounding mountains.</p>
+      <p class="zh">宜蘭位於台灣多雨的東北角,主體是<strong>蘭陽平原</strong>——一片三面環山、一面朝太平洋敞開的三角形沖積扇,由蘭陽溪貫流。長久以來,這片翠綠濕潤的平原幾乎自成一個世界,被雪山山脈擋在台北之外。早在漢人到來之前,這裡是平埔原住民<strong>噶瑪蘭族</strong>的家園,此地舊名即源於他們;泰雅族則居住在周圍山區。</p>
+      <p>Han settlement came late and forcefully. In <strong>1796 the pioneer Wu Sha (吳沙)</strong> led a large band of mostly Zhangzhou migrants into the plain, building a fortified base at today's <strong>Toucheng (頭城, "First City")</strong>. Settlers spread in defensive clusters whose names — with the characters 圍 ("walled enclosure") and 結 ("bond") — still dot the map. As the Kavalan lost their land, many migrated south to Hualien and Taitung, and by 1875 the Qing reorganized the plain into Yilan County.</p>
+      <p class="zh">漢人的開墾來得既晚且強勢。<strong>1796 年,墾首吳沙</strong>率領大批漳州移民進入平原,在今日的<strong>頭城(「第一座城」)</strong>築起據點。墾民以「圍」「結」為單位向外擴散建村,這些地名至今仍留在地圖上。隨著噶瑪蘭族失去土地,許多族人南遷花蓮、台東,到 1875 年清廷將此地改制為宜蘭縣。</p>
+      <p>For more than a century Yilan stayed isolated — reachable from Taipei only by a slow mountain road. That changed in 2006, when the <strong>Hsuehshan Tunnel (雪山隧道)</strong>, about 12.9 km long and one of the longest road tunnels in the world, opened through the Snow Mountain Range; a two-hour trip suddenly shrank to under an hour, pulling Yilan into Taipei's backyard. Beyond its rain, modern Yilan is known for clean, citizen-focused local government and as a guardian of folk culture — home to the National Center for Traditional Arts and the cradle of <strong>gezaixi (歌仔戲)</strong>, the only major traditional opera that originated on Taiwanese soil.</p>
+      <p class="zh">此後一個多世紀,宜蘭始終與外界隔絕,從台北前往只能走緩慢的山路。直到 2006 年,全長約 12.9 公里、為世界最長公路隧道之一的<strong>雪山隧道</strong>穿越雪山山脈通車,原本兩小時的車程驟然縮短到一小時內,宜蘭頓成台北的後花園。除了雨,現代宜蘭以清廉、以民為本的縣政與民間文化的守護聞名——國立傳統藝術中心坐落於此,它更是<strong>歌仔戲</strong>的搖籃——唯一真正發源於台灣本土的大型傳統戲曲。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Yilan</h2></div>
+    <div class="lmk cc-east">
+      <div class="lmk-item">
+        <h3>National Center for Traditional Arts<span class="zh">國立傳統藝術中心</span><button class="say sm" data-say="The National Center for Traditional Arts" aria-label="Hear">🔊</button></h3>
+        <p>A 24-hectare <strong>"living folk-arts village"</strong> beside the Dongshan River in Wujie, opened in 2004. Cobbled old-street blocks hold craft workshops — wooden clogs, puppets, glass, ceramics — alongside open-air stages for gezaixi opera and folk performances.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Guishan Island (Turtle Island)<span class="zh">龜山島</span><button class="say sm" data-say="Guishan Island, Turtle Island" aria-label="Hear">🔊</button></h3>
+        <p>A <strong>turtle-shaped volcanic islet</strong> off Toucheng, about 20 minutes by boat from Wushi Harbor. An active volcano with an offshore turquoise "milky sea" colored by undersea hot springs, it is famous for whale- and dolphin-watching; with a permit you can land and walk its tunnels.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Lanyang Museum<span class="zh">蘭陽博物館</span><button class="say sm" data-say="Lanyang Museum" aria-label="Hear">🔊</button></h3>
+        <p>A dramatic museum in Toucheng by architect Kris Yao, opened in 2010. Its slanted, wedge-shaped form is modeled on the <strong>cuesta (單面山)</strong> tilted-rock landform of the nearby coast, and its exhibits tell the story of Yilan's land, sea and people.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Jiaoxi Hot Springs<span class="zh">礁溪溫泉</span><button class="say sm" data-say="Jiaoxi Hot Springs" aria-label="Hear">🔊</button></h3>
+        <p>One of Taiwan's rare <strong>lowland hot springs</strong>, right in the town of Jiaoxi — a clear, colorless, odorless sodium-bicarbonate spring nicknamed the "beauty spring." Free foot-soaking pools dot the town center, making it the easiest soak to reach from Taipei.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Taipingshan<span class="zh">太平山</span><button class="say sm" data-say="Taipingshan" aria-label="Hear">🔊</button></h3>
+        <p>A vast forest recreation area in the northern Central Range, a former logging center. Highlights include the <strong>"Bong-Bong" forest train</strong>, alpine Cuifeng Lake, the misty Jianqing Historic Trail and the Jiuzhize hot spring.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Dongshan River Water Park<span class="zh">冬山河親水公園</span><button class="say sm" data-say="Dongshan River Water Park" aria-label="Hear">🔊</button></h3>
+        <p>A riverside park in Wujie built around the Dongshan River, and the home venue of the Yilan <strong>International Childrens' Folklore &amp; Folkgame Festival</strong>. In summer it fills with water-play areas, art installations and stages.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Wushi Harbor &amp; Wai'ao Beach<span class="zh">烏石港・外澳</span><button class="say sm" data-say="Wushi Harbor and Wai'ao Beach" aria-label="Hear">🔊</button></h3>
+        <p>The harbor in Toucheng is the gateway for whale-watching and Turtle Island boat tours, beside the Lanyang Museum. The adjacent <strong>Wai'ao Beach</strong> is one of north Taiwan's most popular surfing spots, with the turtle island on the horizon.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Su'ao Cold Spring<span class="zh">蘇澳冷泉</span><button class="say sm" data-say="Su'ao Cold Spring" aria-label="Hear">🔊</button></h3>
+        <p>A rare cold carbonated spring in Su'ao — water around 22°C, fizzing with carbon-dioxide bubbles, so a soak feels like <strong>sitting in a tub of soda water</strong>. Known since the Japanese era, its water was traditionally used to make the local yokan sweet jelly.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Nanfang'ao Fishing Harbor<span class="zh">南方澳漁港</span><button class="say sm" data-say="Nanfang'ao Fishing Harbor" aria-label="Hear">🔊</button></h3>
+        <p>A century-old fishing port in Su'ao, one of Taiwan's three major fishing harbors and often called the <strong>"home of the mackerel"</strong> — it lands the great majority of Taiwan's mackerel catch. A great place for fresh seafood and the rhythm of a working harbor.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Toucheng Old Street<span class="zh">頭城老街</span><button class="say sm" data-say="Toucheng Old Street" aria-label="Hear">🔊</button></h3>
+        <p>The historic main street of Toucheng, the plain's first Han town. Once a thriving port street, it keeps old shophouses and temples, and the town hosts the dramatic <strong>Qianggu (搶孤)</strong> ghost-month pole-climbing ritual.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>Where Taiwanese opera was born</h2>
+      <p>Yilan is a guardian of folk culture — the birthplace of an opera, the homeland of a people, and a town built around a spring.</p></div>
+    <div class="ppl cc-east">
+      <div class="ppl-card">
+        <h3>🎶 Gezaixi &amp; the traditional arts · 歌仔戲與傳統工藝</h3>
+        <p>Yilan is the cradle of <strong>gezaixi (歌仔戲)</strong>, the only major traditional opera form that originated in Taiwan itself. It grew in the late 19th century (tradition points to Jietoufen in Yuanshan) out of folk ballads, first sung on temple plazas before becoming full staged opera. The National Center for Traditional Arts now preserves gezaixi, glove puppetry, lacquer, woodcraft, glass and ceramics in one living village.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>🌿 Kavalan heritage &amp; hot-spring life · 噶瑪蘭與溫泉文化</h3>
+        <p>Yilan is the ancestral home of the <strong>Kavalan (噶瑪蘭族)</strong>, recognized as Taiwan's 11th Indigenous people in 2002 and known for banana-fiber weaving (most now live in Hualien). Add Jiaoxi's "beauty spring" bathhouses, the green onions of Sanxing, and a strong community and eco identity, and Yilan's culture is both deep-rooted and quietly modern.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Famous People · 宜蘭名人</div><h2>The doctor who led a movement</h2></div>
+    <div class="ppl cc-east">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Chiang Wei-shui 蔣渭水</h3>
+        <div class="yr">c. 1890–1931 · Yilan</div>
+        <p>Born in Yilan, Chiang was a Western-trained doctor and the foremost leader of Taiwan's cultural and political movements under Japanese rule. He co-founded the <strong>Taiwan Cultural Association</strong> in 1921 and in 1927 the Taiwan People's Party, the first modern party led by Taiwanese. The freeway through the Hsuehshan Tunnel is named the Chiang Wei-shui Memorial Freeway in his honor.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>The home of gezaixi 歌仔戲的故鄉</h3>
+        <div class="yr">a living theatrical tradition</div>
+        <p>Beyond any single name, Yilan's gift to Taiwan is <strong>gezaixi</strong> itself — generations of performers who turned local ballads into the island's own opera. Its singers and troupes, nurtured on temple plazas across the Lanyang Plain, carry a uniquely Taiwanese art onto stages nationwide.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Seasons · 節慶與時令</div><h2>When Yilan comes alive</h2></div>
+    <div class="lmk cc-east">
+      <div class="lmk-item">
+        <h3>Childrens' Folklore &amp; Folkgame Festival<span class="zh">宜蘭國際童玩藝術節</span></h3>
+        <p>A summer festival at the Dongshan River Water Park, first held in 1996 to mark the 200th anniversary of Wu Sha's settlement. It combines international children's performing troupes with large outdoor water-play areas — one of Taiwan's signature summer events.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Toucheng Qianggu<span class="zh">頭城搶孤</span></h3>
+        <p>A dramatic ritual at the end of Ghost Month in Toucheng: competitors scale tall poles slathered in beef tallow to reach offering platforms and seize the winning flag — a roughly 200-year-old tradition remembering the pioneers who died settling the plain.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Whale-Watching Season<span class="zh">賞鯨季</span></h3>
+        <p>Roughly spring through autumn, boats run from Wushi Harbor to the waters around Turtle Island, where whales and dolphins ride the warm offshore currents.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Green Expo &amp; Hot-Spring Season<span class="zh">綠色博覽會與溫泉季</span></h3>
+        <p>The spring Yilan Green Expo reflects the county's eco-minded identity, while the cooler months fill Jiaoxi's bathhouses and foot-soaking pools with soakers escaping the city.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>The frugal feast of the plain</h2>
+      <p>Yilan's "banquet" cooking turns humble ingredients into delicacies — and the rainy plain grows Taiwan's sweetest green onions.</p></div>
+    <div class="food cc-east">
+      <div class="food-item"><span class="em">🧅</span><div><h4>Sanxing green onions <span class="zh">三星蔥</span></h4><p>Taiwan's most prized green onions — thick, white-stemmed and sweet — best in a hot, crispy green-onion pancake.</p><span class="town">Sanxing 三星</span></div></div>
+      <div class="food-item"><span class="em">🍮</span><div><h4>Gaozha <span class="zh">糕渣</span></h4><p>A signature Yilan banquet dish: chicken stock, minced meat and shrimp cooked to a paste, chilled to a jelly, then battered and fried — cool outside, scalding within.</p><span class="town">Yilan banquet 辦桌</span></div></div>
+      <div class="food-item"><span class="em">🍲</span><div><h4>Xilurou <span class="zh">西魯肉</span></h4><p>A homestyle banquet soup of shredded meat and vegetables simmered with napa cabbage, topped with crisp fried egg floss — the spirit of waste-nothing Yilan cooking.</p><span class="town">Yilan banquet 辦桌</span></div></div>
+      <div class="food-item"><span class="em">🦆</span><div><h4>Smoked pressed duck (yasang) <span class="zh">鴨賞</span></h4><p>Duck salted, pressed and smoked over sugarcane, then sliced thin — one of Yilan's traditional "treasures."</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🟠</span><div><h4>Kumquat &amp; candied fruit <span class="zh">金棗・蜜餞</span></h4><p>Rainy, hilly Yilan is Taiwan's kumquat country; the fruit is most often eaten preserved as sweet candied 蜜餞.</p><span class="town">Yuanshan 員山</span></div></div>
+      <div class="food-item"><span class="em">🐟</span><div><h4>Nanfang'ao mackerel <span class="zh">南方澳鯖魚</span></h4><p>The port lands the overwhelming majority of Taiwan's mackerel — eaten fresh, grilled or in the local seafood markets.</p><span class="town">Su'ao 蘇澳</span></div></div>
+      <div class="food-item"><span class="em">🍢</span><div><h4>Luodong night market <span class="zh">羅東夜市</span></h4><p>Yilan's most famous night market, known for filled tapioca balls (包心粉圓), angelica mutton soup and mutton stalls.</p><span class="town">Luodong 羅東</span></div></div>
+      <div class="food-item"><span class="em">🥩</span><div><h4>Dried pork liver <span class="zh">膽肝</span></h4><p>A cured, dried pig-liver delicacy, another traditional Yilan banquet specialty sliced thin for guests.</p><span class="town">Yilan banquet 辦桌</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Yilan is known for · 宜蘭的招牌</div><h2>Rain, springs, opera and onions</h2></div>
+    <div class="kf cc-east">
+      <div class="kf-item"><span class="em">🌧️</span><h4>The Lanyang Plain <span class="zh">蘭陽平原</span></h4><p>A green, rainy plain ringed by mountains, opening to the Pacific.</p></div>
+      <div class="kf-item"><span class="em">♨️</span><h4>Springs hot &amp; cold <span class="zh">溫泉與冷泉</span></h4><p>Jiaoxi's lowland "beauty spring" and the rare Su'ao cold spring.</p></div>
+      <div class="kf-item"><span class="em">🐢</span><h4>Turtle Island <span class="zh">龜山島</span></h4><p>The turtle-shaped volcanic islet and whale-watching waters.</p></div>
+      <div class="kf-item"><span class="em">🎶</span><h4>Birthplace of gezaixi <span class="zh">歌仔戲故鄉</span></h4><p>Taiwan's own opera and the National Center for Traditional Arts.</p></div>
+      <div class="kf-item"><span class="em">🛣️</span><h4>The Hsuehshan Tunnel <span class="zh">雪山隧道</span></h4><p>The tunnel that put Yilan under an hour from Taipei.</p></div>
+      <div class="kf-item"><span class="em">🧅</span><h4>Onions &amp; kumquats <span class="zh">三星蔥與金棗</span></h4><p>Sanxing green onions, kumquats, smoked duck and mackerel.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-east" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Yilan to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹宜蘭,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Yilan." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Yilan.<span class="zh">我來自宜蘭縣。</span></span></li>
-        <li><button class="say sm" data-say="Yilan is in Eastern Taiwan." aria-label="Hear sentence">🔊</button><span class="en">Yilan is in Eastern Taiwan.<span class="zh">宜蘭縣在臺灣東部。</span></span></li>
-        <li><button class="say sm" data-say="Yilan is famous for Jiaoxi Hot Springs." aria-label="Hear sentence">🔊</button><span class="en">Yilan is famous for Jiaoxi Hot Springs.<span class="zh">宜蘭縣以礁溪溫泉聞名。</span></span></li>
+        <li><button class="say sm" data-say="Yilan is a green, rainy plain on Taiwan's northeast coast, and ever since the Hsuehshan Tunnel opened in 2006 it's been less than an hour from Taipei." aria-label="Hear">🔊</button><span class="en">Yilan is a green, rainy plain on Taiwan's northeast coast, and ever since the Hsuehshan Tunnel opened in 2006 it's been less than an hour from Taipei.<span class="zh">宜蘭是台灣東北角一片翠綠多雨的平原,自從 2006 年雪山隧道通車後,它離台北不到一小時車程。</span></span></li>
+        <li><button class="say sm" data-say="It's famous for hot springs, the clear beauty spring in Jiaoxi, and for a rare cold carbonated spring in Su'ao that feels like soaking in soda water." aria-label="Hear">🔊</button><span class="en">It's famous for hot springs — the clear "beauty spring" in Jiaoxi — and for a rare cold carbonated spring in Su'ao that feels like soaking in soda water.<span class="zh">這裡以溫泉聞名——礁溪清澈的「美人湯」——還有蘇澳一處罕見的碳酸冷泉,泡起來像浸在汽水裡。</span></span></li>
+        <li><button class="say sm" data-say="Off the coast you can see Turtle Island, a turtle-shaped volcano, and take a boat out to watch whales and dolphins." aria-label="Hear">🔊</button><span class="en">Off the coast you can see Turtle Island, a turtle-shaped volcano, and take a boat out to watch whales and dolphins.<span class="zh">外海可以看到形似烏龜的火山島「龜山島」,還能搭船出海賞鯨豚。</span></span></li>
+        <li><button class="say sm" data-say="Yilan is the birthplace of gezaixi, Taiwan's own traditional opera, and you can experience folk crafts and shows at the National Center for Traditional Arts." aria-label="Hear">🔊</button><span class="en">Yilan is the birthplace of gezaixi, Taiwan's own traditional opera, and you can experience folk crafts and shows at the National Center for Traditional Arts.<span class="zh">宜蘭是台灣本土戲曲「歌仔戲」的發源地,你可以在國立傳統藝術中心體驗民俗工藝與表演。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Jiaoxi Hot Springs<button class="say sm" data-say="Jiaoxi Hot Springs" aria-label="Hear Jiaoxi Hot Springs">🔊</button></h3>
-          <div class="zh">礁溪溫泉</div>
-          <p>Rare lowland hot springs right in the heart of town.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Guishan Island<button class="say sm" data-say="Guishan Island" aria-label="Hear Guishan Island">🔊</button></h3>
-          <div class="zh">龜山島</div>
-          <p>A turtle-shaped volcanic island famous for whale watching.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Luodong Night Market<button class="say sm" data-say="Luodong Night Market" aria-label="Hear Luodong Night Market">🔊</button></h3>
-          <div class="zh">羅東夜市</div>
-          <p>One of Taiwan&#x27;s most beloved night markets.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Forestry Heritage<button class="say sm" data-say="Forestry Heritage" aria-label="Hear Forestry Heritage">🔊</button></h3>
-          <div class="zh">林業文化</div>
-          <p>Once a timber hub for the Taipingshan forest, with railways telling its story.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-east">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Smoked duck (yancang) <button class="say sm" data-say="Smoked duck" aria-label="Hear food name">🔊</button> <span class="zh">· 鴨賞</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:宜蘭縣政府、國立傳統藝術中心、東北角暨宜蘭海岸國家風景區管理處、文化部、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <a href="/counties/pingtung/">← Pingtung</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +285,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Taitung 臺東縣 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Taitung (臺東縣) — landmarks, food and culture, and how to say it in English. 步調悠閒的海岸縣,原民部落、熱氣球與純淨離島交織。">
+<meta name="description" content="Taitung County (臺東縣) — Taiwan's remote, beautiful southeast and most Indigenous county, home to the hot-air balloon festival, Chishang rice and Mr. Brown Avenue, Green Island and Orchid Island, and a deep prehistoric heritage. Its history, landmarks, culture, food, and how to say it in English. 臺東的深度文化介紹。">
 <meta property="og:title" content="Taitung 臺東縣 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Taitung = east / teal) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#2c3a3e;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#084e63);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#0a8aab);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#0a8aab);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#084e63);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#e3f1f5);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#084e63);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#2c3a3e;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#084e63);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#0a8aab);background:var(--cc-soft,#e3f1f5);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#0a8aab);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#084e63);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,72 +77,199 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-east">
   <div class="wrap">
     <div class="cty-region">Eastern Taiwan · 東部</div>
     <div class="cty-name">
       <h1>Taitung</h1>
       <span class="zh">臺東縣</span>
-      <button class="say" data-say="Taitung" aria-label="Hear Taitung in English">🔊</button>
+      <button class="say" data-say="Taitung County" aria-label="Hear Taitung in English">🔊</button>
     </div>
-    <p class="cty-pos">A laid-back coastal county of Indigenous villages, drifting hot-air balloons and pristine offshore islands.</p>
-    <p class="cty-pos-zh">步調悠閒的海岸縣,原民部落、熱氣球與純淨離島交織。</p>
+    <p class="cty-pos">Taiwan's remote, beautiful southeast — the most Indigenous county, of balloons over the rift valley, rice paddies by the Pacific, and two famous islands offshore.</p>
+    <p class="cty-pos-zh">台灣偏遠而美麗的東南角——原住民比例最高的縣,有飛越縱谷的熱氣球、太平洋畔的稻田,與外海兩座著名的島嶼。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-east">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>The Indigenous heart by the Pacific</h2></div>
+    <div class="narr">
+      <p>Taitung (臺東, "Taiwan East") is Taiwan's remote southeastern county — for most of history the island's least-developed, least-populated and hardest-to-reach corner. Hemmed in by the Central Mountain Range to the west and the Pacific to the east, it was settled and governed late, and even today its <strong>slow pace, clean air and open landscapes</strong> are central to its identity. The county runs along a long Pacific coastline, holds the southern half of the East Rift Valley, and governs two famous offshore islands — Green Island and Orchid Island.</p>
+      <p class="zh">臺東(意為「台灣東部」)是台灣偏遠的東南縣份——歷史上長期是全島開發最晚、人口最少、最難抵達的一隅。西有中央山脈阻隔、東臨太平洋,開拓與設治都晚,時至今日,它<strong>緩慢的步調、清新的空氣與開闊的地景</strong>仍是核心性格。全縣沿著綿長的太平洋海岸延伸,擁有花東縱谷的南半部,並管轄綠島與蘭嶼兩座著名離島。</p>
+      <p>More than any other county, Taitung is <strong>Indigenous Taiwan</strong>. It has the highest proportion of Indigenous residents of any county, home to an exceptional range of peoples: the Amis, the <strong>Puyuma (卑南族)</strong>, the Paiwan, the Rukai, the Bunun, the Kavalan, and — uniquely on Orchid Island — the <strong>Tao (達悟族, also called Yami)</strong>, the only Indigenous people of Taiwan whose traditional homeland is an offshore island.</p>
+      <p class="zh">臺東比任何其他縣市都更能代表<strong>原住民的台灣</strong>。它是全台原住民人口比例最高的縣,族群之豐富罕見:阿美族、<strong>卑南族</strong>、排灣族、魯凱族、布農族、噶瑪蘭族,以及蘭嶼獨有的<strong>達悟族(舊稱雅美族)</strong>——達悟族是台灣唯一傳統家園在離島上的原住民族。</p>
+      <p>Taitung's human story runs astonishingly deep. The <strong>Beinan Site (卑南遺址)</strong>, discovered in 1980 during railway construction, is one of Taiwan's most important prehistoric sites: a settlement of the Beinan Culture roughly 2,300–3,500 years old, which yielded close to 1,600 slate-coffin burials — the largest such complex in the region — and tens of thousands of jade and stone artifacts. It led to the founding of the <strong>National Museum of Prehistory</strong> in Taitung. Modern Taitung balances farming, fishing and fast-growing tourism: the southern rift valley grows Taiwan's most celebrated rice around <strong>Chishang (池上)</strong>, surfers ride the Pacific at Donghe, and since 2011 the summer skies over the Luye Highland fill with hot-air balloons.</p>
+      <p class="zh">臺東的人文底蘊深得驚人。<strong>卑南遺址</strong>於 1980 年興建鐵路時被發現,是台灣最重要的史前遺址之一:屬於距今約 2,300 至 3,500 年的卑南文化聚落,出土近 1,600 具石板棺——為該區域規模最大者——與數萬件玉器、石器,並促成<strong>國立臺灣史前文化博物館</strong>在臺東設立。今日的臺東在農業、漁業與蓬勃觀光間取得平衡:縱谷南段在<strong>池上</strong>一帶出產全台最受推崇的稻米,衝浪客在東河乘浪,而自 2011 年起,每逢夏季鹿野高台的天空便綴滿熱氣球。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Taitung</h2></div>
+    <div class="lmk cc-east">
+      <div class="lmk-item">
+        <h3>Luye Highland &amp; the Balloon Festival<span class="zh">鹿野高台・熱氣球嘉年華</span><button class="say sm" data-say="Luye Highland and the Taiwan International Balloon Festival" aria-label="Hear">🔊</button></h3>
+        <p>A grassy plateau in Luye, home since 2011 to <strong>Asia's signature hot-air balloon fiesta</strong>, held every summer. Dozens of balloons rise at dawn and dusk, and evening "night glow" concerts light up the field.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Mr. Brown Avenue &amp; Kaneshiro Tree<span class="zh">伯朗大道・金城武樹</span><button class="say sm" data-say="Mr Brown Avenue and the Takeshi Kaneshiro tree" aria-label="Hear">🔊</button></h3>
+        <p>A roughly 2.2-km tree-lined farm road through the Chishang rice paddies, with <strong>no power poles</strong> to break the view. The lone autumn-maple tree became famous after actor Takeshi Kaneshiro filmed an airline commercial beside it in 2013.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Chishang Rice Paddies<span class="zh">池上稻田</span><button class="say sm" data-say="Chishang rice paddies" aria-label="Hear">🔊</button></h3>
+        <p>Chishang produces <strong>Taiwan's most famous rice</strong>, grown in the clean water and wide light of the East Rift Valley. The region is also the home of the classic Chishang lunchbox (池上便當), a railway-bento tradition built on its fragrant rice.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Sanxiantai<span class="zh">三仙台</span><button class="say sm" data-say="Sanxiantai" aria-label="Hear">🔊</button></h3>
+        <p>An offshore islet in Chenggong, reached by an iconic <strong>eight-arched footbridge</strong> that undulates over the sea like a dragon. Its name, "Three Immortals' Platform," comes from a legend that three of the Eight Immortals once landed on its great rocks.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Xiaoyeliu<span class="zh">小野柳</span><button class="say sm" data-say="Xiaoyeliu" aria-label="Hear">🔊</button></h3>
+        <p>A stretch of dramatically <strong>eroded coastal rock</strong> just north of Fugang Harbor near Taitung City, where sandstone and shale have weathered into honeycomb, tofu-block and mushroom shapes — a natural sculpture park by the Pacific.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Green Island (Lyudao)<span class="zh">綠島</span><button class="say sm" data-say="Green Island" aria-label="Hear">🔊</button></h3>
+        <p>A small volcanic island famed for snorkeling and diving. Its Zhaori Hot Spring is one of only <strong>three seawater hot springs</strong> in the world. The island also holds the White Terror Green Island Memorial Park, a sobering human-rights memorial on the site of a former political prison.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Orchid Island (Lanyu)<span class="zh">蘭嶼</span><button class="say sm" data-say="Orchid Island" aria-label="Hear">🔊</button></h3>
+        <p>A volcanic island southeast of Taitung and the home of the <strong>Tao (Yami) people</strong>, Taiwan's only ocean-based Indigenous culture. It is famous for hand-built <em>tatala</em> plank canoes (made without a single nail), traditional half-underground houses, and its flying-fish culture.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Museum of Prehistory &amp; Beinan Park<span class="zh">史前館・卑南遺址公園</span><button class="say sm" data-say="The National Museum of Prehistory and Beinan Site Park" aria-label="Hear">🔊</button></h3>
+        <p>Taiwan's national museum of <strong>prehistory and Indigenous cultures</strong>, born from the 1980 discovery of the Beinan Site. The nearby archaeological park preserves the site's monolithic stone pillars and exhibits the slate coffins and jade of the 3,000-year-old Beinan Culture.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Tiehua Village<span class="zh">鐵花村</span><button class="say sm" data-say="Tiehua Village" aria-label="Hear">🔊</button></h3>
+        <p>A <strong>live-music and creative-market village</strong> in central Taitung City, converted from old railway warehouses. It is a hub of Taiwan's rich Indigenous music scene, with regular evening performances and a weekend "slow market."</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Dulan &amp; the Surf Coast<span class="zh">都蘭・衝浪海岸</span><button class="say sm" data-say="Dulan and the surf coast" aria-label="Hear">🔊</button></h3>
+        <p>Dulan is an Amis village turned artist-and-surf town, a center of "slow living" arts. Nearby <strong>Jinzun and Donghe</strong> are among Taiwan's best surf breaks, drawing surfers to the warm Pacific year-round.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>Many peoples, one slow coast</h2>
+      <p>Taitung's defining treasure is its Indigenous cultures, more concentrated here than anywhere else in Taiwan — feeding a remarkably alive music and arts scene.</p></div>
+    <div class="ppl cc-east">
+      <div class="ppl-card">
+        <h3>🪕 Indigenous cultures · 原住民文化</h3>
+        <p>The <strong>Amis</strong> hold their summer <strong>Harvest Festival (豐年祭)</strong>; the <strong>Puyuma (卑南族)</strong> are famous for their Annual Festival, combining the boys' Monkey Ceremony with the men's Great Hunting Ceremony; and the <strong>Tao (達悟族)</strong> of Orchid Island keep one of Taiwan's most distinctive living cultures — the ritual <strong>flying-fish season (飛魚季)</strong>, nail-free plank canoes and half-underground houses. The Beinan Culture left Taiwan's finest prehistoric jade, hinting that eastern Taiwan was its wealthiest region 3,000 years ago.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>🎵 Music, rice &amp; slow living · 音樂・稻米・慢活</h3>
+        <p>Taitung is widely seen as the richest <strong>wellspring of Indigenous music</strong> in Taiwan, anchored by the Tiehua Village live-music scene and the "slow living" arts community at Dulan. And <strong>Chishang rice culture</strong> gave rise to the beloved <strong>Autumn Rice Harvest Arts Festival (池上秋收稻穗藝術節)</strong> — concerts and dance (Cloud Gate, A-Mei, Sangpuy) staged in the open paddy fields since 2009.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Famous People · 臺東名人</div><h2>A diva, a champion and a singer of the land</h2></div>
+    <div class="ppl cc-east">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>A-Mei 張惠妹</h3>
+        <div class="yr">b. 1972 · Beinan 卑南</div>
+        <p>Mandopop's biggest diva, a true Taitung native, born in Beinan Township from the <strong>Puyuma (卑南族)</strong> Damalagaw community (her Indigenous name is Kulilay Amit). She still returns to Taitung to perform, including free New Year's Eve concerts for her hometown.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Kuo Hsing-chun 郭婞淳</h3>
+        <div class="yr">Olympic gold · Taitung Amis heritage</div>
+        <p>Olympic weightlifting champion (Tokyo 2020 gold) of <strong>Amis descent from the Malan community in Taitung</strong>, where she grew up. She became Taiwan's first weightlifter to medal at three straight Olympics — a source of deep pride along the east coast. (She is joined by Puyuma singer <strong>Sangpuy (桑布伊)</strong>, a multiple Golden Melody winner from near Zhiben.)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Seasons · 節慶與時令</div><h2>When Taitung comes alive</h2></div>
+    <div class="lmk cc-east">
+      <div class="lmk-item">
+        <h3>Taiwan International Balloon Festival<span class="zh">臺灣國際熱氣球嘉年華</span></h3>
+        <p>Summer, at the Luye Highland — Asia's signature hot-air balloon event, running since 2011. Dozens of balloons fill the dawn and dusk skies, with evening "night glow" music shows lighting the field.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Harvest &amp; Annual Festivals<span class="zh">豐年祭與年祭</span></h3>
+        <p>The Amis Harvest Festival (around July–August) binds the community after the harvest, while the Puyuma Annual Festival (late December into January) combines the boys' Monkey Ceremony with the men's Great Hunting Ceremony. Sacred community events, attended respectfully.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Chishang Autumn Rice Harvest Arts<span class="zh">池上秋收稻穗藝術節</span></h3>
+        <p>Each autumn, concerts and dance (Cloud Gate, A-Mei, Sangpuy and others) are performed on a stage set amid the golden Chishang paddies — begun in 2009 and now one of Taiwan's most beloved arts events.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Flying-Fish Season &amp; Bombing Handan<span class="zh">飛魚季與炸寒單</span></h3>
+        <p>On Orchid Island, the spring–summer flying-fish season governs Tao ritual and food. At Lantern Festival, Taitung's <strong>Bombing Master Handan</strong> — a man as the god of wealth pelted with firecrackers — is one of Taiwan's four great Lantern events: "the east bombs Handan."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>Rice, flying fish and sugar apples</h2>
+      <p>Taitung's table is grown in clean valleys, caught in the Pacific, and gathered from the wild — pure east-coast flavor.</p></div>
+    <div class="food cc-east">
+      <div class="food-item"><span class="em">🍱</span><div><h4>Chishang lunchbox &amp; rice <span class="zh">池上便當・池上米</span></h4><p>Taiwan's most celebrated rice, and the classic railway lunchbox built on it — fragrant rice with braised pork, pickles, egg and fish.</p><span class="town">Chishang 池上</span></div></div>
+      <div class="food-item"><span class="em">🐟</span><div><h4>Orchid Island flying fish <span class="zh">蘭嶼飛魚</span></h4><p>Caught during the seasonal flying-fish culture, eaten fresh and sun-dried — the defining food of the Tao people.</p><span class="town">Orchid Island 蘭嶼</span></div></div>
+      <div class="food-item"><span class="em">🥬</span><div><h4>Amis wild greens &amp; stone hot pot <span class="zh">阿美族野菜・石頭火鍋</span></h4><p>The Amis cook dozens of wild mountain and riverside greens; the "stone hot pot" boils soup with fire-heated stones in a wooden container.</p><span class="town">Amis villages 阿美部落</span></div></div>
+      <div class="food-item"><span class="em">🍃</span><div><h4>Sugar apple (custard apple) <span class="zh">釋迦</span></h4><p>Taitung is Taiwan's sugar-apple capital; Taimali grows the "big-eye" variety and Beinan the pineapple sugar-apple.</p><span class="town">Taimali・Beinan 太麻里・卑南</span></div></div>
+      <div class="food-item"><span class="em">🍜</span><div><h4>Mitaimu &amp; pork-blood soup <span class="zh">米苔目・卑南豬血湯</span></h4><p>Two Taitung City classics — chewy short rice noodles with savory pork sauce, and a peppery pork-blood soup, from decades-old shops.</p><span class="town">Taitung City 臺東市</span></div></div>
+      <div class="food-item"><span class="em">🎣</span><div><h4>Chenggong sailfish &amp; bonito <span class="zh">成功旗魚與鰹魚</span></h4><p>Chenggong, eastern Taiwan's largest fishing port on the Kuroshio, is famous for harpoon-caught sailfish in the autumn monsoon season.</p><span class="town">Chenggong 成功</span></div></div>
+      <div class="food-item"><span class="em">🍵</span><div><h4>Luye red oolong <span class="zh">鹿野紅烏龍</span></h4><p>Born in Luye in 2008, a heavily-oxidized tea with an amber-red liquor and ripe-fruit aroma, from the Fu-Lu tea region.</p><span class="town">Luye 鹿野</span></div></div>
+      <div class="food-item"><span class="em">🌺</span><div><h4>Taimali roselle <span class="zh">太麻里洛神花</span></h4><p>The southern coastal town of Taimali grows roselle, made into jams, preserves and a tart ruby-red drink in autumn.</p><span class="town">Taimali 太麻里</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Taitung is known for · 臺東的招牌</div><h2>Balloons, rice, islands and slow time</h2></div>
+    <div class="kf cc-east">
+      <div class="kf-item"><span class="em">🎈</span><h4>The Balloon Festival <span class="zh">熱氣球嘉年華</span></h4><p>Asia's signature hot-air balloon fiesta at Luye Highland.</p></div>
+      <div class="kf-item"><span class="em">🌾</span><h4>Chishang rice <span class="zh">池上米</span></h4><p>Taiwan's most famous rice and the Mr. Brown Avenue paddies.</p></div>
+      <div class="kf-item"><span class="em">🏝️</span><h4>Green &amp; Orchid Islands <span class="zh">綠島與蘭嶼</span></h4><p>A rare seawater hot spring and the Tao people's ocean culture.</p></div>
+      <div class="kf-item"><span class="em">🪕</span><h4>Most Indigenous county <span class="zh">原住民之鄉</span></h4><p>The richest mix of Indigenous peoples and music in Taiwan.</p></div>
+      <div class="kf-item"><span class="em">🏺</span><h4>Prehistory &amp; jade <span class="zh">史前文化與玉</span></h4><p>The Beinan Culture and the National Museum of Prehistory.</p></div>
+      <div class="kf-item"><span class="em">🍃</span><h4>Sugar apples &amp; slow life <span class="zh">釋迦與慢活</span></h4><p>Taiwan's sugar-apple capital, surfing and a laid-back coast.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-east" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Taitung to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹臺東,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Taitung." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Taitung.<span class="zh">我來自臺東縣。</span></span></li>
-        <li><button class="say sm" data-say="Taitung is in Eastern Taiwan." aria-label="Hear sentence">🔊</button><span class="en">Taitung is in Eastern Taiwan.<span class="zh">臺東縣在臺灣東部。</span></span></li>
-        <li><button class="say sm" data-say="Taitung is famous for Luye Balloons." aria-label="Hear sentence">🔊</button><span class="en">Taitung is famous for Luye Balloons.<span class="zh">臺東縣以鹿野熱氣球聞名。</span></span></li>
+        <li><button class="say sm" data-say="Taitung is Taiwan's remote southeast, and the county with the highest proportion of Indigenous people, home to the Amis, the Puyuma, and the Tao of Orchid Island." aria-label="Hear">🔊</button><span class="en">Taitung is Taiwan's remote southeast, and the county with the highest proportion of Indigenous people — home to the Amis, the Puyuma, and the Tao of Orchid Island.<span class="zh">臺東是台灣偏遠的東南角,也是原住民比例最高的縣——是阿美族、卑南族,以及蘭嶼達悟族的家園。</span></span></li>
+        <li><button class="say sm" data-say="Every summer, the sky over the Luye Highland fills with hot-air balloons at the Taiwan International Balloon Festival." aria-label="Hear">🔊</button><span class="en">Every summer, the sky over the Luye Highland fills with hot-air balloons at the Taiwan International Balloon Festival.<span class="zh">每逢夏季,鹿野高台的天空就在臺灣國際熱氣球嘉年華中綴滿熱氣球。</span></span></li>
+        <li><button class="say sm" data-say="Chishang grows Taiwan's most famous rice, and Mr. Brown Avenue runs straight through the paddies past the famous Takeshi Kaneshiro tree." aria-label="Hear">🔊</button><span class="en">Chishang grows Taiwan's most famous rice, and Mr. Brown Avenue runs straight through the paddies past the famous Takeshi Kaneshiro tree.<span class="zh">池上出產全台最著名的稻米,而伯朗大道筆直地穿過稻田、經過著名的金城武樹。</span></span></li>
+        <li><button class="say sm" data-say="Just offshore lie Green Island, with one of the world's rare seawater hot springs, and Orchid Island, where the Tao people still build wooden canoes by hand." aria-label="Hear">🔊</button><span class="en">Just offshore lie Green Island, with one of the world's rare seawater hot springs, and Orchid Island, where the Tao people still build wooden canoes by hand.<span class="zh">外海就是綠島——擁有世上罕見的海水溫泉之一——以及蘭嶼,達悟族人至今仍在那裡手工打造拼板舟。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Luye Balloons<button class="say sm" data-say="Luye Balloons" aria-label="Hear Luye Balloons">🔊</button></h3>
-          <div class="zh">鹿野熱氣球</div>
-          <p>Home of Taiwan&#x27;s colourful annual Hot Air Balloon Festival.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Indigenous Culture<button class="say sm" data-say="Indigenous Culture" aria-label="Hear Indigenous Culture">🔊</button></h3>
-          <div class="zh">原住民文化</div>
-          <p>A rich homeland for many tribes, celebrated through music and crafts.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Green Island<button class="say sm" data-say="Green Island" aria-label="Hear Green Island">🔊</button></h3>
-          <div class="zh">綠島</div>
-          <p>A volcanic island with a rare seawater hot spring and great diving.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Orchid Island<button class="say sm" data-say="Orchid Island" aria-label="Hear Orchid Island">🔊</button></h3>
-          <div class="zh">蘭嶼</div>
-          <p>Home of the seafaring Tao people, the &#x27;flying-fish people&#x27;.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-east">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Millet mochi <button class="say sm" data-say="Millet mochi" aria-label="Hear food name">🔊</button> <span class="zh">· 小米麻糬</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:臺東縣政府、國立臺灣史前文化博物館、交通部觀光署東部海岸國家風景區管理處、文化部、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <a href="/counties/hualien/">← Hualien</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +285,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>

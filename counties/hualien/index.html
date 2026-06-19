@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Hualien 花蓮縣 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Hualien (花蓮縣) — landmarks, food and culture, and how to say it in English. 全台最大的縣,大理石峽谷與太平洋交會,阿美族文化生生不息。">
+<meta name="description" content="Hualien County (花蓮縣) — Taiwan's largest county by area, where the Central Mountains plunge into the Pacific, home to Taroko Gorge, the Qingshui Cliffs, the East Rift Valley, and the Amis and Truku peoples. Its history, landmarks, culture, food, and how to say it in English. 山海相接花蓮的深度文化介紹。">
 <meta property="og:title" content="Hualien 花蓮縣 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Hualien = east / teal) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#2c3a3e;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#084e63);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#0a8aab);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#0a8aab);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#084e63);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#e3f1f5);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#084e63);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#2c3a3e;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#084e63);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#0a8aab);background:var(--cc-soft,#e3f1f5);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#0a8aab);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#084e63);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,72 +77,199 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-east">
   <div class="wrap">
     <div class="cty-region">Eastern Taiwan · 東部</div>
     <div class="cty-name">
       <h1>Hualien</h1>
       <span class="zh">花蓮縣</span>
-      <button class="say" data-say="Hualien" aria-label="Hear Hualien in English">🔊</button>
+      <button class="say" data-say="Hualien County" aria-label="Hear Hualien in English">🔊</button>
     </div>
-    <p class="cty-pos">Taiwan&#x27;s largest county, where towering marble gorges meet the deep blue Pacific and Indigenous Amis culture thrives.</p>
-    <p class="cty-pos-zh">全台最大的縣,大理石峽谷與太平洋交會,阿美族文化生生不息。</p>
+    <p class="cty-pos">Taiwan's largest county — a long ribbon where the Central Mountains plunge into the Pacific, holding the marble canyon of Taroko and the green East Rift Valley.</p>
+    <p class="cty-pos-zh">台灣面積最大的縣——一條狹長地帶,中央山脈在此直落太平洋,擁有太魯閣的大理石峽谷與翠綠的花東縱谷。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-east">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>Where mountains meet the Pacific</h2></div>
+    <div class="narr">
+      <p>Hualien is Taiwan's <strong>largest county by area</strong> — about 4,628 km² — yet one of its most sparsely populated, with only around 320,000 people, because roughly 87% of it is mountains. The county is a long, thin ribbon on the east coast, just 27–43 km wide but about 142 km long, pinned between the towering <strong>Central Mountain Range</strong> and the Pacific. Down its middle runs the <strong>East Rift Valley (花東縱谷)</strong>, a fertile trough where the Philippine Sea Plate meets the Eurasian Plate — the source of both Hualien's rich farmland and its earthquakes.</p>
+      <p class="zh">花蓮是台灣<strong>面積最大的縣</strong>(約 4,628 平方公里),卻也是人口最稀疏的地區之一,僅約 32 萬人,因為約 87% 是山地。整個縣是一條狹長的東海岸帶,東西寬僅 27 至 43 公里,南北卻長達約 142 公里,夾在高聳的<strong>中央山脈</strong>與太平洋之間。縱貫其中的是<strong>花東縱谷</strong>——菲律賓海板塊與歐亞板塊交會處的肥沃河谷,這既帶來良田,也帶來地震。</p>
+      <p>Hualien is, above all, <strong>Indigenous land</strong>. It is the heartland of the <strong>Amis (阿美族)</strong>, Taiwan's largest Indigenous people, and home to the <strong>Truku/Taroko (太魯閣族)</strong>, for whom the gorge is named; the <strong>Sakizaya (撒奇萊雅族)</strong>, who hid within the Amis for over a century and were only recognized in 2007; and Bunun and Kavalan communities. The old name 洄瀾 (Hue-lan, "swirling waters") came from the waves swirling at the river mouth, later written with the characters 花蓮.</p>
+      <p class="zh">花蓮首先是一片<strong>原住民的土地</strong>。它是台灣人口最多的原住民族<strong>阿美族</strong>的核心地帶,也是<strong>太魯閣族</strong>(峽谷即以其命名)的家園;<strong>撒奇萊雅族</strong>曾隱身於阿美族中一個多世紀,直到 2007 年才獲認定;此外還有布農族與噶瑪蘭族。舊名「洄瀾」(意為迴旋的水波)源自出海口翻捲的浪濤,後人以同音字寫作「花蓮」。</p>
+      <p>Han settlement came late and hard. Cut off by the Central Range, Hualien could only be reached by sea or by perilous routes — most famously the <strong>Suhua Highway</strong>, clinging to sheer sea cliffs. In the 20th century it grew on marble and stone quarrying (Taiwan's "marble hometown") and then on tourism drawn by Taroko and the rift valley. But it has always lived with the earth's movement: major earthquakes struck in 2018 and, most devastatingly, on <strong>3 April 2024</strong>, a magnitude-7.2 quake — Taiwan's strongest in 25 years — which heavily damaged Taroko. Hualien's whole story is the story of mountains meeting the Pacific.</p>
+      <p class="zh">漢人在此開墾既晚且難。受中央山脈阻隔,花蓮過去只能由海路或險峻道路抵達——其中最著名的就是緊貼斷崖而行的<strong>蘇花公路</strong>。20 世紀的花蓮以大理石與石材開採立基(台灣的「大理石故鄉」),後又因太魯閣與縱谷而興起觀光。但它始終與地動共生:2018 年發生大地震,而最嚴重的是 <strong>2024 年 4 月 3 日</strong>規模 7.2 的強震——台灣 25 年來最強,重創太魯閣。花蓮的故事,始終是「高山遇見太平洋」的故事。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Hualien</h2></div>
+    <div class="lmk cc-east">
+      <div class="lmk-item">
+        <h3>Taroko Gorge<span class="zh">太魯閣峽谷</span><button class="say sm" data-say="Taroko Gorge" aria-label="Hear">🔊</button></h3>
+        <p>Taiwan's most famous natural wonder — a deep <strong>marble canyon</strong> carved by the Liwu River, with sheer cliffs, tunnels and turquoise water, including the Swallow Grotto and the Eternal Spring Shrine. <em>Note: heavily damaged by the April 2024 earthquake; the park is only partly open with many trails closed — check official status before visiting.</em></p>
+      </div>
+      <div class="lmk-item">
+        <h3>Qingshui Cliffs<span class="zh">清水斷崖</span><button class="say sm" data-say="The Qingshui Cliffs" aria-label="Hear">🔊</button></h3>
+        <p>A roughly 21-km stretch where mountains plunge almost straight into the Pacific along the Suhua Highway. The gneiss-and-marble cliffs rise toward Qingshui Mountain (2,408 m) just 2 km from the shoreline — one of Taiwan's <strong>most dramatic coastal views</strong>.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Qixingtan Beach<span class="zh">七星潭</span><button class="say sm" data-say="Qixingtan Beach" aria-label="Hear">🔊</button></h3>
+        <p>A crescent-shaped <strong>pebble bay</strong> just north of Hualien City, famous for smooth stones, big Pacific waves and views of the mountains meeting the sea. Not for swimming (strong currents), but a beloved spot for sunrise and stargazing.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>East Rift Valley<span class="zh">花東縱谷</span><button class="say sm" data-say="The East Rift Valley" aria-label="Hear">🔊</button></h3>
+        <p>The long green corridor between the Central and Coastal ranges — a patchwork of <strong>rice paddies, tea gardens and hot springs</strong> dotted with towns like Ruisui, Yuli and Fuli. It's Hualien's farming heartland and a classic cycling and road-trip route.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Sixty Stone Mountain Daylilies<span class="zh">六十石山金針花海</span><button class="say sm" data-say="Sixty Stone Mountain daylily fields" aria-label="Hear">🔊</button></h3>
+        <p>In Fuli, high terraced slopes blaze <strong>orange with daylilies</strong> each August and September. One of Taiwan's three great daylily areas, it's a signature late-summer sight of the rift valley.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Liyu Lake<span class="zh">鯉魚潭</span><button class="say sm" data-say="Liyu Lake" aria-label="Hear">🔊</button></h3>
+        <p>Hualien's largest inland lake, below Carp Mountain in Shoufeng — a calm spot for <strong>boating, lakeside cycling</strong> and, in late spring, firefly watching.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Farglory Ocean Park<span class="zh">遠雄海洋公園</span><button class="say sm" data-say="Farglory Ocean Park" aria-label="Hear">🔊</button></h3>
+        <p>A large ocean-themed amusement park on the coast in Shoufeng, with marine shows, rides and a hillside Ferris wheel overlooking the Pacific — Hualien's main <strong>family attraction</strong>.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Lintian Mountain Forestry Park<span class="zh">林田山林業文化園區</span><button class="say sm" data-say="Lintian Mountain Forestry Culture Park" aria-label="Hear">🔊</button></h3>
+        <p>A preserved Japanese-era <strong>logging village</strong> in Fenglin, with wooden houses, old rail tracks and a small museum. Once one of Taiwan's four great forestry centers, it's now a quiet heritage site nicknamed the "Little Shanghai of the mountains."</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Ruisui &amp; the Tropic of Cancer<span class="zh">瑞穗・北回歸線標</span><button class="say sm" data-say="Ruisui and the Tropic of Cancer marker" aria-label="Hear">🔊</button></h3>
+        <p>Ruisui is known for hot springs (rare "golden" carbonate springs) and tea. Nearby on Highway 9 stands one of Taiwan's <strong>Tropic of Cancer markers</strong> (the eastern one) — at noon around June 22 it casts virtually no shadow.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Pine Garden &amp; Dongdamen Night Market<span class="zh">松園別館・東大門夜市</span><button class="say sm" data-say="Pine Garden and Dongdamen Night Market" aria-label="Hear">🔊</button></h3>
+        <p>In Hualien City, <strong>Pine Garden</strong> is a 1940s Japanese military building shaded by old pines over the harbor, now an arts space. After dark, Dongdamen Night Market — the city's biggest — blends Han, Indigenous and new-immigrant food stalls.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>Indigenous land, marble and tea</h2>
+      <p>Hualien's culture is, first and last, Indigenous — woven through with weaving, song, stone and the rhythm of the harvest.</p></div>
+    <div class="ppl cc-east">
+      <div class="ppl-card">
+        <h3>🪶 The Amis, Truku &amp; Sakizaya · 阿美・太魯閣・撒奇萊雅</h3>
+        <p>Hualien is the heartland of the <strong>Amis (阿美族)</strong>, Taiwan's largest Indigenous people — a traditionally matrilineal society famous for vibrant weaving, beadwork, song and dance, and deep knowledge of wild edible plants, all centered on the summer <strong>Harvest Festival (豐年祭)</strong>. The <strong>Truku (太魯閣族)</strong>, for whom the gorge is named, are known for ramie weaving and a heritage of facial tattoos; the <strong>Sakizaya</strong> revived their distinct identity to win recognition in 2007.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>🪨 Marble, tea &amp; the whale coast · 大理石・茶・賞鯨</h3>
+        <p>Hualien is Taiwan's <strong>"marble hometown,"</strong> its mountains holding vast marble and stone deposits that built an industry of sculpture and crafts. The East Rift Valley grows prized rice (Yuli and Fuli), tea (Ruisui) and leads in organic farming, while the Kuroshio current offshore supports a strong, conservation-minded <strong>whale- and dolphin-watching</strong> culture.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Famous People · 花蓮名人</div><h2>Poets of the east coast</h2></div>
+    <div class="ppl cc-east">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Yang Mu 楊牧</h3>
+        <div class="yr">1940–2020 · Hualien</div>
+        <p>Born Wang Ching-hsien in Hualien, Yang Mu was one of the most celebrated <strong>Chinese-language poets and essayists</strong> of the 20th and 21st centuries. His lyrical work is deeply tied to Hualien's landscape, and a "literary tour" now traces his roots through the city.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Wang Chen-ho 王禎和</h3>
+        <div class="yr">1940–1990 · Hualien</div>
+        <p>A Hualien-born novelist and a leading figure of Taiwan's <strong>nativist literature</strong> movement. His comic masterpiece <em>Rose, Rose, I Love You</em> is set in Vietnam-War-era Hualien, capturing the town's collisions of cultures with sharp humor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Seasons · 節慶與時令</div><h2>When Hualien comes alive</h2></div>
+    <div class="lmk cc-east">
+      <div class="lmk-item">
+        <h3>Amis Harvest Festival<span class="zh">阿美族豐年祭</span></h3>
+        <p>The most important Amis ceremony, held by villages along the east coast in mid-summer (around July–August), combining thanksgiving, ancestor remembrance and age-set initiation with days of communal song and dance. A sacred community event, not a tourist show.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Sixty Stone Mountain Daylily Season<span class="zh">六十石山金針花季</span></h3>
+        <p>Around August and September, when Fuli's terraced slopes turn a brilliant orange — a major draw for photographers and travelers across the southern rift valley.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Whale-Watching Season<span class="zh">賞鯨季</span></h3>
+        <p>Roughly April to October, when the warm Kuroshio current brings whales and dolphins close to Hualien's coast, with very high sighting rates on tours from Hualien harbor and Shihtiping.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Arts &amp; Taroko Events<span class="zh">藝術與太魯閣活動</span></h3>
+        <p>In normal years Hualien hosts land-arts festivals and Taroko music events; with parts of Taroko under post-earthquake repair, check current scheduling before planning around them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>Wontons, mochi and mountain greens</h2>
+      <p>Hualien's food runs from the city's beloved wonton shops to the wild greens of the Amis table and the rice of the rift valley.</p></div>
+    <div class="food cc-east">
+      <div class="food-item"><span class="em">🥟</span><div><h4>Hualien wonton (biandshi) <span class="zh">花蓮扁食</span></h4><p>A Hualien classic — delicate pork wontons in clear broth, from famous old shops like Dai Ji.</p><span class="town">Hualien City 花蓮市</span></div></div>
+      <div class="food-item"><span class="em">🍡</span><div><h4>Hualien mochi <span class="zh">花蓮麻糬</span></h4><p>Hualien's signature souvenir — soft glutinous-rice cakes with peanut, sesame or red-bean fillings; the best-known maker is Tseng Chi.</p><span class="town">Hualien City 花蓮市</span></div></div>
+      <div class="food-item"><span class="em">🍜</span><div><h4>Yuli noodles <span class="zh">玉里麵</span></h4><p>A simple, beloved noodle dish from the rift-valley town of Yuli — springy noodles in a light broth with pork, bean sprouts and scallions.</p><span class="town">Yuli 玉里</span></div></div>
+      <div class="food-item"><span class="em">🍚</span><div><h4>Fuli rice <span class="zh">富里米</span></h4><p>Premium rice from Fuli in the southern rift valley, grown with clean mountain water and prized across Taiwan.</p><span class="town">Fuli 富里</span></div></div>
+      <div class="food-item"><span class="em">🥬</span><div><h4>Amis wild greens &amp; stone hot pot <span class="zh">阿美族野菜・石頭火鍋</span></h4><p>Amis cuisine makes rich use of wild mountain vegetables; the traditional "stone hot pot" boils soup with fire-heated river stones.</p><span class="town">Amis villages 阿美部落</span></div></div>
+      <div class="food-item"><span class="em">🌼</span><div><h4>Daylily dishes <span class="zh">金針料理</span></h4><p>In and around Fuli, fresh and dried daylily buds go into soups, omelets and stir-fries.</p><span class="town">Fuli 富里</span></div></div>
+      <div class="food-item"><span class="em">🥖</span><div><h4>Gongzheng steamed buns <span class="zh">公正包子</span></h4><p>A famous late-night institution in Hualien City — small, juicy soup-style steamed buns, often paired with hot-and-sour soup.</p><span class="town">Hualien City 花蓮市</span></div></div>
+      <div class="food-item"><span class="em">🍳</span><div><h4>"Bomb" scallion pancake <span class="zh">炸彈蔥油餅</span></h4><p>A popular Hualien street snack — a crispy fried scallion pancake with a runny egg sealed inside.</p><span class="town">Hualien City 花蓮市</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Hualien is known for · 花蓮的招牌</div><h2>Gorge, cliffs, valley and the Amis</h2></div>
+    <div class="kf cc-east">
+      <div class="kf-item"><span class="em">🏞️</span><h4>Taroko Gorge <span class="zh">太魯閣</span></h4><p>Taiwan's iconic marble canyon, carved by the Liwu River.</p></div>
+      <div class="kf-item"><span class="em">🌊</span><h4>Qingshui Cliffs <span class="zh">清水斷崖</span></h4><p>Mountains plunging straight into the Pacific along the coast.</p></div>
+      <div class="kf-item"><span class="em">🗺️</span><h4>Largest county <span class="zh">最大的縣</span></h4><p>Taiwan's biggest county by area, where mountains meet the sea.</p></div>
+      <div class="kf-item"><span class="em">🌾</span><h4>East Rift Valley <span class="zh">花東縱谷</span></h4><p>Rice, tea, hot springs and the orange daylily mountains.</p></div>
+      <div class="kf-item"><span class="em">🪶</span><h4>Amis &amp; Truku <span class="zh">阿美與太魯閣</span></h4><p>The Indigenous cultures of the east coast and the gorge.</p></div>
+      <div class="kf-item"><span class="em">🐋</span><h4>Whales &amp; mochi <span class="zh">賞鯨與麻糬</span></h4><p>Pacific whale-watching, mochi, wontons and marble craft.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-east" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Hualien to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹花蓮,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Hualien." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Hualien.<span class="zh">我來自花蓮縣。</span></span></li>
-        <li><button class="say sm" data-say="Hualien is in Eastern Taiwan." aria-label="Hear sentence">🔊</button><span class="en">Hualien is in Eastern Taiwan.<span class="zh">花蓮縣在臺灣東部。</span></span></li>
-        <li><button class="say sm" data-say="Hualien is famous for Taroko Gorge." aria-label="Hear sentence">🔊</button><span class="en">Hualien is famous for Taroko Gorge.<span class="zh">花蓮縣以太魯閣峽谷聞名。</span></span></li>
+        <li><button class="say sm" data-say="Hualien is Taiwan's largest county by area, a long, thin strip on the east coast where the Central Mountains drop straight into the Pacific Ocean." aria-label="Hear">🔊</button><span class="en">Hualien is Taiwan's largest county by area — a long, thin strip on the east coast where the Central Mountains drop straight into the Pacific Ocean.<span class="zh">花蓮是台灣面積最大的縣——東海岸一條狹長的地帶,中央山脈在這裡直落入太平洋。</span></span></li>
+        <li><button class="say sm" data-say="Its most famous sight is Taroko Gorge, a deep marble canyon carved by a river, though parts are still closed and being repaired after the 2024 earthquake." aria-label="Hear">🔊</button><span class="en">Its most famous sight is Taroko Gorge, a deep marble canyon carved by a river — though parts are still closed and being repaired after the 2024 earthquake.<span class="zh">它最著名的景點是太魯閣峽谷,一道由溪流切割而成的大理石深谷——不過部分區域在 2024 年地震後仍封閉整修中。</span></span></li>
+        <li><button class="say sm" data-say="Hualien is the homeland of the Amis, Taiwan's largest Indigenous group, and of the Truku people, after whom Taroko is named." aria-label="Hear">🔊</button><span class="en">Hualien is the homeland of the Amis, Taiwan's largest Indigenous group, and of the Truku people, after whom Taroko is named.<span class="zh">花蓮是阿美族(台灣人口最多的原住民族)與太魯閣族(太魯閣即以其命名)的原鄉。</span></span></li>
+        <li><button class="say sm" data-say="Inland lies the green East Rift Valley, famous for its rice, hot springs, and the orange daylily mountains that bloom in late summer." aria-label="Hear">🔊</button><span class="en">Inland lies the green East Rift Valley, famous for its rice, hot springs, and the orange daylily mountains that bloom in late summer.<span class="zh">內陸是翠綠的花東縱谷,以稻米、溫泉,以及夏末綻放的金針花山聞名。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Taroko Gorge<button class="say sm" data-say="Taroko Gorge" aria-label="Hear Taroko Gorge">🔊</button></h3>
-          <div class="zh">太魯閣峽谷</div>
-          <p>A breathtaking canyon of sheer marble cliffs and rushing rivers.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Pacific Coast<button class="say sm" data-say="Pacific Coast" aria-label="Hear Pacific Coast">🔊</button></h3>
-          <div class="zh">太平洋海岸</div>
-          <p>The dramatic Qingshui Cliffs plunge straight into the ocean.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Amis Culture<button class="say sm" data-say="Amis Culture" aria-label="Hear Amis Culture">🔊</button></h3>
-          <div class="zh">阿美族文化</div>
-          <p>Home to Taiwan&#x27;s largest Indigenous group, known for song and harvest festivals.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>East Rift Valley<button class="say sm" data-say="East Rift Valley" aria-label="Hear East Rift Valley">🔊</button></h3>
-          <div class="zh">花東縱谷</div>
-          <p>A lush valley of rice paddies between two mountain ranges.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-east">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Wonton soup (biandshi) <button class="say sm" data-say="Wonton soup" aria-label="Hear food name">🔊</button> <span class="zh">· 扁食</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:花蓮縣政府、太魯閣國家公園管理處、交通部觀光署、文化部、維基百科等公開資料整理。太魯閣震後狀況請以官方公告為準。</p>
     <div class="cty-nav">
       <a href="/counties/yilan/">← Yilan</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +285,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>
