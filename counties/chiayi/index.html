@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Chiayi County 嘉義縣 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Chiayi County (嘉義縣) — landmarks, food and culture, and how to say it in English. 從阿里山的雲海日出,到嘉南平原的故宮南院。">
+<meta name="description" content="Chiayi County (嘉義縣) — from the sunrise and sea of clouds on Alishan to the oyster coast at Dongshi and the Palace Museum at Taibao. Its history, landmarks, culture, famous people and food, and how to say it in English. 從阿里山的日出雲海到東石蚵鄉的深度文化介紹。">
 <meta property="og:title" content="Chiayi County 嘉義縣 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Chiayi County = south / amber) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#3a342b;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#7d5827);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#bd863f);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#bd863f);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#7d5827);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#f7f0e2);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#7d5827);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#3a342b;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#7d5827);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#bd863f);background:var(--cc-soft,#f7f0e2);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#bd863f);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#7d5827);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,6 +77,7 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-south">
   <div class="wrap">
     <div class="cty-region">Southern Taiwan · 南部</div>
@@ -35,77 +86,199 @@
       <span class="zh">嘉義縣</span>
       <button class="say" data-say="Chiayi County" aria-label="Hear Chiayi County in English">🔊</button>
     </div>
-    <p class="cty-pos">From Alishan&#x27;s sunrise to the Palace Museum&#x27;s Southern Branch.</p>
-    <p class="cty-pos-zh">從阿里山的雲海日出,到嘉南平原的故宮南院。</p>
+    <p class="cty-pos">A county of contrasts — from a sea of clouds on Alishan, down through tea hills and the Chianan rice plain, to the oyster flats of the coast.</p>
+    <p class="cty-pos-zh">一個充滿反差的縣:從阿里山的雲海,順著茶山與嘉南稻田而下,直到海岸的蚵田。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-south">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>From the high forest to the rice plain</h2></div>
+    <div class="narr">
+      <p>Chiayi County stretches from the Taiwan Strait all the way up to the 2,000-metre peaks of <strong>Alishan</strong>. Its western half lies on the <strong>Chianan Plain (嘉南平原)</strong>, Taiwan's largest, the rice-and-sugarcane belt of the island's southwest. For centuries this land was fertile but unreliable — drought one year, flood the next. That changed under Japanese rule, when the engineer <strong>Hatta Yoichi (八田與一)</strong> designed the vast Chianan Irrigation system in the 1920s. (The Wushantou Reservoir itself sits across the line in today's Tainan, but its canals watered the Chiayi plain.) That single feat of engineering is the deepest reason the lowlands look the way they do today.</p>
+      <p class="zh">嘉義縣西起台灣海峽,東至海拔兩千公尺的<strong>阿里山</strong>群峰。西半部坐落在全台最大的<strong>嘉南平原</strong>上,是西南部的稻米與甘蔗之鄉。這片土地數百年來雖肥沃,卻易旱易澇、收成不穩。直到日治時期,工程師<strong>八田與一</strong>於 1920 年代設計了龐大的嘉南大圳,情況才徹底改變。(烏山頭水庫本體位於今日台南境內,但其圳路灌溉了嘉義平原。)這項工程,正是嘉義平原今貌最深層的原因。</p>
+      <p>The mountainous east tells a different story. The high forests of Alishan were the ancestral home of the Indigenous <strong>Tsou people (鄒族)</strong>, who still live in villages such as Dabang and Tefuye. When the Japanese found Alishan's vast stands of ancient red cypress, they built the remarkable <strong>Alishan Forest Railway</strong> (begun in 1906) — a narrow-gauge line of switchbacks, tunnels and wooden bridges — to haul timber down to the plain. The same railway now carries visitors up to watch the sunrise.</p>
+      <p class="zh">東部山區則訴說另一個故事。阿里山的高山森林,是原住民<strong>鄒族</strong>世代的家園,他們至今仍居住在達邦、特富野等部落。日本人發現阿里山遍布千年紅檜後,興建了了不起的<strong>阿里山森林鐵路</strong>(1906 年動工)——一條有之字形折返、隧道與木橋的窄軌鐵道——把木材運往山下。如今同一條鐵路載著遊客上山看日出。</p>
+      <p>In the modern era the county reinvented itself once more. When Chiayi City became an independent city, the county needed a new seat, and the small town of <strong>Taibao (太保)</strong> was raised to a county-administered city. Its fortunes rose further when the <strong>High Speed Rail</strong> opened its Chiayi station there in 2007, and when the <strong>Southern Branch of the National Palace Museum</strong> opened nearby in 2015 — deliberately placed in the south to share Taiwan's cultural treasures beyond Taipei.</p>
+      <p class="zh">進入現代,嘉義縣又一次重塑自己。當嘉義市獨立設市後,縣府需要新所在地,小鎮<strong>太保</strong>因而升格為縣轄市。2007 年<strong>高鐵</strong>嘉義站在此啟用、2015 年<strong>故宮南院</strong>又在附近開館——刻意設於南部,讓台灣的文化珍寶不再只集中於台北——太保的發展更上層樓。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Chiayi County</h2></div>
+    <div class="lmk cc-south">
+      <div class="lmk-item">
+        <h3>Alishan Sunrise &amp; Forest Railway<span class="zh">阿里山日出與森林鐵路</span><button class="say sm" data-say="Alishan sunrise and forest railway" aria-label="Hear">🔊</button></h3>
+        <p>A narrow-gauge railway begun in 1906 to carry cypress logs is now one of the world's most famous mountain lines, with Z-shaped switchbacks, over 50 tunnels and dozens of wooden bridges. At dawn, visitors ride up to watch the sun rise over a glowing <strong>sea of clouds</strong> — Alishan's signature image.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Alishan Sacred Trees<span class="zh">阿里山神木群</span><button class="say sm" data-say="The Alishan sacred trees" aria-label="Hear">🔊</button></h3>
+        <p>The original "Sacred Tree" was a red cypress more than <strong>3,000 years old</strong>, revered by the Tsou. Weakened by age and rain, it finally toppled in 1997; its great trunk now lies by the trail as a memorial, surrounded by a boardwalk among other ancient cypresses.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Fenqihu Old Street<span class="zh">奮起湖老街</span><button class="say sm" data-say="Fenqihu Old Street" aria-label="Hear">🔊</button></h3>
+        <p>A mountain railway town at about 1,400 m, the midpoint of the Alishan line. Because trains historically stopped here around midday, a <strong>railway bento</strong> (lunchbox) culture grew up; today the old street is famous for these wooden-tub bentos, well-preserved wooden houses and aiyu jelly.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Southern Branch, Palace Museum<span class="zh">故宮南院</span><button class="say sm" data-say="The Southern Branch of the National Palace Museum" aria-label="Hear">🔊</button></h3>
+        <p>Opened in Taibao in 2015 on a 20-hectare site, this museum focuses on Asian art and culture — Buddhist art, ceramics, textiles and tea. Its sweeping curved architecture, gardens and lake make it a destination in its own right, just minutes from the HSR station.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>High-Heel Wedding Church<span class="zh">高跟鞋教堂</span><button class="say sm" data-say="The High-Heel Wedding Church" aria-label="Hear">🔊</button></h3>
+        <p>In the coastal port of Budai stands a blue-glass landmark shaped like a giant high-heeled shoe, built in 2016 from 320 glass panels. It is <strong>not a real church</strong>: it commemorates local victims of "blackfoot disease," an arsenic-poisoning illness that once afflicted this coast.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Aogu Wetlands &amp; Forest Park<span class="zh">鰲鼓濕地森林園區</span><button class="say sm" data-say="Aogu Wetlands" aria-label="Hear">🔊</button></h3>
+        <p>A 1,500-hectare wetland in Dongshi, formed when sugar-company farmland subsided and seawater moved in. It now hosts over 200 bird species, including wintering <strong>black-faced spoonbills</strong>, with boardwalks and birdwatching hides.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Taiping Sky Bridge<span class="zh">太平雲梯</span><button class="say sm" data-say="The Taiping Sky Bridge" aria-label="Hear">🔊</button></h3>
+        <p>Opened in Meishan in 2017, this 281-metre pedestrian suspension bridge sits about 1,000 m above sea level — the highest scenic suspension bridge in Taiwan — with views over tea hills and, on clear days, the plain below. Nearby winds the famous Taiping "36 Bends" road.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Eternity Suspension Bridges<span class="zh">天長地久橋</span><button class="say sm" data-say="The Eternity suspension bridges" aria-label="Hear">🔊</button></h3>
+        <p>A pair of historic bridges in Fanlu, built in 1937 to mark the birthdays of the Japanese emperor and empress; their names combine into <strong>"tianchang-dijiu"</strong> (天長地久, "everlasting"). Because of the romantic phrase, couples now visit hoping for lasting love.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Alishan Tea Villages<span class="zh">阿里山茶區(石棹・瑞里)</span><button class="say sm" data-say="The Alishan tea villages" aria-label="Hear">🔊</button></h3>
+        <p>Strung along the scenic road up Meishan and Zhuqi, villages such as Shizhuo, Ruili and Ruifeng produce some of Taiwan's most prized <strong>high-mountain oolong</strong> at 1,000–1,600 m. They are popular for tea homestays, firefly nights and misty tea-trail walks.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Dongshi Fisherman's Wharf<span class="zh">東石漁人碼頭</span><button class="say sm" data-say="Dongshi Fisherman's Wharf" aria-label="Hear">🔊</button></h3>
+        <p>Dongshi is Taiwan's top <strong>oyster</strong>-producing township, sheltered by the shifting Waisanding Sandbar offshore. The Fisherman's Wharf is a favourite spot for sunset, fresh seafood and family fun, and a gateway to boat trips out toward the sandbar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>Mountain people, mountain tea</h2>
+      <p>Chiayi County's living culture rises from the high forest: the Tsou people who have always lived there, and the tea that now shapes whole mountain communities.</p></div>
+    <div class="ppl cc-south">
+      <div class="ppl-card">
+        <h3>🏔️ The Tsou people · 鄒族</h3>
+        <p>The Tsou are the Indigenous people of the Alishan highlands, centred on the villages of Dabang and Tefuye. Their most sacred ceremony is the <strong>Mayasvi (瑪雅斯比／戰祭)</strong>, a solemn rite honouring the war god and ancestral spirits, held around February and alternating between the two villages. It is a living ritual governed by tribal law — not a tourist show. The Tsou hold deep knowledge of the mountain forest, including the harvesting of wild aiyu.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>🍵 High-mountain tea · 高山茶文化</h3>
+        <p>Alishan tea is a benchmark of Taiwanese high-mountain oolong, grown at 1,000–1,600 m. Frequent fog and large day-night temperature swings slow the leaves' growth, producing tea prized for a <strong>mellow sweetness, floral aroma and long finish</strong>. Tea shapes whole communities in Meishan and Zhuqi — picking, withering, rolling, roasting — and tea tourism is now central to the mountain economy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE / HERITAGE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">People &amp; Legends · 人物與傳奇</div><h2>Shared pride of greater Chiayi</h2></div>
+    <div class="ppl cc-south">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>The KANO baseball team 嘉農棒球隊</h3>
+        <div class="yr">1931 · Koshien runners-up</div>
+        <p>In 1931 the baseball team of the Kagi (Chiayi) Agriculture &amp; Forestry School — a mixed team of Han, Indigenous and Japanese players coached by Kondo Hyotaro — went all the way to the final of Japan's national <strong>Koshien</strong> tournament, finishing runner-up. The "KANO" story helped make baseball Taiwan's national sport and remains a shared pride for the whole greater-Chiayi area.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Hatta Yoichi 八田與一</h3>
+        <div class="yr">1886–1942 · Engineer</div>
+        <p>The Japanese engineer behind the <strong>Chianan Irrigation system</strong> of the 1920s, which turned the unreliable Chianan Plain — including the Chiayi lowlands — into reliable, multi-crop farmland. His waterworks are the reason the western half of the county is a true rice barn, and he is still honoured across southern Taiwan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Seasons · 節慶與時令</div><h2>When Chiayi County comes alive</h2></div>
+    <div class="lmk cc-south">
+      <div class="lmk-item">
+        <h3>Tsou Mayasvi War Festival<span class="zh">鄒族瑪雅斯比戰祭</span></h3>
+        <p>The Tsou's most sacred ceremony, held around February in Dabang or Tefuye (the two villages take turns hosting), honouring the war god and ancestors. A solemn living ritual — not a performance for tourists.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Alishan Cherry Blossom Season<span class="zh">阿里山櫻花季</span></h3>
+        <p>From mid-March to early April, Alishan holds Taiwan's largest planting of Yoshino cherries — around 18,000 trees — with the last two weeks of March usually the peak. Darker pink Taiwan cherries open a little earlier.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Alishan Firefly Season<span class="zh">阿里山螢火蟲季</span></h3>
+        <p>From about April to June, fireflies light up the forests and tea villages such as Fenqihu and Ruili. The Alishan area is said to host roughly a third of all Taiwan's fireflies.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Coast &amp; Oyster Events<span class="zh">海岸與牡蠣季</span></h3>
+        <p>The Dongshi–Budai coast holds seasonal seafood and oyster events tied to the fishing harvest, when the freshest catch comes straight off the boats to the harbourside grills.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>From mountain tea to coastal oysters</h2>
+      <p>Chiayi County's table runs from the high tea slopes down to the oyster flats — with a few surprises in between.</p></div>
+    <div class="food cc-south">
+      <div class="food-item"><span class="em">🍵</span><div><h4>High-mountain tea <span class="zh">阿里山高山茶</span></h4><p>The county's signature drink: mellow, fragrant oolong from misty slopes 1,000–1,600 m high.</p><span class="town">Meishan・Zhuqi 梅山・竹崎</span></div></div>
+      <div class="food-item"><span class="em">🍱</span><div><h4>Railway bento <span class="zh">奮起湖鐵路便當</span></h4><p>A nostalgic wooden-tub lunchbox of rice topped with pork chop, chicken drumstick, braised egg and pickles — born of the railway's midday stops.</p><span class="town">Fenqihu 奮起湖</span></div></div>
+      <div class="food-item"><span class="em">🟡</span><div><h4>Aiyu jelly <span class="zh">愛玉</span></h4><p>A cooling jelly made from the seeds of a fig vine native to Taiwan's mountains, traditionally said to have been discovered in Chiayi's Dapu Township.</p><span class="town">Alishan・Dapu 阿里山・大埔</span></div></div>
+      <div class="food-item"><span class="em">🦪</span><div><h4>Dongshi oysters <span class="zh">東石蚵</span></h4><p>Dongshi is Taiwan's leading oyster township; plump oysters from plankton-rich waters fill omelettes, soups and grilled-oyster feasts.</p><span class="town">Dongshi 東石</span></div></div>
+      <div class="food-item"><span class="em">🐟</span><div><h4>Budai fresh seafood <span class="zh">布袋海鮮</span></h4><p>A fishing-port town where the harbour market serves ultra-fresh fish, shrimp and shellfish straight off the boats.</p><span class="town">Budai 布袋</span></div></div>
+      <div class="food-item"><span class="em">🦢</span><div><h4>Minxiong goose <span class="zh">民雄鵝肉</span></h4><p>Minxiong is famous for tender stock-simmered goose, often sliced and served with cabbage fried in goose fat — a beloved drive-out meal.</p><span class="town">Minxiong 民雄</span></div></div>
+      <div class="food-item"><span class="em">🌿</span><div><h4>Alishan wasabi <span class="zh">阿里山山葵</span></h4><p>The cool, damp highlands have long grown fresh wasabi, a Japanese-era crop now sold to visitors and used in mountain cooking.</p><span class="town">Alishan 阿里山</span></div></div>
+      <div class="food-item"><span class="em">🍚</span><div><h4>Greater-Chiayi turkey rice <span class="zh">火雞肉飯</span></h4><p>Taiwan's iconic shredded-turkey rice is best known in neighbouring Chiayi City, but it is a beloved dish across the whole greater-Chiayi area.</p><span class="town">Greater Chiayi 大嘉義</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Chiayi County is known for · 嘉義縣的招牌</div><h2>Mountain, plain and coast in one county</h2></div>
+    <div class="kf cc-south">
+      <div class="kf-item"><span class="em">🌄</span><h4>Alishan <span class="zh">阿里山</span></h4><p>Forest railway, sunrise, sea of clouds and 3,000-year-old sacred trees.</p></div>
+      <div class="kf-item"><span class="em">🍵</span><h4>High-mountain tea <span class="zh">高山茶</span></h4><p>Mellow, fragrant oolong grown on the misty Meishan and Zhuqi slopes.</p></div>
+      <div class="kf-item"><span class="em">🏔️</span><h4>Tsou culture <span class="zh">鄒族文化</span></h4><p>The Indigenous people of Alishan and their sacred Mayasvi war festival.</p></div>
+      <div class="kf-item"><span class="em">🌾</span><h4>Chianan farming <span class="zh">嘉南農業</span></h4><p>The rice-and-sugarcane plain made reliable by Hatta Yoichi's irrigation.</p></div>
+      <div class="kf-item"><span class="em">🦪</span><h4>Coast &amp; oysters <span class="zh">海岸與牡蠣</span></h4><p>Dongshi oysters, Budai fishing and salt heritage, and the Aogu wetlands.</p></div>
+      <div class="kf-item"><span class="em">🚄</span><h4>Taibao corridor <span class="zh">太保高鐵廊帶</span></h4><p>The HSR Chiayi station and the Southern Branch of the Palace Museum.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-south" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Chiayi County to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹嘉義縣,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Chiayi County." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Chiayi County.<span class="zh">我來自嘉義縣。</span></span></li>
-        <li><button class="say sm" data-say="Chiayi County is in Southern Taiwan." aria-label="Hear sentence">🔊</button><span class="en">Chiayi County is in Southern Taiwan.<span class="zh">嘉義縣在臺灣南部。</span></span></li>
-        <li><button class="say sm" data-say="Chiayi County is famous for Alishan." aria-label="Hear sentence">🔊</button><span class="en">Chiayi County is famous for Alishan.<span class="zh">嘉義縣以阿里山聞名。</span></span></li>
+        <li><button class="say sm" data-say="Chiayi County is home to Alishan, where you can take a historic forest railway up the mountain to watch the sunrise over a sea of clouds." aria-label="Hear">🔊</button><span class="en">Chiayi County is home to Alishan, where you can take a historic forest railway up the mountain to watch the sunrise over a sea of clouds.<span class="zh">嘉義縣是阿里山的所在地,你可以搭乘歷史悠久的森林鐵路上山,觀看旭日躍出雲海。</span></span></li>
+        <li><button class="say sm" data-say="Our high-mountain oolong tea grows on misty slopes over a thousand meters high, which gives it a smooth, sweet flavor and a wonderful aroma." aria-label="Hear">🔊</button><span class="en">Our high-mountain oolong tea grows on misty slopes over a thousand meters high, which gives it a smooth, sweet flavor and a wonderful aroma.<span class="zh">我們的高山烏龍茶生長在海拔一千多公尺、雲霧繚繞的山坡上,因此口感甘醇、香氣迷人。</span></span></li>
+        <li><button class="say sm" data-say="On the coast, the town of Dongshi produces more oysters than anywhere else in Taiwan, and nearby Budai has a quirky blue high-heel church." aria-label="Hear">🔊</button><span class="en">On the coast, the town of Dongshi produces more oysters than anywhere else in Taiwan, and nearby Budai has a quirky blue high-heel church.<span class="zh">在海岸邊,東石鎮的牡蠣產量是全台第一,鄰近的布袋還有一座造型奇特的藍色高跟鞋教堂。</span></span></li>
+        <li><button class="say sm" data-say="If you take the high-speed rail to Taibao, you can visit the Southern Branch of the National Palace Museum and see Asian art just minutes from the station." aria-label="Hear">🔊</button><span class="en">If you take the high-speed rail to Taibao, you can visit the Southern Branch of the National Palace Museum and see Asian art just minutes from the station.<span class="zh">如果你搭高鐵到太保,就能參觀故宮南院,在距離車站僅幾分鐘的地方欣賞亞洲藝術。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- schools + nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Alishan<button class="say sm" data-say="Alishan" aria-label="Hear Alishan">🔊</button></h3>
-          <div class="zh">阿里山</div>
-          <p>Sunrise, seas of cloud, sacred trees and a century-old forest railway above 2,000 m.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Palace Museum · Southern Branch<button class="say sm" data-say="Palace Museum · Southern Branch" aria-label="Hear Palace Museum · Southern Branch">🔊</button></h3>
-          <div class="zh">故宮南院</div>
-          <p>In Taibao City — the &#x27;Museum of Asian Art &amp; Culture&#x27;, beside the high-speed rail.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Taibao City<button class="say sm" data-say="Taibao City" aria-label="Hear Taibao City">🔊</button></h3>
-          <div class="zh">太保市</div>
-          <p>The county seat and HSR district — and the hometown of the hub&#x27;s founding teacher.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Turkey rice &amp; KANO<button class="say sm" data-say="Turkey rice &amp; KANO" aria-label="Hear Turkey rice &amp; KANO">🔊</button></h3>
-          <div class="zh">火雞肉飯・KANO</div>
-          <p>Chiayi&#x27;s signature turkey rice, high-mountain tea and a proud baseball history.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-south">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Turkey rice <button class="say sm" data-say="Turkey rice" aria-label="Hear food name">🔊</button> <span class="zh">· 火雞肉飯</span></div>
-    </div>
-  </div>
-</section>
-  <section class="section" style="padding-top:0;">
-    <div class="wrap">
-      <div class="cty-schools cc-south">
-        <h2>Bilingual schools here</h2>
-        <p>Campuses in Chiayi County that already have a bilingual site in the hub. ｜本縣已建置雙語校網的學校。</p>
-        <div class="chips">
-          <a href="https://tbes.taiwan-bilingual.org/">🏫 Taibao Elementary 太保國小 →</a>
-          <a href="https://tbjh.taiwan-bilingual.org/">🏫 Taibao Junior High 太保國中 →</a>
-          <a href="https://ycsh.taiwan-bilingual.org/">🏫 Young Docents · 永慶高中 →</a>
-        </div>
+    <div class="cty-schools cc-south">
+      <h2>Bilingual schools here</h2>
+      <p>Campuses in Chiayi County that already have a bilingual site in the hub. ｜本縣已建置雙語校網的學校。</p>
+      <div class="chips">
+        <a href="https://tbes.taiwan-bilingual.org/">🏫 Taibao Elementary 太保國小 →</a>
+        <a href="https://tbjh.taiwan-bilingual.org/">🏫 Taibao Junior High 太保國中 →</a>
+        <a href="https://ycsh.taiwan-bilingual.org/">🏫 Young Docents · 永慶高中 →</a>
       </div>
     </div>
-  </section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:交通部觀光署、阿里山國家風景區管理處、嘉義縣政府、文化部、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <a href="/counties/yunlin/">← Yunlin</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -121,6 +294,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>

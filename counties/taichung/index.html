@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Taichung 臺中市 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Taichung (臺中市) — landmarks, food and culture, and how to say it in English. 中台灣核心都會——建築、藝術與海岸生態並陳。">
+<meta name="description" content="Taichung (臺中市) — the birthplace of bubble tea, a Toyo-Ito opera house, the Dajia Mazu pilgrimage and a coast of windmills and sunsets. Its history, landmarks, culture, famous people and food, and how to say it in English. 珍珠奶茶發源地臺中的深度文化介紹。">
 <meta property="og:title" content="Taichung 臺中市 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Taichung = central / jade) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#33423c;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#155a41);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#1e7f5c);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#1e7f5c);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#155a41);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#e6f3ec);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#155a41);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#33423c;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#155a41);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#1e7f5c);background:var(--cc-soft,#e6f3ec);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#1e7f5c);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#155a41);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,6 +77,7 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-central">
   <div class="wrap">
     <div class="cty-region">Central Taiwan · 中部</div>
@@ -35,76 +86,198 @@
       <span class="zh">臺中市</span>
       <button class="say" data-say="Taichung" aria-label="Hear Taichung in English">🔊</button>
     </div>
-    <p class="cty-pos">Central Taiwan&#x27;s metropolis — architecture, art and coastal wetlands.</p>
-    <p class="cty-pos-zh">中台灣核心都會——建築、藝術與海岸生態並陳。</p>
+    <p class="cty-pos">Central Taiwan's metropolis — the birthplace of bubble tea, a planned "Little Kyoto" of canals and parks, ringed by mountains and a windswept coast.</p>
+    <p class="cty-pos-zh">中台灣的核心都會——珍珠奶茶的發源地、有運河與公園的「小京都」,被群山與多風的海岸環抱。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-central">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>The planned city at Taiwan's centre</h2></div>
+    <div class="narr">
+      <p>Taichung (臺中) literally means <strong>"central Taiwan."</strong> The city sits in the Taichung Basin, sheltered from typhoons by the Central Mountain Range, which gives it some of the mildest, most stable weather on the island. That gentle climate became part of its identity: a comfortable, livable city right in the middle of Taiwan.</p>
+      <p class="zh">「臺中」字面意思就是<strong>「臺灣的中部」</strong>。臺中位於臺中盆地,被中央山脈擋住颱風,氣候是全臺最溫和穩定的地區之一。這份宜人的天氣也成了它的特色:一座位於島嶼正中央、舒適宜居的城市。</p>
+      <p>Modern Taichung was largely planned during the <strong>Japanese colonial period (1895–1945)</strong>, when it was called Taichu. Planners laid out a grid of streets, parks and tree-lined canals, earning the nickname <strong>"Little Kyoto."</strong> Two engineered waterways still run through the centre — the Lyuchuan (綠川, "Green River") and the Liuchuan (柳川, "Willow River"), the latter lined with willows to evoke a Kyoto-style river. The north–south railway trunk line was routed through the city, turning Taichung into central Taiwan's most important transport hub.</p>
+      <p class="zh">現代臺中的格局大多奠定於<strong>日治時期(1895–1945)</strong>,當時稱為臺中。規劃者鋪設棋盤式街道、公園與綠樹成蔭的運河,使臺中有<strong>「小京都」</strong>之稱。市中心至今仍有兩條人工河流——綠川與柳川,柳川兩岸種柳,仿照京都的河川意象。縱貫鐵路主幹線經過臺中,使其成為中部最重要的交通樞紐。</p>
+      <p>A symbol of that era stands in <strong>Taichung Park</strong>, opened in 1903. Its twin-roofed lakeside pavilion was completed in 1908 to mark the opening of the trunk railway linking north and south Taiwan, and remains the visual emblem of the city. On <strong>25 December 2010</strong>, Taichung City merged with the surrounding Taichung County into a single special municipality — joining a dense urban core with mountains, farmland and a long coast. Home today to over 2.8 million people, Taichung is Taiwan's second-largest city.</p>
+      <p class="zh">那個時代的象徵就矗立在 1903 年開園的<strong>臺中公園</strong>內。湖中雙頂涼亭於 1908 年落成,為慶祝貫通南北的縱貫鐵路全線通車而建,至今仍是臺中的代表地標。<strong>2010 年 12 月 25 日</strong>,臺中市與周邊的臺中縣合併為單一直轄市——把密集市區與山地、農田、漫長海岸結合。如今人口逾 280 萬,使臺中成為臺灣第二大城。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Taichung</h2></div>
+    <div class="lmk cc-central">
+      <div class="lmk-item">
+        <h3>National Taichung Theater<span class="zh">國家歌劇院</span><button class="say sm" data-say="National Taichung Theater" aria-label="Hear">🔊</button></h3>
+        <p>Designed by Japanese architect Toyo Ito and opened in 2016, this opera house is famous for its column-free <strong>"Sound Cave"</strong> structure — flowing, curved walls with no straight lines or beams. Inside are a 2,000-seat grand theater, an 800-seat playhouse and a black-box stage.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Gaomei Wetlands<span class="zh">高美濕地</span><button class="say sm" data-say="Gaomei Wetlands" aria-label="Hear">🔊</button></h3>
+        <p>A 300-hectare coastal wetland in Qingshui with an 800-metre wooden boardwalk, rows of white wind turbines and mudflats alive with tens of thousands of crabs. It is one of Taiwan's most famous <strong>sunset</strong> spots; the boardwalk closes at high tide.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Rainbow Village<span class="zh">彩虹眷村</span><button class="say sm" data-say="Rainbow Village" aria-label="Hear">🔊</button></h3>
+        <p>A tiny former military-dependents' village hand-painted in bright colours and figures by veteran <strong>Huang Yung-fu, the "Rainbow Grandpa."</strong> He began painting around 2008 to save his home from demolition, and students rallied to preserve it; he passed away in 2024 at the age of 100.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Miyahara<span class="zh">宮原眼科</span><button class="say sm" data-say="Miyahara" aria-label="Hear">🔊</button></h3>
+        <p>A 1927 red-brick building that was once Taichung's largest eye clinic under a Japanese ophthalmologist. Restored by a pastry brand, it is now a lavish, library-themed shop famous for <strong>ice cream</strong> piled with toppings, pineapple cakes and ornate gift boxes.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Fengjia Night Market<span class="zh">逢甲夜市</span><button class="say sm" data-say="Fengjia Night Market" aria-label="Hear">🔊</button></h3>
+        <p><strong>Taiwan's largest night market</strong>, beside Feng Chia University. With over 1,600 vendors stretching about 1.5 km, it draws 100,000-plus visitors on weekends and is a famous testing ground where new street-food snacks make their debut.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Museum of Natural Science<span class="zh">國立自然科學博物館</span><button class="say sm" data-say="National Museum of Natural Science" aria-label="Hear">🔊</button></h3>
+        <p>Opened in 1986, this was <strong>Taiwan's first science museum</strong> — a six-venue complex with an IMAX theater, life-science and human-culture halls and a tropical botanical garden. It is one of the most-visited museums in the country.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>National Taiwan Museum of Fine Arts<span class="zh">國立臺灣美術館</span><button class="say sm" data-say="National Taiwan Museum of Fine Arts" aria-label="Hear">🔊</button></h3>
+        <p>Founded in 1988, it is one of Asia's largest fine-art museums by exhibition space, with sculpture parks and free admission. Its collection focuses on modern and contemporary Taiwanese art, anchoring the leafy Calligraphy Greenway.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Taichung Park &amp; Mid-Lake Pavilion<span class="zh">臺中公園・湖心亭</span><button class="say sm" data-say="Taichung Park and the Mid-Lake Pavilion" aria-label="Hear">🔊</button></h3>
+        <p>The city's oldest park, opened in 1903. Its twin-roofed lakeside pavilion was built in 1908 to celebrate the completion of Taiwan's trunk railway, and remains the historic <strong>symbol of Taichung</strong>.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Dajia Jenn Lann Temple<span class="zh">大甲鎮瀾宮</span><button class="say sm" data-say="Dajia Jenn Lann Temple" aria-label="Hear">🔊</button></h3>
+        <p>The Mazu (sea-goddess) temple in Dajia District and the starting point of the famous <strong>Dajia Mazu Pilgrimage</strong>. It is one of Taiwan's most important centres of folk religion.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Xinshe Flower Sea<span class="zh">新社花海</span><button class="say sm" data-say="Xinshe Flower Sea" aria-label="Hear">🔊</button></h3>
+        <p>A large autumn flower festival in the hilly Xinshe District, often called <strong>"Taiwan's Provence."</strong> Held roughly November to early December, it plants hundreds of thousands of flowers across terraced fields.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>A pilgrimage and a cup of tea</h2>
+      <p>Taichung's culture runs from a million-strong religious procession to the chewy cup of tea that conquered the world.</p></div>
+    <div class="ppl cc-central">
+      <div class="ppl-card">
+        <h3>🙏 The Dajia Mazu Pilgrimage · 大甲媽祖遶境</h3>
+        <p>One of the largest annual religious processions on Earth. Each spring the Mazu statue from Dajia Jenn Lann Temple is carried on a <strong>9-day, 8-night round trip of more than 300 km</strong>, travelling south through Changhua and Yunlin to Xingang in Chiayi County and back. Hundreds of thousands walk alongside, and over a million people take part across the route in a moving river of incense, firecrackers, music and colour.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>🧋 Birthplace of bubble tea · 珍珠奶茶發源地</h3>
+        <p>Taichung is the home of <strong>bubble tea (珍珠奶茶)</strong>. The teahouse Chun Shui Tang, founded in 1983, is credited with the idea in the mid-to-late 1980s, when staff dropped chewy tapioca pearls into iced milk tea. (A Tainan teahouse makes a competing claim.) From this grew Taichung's lively café and teahouse culture and a thriving arts scene.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Famous People · 臺中名人</div><h2>The grandpa who saved a village</h2></div>
+    <div class="ppl cc-central">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Huang Yung-fu 黃永阜</h3>
+        <div class="yr">1924–2024 · the "Rainbow Grandpa"</div>
+        <p>A KMT-army veteran who single-handedly hand-painted his Taichung military village in bright colours and figures to save it from demolition. The <strong>"Rainbow Grandpa"</strong> became a beloved folk artist whose Rainbow Village now draws visitors from around the world. He passed away in January 2024 at about 100 years old.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Chun Shui Tang 春水堂</h3>
+        <div class="yr">founded 1983 · bubble tea</div>
+        <p>The Taichung teahouse credited with inventing <strong>bubble tea</strong>. Staff there are said to have first dropped tapioca pearls into iced milk tea in the mid-to-late 1980s — an idea that grew into one of Taiwan's most famous exports, now sold in cities all over the world.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Events · 節慶活動</div><h2>When Taichung comes alive</h2></div>
+    <div class="lmk cc-central">
+      <div class="lmk-item">
+        <h3>Dajia Mazu Pilgrimage<span class="zh">大甲媽祖遶境</span></h3>
+        <p>The biggest event of the year, held in spring (the lunar third month). A 9-day, 8-night, 300-plus-km procession from Dajia Jenn Lann Temple to Xingang and back, joined by over a million people.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Taichung Jazz Festival<span class="zh">臺中爵士音樂節</span></h3>
+        <p>Held since 2003, this is Taiwan's largest jazz festival, with free open-air concerts at Civic Square along the Calligraphy Greenway each autumn, usually in October.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Xinshe Flower Sea Festival<span class="zh">新社花海節</span></h3>
+        <p>A large autumn flower festival in Xinshe District, around November to early December, with hundreds of thousands of flowers spread across terraced fields.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Lantern Festival displays<span class="zh">臺中燈會</span></h3>
+        <p>Taichung has hosted editions of the Taiwan Lantern Festival and stages its own lantern events around Lunar New Year, lighting up parks and waterfronts across the city.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>From pearls to pastries</h2>
+      <p>Taichung gave the world bubble tea — but the city's snack table runs from flaky sun cakes to alkaline noodles, district by district.</p></div>
+    <div class="food cc-central">
+      <div class="food-item"><span class="em">🧋</span><div><h4>Bubble tea <span class="zh">珍珠奶茶</span></h4><p>Born at Chun Shui Tang: iced milk tea with chewy tapioca pearls — Taichung's most famous culinary export.</p><span class="town">West District 西區</span></div></div>
+      <div class="food-item"><span class="em">🥮</span><div><h4>Sun cake <span class="zh">太陽餅</span></h4><p>A round, flaky pastry filled with malt sugar — Taichung's classic souvenir gift box, with roots in Shengang's Shekou.</p><span class="town">Citywide 全市</span></div></div>
+      <div class="food-item"><span class="em">🍦</span><div><h4>Miyahara desserts <span class="zh">宮原眼科甜點</span></h4><p>Pile-it-on ice cream, pineapple cakes and elaborate gift boxes served in a restored historic eye-clinic building.</p><span class="town">Central District 中區</span></div></div>
+      <div class="food-item"><span class="em">🍢</span><div><h4>Fengjia night-market snacks <span class="zh">逢甲夜市小吃</span></h4><p>A famous incubator of new street foods — many of Taiwan's trendy snacks made their first appearance here.</p><span class="town">Xitun District 西屯區</span></div></div>
+      <div class="food-item"><span class="em">🍜</span><div><h4>Da mian geng <span class="zh">大麵羹</span></h4><p>A thick, alkaline-noodle soup unique to old Taichung, usually topped with dried radish and fried shallots.</p><span class="town">Old Taichung 舊市區</span></div></div>
+      <div class="food-item"><span class="em">🍠</span><div><h4>Dajia taro pastry <span class="zh">大甲芋頭酥</span></h4><p>Dajia is known for its taro; the flaky, layered taro pastry is a popular local gift.</p><span class="town">Dajia District 大甲區</span></div></div>
+      <div class="food-item"><span class="em">🏮</span><div><h4>Miaodong night eats <span class="zh">廟東夜市</span></h4><p>A compact, beloved temple-side food alley in Fengyuan, famous for clay-oven items, meat soups and traditional snacks.</p><span class="town">Fengyuan District 豐原區</span></div></div>
+      <div class="food-item"><span class="em">🍍</span><div><h4>Pineapple cake <span class="zh">鳳梨酥</span></h4><p>Buttery shortcrust filled with pineapple jam — a Taiwan-wide gift, with several well-known Taichung bakeries.</p><span class="town">Citywide 全市</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Taichung is known for · 臺中的招牌</div><h2>Tea, wheels, faith and art</h2></div>
+    <div class="kf cc-central">
+      <div class="kf-item"><span class="em">🧋</span><h4>Bubble tea <span class="zh">珍珠奶茶</span></h4><p>The birthplace of pearl milk tea, claimed by Chun Shui Tang in the 1980s.</p></div>
+      <div class="kf-item"><span class="em">🥮</span><h4>Sun cakes <span class="zh">太陽餅</span></h4><p>The city's classic flaky, malt-sugar pastry and signature souvenir.</p></div>
+      <div class="kf-item"><span class="em">🚲</span><h4>Giant Bicycles <span class="zh">巨大(捷安特)</span></h4><p>The world's largest bicycle maker is headquartered in Taichung, heart of the central bicycle and machinery belt.</p></div>
+      <div class="kf-item"><span class="em">🙏</span><h4>Dajia Mazu <span class="zh">大甲媽祖</span></h4><p>One of the world's great religious processions sets off from Dajia each spring.</p></div>
+      <div class="kf-item"><span class="em">🏛️</span><h4>Architecture &amp; arts <span class="zh">建築與藝文</span></h4><p>Toyo Ito's opera house, the Museum of Fine Arts and the Jazz Festival.</p></div>
+      <div class="kf-item"><span class="em">🌤️</span><h4>Mild &amp; livable <span class="zh">宜居氣候</span></h4><p>The gentle-weather "Little Kyoto" planned city in Taiwan's centre.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-central" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Taichung to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹臺中,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Taichung." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Taichung.<span class="zh">我來自臺中市。</span></span></li>
-        <li><button class="say sm" data-say="Taichung is in Central Taiwan." aria-label="Hear sentence">🔊</button><span class="en">Taichung is in Central Taiwan.<span class="zh">臺中市在臺灣中部。</span></span></li>
-        <li><button class="say sm" data-say="Taichung is famous for National Taichung Theater." aria-label="Hear sentence">🔊</button><span class="en">Taichung is famous for National Taichung Theater.<span class="zh">臺中市以國家歌劇院聞名。</span></span></li>
+        <li><button class="say sm" data-say="Taichung is where bubble tea was invented. A teahouse here called Chun Shui Tang first added tapioca pearls to iced milk tea back in the 1980s." aria-label="Hear">🔊</button><span class="en">Taichung is where bubble tea was invented — a teahouse here called Chun Shui Tang first added tapioca pearls to iced milk tea back in the 1980s.<span class="zh">臺中是珍珠奶茶的發源地——這裡一家叫「春水堂」的茶館在 1980 年代率先把粉圓加進冰奶茶。</span></span></li>
+        <li><button class="say sm" data-say="Don't miss the National Taichung Theater. The Japanese architect Toyo Ito designed it with flowing, curved walls and no straight columns, so people call it the Sound Cave." aria-label="Hear">🔊</button><span class="en">Don't miss the National Taichung Theater — the architect Toyo Ito designed it with flowing, curved walls and no straight columns, so people call it the "Sound Cave."<span class="zh">別錯過國家歌劇院——建築師伊東豊雄用流動的曲面牆、沒有直立柱子來設計它,大家稱它為「聲音的涵洞」。</span></span></li>
+        <li><button class="say sm" data-say="If you visit in spring, you might catch the Dajia Mazu Pilgrimage, a nine-day religious procession with over a million people walking across central Taiwan." aria-label="Hear">🔊</button><span class="en">If you visit in spring, you might catch the Dajia Mazu Pilgrimage — a nine-day religious procession with over a million people walking across central Taiwan.<span class="zh">如果春天來,也許能碰上大甲媽祖遶境——一場為期九天、超過百萬人步行穿越中臺灣的宗教遶境。</span></span></li>
+        <li><button class="say sm" data-say="For the best sunset, go to the Gaomei Wetlands on the coast, where a wooden boardwalk leads out past rows of white wind turbines." aria-label="Hear">🔊</button><span class="en">For the best sunset, go to the Gaomei Wetlands on the coast, where a wooden boardwalk leads out past rows of white wind turbines.<span class="zh">想看最美的夕陽,就去海邊的高美濕地,木棧道一路延伸,穿過一排排白色風力發電機。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- schools + nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>National Taichung Theater<button class="say sm" data-say="National Taichung Theater" aria-label="Hear National Taichung Theater">🔊</button></h3>
-          <div class="zh">國家歌劇院</div>
-          <p>Toyo Ito&#x27;s &#x27;sound cave&#x27; — a curved-wall building with no straight 90 degree walls inside.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Gaomei Wetlands<button class="say sm" data-say="Gaomei Wetlands" aria-label="Hear Gaomei Wetlands">🔊</button></h3>
-          <div class="zh">高美濕地</div>
-          <p>1,500 hectares of wind turbines, a famous orange sunset and a model boardwalk.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>City life<button class="say sm" data-say="City life" aria-label="Hear City life">🔊</button></h3>
-          <div class="zh">都會生活</div>
-          <p>Fengjia Night Market, Miyahara and the birthplace of bubble tea.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Shengang &amp; Qingshui<button class="say sm" data-say="Shengang &amp; Qingshui" aria-label="Hear Shengang &amp; Qingshui">🔊</button></h3>
-          <div class="zh">神岡・清水</div>
-          <p>Village and coastal communities where the hub&#x27;s immersive-English campuses sit.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-central">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Sun cakes &amp; bubble tea <button class="say sm" data-say="Sun cakes &amp; bubble tea" aria-label="Hear food name">🔊</button> <span class="zh">· 太陽餅與珍珠奶茶</span></div>
-    </div>
-  </div>
-</section>
-  <section class="section" style="padding-top:0;">
-    <div class="wrap">
-      <div class="cty-schools cc-central">
-        <h2>Bilingual schools here</h2>
-        <p>Campuses in Taichung that already have a bilingual site in the hub. ｜本縣已建置雙語校網的學校。</p>
-        <div class="chips">
-          <a href="https://fces.taiwan-bilingual.org/">🏫 FengChou Elementary 豐洲國小 →</a>
-          <a href="https://klnes.taiwan-bilingual.org/">🏫 KangLang Elementary 槺榔國小 →</a>
-        </div>
+    <div class="cty-schools cc-central">
+      <h2>Bilingual schools here</h2>
+      <p>Campuses in Taichung that already have a bilingual site in the hub. ｜本市已建置雙語校網的學校。</p>
+      <div class="chips">
+        <a href="https://fces.taiwan-bilingual.org/">🏫 FengChou Elementary 豐洲國小 →</a>
+        <a href="https://klnes.taiwan-bilingual.org/">🏫 KangLang Elementary 槺榔國小 →</a>
       </div>
     </div>
-  </section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:臺中市政府觀光旅遊局、交通部觀光署、大甲鎮瀾宮、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <a href="/counties/miaoli/">← Miaoli</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -120,6 +293,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>
