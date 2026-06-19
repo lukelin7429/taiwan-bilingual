@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="/assets/favicon/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+<link rel="manifest" href="/assets/favicon/site.webmanifest">
+<meta name="theme-color" content="#00703c">
+<title>De La Salle University–Dasmariñas (DLSU-D) — Taiwan Bilingual Hub</title>
+<meta name="description" content="De La Salle University–Dasmariñas High School (DLSU-D) — a Lasallian Catholic school in Cavite, Philippines, and My Culture Connect's partner institution in the Philippines. Together: language learning, cultural exchange, and educational excellence across the Pacific. 菲律賓拉薩爾大學達斯馬里納斯分校高中部，人師在菲律賓的夥伴機構。">
+<meta property="og:title" content="De La Salle University–Dasmariñas (DLSU-D) — Taiwan Bilingual Hub">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
+<style>
+  :root{ --dls:#00703c; --dls-deep:#024d2a; --dls-soft:#e2f1e8; --mint:#7fc9a3; --gold:#c9a24b; }
+
+  .u-hero{background:linear-gradient(135deg,#02321c 0%,var(--dls-deep) 45%,var(--dls) 100%);color:#fff;position:relative;overflow:hidden;padding:58px 0 60px;}
+  .u-hero::before{content:"";position:absolute;top:-130px;right:-110px;width:480px;height:480px;background:radial-gradient(circle,rgba(127,201,163,.22) 0%,transparent 70%);}
+  .u-hero::after{content:"";position:absolute;bottom:-160px;left:-120px;width:420px;height:420px;background:radial-gradient(circle,rgba(255,255,255,.08) 0%,transparent 70%);}
+  .u-hero .inner{position:relative;z-index:1;}
+  .u-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.15);color:#dcf2e6;padding:7px 15px;border-radius:999px;font-size:13.5px;font-weight:700;letter-spacing:.05em;margin-bottom:16px;border:1px solid rgba(255,255,255,.30);}
+  .u-hero h1{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(31px,4.8vw,49px);font-weight:600;line-height:1.07;}
+  .u-hero .zh{font-size:23px;font-weight:500;color:#e0f1e8;margin-top:10px;}
+  .u-hero .tagline{margin-top:14px;font-style:italic;font-family:'Playfair Display',serif;font-size:20px;color:#cdebda;}
+  .u-hero .sub{margin-top:16px;font-size:20px;color:#edf7f1;max-width:62ch;line-height:1.65;}
+  .u-hero .sub-zh{margin-top:8px;font-size:18px;color:#cfe6d9;max-width:58ch;line-height:1.85;}
+  .u-stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;}
+  .u-stats span{font-size:14.5px;font-weight:700;color:#fff;background:rgba(255,255,255,.13);padding:7px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.20);}
+
+  .u-sec{padding:54px 0;}
+  .u-sec.alt{background:#f3faf6;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .u-label{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--dls);margin-bottom:10px;}
+  .u-h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,34px);font-weight:700;color:var(--dls-deep);line-height:1.18;}
+  .u-note{font-size:17px;color:var(--ink-soft);margin-top:8px;line-height:1.75;max-width:70ch;}
+
+  .u-quote{margin-top:24px;padding:26px 30px;border-left:5px solid var(--dls);background:#fff;border-radius:0 14px 14px 0;box-shadow:var(--shadow-sm);}
+  .u-quote p{font-size:19px;line-height:1.8;color:#27433a;font-style:italic;}
+  .u-quote .zh{font-size:16.5px;font-style:normal;color:var(--ink-soft);margin-top:12px;line-height:1.85;}
+
+  .u-bi{display:grid;grid-template-columns:1fr;gap:22px;margin-top:26px;}
+  @media(min-width:820px){.u-bi{grid-template-columns:1fr 1fr;}}
+  .u-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 30px;box-shadow:var(--shadow-sm);}
+  .u-card .tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.05em;color:var(--dls);background:var(--dls-soft);padding:4px 12px;border-radius:999px;margin-bottom:14px;}
+  .u-card p{font-size:18px;line-height:1.8;color:#33424f;margin-bottom:12px;}
+  .u-card p.zh{font-size:16.5px;line-height:1.9;}
+  .u-card p:last-child{margin-bottom:0;}
+  .u-card strong{color:var(--dls-deep);font-weight:700;}
+
+  /* programs */
+  .u-progs{display:grid;grid-template-columns:1fr;gap:18px;margin-top:26px;}
+  @media(min-width:620px){.u-progs{grid-template-columns:1fr 1fr;}}
+  @media(min-width:920px){.u-progs{grid-template-columns:1fr 1fr 1fr;}}
+  .prog{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 24px;border-top:4px solid var(--dls);box-shadow:var(--shadow-sm);}
+  .prog .ic{font-size:30px;line-height:1;}
+  .prog h3{font-family:'Playfair Display','PingFang TC',serif;font-size:20px;color:var(--dls-deep);margin-top:12px;line-height:1.2;}
+  .prog .zh{font-size:15px;color:var(--dls);font-weight:600;margin-top:3px;}
+  .prog p{font-size:16.5px;color:var(--ink-soft);margin-top:10px;line-height:1.65;}
+
+  /* learn more */
+  .u-learn{background:var(--dls-deep);color:#fff;border-radius:22px;padding:40px 36px;margin-top:26px;text-align:center;position:relative;overflow:hidden;}
+  .u-learn::before{content:"";position:absolute;top:-80px;right:-60px;width:300px;height:300px;background:radial-gradient(circle,rgba(127,201,163,.22) 0%,transparent 70%);}
+  .u-learn .globe{font-size:54px;line-height:1;position:relative;z-index:1;}
+  .u-learn h3{font-family:'Playfair Display','PingFang TC',serif;font-size:26px;margin-top:14px;position:relative;z-index:1;}
+  .u-learn p{font-size:17px;color:#dcefe2;margin-top:10px;max-width:60ch;margin-left:auto;margin-right:auto;line-height:1.7;position:relative;z-index:1;}
+  .u-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:22px;position:relative;z-index:1;}
+  .u-links a{font-weight:700;font-size:16px;padding:12px 22px;border-radius:999px;text-decoration:none;}
+  .u-links a.bright{background:var(--mint);color:#03331e;}
+  .u-links a.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);}
+  .u-links a:hover{filter:brightness(1.06);}
+  .u-back{display:inline-block;margin-top:24px;color:var(--dls-deep);font-weight:700;font-size:16px;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
+    <nav class="topbar-nav">
+      <a href="/">Home</a>
+      <a href="/bilingual-2030/">Bilingual 2030</a>
+      <a href="/counties/">Counties/Cities</a>
+      <a href="/schools/">Schools</a>
+      <a href="/partners/" aria-current="page">Partners</a>
+      <a href="/resources/">Resources</a>
+    </nav>
+  </div>
+</div>
+
+<header class="u-hero">
+  <div class="wrap inner">
+    <div class="u-badge">🇵🇭 Lasallian Partner · 拉薩爾夥伴 · Dasmariñas, Cavite</div>
+    <h1>De La Salle University–Dasmariñas</h1>
+    <div class="zh">拉薩爾大學達斯馬里納斯分校 · 高中部（DLSU-D）</div>
+    <div class="tagline">"Empower your child's global journey."</div>
+    <p class="sub">The High School of <strong>De La Salle University–Dasmariñas</strong> — a Lasallian Catholic institution in Cavite, Philippines — educates Junior and Senior High students in the centuries-old De La Salle tradition of <strong>faith, service, and academic excellence</strong>. It is My Culture Connect's partner institution in the Philippines.</p>
+    <p class="sub-zh"><strong>拉薩爾大學達斯馬里納斯分校（DLSU-D）</strong>高中部位於菲律賓甲米地省，是一所拉薩爾天主教學校，以延續數百年的「<strong>信仰、服務與學術卓越</strong>」傳統培育國中與高中學生，也是人師（MCC）在菲律賓的夥伴機構。</p>
+    <div class="u-stats"><span>📍 Dasmariñas, Cavite</span><span>⛪ Lasallian · Catholic</span><span>🎓 Junior &amp; Senior High</span><span>🌏 International programs</span></div>
+  </div>
+</header>
+
+<section class="u-sec">
+  <div class="wrap">
+    <div class="u-label">Why we are partners · 為何結為夥伴</div>
+    <h2 class="u-h2">Across the Pacific, one purpose</h2>
+    <div class="u-bi">
+      <div class="u-card">
+        <span class="tag">A shared mission · 共同的使命</span>
+        <p>DLSU-D and <strong>My Culture Connect</strong> are partners in the same work: <strong>language learning, cultural exchange, and educational excellence</strong>. Both believe an education widens when students meet the world beyond their own — and both build the bridges that make that meeting real.</p>
+        <p class="zh">DLSU-D 與<strong>人師（MCC）</strong>是同一件事上的夥伴：<strong>語言學習、文化交流與教育卓越</strong>。雙方都相信，當學生遇見自身之外的世界，教育的視野才會真正開闊——也都在搭建讓這份相遇成真的橋樑。</p>
+      </div>
+      <div class="u-card">
+        <span class="tag">A Philippine bridge · 菲律賓的橋樑</span>
+        <p>The Philippines has long been one of the wellsprings of the warm, dedicated English educators who give Taiwan's students living English. As MCC's <strong>Lasallian partner institution</strong>, DLSU-D anchors that connection — a meeting of two values-driven schools committed to global, service-minded learning.</p>
+        <p class="zh">菲律賓長久以來是那些溫暖、敬業、為臺灣學生帶來「活的英文」的英語教育者的搖籃之一。作為人師的<strong>拉薩爾夥伴機構</strong>，DLSU-D 正是這份連結的支點——兩所同樣重視價值、致力於全球與服務導向學習的學校的相遇。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="u-sec alt">
+  <div class="wrap">
+    <div class="u-label">Lasallian Identity · 拉薩爾精神</div>
+    <h2 class="u-h2">Faith, service, and well-rounded formation</h2>
+    <div class="u-quote">
+      <p>"Dedicated to shaping well-rounded and future-ready individuals" — through holistic Lasallian formation that joins academic excellence with faith, character, and a heart for service.</p>
+      <p class="zh">「致力於培養全面發展、面向未來的人」——透過拉薩爾的全人教育，將學術卓越與信仰、品格及服務之心結合在一起。</p>
+    </div>
+    <p class="u-note" style="margin-top:18px;">De La Salle University–Dasmariñas is part of <strong>De La Salle Philippines</strong>, the network of Lasallian schools founded in the tradition of <strong>St. John Baptist de La Salle</strong>, patron of teachers. DLSU-D 屬於<strong>菲律賓拉薩爾教育網絡（De La Salle Philippines）</strong>，承續「教師主保<strong>聖若翰·喇沙</strong>」的辦學傳統。</p>
+  </div>
+</section>
+
+<section class="u-sec">
+  <div class="wrap">
+    <div class="u-label">What They Offer · 高中部提供</div>
+    <h2 class="u-h2">A future-ready high school</h2>
+    <div class="u-progs">
+      <div class="prog"><div class="ic">🔬</div><h3>Senior High Strands</h3><div class="zh">高中學術專班</div><p>STEM, HUMSS, ABM, Arts &amp; Design, TVL tracks and Sports — pathways tailored to each student's future.</p></div>
+      <div class="prog"><div class="ic">🌏</div><h3>International Programs</h3><div class="zh">國際課程與交流</div><p>International and local student exchange, plus a dedicated International Students Office welcoming learners from abroad.</p></div>
+      <div class="prog"><div class="ic">🎓</div><h3>Micro-Credentials</h3><div class="zh">微學程學分</div><p>Courses that earn credits toward DLSU-D's colleges — a head start on university while still in high school.</p></div>
+      <div class="prog"><div class="ic">🔎</div><h3>Research &amp; Grants</h3><div class="zh">研究與獎助</div><p>Research opportunities and grants that let high school students inquire, create, and publish.</p></div>
+      <div class="prog"><div class="ic">🎭</div><h3>Culture &amp; Arts</h3><div class="zh">文化與藝術</div><p>Student organizations in culture, arts, athletics and academic competition that grow the whole person.</p></div>
+      <div class="prog"><div class="ic">🤲</div><h3>Lasallian Outreach</h3><div class="zh">拉薩爾服務</div><p>Holistic formation joined with outreach — learning to lead with faith, conscience and a heart for others.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="u-sec alt">
+  <div class="wrap">
+    <div class="u-learn">
+      <div class="globe">🇵🇭</div>
+      <h3>Learn more about DLSU-D</h3>
+      <p>Discover the High School, its Lasallian tradition and its programs — and how a school in Cavite shares the Pacific-wide work of educating global citizens. 進一步認識 DLSU-D 高中部、其拉薩爾傳統與課程。</p>
+      <div class="u-links">
+        <a class="bright" href="https://www.dlsud.edu.ph/high-school/" target="_blank" rel="noopener">High School site ↗</a>
+        <a class="ghost" href="https://www.dlsud.edu.ph/" target="_blank" rel="noopener">DLSU-D ↗</a>
+      </div>
+    </div>
+    <a class="u-back" href="/partners/">← Back to Partners · 回國際夥伴</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p class="footer-brand">Taiwan Bilingual Hub · 臺灣雙語資源網</p>
+    <p class="footer-note">A teacher-led bilingual education effort supporting Taiwan's 2030 Bilingual Nation policy.<br>支援「2030 雙語國家」政策 · 由老師發起的雙語教育計畫。</p>
+    <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
