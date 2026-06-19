@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Word of the Day · 每日一字 — Taiwan Bilingual Hub</title>
+<meta name="description" content="A searchable bank of 2,000+ everyday English words filmed by Taiwan's students — each with a bilingual example sentence, a video and tap-to-hear pronunciation. 可搜尋的兩千多個校園英語單字影片庫。">
+<meta property="og:title" content="Word of the Day · 每日一字 — Taiwan Bilingual Hub">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  .pg-band{background:linear-gradient(135deg,var(--jade-deep) 0%,var(--jade) 70%,#3a7766 100%);color:#fff;padding:50px 0 52px;position:relative;overflow:hidden;}
+  .pg-band::before{content:"";position:absolute;top:-120px;right:-100px;width:420px;height:420px;background:radial-gradient(circle,rgba(255,255,255,.10) 0%,transparent 70%);}
+  .pg-band .eyebrow{font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#cdeadd;margin-bottom:12px;}
+  .pg-band h1{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(32px,5vw,48px);font-weight:600;line-height:1.08;position:relative;z-index:1;}
+  .pg-band .sub{margin-top:14px;font-size:19px;color:#e7f3ee;max-width:62ch;position:relative;z-index:1;}
+  .pg-band .sub-zh{margin-top:6px;font-size:16.5px;color:#cfe6dd;max-width:56ch;line-height:1.8;position:relative;z-index:1;}
+
+  /* controls */
+  .w-controls{position:sticky;top:57px;z-index:30;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);padding:16px 0;}
+  .w-search{position:relative;max-width:560px;}
+  .w-search input{width:100%;font-size:18px;font-family:inherit;color:var(--ink);
+    padding:14px 18px 14px 46px;border:1.5px solid var(--line);border-radius:999px;background:#fff;outline:none;transition:border-color .2s;}
+  .w-search input:focus{border-color:var(--jade);}
+  .w-search .mag{position:absolute;left:18px;top:50%;transform:translateY(-50%);font-size:18px;color:var(--ink-soft);}
+  .w-count{margin-top:10px;font-size:14.5px;color:var(--ink-soft);}
+  .w-count b{color:var(--jade-deep);}
+  .w-themes{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+  .w-chip{font-size:14px;font-weight:600;color:var(--ink-soft);background:#fff;border:1px solid var(--line);
+    padding:6px 13px;border-radius:999px;cursor:pointer;transition:all .15s;white-space:nowrap;}
+  .w-chip:hover{border-color:var(--jade);color:var(--jade-deep);}
+  .w-chip.on{background:var(--jade-deep);color:#fff;border-color:var(--jade-deep);}
+  .w-letters{display:flex;flex-wrap:wrap;gap:4px;margin-top:10px;}
+  .w-letters button{width:28px;height:28px;border-radius:7px;border:1px solid var(--line);background:#fff;
+    font-size:13px;font-weight:700;color:var(--ink-soft);cursor:pointer;transition:all .12s;}
+  .w-letters button:hover{border-color:var(--jade);color:var(--jade-deep);}
+  .w-letters button.on{background:var(--jade);color:#fff;border-color:var(--jade);}
+
+  /* grid */
+  .w-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:6px;}
+  @media(min-width:560px){.w-grid{grid-template-columns:1fr 1fr;}}
+  @media(min-width:920px){.w-grid{grid-template-columns:1fr 1fr 1fr;}}
+  .w-card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);
+    display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s;}
+  .w-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
+  .w-thumb{position:relative;aspect-ratio:16/9;background:#0c1f1a;cursor:pointer;overflow:hidden;}
+  .w-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .w-thumb .w-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    font-size:30px;color:#fff;background:rgba(8,20,16,.28);transition:background .18s;}
+  .w-thumb:hover .w-play{background:rgba(8,20,16,.12);}
+  .w-thumb iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  .w-body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1;}
+  .w-k{display:flex;align-items:center;gap:8px;font-size:19px;font-weight:700;color:var(--ink);line-height:1.25;}
+  .w-k .say{margin-left:auto;}
+  .w-kz{margin-top:2px;font-size:15.5px;color:var(--jade-deep);font-weight:600;}
+  .w-s{margin-top:12px;font-size:15.5px;color:var(--ink);line-height:1.55;display:flex;align-items:flex-start;gap:8px;flex-wrap:wrap;}
+  .w-s .say{flex:0 0 auto;margin-top:1px;}
+  .w-s .tx{flex:1;min-width:0;}
+  .w-s .w-sz{display:block;font-size:14px;color:var(--ink-soft);margin-top:3px;}
+  .w-theme{align-self:flex-start;margin-top:14px;font-size:12.5px;font-weight:600;color:var(--jade-deep);background:var(--jade-soft);padding:4px 11px;border-radius:999px;}
+
+  .w-more{text-align:center;margin-top:32px;}
+  .w-more button{font-size:16px;font-weight:700;color:#fff;background:var(--jade-deep);border:0;border-radius:999px;padding:13px 30px;cursor:pointer;}
+  .w-more button:hover{background:var(--jade);}
+  .w-empty{text-align:center;color:var(--ink-soft);font-size:17px;padding:40px 0;}
+  .w-credit{margin-top:30px;font-size:14.5px;color:var(--ink-soft);border-left:3px solid var(--line);padding-left:14px;line-height:1.7;}
+  .w-credit a{color:var(--jade-deep);font-weight:600;}
+  @media(max-width:760px){.w-controls{top:56px;}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
+    <nav class="topbar-nav">
+      <a href="/">Home</a>
+      <a href="/bilingual-2030/">Bilingual 2030</a>
+      <a href="/counties/">Counties</a>
+      <a href="/schools/">Schools</a>
+      <a href="/partners/">Partners</a>
+      <a href="/resources/" aria-current="page">Resources</a>
+      <a href="https://changhua-bilingual.org/">Changhua Hub ↗</a>
+    </nav>
+  </div>
+</div>
+
+<header class="pg-band">
+  <div class="wrap">
+    <div class="eyebrow">Resources · Word of the Day · 每日一字</div>
+    <h1>Word of the Day</h1>
+    <p class="sub">Over 2,000 everyday English words, each filmed by Taiwan's students with a bilingual example sentence. Search a word, tap 🔊 to hear it, and play the clip right here.</p>
+    <p class="sub-zh">兩千多個校園英語單字,每個都由臺灣學生拍成短片並附中英例句。搜尋單字、點 🔊 聽發音、影片原地播放。</p>
+  </div>
+</header>
+
+<div class="w-controls">
+  <div class="wrap">
+    <div class="w-search">
+      <span class="mag">🔍</span>
+      <input id="wq" type="search" placeholder="Search a word or meaning… 搜尋單字或中文意思" autocomplete="off" aria-label="Search words">
+    </div>
+    <div class="w-count" id="wcount"></div>
+    <div class="w-themes" id="wthemes"></div>
+    <div class="w-letters" id="wletters"></div>
+  </div>
+</div>
+
+<section class="section" style="padding-top:24px;">
+  <div class="wrap">
+    <div class="w-grid" id="wgrid"></div>
+    <div class="w-empty" id="wempty" style="display:none;">No words match your search. 找不到符合的單字。</div>
+    <div class="w-more" id="wmore" style="display:none;"><button type="button" id="wmorebtn">Load more 載入更多</button></div>
+    <p class="w-credit" id="wcredit"></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p class="footer-brand">Taiwan Bilingual Hub · 臺灣雙語資源網</p>
+    <p class="footer-note">A teacher-led bilingual education effort supporting Taiwan's 2030 Bilingual Nation policy.<br>支援「2030 雙語國家」政策 · 由老師發起的雙語教育計畫。</p>
+    <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
+  </div>
+</footer>
+
+<script src="/assets/js/say.js"></script>
+<script>
+(function(){
+  var PAGE=48, items=[], filtered=[], rendered=0;
+  var q='', theme='', letter='';
+  var THEMES={
+    'picture-description':'Picture Description 看圖說話',
+    'physical-activities':'Physical Activities 體育活動',
+    'learning-subjects':'Learning & Subjects 學科學習',
+    'food-agriculture':'Food & Agriculture 飲食農業',
+    'tasks':'Tasks & Roles 任務職務',
+    'facilities-equipment':'Facilities 設施器材',
+    'festivals':'Festivals 節慶',
+    'cultural-artistic':'Cultural & Artistic 文化藝術',
+    'clubs-teams':'Clubs & Teams 社團校隊',
+    'health-safety':'Health & Safety 健康安全'
+  };
+  var grid=document.getElementById('wgrid'),countEl=document.getElementById('wcount'),
+      emptyEl=document.getElementById('wempty'),moreWrap=document.getElementById('wmore');
+
+  function clean(s){return (s||'').replace(/\s*\([^)]*\)\s*$/,'').trim();} // drop "(n.)" for speech
+  function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+  function cardHTML(it){
+    var k=esc(it.k), spk=esc(clean(it.k)), kz=esc(it.kz||''), s1=esc(it.s1||''), s1z=esc(it.s1z||'');
+    var th=THEMES[it.t]||it.t||'';
+    return '<article class="w-card">'
+      + '<div class="w-thumb" data-v="'+esc(it.v)+'"><img src="https://i.ytimg.com/vi/'+esc(it.v)+'/mqdefault.jpg" loading="lazy" alt=""><span class="w-play">▶</span></div>'
+      + '<div class="w-body">'
+      + '<div class="w-k">'+k+'<button class="say sm" data-say="'+spk+'" aria-label="Hear">🔊</button></div>'
+      + (kz?'<div class="w-kz">'+kz+'</div>':'')
+      + (s1?'<p class="w-s"><button class="say sm" data-say="'+s1+'" aria-label="Hear sentence">🔊</button><span class="tx">'+s1+(s1z?'<span class="w-sz">'+s1z+'</span>':'')+'</span></p>':'')
+      + (th?'<span class="w-theme">'+esc(th)+'</span>':'')
+      + '</div></article>';
+  }
+
+  function applyFilter(){
+    filtered=items.filter(function(it){
+      if(theme && it.t!==theme) return false;
+      if(letter && it.l!==letter) return false;
+      if(q){
+        var hay=((it.k||'')+' '+(it.kz||'')+' '+(it.s1||'')+' '+(it.s2||'')).toLowerCase();
+        if(hay.indexOf(q)<0) return false;
+      }
+      return true;
+    });
+    rendered=0; grid.innerHTML='';
+    emptyEl.style.display=filtered.length?'none':'block';
+    countEl.innerHTML='<b>'+filtered.length.toLocaleString()+'</b> word'+(filtered.length===1?'':'s')+(q||theme||letter?' found':'')+' · 個單字';
+    renderMore();
+  }
+  function renderMore(){
+    var end=Math.min(rendered+PAGE,filtered.length),html='';
+    for(var i=rendered;i<end;i++) html+=cardHTML(filtered[i]);
+    grid.insertAdjacentHTML('beforeend',html);
+    rendered=end;
+    moreWrap.style.display=rendered<filtered.length?'block':'none';
+  }
+
+  // events
+  var qInput=document.getElementById('wq'), tdebounce;
+  qInput.addEventListener('input',function(){clearTimeout(tdebounce);tdebounce=setTimeout(function(){q=qInput.value.trim().toLowerCase();applyFilter();},160);});
+  document.getElementById('wmorebtn').addEventListener('click',renderMore);
+
+  // inline video embed (no pop-out)
+  grid.addEventListener('click',function(e){
+    var t=e.target.closest('.w-thumb'); if(!t||t.querySelector('iframe'))return;
+    var v=t.getAttribute('data-v');
+    t.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+v+'?autoplay=1&rel=0" title="Word of the Day video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  });
+
+  // build theme chips + letters once data is in
+  function buildControls(){
+    var tw=document.getElementById('wthemes');
+    var all='<button class="w-chip on" data-t="">All themes 全部</button>';
+    Object.keys(THEMES).forEach(function(t){ all+='<button class="w-chip" data-t="'+t+'">'+THEMES[t]+'</button>'; });
+    tw.innerHTML=all;
+    tw.addEventListener('click',function(e){var b=e.target.closest('.w-chip');if(!b)return;
+      theme=b.getAttribute('data-t');
+      tw.querySelectorAll('.w-chip').forEach(function(x){x.classList.toggle('on',x===b);});applyFilter();});
+    var lw=document.getElementById('wletters');
+    var lh='<button class="on" data-l="">All</button>';
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(function(L){lh+='<button data-l="'+L+'">'+L+'</button>';});
+    lw.innerHTML=lh;
+    lw.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
+      letter=b.getAttribute('data-l');
+      lw.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b);});applyFilter();});
+  }
+
+  fetch('/assets/data/wotd.json').then(function(r){return r.json();}).then(function(d){
+    items=d.items||[];
+    document.getElementById('wcredit').innerHTML='Data: <b>'+items.length.toLocaleString()+'</b> words from the '
+      +'<a href="https://changhua-bilingual.org/word-of-the-day/" target="_blank" rel="noopener">Changhua Bilingual Hub</a> Word-of-the-Day playlist, filmed by Taiwan’s students. ｜資料來自彰化雙語資源網每日一字播放清單,由臺灣學生拍攝。';
+    buildControls();
+    applyFilter();
+  }).catch(function(){emptyEl.textContent='Could not load the word list. 無法載入單字資料。';emptyEl.style.display='block';});
+})();
+</script>
+</body>
+</html>
