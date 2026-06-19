@@ -1,0 +1,97 @@
+/* ============================================================
+   county.css · independent county detail pages + counties index
+   Shares main.css variables (jade hub). Region accent via --cc.
+   ============================================================ */
+
+/* ---- speaker button (say.js) ---- */
+.say{display:inline-flex;align-items:center;justify-content:center;gap:0;
+  width:34px;height:34px;border-radius:50%;border:1.5px solid var(--cc,var(--jade));
+  background:#fff;color:var(--cc,var(--jade));font-size:16px;cursor:pointer;
+  vertical-align:middle;transition:transform .12s,background .15s,color .15s;flex:0 0 auto;}
+.say:hover{background:var(--cc,var(--jade));color:#fff;}
+.say.saying{transform:scale(1.18);background:var(--cc,var(--jade));color:#fff;}
+.say.sm{width:28px;height:28px;font-size:14px;border-width:1.2px;}
+
+/* ---- band hero (detail) ---- */
+.cty-band{background:linear-gradient(135deg,var(--cc-deep,#1f4338) 0%,var(--cc,#2f5d4f) 75%,#3a7766 100%);
+  color:#fff;padding:50px 0 54px;position:relative;overflow:hidden;}
+.cty-band::before{content:"";position:absolute;top:-120px;right:-100px;width:420px;height:420px;
+  background:radial-gradient(circle,rgba(255,255,255,.12) 0%,transparent 70%);}
+.cty-region{font-size:13.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82);margin-bottom:12px;}
+.cty-name{display:flex;align-items:center;gap:14px;flex-wrap:wrap;position:relative;z-index:1;}
+.cty-name h1{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(38px,6vw,60px);font-weight:700;line-height:1;}
+.cty-name .zh{font-size:24px;font-weight:500;color:rgba(255,255,255,.9);}
+.cty-name .say{border-color:rgba(255,255,255,.6);color:#fff;background:rgba(255,255,255,.12);width:42px;height:42px;font-size:19px;}
+.cty-name .say:hover,.cty-name .say.saying{background:#fff;color:var(--cc-deep,#1f4338);}
+.cty-pos{margin-top:18px;font-size:20px;line-height:1.65;color:#eef6f2;max-width:60ch;position:relative;z-index:1;}
+.cty-pos-zh{margin-top:8px;font-size:17px;line-height:1.8;color:rgba(255,255,255,.8);max-width:54ch;position:relative;z-index:1;}
+
+/* ---- "say it in English" box ---- */
+.sayit{background:var(--cc-soft,var(--jade-soft));border:1px solid var(--cc,var(--jade));border-left-width:5px;
+  border-radius:14px;padding:24px 28px;max-width:820px;}
+.sayit h2{font-family:'Playfair Display','PingFang TC',serif;font-size:22px;color:var(--cc-deep,var(--jade-deep));margin-bottom:6px;}
+.sayit .lead{font-size:16px;color:var(--ink-soft);margin-bottom:16px;}
+.sayit ul{list-style:none;margin:0;padding:0;display:grid;gap:12px;}
+.sayit li{display:flex;align-items:center;gap:12px;background:#fff;border-radius:10px;padding:12px 16px;}
+.sayit li .en{font-size:18px;color:var(--ink);font-weight:600;flex:1;}
+.sayit li .zh{display:block;font-size:14.5px;color:var(--ink-soft);font-weight:400;margin-top:2px;}
+
+/* ---- features ---- */
+.cty-feats{display:grid;grid-template-columns:1fr;gap:18px;}
+@media(min-width:680px){.cty-feats{grid-template-columns:1fr 1fr;}}
+.cty-feat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,var(--jade));
+  transition:transform .2s,box-shadow .2s;}
+.cty-feat:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
+.cty-feat h3{font-size:20px;color:var(--ink);font-weight:700;display:flex;align-items:center;gap:10px;}
+.cty-feat h3 .say{margin-left:auto;}
+.cty-feat .zh{font-size:16px;color:var(--cc-deep,var(--jade-deep));font-weight:600;margin-top:2px;}
+.cty-feat p{margin-top:12px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;}
+
+/* ---- food + schools ---- */
+.cty-food{display:flex;align-items:center;gap:12px;background:var(--cc-soft,var(--jade-soft));border-radius:14px;padding:20px 24px;flex-wrap:wrap;}
+.cty-food .ic{font-size:30px;}
+.cty-food .t{font-size:18px;color:var(--ink);}
+.cty-food .t strong{color:var(--cc-deep,var(--jade-deep));}
+.cty-food .t .zh{color:var(--ink-soft);font-size:16px;}
+.cty-schools{background:var(--cc-deep,var(--jade-deep));color:#fff;border-radius:16px;padding:26px 30px;}
+.cty-schools h2{font-family:'Playfair Display','PingFang TC',serif;font-size:22px;margin-bottom:6px;}
+.cty-schools p{font-size:16px;color:rgba(255,255,255,.85);margin-bottom:16px;}
+.cty-schools .chips{display:flex;flex-wrap:wrap;gap:10px;}
+.cty-schools .chips a{display:inline-flex;align-items:center;gap:7px;font-size:15px;font-weight:600;color:#fff;
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:9px 16px;border-radius:999px;}
+.cty-schools .chips a:hover{background:rgba(255,255,255,.22);color:#fff;}
+
+/* ---- prev/next nav ---- */
+.cty-nav{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:24px;margin-top:8px;}
+.cty-nav a{font-size:16px;font-weight:600;color:var(--jade-deep);}
+.cty-nav a:hover{color:var(--jade);}
+.cty-nav .all{color:var(--ink-soft);}
+
+/* ============ COUNTIES INDEX (card grid) ============ */
+.cgrid{display:grid;grid-template-columns:1fr;gap:18px;}
+@media(min-width:560px){.cgrid{grid-template-columns:1fr 1fr;}}
+@media(min-width:900px){.cgrid{grid-template-columns:1fr 1fr 1fr;}}
+.ccard{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:16px;
+  padding:22px 24px 20px;box-shadow:var(--shadow-sm);color:var(--ink);position:relative;overflow:hidden;
+  border-left:6px solid var(--cc,var(--jade));transition:transform .2s,box-shadow .2s,border-color .2s;}
+.ccard:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+.ccard .nm{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;}
+.ccard .nm h3{font-family:'Playfair Display','PingFang TC',serif;font-size:23px;color:var(--ink);line-height:1.1;}
+.ccard .nm .zh{font-size:16px;color:var(--cc-deep,var(--jade-deep));font-weight:600;}
+.ccard .say{margin-left:auto;}
+.ccard p{margin-top:10px;font-size:15.5px;color:var(--ink-soft);line-height:1.55;flex:1;}
+.ccard .go{margin-top:14px;font-size:14.5px;font-weight:700;color:var(--cc,var(--jade));}
+.ccard .go .arr{display:inline-block;transition:transform .18s;}
+.ccard:hover .go .arr{transform:translateX(4px);}
+
+.cgroup-head{display:flex;align-items:baseline;gap:12px;margin:36px 0 18px;padding-bottom:10px;border-bottom:2px solid var(--line);}
+.cgroup-head:first-of-type{margin-top:0;}
+.cgroup-en{font-family:'Playfair Display','PingFang TC',serif;font-size:25px;font-weight:700;color:var(--jade-deep);}
+.cgroup-zh{font-size:16px;color:var(--ink-soft);font-weight:600;}
+
+/* region accents */
+.cc-north{--cc:#3f6fa3;--cc-deep:#274b73;--cc-soft:#eaeff5;}
+.cc-central{--cc:#1e7f5c;--cc-deep:#155a41;--cc-soft:#e6f3ec;}
+.cc-south{--cc:#bd863f;--cc-deep:#7d5827;--cc-soft:#f7f0e2;}
+.cc-east{--cc:#0a8aab;--cc-deep:#084e63;--cc-soft:#e3f1f5;}
+.cc-island{--cc:#8a4d9a;--cc-deep:#592a66;--cc-soft:#f3e9f6;}
