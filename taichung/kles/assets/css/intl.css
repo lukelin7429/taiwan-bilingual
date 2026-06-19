@@ -1,0 +1,113 @@
+/* ============ KangLang Elementary · International Education ============ */
+/* Loads on top of main.css + news.css. Adds the photo slideshow (carousel),
+   the video embed, and a few International-Education hub touches. Reuses the
+   teal / sand / rose tokens already defined in main.css + news.css. */
+
+/* ---- hub hero globe accent (sits on the shared .news-hero band) ---- */
+.news-hero .globe{
+  font-size:54px;line-height:1;display:inline-block;margin-bottom:8px;
+  filter:drop-shadow(0 4px 14px rgba(0,0,0,.35));
+  animation:intl-spin 16s linear infinite;
+}
+@keyframes intl-spin{to{transform:rotate(360deg);}}
+@media (prefers-reduced-motion: reduce){ .news-hero .globe{animation:none;} }
+
+/* a small country flag-rail under the hub intro */
+.flag-rail{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 14px;margin:26px 0 4px;}
+.flag-rail .flag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;border:1px solid var(--line);border-radius:99px;
+  padding:7px 16px 7px 12px;font-size:16px;font-weight:700;color:var(--teal-deep);
+  box-shadow:var(--news-shadow-sm);
+}
+.flag-rail .flag .emoji{font-size:21px;line-height:1;}
+.flag-rail .flag .n{color:var(--sand-deep);font-size:14px;}
+
+/* video-only news card image slot */
+.news-card__img--video{
+  background:
+    radial-gradient(circle at 28% 26%, rgba(255,255,255,.22), transparent 46%),
+    linear-gradient(135deg,#0f3d45 0%,#1E5963 58%,#2c7a78 100%);
+  display:flex;align-items:center;justify-content:center;color:#fff;
+}
+.news-card__img--video .play{
+  width:74px;height:74px;border-radius:50%;
+  background:rgba(255,255,255,.16);border:2px solid rgba(255,255,255,.65);
+  display:flex;align-items:center;justify-content:center;font-size:30px;
+  backdrop-filter:blur(2px);
+}
+
+/* ============ SLIDESHOW (carousel) ============ */
+.slideshow{
+  max-width:1000px;margin:34px auto 0;
+  background:#fff;border:1px solid var(--line);border-radius:18px;
+  padding:14px;box-shadow:var(--news-shadow);
+}
+@media (min-width:720px){ .slideshow{ padding:18px; } }
+.slideshow__kicker{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  margin-bottom:12px;padding:0 4px;
+}
+.slideshow__kicker .lbl{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--sand-deep);
+}
+.slideshow__count{
+  font-family:'Cormorant Garamond',serif;font-weight:700;
+  color:var(--ink-soft);font-size:17px;letter-spacing:.5px;
+}
+.slideshow__count b{color:var(--teal-deep);}
+.slideshow__viewport{
+  position:relative;border-radius:10px;overflow:hidden;
+  background:#0a1f23;aspect-ratio:3/2;touch-action:pan-y;
+}
+.slideshow__track{display:flex;height:100%;transition:transform .5s cubic-bezier(.4,0,.2,1);}
+.slideshow__slide{min-width:100%;height:100%;position:relative;}
+.slideshow__slide img{width:100%;height:100%;object-fit:cover;display:block;}
+.slideshow.is-dragging .slideshow__track{transition:none;}
+
+/* arrows */
+.slideshow__arrow{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:50px;height:50px;border-radius:50%;border:none;cursor:pointer;
+  background:rgba(255,255,255,.9);color:var(--teal-deep);
+  font-size:24px;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 18px -6px rgba(0,0,0,.5);
+  transition:transform .15s, background .15s;z-index:2;
+}
+.slideshow__arrow:hover{background:#fff;transform:translateY(-50%) scale(1.08);}
+.slideshow__arrow:active{transform:translateY(-50%) scale(.94);}
+.slideshow__arrow--prev{left:14px;}
+.slideshow__arrow--next{right:14px;}
+@media (max-width:560px){ .slideshow__arrow{width:42px;height:42px;font-size:20px;} .slideshow__arrow--prev{left:8px;} .slideshow__arrow--next{right:8px;} }
+
+/* dots */
+.slideshow__dots{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin:14px 0 4px;}
+.slideshow__dot{
+  width:11px;height:11px;border-radius:50%;border:none;cursor:pointer;padding:0;
+  background:var(--line);transition:transform .15s, background .15s;
+}
+.slideshow__dot:hover{background:var(--sand);}
+.slideshow__dot.is-active{background:var(--teal);transform:scale(1.25);}
+
+/* caption */
+.slideshow__cap{
+  margin-top:12px;text-align:center;font-style:italic;
+  font-size:16px;color:var(--ink-soft);line-height:1.55;padding:0 8px;
+}
+@media (min-width:720px){ .slideshow__cap{ font-size:17px; } }
+.slideshow__cap b{color:var(--teal-deep);font-style:normal;}
+
+/* ============ VIDEO embed (for video-only reports) ============ */
+.intl-video{max-width:900px;margin:34px auto 0;}
+.intl-video__frame{
+  position:relative;width:100%;aspect-ratio:16/9;
+  border-radius:16px;overflow:hidden;background:#000;box-shadow:var(--news-shadow);
+}
+.intl-video__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.intl-video__cap{
+  margin-top:14px;text-align:center;font-style:italic;
+  font-size:16px;color:var(--ink-soft);line-height:1.55;
+}
+.intl-video__cap b{color:var(--teal-deep);font-style:normal;}
