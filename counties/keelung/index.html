@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Keelung 基隆市 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Keelung (基隆市) — landmarks, food and culture, and how to say it in English. 山海環抱的雨港城市,繁忙的港口與聞名的夜市在此相遇。">
+<meta name="description" content="Keelung (基隆市) — Taiwan's rainy northern port, where Spanish forts, a Ghost Festival of floating water lanterns, the Miaokou night market and a colorful fishing harbor meet the sea. Its history, landmarks, culture, food, and how to say it in English. 雨港基隆的深度文化介紹。">
 <meta property="og:title" content="Keelung 基隆市 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Keelung = north / blue) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#2f3742;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#274b73);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#3f6fa3);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#3f6fa3);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#274b73);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#eaeff5);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#274b73);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#2f3742;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#274b73);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#3f6fa3);background:var(--cc-soft,#eaeff5);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#3f6fa3);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#274b73);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,6 +77,7 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-north">
   <div class="wrap">
     <div class="cty-region">Northern Taiwan · 北部</div>
@@ -35,64 +86,190 @@
       <span class="zh">基隆市</span>
       <button class="say" data-say="Keelung" aria-label="Hear Keelung in English">🔊</button>
     </div>
-    <p class="cty-pos">A rain-loving port city wrapped by mountains and sea, where Taiwan&#x27;s busiest harbour meets a world-famous night market.</p>
-    <p class="cty-pos-zh">山海環抱的雨港城市,繁忙的港口與聞名的夜市在此相遇。</p>
+    <p class="cty-pos">Taiwan's rainy northern port — a harbor city of Spanish forts, floating water lanterns and a night market built around an old temple.</p>
+    <p class="cty-pos-zh">台灣多雨的北部港都——一座有西班牙城堡、放水燈與圍著老廟而生的夜市的海港城市。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-north">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>The Rainy Port at Taiwan's tip</h2></div>
+    <div class="narr">
+      <p>Keelung sits at the rainy northeastern tip of Taiwan, wrapped around a deep natural harbor that opens to the Pacific. Long before the city existed, the area was home to the <strong>Ketagalan (凱達格蘭)</strong>, an Austronesian Indigenous people of the north coast. The old name <strong>"Kelang" (雞籠, "chicken coop")</strong> is explained two ways — as the basin shape of the hill-ringed harbor, or as a Chinese rendering of the Ketagalan name. In <strong>1875</strong> the Qing replaced it with the auspicious <strong>基隆 (Keelung)</strong>, meaning roughly "prosperous base."</p>
+      <p class="zh">基隆位於台灣多雨的東北角,環抱著一座深水天然港、面向太平洋。在城市形成之前,這裡是北海岸南島語系原住民<strong>凱達格蘭族</strong>的居地。舊名<strong>「雞籠」</strong>有兩種解釋:一說形如群山環抱的雞籠盆地,一說是凱達格蘭族族名的漢字音譯。<strong>1875 年</strong>清廷改以吉祥的<strong>「基隆」</strong>為名,取「基地昌隆」之意。</p>
+      <p>The harbor drew European powers early. In <strong>1626 the Spanish</strong> sailed up from Manila and built <strong>Fort San Salvador</strong> on a small island at the harbor mouth — today's <strong>Heping Island (和平島)</strong>. They held northern Taiwan for sixteen years until <strong>1642</strong>, when the Dutch forced their surrender; recent archaeology on Heping Island has even uncovered the foundations of the Spanish-era Convent of All Saints.</p>
+      <p class="zh">基隆港很早就吸引歐洲列強。<strong>1626 年,西班牙人</strong>自馬尼拉北上,在港口外的小島上興建<strong>聖薩爾瓦多城</strong>——也就是今日的<strong>和平島</strong>。西班牙統治台灣北部十六年,直到<strong>1642 年</strong>被荷蘭人攻陷投降;近年和平島的考古更挖出西班牙時期諸聖教堂的地基。</p>
+      <p>Keelung also became a battlefield. During the <strong>Sino-French War (1884–85)</strong>, French forces captured the town, but commissioner <strong>Liu Mingchuan (劉銘傳)</strong> held the hills above the harbor and pinned them in their bridgehead until they withdrew. After 1895 the Japanese turned Keelung into Taiwan's <strong>premier northern port and railway terminus</strong>, the gateway from Japan. Through it all runs one constant: Keelung is Taiwan's rainiest city — the <strong>"Rainy Port" (雨港)</strong>, with over 2,200 mm of rain and nearly 200 rainy days a year. Today it is a busy container and cruise port, the closest harbor to Taipei.</p>
+      <p class="zh">基隆也曾是戰場。<strong>中法戰爭(1884–85)</strong>期間,法軍一度攻佔市區,但欽差<strong>劉銘傳</strong>據守港灣後方山頭,將法軍封鎖於灘頭直到撤離。1895 年後,日本將基隆打造為台灣<strong>首要的北部大港與鐵路起點</strong>,是自日本進入台灣的門戶。貫穿這一切的是一個不變的特質:基隆是全台最多雨的城市——<strong>「雨港」</strong>,年降雨逾 2,200 公釐、近 200 個雨天。如今它是繁忙的貨櫃與郵輪港,也是離台北最近的海港。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Keelung</h2></div>
+    <div class="lmk cc-north">
+      <div class="lmk-item">
+        <h3>Miaokou Night Market<span class="zh">基隆廟口夜市</span><button class="say sm" data-say="Keelung Miaokou Night Market" aria-label="Hear">🔊</button></h3>
+        <p>Keelung's most famous attraction, this night market grew up in the 1940s around <strong>Dianji Temple (奠濟宮)</strong> — "miaokou" means "temple mouth." Hundreds of numbered stalls pack the lanes, many running all day, making it one of northern Taiwan's most beloved food destinations.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Heping Island Geopark<span class="zh">和平島地質公園</span><button class="say sm" data-say="Heping Island Geopark" aria-label="Hear">🔊</button></h3>
+        <p>A coastal park at the harbor mouth, famous for wind- and sea-eroded sandstone formations, tidal seawater pools and views of Keelung Islet. This is the historic site of the <strong>Spanish Fort San Salvador (1626)</strong>.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Zhengbin Harbor Colorful Houses<span class="zh">正濱漁港彩色屋</span><button class="say sm" data-say="Zhengbin Fishing Harbor" aria-label="Hear">🔊</button></h3>
+        <p>A row of waterfront houses painted in vivid <strong>rainbow colors</strong>, reflected in the calm harbor — now one of Keelung's most photographed spots. The port was a major fishing harbor in the Japanese era.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Chaojing Park &amp; Wangyou Valley<span class="zh">潮境公園與忘幽谷</span><button class="say sm" data-say="Chaojing Park and Wangyou Valley" aria-label="Hear">🔊</button></h3>
+        <p>A coastal park built on a former landfill, now a green headland with sculptures, sea views and walking trails. The nearby <strong>Wangyou Valley</strong> ("Valley of Forgotten Sorrows") is a quiet grassy coastal hollow popular with hikers.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Ershawan Fort<span class="zh">二沙灣砲臺(海門天險)</span><button class="say sm" data-say="Ershawan Fort, the Tenable Gate of the Sea" aria-label="Hear">🔊</button></h3>
+        <p>A national historic monument above the harbor, rebuilt by Liu Mingchuan after the Sino-French War. Its surviving stone gate is inscribed <strong>"Haimen Tianxian" (海門天險, "Tenable Gate of the Sea")</strong>, and its ramparts and gun platforms remain.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Baimiweng Fort<span class="zh">白米甕砲臺</span><button class="say sm" data-say="Baimiweng Fort" aria-label="Hear">🔊</button></h3>
+        <p>A hilltop fort guarding the western side of the harbor, with a row of open gun emplacements and sweeping <strong>sunset</strong> views over the sea. It forms part of Keelung's ring of historic coastal defenses.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Zhongzheng Park &amp; Guanyin Statue<span class="zh">中正公園與觀音大佛</span><button class="say sm" data-say="Zhongzheng Park and the Guanyin statue" aria-label="Hear">🔊</button></h3>
+        <p>A hillside park overlooking the harbor, crowned by a large white <strong>Guanyin (Goddess of Mercy) statue</strong>. The park also holds the <strong>Zhupu Altar (主普壇)</strong>, the ceremonial heart of the Keelung Ghost Festival.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Xiandong &amp; Buddha's Hand Caves<span class="zh">仙洞巖與佛手洞</span><button class="say sm" data-say="Xiandong Cave and Buddha's Hand Cave" aria-label="Hear">🔊</button></h3>
+        <p>A temple built into a coastal sea cave, with narrow incense-filled passages and Japanese-era stone carvings. A short walk away, <strong>Buddha's Hand Cave</strong> has a hand-shaped rock formation in its ceiling, carved by natural erosion.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Maritime Plaza &amp; "KEELUNG" Sign<span class="zh">海洋廣場與山丘字標</span><button class="say sm" data-say="Maritime Plaza and the KEELUNG hillside sign" aria-label="Hear">🔊</button></h3>
+        <p>A wooden boardwalk plaza right on the harbor in the city center, with open views of cruise ships, fishing boats and the giant hillside <strong>"KEELUNG"</strong> letters — the city's signature skyline shot.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Keelung Lighthouse<span class="zh">基隆燈塔</span><button class="say sm" data-say="Keelung Lighthouse" aria-label="Hear">🔊</button></h3>
+        <p>A white lighthouse on the hills near Baimiweng Fort, dating to the Japanese era, overlooking the harbor entrance and shipping lanes — a quiet spot with classic port-and-sea views.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與信仰</div><h2>How a feud became a festival</h2>
+      <p>Keelung's greatest cultural treasure was born from its hardest history — a city that turned bloodshed into reconciliation.</p></div>
+    <div class="ppl cc-north">
+      <div class="ppl-card">
+        <h3>🏮 The Keelung Ghost Festival · 雞籠中元祭</h3>
+        <p>Held every year through the seventh lunar month, this is the <strong>first folk event Taiwan designated as national heritage</strong>. In the 1850s rival Zhangzhou and Quanzhou settlers fought bloody feuds over land and water. To stop the killing, leaders agreed that from <strong>1855 the surname clans would take turns each year (字姓輪值)</strong> hosting the rites to comfort the dead — enshrined at the Laodagong Temple — instead of fighting.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>🌊 Releasing the water lanterns · 放水燈</h3>
+        <p>The festival's most spectacular moment is the <strong>water lantern parade and release</strong>: ornate "lantern houses" are paraded through the city, then floated out to sea to guide ashore the spirits of those who died at sea. The ceremony has continued without interruption for over <strong>160 years</strong> — a living expression of Keelung's harbor identity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PEOPLE / HERITAGE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">People &amp; Defenders · 人物與守城者</div><h2>Faces of the harbor</h2></div>
+    <div class="ppl cc-north">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Liu Mingchuan 劉銘傳</h3>
+        <div class="yr">defended Keelung 1884–85</div>
+        <p>The Qing commissioner who held the hills above the harbor during the <strong>Sino-French War</strong>, pinning the French in their bridgehead until they withdrew. He later became Taiwan's first provincial governor and a great modernizer. (He was born in Anhui, China — Keelung remembers him for defending the city, not as a native son.)</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Show Lo 羅志祥</h3>
+        <div class="yr">b. 1979 · entertainer</div>
+        <p>One of several well-known entertainers born in Keelung, the Mandopop singer, dancer and host grew up in this small port city. For a place its size, Keelung has sent a notable number of performers onto Taiwan's stages and screens.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Seasons · 節慶與時令</div><h2>When Keelung comes alive</h2></div>
+    <div class="lmk cc-north">
+      <div class="lmk-item">
+        <h3>Keelung Ghost Festival<span class="zh">雞籠中元祭</span></h3>
+        <p>The big one, running through the seventh lunar month (roughly August): the opening of the gates at Laodagong Temple, the lighting of lanterns, the water lantern parade and release at the coast, and Zhongyuan rites at the Zhupu Altar. Taiwan's first nationally designated folk festival.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Mid-Summer Water Lanterns<span class="zh">放水燈遊行</span></h3>
+        <p>The festival's spectacular eve, when each surname clan's glowing "lantern house" is paraded through the streets and then set adrift on the sea to guide home the spirits of those lost in the water.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Harbor &amp; Ocean Events<span class="zh">海洋港都活動</span></h3>
+        <p>As Taiwan's signature port city, Keelung hosts harbor- and ocean-themed activities and cruise-tourism events along its working waterfront, especially through the summer season.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Cruise Season<span class="zh">郵輪季</span></h3>
+        <p>As the closest harbor to Taipei, Keelung welcomes international cruise ships right into the heart of the city, their towering hulls rising over the downtown Maritime Plaza.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>A seafood city, temple-side</h2>
+      <p>Keelung is a seafood-and-night-market city, anchored by the all-day feast of the Miaokou night market.</p></div>
+    <div class="food cc-north">
+      <div class="food-item"><span class="em">🥪</span><div><h4>Nutritious sandwich <span class="zh">營養三明治</span></h4><p>A Keelung original: a deep-fried soft bun filled with ham, braised egg, cucumber, tomato and mayonnaise.</p><span class="town">Miaokou 廟口</span></div></div>
+      <div class="food-item"><span class="em">🍧</span><div><h4>Pao pao ice <span class="zh">泡泡冰</span></h4><p>A local-style shaved ice where the flavoring — peanut, taro and more — is whipped right into the ice rather than poured on top.</p><span class="town">Miaokou 廟口</span></div></div>
+      <div class="food-item"><span class="em">🍲</span><div><h4>Ding bian cuo <span class="zh">鼎邊銼</span></h4><p>A Keelung specialty: rice-batter "crusts" cooked along the edge of a hot wok, then served in a rich seafood-and-pork broth with shrimp and squid.</p><span class="town">Miaokou 廟口</span></div></div>
+      <div class="food-item"><span class="em">🦐</span><div><h4>Tianbula <span class="zh">甜不辣</span></h4><p>Fried fish-paste cakes served in a sweet-savory sauce — a beloved night-market staple of the rainy port.</p><span class="town">Miaokou 廟口</span></div></div>
+      <div class="food-item"><span class="em">🦀</span><div><h4>Thick seafood soups <span class="zh">海鮮羹</span></h4><p>Hearty thickened soups featuring crab, fish and other fresh catches, reflecting the port's seafood abundance.</p><span class="town">Citywide 全市</span></div></div>
+      <div class="food-item"><span class="em">🐟</span><div><h4>Fresh seafood <span class="zh">現流海鮮</span></h4><p>As a fishing port, Keelung serves very fresh fish, squid, crab and shellfish at its markets and seafood restaurants.</p><span class="town">Harbor 港邊</span></div></div>
+      <div class="food-item"><span class="em">🌭</span><div><h4>One-bite sausage <span class="zh">一口香腸</span></h4><p>Bite-sized grilled sausages, a popular and moreish Miaokou snack to nibble as you wander the lanes.</p><span class="town">Miaokou 廟口</span></div></div>
+      <div class="food-item"><span class="em">🍠</span><div><h4>Taro balls &amp; sweet ices <span class="zh">芋圓與冰品</span></h4><p>Chewy taro and sweet-potato balls and other Taiwanese desserts round out a night at the market.</p><span class="town">Miaokou 廟口</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Keelung is known for · 基隆的招牌</div><h2>Rain, harbor and lanterns</h2></div>
+    <div class="kf cc-north">
+      <div class="kf-item"><span class="em">🌧️</span><h4>The Rainy Port <span class="zh">雨港</span></h4><p>Taiwan's rainiest city, with nearly 200 misty, sea-washed rainy days a year.</p></div>
+      <div class="kf-item"><span class="em">🚢</span><h4>The northern harbor <span class="zh">北部大港</span></h4><p>A busy container and cruise port — the closest major harbor to Taipei.</p></div>
+      <div class="kf-item"><span class="em">🍜</span><h4>Miaokou night market <span class="zh">廟口夜市</span></h4><p>The temple-side food paradise that defines Keelung snacking.</p></div>
+      <div class="kf-item"><span class="em">🏮</span><h4>The Ghost Festival <span class="zh">中元祭</span></h4><p>Floating water lanterns and Taiwan's first nationally designated folk festival.</p></div>
+      <div class="kf-item"><span class="em">🦑</span><h4>Fresh seafood <span class="zh">海鮮</span></h4><p>Straight-off-the-boat fish, crab and squid from a true fishing port.</p></div>
+      <div class="kf-item"><span class="em">🏰</span><h4>Coastal forts <span class="zh">海防砲臺</span></h4><p>Sino-French War defenses like the "Tenable Gate of the Sea."</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-north" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Keelung to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹基隆,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Keelung." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Keelung.<span class="zh">我來自基隆市。</span></span></li>
-        <li><button class="say sm" data-say="Keelung is in Northern Taiwan." aria-label="Hear sentence">🔊</button><span class="en">Keelung is in Northern Taiwan.<span class="zh">基隆市在臺灣北部。</span></span></li>
-        <li><button class="say sm" data-say="Keelung is famous for Keelung Harbour." aria-label="Hear sentence">🔊</button><span class="en">Keelung is famous for Keelung Harbour.<span class="zh">基隆市以基隆港聞名。</span></span></li>
+        <li><button class="say sm" data-say="Keelung is a port city on the rainy northern coast of Taiwan, just a short ride from Taipei. Locals call it the Rainy Port." aria-label="Hear">🔊</button><span class="en">Keelung is a port city on the rainy northern coast of Taiwan, just a short ride from Taipei — locals call it the "Rainy Port."<span class="zh">基隆是位於台灣多雨北海岸的港都,離台北只要一小段車程——當地人稱它為「雨港」。</span></span></li>
+        <li><button class="say sm" data-say="Its most famous spot is the Miaokou Night Market, which grew up around an old temple and is packed with seafood and street snacks." aria-label="Hear">🔊</button><span class="en">Its most famous spot is the Miaokou Night Market, which grew up around an old temple and is packed with seafood and street snacks.<span class="zh">它最著名的地方是廟口夜市,圍繞一座老廟發展而成,滿是海鮮與街頭小吃。</span></span></li>
+        <li><button class="say sm" data-say="Every seventh lunar month, Keelung holds its Ghost Festival, when glowing water lanterns are floated out to sea to guide the spirits home." aria-label="Hear">🔊</button><span class="en">Every seventh lunar month, Keelung holds its Ghost Festival, when glowing water lanterns are floated out to sea to guide the spirits home.<span class="zh">每年農曆七月,基隆會舉辦中元祭,人們將發光的水燈放流入海,引導魂魄回家。</span></span></li>
+        <li><button class="say sm" data-say="Down at Zhengbin Harbor, a row of houses painted in bright rainbow colors is reflected in the water, one of the city's most photographed sights." aria-label="Hear">🔊</button><span class="en">Down at Zhengbin Harbor, a row of houses painted in bright rainbow colors is reflected in the water — one of the city's most photographed sights.<span class="zh">在正濱漁港,一排漆成繽紛彩虹色的房屋倒映在水面上,是這座城市最上鏡的景點之一。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Keelung Harbour<button class="say sm" data-say="Keelung Harbour" aria-label="Hear Keelung Harbour">🔊</button></h3>
-          <div class="zh">基隆港</div>
-          <p>One of Taiwan&#x27;s most important international ports, right in the heart of the city.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Miaokou Night Market<button class="say sm" data-say="Miaokou Night Market" aria-label="Hear Miaokou Night Market">🔊</button></h3>
-          <div class="zh">廟口夜市</div>
-          <p>A legendary night market of 200+ stalls famous for fresh seafood snacks.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Heping Island Geopark<button class="say sm" data-say="Heping Island Geopark" aria-label="Hear Heping Island Geopark">🔊</button></h3>
-          <div class="zh">和平島地質公園</div>
-          <p>A seaside park of wind- and wave-carved rock formations.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Zhongzheng Park<button class="say sm" data-say="Zhongzheng Park" aria-label="Hear Zhongzheng Park">🔊</button></h3>
-          <div class="zh">中正公園</div>
-          <p>A hillside park with sweeping views over the harbour.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-north">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Crab thick soup <button class="say sm" data-say="Crab thick soup" aria-label="Hear food name">🔊</button> <span class="zh">· 蟹羹</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:基隆市政府、交通部觀光署、文化部、和平島考古計畫、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <span></span>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +285,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>

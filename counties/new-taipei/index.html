@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>New Taipei 新北市 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="New Taipei (新北市) — landmarks, food and culture, and how to say it in English. 環抱台北的大城,山城老街、天燈、海岸奇岩與河畔小鎮。">
+<meta name="description" content="New Taipei City (新北市) — Taiwan's most populous city, a giant ring around Taipei holding gold-mining hill towns like Jiufen, the Pingxi sky lanterns, Yehliu's rock formations and Tamsui's sunsets. Its history, landmarks, culture, food, and how to say it in English. 環抱台北的新北市深度文化介紹。">
 <meta property="og:title" content="New Taipei 新北市 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (New Taipei = north / blue) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#2f3742;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#274b73);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#3f6fa3);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#3f6fa3);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#274b73);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#eaeff5);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#274b73);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#2f3742;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#274b73);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#3f6fa3);background:var(--cc-soft,#eaeff5);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#3f6fa3);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#274b73);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,72 +77,199 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-north">
   <div class="wrap">
     <div class="cty-region">Northern Taiwan · 北部</div>
     <div class="cty-name">
       <h1>New Taipei</h1>
       <span class="zh">新北市</span>
-      <button class="say" data-say="New Taipei" aria-label="Hear New Taipei in English">🔊</button>
+      <button class="say" data-say="New Taipei City" aria-label="Hear New Taipei in English">🔊</button>
     </div>
-    <p class="cty-pos">The great city ring around Taipei — mountain old streets, sky lanterns, sea cliffs and riverside towns.</p>
-    <p class="cty-pos-zh">環抱台北的大城,山城老街、天燈、海岸奇岩與河畔小鎮。</p>
+    <p class="cty-pos">Taiwan's most populous city — a giant ring around the capital, holding gold-mining hill towns, sky lanterns, sea-carved rocks and golden river sunsets.</p>
+    <p class="cty-pos-zh">台灣人口最多的城市——環抱首都的巨大環形,容納了金礦山城、天燈、海蝕奇岩與金色的河口夕陽。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-north">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>A ring city of many worlds</h2></div>
+    <div class="narr">
+      <p>New Taipei City is Taiwan's <strong>most populous city</strong>, home to roughly four million people, and it forms a giant ring that completely wraps around the capital, Taipei. No other place in Taiwan holds so many different worlds at once: a long Pacific coastline of strange rock formations, misty mountain villages, hot-spring valleys, old gold-and-coal mining towns, river ports, pottery kilns, and the dense modern suburbs where most people actually live.</p>
+      <p class="zh">新北市是台灣<strong>人口最多的城市</strong>,約有四百萬人,環繞著首都台北,形成一個巨大的「環」。台灣再沒有別處能同時容納這麼多不同的世界:綿長的太平洋海岸與奇岩怪石、霧氣繚繞的山城、溫泉峽谷、昔日的金礦與煤礦小鎮、河港、陶瓷窯場,以及大多數人實際居住的現代化稠密市鎮。</p>
+      <p>Its history runs deep at <strong>Tamsui (淡水)</strong>, one of northern Taiwan's most important historic ports. The Dutch built the stone fortress locals call <strong>紅毛城 (the "Fort of the Red-Haired")</strong> in 1644; in 1867 the British leased it as a consulate, opening the treaty-port era. In 1872 the Canadian missionary <strong>George Leslie Mackay (馬偕)</strong> arrived and spent his life in Tamsui, founding churches, a school and a hospital — and even pulling teeth for ordinary people.</p>
+      <p class="zh">它的歷史在<strong>淡水</strong>扎根極深——淡水是北台灣最重要的歷史港口之一。荷蘭人在 1644 年立起當地人稱為<strong>「紅毛城」</strong>的石造城堡;1867 年英國租為領事館,開啟條約港時代。1872 年加拿大宣教士<strong>馬偕(George Leslie Mackay)</strong>抵達,終老於淡水,創辦教會、學校與醫院,甚至為平民拔牙。</p>
+      <p>In the northeast, a different story unfolded under Japanese rule: gold found in the 1890s made hill towns like <strong>Jiufen (九份)</strong> and Jinguashi boom, while the coal of the <strong>Pingxi (平溪)</strong> valley left the sky-lantern legacy alive today. When the mines closed the towns fell quiet — until the 1990s, when their faded lanterns and stone stairways made Jiufen one of Taiwan's most beloved destinations. For most of the modern era all of this was simply "Taipei County"; on <strong>25 December 2010</strong> the county was upgraded, and since its population had passed Taipei City's, a public contest chose the name "New Taipei."</p>
+      <p class="zh">在東北角,日治時期上演著另一段故事:1890 年代發現黃金,使<strong>九份</strong>、金瓜石等山城興盛,而<strong>平溪</strong>谷地的煤礦則留下至今鮮活的天燈傳統。礦坑歇業後小鎮一度沉寂——直到 1990 年代,褪色的燈籠與石階讓九份成為台灣最受喜愛的景點之一。近代史大半時間,這一切都只是「台北縣」;<strong>2010 年 12 月 25 日</strong>升格,因人口已超越台北市、無法沿用其名,遂透過公開票選定名「新北」。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in New Taipei</h2></div>
+    <div class="lmk cc-north">
+      <div class="lmk-item">
+        <h3>Jiufen Old Street<span class="zh">九份老街</span><button class="say sm" data-say="Jiufen Old Street" aria-label="Hear">🔊</button></h3>
+        <p>A former <strong>gold-mining town</strong> climbing a steep hillside above the northeast coast, famous for narrow stone alleys, red-lantern-lit teahouses and sweeping ocean views. Gold was found here in the 1890s; the town boomed, fell quiet, then was reborn as a nostalgic favorite.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Shifen &amp; the Pingxi Sky Lanterns<span class="zh">十分・平溪天燈</span><button class="say sm" data-say="Shifen and the Pingxi sky lanterns" aria-label="Hear">🔊</button></h3>
+        <p>In the old coal-mining Pingxi valley, visitors write wishes on paper <strong>sky lanterns</strong> and release them glowing into the sky. Nearby, Shifen Waterfall is a roughly 40-metre-wide curtain of water often called Taiwan's most beautiful.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Yehliu Geopark<span class="zh">野柳地質公園</span><button class="say sm" data-say="Yehliu Geopark" aria-label="Hear">🔊</button></h3>
+        <p>A slender cape in Wanli where 4,000 years of erosion have sculpted bizarre mushroom and candle rocks. Its star is the <strong>Queen's Head (女王頭)</strong>, an 8-metre formation with a regal profile — though its slender neck erodes 1–2 cm a year and may one day collapse.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Tamsui &amp; Fort San Domingo<span class="zh">淡水與紅毛城</span><button class="say sm" data-say="Tamsui and Fort San Domingo" aria-label="Hear">🔊</button></h3>
+        <p>Tamsui's riverside is famous for golden <strong>sunsets</strong> over the water. Crowning the hill is Fort San Domingo, the "Red Fort" (紅毛城) — a Dutch-built fortress of 1644 later leased by the British as a consulate, its red walls and elegant residence still standing.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Fisherman's Wharf &amp; Lover's Bridge<span class="zh">淡水漁人碼頭・情人橋</span><button class="say sm" data-say="Fisherman's Wharf and Lover's Bridge" aria-label="Hear">🔊</button></h3>
+        <p>At the mouth of the Tamsui River, this harbor promenade is a favorite sunset spot. Its landmark is the white, sail-shaped <strong>Lover's Bridge</strong>, a curving pedestrian bridge that lights up beautifully at dusk.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Sanxia Old Street &amp; Zushi Temple<span class="zh">三峽老街・清水祖師廟</span><button class="say sm" data-say="Sanxia Old Street and Qingshui Zushi Temple" aria-label="Hear">🔊</button></h3>
+        <p>A 260-metre row of red-brick Japanese-era shophouses — northern Taiwan's best-preserved old street. At one end stands the <strong>Qingshui Zushi Temple</strong>, rebuilt after WWII under artist Li Mei-shu with carving so fine it's nicknamed the "Hall of Eastern Art."</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Yingge Ceramics Old Street<span class="zh">鶯歌陶瓷老街</span><button class="say sm" data-say="Yingge Ceramics Old Street" aria-label="Hear">🔊</button></h3>
+        <p>Taiwan's <strong>pottery capital</strong>, with over 200 years of ceramics history thanks to fine local clay and the old river trade route. The old street is lined with kilns turned into studios and shops, alongside the Yingge Ceramics Museum.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Wulai Hot Springs &amp; Atayal Culture<span class="zh">烏來溫泉與泰雅族</span><button class="say sm" data-say="Wulai Hot Springs and Atayal culture" aria-label="Hear">🔊</button></h3>
+        <p>A mountain township at New Taipei's southern edge and homeland of the <strong>Atayal (泰雅) people</strong>. Its name comes from the Atayal word for hot springs, and its clear, odorless thermal water is renowned; the roughly 80-metre Wulai Waterfall and cable car are highlights.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Jinguashi Gold Museum<span class="zh">金瓜石黃金博物館</span><button class="say sm" data-say="The Jinguashi Gold Museum" aria-label="Hear">🔊</button></h3>
+        <p>Set among preserved Japanese colonial houses and a Shinto shrine, this museum tells the story of Jinguashi, once one of <strong>Asia's most productive gold mines</strong>. A highlight is a giant 220-kilogram gold bar visitors can touch, plus a real mining tunnel to walk through.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Bitou Cape &amp; Longdong<span class="zh">鼻頭角・龍洞</span><button class="say sm" data-say="Bitou Cape and Longdong" aria-label="Hear">🔊</button></h3>
+        <p>On the rugged northeast coast, Bitou Cape offers dramatic <strong>sea-cliff hiking trails</strong> with wide ocean views, while neighboring Longdong ("Dragon Cave") has Taiwan's largest sea-cliff rock-climbing area and clear waters for snorkeling.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>Gold, clay and mountain craft</h2>
+      <p>New Taipei's culture is as varied as its landscape — from pottery kilns and mining towns to a treaty-port past and living Indigenous traditions.</p></div>
+    <div class="ppl cc-north">
+      <div class="ppl-card">
+        <h3>🏺 Yingge ceramics &amp; mining heritage · 鶯歌陶瓷與礦業</h3>
+        <p>With over 200 years of history, <strong>Yingge</strong> is Taiwan's pottery and porcelain capital, sometimes called "Taiwan's Jingdezhen." To the northeast, the gold of Jiufen and Jinguashi and the coal of Pingxi powered the island in the Japanese era; the towns' stone stairways, old tunnels and railway lines are now treasured heritage landscapes.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>⛩️ Tamsui, Wulai &amp; Sanxia · 淡水・烏來・三峽</h3>
+        <p>Tamsui's <strong>Red Fort, old consulate and Mackay sites</strong> make it a living museum of Taiwan's encounter with the world. In the mountains, the <strong>Atayal of Wulai</strong> preserve weaving, song and traditional foods, while Sanxia revives its old <strong>indigo-dyeing (藍染)</strong> craft and guards the carved masterpiece of the Zushi Temple.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Famous People · 新北名人</div><h2>From a global superstar to a temple artist</h2></div>
+    <div class="ppl cc-north">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Jay Chou 周杰倫</h3>
+        <div class="yr">b. 1979 · Linkou 林口</div>
+        <p>Taiwan's most influential Mandopop superstar, born in <strong>Linkou</strong> — then part of Taipei County, today New Taipei City. (He is very often described simply as "from Taipei," but his birthplace lies within present-day New Taipei.) His songs reshaped Chinese pop music for a generation.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Li Mei-shu 李梅樹</h3>
+        <div class="yr">1902–1983 · Sanxia 三峽</div>
+        <p>A renowned Taiwanese painter born in <strong>Sanxia</strong>, celebrated for his Western-style oil paintings. After WWII he led the reconstruction of his hometown's Qingshui Zushi Temple, turning it into the famed "Hall of Eastern Art."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Seasons · 節慶與時令</div><h2>When New Taipei comes alive</h2></div>
+    <div class="lmk cc-north">
+      <div class="lmk-item">
+        <h3>Pingxi Sky Lantern Festival<span class="zh">平溪天燈節</span></h3>
+        <p>Held around the Lantern Festival (the 15th day of the first lunar month), this is New Taipei's most iconic celebration. Crowds release hundreds of glowing sky lanterns carrying written wishes into the night — ranked by global media among the world's most spectacular festivals.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Tamsui Sunsets &amp; Arts<span class="zh">淡水夕照與藝術節</span></h3>
+        <p>Tamsui's golden river sunsets draw crowds year-round, and the waterfront hosts seasonal environmental-art and music events along its old streets and wharf.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Wulai Cherry Blossoms<span class="zh">烏來櫻花</span></h3>
+        <p>Each late winter and early spring, the mountains of Wulai bloom pink with cherry blossoms, drawing visitors to combine flower-viewing with a soak in the hot springs.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Northeast Coast Seasons<span class="zh">東北角時令</span></h3>
+        <p>The rugged northeast coast comes alive with summer sea activities, autumn silver-grass on the hills above Jiufen, and fresh seafood landed at its fishing harbors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>From riverside snacks to mountain tables</h2>
+      <p>New Taipei's food map runs from Tamsui's fried tofu pouches to Jiufen's taro balls and Wulai's Atayal mountain fare.</p></div>
+    <div class="food cc-north">
+      <div class="food-item"><span class="em">🧆</span><div><h4>Tamsui a-gei <span class="zh">淡水阿給</span></h4><p>Fried tofu pouches stuffed with glass noodles and sealed with fish paste, served in a sweet-spicy sauce — a Tamsui original first made in 1965.</p><span class="town">Tamsui 淡水</span></div></div>
+      <div class="food-item"><span class="em">🥚</span><div><h4>Tamsui iron eggs <span class="zh">淡水鐵蛋</span></h4><p>Eggs repeatedly stewed in spiced soy sauce and air-dried until dark, chewy and shrunken to half their size — a famous portable snack.</p><span class="town">Tamsui 淡水</span></div></div>
+      <div class="food-item"><span class="em">🍠</span><div><h4>Jiufen taro balls <span class="zh">九份芋圓</span></h4><p>Chewy, hand-made balls of taro and sweet potato, served hot in sweet soup or over shaved ice — said to have originated in Jiufen.</p><span class="town">Jiufen 九份</span></div></div>
+      <div class="food-item"><span class="em">🧀</span><div><h4>Shenkeng stinky tofu <span class="zh">深坑臭豆腐</span></h4><p>Shenkeng is nicknamed the "hometown of tofu"; its clear water and salt-braising make its charcoal-grilled and fried stinky tofu legendary along the old street.</p><span class="town">Shenkeng 深坑</span></div></div>
+      <div class="food-item"><span class="em">🥐</span><div><h4>Sanxia golden croissant <span class="zh">三峽金牛角</span></h4><p>A crisp, buttery, croissant-shaped horn pastry that is the signature snack of Sanxia Old Street.</p><span class="town">Sanxia 三峽</span></div></div>
+      <div class="food-item"><span class="em">🍦</span><div><h4>Tamsui fish crackers &amp; ice cream <span class="zh">淡水魚酥與冰淇淋</span></h4><p>Light, crispy fish crackers (invented in Tamsui in 1963) and the playful towering ice-cream cones sold along the old street.</p><span class="town">Tamsui 淡水</span></div></div>
+      <div class="food-item"><span class="em">🌾</span><div><h4>Wulai Atayal mountain food <span class="zh">烏來泰雅山產</span></h4><p>Indigenous Atayal cuisine featuring millet, wild mountain greens, bamboo-tube rice and grilled mountain fare.</p><span class="town">Wulai 烏來</span></div></div>
+      <div class="food-item"><span class="em">🦞</span><div><h4>Northeast-coast seafood <span class="zh">東北角海鮮</span></h4><p>Fresh-off-the-boat seafood at the coastal towns and fishing harbors along the rugged northeast shore.</p><span class="town">NE Coast 東北角</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What New Taipei is known for · 新北的招牌</div><h2>The ring of a hundred worlds</h2></div>
+    <div class="kf cc-north">
+      <div class="kf-item"><span class="em">⭕</span><h4>The ring city <span class="zh">環抱台北</span></h4><p>Taiwan's most populous city, wrapped right around the capital.</p></div>
+      <div class="kf-item"><span class="em">🏮</span><h4>Jiufen <span class="zh">九份</span></h4><p>The golden-age mining town of red lanterns and hillside teahouses.</p></div>
+      <div class="kf-item"><span class="em">🎈</span><h4>Pingxi sky lanterns <span class="zh">平溪天燈</span></h4><p>Glowing wish-lanterns rising into the night over the old coal valley.</p></div>
+      <div class="kf-item"><span class="em">👑</span><h4>Yehliu's Queen's Head <span class="zh">野柳女王頭</span></h4><p>The sea-carved rock formations of the northern cape.</p></div>
+      <div class="kf-item"><span class="em">🌅</span><h4>Tamsui <span class="zh">淡水</span></h4><p>Golden sunsets, the historic Red Fort and a treaty-port past.</p></div>
+      <div class="kf-item"><span class="em">🏺</span><h4>Yingge &amp; Wulai <span class="zh">鶯歌與烏來</span></h4><p>Two centuries of ceramics, plus hot springs and Atayal culture.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-north" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce New Taipei to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹新北,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from New Taipei." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from New Taipei.<span class="zh">我來自新北市。</span></span></li>
-        <li><button class="say sm" data-say="New Taipei is in Northern Taiwan." aria-label="Hear sentence">🔊</button><span class="en">New Taipei is in Northern Taiwan.<span class="zh">新北市在臺灣北部。</span></span></li>
-        <li><button class="say sm" data-say="New Taipei is famous for Jiufen Old Street." aria-label="Hear sentence">🔊</button><span class="en">New Taipei is famous for Jiufen Old Street.<span class="zh">新北市以九份老街聞名。</span></span></li>
+        <li><button class="say sm" data-say="New Taipei City completely surrounds the capital, Taipei, and it's actually Taiwan's most populous city, with around four million people." aria-label="Hear">🔊</button><span class="en">New Taipei City completely surrounds the capital, Taipei, and it's actually Taiwan's most populous city, with around four million people.<span class="zh">新北市完全環繞著首都台北,其實它是台灣人口最多的城市,約有四百萬人。</span></span></li>
+        <li><button class="say sm" data-say="If you want a magical hillside town with red lanterns and teahouses, go to Jiufen. It used to be a gold-mining town." aria-label="Hear">🔊</button><span class="en">If you want a magical hillside town with red lanterns and teahouses, go to Jiufen — it used to be a gold-mining town.<span class="zh">如果你想看一座有紅燈籠和茶樓的夢幻山城,就去九份——它以前是個金礦小鎮。</span></span></li>
+        <li><button class="say sm" data-say="In Pingxi, you can write a wish on a paper sky lantern and release it glowing into the night sky." aria-label="Hear">🔊</button><span class="en">In Pingxi, you can write a wish on a paper sky lantern and release it glowing into the night sky.<span class="zh">在平溪,你可以在紙天燈上寫下願望,再點亮它放飛到夜空中。</span></span></li>
+        <li><button class="say sm" data-say="Tamsui is famous for its beautiful sunsets and an old fort called the Red Fort, built long ago by the Dutch." aria-label="Hear">🔊</button><span class="en">Tamsui is famous for its beautiful sunsets and an old fort called the "Red Fort," built long ago by the Dutch.<span class="zh">淡水以美麗的夕陽和一座古老的「紅毛城」聞名,那是很久以前荷蘭人所建的。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Jiufen Old Street<button class="say sm" data-say="Jiufen Old Street" aria-label="Hear Jiufen Old Street">🔊</button></h3>
-          <div class="zh">九份老街</div>
-          <p>A former gold-mining town of red lanterns and teahouses above the sea.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Yehliu Geopark<button class="say sm" data-say="Yehliu Geopark" aria-label="Hear Yehliu Geopark">🔊</button></h3>
-          <div class="zh">野柳地質公園</div>
-          <p>A coastal park of fantastic rocks, including the Queen&#x27;s Head.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Shifen Sky Lanterns<button class="say sm" data-say="Shifen Sky Lanterns" aria-label="Hear Shifen Sky Lanterns">🔊</button></h3>
-          <div class="zh">十分天燈</div>
-          <p>A riverside street where visitors release wish-lanterns into the sky.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Tamsui Old Street<button class="say sm" data-say="Tamsui Old Street" aria-label="Hear Tamsui Old Street">🔊</button></h3>
-          <div class="zh">淡水老街</div>
-          <p>A breezy riverside promenade famous for sunsets and snacks.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-north">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Taro balls <button class="say sm" data-say="Taro balls" aria-label="Hear food name">🔊</button> <span class="zh">· 芋圓</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:新北市政府觀光旅遊局、淡水古蹟博物館、交通部觀光署、文化部、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <a href="/counties/taipei/">← Taipei</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +285,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>

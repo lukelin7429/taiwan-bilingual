@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Taoyuan 桃園市 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Taoyuan (桃園市) — landmarks, food and culture, and how to say it in English. 台灣的國際門戶,機場、大溪老街與山林水庫交織。">
+<meta name="description" content="Taoyuan (桃園市) — Taiwan's airport gateway and manufacturing powerhouse, a Hakka heartland of a thousand ponds, Daxi woodcraft and dried tofu, Shimen Reservoir and Lalashan peaches. Its history, landmarks, culture, food, and how to say it in English. 千塘之鄉桃園的深度文化介紹。">
 <meta property="og:title" content="Taoyuan 桃園市 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Taoyuan = north / blue) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#2f3742;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#274b73);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#3f6fa3);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#3f6fa3);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#274b73);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#eaeff5);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#274b73);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#2f3742;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#274b73);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#3f6fa3);background:var(--cc-soft,#eaeff5);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#3f6fa3);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#274b73);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,6 +77,7 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-north">
   <div class="wrap">
     <div class="cty-region">Northern Taiwan · 北部</div>
@@ -35,64 +86,190 @@
       <span class="zh">桃園市</span>
       <button class="say" data-say="Taoyuan" aria-label="Hear Taoyuan in English">🔊</button>
     </div>
-    <p class="cty-pos">Northern Taiwan&#x27;s gateway city, where the main international airport meets old-town wood-craft streets and mountain lakes.</p>
-    <p class="cty-pos-zh">台灣的國際門戶,機場、大溪老街與山林水庫交織。</p>
+    <p class="cty-pos">Taiwan's gateway to the world — an airport city and manufacturing powerhouse, a Hakka heartland of a thousand irrigation ponds, peach mountains and old camphor-trade towns.</p>
+    <p class="cty-pos-zh">台灣通往世界的大門——機場之城與製造業重鎮,也是有千口埤塘、水蜜桃山與樟腦老街的客家原鄉。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-north">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>Ponds, Hakka, factories and a front door</h2></div>
+    <div class="narr">
+      <p>Taoyuan (桃園, literally <strong>"Peach Garden"</strong>) sits on the terraced uplands southwest of Taipei, named for the peach trees that early Han settlers planted across the area in the Qing era. Before them the land belonged to Plains Indigenous (Ketagalan) peoples, and the southeastern mountains remain the homeland of the Atayal. Two communities shaped the region: Hoklo settlers concentrated in the north, while southern Taoyuan — <strong>Zhongli, Pingzhen, Yangmei and Longtan</strong> — became one of northern Taiwan's great <strong>Hakka heartlands</strong>, a place of tea hills and Hakka speech still heard in the markets.</p>
+      <p class="zh">桃園(字面意為<strong>「桃子的花園」</strong>)位於台北西南方的台地上,名字源自清代早期漢人移民遍植的桃樹。更早之前,這裡是平埔族(凱達格蘭)的領域,東南方山區至今仍是泰雅族的家鄉。兩大族群形塑了桃園:閩南移民多聚居北桃園,而南桃園的<strong>中壢、平鎮、楊梅、龍潭</strong>,則成為北台灣重要的<strong>客家原鄉</strong>之一,茶山與市場裡的客家話都是它的印記。</p>
+      <p>Taoyuan's most distinctive landscape is its water. The porous <strong>Taoyuan Tableland</strong> could never hold its rivers, so from the Qing era settlers — borrowing a practice from the Plains Indigenous peoples — dug thousands of irrigation ponds (<strong>埤塘</strong>) to catch rainwater for their rice. This earned Taoyuan the name <strong>"the Land of a Thousand Ponds."</strong> After a 1911 drought the Japanese built the great Taoyuan Canal to feed them, and in 1964 the <strong>Shimen Reservoir</strong> completed the network; at its peak the tableland held over 10,000 ponds, of which a few thousand survive as cultural and ecological heritage.</p>
+      <p class="zh">桃園最獨特的地景是「水」。多孔隙的<strong>桃園台地</strong>留不住河水,因此自清代起,移民借鏡平埔族的智慧,開鑿成千上萬口灌溉<strong>埤塘</strong>蓄雨灌田,使桃園贏得<strong>「千塘之鄉」</strong>的美名。1911 年大旱後,日本人興建桃園大圳串聯各埤塘,1964 年<strong>石門水庫</strong>補全了這套水網;台地全盛時曾有逾萬口埤塘,今約存數千口,被珍視為文化與生態資產。</p>
+      <p>In the modern era Taoyuan became Taiwan's industrial engine room, producing the <strong>highest industrial output of any city in Taiwan</strong>, its factories drawing one of the island's largest communities of Southeast Asian migrant workers. Above all, Taoyuan is Taiwan's front door: <strong>Taiwan Taoyuan International Airport opened in 1979</strong>, and almost every visitor's first and last steps in Taiwan happen here. On <strong>25 December 2014</strong> Taoyuan was upgraded from a county to a special municipality, joining Taiwan's six top-tier cities.</p>
+      <p class="zh">進入現代,桃園成為台灣的工業引擎,<strong>工業產值高居全台之冠</strong>,工廠也吸引了全台規模最大的東南亞移工社群之一。而桃園最重要的身分,是台灣的大門:<strong>台灣桃園國際機場於 1979 年啟用</strong>,幾乎每位旅客踏入與離開台灣的第一步與最後一步都在這裡。<strong>2014 年 12 月 25 日</strong>,桃園由縣升格為直轄市,躋身台灣六都之列。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Taoyuan</h2></div>
+    <div class="lmk cc-north">
+      <div class="lmk-item">
+        <h3>Cihu &amp; the Two Chiangs Park<span class="zh">慈湖・兩蔣文化園區</span><button class="say sm" data-say="Cihu and the Two Chiangs Culture Park" aria-label="Hear">🔊</button></h3>
+        <p>A quiet lakeside villa in Daxi where the body of former president Chiang Kai-shek rests, drawing crowds for its hourly <strong>military honor-guard changing ceremony</strong>. The nearby sculpture park gathers more than 100 Chiang statues removed from around Taiwan — likely the only such park on earth.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Daxi Old Street<span class="zh">大溪老街</span><button class="say sm" data-say="Daxi Old Street" aria-label="Hear">🔊</button></h3>
+        <p>A historic street of ornate <strong>Baroque-style shophouse facades</strong> built around 1918, fusing Western columns with Chinese carvings of bats and fish. Once a hub of the camphor and tea trades, Daxi is now famous as Taiwan's "tofu capital" for its dried tofu and as a center of fine woodcraft.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Shimen Reservoir<span class="zh">石門水庫</span><button class="say sm" data-say="Shimen Reservoir" aria-label="Hear">🔊</button></h3>
+        <p>Completed in 1964 on the Dahan River, Shimen was <strong>Taiwan's first multi-purpose dam</strong> and remains one of its largest reservoirs. The dam, lake and surrounding hills are a scenic getaway, and the area is famous for "live fish" (活魚) restaurants serving reservoir fish many ways.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Xiao Wulai Skywalk &amp; Waterfall<span class="zh">小烏來天空步道・瀑布</span><button class="say sm" data-say="Xiao Wulai Skywalk and Waterfall" aria-label="Hear">🔊</button></h3>
+        <p>Taiwan's <strong>first glass skywalk</strong>, jutting out over the 55-metre Xiao Wulai Waterfall in the mountains of Fuxing District. The transparent floor lets you look straight down into the gorge below.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Lalashan Giant Trees<span class="zh">拉拉山神木群</span><button class="say sm" data-say="The Lalashan Giant Trees" aria-label="Hear">🔊</button></h3>
+        <p>A high mountain forest in Atayal territory ("Lala" comes from the Atayal word R'ra). Its main draw is a grove of around 24 <strong>giant Taiwan red cypress trees</strong>, the oldest roughly 1,500 years old. The area is also famous for its sweet high-altitude peaches.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Longtan Lake &amp; Nan-Tien Temple<span class="zh">龍潭大池・南天宮</span><button class="say sm" data-say="Longtan Lake and Nan-Tien Temple" aria-label="Hear">🔊</button></h3>
+        <p>The scenic heart of Hakka Longtan: a large pond (once an irrigation lake) with a <strong>temple-crowned island</strong> reached by an elegant cable-stayed footbridge that lights up at night. You can paddle swan boats or watch dragon-boat races here.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Taoyuan Hakka Culture Museum<span class="zh">桃園市客家文化館</span><button class="say sm" data-say="The Taoyuan Hakka Culture Museum" aria-label="Hear">🔊</button></h3>
+        <p>Opened in 2008 in Longtan, this museum preserves and showcases <strong>Hakka literature, music and audio-visual heritage</strong> — a fitting anchor for Taoyuan's deeply Hakka south.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Window on China Theme Park<span class="zh">小人國主題樂園</span><button class="say sm" data-say="Window on China Theme Park" aria-label="Hear">🔊</button></h3>
+        <p>A long-running theme park in Longtan famous for its <strong>miniature replicas</strong> of landmarks from Taiwan and around the world, alongside rides — a nostalgic family favorite for generations.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Zhongzhen Yunnan-Burmese Quarter<span class="zh">忠貞市場(雲南・緬甸)</span><button class="say sm" data-say="The Zhongzhen Yunnan-Burmese Quarter" aria-label="Hear">🔊</button></h3>
+        <p>A vibrant market around a former military village settled by <strong>Yunnanese-Burmese</strong> troops and families repatriated to Taiwan in the 1950s–60s. It is Taiwan's go-to place for Yunnan-style mi-gan rice noodles and Burmese-Thai flavors.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Daxi Wood Art Ecomuseum<span class="zh">大溪木藝生態博物館</span><button class="say sm" data-say="The Daxi Wood Art Ecomuseum" aria-label="Hear">🔊</button></h3>
+        <p>Spread through old Japanese-era dormitory buildings, this ecomuseum celebrates Daxi's heritage of <strong>fine furniture and temple carving</strong> — the woodcraft that, with dried tofu, made the town's name.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>Hakka roots, water and woodcraft</h2>
+      <p>Taoyuan's culture flows from its Hakka south, its thousand ponds and the craft towns of Daxi — a genuine melting pot at Taiwan's gateway.</p></div>
+    <div class="ppl cc-north">
+      <div class="ppl-card">
+        <h3>🫖 Hakka culture &amp; the pond land · 客家與千塘</h3>
+        <p>Zhongli, Pingzhen, Yangmei and Longtan form one of Taiwan's major <strong>Hakka regions</strong>, alive with Hakka language, cuisine, tea farming and festivals — Longtan is even one production area for Taiwan's prized Oriental Beauty tea. Across the tableland, the thousands of <strong>irrigation ponds (埤塘)</strong> are now treasured as living cultural-ecological heritage.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>🪵 Daxi craft &amp; a melting pot · 大溪工藝與多元熔爐</h3>
+        <p>Daxi built its name on fine wooden furniture, intricate temple carving and its famous <strong>dried tofu</strong>. Meanwhile the Yunnan-Burmese quarter and a large Southeast-Asian migrant-worker community give Zhongli a genuinely <strong>cross-cultural street life</strong> found nowhere else in Taiwan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Famous People · 桃園名人</div><h2>From a golf champion to a screen idol</h2></div>
+    <div class="ppl cc-north">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Yani Tseng 曾雅妮</h3>
+        <div class="yr">b. 1989 · Guishan 龜山</div>
+        <p>A world No. 1 women's golfer, born in Taoyuan's Guishan. She became the <strong>youngest player ever — male or female — to win five major championships</strong>, and remains one of Taiwan's most celebrated athletes on the world stage.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Jerry Yan 言承旭</h3>
+        <div class="yr">b. 1977 · Taoyuan</div>
+        <p>An actor and singer born in Taoyuan, of Atayal and Hakka descent. He rose to fame in the hit drama <strong>Meteor Garden</strong>, becoming one of the faces of the early-2000s Mandopop and idol-drama boom across Asia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Seasons · 節慶與時令</div><h2>When Taoyuan comes alive</h2></div>
+    <div class="lmk cc-north">
+      <div class="lmk-item">
+        <h3>Daxi Guan Gong Procession<span class="zh">大溪普濟堂關聖帝君遶境</span></h3>
+        <p>Daxi's biggest event — locals call it their "second New Year." Held around lunar June 24 (usually in July), it began in 1914 and features dozens of community guilds (社頭), and is a registered intangible cultural heritage.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Hakka Tung Blossom Festival<span class="zh">客家桐花祭</span></h3>
+        <p>Each spring, around April and May, white tung blossoms blanket the Hakka hills like "May snow." Launched in 2002, the festival celebrates Hakka culture across Taoyuan, Hsinchu and Miaoli.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Taoyuan Land Art Festival<span class="zh">桃園地景藝術節</span></h3>
+        <p>A large-scale outdoor art festival staging works by Taiwanese and international artists across the landscape, often weaving in local geography, the ponds and the region's history.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Lalashan Peach Season<span class="zh">拉拉山水蜜桃季</span></h3>
+        <p>In summer, the mountain orchards of Fuxing District bring crowds up the winding roads for the famous, intensely sweet high-altitude peaches.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>Hakka tables and a Yunnan surprise</h2>
+      <p>Taoyuan's food runs from Daxi dried tofu and hearty Hakka kitchens to the Yunnan-Burmese rice noodles of Zhongli.</p></div>
+    <div class="food cc-north">
+      <div class="food-item"><span class="em">🟫</span><div><h4>Daxi dried tofu <span class="zh">大溪豆乾</span></h4><p>The town's signature — firm, soy-braised dried tofu, sold from old shops along Daxi Old Street.</p><span class="town">Daxi 大溪</span></div></div>
+      <div class="food-item"><span class="em">🐟</span><div><h4>Shimen live fish <span class="zh">石門活魚</span></h4><p>Whole reservoir fish prepared "a hundred ways" — steamed, fried, in soup — at restaurants near Shimen Reservoir.</p><span class="town">Daxi・Longtan 大溪・龍潭</span></div></div>
+      <div class="food-item"><span class="em">🥘</span><div><h4>Hakka stir-fry <span class="zh">客家小炒</span></h4><p>Hearty Hakka cooking: squid, pork, dried tofu and celery wok-tossed together — the centerpiece of a southern-Taoyuan Hakka meal.</p><span class="town">Zhongli・Longtan 中壢・龍潭</span></div></div>
+      <div class="food-item"><span class="em">🍵</span><div><h4>Lei cha (ground tea) <span class="zh">擂茶</span></h4><p>A traditional Hakka drink of tea, seeds and grains ground together — both a beverage and a hands-on experience.</p><span class="town">Longtan 龍潭</span></div></div>
+      <div class="food-item"><span class="em">🍜</span><div><h4>Yunnan mi-gan <span class="zh">雲南米干</span></h4><p>Flat Yunnan-style rice noodles in rich broth, the star of the Zhongzhen quarter's Yunnan-Thai-Burmese food scene.</p><span class="town">Zhongli・Pingzhen 中壢・平鎮</span></div></div>
+      <div class="food-item"><span class="em">🍑</span><div><h4>Lalashan peaches <span class="zh">拉拉山水蜜桃</span></h4><p>Sweet, juicy high-mountain peaches harvested in summer from the orchards of Fuxing.</p><span class="town">Fuxing 復興</span></div></div>
+      <div class="food-item"><span class="em">🍚</span><div><h4>Ban-tiao rice noodles <span class="zh">客家粄條</span></h4><p>Wide, slippery flat rice noodles in savory broth — a comforting Hakka staple of the Taoyuan south.</p><span class="town">Zhongli・Longtan 中壢・龍潭</span></div></div>
+      <div class="food-item"><span class="em">🌿</span><div><h4>Longtan &amp; Yangmei tea <span class="zh">龍潭・楊梅茶</span></h4><p>Hakka-grown teas from the southern hills, including green tea and Longtan's Oriental Beauty.</p><span class="town">Longtan・Yangmei 龍潭・楊梅</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Taoyuan is known for · 桃園的招牌</div><h2>Gateway, ponds and Hakka roots</h2></div>
+    <div class="kf cc-north">
+      <div class="kf-item"><span class="em">✈️</span><h4>Airport gateway <span class="zh">國際機場</span></h4><p>Taiwan Taoyuan International Airport — almost everyone's first step in Taiwan.</p></div>
+      <div class="kf-item"><span class="em">🏭</span><h4>Manufacturing hub <span class="zh">製造業大城</span></h4><p>The highest industrial output of any city in Taiwan.</p></div>
+      <div class="kf-item"><span class="em">🫖</span><h4>Hakka heartland <span class="zh">客家原鄉</span></h4><p>The Hakka culture, tea and cuisine of the Taoyuan south.</p></div>
+      <div class="kf-item"><span class="em">💧</span><h4>A thousand ponds <span class="zh">千塘之鄉</span></h4><p>The famous 埤塘 pond landscape and the great Shimen Reservoir.</p></div>
+      <div class="kf-item"><span class="em">🪵</span><h4>Daxi woodcraft &amp; tofu <span class="zh">大溪木藝與豆乾</span></h4><p>Fine furniture, temple carving and famous dried tofu.</p></div>
+      <div class="kf-item"><span class="em">🍑</span><h4>Lalashan peaches <span class="zh">拉拉山水蜜桃</span></h4><p>High-mountain peaches and 1,500-year-old giant cypress.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-north" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Taoyuan to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹桃園,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Taoyuan." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Taoyuan.<span class="zh">我來自桃園市。</span></span></li>
-        <li><button class="say sm" data-say="Taoyuan is in Northern Taiwan." aria-label="Hear sentence">🔊</button><span class="en">Taoyuan is in Northern Taiwan.<span class="zh">桃園市在臺灣北部。</span></span></li>
-        <li><button class="say sm" data-say="Taoyuan is famous for Taoyuan Int&#x27;l Airport." aria-label="Hear sentence">🔊</button><span class="en">Taoyuan is famous for Taoyuan Int&#x27;l Airport.<span class="zh">桃園市以桃園國際機場聞名。</span></span></li>
+        <li><button class="say sm" data-say="Taoyuan is Taiwan's gateway to the world. Almost everyone who flies to Taiwan lands at Taoyuan International Airport." aria-label="Hear">🔊</button><span class="en">Taoyuan is Taiwan's gateway to the world — almost everyone who flies to Taiwan lands at Taoyuan International Airport.<span class="zh">桃園是台灣通往世界的大門——幾乎每個飛來台灣的人都降落在桃園國際機場。</span></span></li>
+        <li><button class="say sm" data-say="The southern part of Taoyuan, around Zhongli and Longtan, is one of northern Taiwan's great Hakka regions, with its own language, tea and food." aria-label="Hear">🔊</button><span class="en">The southern part of Taoyuan, around Zhongli and Longtan, is one of northern Taiwan's great Hakka regions, with its own language, tea and food.<span class="zh">南桃園的中壢、龍潭一帶,是北台灣重要的客家原鄉,有自己的語言、茶與美食。</span></span></li>
+        <li><button class="say sm" data-say="Don't miss Daxi Old Street. Its century-old Baroque shop fronts, woodcraft and famous dried tofu make it one of Taoyuan's best day trips." aria-label="Hear">🔊</button><span class="en">Don't miss Daxi Old Street — its century-old Baroque shop fronts, woodcraft and famous dried tofu make it one of Taoyuan's best day trips.<span class="zh">別錯過大溪老街——百年巴洛克牌樓、木藝與招牌豆乾,是桃園最棒的一日遊去處之一。</span></span></li>
+        <li><button class="say sm" data-say="Taoyuan is called the Land of a Thousand Ponds, and the giant Shimen Reservoir is the heart of the water system that turned this dry tableland into farmland." aria-label="Hear">🔊</button><span class="en">Taoyuan is called the "Land of a Thousand Ponds," and the giant Shimen Reservoir is the heart of the water system that turned this dry tableland into farmland.<span class="zh">桃園素有「千塘之鄉」之稱,而宏大的石門水庫,正是把這片乾旱台地變成農田的水利系統核心。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Taoyuan Int&#x27;l Airport<button class="say sm" data-say="Taoyuan Int&#x27;l Airport" aria-label="Hear Taoyuan Int&#x27;l Airport">🔊</button></h3>
-          <div class="zh">桃園國際機場</div>
-          <p>Taiwan&#x27;s largest airport — the gateway where most travellers first arrive.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Daxi Old Street<button class="say sm" data-say="Daxi Old Street" aria-label="Hear Daxi Old Street">🔊</button></h3>
-          <div class="zh">大溪老街</div>
-          <p>A historic street of old shopfronts, the &#x27;town of wood art&#x27;.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Shimen Reservoir<button class="say sm" data-say="Shimen Reservoir" aria-label="Hear Shimen Reservoir">🔊</button></h3>
-          <div class="zh">石門水庫</div>
-          <p>A scenic mountain reservoir with bike paths and boat rides.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Lalashan<button class="say sm" data-say="Lalashan" aria-label="Hear Lalashan">🔊</button></h3>
-          <div class="zh">拉拉山</div>
-          <p>A mountain area known for giant ancient cypress trees and summer peaches.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-north">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Daxi dried tofu <button class="say sm" data-say="Daxi dried tofu" aria-label="Hear food name">🔊</button> <span class="zh">· 大溪豆干</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:桃園市政府、客家委員會、交通部觀光署、台灣山林悠遊網、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <a href="/counties/new-taipei/">← New Taipei</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +285,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>

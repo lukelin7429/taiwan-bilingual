@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Taipei 臺北市 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Taipei (臺北市) — landmarks, food and culture, and how to say it in English. 台灣繁華的首都,摩天大樓、博物館與夜市融合現代與傳統。">
+<meta name="description" content="Taipei (臺北市) — Taiwan's capital, where Taipei 101, the National Palace Museum, old temple quarters, night markets and hot springs meet a famously convenient metro. Its history, landmarks, culture, food, and how to say it in English. 首都臺北的深度文化介紹。">
 <meta property="og:title" content="Taipei 臺北市 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Taipei = north / blue) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#2f3742;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#274b73);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#3f6fa3);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#3f6fa3);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#274b73);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#eaeff5);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#274b73);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#2f3742;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#274b73);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#3f6fa3);background:var(--cc-soft,#eaeff5);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#3f6fa3);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#274b73);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,6 +77,7 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-north">
   <div class="wrap">
     <div class="cty-region">Northern Taiwan · 北部</div>
@@ -35,64 +86,194 @@
       <span class="zh">臺北市</span>
       <button class="say" data-say="Taipei" aria-label="Hear Taipei in English">🔊</button>
     </div>
-    <p class="cty-pos">Taiwan&#x27;s bustling capital, where a record-setting skyscraper, grand museums and lively night markets blend modern energy with deep tradition.</p>
-    <p class="cty-pos-zh">台灣繁華的首都,摩天大樓、博物館與夜市融合現代與傳統。</p>
+    <p class="cty-pos">Taiwan's capital — a safe, convenient city in a mountain-ringed basin, where a record-breaking tower, a palace of imperial art and old temple lanes sit side by side.</p>
+    <p class="cty-pos-zh">台灣的首都——一座位於群山環抱盆地中、安全便利的城市,破紀錄的高樓、典藏帝王藝術的殿堂與老廟巷弄並陳。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-north">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>From riverside canoes to a capital</h2></div>
+    <div class="narr">
+      <p>Taipei sits in the Taipei Basin at Taiwan's far north, ringed by mountains and drained by the <strong>Tamsui (Danshui) River</strong>. Long before the city, the basin was the homeland of the <strong>Ketagalan (凱達格蘭)</strong>, a Plains Indigenous people who fished, farmed and traded along the rivers by dugout canoe. Their language survives in the city's place names — the old port quarter of <strong>Bangka (艋舺, today Wanhua)</strong> takes its name from the Ketagalan word for "canoe."</p>
+      <p class="zh">臺北位於台灣最北端的臺北盆地,四周群山環抱,由<strong>淡水河</strong>貫穿。在城市出現之前,盆地是<strong>凱達格蘭族</strong>的家園——這支平埔原住民沿河捕魚、耕作,並以獨木舟往來貿易。他們的語言保存在地名中:古老的港口聚落<strong>艋舺(今萬華)</strong>之名,即源自凱達格蘭語的「獨木舟」。</p>
+      <p>Han settlers from Fujian arrived in force in the 1700s. <strong>Bangka/Wanhua</strong> grew first, anchored by <strong>Longshan Temple (1738)</strong>, but as its wharves silted up the river trade shifted north to <strong>Dadaocheng (大稻埕)</strong>. There, tea transformed everything: the British merchant John Dodd imported oolong from Fujian and in 1869 shipped it to New York as "Formosa Oolong" — a global hit that made Dadaocheng, centered on <strong>Dihua Street</strong>, the richest district in northern Taiwan.</p>
+      <p class="zh">福建移民在 1700 年代大量湧入。<strong>艋舺(萬華)</strong>最早興起,以<strong>龍山寺(1738 年)</strong>為核心;但碼頭淤積後,河運北移至<strong>大稻埕</strong>。茶葉在此徹底改變了一切:英商陶德從福建引進烏龍茶,1869 年以「福爾摩沙烏龍」之名運往紐約,一炮而紅,使以<strong>迪化街</strong>為中心的大稻埕成為北台灣最富庶的商區。</p>
+      <p>As trade grew, the Qing built a <strong>walled city</strong> between Bangka and Dadaocheng, completed in <strong>1884</strong> with five gates, several of which still survive. Taiwan became a province in 1885 under modernizing governor <strong>Liu Mingchuan (劉銘傳)</strong>; the capital was confirmed at Taipei in 1894. After Japan took Taiwan in 1895, Taipei became the colonial capital, gaining grand institutions like the <strong>Office of the Governor-General (1919)</strong> — today's Presidential Office. The ROC government made it its seat in 1949, it became a special municipality in 1967, and in 2004 it was crowned by <strong>Taipei 101</strong>. A riverside trading ground had become the heart of Taiwan.</p>
+      <p class="zh">隨著貿易成長,清廷在艋舺與大稻埕之間興建<strong>臺北府城</strong>,<strong>1884 年</strong>完工、設五座城門,部分至今猶存。1885 年臺灣建省,首任巡撫<strong>劉銘傳</strong>推動現代化,1894 年確立臺北為省會。1895 年日本治臺後,臺北成為殖民首府,興建了<strong>臺灣總督府(1919 年)</strong>——即今日的總統府。1949 年中華民國政府以此為所在地,1967 年升格直轄市,2004 年更以<strong>臺北 101</strong> 寫下高峰。一處河畔貿易之地,終成台灣的中心。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Taipei</h2></div>
+    <div class="lmk cc-north">
+      <div class="lmk-item">
+        <h3>Taipei 101<span class="zh">台北101</span><button class="say sm" data-say="Taipei One Oh One" aria-label="Hear">🔊</button></h3>
+        <p>This 508-metre tower was the <strong>world's tallest building</strong> from its completion in 2004 until Dubai's Burj Khalifa surpassed it in 2010. To withstand typhoons and earthquakes it houses a massive 660-tonne golden tuned mass damper, and its New Year's Eve fireworks are world-famous.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>National Palace Museum<span class="zh">國立故宮博物院</span><button class="say sm" data-say="The National Palace Museum" aria-label="Hear">🔊</button></h3>
+        <p>Holding nearly 700,000 artifacts, this is widely regarded as the world's <strong>greatest collection of Chinese imperial art</strong>, inherited from the Song, Yuan, Ming and Qing courts. Its two most beloved treasures are the Jadeite Cabbage and the Meat-Shaped Stone.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Chiang Kai-shek Memorial Hall<span class="zh">中正紀念堂</span><button class="say sm" data-say="Chiang Kai-shek Memorial Hall" aria-label="Hear">🔊</button></h3>
+        <p>Completed in 1980, this white-and-blue monument stands at the eastern end of vast <strong>Liberty Square (自由廣場)</strong>, flanked by the National Theater and National Concert Hall — a favorite gathering place in the heart of the city.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Longshan Temple<span class="zh">艋舺龍山寺</span><button class="say sm" data-say="Longshan Temple" aria-label="Hear">🔊</button></h3>
+        <p>Founded in 1738 by Fujianese settlers in historic Wanhua, this is one of Taipei's <strong>oldest and most revered temples</strong>. Its principal deity is Guanyin, the Bodhisattva of Compassion, though it also enshrines Mazu and many folk gods.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Dadaocheng &amp; Dihua Street<span class="zh">大稻埕與迪化街</span><button class="say sm" data-say="Dadaocheng and Dihua Street" aria-label="Hear">🔊</button></h3>
+        <p>Dihua Street is Taipei's <strong>oldest commercial street</strong>, the heart of the historic Dadaocheng tea district. Its handsome old shop-houses still sell tea, herbs, dried goods and fabric, and it hosts Taiwan's busiest Lunar New Year market.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Ximending<span class="zh">西門町</span><button class="say sm" data-say="Ximending" aria-label="Hear">🔊</button></h3>
+        <p>Developed in the Japanese era as Taipei's first modern entertainment district (町 is Japanese for "district"), Ximending is now a buzzing youth shopping and pop-culture hub — often called <strong>"Taipei's Harajuku"</strong> — anchored by the 1908 octagonal Red House.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Beitou Hot Springs<span class="zh">北投溫泉</span><button class="say sm" data-say="Beitou Hot Springs" aria-label="Hear">🔊</button></h3>
+        <p>A district of Taipei City and Taiwan's <strong>most famous hot-spring resort</strong>, developed by the Japanese from the early 1900s. Highlights include the steamy turquoise Thermal Valley and the Hot Spring Museum, housed in a 1913 public bathhouse.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Yangmingshan National Park<span class="zh">陽明山國家公園</span><button class="say sm" data-say="Yangmingshan National Park" aria-label="Hear">🔊</button></h3>
+        <p>A volcanic park famous for the <strong>Datun Volcano Group</strong>, with fumaroles, sulfur vents and hot springs, plus spring cherry blossoms and azaleas. Its core lies in Taipei's Beitou and Shilin districts, extending into New Taipei City.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Maokong Gondola<span class="zh">貓空纜車</span><button class="say sm" data-say="The Maokong Gondola" aria-label="Hear">🔊</button></h3>
+        <p>Opened in 2007, this 4.3-km cable car in Wenshan District glides from Taipei Zoo up to the hillside tea village of <strong>Maokong</strong>, famous for Tieguanyin oolong and teahouses with sweeping city views.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Shilin Night Market<span class="zh">士林夜市</span><button class="say sm" data-say="Shilin Night Market" aria-label="Hear">🔊</button></h3>
+        <p>Widely regarded as Taipei's <strong>largest and most famous night market</strong>, with roots going back to 1909. It's a paradise of street food — oyster omelets, giant fried chicken cutlets and the "large pancake wrapping small pancake."</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Elephant Mountain (Xiangshan)<span class="zh">象山</span><button class="say sm" data-say="Elephant Mountain" aria-label="Hear">🔊</button></h3>
+        <p>A short but steep trail in Xinyi District leading to Taipei's most iconic <strong>viewpoint for photographing Taipei 101</strong> and the city skyline, especially at sunset. The famous "Six Giant Rocks" lookout is minutes from the trailhead.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與生活</div><h2>The cultural capital of Taiwan</h2>
+      <p>As the capital, Taipei is the island's cultural heart — museums and movements, temples and tea, all knit together by one of the world's best metros.</p></div>
+    <div class="ppl cc-north">
+      <div class="ppl-card">
+        <h3>🏛️ Museums, film &amp; the arts · 博物館與藝文</h3>
+        <p>Taipei holds Taiwan's great museums — above all the <strong>National Palace Museum</strong>, guardian of millennia of Chinese art — alongside a lively contemporary arts, music and publishing scene. Taiwan's celebrated <strong>New Cinema</strong> movement of the 1980s was centered here, and the city's temples — Longshan and Bao'an, with their incense and processions — keep its folk-religion soul alive.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>🚇 Night markets &amp; the MRT · 夜市與捷運</h3>
+        <p>Above all, Taipei is a city of <strong>night markets and street food</strong>, knit together by one of the world's cleanest and most convenient metro systems, the <strong>Taipei MRT (捷運)</strong>. Famously safe, walkable and orderly, it's a capital where you can ride from a temple lane to a hot-spring valley in under an hour.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Famous People · 臺北名人</div><h2>Born of the capital</h2></div>
+    <div class="ppl cc-north">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Ashin 阿信 (陳信宏)</h3>
+        <div class="yr">b. 1975 · Beitou District</div>
+        <p>Born in Taipei's Beitou District, Ashin is the lead vocalist and songwriter of <strong>Mayday (五月天)</strong>, one of the biggest Mandarin-language rock bands in the world. He is a genuinely Taipei-born star whose stadium anthems are sung across the Chinese-speaking world.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Taiwan New Cinema 臺灣新電影</h3>
+        <div class="yr">1980s · film movement</div>
+        <p>Taipei was the home of the <strong>Taiwan New Cinema</strong> movement, where directors such as Hou Hsiao-hsien and Edward Yang made their landmark "Taipei films." The capital's streets, alleys and apartments became one of Asian cinema's most quietly influential settings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Events · 節慶活動</div><h2>When Taipei comes alive</h2></div>
+    <div class="lmk cc-north">
+      <div class="lmk-item">
+        <h3>Taipei 101 New Year Fireworks<span class="zh">台北101跨年煙火</span></h3>
+        <p>An annual spectacle since the tower opened in 2004 — the world's first skyscraper fireworks display, now an international New Year's Eve TV highlight watched around the globe.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Taipei Lantern Festival<span class="zh">台北燈節</span></h3>
+        <p>Held around the Lunar New Year and Lantern Festival, with giant illuminated displays. Locations rotate over the years, including Ximending and the Dadaocheng and Yuanshan areas.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Dihua Street New Year Market<span class="zh">迪化街年貨大街</span></h3>
+        <p>In the two weeks before Lunar New Year, historic Dihua Street fills with stalls selling dried goods, candied fruit, nuts and holiday treats — Taipei's largest and most atmospheric New Year market.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Qingshan King Festival<span class="zh">艋舺青山王祭</span></h3>
+        <p>Held in Wanhua around the 10th lunar month, honoring the Qingshan King. Its famous "night patrols" (暗訪) parade the deity's palanquin through the old alleys — one of Taipei's "Three Great Temple Festivals."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>A capital of night markets</h2>
+      <p>From world-famous soup dumplings to a beef-noodle festival of its own, Taipei is one of the world's great eating cities.</p></div>
+    <div class="food cc-north">
+      <div class="food-item"><span class="em">🥟</span><div><h4>Din Tai Fung xiaolongbao <span class="zh">鼎泰豐小籠包</span></h4><p>Founded in Taipei in 1958, Din Tai Fung began making soup dumplings in 1972 and grew into a world-famous restaurant brand.</p><span class="town">Xinyi Road 信義路</span></div></div>
+      <div class="food-item"><span class="em">🍜</span><div><h4>Beef noodle soup <span class="zh">台北牛肉麵</span></h4><p>Taipei is famous for beef noodle soup, and has hosted the International Beef Noodle Festival every year since 2005 to crown the best bowls.</p><span class="town">Citywide 全市</span></div></div>
+      <div class="food-item"><span class="em">🍳</span><div><h4>Shilin night-market snacks <span class="zh">士林夜市小吃</span></h4><p>Signature bites include the "large pancake wrapping small pancake," oyster omelet, the giant fried chicken cutlet and the Shilin large sausage.</p><span class="town">Shilin 士林</span></div></div>
+      <div class="food-item"><span class="em">🫓</span><div><h4>Pepper buns <span class="zh">胡椒餅</span></h4><p>Raohe Street Night Market is famous for Fuzhou-style pepper buns — pork, scallion and black pepper baked on the walls of a charcoal clay oven.</p><span class="town">Raohe 饒河</span></div></div>
+      <div class="food-item"><span class="em">🥭</span><div><h4>Mango shaved ice <span class="zh">芒果冰</span></h4><p>Yongkang Street, near Dongmen, is a beloved food street and a home of fluffy shaved ice piled with fresh mango and condensed milk.</p><span class="town">Yongkang St 永康街</span></div></div>
+      <div class="food-item"><span class="em">🍢</span><div><h4>Ningxia traditional snacks <span class="zh">寧夏夜市</span></h4><p>One of Taipei's oldest night markets, beloved for braised pork rice, oyster omelet and taro balls — nicknamed "the Stomach of Taipei people."</p><span class="town">Datong 大同</span></div></div>
+      <div class="food-item"><span class="em">🍵</span><div><h4>Dihua Street tea &amp; dried goods <span class="zh">迪化街茶與南北貨</span></h4><p>The old shop-houses are the place to buy Taiwanese tea, dried mushrooms and seafood, herbs and holiday treats — a living legacy of the tea trade.</p><span class="town">Dadaocheng 大稻埕</span></div></div>
+      <div class="food-item"><span class="em">🧋</span><div><h4>Bubble tea, enjoyed citywide <span class="zh">珍珠奶茶</span></h4><p>Taipei is full of bubble tea shops — though the drink was actually invented in Taichung, the capital is one of the best places anywhere to enjoy a cup.</p><span class="town">Citywide 全市</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Taipei is known for · 臺北的招牌</div><h2>Capital, tower, treasures and trains</h2></div>
+    <div class="kf cc-north">
+      <div class="kf-item"><span class="em">🏙️</span><h4>The capital <span class="zh">首都</span></h4><p>Taiwan's political, economic and cultural center.</p></div>
+      <div class="kf-item"><span class="em">🗼</span><h4>Taipei 101 <span class="zh">台北101</span></h4><p>The record-breaking tower and New Year fireworks icon.</p></div>
+      <div class="kf-item"><span class="em">🏺</span><h4>Palace Museum <span class="zh">故宮博物院</span></h4><p>One of the world's greatest collections of Chinese imperial art.</p></div>
+      <div class="kf-item"><span class="em">🚇</span><h4>The MRT <span class="zh">捷運</span></h4><p>A famously clean, convenient metro in a safe, walkable city.</p></div>
+      <div class="kf-item"><span class="em">🍜</span><h4>Night markets &amp; food <span class="zh">夜市與美食</span></h4><p>Din Tai Fung, beef noodles and a city of street-food paradises.</p></div>
+      <div class="kf-item"><span class="em">♨️</span><h4>Springs &amp; mountains <span class="zh">溫泉與山</span></h4><p>Beitou hot springs and volcanic Yangmingshan at the city's edge.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-north" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Taipei to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹臺北,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Taipei." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Taipei.<span class="zh">我來自臺北市。</span></span></li>
-        <li><button class="say sm" data-say="Taipei is in Northern Taiwan." aria-label="Hear sentence">🔊</button><span class="en">Taipei is in Northern Taiwan.<span class="zh">臺北市在臺灣北部。</span></span></li>
-        <li><button class="say sm" data-say="Taipei is famous for Taipei 101." aria-label="Hear sentence">🔊</button><span class="en">Taipei is famous for Taipei 101.<span class="zh">臺北市以台北 101聞名。</span></span></li>
+        <li><button class="say sm" data-say="Taipei is the capital of Taiwan, a lively and remarkably safe city tucked in a basin and surrounded by green mountains." aria-label="Hear">🔊</button><span class="en">Taipei is the capital of Taiwan, a lively and remarkably safe city tucked in a basin and surrounded by green mountains.<span class="zh">臺北是台灣的首都,是一座坐落於盆地、群山環抱、生氣勃勃且非常安全的城市。</span></span></li>
+        <li><button class="say sm" data-say="Its most famous landmark is Taipei 101, which was the tallest building in the world from 2004 to 2010." aria-label="Hear">🔊</button><span class="en">Its most famous landmark is Taipei 101, which was the tallest building in the world from 2004 to 2010.<span class="zh">它最著名的地標是臺北 101,曾在 2004 到 2010 年間是世界第一高樓。</span></span></li>
+        <li><button class="say sm" data-say="If you love history and art, don't miss the National Palace Museum, home to one of the world's greatest collections of Chinese imperial treasures." aria-label="Hear">🔊</button><span class="en">If you love history and art, don't miss the National Palace Museum, home to one of the world's greatest collections of Chinese imperial treasures.<span class="zh">如果你喜歡歷史與藝術,千萬別錯過故宮博物院,那裡收藏著世界上最豐富的中華帝制宮廷珍寶之一。</span></span></li>
+        <li><button class="say sm" data-say="In the evening you can eat your way through a night market, and on a day trip soak in the hot springs of Beitou or hike up Yangmingshan." aria-label="Hear">🔊</button><span class="en">In the evening you can eat your way through a night market, and on a day trip soak in the hot springs of Beitou or hike up Yangmingshan.<span class="zh">傍晚你可以在夜市裡大快朵頤,安排一日遊則可到北投泡溫泉,或登上陽明山健行。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Taipei 101<button class="say sm" data-say="Taipei 101" aria-label="Hear Taipei 101">🔊</button></h3>
-          <div class="zh">台北 101</div>
-          <p>A 508-metre skyscraper, once the tallest in the world, with a city-wide observation deck.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>National Palace Museum<button class="say sm" data-say="National Palace Museum" aria-label="Hear National Palace Museum">🔊</button></h3>
-          <div class="zh">國立故宮博物院</div>
-          <p>Home to nearly 700,000 Chinese artworks, including the famous Jadeite Cabbage.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Longshan Temple<button class="say sm" data-say="Longshan Temple" aria-label="Hear Longshan Temple">🔊</button></h3>
-          <div class="zh">龍山寺</div>
-          <p>One of Taipei&#x27;s oldest temples (1738), famous for its carvings.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>CKS Memorial Hall<button class="say sm" data-say="CKS Memorial Hall" aria-label="Hear CKS Memorial Hall">🔊</button></h3>
-          <div class="zh">中正紀念堂</div>
-          <p>A grand white memorial on a vast public square.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-north">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Soup dumplings (xiaolongbao) <button class="say sm" data-say="Soup dumplings" aria-label="Hear food name">🔊</button> <span class="zh">· 小籠包</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:臺北市政府觀光傳播局、國立故宮博物院、交通部觀光署、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <a href="/counties/keelung/">← Keelung</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +289,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>
