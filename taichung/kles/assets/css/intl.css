@@ -23,18 +23,25 @@
 .flag-rail .flag .emoji{font-size:21px;line-height:1;}
 .flag-rail .flag .n{color:var(--sand-deep);font-size:14px;}
 
-/* video-only news card image slot */
-.news-card__img--video{
-  background:
-    radial-gradient(circle at 28% 26%, rgba(255,255,255,.22), transparent 46%),
-    linear-gradient(135deg,#0f3d45 0%,#1E5963 58%,#2c7a78 100%);
-  display:flex;align-items:center;justify-content:center;color:#fff;
+/* video news card: real YouTube thumbnail + overlaid play button */
+.news-card__img--video{position:relative;background:#0a1f23;}
+.news-card__img--video img{width:100%;height:100%;object-fit:cover;display:block;}
+.news-card__img--video::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(10,31,35,.06) 0%,rgba(10,31,35,.40) 100%);
 }
 .news-card__img--video .play{
-  width:74px;height:74px;border-radius:50%;
-  background:rgba(255,255,255,.16);border:2px solid rgba(255,255,255,.65);
-  display:flex;align-items:center;justify-content:center;font-size:30px;
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;
+  width:72px;height:72px;border-radius:50%;padding-left:5px;
+  background:rgba(15,61,69,.60);border:2px solid rgba(255,255,255,.92);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:28px;
   backdrop-filter:blur(2px);
+  box-shadow:0 8px 22px -6px rgba(0,0,0,.6);
+  transition:transform .2s ease, background .2s ease;
+}
+.news-card:hover .news-card__img--video .play{
+  transform:translate(-50%,-50%) scale(1.1);
+  background:rgba(224,56,58,.92);border-color:#fff;
 }
 
 /* ============ SLIDESHOW (carousel) ============ */

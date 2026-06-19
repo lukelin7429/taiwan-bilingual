@@ -1251,7 +1251,7 @@ def hub_card(d):
     if d["media"]["type"]=="slideshow":
         img=f'<div class="news-card__img"><img src="{d["slug"]}/photo_01.jpg" alt="{plain(d["title"])}" loading="lazy"></div>'
     else:
-        img='<div class="news-card__img news-card__img--video"><span class="play">▶</span></div>'
+        img=f'<div class="news-card__img news-card__img--video"><img src="{d["slug"]}/thumb.jpg" alt="{plain(d["title"])}" loading="lazy"><span class="play" aria-hidden="true">▶</span></div>'
     return f'''      <a href="{d['slug']}/" class="news-card">
         {img}
         <div class="news-card__body">
