@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Hsinchu City 新竹市 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Hsinchu City (新竹市) — landmarks, food and culture, and how to say it in English. 台灣的科技重鎮,科學園區與百年城隍廟小吃並存的「風城」。">
+<meta name="description" content="Hsinchu City (新竹市) — Taiwan's Silicon Valley and the Windy City, where the science park and chip giants meet an old walled city, a famous City God Temple food court, and wind-dried rice noodles. Its history, landmarks, culture, food, and how to say it in English. 風城新竹市的深度文化介紹。">
 <meta property="og:title" content="Hsinchu City 新竹市 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Hsinchu City = north / blue) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#2f3742;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#274b73);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#3f6fa3);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#3f6fa3);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#274b73);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#eaeff5);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#274b73);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#2f3742;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#274b73);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#3f6fa3);background:var(--cc-soft,#eaeff5);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#3f6fa3);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#274b73);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,6 +77,7 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-north">
   <div class="wrap">
     <div class="cty-region">Northern Taiwan · 北部</div>
@@ -35,64 +86,190 @@
       <span class="zh">新竹市</span>
       <button class="say" data-say="Hsinchu City" aria-label="Hear Hsinchu City in English">🔊</button>
     </div>
-    <p class="cty-pos">Taiwan&#x27;s high-tech capital, where the famous Science Park sits beside a centuries-old temple market loved for its street food.</p>
-    <p class="cty-pos-zh">台灣的科技重鎮,科學園區與百年城隍廟小吃並存的「風城」。</p>
+    <p class="cty-pos">Taiwan's Silicon Valley and the Windy City — where the world's chips are made beside an old walled town, a famous temple food court, and rice noodles dried by the wind.</p>
+    <p class="cty-pos-zh">台灣的矽谷,也是風城——全球晶片在此誕生,身旁是古城牆、傳奇的廟口小吃,與被風吹乾的米粉。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-north">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>From a walled wind-city to a chip capital</h2></div>
+    <div class="narr">
+      <p>Hsinchu is one of the oldest cities in northern Taiwan. Its old name was <strong>Zhuqian (竹塹)</strong>, from the <strong>Taokas (道卡斯)</strong> Plains Indigenous people who lived here long before Han settlement. Settlers arrived in force in the early 1700s, and in 1733 the magistrate planted a defensive ring of thorny bamboo around the town — the origin of the modern name <strong>Hsinchu (新竹, "new bamboo")</strong>.</p>
+      <p class="zh">新竹是台灣北部最古老的城市之一。它的古名是<strong>竹塹</strong>,源自比漢人更早居住於此的平埔族<strong>道卡斯族</strong>。漢人於十八世紀初大量移入,1733 年同知於聚落周圍栽植刺竹為城——這正是今名<strong>新竹</strong>(「新的竹城」)的由來。</p>
+      <p>In the 1820s the gentry, led by the scholar Zheng Yongxi, rebuilt Zhuqian as a proper stone-and-brick <strong>walled city</strong>, built from 1827 to 1829 with four gates. After the Japanese tore down most of the wall in 1902, only the <strong>East Gate — Yingxi Gate (迎曦門)</strong> — survived; it still stands downtown, ringed by a restored moat. Hsinchu is nicknamed <strong>"the Windy City" (風城)</strong> for its fierce autumn-winter northeasterly monsoon, the "nine-descending wind" (九降風) — far from a nuisance, it is the very wind that <strong>dries Hsinchu's famous rice noodles</strong>.</p>
+      <p class="zh">1820 年代,以進士鄭用錫為首的仕紳將竹塹改建為磚石<strong>城牆</strong>,1827 至 1829 年完工、築有四門。日治時期 1902 年拆除大部分城牆,僅存<strong>東門——迎曦門</strong>;它至今仍矗立市中心,外環護城河。新竹有<strong>「風城」</strong>之名,源於秋冬強勁的東北季風「九降風」——這風並非只是惱人,正是它<strong>風乾了新竹著名的米粉</strong>。</p>
+      <p>The Japanese era brought modernization — the 1913 railway station, parks, the glass industry. But the single event that remade Hsinchu was the founding of the <strong>Hsinchu Science Park (新竹科學園區) in 1980</strong>, Taiwan's very first. Built beside the research institute <strong>ITRI (工研院)</strong> and the universities of <strong>Tsing Hua</strong> and <strong>Yang Ming Chiao Tung</strong>, it became the heart of Taiwan's semiconductor industry — ITRI spun off UMC in 1980 and <strong>TSMC in 1987</strong>. An old walled wind-city had become the capital of Taiwan's "Silicon Valley."</p>
+      <p class="zh">日治時期帶來現代化:1913 年的火車站、公園、玻璃工業。然而真正改變新竹命運的,是 <strong>1980 年新竹科學園區</strong>的設立——台灣第一座科學園區。它緊鄰研究機構<strong>工研院</strong>與<strong>清華</strong>、<strong>陽明交通</strong>兩所大學,成為台灣半導體產業的心臟——工研院於 1980 年衍生聯電、<strong>1987 年衍生台積電</strong>。一座古老的風城,就此蛻變為台灣「矽谷」之都。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Hsinchu City</h2></div>
+    <div class="lmk cc-north">
+      <div class="lmk-item">
+        <h3>Yingxi Gate (East Gate)<span class="zh">迎曦門(東門城)</span><button class="say sm" data-say="Yingxi Gate, the East Gate" aria-label="Hear">🔊</button></h3>
+        <p>The last surviving gate of the 1827–1829 walled city, sitting at the very center of downtown, ringed by a moat and a sunken waterside plaza. Its granite base is original; the upper tower has been rebuilt. It is the <strong>symbol of old Zhuqian</strong>.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Hsinchu City God Temple<span class="zh">新竹都城隍廟</span><button class="say sm" data-say="Hsinchu City God Temple" aria-label="Hear">🔊</button></h3>
+        <p>Founded in 1748, this is the <strong>highest-ranking City God temple in Taiwan</strong> — the only one elevated to "Duchenghuang" and titled "Weiling Gong" by the Guangxu Emperor in 1891. Its forecourt is one of Taiwan's most famous food courts.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Beimen Street &amp; Jinshi Residence<span class="zh">北門街・進士第</span><button class="say sm" data-say="Beimen Street and the Jinshi Residence" aria-label="Hear">🔊</button></h3>
+        <p>North Gate Street is the old commercial spine of Hsinchu. On it stands the <strong>Jinshi Di</strong>, built in 1838 by Zheng Yongxi — the first Hsinchu native to pass the imperial palace exam. The Kinmen-style mansion is a national monument.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Hsinchu Park &amp; Glass Museum<span class="zh">新竹公園・玻璃工藝博物館</span><button class="say sm" data-say="Hsinchu Park and the Glass Museum" aria-label="Hear">🔊</button></h3>
+        <p>The city's green heart, laid out in 1916. Within it, the <strong>Glass Museum</strong> occupies the elegant 1936 former prefecture hall and tells the story of the city's glass industry, with the Confucius Temple nearby.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Hsinchu Zoo<span class="zh">新竹市立動物園</span><button class="say sm" data-say="Hsinchu Zoo" aria-label="Hear">🔊</button></h3>
+        <p>Opened in 1936, this is the <strong>oldest zoo still on its original site</strong> in Taiwan. After a "no-cage, habitat-style" renewal it reopened in 2019, keeping its original 1936 gate and fountain.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Eighteen Peaks Mountain<span class="zh">十八尖山</span><button class="say sm" data-say="Eighteen Peaks Mountain" aria-label="Hear">🔊</button></h3>
+        <p>A forested ridge on the city's southern edge — Hsinchu's beloved <strong>urban hiking spot</strong>, with gentle shaded trails popular for morning walks and viewpoints over the city.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Nanliao Harbor &amp; the 17 km Coast<span class="zh">南寮漁港・十七公里海岸線</span><button class="say sm" data-say="Nanliao Harbor and the seventeen kilometer coastline" aria-label="Hear">🔊</button></h3>
+        <p>Nanliao is the seaside gateway and the start of the scenic <strong>17-kilometre coastal bike path</strong>, running past the "Fish Scale Sky Ladder," wetlands and a riverside birdwatching area — Hsinchu's classic windswept coastal ride.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Hsinchu Railway Station<span class="zh">新竹車站</span><button class="say sm" data-say="Hsinchu Railway Station" aria-label="Hear">🔊</button></h3>
+        <p>Completed in 1913 and designed by Japanese architect Matsugasaki Tsumunaga, this Baroque-style station is the <strong>oldest railway station still in service</strong> in Taiwan, with a steep mansard roof and central clock tower.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>City Image Museum (Yule-kan)<span class="zh">影像博物館(有樂館)</span><button class="say sm" data-say="The Hsinchu City Image Museum" aria-label="Hear">🔊</button></h3>
+        <p>Housed in the 1933 "Yule-kan," the <strong>first air-conditioned public cinema</strong> in Taiwan during the Japanese era, now restored as a museum and small theater celebrating Hsinchu's film heritage.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Hsinchu Science Park &amp; ITRI<span class="zh">新竹科學園區・工研院</span><button class="say sm" data-say="Hsinchu Science Park and ITRI" aria-label="Hear">🔊</button></h3>
+        <p>The tech icon of the city. Founded in 1980, the park and the neighboring ITRI are the <strong>cradle of Taiwan's semiconductor industry</strong> and home to global chip giants — the modern face of the Windy City.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>Glass, wind-food and a city of engineers</h2>
+      <p>Hsinchu's culture sits in three layers: a glass-art capital, a wind-made food tradition, and one of Asia's densest concentrations of engineers.</p></div>
+    <div class="ppl cc-north">
+      <div class="ppl-card">
+        <h3>🔷 The glass capital · 玻璃之都</h3>
+        <p>During the Japanese era, abundant local <strong>silica sand and natural gas</strong> — the two essentials for glassmaking — were found here, and Hsinchu grew into the center of Taiwan's glass industry. That heritage is celebrated at the Glass Museum and the biennial <strong>Glass Art Festival</strong>, and beneath the modern city the old walled-city heritage of Zhuqian still shows in the East Gate, moat and Zheng-family mansions.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>🍜 Wind-food &amp; the tech mind · 風味與科技</h3>
+        <p>The city's other defining heritage is its food born of the wind — <strong>rice noodles and fish balls</strong> — and the City God Temple food court, a living museum of century-old snack shops. Layered over it all is a uniquely dense <strong>intellectual and tech culture</strong>: Tsing Hua, Yang Ming Chiao Tung, ITRI and the Science Park give Hsinchu one of the highest concentrations of engineers and PhDs in Asia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">People &amp; Institutions · 人物與機構</div><h2>A scholar and a chip empire</h2></div>
+    <div class="ppl cc-north">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Zheng Yongxi 鄭用錫</h3>
+        <div class="yr">1788–1858 · the "Kaitai Jinshi"</div>
+        <p>The <strong>first Hsinchu native to pass the imperial palace examination</strong>, earning the nickname "Kaitai Jinshi" (開台進士). He led the rebuilding of the walled city in the 1820s and built the Jinshi Di on Beimen Street, which still stands today.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>TSMC &amp; the Science Park 台積電與科學園區</h3>
+        <div class="yr">since 1980 · semiconductors</div>
+        <p>Hsinchu's fame rests on its institutions: <strong>TSMC and UMC</strong> (both born of ITRI), the research institute itself, and the universities — collectively the engine of Taiwan's semiconductor industry. TSMC, the world's largest contract chipmaker, is headquartered right here in the Science Park.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Events · 節慶活動</div><h2>When Hsinchu City comes alive</h2></div>
+    <div class="lmk cc-north">
+      <div class="lmk-item">
+        <h3>Zhuqian Mid-Yuan City God Festival<span class="zh">竹塹中元城隍祭</span></h3>
+        <p>Hsinchu's signature folk festival, held through the seventh "ghost" month at the City God Temple. Highlights include the "carrying the cangue" (夯枷) penance ritual and the great relief-of-orphans procession — one of northern Taiwan's three great Mid-Yuan festivals.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Hsinchu Glass Art Festival<span class="zh">新竹國際玻璃藝術節</span></h3>
+        <p>First held in 1995 and staged roughly every two years, this autumn festival fills Hsinchu Park and the Glass Museum with glass art, the "Golden Glass Award" exhibition, markets and hands-on workshops.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>"Three Treasures" Food Culture<span class="zh">米粉貢丸美食</span></h3>
+        <p>Hsinchu regularly celebrates its "Three Treasures" — rice noodles, fish balls and zhuqian cake — through tourism and food events, especially in the cool, windy months when rice-noodle drying is at its best.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Windy City &amp; the Coast<span class="zh">風城與海岸</span></h3>
+        <p>The strong autumn-winter wind that gives the city its nickname also makes the Nanliao coast and the 17-km bike path a breezy seasonal draw, with kites and sea-wind sunsets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>Made by the wind, eaten at the temple</h2>
+      <p>Hsinchu's two icons — rice noodles and fish balls — were both made possible by the wind, and the City God Temple food court is where the city eats.</p></div>
+    <div class="food cc-north">
+      <div class="food-item"><span class="em">🍜</span><div><h4>Hsinchu rice noodles <span class="zh">新竹米粉</span></h4><p>The headline dish — thin rice vermicelli dried by the northeasterly wind. Best eaten stir-fried as chao mi-fen.</p><span class="town">Citywide 全市</span></div></div>
+      <div class="food-item"><span class="em">🍡</span><div><h4>Hsinchu fish balls <span class="zh">新竹貢丸</span></h4><p>Bouncy pork meatballs beaten from fresh hind-leg pork into a springy paste; a bowl of fish-ball soup with stir-fried rice noodles is the classic pairing.</p><span class="town">Citywide 全市</span></div></div>
+      <div class="food-item"><span class="em">🥮</span><div><h4>Zhuqian cake <span class="zh">竹塹餅</span></h4><p>The third "treasure" — a rich, sweet-savory traditional pastry, most famously from the century-old Xin Fu Zhen bakery by the City God Temple.</p><span class="town">Beimen St 北門街</span></div></div>
+      <div class="food-item"><span class="em">🌯</span><div><h4>Run-bing spring rolls <span class="zh">潤餅</span></h4><p>Fresh, thin wheat wrappers rolled around savory fillings — a City God Temple food-court classic with famous long-running stalls.</p><span class="town">Miaokou 城隍廟口</span></div></div>
+      <div class="food-item"><span class="em">🥟</span><div><h4>Ba-wan meatball <span class="zh">肉圓</span></h4><p>Translucent steamed or fried glutinous dumplings stuffed with pork — a staple of the temple snacks.</p><span class="town">Miaokou 城隍廟口</span></div></div>
+      <div class="food-item"><span class="em">🍲</span><div><h4>Rice-noodle soup <span class="zh">米粉湯</span></h4><p>Beyond the dry stir-fried version, the temple court is loved for hearty bowls of rice-noodle soup in savory broth.</p><span class="town">Miaokou 城隍廟口</span></div></div>
+      <div class="food-item"><span class="em">⭕</span><div><h4>Shuirun cake <span class="zh">水潤餅</span></h4><p>A humble ring-shaped pastry that began as a City God Temple offering — still threaded on red string and hung on the deity statues during the Mid-Yuan procession.</p><span class="town">Miaokou 城隍廟口</span></div></div>
+      <div class="food-item"><span class="em">🍦</span><div><h4>Peanut-roll ice cream <span class="zh">花生捲冰淇淋</span></h4><p>A popular sweet finish — shaved peanut "candy floss" and ice cream wrapped in a thin spring-roll skin.</p><span class="town">Miaokou 城隍廟口</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Hsinchu City is known for · 新竹市的招牌</div><h2>Chips, wind, noodles and glass</h2></div>
+    <div class="kf cc-north">
+      <div class="kf-item"><span class="em">💾</span><h4>Silicon Valley <span class="zh">台灣矽谷</span></h4><p>The Science Park and the semiconductor industry — TSMC and UMC.</p></div>
+      <div class="kf-item"><span class="em">🌬️</span><h4>The Windy City <span class="zh">風城</span></h4><p>The nine-descending northeasterly wind that defines the seasons.</p></div>
+      <div class="kf-item"><span class="em">🍜</span><h4>Rice noodles &amp; fish balls <span class="zh">米粉與貢丸</span></h4><p>The wind-made food icons, best at the City God Temple court.</p></div>
+      <div class="kf-item"><span class="em">🔷</span><h4>Glass art <span class="zh">玻璃工藝</span></h4><p>Taiwan's glass capital, with the Glass Museum and Glass Art Festival.</p></div>
+      <div class="kf-item"><span class="em">🏯</span><h4>The East Gate <span class="zh">迎曦門</span></h4><p>The old walled-city heritage of Zhuqian at the city's heart.</p></div>
+      <div class="kf-item"><span class="em">🎓</span><h4>Universities &amp; ITRI <span class="zh">大學與工研院</span></h4><p>Tsing Hua, Yang Ming Chiao Tung and the research that built an industry.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-north" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Hsinchu City to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹新竹市,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Hsinchu City." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Hsinchu City.<span class="zh">我來自新竹市。</span></span></li>
-        <li><button class="say sm" data-say="Hsinchu City is in Northern Taiwan." aria-label="Hear sentence">🔊</button><span class="en">Hsinchu City is in Northern Taiwan.<span class="zh">新竹市在臺灣北部。</span></span></li>
-        <li><button class="say sm" data-say="Hsinchu City is famous for Hsinchu Science Park." aria-label="Hear sentence">🔊</button><span class="en">Hsinchu City is famous for Hsinchu Science Park.<span class="zh">新竹市以新竹科學園區聞名。</span></span></li>
+        <li><button class="say sm" data-say="Hsinchu is known as Taiwan's Silicon Valley, because the Hsinchu Science Park here is the heart of the country's semiconductor industry." aria-label="Hear">🔊</button><span class="en">Hsinchu is known as Taiwan's Silicon Valley, because the Hsinchu Science Park here is the heart of the country's semiconductor industry.<span class="zh">新竹被稱為台灣的矽谷,因為這裡的新竹科學園區是全國半導體產業的核心。</span></span></li>
+        <li><button class="say sm" data-say="People call Hsinchu the Windy City, and it's that strong autumn and winter wind that dries our famous rice noodles." aria-label="Hear">🔊</button><span class="en">People call Hsinchu "the Windy City" — and it's that strong autumn-and-winter wind that dries our famous rice noodles.<span class="zh">人們稱新竹為「風城」——正是那秋冬的強風,風乾了我們著名的米粉。</span></span></li>
+        <li><button class="say sm" data-say="If you visit, you have to try Hsinchu rice noodles and pork-ball soup at the food court around the City God Temple." aria-label="Hear">🔊</button><span class="en">If you visit, you have to try Hsinchu rice noodles and pork-ball soup at the food court around the City God Temple.<span class="zh">如果你來訪,一定要在城隍廟周邊的小吃攤,嚐嚐新竹米粉和貢丸湯。</span></span></li>
+        <li><button class="say sm" data-say="Downtown you can still see the East Gate, a city gate built in the 1820s, when Hsinchu was an old walled city called Zhuqian." aria-label="Hear">🔊</button><span class="en">Downtown you can still see the East Gate, a city gate built in the 1820s, when Hsinchu was an old walled city called Zhuqian.<span class="zh">在市中心你還能看到迎曦門——一座建於 1820 年代的城門,當時新竹是一座叫「竹塹」的古城。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Hsinchu Science Park<button class="say sm" data-say="Hsinchu Science Park" aria-label="Hear Hsinchu Science Park">🔊</button></h3>
-          <div class="zh">新竹科學園區</div>
-          <p>Taiwan&#x27;s leading high-tech hub, home to world-famous chip companies.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>City God Temple<button class="say sm" data-say="City God Temple" aria-label="Hear City God Temple">🔊</button></h3>
-          <div class="zh">新竹城隍廟</div>
-          <p>A historic temple whose market is one of Taiwan&#x27;s top street-food spots.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Hsinchu Rice Noodles<button class="say sm" data-say="Hsinchu Rice Noodles" aria-label="Hear Hsinchu Rice Noodles">🔊</button></h3>
-          <div class="zh">新竹米粉</div>
-          <p>Thin rice noodles dried in the city&#x27;s strong winds — known island-wide.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Pork Meatballs<button class="say sm" data-say="Pork Meatballs" aria-label="Hear Pork Meatballs">🔊</button></h3>
-          <div class="zh">新竹貢丸</div>
-          <p>Bouncy, springy pork meatballs served in hot soup.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-north">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Rice noodles &amp; meatball soup <button class="say sm" data-say="Rice noodles &amp; meatball soup" aria-label="Hear food name">🔊</button> <span class="zh">· 米粉與貢丸湯</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:新竹市政府、新竹都城隍廟、工業技術研究院、文化部、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <a href="/counties/hsinchu-county/">← Hsinchu County</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +285,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>

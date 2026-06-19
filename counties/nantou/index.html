@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Nantou 南投縣 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Nantou (南投縣) — landmarks, food and culture, and how to say it in English. 全台唯一不靠海的內陸縣,群山環繞、湖光山色,是寶島正中央。">
+<meta name="description" content="Nantou County (南投縣) — Taiwan's only landlocked county and mountain heart, home to Sun Moon Lake, the geographic center of Taiwan, Dongding and high-mountain tea, Hehuanshan, and the Thao, Bunun and Seediq peoples. Its history, landmarks, culture, food, and how to say it in English. 山中之心南投的深度文化介紹。">
 <meta property="og:title" content="Nantou 南投縣 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Nantou = central / jade) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#33423c;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#155a41);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#1e7f5c);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#1e7f5c);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#155a41);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#e6f3ec);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#155a41);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#33423c;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#155a41);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#1e7f5c);background:var(--cc-soft,#e6f3ec);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#1e7f5c);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#155a41);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,72 +77,199 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-central">
   <div class="wrap">
     <div class="cty-region">Central Taiwan · 中部</div>
     <div class="cty-name">
       <h1>Nantou</h1>
       <span class="zh">南投縣</span>
-      <button class="say" data-say="Nantou" aria-label="Hear Nantou in English">🔊</button>
+      <button class="say" data-say="Nantou County" aria-label="Hear Nantou in English">🔊</button>
     </div>
-    <p class="cty-pos">Taiwan&#x27;s only landlocked county — misty mountains, alpine meadows and a shimmering lake at the island&#x27;s very centre.</p>
-    <p class="cty-pos-zh">全台唯一不靠海的內陸縣,群山環繞、湖光山色,是寶島正中央。</p>
+    <p class="cty-pos">Taiwan's mountain heart — the island's only landlocked county, holding Sun Moon Lake, the geographic center of Taiwan, high-mountain tea and roads into the clouds.</p>
+    <p class="cty-pos-zh">台灣的山中之心——全島唯一不臨海的縣,擁有日月潭、台灣地理中心、高山茶,與直上雲端的公路。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-central">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>The heart of the island</h2></div>
+    <div class="narr">
+      <p>Nantou is Taiwan's mountain heart — the island's <strong>only fully landlocked county</strong>, the single county that touches no coastline. It also holds Taiwan's literal center: the <strong>Geographic Center Monument (台灣地理中心碑)</strong> stands at Mount Hutou in Puli, marking the geometric midpoint of the island. This is high country, where four of Taiwan's five great mountain ranges meet.</p>
+      <p class="zh">南投是台灣的「山中之心」——全島<strong>唯一不臨海的內陸縣</strong>,是唯一完全沒有海岸線的縣。全島的正中心也在這裡:位於埔里虎頭山的<strong>台灣地理中心碑</strong>標記了島嶼的幾何中心。這是一片高山之地,台灣五大山脈中有四條在此交會。</p>
+      <p>Nantou shares Taiwan's highest peak, <strong>Yushan / Jade Mountain (玉山, 3,952 m)</strong> — whose summit sits where Nantou, Chiayi and Kaohsiung meet — and the alpine ridge of <strong>Hehuanshan (合歡山)</strong>, one of the few 3,000-metre zones in Asia you can reach by road. For centuries these valleys have been home to Indigenous peoples: the <strong>Thao (邵族)</strong> of Sun Moon Lake, the <strong>Bunun (布農族)</strong> of Xinyi, and the <strong>Atayal and Seediq (賽德克)</strong> of Ren'ai.</p>
+      <p class="zh">南投與嘉義、高雄共享台灣最高峰<strong>玉山(3,952 公尺)</strong>——其主峰正坐落於三縣市交界——以及可開車抵達、亞洲少見的三千公尺高山稜線<strong>合歡山</strong>。數百年來,這些山谷是原住民族的家園:日月潭的<strong>邵族</strong>、信義鄉的<strong>布農族</strong>,以及仁愛鄉的<strong>泰雅族與賽德克族</strong>。</p>
+      <p>That history includes one of Taiwan's most significant episodes of resistance. In <strong>October 1930 the Wushe Incident (霧社事件)</strong> erupted in the mountains of Ren'ai, when Seediq communities led by <strong>Mona Rudao (莫那魯道)</strong> rose against harsh Japanese rule; the uprising and the reprisal that followed are remembered as a story of dignity and resistance. Modern Nantou is also defined by catastrophe and recovery: at 1:47 a.m. on <strong>21 September 1999 the "921 Earthquake"</strong> struck with its epicenter in Jiji, Nantou — Taiwan's deadliest in a century. Through it all, Puli endures, famous for clean spring water, Shaoxing wine, flowers and handmade paper.</p>
+      <p class="zh">這段歷史也包含台灣最重要的抗爭事件之一。<strong>1930 年 10 月,霧社事件</strong>在仁愛鄉山區爆發,賽德克族人由<strong>莫那魯道</strong>率領反抗嚴苛的日本統治;這場起義與隨後的報復,被銘記為一段關於尊嚴與抵抗的故事。現代南投也由災難與重建所定義:<strong>1999 年 9 月 21 日</strong>凌晨 1 時 47 分,<strong>「921 大地震」</strong>以南投集集為震央爆發——這是台灣百年來最致命的地震。歷經一切,埔里始終以清澈泉水、紹興酒、花卉與手工紙著稱。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Nantou</h2></div>
+    <div class="lmk cc-central">
+      <div class="lmk-item">
+        <h3>Sun Moon Lake<span class="zh">日月潭</span><button class="say sm" data-say="Sun Moon Lake" aria-label="Hear">🔊</button></h3>
+        <p>Taiwan's largest lake, in Yuchi, ringed by mountains and home to the <strong>Thao people</strong>. Sacred Lalu Island sits at its center; the shore holds the 46-metre Ci'en Pagoda (built by Chiang Kai-shek for his mother) and the colorful Wenwu Temple, with a cable car and lakeside cycling path.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Hehuanshan<span class="zh">合歡山</span><button class="say sm" data-say="Hehuanshan" aria-label="Hear">🔊</button></h3>
+        <p>A high-alpine area above 3,000 m on the Nantou–Hualien border, where several peaks are reachable near the road. One of the few places in Taiwan with regular <strong>winter snow</strong>, it is prized for stargazing (a designated dark-sky area) and sunrises.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Qingjing Farm<span class="zh">清境農場</span><button class="say sm" data-say="Qingjing Farm" aria-label="Hear">🔊</button></h3>
+        <p>A high mountain pasture around 1,700–2,000 m, nicknamed <strong>"Taiwan's Little Switzerland."</strong> Famous for roaming sheep, daily sheep-shearing and sheepdog shows, a European-styled "Small Swiss Garden," and a high-altitude skywalk with sweeping views.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Xitou &amp; the Monster Village<span class="zh">溪頭・妖怪村</span><button class="say sm" data-say="Xitou and the Monster Village" aria-label="Hear">🔊</button></h3>
+        <p>In Lugu, Xitou is a serene cedar-forest recreation area with walking trails, ponds and a skywalk. Beside it sits the playful, Japanese-themed <strong>Monster Village (妖怪村)</strong>, with its mascots Kuma and Badu.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Jiji &amp; the Jiji Line Railway<span class="zh">集集・集集支線</span><button class="say sm" data-say="Jiji and the Jiji Line railway" aria-label="Hear">🔊</button></h3>
+        <p>A beloved branch railway running from Ershui to Jiji, Shuili and Checheng. Jiji town — near the 921 epicenter — is famous for its restored wooden station and the <strong>Green Tunnel (集集綠色隧道)</strong>, an avenue of arching camphor trees.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Checheng<span class="zh">車埕</span><button class="say sm" data-say="Checheng" aria-label="Hear">🔊</button></h3>
+        <p>The terminus of the Jiji Line, a former Japanese-era <strong>logging village</strong> now revitalized as a charming wood-themed old town, with its timber-industry heritage on display.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Chung Tai Chan Monastery<span class="zh">中台禪寺</span><button class="say sm" data-say="Chung Tai Chan Monastery" aria-label="Hear">🔊</button></h3>
+        <p>In the geographic-center town of Puli stands one of the world's largest Buddhist monasteries: a <strong>136-metre modern stone tower</strong> (built 1990–2001) whose form evokes a seated, meditating monk.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Paper Dome<span class="zh">紙教堂</span><button class="say sm" data-say="The Paper Dome" aria-label="Hear">🔊</button></h3>
+        <p>In Taomi Village, Puli, this paper-tube church was first built in Kobe, Japan after the 1995 earthquake, then donated and rebuilt in Nantou after the 921 quake — a moving symbol of <strong>disaster solidarity and reconstruction</strong>.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Aowanda Forest<span class="zh">奧萬大</span><button class="say sm" data-say="Aowanda" aria-label="Hear">🔊</button></h3>
+        <p>A national forest recreation area in Ren'ai, celebrated as <strong>"the home of Taiwan's maples."</strong> Each December the valley turns crimson and gold, drawing visitors for one of the island's best autumn-foliage seasons.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Sun Link Sea<span class="zh">杉林溪</span><button class="say sm" data-say="Sun Link Sea" aria-label="Hear">🔊</button></h3>
+        <p>About 40 minutes beyond Xitou, this higher forest recreation area in Lugu is known for waterfalls, flowers in season, and its own <strong>high-mountain oolong tea</strong>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>Tea, mountain song and paper</h2>
+      <p>Nantou's culture rises from its tea hills, its Indigenous peoples, and the clean spring water of Puli.</p></div>
+    <div class="ppl cc-central">
+      <div class="ppl-card">
+        <h3>🍵 Tea &amp; Indigenous cultures · 茶與原住民</h3>
+        <p>Nantou is Taiwan's tea heartland: <strong>Lugu</strong> is the home of <strong>Dongding oolong (凍頂烏龍茶)</strong>, "Frozen Summit" tea, alongside high-mountain oolong and Sun Moon Lake's Assam black tea. The valleys are home to the <strong>Thao</strong> (Taiwan's smallest recognized Indigenous people), the <strong>Bunun</strong> — world-famous for their <em>Pasibutbut (八部合音)</em> polyphonic harvest prayer — and the <strong>Seediq</strong> of the Wushe story.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>📜 Puli crafts &amp; 921 recovery · 埔里工藝與重建</h3>
+        <p>Puli's exceptionally clean water sustains famous trades — <strong>handmade paper</strong> at the Guangxing Paper Mill (one of Taiwan's last fully handmade makers) and <strong>Shaoxing wine</strong> at the Puli Brewery. And the <strong>Paper Dome</strong> stands as the emblem of community rebuilding after the 1999 earthquake that struck the county at its heart.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">People &amp; Peoples · 人物與族群</div><h2>A Seediq leader and the mountain tribes</h2></div>
+    <div class="ppl cc-central">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Mona Rudao 莫那魯道</h3>
+        <div class="yr">c. 1880–1930 · Seediq leader</div>
+        <p>The Seediq leader who led the <strong>1930 Wushe Incident</strong> against Japanese colonial rule from the mountains of present-day Ren'ai. A genuinely Nantou-tied historical figure, remembered respectfully as a symbol of Indigenous resistance and dignity — and brought to a wide audience by the 2011 film <em>Seediq Bale</em>.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>The Thao, Bunun &amp; Seediq 邵族・布農・賽德克</h3>
+        <div class="yr">the peoples of the mountains</div>
+        <p>Nantou's identity rests most authentically on its <strong>Indigenous peoples</strong>: the Thao who keep watch over Sun Moon Lake, the Bunun whose <em>Pasibutbut</em> eight-part harmony is sung the world over, and the Seediq of the high valleys — distinct nations whose languages and ceremonies still shape the county.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Seasons · 節慶與時令</div><h2>When Nantou comes alive</h2></div>
+    <div class="lmk cc-central">
+      <div class="lmk-item">
+        <h3>Sun Moon Lake Swimming Carnival<span class="zh">日月潭萬人泳渡</span></h3>
+        <p>Held annually around the Mid-Autumn Festival, this roughly 3,000 m mass swim is the <strong>one day each year swimming is permitted in the lake</strong>. It draws tens of thousands and is listed in the International Swimming Hall of Fame.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Nantou Global Tea Expo<span class="zh">南投世界茶業博覽會</span></h3>
+        <p>A major autumn tea festival with tastings, tea-garden tours and markets, drawing very large crowds to celebrate Nantou's status as Taiwan's tea heartland.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Bunun Ear-Shooting Festival<span class="zh">布農族打耳祭</span></h3>
+        <p>A traditional Bunun rite of passage held around April in Xinyi, centered on hunting skill and the coming-of-age of boys — closely tied to the famous <em>Pasibutbut</em> eight-part harmony.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Aowanda Maple Season<span class="zh">奧萬大楓紅季</span></h3>
+        <p>Roughly early-to-mid December, when Aowanda's maples turn red and gold — Nantou's signature autumn spectacle, paired with crisp mountain air and clear stargazing skies on Hehuanshan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>Tea, lake fish and mountain harvest</h2>
+      <p>Nantou's table is built on tea, lake and mountain — Dongding oolong, Sun Moon Lake fish, plum and bamboo from the high valleys.</p></div>
+    <div class="food cc-central">
+      <div class="food-item"><span class="em">🍵</span><div><h4>Dongding oolong tea <span class="zh">凍頂烏龍茶</span></h4><p>Taiwan's most classic roasted oolong — tightly rolled, with an orchid-like fragrance — grown in the hills of Lugu.</p><span class="town">Lugu 鹿谷</span></div></div>
+      <div class="food-item"><span class="em">🫖</span><div><h4>Sun Moon Lake black tea <span class="zh">日月潭紅茶</span></h4><p>Rich Assam-style red tea grown around the lake since the Japanese era — a smooth, malty brew.</p><span class="town">Yuchi 魚池</span></div></div>
+      <div class="food-item"><span class="em">🐟</span><div><h4>President fish &amp; lake fare <span class="zh">總統魚與湖鮮</span></h4><p>The "President Fish" (曲腰魚) once served to Chiang Kai-shek, plus lake shrimp and wild-boar dishes in Thao style.</p><span class="town">Sun Moon Lake 日月潭</span></div></div>
+      <div class="food-item"><span class="em">🍶</span><div><h4>Puli rice noodles &amp; Shaoxing <span class="zh">埔里米粉與紹興料理</span></h4><p>Local rice noodles and dishes cooked with the town's famous Shaoxing wine, born of Puli's clean water.</p><span class="town">Puli 埔里</span></div></div>
+      <div class="food-item"><span class="em">🌱</span><div><h4>Water bamboo "beauty's leg" <span class="zh">筊白筍(美人腿)</span></h4><p>A tender, pale shoot, a Puli specialty nicknamed "beauty's leg" for its slender shape.</p><span class="town">Puli 埔里</span></div></div>
+      <div class="food-item"><span class="em">🟢</span><div><h4>Xinyi plums <span class="zh">信義梅子</span></h4><p>Xinyi is Taiwan's plum capital; the Plum Dream Factory turns the harvest into plum wine, dried plums and candy.</p><span class="town">Xinyi 信義</span></div></div>
+      <div class="food-item"><span class="em">🎋</span><div><h4>Zhushan bamboo shoots <span class="zh">竹山竹筍</span></h4><p>Bamboo country — Zhushan is famous for fresh, sweet bamboo shoots and its sweet potato.</p><span class="town">Zhushan 竹山</span></div></div>
+      <div class="food-item"><span class="em">🍌</span><div><h4>High-mountain fruit &amp; Jiji banana <span class="zh">高山蔬果・集集香蕉</span></h4><p>Cool-climate vegetables and fruit from the high country, plus sweet bananas from the warmer Jiji valley.</p><span class="town">Jiji 集集</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Nantou is known for · 南投的招牌</div><h2>Lake, summit, tea and tribe</h2></div>
+    <div class="kf cc-central">
+      <div class="kf-item"><span class="em">🏔️</span><h4>The mountain heart <span class="zh">山中之心</span></h4><p>Taiwan's only landlocked county and the island's geographic center.</p></div>
+      <div class="kf-item"><span class="em">🌅</span><h4>Sun Moon Lake <span class="zh">日月潭</span></h4><p>Taiwan's largest lake and the home of the Thao people.</p></div>
+      <div class="kf-item"><span class="em">🍵</span><h4>Dongding &amp; high-mountain tea <span class="zh">凍頂與高山茶</span></h4><p>Lugu's "Frozen Summit" oolong and the island's finest mountain teas.</p></div>
+      <div class="kf-item"><span class="em">⛰️</span><h4>Hehuanshan &amp; Qingjing <span class="zh">合歡山與清境</span></h4><p>Drive-up alpine country with snow, sheep and stars.</p></div>
+      <div class="kf-item"><span class="em">🎶</span><h4>Indigenous cultures <span class="zh">原住民文化</span></h4><p>The Thao, Bunun and Seediq and the Wushe Incident history.</p></div>
+      <div class="kf-item"><span class="em">📜</span><h4>Puli's water craft <span class="zh">埔里水與工藝</span></h4><p>Handmade paper, Shaoxing wine and the 921 reconstruction story.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-central" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Nantou to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹南投,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Nantou." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Nantou.<span class="zh">我來自南投縣。</span></span></li>
-        <li><button class="say sm" data-say="Nantou is in Central Taiwan." aria-label="Hear sentence">🔊</button><span class="en">Nantou is in Central Taiwan.<span class="zh">南投縣在臺灣中部。</span></span></li>
-        <li><button class="say sm" data-say="Nantou is famous for Sun Moon Lake." aria-label="Hear sentence">🔊</button><span class="en">Nantou is famous for Sun Moon Lake.<span class="zh">南投縣以日月潭聞名。</span></span></li>
+        <li><button class="say sm" data-say="Nantou is the only county in Taiwan with no coastline. It's the mountainous heart of the island." aria-label="Hear">🔊</button><span class="en">Nantou is the only county in Taiwan with no coastline — it's the mountainous heart of the island.<span class="zh">南投是台灣唯一沒有海岸線的縣——它是這座島嶼的山中之心。</span></span></li>
+        <li><button class="say sm" data-say="Sun Moon Lake, Taiwan's largest lake, is in Nantou, and it's home to the Thao, one of Taiwan's Indigenous peoples." aria-label="Hear">🔊</button><span class="en">Sun Moon Lake, Taiwan's largest lake, is in Nantou, and it's home to the Thao, one of Taiwan's Indigenous peoples.<span class="zh">台灣最大的湖泊日月潭就在南投,也是台灣原住民邵族的家園。</span></span></li>
+        <li><button class="say sm" data-say="If you love tea, this is the place. Nantou's Lugu is the home of Dongding oolong." aria-label="Hear">🔊</button><span class="en">If you love tea, this is the place — Nantou's Lugu is the home of Dongding oolong.<span class="zh">如果你愛喝茶,這裡就是聖地——南投鹿谷是凍頂烏龍茶的故鄉。</span></span></li>
+        <li><button class="say sm" data-say="You can drive up to Hehuanshan or Qingjing Farm, over seventeen hundred meters high, and stand in the clouds among the sheep and the stars." aria-label="Hear">🔊</button><span class="en">You can drive up to Hehuanshan or Qingjing Farm, over 1,700 meters high, and stand in the clouds among the sheep and the stars.<span class="zh">你可以開車上到海拔超過 1,700 公尺的合歡山或清境農場,置身雲端,與綿羊和星空為伴。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Sun Moon Lake<button class="say sm" data-say="Sun Moon Lake" aria-label="Hear Sun Moon Lake">🔊</button></h3>
-          <div class="zh">日月潭</div>
-          <p>Taiwan&#x27;s largest natural lake, shaped like a sun and a moon, for boating and cycling.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Cingjing Farm<button class="say sm" data-say="Cingjing Farm" aria-label="Hear Cingjing Farm">🔊</button></h3>
-          <div class="zh">清境農場</div>
-          <p>A high-mountain meadow at 1,800 m where fluffy sheep graze.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Dongding Oolong Tea<button class="say sm" data-say="Dongding Oolong Tea" aria-label="Hear Dongding Oolong Tea">🔊</button></h3>
-          <div class="zh">凍頂烏龍茶</div>
-          <p>One of Taiwan&#x27;s most prized teas, grown on Lugu&#x27;s misty slopes.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Seas of cloud<button class="say sm" data-say="Seas of cloud" aria-label="Hear Seas of cloud">🔊</button></h3>
-          <div class="zh">高山雲海</div>
-          <p>Cool highlands ringed by tall peaks and rolling clouds.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-central">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> President fish &amp; tea eggs <button class="say sm" data-say="President fish &amp; tea eggs" aria-label="Hear food name">🔊</button> <span class="zh">· 日月潭總統魚與茶葉蛋</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:南投縣政府、日月潭國家風景區管理處、交通部觀光署、文化部、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <a href="/counties/changhua/">← Changhua</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +285,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>

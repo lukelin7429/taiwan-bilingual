@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Hsinchu County 新竹縣 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Hsinchu County (新竹縣) — landmarks, food and culture, and how to say it in English. 山巒翠綠的客家文化重鎮,有老街、擂茶與山城小火車。">
+<meta name="description" content="Hsinchu County (新竹縣) — a Hakka heartland of old Beipu, ground tea and wind-dried persimmons, the Saisiyat Ritual of the Short Spirits, the Atayal village of Smangus, and the booming science-park city of Zhubei. Its history, landmarks, culture, food, and how to say it in English. 客家原鄉新竹縣的深度文化介紹。">
 <meta property="og:title" content="Hsinchu County 新竹縣 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Hsinchu County = north / blue) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#2f3742;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#274b73);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#3f6fa3);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#3f6fa3);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#274b73);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#eaeff5);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#274b73);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#2f3742;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#274b73);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#3f6fa3);background:var(--cc-soft,#eaeff5);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#3f6fa3);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#274b73);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,6 +77,7 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-north">
   <div class="wrap">
     <div class="cty-region">Northern Taiwan · 北部</div>
@@ -35,64 +86,190 @@
       <span class="zh">新竹縣</span>
       <button class="say" data-say="Hsinchu County" aria-label="Hear Hsinchu County in English">🔊</button>
     </div>
-    <p class="cty-pos">A green, hilly county that is one of Taiwan&#x27;s strongest heartlands of Hakka culture, with old streets, tea and mountain railways.</p>
-    <p class="cty-pos-zh">山巒翠綠的客家文化重鎮,有老街、擂茶與山城小火車。</p>
+    <p class="cty-pos">A Hakka heartland in the hills — old market towns and ground tea, wind-dried persimmons, mountain rituals, and a science-park boomtown on the plain.</p>
+    <p class="cty-pos-zh">丘陵間的客家原鄉——老街市鎮與擂茶、風乾的柿餅、山中祭典,以及平原上因科學園區而起的新興城市。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-north">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>The Hakka frontier of the hills</h2></div>
+    <div class="narr">
+      <p>Hsinchu County is the ring of land that wraps around — but does not include — Hsinchu City. Its seat is <strong>Zhubei (竹北)</strong>, while most of the county is one of Taiwan's great <strong>Hakka heartlands</strong>: the towns of Beipu, Emei, Hengshan, Guanxi, Xinpu and Zhudong are heavily Hakka, and in Guanxi over 90% of residents are Hakka. This is a landscape of tea-covered hills, persimmon orchards and old-street market towns where Hakka is still spoken on the street.</p>
+      <p class="zh">新竹縣是環繞、卻不包含新竹市的一圈土地。縣治設在<strong>竹北</strong>,而縣內多數地區是台灣重要的<strong>客家原鄉</strong>之一:北埔、峨眉、橫山、關西、新埔、竹東等鎮都以客家人為主,關西更有超過九成居民是客家人。這是一片茶園丘陵、柿子果園與老街市鎮交織的土地,街頭至今仍聽得到客語。</p>
+      <p>The county's defining story is the 19th-century camphor-and-tea frontier. In 1834 officials backed a joint Hoklo-Hakka land-development charter called <strong>Jinguangfu (金廣福)</strong> — the name fuses "Guang" (Hakka) and "Fu" (Fujianese), symbolizing the rare cooperation of the two groups. Under the Hakka leader <strong>Jiang Xiuluan (姜秀鑾)</strong>, armed settlers pushed into the hills and reclaimed the land that became today's Beipu, Baoshan and Emei. The Jinguangfu headquarters, built in 1835, still stands in Beipu as the county's only first-grade national monument.</p>
+      <p class="zh">新竹縣的核心故事,是十九世紀的樟腦與茶葉拓墾。1834 年,官方支持一個閩客合股的墾號——<strong>金廣福</strong>,「廣」代表客家、「福」代表福建,象徵兩大族群罕見的合作。在客家領袖<strong>姜秀鑾</strong>率領下,武裝墾民向山區推進,開墾出今日的北埔、寶山、峨眉一帶。1835 年興建的金廣福公館至今仍矗立在北埔,是全縣唯一的國定古蹟。</p>
+      <p>The mountains belong to Indigenous peoples: the <strong>Atayal (泰雅族)</strong> live in the high country of Jianshi, home to the remote cypress-forest village of Smangus, while the <strong>Saisiyat (賽夏族)</strong>, one of Taiwan's smallest Indigenous groups, hold the famous pasta'ay ritual in Wufeng. The county is also famous for wind — the dry, fierce autumn <strong>"Jiujiang wind" (九降風)</strong> that dries Xinpu's persimmons. In recent decades the northwestern plain has been transformed: <strong>Zhubei</strong> has exploded from farmland into a high-rise boomtown, a bedroom community and overflow zone for the Hsinchu Science Park, making the county a study in contrasts — gleaming tech suburbs, century-old Hakka towns and Indigenous villages all at once.</p>
+      <p class="zh">山區則是原住民的家園:<strong>泰雅族</strong>世居尖石高山,其中包含偏遠的檜木森林部落司馬庫斯;<strong>賽夏族</strong>是台灣人口最少的原住民族之一,在五峰舉行著名的巴斯達隘(矮靈祭)。新竹也以風聞名——每年秋天乾冷強勁的<strong>「九降風」</strong>,正是吹乾新埔柿餅的那陣風。近數十年來,西北部平原已徹底改變:<strong>竹北</strong>從農田暴漲為高樓林立的新興城市,是科學園區的外溢區,使本縣成為對比鮮明的縮影——科技新貴的郊區、百年客家老街與原住民部落並存。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Hsinchu County</h2></div>
+    <div class="lmk cc-north">
+      <div class="lmk-item">
+        <h3>Beipu Old Street &amp; Jinguangfu<span class="zh">北埔老街・金廣福公館</span><button class="say sm" data-say="Beipu Old Street and the Jinguangfu Gongguan" aria-label="Hear">🔊</button></h3>
+        <p>One of Taiwan's best-preserved Hakka towns, dense with old-house teahouses, persimmon shops and lei cha (ground tea). At its heart stands the <strong>Jinguangfu Gongguan</strong>, the 1835 land-development headquarters of Jiang Xiuluan — the county's only first-grade national monument.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Jiang A Hsin Mansion<span class="zh">姜阿新洋樓</span><button class="say sm" data-say="The Jiang A Hsin Mansion" aria-label="Hear">🔊</button></h3>
+        <p>A grand 1940s Western-style mansion built by the Beipu tea magnate Jiang A Hsin, just beside the old street. Its woodwork and elegance made it a key filming location for the hit Hakka period drama <strong>Gold Leaf (《茶金》)</strong>.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Emei Lake &amp; the Maitreya Buddha<span class="zh">峨眉湖・天恩彌勒佛院</span><button class="say sm" data-say="Emei Lake and the Maitreya Buddha" aria-label="Hear">🔊</button></h3>
+        <p>Beside scenic Emei Lake rises a colossal bronze <strong>Maitreya Buddha</strong> statue, 72 metres tall and completed in 2011 — among the largest Maitreya statues in Asia. Lakeside paths and a suspension bridge make it a popular day trip.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Neiwan Old Street &amp; Railway<span class="zh">內灣老街・內灣線</span><button class="say sm" data-say="Neiwan Old Street and the Neiwan railway line" aria-label="Hear">🔊</button></h3>
+        <p>A nostalgic Hakka mountain town at the end of the scenic <strong>Neiwan branch rail line</strong>. Once a logging and mining hub, it was revived around 2000 using the comic characters of local-born cartoonist Liu Hsing-chin, whose figures decorate shops and lampposts.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Leofoo Village Theme Park &amp; Safari<span class="zh">六福村主題遊樂園</span><button class="say sm" data-say="Leofoo Village Theme Park and Safari" aria-label="Hear">🔊</button></h3>
+        <p>In Guanxi Township, this is Taiwan's pioneering combination of a drive-through <strong>African safari park</strong> (open since 1979) and a full theme park (since 1994) with four themed lands and major roller coasters — a genuine Hsinchu County landmark.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Smangus<span class="zh">司馬庫斯</span><button class="say sm" data-say="Smangus" aria-label="Hear">🔊</button></h3>
+        <p>A remote Atayal village in the high mountains of Jianshi, nicknamed <strong>"God's Tribe."</strong> It had no road until 1995 and no electricity until 1979; today it runs as a famous communal cooperative, and a forest trail leads to giant ancient cypress trees.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Qingquan Scenic Area<span class="zh">清泉風景區</span><button class="say sm" data-say="The Qingquan Scenic Area" aria-label="Hear">🔊</button></h3>
+        <p>A hot-spring valley in Wufeng with deep cultural layers: the reconstructed residence where the "Young Marshal" <strong>Zhang Xueliang</strong> was held under house arrest (1946–1959), and the "Dream House" where writer <strong>San Mao</strong> lived in the 1980s. (Neither was born here.)</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Beipu Cold Spring<span class="zh">北埔冷泉</span><button class="say sm" data-say="Beipu Cold Spring" aria-label="Hear">🔊</button></h3>
+        <p>A rare carbonated, sulfurous <strong>cold spring</strong> with water staying around 10–20°C year-round — one of only a handful of cold springs in the world, alongside Su'ao in Taiwan and one in Italy.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Guanxi Old Town<span class="zh">關西老街</span><button class="say sm" data-say="Guanxi Old Town" aria-label="Hear">🔊</button></h3>
+        <p>A quiet, over-90%-Hakka market town known both as the <strong>"hometown of grass jelly" (仙草)</strong> and as one of Taiwan's longevity towns, with dozens of residents over 80 and several centenarians.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Xinpu Persimmon Farms<span class="zh">新埔柿餅農園</span><button class="say sm" data-say="The Xinpu persimmon farms" aria-label="Hear">🔊</button></h3>
+        <p>In autumn, Xinpu's farms become Taiwan's most photographed scene of <strong>orange persimmons drying in racks</strong> under the fierce "Jiujiang wind." The combination of dry monsoon wind and tradition makes Xinpu Taiwan's persimmon-cake capital.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>Hakka hills and mountain spirits</h2>
+      <p>The county's culture rises from two worlds: the Hakka market towns of the foothills, and the Indigenous peoples of the high mountains.</p></div>
+    <div class="ppl cc-north">
+      <div class="ppl-card">
+        <h3>🍵 Hakka culture · 客家文化</h3>
+        <p>The signature experience is <strong>lei cha (擂茶, "ground tea")</strong> in Beipu — tea leaves, grains, seeds and nuts ground together with a wooden pestle, then mixed with hot water into a savory, nutty drink you can grind yourself. Add Xinpu's wind-dried <strong>persimmon cakes</strong>, Guanxi grass jelly, Hakka blue-dye and floral cloth, and bayin music, and the foothills are a living Hakka world.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>🌄 The Saisiyat &amp; Atayal · 賽夏與泰雅</h3>
+        <p>The <strong>Saisiyat (賽夏族)</strong> of Wufeng hold the <strong>pasta'ay (巴斯達隘 / 矮靈祭)</strong>, the Ritual of the Short Spirits — a solemn ceremony every two years (a grander rite every ten) to honor the spirits of the legendary <em>Ta'ai</em>. Held across the Hsinchu–Miaoli border, it is the only national folk ritual that spans two counties. Higher up, the <strong>Atayal (泰雅族)</strong> of Jianshi keep mountain villages like Smangus, with traditions of weaving and millet farming.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Famous People · 新竹縣名人</div><h2>A frontier leader and a cartoonist</h2></div>
+    <div class="ppl cc-north">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Jiang Xiuluan 姜秀鑾</h3>
+        <div class="yr">1783–1846 · Beipu frontier leader</div>
+        <p>The Hakka leader who headed the <strong>Jinguangfu</strong> settlement company from 1834, led the armed reclamation of the Beipu hills and built the Jinguangfu fort-complex. He is the founding figure of Beipu's Jiang family, whose mansions and teahouses still shape the old town.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Liu Hsing-chin 劉興欽</h3>
+        <div class="yr">b. 1934 · Hengshan 橫山</div>
+        <p>A beloved Taiwanese cartoonist born in Dasyantio, Hengshan Township. Creator of the classic comic <strong>Asanko and Auntie Dashupo (《阿三哥與大嬸婆》)</strong>, set in his home region, his characters revived Neiwan into a bustling tourist town.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Seasons · 節慶與時令</div><h2>When Hsinchu County comes alive</h2></div>
+    <div class="lmk cc-north">
+      <div class="lmk-item">
+        <h3>Saisiyat Pasta'ay<span class="zh">賽夏族矮靈祭</span></h3>
+        <p>Held every two years around the 10th lunar month (with a grand version every ten years) at the Daai ground in Wufeng. A solemn, taboo-laden Indigenous ceremony honoring the spirits of the <em>Ta'ai</em> — one of Taiwan's most important Indigenous rituals.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Xinpu Persimmon Season<span class="zh">新埔柿餅季</span></h3>
+        <p>Autumn, roughly September to November, when racks of orange persimmons dry in the Jiujiang wind, drawing photographers from across Taiwan to Xinpu's farms.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Hakka Tung Blossom Festival<span class="zh">客家桐花祭</span></h3>
+        <p>Each spring, around April and May, the hills of Hakka townships like Hengshan, Beipu and Emei turn white with falling tung-tree blossoms — the "May snow" of Hakka country.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Yimin Festival<span class="zh">義民祭</span></h3>
+        <p>A major Hakka festival centered on the Xinpu Yimin Temple (founded 1786) in the seventh lunar month, honoring the "righteous martyrs," with water-lantern releases and a procession that rotates among fifteen worship-circle villages.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>Ground tea, persimmons and the bug-bitten brew</h2>
+      <p>Hsinchu County's table is deeply Hakka — and home to one of Taiwan's most prized teas.</p></div>
+    <div class="food cc-north">
+      <div class="food-item"><span class="em">🍵</span><div><h4>Beipu lei cha <span class="zh">北埔擂茶</span></h4><p>The county's signature: a nutty, savory ground-tea drink you can grind yourself in Beipu's old teahouses.</p><span class="town">Beipu 北埔</span></div></div>
+      <div class="food-item"><span class="em">🟠</span><div><h4>Xinpu dried persimmons <span class="zh">新埔柿餅</span></h4><p>Chewy, sweet, wind-dried autumn delicacies from Xinpu's century-old farms, made by the Jiujiang wind.</p><span class="town">Xinpu 新埔</span></div></div>
+      <div class="food-item"><span class="em">🍮</span><div><h4>Guanxi grass jelly <span class="zh">關西仙草</span></h4><p>Served hot or as iced jelly; Guanxi is the "hometown of grass jelly," prized for its fragrance.</p><span class="town">Guanxi 關西</span></div></div>
+      <div class="food-item"><span class="em">🐝</span><div><h4>Oriental Beauty tea <span class="zh">東方美人茶</span></h4><p>A honey-sweet, heavily oxidized oolong made from leaves nibbled by tea jassids — and Beipu and Emei are a genuine traditional home of it.</p><span class="town">Beipu・Emei 北埔・峨眉</span></div></div>
+      <div class="food-item"><span class="em">🥘</span><div><h4>Hakka stir-fry <span class="zh">客家小炒</span></h4><p>The classic Hakka dish of pork, dried squid, tofu and celery — salty, oily and deeply fragrant.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🍜</span><div><h4>Ban-tiao rice noodles <span class="zh">粄條</span></h4><p>Wide, slippery Hakka rice noodles, a staple across Beipu, Zhudong and Hengshan.</p><span class="town">Zhudong 竹東</span></div></div>
+      <div class="food-item"><span class="em">🥩</span><div><h4>Preserved-vegetable pork <span class="zh">梅干扣肉</span></h4><p>Braised pork belly with Hakka dried mustard greens — tender, savory and frugal in the best Hakka way.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🌿</span><div><h4>Neiwan ginger-flower zongzi <span class="zh">內灣野薑花粽</span></h4><p>Sticky-rice dumplings scented with locally grown wild ginger flower — a Neiwan specialty.</p><span class="town">Neiwan 內灣</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Hsinchu County is known for · 新竹縣的招牌</div><h2>Hakka towns, high mountains, tech overflow</h2></div>
+    <div class="kf cc-north">
+      <div class="kf-item"><span class="em">🏮</span><h4>Hakka heartland <span class="zh">客家原鄉</span></h4><p>Beipu old street, lei cha, Xinpu persimmons and Hakka market towns.</p></div>
+      <div class="kf-item"><span class="em">🐝</span><h4>Oriental Beauty tea <span class="zh">東方美人茶</span></h4><p>A genuine home of the honey-sweet, insect-bitten oolong.</p></div>
+      <div class="kf-item"><span class="em">🌄</span><h4>Saisiyat pasta'ay <span class="zh">矮靈祭</span></h4><p>The biennial Ritual of the Short Spirits in the Wufeng mountains.</p></div>
+      <div class="kf-item"><span class="em">🌲</span><h4>Atayal &amp; Smangus <span class="zh">泰雅與司馬庫斯</span></h4><p>The high-mountain "God's Tribe" and its giant cypress trees.</p></div>
+      <div class="kf-item"><span class="em">🏙️</span><h4>Zhubei boomtown <span class="zh">竹北新城</span></h4><p>The fast-growing science-park overflow city on the plain.</p></div>
+      <div class="kf-item"><span class="em">🎢</span><h4>Leofoo Village <span class="zh">六福村</span></h4><p>Guanxi's pioneering theme park and African safari.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-north" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Hsinchu County to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹新竹縣,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Hsinchu County." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Hsinchu County.<span class="zh">我來自新竹縣。</span></span></li>
-        <li><button class="say sm" data-say="Hsinchu County is in Northern Taiwan." aria-label="Hear sentence">🔊</button><span class="en">Hsinchu County is in Northern Taiwan.<span class="zh">新竹縣在臺灣北部。</span></span></li>
-        <li><button class="say sm" data-say="Hsinchu County is famous for Neiwan Old Street." aria-label="Hear sentence">🔊</button><span class="en">Hsinchu County is famous for Neiwan Old Street.<span class="zh">新竹縣以內灣老街聞名。</span></span></li>
+        <li><button class="say sm" data-say="Hsinchu County is one of Taiwan's great Hakka heartlands. Towns like Beipu and Guanxi are over ninety percent Hakka, and you can still hear the language on the street." aria-label="Hear">🔊</button><span class="en">Hsinchu County is one of Taiwan's great Hakka heartlands — towns like Beipu and Guanxi are over 90% Hakka, and you can still hear the language on the street.<span class="zh">新竹縣是台灣重要的客家原鄉之一——北埔、關西等鎮的客家人口超過九成,街頭至今仍聽得到客語。</span></span></li>
+        <li><button class="say sm" data-say="In Beipu Old Street, you can grind your own lei cha, a nutty, savory ground-tea drink, right next to a 19th-century frontier fort that is now a national monument." aria-label="Hear">🔊</button><span class="en">In Beipu Old Street, you can grind your own lei cha — a nutty, savory ground-tea drink — right next to a 19th-century frontier fort that's now a national monument.<span class="zh">在北埔老街,你可以親手磨擂茶——一種鹹香堅果風味的磨茶飲品——就在一座如今列為國定古蹟的十九世紀拓墾隘寮旁邊。</span></span></li>
+        <li><button class="say sm" data-say="This region is a true home of Oriental Beauty tea, a honey-sweet oolong made from leaves that have been nibbled by tiny insects." aria-label="Hear">🔊</button><span class="en">This region is a true home of Oriental Beauty tea, a honey-sweet oolong made from leaves that have been nibbled by tiny insects.<span class="zh">這個地區是東方美人茶真正的原鄉,這是一種帶蜜香的烏龍茶,由被小昆蟲叮咬過的茶葉製成。</span></span></li>
+        <li><button class="say sm" data-say="Up in the mountains live the Atayal village of Smangus and the Saisiyat people, whose Ritual of the Short Spirits is held only once every two years." aria-label="Hear">🔊</button><span class="en">Up in the mountains live the Atayal village of Smangus and the Saisiyat people, whose Ritual of the Short Spirits is held only once every two years.<span class="zh">高山上住著泰雅族的司馬庫斯部落與賽夏族,賽夏族的矮靈祭每兩年才舉行一次。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Neiwan Old Street<button class="say sm" data-say="Neiwan Old Street" aria-label="Hear Neiwan Old Street">🔊</button></h3>
-          <div class="zh">內灣老街</div>
-          <p>A mountain town reached by a branch railway, with an old theatre and cherry blossoms.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Beipu Old Street<button class="say sm" data-say="Beipu Old Street" aria-label="Hear Beipu Old Street">🔊</button></h3>
-          <div class="zh">北埔老街</div>
-          <p>One of Taiwan&#x27;s most history-packed Hakka old streets.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Hakka Lei-cha<button class="say sm" data-say="Hakka Lei-cha" aria-label="Hear Hakka Lei-cha">🔊</button></h3>
-          <div class="zh">客家擂茶</div>
-          <p>A ground-tea drink of tea, sesame, peanuts and grains visitors can grind by hand.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Hakka Culture<button class="say sm" data-say="Hakka Culture" aria-label="Hear Hakka Culture">🔊</button></h3>
-          <div class="zh">客家文化</div>
-          <p>A living centre of Hakka language, food and customs.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-north">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Hakka lei-cha &amp; persimmon cakes <button class="say sm" data-say="Hakka lei-cha &amp; persimmon cakes" aria-label="Hear food name">🔊</button> <span class="zh">· 客家擂茶與柿餅</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:新竹縣政府、文化部文化資產局、參山國家風景區管理處、客家委員會、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <a href="/counties/taoyuan/">← Taoyuan</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +285,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>

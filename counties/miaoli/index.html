@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Miaoli 苗栗縣 · Counties — Taiwan Bilingual Hub</title>
-<meta name="description" content="Miaoli (苗栗縣) — landmarks, food and culture, and how to say it in English. 山城與草莓之鄉,以木雕、溫泉、油桐花聞名的客家大縣。">
+<meta name="description" content="Miaoli County (苗栗縣) — a Hakka heartland of green hills, the Sanyi woodcarving capital, the old Mountain Line railway and Longteng Broken Bridge, Dahu strawberries and the Saisiyat Ritual of the Short Spirits. Its history, landmarks, culture, food, and how to say it in English. 客家山城苗栗的深度文化介紹。">
 <meta property="og:title" content="Miaoli 苗栗縣 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  /* rich county page extras (Miaoli = north / blue) */
+  .narr{max-width:760px;}
+  .narr p{font-size:18px;line-height:1.85;color:#2f3742;margin-bottom:16px;}
+  .narr p.zh{font-size:16.5px;line-height:1.95;color:var(--ink-soft);margin-bottom:24px;}
+  .narr strong{color:var(--cc-deep,#274b73);font-weight:700;}
+  .sec-head{margin:0 0 22px;}
+  .sec-head .lbl{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cc,#3f6fa3);margin-bottom:6px;}
+  .sec-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(26px,3.6vw,32px);font-weight:700;color:var(--ink);line-height:1.2;}
+  .sec-head p{margin-top:8px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:70ch;}
+
+  .lmk{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:760px){.lmk{grid-template-columns:1fr 1fr;}}
+  .lmk-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;border-top:5px solid var(--cc,#3f6fa3);}
+  .lmk-item h3{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;flex-wrap:wrap;}
+  .lmk-item h3 .zh{font-size:16px;color:var(--cc-deep,#274b73);font-weight:600;}
+  .lmk-item h3 .say{margin-left:auto;}
+  .lmk-item p{margin-top:10px;font-size:16.5px;color:var(--ink-soft);line-height:1.72;}
+  .lmk-item strong{color:var(--ink);font-weight:700;}
+
+  .ppl{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:760px){.ppl{grid-template-columns:1fr 1fr;}}
+  .ppl-card{background:var(--cc-soft,#eaeff5);border-radius:16px;padding:24px 26px;}
+  .ppl-card h3{font-size:20px;color:var(--cc-deep,#274b73);font-weight:700;}
+  .ppl-card .yr{font-size:14px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+  .ppl-card p{margin-top:10px;font-size:16px;color:#2f3742;line-height:1.72;}
+  .ppl-card strong{color:var(--ink);font-weight:700;}
+
+  .food{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.food{grid-template-columns:1fr 1fr;}}
+  .food-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .food-item .em{font-size:26px;flex:0 0 auto;}
+  .food-item h4{font-size:17px;color:var(--ink);font-weight:700;}
+  .food-item h4 .zh{color:var(--cc-deep,#274b73);font-weight:600;font-size:15px;}
+  .food-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .food-item strong{color:var(--ink);}
+  .food-item .town{display:inline-block;margin-top:7px;font-size:12.5px;font-weight:700;color:var(--cc,#3f6fa3);background:var(--cc-soft,#eaeff5);padding:3px 10px;border-radius:999px;}
+
+  .kf{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:680px){.kf{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.kf{grid-template-columns:1fr 1fr 1fr;}}
+  .kf-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-left:5px solid var(--cc,#3f6fa3);}
+  .kf-item .em{font-size:24px;}
+  .kf-item h4{font-size:17px;color:var(--ink);font-weight:700;margin-top:6px;}
+  .kf-item h4 .zh{color:var(--cc-deep,#274b73);font-weight:600;font-size:15px;}
+  .kf-item p{margin-top:5px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
+
+  .src{margin-top:14px;font-size:13.5px;color:var(--ink-soft);}
+</style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
@@ -27,72 +77,199 @@
     </nav>
   </div>
 </div>
+
 <header class="cty-band cc-north">
   <div class="wrap">
     <div class="cty-region">Northern Taiwan · 北部</div>
     <div class="cty-name">
       <h1>Miaoli</h1>
       <span class="zh">苗栗縣</span>
-      <button class="say" data-say="Miaoli" aria-label="Hear Miaoli in English">🔊</button>
+      <button class="say" data-say="Miaoli County" aria-label="Hear Miaoli in English">🔊</button>
     </div>
-    <p class="cty-pos">A mountain-and-strawberry county at the heart of Hakka Taiwan, famous for wood carving, hot springs and snowy tung blossoms.</p>
-    <p class="cty-pos-zh">山城與草莓之鄉,以木雕、溫泉、油桐花聞名的客家大縣。</p>
+    <p class="cty-pos">A Hakka heartland of green hills — the woodcarving town of Sanyi, an old mountain railway and its broken bridge, strawberry farms, and a mountain ritual to the short spirits.</p>
+    <p class="cty-pos-zh">青山環抱的客家原鄉——木雕之鄉三義、舊山線與它的斷橋、草莓園,與山中的矮靈祭。</p>
   </div>
 </header>
 
+<!-- IDENTITY & HISTORY -->
 <section class="section">
   <div class="wrap">
-    <div class="sayit cc-north">
+    <div class="sec-head"><div class="lbl">Identity &amp; History · 身世與歷史</div><h2>Hakka hills and a daring railway</h2></div>
+    <div class="narr">
+      <p>Miaoli's name comes from the Indigenous <strong>Taokas (道卡斯)</strong> people, who lived on this coastal plain long before Han settlers. Their word <em>Pali</em>, meaning roughly "plain," was first written by Hakka settlers as 貓貍 ("civet cat") for its sound, then replaced by the auspicious, agricultural <strong>苗栗 ("sprouts and chestnut-oak")</strong> used today.</p>
+      <p class="zh">苗栗的地名源自原住民<strong>道卡斯族(Taokas)</strong>,他們早在漢人之前便生活在這片濱海平原。其族語「Pali」大致意指「平原」,客家移民先依音寫成「貓貍」(意為果子狸),後改用較吉祥、帶農業意象的<strong>「苗栗」</strong>(禾苗與栗),沿用至今。</p>
+      <p>Miaoli is one of Taiwan's most strongly <strong>Hakka counties</strong> — about 60% of residents identify as Hakka, one of the highest shares anywhere. The pattern is geographic: the inland hill towns — Toufen, Touwu, Gongguan, Tongluo, Sanyi, Nanzhuang, Dahu — are heavily Hakka, while the coastal towns of Houlong and Tongxiao are more Hoklo, on land long tied to the Taokas. The eastern mountains are Indigenous: Tai'an is largely <strong>Atayal (泰雅族)</strong>, and Nanzhuang is home to Hakka, <strong>Saisiyat (賽夏族)</strong> and Atayal living side by side.</p>
+      <p class="zh">苗栗是全台客家色彩最濃的<strong>客家縣</strong>之一——約六成居民自認為客家人,比例位居全台前列。其分布有明顯地理性:內山客庄——頭份、頭屋、公館、銅鑼、三義、南庄、大湖——客家人口極高;後龍、通霄等沿海鄉鎮則福佬居多,此地自古與道卡斯族關係深厚。東側山區為原住民地帶:泰安以<strong>泰雅族</strong>為主,南庄則是客家、<strong>賽夏族</strong>與泰雅族共居之地。</p>
+      <p>For two centuries Miaoli was a resource frontier. Settlers pushed into the hills for camphor and tea, and in 1861 a local hand-dug a shallow oil well at <strong>Chuhuangkeng (出磺坑)</strong> — only two years after the world's first at Titusville, Pennsylvania — widely called the world's second-oldest oil field and one of the longest continuously producing. In the early 1900s the Japanese drove the west-coast trunk railway through Miaoli's steep terrain, producing the dramatic <strong>Old Mountain Line (舊山線)</strong>: <strong>Shengxing Station</strong>, the highest point on the whole line, and the brick-arched <strong>Longteng Bridge</strong>, toppled by the great earthquake of 1935 and standing broken ever since.</p>
+      <p class="zh">兩個世紀以來,苗栗是資源拓墾的前線。移民深入山區採樟製腦、種茶;1861 年,當地人在<strong>出磺坑</strong>徒手鑿出淺油井——距離美國賓州全球第一口油井僅僅兩年——普遍被稱為世界第二古老的油田,也是持續產油氣最久的油田之一。二十世紀初,日本人將縱貫鐵路推進苗栗的崎嶇地形,造就戲劇性的<strong>舊山線</strong>:全線最高點的<strong>勝興車站</strong>,以及磚拱的<strong>龍騰斷橋</strong>——1935 年大地震中崩毀,自此斷裂矗立至今。</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANDMARKS -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Landmarks &amp; Sights · 名勝景點</div><h2>What to see in Miaoli</h2></div>
+    <div class="lmk cc-north">
+      <div class="lmk-item">
+        <h3>Shengxing Station &amp; the Old Mountain Line<span class="zh">勝興車站・舊山線</span><button class="say sm" data-say="Shengxing Station and the Old Mountain Line" aria-label="Hear">🔊</button></h3>
+        <p>A wooden station opened in 1906, Shengxing was the <strong>highest point</strong> (about 402 m) on Taiwan's old west-coast main line until the line was rerouted in 1998. The preserved track between Shengxing and Longteng is now a popular <strong>rail-bike</strong> route through tunnels and viaducts.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Longteng Broken Bridge<span class="zh">龍騰斷橋</span><button class="say sm" data-say="Longteng Broken Bridge" aria-label="Hear">🔊</button></h3>
+        <p>Built in 1905–1906, these soaring red-brick arches across the Yutengping valley were <strong>destroyed by the April 1935 earthquake</strong>. The ruined piers were left standing and are now Miaoli's signature historic landmark.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Sanyi Wood Sculpture Museum<span class="zh">三義木雕博物館</span><button class="say sm" data-say="The Sanyi Wood Sculpture Museum" aria-label="Hear">🔊</button></h3>
+        <p>Opened in 1995 in Sanyi — <strong>Taiwan's woodcarving capital</strong> — this is the only public museum in Taiwan devoted entirely to wood sculpture, tracing the craft's local roots in the camphor-rich hills.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Nanzhuang Old Street<span class="zh">南庄老街・桂花巷</span><button class="say sm" data-say="Nanzhuang Old Street" aria-label="Hear">🔊</button></h3>
+        <p>A nostalgic Hakka-and-Saisiyat mountain town with Japanese-style wooden shophouses rebuilt after the 1935 quake. The narrow <strong>"Osmanthus Alley" (桂花巷)</strong> is famous for osmanthus treats, lei cha and Hakka snacks.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Dahu Strawberry Farms<span class="zh">大湖草莓・草莓文化館</span><button class="say sm" data-say="The Dahu strawberry farms" aria-label="Hear">🔊</button></h3>
+        <p>Dahu is <strong>Taiwan's strawberry capital</strong>, said to account for around 80% of the country's strawberry output. The Strawberry Cultural Center and pick-your-own farms draw crowds from roughly December through April.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Houlong Haowangjiao Cape<span class="zh">後龍好望角</span><button class="say sm" data-say="Houlong Haowangjiao Cape" aria-label="Hear">🔊</button></h3>
+        <p>A breezy clifftop cape on Miaoli's coast with a 360° viewing platform, sweeping sea views, giant <strong>wind turbines</strong> and the old coastal railway tunnels below — a favorite for sunsets.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Tongxiao Shrine<span class="zh">通霄神社</span><button class="say sm" data-say="Tongxiao Shrine" aria-label="Hear">🔊</button></h3>
+        <p>A rare surviving Japanese Shinto shrine built in 1937, later partly converted to a memorial hall. Damaged in the 1999 earthquake and restored, it sits on a hill with views over the seaside town of Tongxiao.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Mingde Reservoir<span class="zh">明德水庫</span><button class="say sm" data-say="Mingde Reservoir" aria-label="Hear">🔊</button></h3>
+        <p>A scenic reservoir in Touwu Township (dam completed 1970), ringed by hills and walking trails. It supplies Miaoli City's water and is a peaceful spot for boating and lakeside strolls.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Miaoli Hakka Round House<span class="zh">苗栗客家圓樓</span><button class="say sm" data-say="The Miaoli Hakka Round House" aria-label="Hear">🔊</button></h3>
+        <p>A modern round building in Houlong (opened 2014) inspired by the <em>tulou</em> round houses of Fujian, near the high-speed-rail zone, hosting Hakka cultural exhibitions and performances.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Xiangtian Lake (Nanzhuang)<span class="zh">向天湖</span><button class="say sm" data-say="Xiangtian Lake" aria-label="Hear">🔊</button></h3>
+        <p>A small mountain lake and the heart of the Southern <strong>Saisiyat</strong> community, home to the Museum of Saisiyat Folklore and the principal site of the biennial pasta'ay, the Ritual of the Short Spirits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Culture &amp; Heritage · 文化與工藝</div><h2>Carved camphor and mountain spirits</h2>
+      <p>Miaoli's culture is carved from camphor wood and woven from Hakka and Saisiyat traditions in the hills.</p></div>
+    <div class="ppl cc-north">
+      <div class="ppl-card">
+        <h3>🪵 Sanyi woodcarving &amp; Hakka life · 三義木雕與客家</h3>
+        <p><strong>Sanyi</strong> is Taiwan's woodcarving capital, a craft grown from the area's abundant aromatic <strong>camphor wood</strong>; local accounts trace it to around 1918, when a resident began carving weathered roots and burls, and it boomed into a world-known industry from the 1960s. Around it runs a deep Hakka world — floral cloth, lei cha, frugal savory cooking, mountain songs and the white "May snow" of tung blossoms.</p>
+      </div>
+      <div class="ppl-card">
+        <h3>🌄 The Saisiyat pasta'ay · 賽夏族矮靈祭</h3>
+        <p>The Saisiyat hold the <strong>pasta'ay (矮靈祭)</strong>, the Ritual to the Spirits of the Short People, commemorating the legendary <em>Ta'ai</em>. It is held <strong>every two years</strong>, with a grand edition every ten. The southern ritual centers on Xiangtian Lake in Nanzhuang, while the northern ritual is in Wufeng, Hsinchu — so the rite is shared between the two counties, not Miaoli's alone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMOUS PEOPLE -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Famous People · 苗栗名人</div><h2>A Hakka epic novelist and the carvers</h2></div>
+    <div class="ppl cc-north">
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>Li Qiao 李喬</h3>
+        <div class="yr">b. 1934 · Dahu 大湖</div>
+        <p>Born in Dahu, Li Qiao is a major Hakka novelist and cultural critic, best known for his epic <strong>"Cold Night Trilogy" (《寒夜三部曲》)</strong> depicting Hakka pioneer life in the Miaoli hills. He stands among Taiwan's great Hakka epic novelists.</p>
+      </div>
+      <div class="ppl-card" style="background:#fff;border:1px solid var(--line);">
+        <h3>The Sanyi woodcarvers 三義木雕師傅</h3>
+        <div class="yr">a living craft lineage</div>
+        <p>Beyond any single name, Sanyi's generations of <strong>master woodcarvers</strong> are themselves a celebrated living heritage. Their chisels — shaping camphor and other woods into temple figures, birds and abstract art — have made "Sanyi" almost a synonym for Taiwanese woodcarving.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Festivals &amp; Seasons · 節慶與時令</div><h2>When Miaoli comes alive</h2></div>
+    <div class="lmk cc-north">
+      <div class="lmk-item">
+        <h3>Saisiyat Pasta'ay<span class="zh">賽夏族矮靈祭</span></h3>
+        <p>Held every two years (a grand version every ten) around the tenth lunar month, the southern ritual centers on Xiangtian Lake in Nanzhuang. A solemn ceremony honoring the spirits of the <em>Ta'ai</em>, and one of Taiwan's most important Indigenous rituals.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Dahu Strawberry Season<span class="zh">大湖草莓季</span></h3>
+        <p>Roughly December through April, when Dahu's hillside farms open for pick-your-own strawberries and the Strawberry Cultural Center fills with strawberry treats of every kind.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Hakka Tung Blossom Festival<span class="zh">客家桐花祭</span></h3>
+        <p>Each April and May, white tung blossoms fall like "May snow" across the Hakka hills, with Miaoli one of the heartlands of this springtime celebration.</p>
+      </div>
+      <div class="lmk-item">
+        <h3>Bombing the Dragon<span class="zh">苗栗𪹚龍(火旁龍)</span></h3>
+        <p>A Hakka Lantern-Festival event in Miaoli City, in which a firecracker-laden paper dragon dances through showers of exploding firecrackers — counted among Taiwan's great Lantern Festival traditions: "sky lanterns in the north, dragon-bombing in the center."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">Food Culture · 美食文化</div><h2>Strawberries and the Hakka table</h2>
+      <p>Miaoli's food runs from Dahu's berry fields to the hearty, frugal Hakka kitchens of the hill towns.</p></div>
+    <div class="food cc-north">
+      <div class="food-item"><span class="em">🍓</span><div><h4>Dahu strawberries <span class="zh">大湖草莓</span></h4><p>Taiwan's strawberry capital — fresh berries plus jam, cakes, ice cream, mochi, even strawberry sausage and wine.</p><span class="town">Dahu 大湖</span></div></div>
+      <div class="food-item"><span class="em">🥘</span><div><h4>Hakka stir-fry <span class="zh">客家小炒</span></h4><p>The signature Hakka dish — dried tofu, squid, pork belly and celery stir-fried into a savory, intensely flavored plate.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🍜</span><div><h4>Ban-tiao rice noodles <span class="zh">粄條</span></h4><p>Wide, slippery rice noodles served in soup or dry with fried shallots and pork — a Hakka staple.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🥩</span><div><h4>Preserved-mustard pork <span class="zh">梅干扣肉</span></h4><p>Braised pork belly with dried preserved mustard greens — savory, tender, the essence of Hakka pickling.</p><span class="town">Countywide 全縣</span></div></div>
+      <div class="food-item"><span class="em">🍵</span><div><h4>Lei cha <span class="zh">擂茶</span></h4><p>A Hakka "ground tea" of tea leaves, sesame, peanuts and grains ground and mixed with hot water — savory, nutty, often with puffed rice.</p><span class="town">Nanzhuang 南庄</span></div></div>
+      <div class="food-item"><span class="em">🟣</span><div><h4>Gongguan taro &amp; red yeast <span class="zh">公館芋頭・紅糟</span></h4><p>Gongguan is known for taro and for red yeast (紅糟) used in marinades, along with preserved mustard greens and red dates.</p><span class="town">Gongguan 公館</span></div></div>
+      <div class="food-item"><span class="em">🥟</span><div><h4>Crystal dumplings <span class="zh">水晶餃</span></h4><p>A Hakka specialty with translucent, chewy wrappers around a savory pork-and-shallot filling, served in soup.</p><span class="town">Miaoli City 苗栗市</span></div></div>
+      <div class="food-item"><span class="em">🌼</span><div><h4>Nanzhuang osmanthus treats <span class="zh">南庄桂花</span></h4><p>Osmanthus jelly, drinks and pastries from Osmanthus Alley, alongside Hakka snacks and Saisiyat mountain produce like millet.</p><span class="town">Nanzhuang 南庄</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWN FOR -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div class="lbl">What Miaoli is known for · 苗栗的招牌</div><h2>Hakka hills, carved wood, old rails</h2></div>
+    <div class="kf cc-north">
+      <div class="kf-item"><span class="em">🏮</span><h4>Hakka heartland <span class="zh">客家大本營</span></h4><p>One of Taiwan's most Hakka counties, alive with language, food and song.</p></div>
+      <div class="kf-item"><span class="em">🪵</span><h4>Sanyi woodcarving <span class="zh">三義木雕</span></h4><p>Taiwan's woodcarving capital, carving camphor for over a century.</p></div>
+      <div class="kf-item"><span class="em">🚂</span><h4>The Old Mountain Line <span class="zh">舊山線</span></h4><p>Shengxing Station and the broken arches of Longteng Bridge.</p></div>
+      <div class="kf-item"><span class="em">🍓</span><h4>Dahu strawberries <span class="zh">大湖草莓</span></h4><p>The country's strawberry capital, with winter pick-your-own farms.</p></div>
+      <div class="kf-item"><span class="em">🌄</span><h4>Saisiyat pasta'ay <span class="zh">矮靈祭</span></h4><p>The biennial Ritual of the Short Spirits at Xiangtian Lake.</p></div>
+      <div class="kf-item"><span class="em">👒</span><h4>Yuanli rush-weaving <span class="zh">苑裡藺草編織</span></h4><p>A 300-year tradition of weaving rush into hats and mats.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAY IT IN ENGLISH -->
+<section class="section alt" style="background:#fafbfd;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sayit cc-north" style="max-width:none;">
       <h2>Say it in English 🔊</h2>
-      <p class="lead">Tap 🔊 to hear it — then try saying it yourself. 點 🔊 聽聽看,再開口說說看。</p>
+      <p class="lead">Introduce Miaoli to a visitor — tap 🔊 to hear each sentence. 用英文向訪客介紹苗栗,點 🔊 聽聽看。</p>
       <ul>
-        <li><button class="say sm" data-say="I&#x27;m from Miaoli." aria-label="Hear sentence">🔊</button><span class="en">I&#x27;m from Miaoli.<span class="zh">我來自苗栗縣。</span></span></li>
-        <li><button class="say sm" data-say="Miaoli is in Northern Taiwan." aria-label="Hear sentence">🔊</button><span class="en">Miaoli is in Northern Taiwan.<span class="zh">苗栗縣在臺灣北部。</span></span></li>
-        <li><button class="say sm" data-say="Miaoli is famous for Sanyi Wood Carving." aria-label="Hear sentence">🔊</button><span class="en">Miaoli is famous for Sanyi Wood Carving.<span class="zh">苗栗縣以三義木雕聞名。</span></span></li>
+        <li><button class="say sm" data-say="Miaoli is one of Taiwan's great Hakka heartlands, a county of green hills, strawberry farms and old railway towns." aria-label="Hear">🔊</button><span class="en">Miaoli is one of Taiwan's great Hakka heartlands, a county of green hills, strawberry farms and old railway towns.<span class="zh">苗栗是台灣最重要的客家大本營之一,是一個有著青山、草莓園與老鐵道小鎮的縣份。</span></span></li>
+        <li><button class="say sm" data-say="The town of Sanyi is Taiwan's woodcarving capital, where craftsmen have shaped fragrant camphor wood for over a century." aria-label="Hear">🔊</button><span class="en">The town of Sanyi is Taiwan's woodcarving capital, where craftsmen have shaped fragrant camphor wood for over a century.<span class="zh">三義是台灣的木雕之鄉,工匠們雕琢芬芳的樟木已超過一個世紀。</span></span></li>
+        <li><button class="say sm" data-say="Don't miss the Old Mountain Line, the wooden Shengxing Station and the broken red-brick arches of Longteng Bridge, toppled by a 1935 earthquake." aria-label="Hear">🔊</button><span class="en">Don't miss the Old Mountain Line — the wooden Shengxing Station and the broken red-brick arches of Longteng Bridge, toppled by a 1935 earthquake.<span class="zh">別錯過舊山線——木造的勝興車站,以及在 1935 年地震中崩毀的龍騰斷橋紅磚拱。</span></span></li>
+        <li><button class="say sm" data-say="In winter, families flock to Dahu to pick their own strawberries, while every spring the hills turn white with Hakka tung blossoms." aria-label="Hear">🔊</button><span class="en">In winter, families flock to Dahu to pick their own strawberries, while every spring the hills turn white with Hakka tung blossoms.<span class="zh">冬天,一家大小湧入大湖採草莓;每到春天,山頭則被客家桐花染成一片雪白。</span></span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- nav -->
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head"><h2>What makes it special</h2><p>在地特色</p></div>
-    <div class="cty-feats">
-        <div class="cty-feat">
-          <h3>Sanyi Wood Carving<button class="say sm" data-say="Sanyi Wood Carving" aria-label="Hear Sanyi Wood Carving">🔊</button></h3>
-          <div class="zh">三義木雕</div>
-          <p>A town world-renowned for its wood-carving art and workshops.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Dahu Strawberries<button class="say sm" data-say="Dahu Strawberries" aria-label="Hear Dahu Strawberries">🔊</button></h3>
-          <div class="zh">大湖草莓</div>
-          <p>Taiwan&#x27;s strawberry capital, where families pick fresh berries.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Tung Blossoms<button class="say sm" data-say="Tung Blossoms" aria-label="Hear Tung Blossoms">🔊</button></h3>
-          <div class="zh">油桐花</div>
-          <p>Each early summer the hills turn white with tung flowers.</p>
-        </div>
-        <div class="cty-feat">
-          <h3>Hakka Culture<button class="say sm" data-say="Hakka Culture" aria-label="Hear Hakka Culture">🔊</button></h3>
-          <div class="zh">客家文化</div>
-          <p>A strong centre of Hakka traditions and home-style cooking.</p>
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="cty-food cc-north">
-      <span class="ic">🍴</span>
-      <div class="t"><strong>Signature food:</strong> Hakka braised pork <button class="say sm" data-say="Hakka braised pork" aria-label="Hear food name">🔊</button> <span class="zh">· 客家梅干扣肉</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
+    <p class="src">Sources · 資料來源:苗栗縣政府、文化部、客家委員會、參山國家風景區管理處、維基百科等公開資料整理。</p>
     <div class="cty-nav">
       <a href="/counties/hsinchu-city/">← Hsinchu City</a>
       <a class="all" href="/counties/">All counties 各縣市</a>
@@ -108,6 +285,7 @@
     <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
   </div>
 </footer>
+
 <script src="/assets/js/say.js"></script>
 </body>
 </html>
