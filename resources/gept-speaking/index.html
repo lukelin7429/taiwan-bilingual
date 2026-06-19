@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GEPT Speaking Practice · 全民英檢口說訓練 — Taiwan Bilingual Hub</title>
+<meta name="description" content="Practise GEPT speaking questions (Elementary & Intermediate) — hear each question, answer it yourself, then watch a model answer. 全民英檢口說練習:聽題目、自己回答、再看示範答案。">
+<meta property="og:title" content="GEPT Speaking Practice · 全民英檢口說訓練">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/county.css">
+<style>
+  .pg-band{background:linear-gradient(135deg,#1a4d6e 0%,#0a6e8a 70%,#0e7f86 100%);color:#fff;padding:50px 0 52px;position:relative;overflow:hidden;}
+  .pg-band::before{content:"";position:absolute;top:-120px;right:-100px;width:420px;height:420px;background:radial-gradient(circle,rgba(255,255,255,.10) 0%,transparent 70%);}
+  .pg-band .eyebrow{font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#bfe6ee;margin-bottom:12px;}
+  .pg-band h1{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(32px,5vw,48px);font-weight:600;line-height:1.08;position:relative;z-index:1;}
+  .pg-band .sub{margin-top:14px;font-size:19px;color:#e6f5f8;max-width:62ch;position:relative;z-index:1;}
+  .pg-band .sub-zh{margin-top:6px;font-size:16.5px;color:#cfeaf0;max-width:56ch;line-height:1.8;position:relative;z-index:1;}
+
+  .g-how{display:grid;grid-template-columns:1fr;gap:14px;max-width:920px;margin-top:6px;}
+  @media(min-width:680px){.g-how{grid-template-columns:repeat(3,1fr);}}
+  .g-step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;border-top:4px solid #0a6e8a;}
+  .g-step .n{font-family:'Playfair Display',serif;font-weight:800;color:#0a6e8a;font-size:15px;}
+  .g-step h3{font-size:17px;color:var(--ink);margin:4px 0 2px;}
+  .g-step p{font-size:15px;color:var(--ink-soft);line-height:1.55;}
+
+  .g-controls{position:sticky;top:57px;z-index:30;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:14px 0;}
+  .g-tabs{display:flex;gap:10px;flex-wrap:wrap;}
+  .g-tab{font-size:16px;font-weight:700;color:var(--ink-soft);background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:9px 22px;cursor:pointer;transition:all .15s;}
+  .g-tab:hover{border-color:#0a6e8a;color:#0a6e8a;}
+  .g-tab.on{background:#0a6e8a;color:#fff;border-color:#0a6e8a;}
+  .g-tab small{font-weight:500;opacity:.85;margin-left:4px;}
+  .g-search{position:relative;max-width:520px;margin-top:12px;}
+  .g-search input{width:100%;font-size:17px;font-family:inherit;color:var(--ink);padding:12px 16px 12px 44px;border:1.5px solid var(--line);border-radius:999px;outline:none;transition:border-color .2s;}
+  .g-search input:focus{border-color:#0a6e8a;}
+  .g-search .mag{position:absolute;left:16px;top:50%;transform:translateY(-50%);font-size:17px;color:var(--ink-soft);}
+  .g-count{margin-top:8px;font-size:14px;color:var(--ink-soft);}
+  .g-count b{color:#0a6e8a;}
+
+  .g-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:6px;}
+  @media(min-width:620px){.g-grid{grid-template-columns:1fr 1fr;}}
+  @media(min-width:980px){.g-grid{grid-template-columns:1fr 1fr 1fr;}}
+  .g-card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s;--cc:#0a6e8a;}
+  .g-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
+  .g-q{padding:18px 20px 14px;display:flex;align-items:flex-start;gap:10px;}
+  .g-q .num{flex:0 0 auto;width:30px;height:30px;border-radius:8px;background:#e3f1f5;color:#0a6e8a;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;}
+  .g-q .tx{flex:1;font-size:17.5px;font-weight:600;color:var(--ink);line-height:1.4;}
+  .g-q .say{flex:0 0 auto;margin-top:2px;}
+  .g-thumb{position:relative;aspect-ratio:16/9;background:#08201a;cursor:pointer;overflow:hidden;border-top:1px solid var(--line);}
+  .g-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .g-thumb .pl{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:8px;flex-direction:column;color:#fff;background:rgba(8,20,16,.34);transition:background .18s;}
+  .g-thumb .pl .ico{font-size:30px;}
+  .g-thumb .pl .lab{font-size:13px;font-weight:700;letter-spacing:.03em;background:rgba(0,0,0,.35);padding:3px 12px;border-radius:999px;}
+  .g-thumb:hover .pl{background:rgba(8,20,16,.16);}
+  .g-thumb iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+
+  .g-more{text-align:center;margin-top:30px;}
+  .g-more button{font-size:16px;font-weight:700;color:#fff;background:#0a6e8a;border:0;border-radius:999px;padding:13px 30px;cursor:pointer;}
+  .g-more button:hover{background:#0e7f86;}
+  .g-empty{text-align:center;color:var(--ink-soft);font-size:17px;padding:40px 0;display:none;}
+  .g-credit{margin-top:28px;font-size:14.5px;color:var(--ink-soft);border-left:3px solid var(--line);padding-left:14px;line-height:1.7;}
+  @media(max-width:760px){.g-controls{top:56px;}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
+    <nav class="topbar-nav">
+      <a href="/">Home</a>
+      <a href="/bilingual-2030/">Bilingual 2030</a>
+      <a href="/counties/">Counties</a>
+      <a href="/schools/">Schools</a>
+      <a href="/partners/">Partners</a>
+      <a href="/resources/" aria-current="page">Resources</a>
+      <a href="https://changhua-bilingual.org/">Changhua Hub ↗</a>
+    </nav>
+  </div>
+</div>
+
+<header class="pg-band">
+  <div class="wrap">
+    <div class="eyebrow">Resources · GEPT Speaking · 全民英檢口說訓練</div>
+    <h1>GEPT Speaking Practice</h1>
+    <p class="sub">Real GEPT speaking questions with model answers — for the Elementary and Intermediate levels. Hear the question, answer it out loud yourself, then watch the model answer.</p>
+    <p class="sub-zh">全民英檢真實口說題目與示範答案,涵蓋初級與中級。聽題目、自己大聲回答,再看示範答案。</p>
+  </div>
+</header>
+
+<section class="section" style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="g-how">
+      <div class="g-step"><div class="n">STEP 1</div><h3>🔊 Hear the question</h3><p>Tap the speaker to hear the question read aloud. 點喇叭聽題目。</p></div>
+      <div class="g-step"><div class="n">STEP 2</div><h3>🗣️ Answer it yourself</h3><p>Say your own answer out loud before watching. 先自己大聲回答。</p></div>
+      <div class="g-step"><div class="n">STEP 3</div><h3>▶ Watch the model</h3><p>Play the clip to compare with a model answer. 播放影片對照示範答案。</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="g-controls">
+  <div class="wrap">
+    <div class="g-tabs">
+      <button class="g-tab on" data-lvl="elementary">Elementary <small>初級</small></button>
+      <button class="g-tab" data-lvl="intermediate">Intermediate <small>中級</small></button>
+    </div>
+    <div class="g-search">
+      <span class="mag">🔍</span>
+      <input id="gq" type="search" placeholder="Search a question… 搜尋題目關鍵字" autocomplete="off" aria-label="Search questions">
+    </div>
+    <div class="g-count" id="gcount"></div>
+  </div>
+</div>
+
+<section class="section" style="padding-top:24px;">
+  <div class="wrap">
+    <div class="g-grid" id="ggrid"></div>
+    <div class="g-empty" id="gempty">No questions match your search. 找不到符合的題目。</div>
+    <div class="g-more" id="gmore" style="display:none;"><button type="button" id="gmorebtn">Load more 載入更多</button></div>
+    <p class="g-credit" id="gcredit"></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p class="footer-brand">Taiwan Bilingual Hub · 臺灣雙語資源網</p>
+    <p class="footer-note">A teacher-led bilingual education effort supporting Taiwan's 2030 Bilingual Nation policy.<br>支援「2030 雙語國家」政策 · 由老師發起的雙語教育計畫。</p>
+    <p class="footer-sibling">Changhua schools: <a href="https://changhua-bilingual.org/">changhua-bilingual.org ↗</a></p>
+  </div>
+</footer>
+
+<script src="/assets/js/say.js"></script>
+<script>
+(function(){
+  var PAGE=30, DATA={}, level='elementary', q='', list=[], rendered=0;
+  var grid=document.getElementById('ggrid'),countEl=document.getElementById('gcount'),
+      emptyEl=document.getElementById('gempty'),moreWrap=document.getElementById('gmore');
+  function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+  function cardHTML(it,idx){
+    var qx=esc(it.q);
+    return '<article class="g-card">'
+      + '<div class="g-q"><span class="num">'+(idx+1)+'</span><span class="tx">'+qx+'</span>'
+      + '<button class="say sm" data-say="'+qx+'" aria-label="Hear question">🔊</button></div>'
+      + '<div class="g-thumb" data-v="'+esc(it.v)+'"><img src="https://i.ytimg.com/vi/'+esc(it.v)+'/mqdefault.jpg" loading="lazy" alt="">'
+      + '<span class="pl"><span class="ico">▶</span><span class="lab">Model answer 示範答案</span></span></div>'
+      + '</article>';
+  }
+  function apply(){
+    var src=DATA[level]||[];
+    list = q ? src.filter(function(it){return it.q.toLowerCase().indexOf(q)>=0;}) : src.slice();
+    rendered=0; grid.innerHTML='';
+    emptyEl.style.display=list.length?'none':'block';
+    countEl.innerHTML='<b>'+list.length+'</b> question'+(list.length===1?'':'s')+(q?' found':'')+' · 題';
+    more();
+  }
+  function more(){
+    var end=Math.min(rendered+PAGE,list.length),html='';
+    for(var i=rendered;i<end;i++) html+=cardHTML(list[i],i);
+    grid.insertAdjacentHTML('beforeend',html);
+    rendered=end; moreWrap.style.display=rendered<list.length?'block':'none';
+  }
+  document.querySelector('.g-tabs').addEventListener('click',function(e){
+    var b=e.target.closest('.g-tab'); if(!b)return;
+    level=b.getAttribute('data-lvl');
+    document.querySelectorAll('.g-tab').forEach(function(x){x.classList.toggle('on',x===b);});
+    apply();
+  });
+  var gi=document.getElementById('gq'),td;
+  gi.addEventListener('input',function(){clearTimeout(td);td=setTimeout(function(){q=gi.value.trim().toLowerCase();apply();},150);});
+  document.getElementById('gmorebtn').addEventListener('click',more);
+  grid.addEventListener('click',function(e){
+    var t=e.target.closest('.g-thumb'); if(!t||t.querySelector('iframe'))return;
+    var v=t.getAttribute('data-v');
+    t.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+v+'?autoplay=1&rel=0" title="GEPT model answer" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  });
+  fetch('/assets/data/gept.json').then(function(r){return r.json();}).then(function(d){
+    DATA=d;
+    document.getElementById('gcredit').innerHTML='Videos: <b>'+(d.elementary||[]).length+'</b> Elementary + <b>'+(d.intermediate||[]).length+'</b> Intermediate GEPT speaking questions, produced by teacher Luke Lin. ｜初級 '+(d.elementary||[]).length+' 題、中級 '+(d.intermediate||[]).length+' 題,由林吉祥老師製作。';
+    apply();
+  }).catch(function(){emptyEl.textContent='Could not load questions. 無法載入題目。';emptyEl.style.display='block';});
+})();
+</script>
+</body>
+</html>
