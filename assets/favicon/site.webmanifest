@@ -1,0 +1,19 @@
+{
+  "name": "Taiwan Bilingual Hub",
+  "short_name": "TBH",
+  "icons": [
+    {
+      "src": "/assets/favicon/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicon/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#007f78",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
