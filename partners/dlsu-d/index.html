@@ -9,8 +9,9 @@
 <link rel="manifest" href="/assets/favicon/site.webmanifest">
 <meta name="theme-color" content="#00703c">
 <title>De La Salle University–Dasmariñas (DLSU-D) — Taiwan Bilingual Hub</title>
-<meta name="description" content="De La Salle University–Dasmariñas High School (DLSU-D) — a Lasallian Catholic school in Cavite, Philippines, and My Culture Connect's partner institution in the Philippines. Together: language learning, cultural exchange, and educational excellence across the Pacific. 菲律賓拉薩爾大學達斯馬里納斯分校高中部，人師在菲律賓的夥伴機構。">
+<meta name="description" content="De La Salle University–Dasmariñas High School (DLSU-D), a Lasallian Catholic school in the Philippines, became a sister school of Chung Shih Vocational High School in Yuanlin, Changhua — a partnership arranged by My Culture Connect. 菲律賓拉薩爾大學高中部與彰化員林崇實高工締結姊妹校，由人師促成。">
 <meta property="og:title" content="De La Salle University–Dasmariñas (DLSU-D) — Taiwan Bilingual Hub">
+<meta property="og:image" content="https://i.ytimg.com/vi/nHXZsvoPG7c/hqdefault.jpg">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,6 +51,31 @@
   .u-card p.zh{font-size:16.5px;line-height:1.9;}
   .u-card p:last-child{margin-bottom:0;}
   .u-card strong{color:var(--dls-deep);font-weight:700;}
+
+  /* featured videos */
+  .u-feature{display:grid;grid-template-columns:1fr;gap:24px;margin-top:26px;}
+  @media(min-width:820px){.u-feature{grid-template-columns:1.3fr 1fr;}}
+  .u-feat-card{display:block;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm);background:#fff;transition:transform .25s ease,box-shadow .25s ease;}
+  .u-feat-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+  .u-feat-thumb{position:relative;aspect-ratio:16/9;background:var(--dls-deep);}
+  .u-feat-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .u-feat-thumb .pp{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:46px;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.5);}
+  .u-feat-body{padding:20px 24px 22px;}
+  .u-feat-body .k{font-size:12.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--dls);}
+  .u-feat-body h3{font-family:'Playfair Display','PingFang TC',serif;font-size:23px;color:var(--ink);margin-top:6px;line-height:1.2;}
+  .u-feat-body p{font-size:16.5px;color:var(--ink-soft);margin-top:8px;line-height:1.7;}
+
+  /* video wall */
+  .u-wall{display:grid;grid-template-columns:repeat(1,1fr);gap:18px;margin-top:26px;}
+  @media(min-width:680px){.u-wall{grid-template-columns:repeat(3,1fr);}}
+  .vid{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow-sm);text-decoration:none;transition:transform .22s ease,box-shadow .22s ease;}
+  .vid:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+  .vid-thumb{position:relative;aspect-ratio:16/9;background:var(--dls-deep);display:block;}
+  .vid-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .vid-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:30px;color:#fff;opacity:.92;text-shadow:0 2px 12px rgba(0,0,0,.55);transition:transform .22s ease;}
+  .vid:hover .vid-play{transform:scale(1.18);}
+  .vid-name{font-size:16.5px;font-weight:700;color:var(--ink);padding:13px 14px 2px;line-height:1.25;}
+  .vid-role{font-size:13.5px;color:var(--dls);font-weight:600;padding:0 14px 14px;}
 
   /* programs */
   .u-progs{display:grid;grid-template-columns:1fr;gap:18px;margin-top:26px;}
@@ -97,16 +123,16 @@
     <h1>De La Salle University–Dasmariñas</h1>
     <div class="zh">拉薩爾大學達斯馬里納斯分校 · 高中部（DLSU-D）</div>
     <div class="tagline">"Empower your child's global journey."</div>
-    <p class="sub">The High School of <strong>De La Salle University–Dasmariñas</strong> — a Lasallian Catholic institution in Cavite, Philippines — educates Junior and Senior High students in the centuries-old De La Salle tradition of <strong>faith, service, and academic excellence</strong>. It is My Culture Connect's partner institution in the Philippines.</p>
-    <p class="sub-zh"><strong>拉薩爾大學達斯馬里納斯分校（DLSU-D）</strong>高中部位於菲律賓甲米地省，是一所拉薩爾天主教學校，以延續數百年的「<strong>信仰、服務與學術卓越</strong>」傳統培育國中與高中學生，也是人師（MCC）在菲律賓的夥伴機構。</p>
-    <div class="u-stats"><span>📍 Dasmariñas, Cavite</span><span>⛪ Lasallian · Catholic</span><span>🎓 Junior &amp; Senior High</span><span>🌏 International programs</span></div>
+    <p class="sub">The High School of <strong>De La Salle University–Dasmariñas</strong> — a Lasallian Catholic institution in Cavite, Philippines — became a <strong>sister school of Chung Shih Vocational High School</strong> in Yuanlin, Changhua, in a partnership arranged by My Culture Connect: a signing ceremony, a calligraphy exchange, and warm coverage on local Taiwanese news.</p>
+    <p class="sub-zh"><strong>拉薩爾大學達斯馬里納斯分校（DLSU-D）</strong>高中部位於菲律賓甲米地省，是一所拉薩爾天主教學校。在人師（MCC）的促成下，DLSU-D 高中部與彰化<strong>員林崇實高工締結姊妹校</strong>：締約簽署、書法交流，並登上臺灣在地新聞。</p>
+    <div class="u-stats"><span>📍 Dasmariñas, Cavite</span><span>⛪ Lasallian · Catholic</span><span>🤝 Sister school of 崇實高工</span><span>🎬 5 videos</span></div>
   </div>
 </header>
 
 <section class="u-sec">
   <div class="wrap">
     <div class="u-label">Why we are partners · 為何結為夥伴</div>
-    <h2 class="u-h2">Across the Pacific, one purpose</h2>
+    <h2 class="u-h2">A friendship MCC built across the Pacific</h2>
     <div class="u-bi">
       <div class="u-card">
         <span class="tag">A shared mission · 共同的使命</span>
@@ -114,15 +140,52 @@
         <p class="zh">DLSU-D 與<strong>人師（MCC）</strong>是同一件事上的夥伴：<strong>語言學習、文化交流與教育卓越</strong>。雙方都相信，當學生遇見自身之外的世界，教育的視野才會真正開闊——也都在搭建讓這份相遇成真的橋樑。</p>
       </div>
       <div class="u-card">
-        <span class="tag">A Philippine bridge · 菲律賓的橋樑</span>
-        <p>The Philippines has long been one of the wellsprings of the warm, dedicated English educators who give Taiwan's students living English. As MCC's <strong>Lasallian partner institution</strong>, DLSU-D anchors that connection — a meeting of two values-driven schools committed to global, service-minded learning.</p>
-        <p class="zh">菲律賓長久以來是那些溫暖、敬業、為臺灣學生帶來「活的英文」的英語教育者的搖籃之一。作為人師的<strong>拉薩爾夥伴機構</strong>，DLSU-D 正是這份連結的支點——兩所同樣重視價值、致力於全球與服務導向學習的學校的相遇。</p>
+        <span class="tag">A sister school in Changhua · 彰化的姊妹校</span>
+        <p>It was MCC that brought the two schools together. DLSU-D High School and <strong>Chung Shih Vocational High School (員林崇實高工)</strong> in Yuanlin, Changhua signed a <strong>sister-school agreement</strong> — opening the door to student and cultural exchange between a Lasallian school in the Philippines and a vocational high school in central Taiwan.</p>
+        <p class="zh">是人師促成了兩校的相遇。DLSU-D 高中部與彰化<strong>員林崇實高工</strong>簽署<strong>姊妹校協議</strong>，為一所菲律賓拉薩爾學校與一所臺灣中部技職高中之間，開啟了學生與文化交流的大門。</p>
       </div>
     </div>
   </div>
 </section>
 
 <section class="u-sec alt">
+  <div class="wrap">
+    <div class="u-label">The Exchange · 姊妹校交流</div>
+    <h2 class="u-h2">Signed, celebrated, and shared on the news</h2>
+    <div class="u-feature">
+      <a class="u-feat-card" href="https://www.youtube.com/watch?v=nHXZsvoPG7c" target="_blank" rel="noopener">
+        <span class="u-feat-thumb"><img loading="lazy" src="https://i.ytimg.com/vi/nHXZsvoPG7c/hqdefault.jpg" alt="Sister-school signing ceremony between Chung Shih Vocational High School and DLSU-D"><span class="pp">▶</span></span>
+        <span class="u-feat-body"><span class="k">The Signing · 簽約儀式</span><h3>Sister-school signing ceremony</h3><p>Chung Shih Vocational High School and DLSU-D High School formally become sister schools. 員林崇實高工與菲律賓德拉薩大學高中部正式締結姊妹校。</p></span>
+      </a>
+      <a class="u-feat-card" href="https://www.youtube.com/watch?v=wREuzYG9zrs" target="_blank" rel="noopener">
+        <span class="u-feat-thumb"><img loading="lazy" src="https://i.ytimg.com/vi/wREuzYG9zrs/hqdefault.jpg" alt="Chinese calligraphy cultural exchange"><span class="pp">▶</span></span>
+        <span class="u-feat-body"><span class="k">Culture · 文化交流</span><h3>A calligraphy exchange</h3><p>Filipino students try Chinese calligraphy — culture shared brush to brush. 菲律賓學生體驗中華書法，以筆墨交流文化。</p></span>
+      </a>
+    </div>
+
+    <div class="u-label" style="margin-top:42px;">On the News · 在地報導</div>
+    <h2 class="u-h2">Yuanlin meets the Philippines, in three reports</h2>
+    <div class="u-wall">
+      <a class="vid" href="https://www.youtube.com/watch?v=8R2GdwpkM3w" target="_blank" rel="noopener">
+        <span class="vid-thumb"><img loading="lazy" src="https://i.ytimg.com/vi/8R2GdwpkM3w/hqdefault.jpg" alt="News report 1 on the Chung Shih–Philippines exchange"><span class="vid-play">▶</span></span>
+        <span class="vid-name">Exchange Report · 1</span>
+        <span class="vid-role">員林崇實高工 × 菲律賓高中交流</span>
+      </a>
+      <a class="vid" href="https://www.youtube.com/watch?v=-IQAVx1AdBI" target="_blank" rel="noopener">
+        <span class="vid-thumb"><img loading="lazy" src="https://i.ytimg.com/vi/-IQAVx1AdBI/hqdefault.jpg" alt="News report 2 on the Chung Shih–Philippines exchange"><span class="vid-play">▶</span></span>
+        <span class="vid-name">Exchange Report · 2</span>
+        <span class="vid-role">員林崇實高工 × 菲律賓高中交流</span>
+      </a>
+      <a class="vid" href="https://www.youtube.com/watch?v=Y7Z7vb2PZ7Q" target="_blank" rel="noopener">
+        <span class="vid-thumb"><img loading="lazy" src="https://i.ytimg.com/vi/Y7Z7vb2PZ7Q/hqdefault.jpg" alt="News report 3 on the Chung Shih–Philippines exchange"><span class="vid-play">▶</span></span>
+        <span class="vid-name">Exchange Report · 3</span>
+        <span class="vid-role">員林崇實高工 × 菲律賓高中交流</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="u-sec">
   <div class="wrap">
     <div class="u-label">Lasallian Identity · 拉薩爾精神</div>
     <h2 class="u-h2">Faith, service, and well-rounded formation</h2>
@@ -134,7 +197,7 @@
   </div>
 </section>
 
-<section class="u-sec">
+<section class="u-sec alt">
   <div class="wrap">
     <div class="u-label">What They Offer · 高中部提供</div>
     <h2 class="u-h2">A future-ready high school</h2>
@@ -149,7 +212,7 @@
   </div>
 </section>
 
-<section class="u-sec alt">
+<section class="u-sec">
   <div class="wrap">
     <div class="u-learn">
       <div class="globe">🇵🇭</div>
