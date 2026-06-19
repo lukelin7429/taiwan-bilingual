@@ -513,3 +513,46 @@ a.epac{color:var(--green);font-weight:700;border-bottom:1px solid rgba(30,132,73
   .eprofile{grid-template-columns:0.85fr 1.15fr;}
   .eagenda li{font-size:19px;}
 }
+
+/* ============================================================
+   reusable photo slideshow (.eshow) — Edward index / events
+   ============================================================ */
+.eshow{position:relative;border-radius:18px;overflow:hidden;background:#06243a;box-shadow:var(--shadow);outline:none;}
+.eshow:focus-visible{box-shadow:0 0 0 3px var(--gold),var(--shadow);}
+.eshow-track{display:flex;transition:transform .6s cubic-bezier(.22,.61,.36,1);will-change:transform;}
+.eshow-slide{flex:0 0 100%;position:relative;margin:0;background:#000;}
+.eshow-slide img{width:100%;height:100%;display:block;object-fit:cover;aspect-ratio:16/9;}
+.eshow-slide figcaption{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:42px 22px 18px;
+  background:linear-gradient(transparent,rgba(4,20,34,.9));
+  color:#fff;font-size:16px;font-weight:600;line-height:1.45;
+}
+.eshow-slide figcaption .tag{
+  display:inline-block;background:rgba(212,160,23,.95);color:var(--navy-deep);
+  padding:3px 10px;border-radius:5px;font-size:12px;font-weight:800;letter-spacing:.04em;
+  margin-bottom:8px;
+}
+.eshow-arrow{
+  position:absolute;top:50%;transform:translateY(-50%);z-index:3;
+  width:44px;height:44px;border-radius:50%;border:0;cursor:pointer;
+  background:rgba(255,255,255,.85);color:var(--navy-deep);
+  font-size:26px;line-height:1;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .2s,transform .15s;backdrop-filter:blur(4px);
+}
+.eshow-arrow:hover{background:#fff;}
+.eshow-arrow.prev{left:14px;} .eshow-arrow.next{right:14px;}
+.eshow-arrow:active{transform:translateY(-50%) scale(.92);}
+.eshow-dots{position:absolute;left:0;right:0;bottom:14px;z-index:3;display:flex;justify-content:center;gap:8px;}
+.eshow-dot{
+  width:9px;height:9px;border-radius:50%;border:0;cursor:pointer;padding:0;
+  background:rgba(255,255,255,.45);transition:background .2s,transform .2s;
+}
+.eshow-dot:hover{background:rgba(255,255,255,.75);}
+.eshow-dot.on{background:var(--gold);transform:scale(1.25);}
+@media(max-width:760px){
+  .eshow-slide figcaption{font-size:14.5px;padding:38px 16px 28px;}
+  .eshow-arrow{width:38px;height:38px;font-size:22px;}
+  .eshow-slide img{aspect-ratio:4/3;}
+}
