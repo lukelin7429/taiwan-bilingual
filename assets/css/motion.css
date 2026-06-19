@@ -1,0 +1,33 @@
+/* ============================================================
+   motion.css · sitewide hero/band motion layer
+   Drifting gradient orbs + staggered entrance for the jade
+   hub header band (.pg-band). Linked AFTER each page's inline
+   <style> so these rules win. County detail pages get the same
+   treatment via .cty-band in county.css; the homepage hero has
+   its own motion in main.css.
+   ============================================================ */
+.pg-band{position:relative;overflow:hidden;}
+
+/* drifting orbs (the existing ::before becomes orb 1; ::after is new) */
+.pg-band::before{animation:bandOrb1 17s ease-in-out infinite;}
+.pg-band::after{content:"";position:absolute;bottom:-150px;left:-80px;width:360px;height:360px;
+  border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.12) 0%,transparent 70%);
+  pointer-events:none;z-index:0;animation:bandOrb2 21s ease-in-out infinite;}
+@keyframes bandOrb1{0%,100%{transform:translate(0,0);}50%{transform:translate(-30px,28px);}}
+@keyframes bandOrb2{0%,100%{transform:translate(0,0);}50%{transform:translate(36px,-24px);}}
+
+/* staggered fade-up entrance for the band heading + subtitles */
+.pg-band .eyebrow,.pg-band h1,.pg-band .sub,.pg-band .sub-zh{
+  position:relative;z-index:1;opacity:0;transform:translateY(16px);
+  animation:bandUp .7s cubic-bezier(.2,.7,.2,1) forwards;
+}
+.pg-band .eyebrow{animation-delay:.05s;}
+.pg-band h1{animation-delay:.15s;}
+.pg-band .sub{animation-delay:.30s;}
+.pg-band .sub-zh{animation-delay:.40s;}
+@keyframes bandUp{to{opacity:1;transform:none;}}
+
+@media (prefers-reduced-motion: reduce){
+  .pg-band::before,.pg-band::after{animation:none;}
+  .pg-band .eyebrow,.pg-band h1,.pg-band .sub,.pg-band .sub-zh{opacity:1;transform:none;animation:none;}
+}
