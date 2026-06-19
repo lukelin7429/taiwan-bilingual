@@ -16,9 +16,21 @@
   :root{ --indigo:#0a1f5c; --indigo-2:#15307f; --indigo-soft:#eaedf6; --amber:#d4791a; --gold:#d4a017; }
   /* hero */
   .d-hero{background:linear-gradient(135deg,var(--indigo) 0%,#15307f 58%,#1c3f9c 100%);color:#fff;position:relative;overflow:hidden;padding:54px 0 56px;}
-  .d-hero::before{content:"";position:absolute;top:-120px;right:-100px;width:440px;height:440px;background:radial-gradient(circle,rgba(255,210,120,.18) 0%,transparent 70%);}
+  .d-hero::before{content:"";position:absolute;top:-120px;right:-100px;width:440px;height:440px;background:radial-gradient(circle,rgba(255,210,120,.18) 0%,transparent 70%);animation:dheroOrb1 17s ease-in-out infinite;}
+  .d-hero::after{content:"";position:absolute;bottom:-150px;left:-70px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.09) 0%,transparent 70%);pointer-events:none;z-index:0;animation:dheroOrb2 21s ease-in-out infinite;}
+  @keyframes dheroOrb1{0%,100%{transform:translate(0,0);}50%{transform:translate(-28px,24px);}}
+  @keyframes dheroOrb2{0%,100%{transform:translate(0,0);}50%{transform:translate(34px,-20px);}}
   .d-hero-grid{display:grid;grid-template-columns:1fr;gap:34px;align-items:center;position:relative;z-index:1;}
   @media(min-width:860px){.d-hero-grid{grid-template-columns:1.2fr 320px;gap:48px;}}
+  /* staggered entrance */
+  .d-badge,.d-hero h1,.d-hero .zh,.d-hero .role-en,.d-hero .role-zh{opacity:0;transform:translateY(16px);animation:dheroUp .7s cubic-bezier(.2,.7,.2,1) forwards;}
+  .d-badge{animation-delay:.05s;}
+  .d-hero h1{animation-delay:.18s;}
+  .d-hero .zh{animation-delay:.26s;}
+  .d-hero .role-en{animation-delay:.36s;}
+  .d-hero .role-zh{animation-delay:.44s;}
+  @keyframes dheroUp{to{opacity:1;transform:none;}}
+  @media(prefers-reduced-motion:reduce){.d-hero::before,.d-hero::after{animation:none;}.d-badge,.d-hero h1,.d-hero .zh,.d-hero .role-en,.d-hero .role-zh{opacity:1;transform:none;animation:none;}}
   .d-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,210,120,.16);color:#ffd27a;padding:7px 15px;border-radius:999px;font-size:13.5px;font-weight:700;letter-spacing:.03em;margin-bottom:16px;}
   .d-hero h1{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(40px,6vw,60px);font-weight:700;line-height:1.02;}
   .d-hero .zh{font-size:24px;font-weight:500;color:#dfe4f3;margin-top:6px;}

@@ -80,7 +80,7 @@ a:hover{color:var(--jade);}
 @keyframes heroOrb2{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,-26px)}}
 
 .hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr;gap:40px;align-items:center;}
-@media(min-width:900px){.hero-inner{grid-template-columns:1.04fr .96fr;gap:52px;}}
+@media(min-width:900px){.hero-inner{grid-template-columns:1.04fr .96fr;gap:52px;align-items:stretch;}}
 
 /* staggered entrance for the copy */
 .hero-copy>*{opacity:0;transform:translateY(18px);animation:heroUp .7s cubic-bezier(.2,.7,.2,1) forwards;}
@@ -127,23 +127,41 @@ a:hover{color:var(--jade);}
 .hero-cta2 .arr{display:inline-block;transition:transform .18s;}
 .hero-cta2:hover .arr{transform:translateX(5px);}
 
-/* Taiwan island emblem (right side) */
-.hero-art{position:relative;min-height:380px;display:none;}
-@media(min-width:900px){.hero-art{display:flex;align-items:center;justify-content:center;}}
-.hero-map{position:relative;width:100%;max-width:330px;animation:heroFloat 9s ease-in-out infinite;}
-.hero-map::before{content:"";position:absolute;inset:-14% -10%;z-index:0;
-  background:radial-gradient(circle at 55% 45%, rgba(47,93,79,.30) 0%, rgba(47,93,79,0) 66%);
-  animation:islePulse 6.5s ease-in-out infinite;}
-.hero-isle{position:relative;z-index:1;width:100%;height:auto;display:block;
-  filter:drop-shadow(0 24px 36px rgba(31,67,56,.32));}
-.hero-isle path{fill:url(#isleGrad);stroke:rgba(255,255,255,.45);stroke-width:.4;vector-effect:non-scaling-stroke;}
-.hero-isle-label{position:absolute;z-index:2;right:2%;top:18%;font-size:13px;font-weight:700;
-  letter-spacing:.16em;text-transform:uppercase;color:var(--jade);writing-mode:vertical-rl;opacity:.7;}
-@keyframes heroFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-14px);}}
-@keyframes islePulse{0%,100%{opacity:.65;transform:scale(1);}50%{opacity:1;transform:scale(1.05);}}
+/* Taiwan landscape photo panel (right side, hero) */
+.hero-art{position:relative;display:none;}
+@media(min-width:900px){.hero-art{display:block;}}
+.hero-photo{
+  position:relative;width:100%;height:100%;
+  border-radius:18px;overflow:hidden;
+  box-shadow:0 28px 70px -18px rgba(31,67,56,.38);
+  min-height:340px;
+}
+.hero-photo img{
+  width:100%;height:100%;
+  object-fit:cover;object-position:center 42%;
+  display:block;
+  animation:kenBurns 18s ease-in-out infinite;
+}
+.hero-photo-scrim{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(to top,rgba(0,0,0,.58) 0%,rgba(0,0,0,.18) 50%,transparent 100%);
+  padding:14px 18px;
+}
+.hero-photo-caption{
+  color:rgba(255,255,255,.92);
+  font-family:'Lato','PingFang TC',sans-serif;
+  font-size:12.5px;font-weight:700;
+  letter-spacing:.09em;text-transform:uppercase;
+  margin:0;
+}
+@keyframes kenBurns{
+  0%,100%{transform:scale(1) translate(0,0);}
+  50%{transform:scale(1.08) translate(-10px,5px);}
+}
 
 @media (prefers-reduced-motion: reduce){
-  .hero::before,.hero::after,.hero-map,.hero-map::before{animation:none;}
+  .hero::before,.hero::after{animation:none;}
+  .hero-photo img{animation:none;}
   .hero-copy>*{opacity:1;transform:none;animation:none;}
 }
 
