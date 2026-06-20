@@ -37,9 +37,11 @@ a:hover{color:var(--jade);}
   padding:14px 0;
   position:sticky;top:0;z-index:50;
   backdrop-filter:blur(8px);
+  overflow:visible;
 }
 .topbar-inner{
   display:flex;align-items:center;justify-content:space-between;gap:18px;
+  position:relative;
 }
 .topbar-name{
   font-family:'Playfair Display','PingFang TC',serif;
@@ -62,6 +64,62 @@ a:hover{color:var(--jade);}
 }
 .topbar-nav a:hover{color:var(--jade-deep);}
 .topbar-nav a[aria-current="page"]{color:var(--jade-deep);font-weight:700;}
+
+/* ---- hamburger (mobile only) ---- */
+.nav-toggle{
+  display:none;
+  flex-direction:column;justify-content:center;gap:5px;
+  width:40px;height:40px;
+  background:none;border:none;cursor:pointer;padding:9px;
+  border-radius:8px;flex-shrink:0;
+  transition:background .15s;
+}
+.nav-toggle:hover{background:rgba(0,0,0,.06);}
+.nav-toggle span{
+  display:block;width:22px;height:2px;
+  background:var(--jade-deep);border-radius:2px;
+  transition:transform .25s,opacity .2s;
+}
+.nav-open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-open .nav-toggle span:nth-child(2){opacity:0;transform:scaleX(0);}
+.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+@media(max-width:899px){
+  .nav-toggle{display:flex;}
+  .topbar-nav{
+    position:absolute;
+    top:calc(100% + 14px);
+    left:-24px;right:-24px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:12px;
+    flex-direction:column;
+    gap:0;
+    align-items:stretch;
+    overflow:hidden;
+    max-height:0;
+    transition:max-height .32s cubic-bezier(.4,0,.2,1),box-shadow .25s,opacity .2s;
+    box-shadow:none;
+    opacity:0;
+    pointer-events:none;
+  }
+  .nav-open .topbar-nav{
+    max-height:420px;
+    box-shadow:0 8px 32px rgba(0,0,0,.12);
+    opacity:1;
+    pointer-events:auto;
+  }
+  .topbar-nav a{
+    font-size:17px;padding:16px 22px;
+    border-bottom:1px solid var(--line);
+    white-space:normal;
+  }
+  .topbar-nav a:last-child{border-bottom:none;}
+}
+@media(prefers-reduced-motion:reduce){
+  .nav-toggle span{transition:none;}
+  .topbar-nav{transition:none;}
+}
 
 /* ============ HERO ============ */
 .hero{
