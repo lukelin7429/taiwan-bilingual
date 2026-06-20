@@ -68,10 +68,10 @@
     <div class="hero-art" aria-hidden="true">
       <div class="hero-photo">
         <img src="/assets/img/taiwan-hero.jpg"
-             alt="Chishang rice fields and mountains, Taitung, Taiwan"
-             width="1440" height="864" loading="eager" fetchpriority="high">
+             alt="Taipei city skyline at sunset with mountains beyond"
+             width="1350" height="900" loading="eager" fetchpriority="high">
         <div class="hero-photo-scrim">
-          <p class="hero-photo-caption">池上 · Chishang, Taitung</p>
+          <p class="hero-photo-caption">臺北 · Taipei, Taiwan</p>
         </div>
       </div>
     </div>
@@ -281,6 +281,37 @@
     });
     a.addEventListener('mouseleave', function(){ if(imapLabel)imapLabel.classList.remove('on'); });
   });
+</script>
+<script>
+/* ---- scroll reveal (getBoundingClientRect version) ---- */
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  var sel=[
+    '#purpose .eyebrow','#purpose h2','#purpose .lead','#purpose .lead-zh',
+    '.policy-card','.policy-feature',
+    '.map-text h2','.map-text p','.map-text .hero-cta','.map-visual',
+    '#people .section-head h2','#people .section-head p','.person',
+    '#schools .section-head h2','#schools .section-head p','.card'
+  ].join(',');
+  var els=document.querySelectorAll(sel);
+  els.forEach(function(el){el.classList.add('rv');});
+  /* stagger siblings inside grid containers */
+  ['.policy-row','.people','.grid'].forEach(function(g){
+    var grid=document.querySelector(g);
+    if(!grid) return;
+    grid.querySelectorAll('.rv').forEach(function(kid,i){
+      kid.style.transitionDelay=(i*0.11).toFixed(2)+'s';
+    });
+  });
+  function check(){
+    var wh=window.innerHeight;
+    document.querySelectorAll('.rv:not(.rv-in)').forEach(function(el){
+      if(el.getBoundingClientRect().top < wh-50) el.classList.add('rv-in');
+    });
+  }
+  window.addEventListener('scroll',check,{passive:true});
+  check();
+})();
 </script>
 </body>
 </html>
