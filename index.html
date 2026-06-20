@@ -66,13 +66,30 @@
       </div>
     </div>
     <div class="hero-art" aria-hidden="true">
-      <div class="hero-photo">
-        <img src="/assets/img/taiwan-hero.jpg"
-             alt="Taipei city skyline at sunset with mountains beyond"
-             width="1350" height="900" loading="eager" fetchpriority="high">
-        <div class="hero-photo-scrim">
-          <p class="hero-photo-caption">臺北 · Taipei, Taiwan</p>
+      <div class="hero-slideshow">
+        <div class="hs-slide hs-active">
+          <img src="/assets/img/tw-lanterns.jpg" alt="Red lanterns at night, Jiufen, Taiwan" width="1350" height="900" loading="eager" fetchpriority="high">
+          <p class="hs-caption">九份 · Jiufen, New Taipei</p>
         </div>
+        <div class="hs-slide">
+          <img src="/assets/img/tw-teakettle.jpg" alt="Teakettle Hill pavilion overlooking the ocean, Ruifang" width="1222" height="900" loading="lazy">
+          <p class="hs-caption">茶壺山 · Teakettle Hill, Ruifang</p>
+        </div>
+        <div class="hs-slide">
+          <img src="/assets/img/tw-sunmoonlake.jpg" alt="Wen Wu Temple overlooking Sun Moon Lake, Nantou" width="1361" height="900" loading="lazy">
+          <p class="hs-caption">日月潭 · Sun Moon Lake, Nantou</p>
+        </div>
+        <div class="hs-slide">
+          <img src="/assets/img/tw-temple-coast.jpg" alt="Temple rooftop overlooking the northeast coast of Taiwan" width="1400" height="824" loading="lazy">
+          <p class="hs-caption">北海岸 · Northeast Coast, Taiwan</p>
+        </div>
+        <div class="hs-dots">
+          <button class="hs-dot hs-active" aria-label="Slide 1"></button>
+          <button class="hs-dot" aria-label="Slide 2"></button>
+          <button class="hs-dot" aria-label="Slide 3"></button>
+          <button class="hs-dot" aria-label="Slide 4"></button>
+        </div>
+        <div class="hs-progress"></div>
       </div>
     </div>
   </div>
@@ -311,6 +328,47 @@
   }
   window.addEventListener('scroll',check,{passive:true});
   check();
+})();
+</script>
+<script>
+/* ---- hero slideshow ---- */
+(function(){
+  var slides=document.querySelectorAll('.hs-slide');
+  var dots=document.querySelectorAll('.hs-dot');
+  var bar=document.querySelector('.hs-progress');
+  if(!slides.length) return;
+  var cur=0, INTERVAL=4800, timer=null;
+
+  function go(n){
+    slides[cur].classList.remove('hs-active');
+    dots[cur].classList.remove('hs-active');
+    cur=(n+slides.length)%slides.length;
+    slides[cur].classList.add('hs-active');
+    dots[cur].classList.add('hs-active');
+    /* reset progress bar */
+    if(bar){bar.style.transition='none';bar.style.width='0%';
+      requestAnimationFrame(function(){requestAnimationFrame(function(){
+        bar.style.transition='width '+INTERVAL+'ms linear';bar.style.width='100%';
+      });});
+    }
+  }
+
+  function start(){ timer=setInterval(function(){go(cur+1);},INTERVAL); }
+  function stop(){ clearInterval(timer); }
+
+  dots.forEach(function(d,i){ d.addEventListener('click',function(){stop();go(i);start();}); });
+
+  var ss=document.querySelector('.hero-slideshow');
+  if(ss){
+    ss.addEventListener('mouseenter',stop);
+    ss.addEventListener('mouseleave',start);
+  }
+
+  /* kick off progress bar for slide 0 */
+  if(bar){requestAnimationFrame(function(){requestAnimationFrame(function(){
+    bar.style.transition='width '+INTERVAL+'ms linear';bar.style.width='100%';
+  });});}
+  start();
 })();
 </script>
 </body>
