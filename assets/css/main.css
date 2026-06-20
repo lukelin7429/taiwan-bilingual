@@ -88,11 +88,11 @@ a:hover{color:var(--jade);}
   .nav-toggle{display:flex;}
   .topbar-nav{
     position:absolute;
-    top:calc(100% + 14px);
-    left:-24px;right:-24px;
+    top:calc(100% + 10px);
+    left:0;right:0;
     background:#fff;
     border:1px solid var(--line);
-    border-radius:12px;
+    border-radius:0 0 12px 12px;
     flex-direction:column;
     gap:0;
     align-items:stretch;
@@ -110,7 +110,7 @@ a:hover{color:var(--jade);}
     pointer-events:auto;
   }
   .topbar-nav a{
-    font-size:17px;padding:16px 22px;
+    font-size:17px;padding:16px 24px;
     border-bottom:1px solid var(--line);
     white-space:normal;
   }
