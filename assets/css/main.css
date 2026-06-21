@@ -305,6 +305,21 @@ a:hover{color:var(--jade);}
   grid-template-columns:repeat(2,1fr);
   gap:26px;
 }
+/* Photo school cards (homepage "The Schools") */
+.school-card{
+  display:flex;flex-direction:column;
+  background:#fff;
+  border:1px solid var(--line);
+  border-top:5px solid var(--accent,var(--jade));
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:var(--shadow-sm);
+  transition:transform .22s ease, box-shadow .22s ease;
+  color:var(--ink);text-decoration:none;
+}
+.school-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);}
+.school-card .sc-photo{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--line);}
+.school-card .sc-body{display:flex;flex-direction:column;padding:22px 26px 24px;}
 .card{
   display:flex;flex-direction:column;
   background:#fff;
