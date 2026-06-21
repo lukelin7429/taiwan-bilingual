@@ -3,6 +3,14 @@
 /* Playfair Display + Lato, PingFang TC for Chinese, pure-white throughout. */
 /* Hub accent is a calm island-jade; each school card carries its own color.*/
 
+/* The topbar lives in this shared chrome file, but its fonts (Lato for the
+   nav, Playfair Display for the brand) used to be imported per-page in each
+   HTML <head>. Self-contained pages (festivals, one-on-one quizzes) import
+   different body fonts and omit Lato, so their topbar nav rendered in a
+   fallback font — visibly different from the main site. Importing the chrome
+   fonts here makes ANY page that loads main.css show an identical topbar. */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;500;700&display=swap');
+
 :root{
   --ink:#1d1b18;
   --ink-soft:#5c574f;
