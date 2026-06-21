@@ -45,9 +45,9 @@
   .o-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
   .o-thumb{position:relative;aspect-ratio:16/9;background:#2a0816;cursor:pointer;overflow:hidden;}
   .o-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
-  .o-thumb .pl{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:6px;color:#fff;background:rgba(42,8,22,.32);transition:background .18s;}
-  .o-thumb .pl .ico{font-size:30px;}
-  .o-thumb:hover .pl{background:rgba(42,8,22,.15);}
+  .o-thumb .pl{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;background:rgba(0,0,0,.5);box-shadow:0 6px 18px rgba(0,0,0,.4);transition:transform .18s,background .18s;pointer-events:none;}
+  .o-thumb .pl .ico{font-size:23px;padding-left:3px;}
+  .o-thumb:hover .pl{background:#be185d;transform:translate(-50%,-50%) scale(1.08);}
   .o-thumb .min{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.5);color:#fff;font-size:12px;font-weight:700;padding:2px 9px;border-radius:999px;}
   .o-thumb iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
   .o-body{padding:16px 18px 18px;}
