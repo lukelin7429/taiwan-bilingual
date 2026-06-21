@@ -33,11 +33,19 @@
   .g-step p{font-size:15px;color:var(--ink-soft);line-height:1.55;}
 
   .g-controls{position:sticky;top:57px;z-index:30;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:14px 0;}
-  .g-tabs{display:flex;gap:10px;flex-wrap:wrap;}
-  .g-tab{font-size:16px;font-weight:700;color:var(--ink-soft);background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:9px 22px;cursor:pointer;transition:all .15s;}
-  .g-tab:hover{border-color:#0a6e8a;color:#0a6e8a;}
-  .g-tab.on{background:#0a6e8a;color:#fff;border-color:#0a6e8a;}
-  .g-tab small{font-weight:500;opacity:.85;margin-left:4px;}
+  .g-tablabel{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px;}
+  .g-tabs{display:inline-flex;gap:6px;background:#eaf1f2;border:1px solid var(--line);border-radius:999px;padding:5px;max-width:100%;flex-wrap:wrap;}
+  .g-tab{font-size:16px;font-weight:700;color:var(--ink-soft);background:transparent;border:0;border-radius:999px;padding:10px 22px;cursor:pointer;transition:background .15s,color .15s,box-shadow .15s;display:inline-flex;align-items:center;gap:9px;}
+  .g-tab:hover{color:#0a6e8a;}
+  .g-tab.on{background:#0a6e8a;color:#fff;box-shadow:var(--shadow-sm);}
+  .g-tab small{font-weight:500;opacity:.9;}
+  .g-tab .ct{font-size:12.5px;font-weight:800;background:rgba(10,110,138,.12);color:#0a6e8a;padding:1px 9px;border-radius:999px;font-variant-numeric:tabular-nums;}
+  .g-tab.on .ct{background:rgba(255,255,255,.26);color:#fff;}
+  /* current-level heading */
+  .g-levelhead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:2px 0 -4px;}
+  .g-levelhead h2{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(22px,3vw,28px);font-weight:700;color:var(--ink);line-height:1.15;}
+  .g-levelhead h2 .zh{font-size:18px;color:#0a6e8a;font-weight:700;margin-left:6px;}
+  .g-levelhead .lc{margin-left:auto;font-size:14px;color:var(--ink-soft);font-weight:600;}
   .g-search{position:relative;max-width:520px;margin-top:12px;}
   .g-search input{width:100%;font-size:17px;font-family:inherit;color:var(--ink);padding:12px 16px 12px 44px;border:1.5px solid var(--line);border-radius:999px;outline:none;transition:border-color .2s;}
   .g-search input:focus{border-color:#0a6e8a;}
@@ -109,9 +117,10 @@
 
 <div class="g-controls">
   <div class="wrap">
-    <div class="g-tabs">
-      <button class="g-tab on" data-lvl="elementary">Elementary <small>初級</small></button>
-      <button class="g-tab" data-lvl="intermediate">Intermediate <small>中級</small></button>
+    <div class="g-tablabel">Choose your level · 選擇級別</div>
+    <div class="g-tabs" role="tablist" aria-label="GEPT level">
+      <button class="g-tab on" data-lvl="elementary" role="tab" aria-selected="true">Elementary <small>初級</small><span class="ct" data-ct="elementary">·</span></button>
+      <button class="g-tab" data-lvl="intermediate" role="tab" aria-selected="false">Intermediate <small>中級</small><span class="ct" data-ct="intermediate">·</span></button>
     </div>
     <div class="g-search">
       <span class="mag">🔍</span>
@@ -123,6 +132,7 @@
 
 <section class="section" style="padding-top:24px;">
   <div class="wrap">
+    <div class="g-levelhead" id="glevelhead"></div>
     <div class="g-grid" id="ggrid"></div>
     <div class="g-empty" id="gempty">No questions match your search. 找不到符合的題目。</div>
     <div class="g-more" id="gmore" style="display:none;"><button type="button" id="gmorebtn">Load more 載入更多</button></div>
@@ -166,12 +176,16 @@
       + '<span class="pl"><span class="ico">▶</span><span class="lab">Model answer 示範答案</span></span></div>'
       + '</article>';
   }
+  var LV={elementary:{en:'Elementary',zh:'初級'},intermediate:{en:'Intermediate',zh:'中級'}};
   function apply(){
-    var src=DATA[level]||[];
+    var src=DATA[level]||[], L=LV[level]||LV.elementary;
+    document.getElementById('glevelhead').innerHTML=
+      '<h2>'+L.en+'<span class="zh">'+L.zh+'</span></h2>'
+      +'<span class="lc">'+src.length+' model-answer questions · 共 '+src.length+' 題</span>';
     list = q ? src.filter(function(it){return it.q.toLowerCase().indexOf(q)>=0;}) : src.slice();
     rendered=0; grid.innerHTML='';
     emptyEl.style.display=list.length?'none':'block';
-    countEl.innerHTML='<b>'+list.length+'</b> question'+(list.length===1?'':'s')+(q?' found':'')+' · 題';
+    countEl.innerHTML = q ? ('<b>'+list.length+'</b> result'+(list.length===1?'':'s')+' in '+L.en+' · 在'+L.zh+'中找到 '+list.length+' 題') : '';
     more();
   }
   function more(){
@@ -180,11 +194,20 @@
     grid.insertAdjacentHTML('beforeend',html);
     rendered=end; moreWrap.style.display=rendered<list.length?'block':'none';
   }
+  function setLevel(lv){
+    level=lv;
+    document.querySelectorAll('.g-tab').forEach(function(x){
+      var on=x.getAttribute('data-lvl')===lv;
+      x.classList.toggle('on',on); x.setAttribute('aria-selected',on?'true':'false');
+    });
+  }
   document.querySelector('.g-tabs').addEventListener('click',function(e){
     var b=e.target.closest('.g-tab'); if(!b)return;
-    level=b.getAttribute('data-lvl');
-    document.querySelectorAll('.g-tab').forEach(function(x){x.classList.toggle('on',x===b);});
+    setLevel(b.getAttribute('data-lvl'));
+    if(history.replaceState) history.replaceState(null,'','#'+level); else location.hash=level;
+    q=''; var gi2=document.getElementById('gq'); if(gi2)gi2.value='';
     apply();
+    window.scrollTo({top:0,behavior:'smooth'});
   });
   var gi=document.getElementById('gq'),td;
   gi.addEventListener('input',function(){clearTimeout(td);td=setTimeout(function(){q=gi.value.trim().toLowerCase();apply();},150);});
@@ -196,7 +219,12 @@
   });
   fetch('/assets/data/gept.json').then(function(r){return r.json();}).then(function(d){
     DATA=d;
-    document.getElementById('gcredit').innerHTML='Videos: <b>'+(d.elementary||[]).length+'</b> Elementary + <b>'+(d.intermediate||[]).length+'</b> Intermediate GEPT speaking questions, produced by teacher Luke Lin. ｜初級 '+(d.elementary||[]).length+' 題、中級 '+(d.intermediate||[]).length+' 題,由林吉祥老師製作。';
+    var ne=(d.elementary||[]).length, ni=(d.intermediate||[]).length;
+    var ce=document.querySelector('.ct[data-ct="elementary"]'); if(ce)ce.textContent=ne;
+    var ci=document.querySelector('.ct[data-ct="intermediate"]'); if(ci)ci.textContent=ni;
+    document.getElementById('gcredit').innerHTML='Videos: <b>'+ne+'</b> Elementary + <b>'+ni+'</b> Intermediate GEPT speaking questions, produced by teacher Luke Lin. ｜初級 '+ne+' 題、中級 '+ni+' 題,由林吉祥老師製作。';
+    var h=(location.hash||'').replace('#','').toLowerCase();
+    if(h==='elementary'||h==='intermediate') setLevel(h);
     apply();
   }).catch(function(){emptyEl.textContent='Could not load questions. 無法載入題目。';emptyEl.style.display='block';});
 })();
