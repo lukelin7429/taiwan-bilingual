@@ -46,6 +46,23 @@ a:hover{color:var(--jade);}
   display:flex;align-items:center;justify-content:space-between;gap:18px;
   position:relative;
 }
+/* The topbar markup reuses the .wrap class (<div class="wrap topbar-inner">).
+   Self-contained pages override .wrap for their OWN content with extra layout
+   props — festival quizzes set .wrap{max-width:840px;min-height:100vh;
+   flex-direction:column}, handouts 1080px, one-on-one 1100px. Left alone those
+   leak onto the topbar (column direction + 100vh height = brand stacked on top,
+   nav shoved to the bottom). This higher-specificity rule fully owns the
+   topbar's layout so NO page .wrap override can reach it. */
+.topbar .topbar-inner{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:0 24px;
+  min-height:0;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+}
 .topbar-name{
   font-family:'Playfair Display','PingFang TC',serif;
   font-size:21px;font-weight:600;
