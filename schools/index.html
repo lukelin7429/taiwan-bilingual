@@ -60,6 +60,48 @@
   .join li .zh{display:block;font-size:15px;color:var(--ink-soft);}
   .join .cta{display:inline-block;margin-top:16px;background:var(--gold,#d4a017);color:#3a2c08;font-weight:700;font-size:16px;padding:12px 24px;border-radius:999px;}
   .join .cta:hover{filter:brightness(.95);}
+
+  /* ===== Apple-style horizontal shelf ===== */
+  .shelf-wrap{position:relative;margin-top:6px;}
+  .shelf{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x proximity;scroll-behavior:smooth;
+    padding:6px 4px 24px;scroll-padding-left:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+  .shelf::-webkit-scrollbar{display:none;}
+  .scard{flex:0 0 290px;scroll-snap-align:start;display:flex;flex-direction:column;background:#fff;
+    border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow-sm);
+    transition:transform .2s,box-shadow .2s;color:var(--ink);}
+  .scard:hover{transform:translateY(-6px);box-shadow:var(--shadow);}
+  .scard .cover{position:relative;height:160px;display:flex;align-items:flex-end;padding:18px;
+    background:linear-gradient(150deg,var(--a1) 0%,var(--a2) 100%);overflow:hidden;}
+  .scard .cover::before{content:"";position:absolute;top:-46px;right:-34px;width:170px;height:170px;border-radius:50%;
+    background:radial-gradient(circle,rgba(255,255,255,.20) 0%,transparent 70%);}
+  .scard .cover .zh-name{font-family:'Playfair Display','PingFang TC',serif;font-size:30px;font-weight:700;color:#fff;
+    line-height:1.12;letter-spacing:.02em;position:relative;z-index:1;text-shadow:0 2px 12px rgba(0,0,0,.20);}
+  .scard .cover .lvl-tag{position:absolute;top:14px;left:16px;font-size:11px;font-weight:700;letter-spacing:.1em;
+    text-transform:uppercase;color:#fff;background:rgba(255,255,255,.24);padding:4px 11px;border-radius:999px;z-index:1;}
+  .scard .body{flex:1;display:flex;flex-direction:column;padding:16px 18px 18px;}
+  .scard .en-name{font-size:18px;font-weight:700;color:var(--ink);line-height:1.2;}
+  .scard .chip{align-self:flex-start;margin-top:9px;font-size:12.5px;font-weight:700;color:var(--a2);background:var(--chipbg);
+    padding:3px 11px;border-radius:999px;}
+  .scard .hl{margin-top:11px;font-size:14.5px;color:var(--ink-soft);line-height:1.5;flex:1;}
+  .scard .go{margin-top:14px;font-size:14px;font-weight:700;color:var(--a2);}
+  .scard .go .arr{display:inline-block;transition:transform .18s;}
+  .scard:hover .go .arr{transform:translateX(4px);}
+  .scard.seeall{background:linear-gradient(150deg,var(--jade) 0%,var(--jade-deep) 100%);color:#fff;justify-content:center;padding:26px 24px;}
+  .scard.seeall .big{font-family:'Playfair Display','PingFang TC',serif;font-size:23px;font-weight:700;line-height:1.22;}
+  .scard.seeall p{margin-top:10px;font-size:14.5px;color:rgba(255,255,255,.9);line-height:1.55;}
+  .scard.seeall .go{margin-top:18px;color:#fff;}
+  .shelf-btn{position:absolute;top:80px;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;
+    border:1px solid var(--line);background:rgba(255,255,255,.94);box-shadow:var(--shadow);font-size:19px;
+    color:var(--jade-deep);cursor:pointer;display:none;align-items:center;justify-content:center;z-index:4;
+    transition:background .15s,transform .15s;}
+  .shelf-btn:hover{background:#fff;transform:translateY(-50%) scale(1.07);}
+  .shelf-btn.prev{left:-12px;} .shelf-btn.next{right:-12px;}
+  .shelf-btn[hidden]{display:none!important;}
+  @media(min-width:880px){.shelf-btn{display:flex;}}
+  .seeall-bar{margin-top:6px;}
+  .seeall-bar a{display:inline-flex;align-items:center;gap:8px;background:var(--jade-deep);color:#fff;font-weight:700;font-size:15.5px;padding:12px 24px;border-radius:999px;}
+  .seeall-bar a:hover{background:var(--jade);color:#fff;}
+  @media (prefers-reduced-motion: reduce){.shelf{scroll-behavior:auto;} .scard{transition:none;}}
 </style>
 <link rel="stylesheet" href="/assets/css/motion.css">
 </head>
@@ -92,44 +134,196 @@
 <section class="section">
   <div class="wrap">
 
-    <div class="sgroup-head"><span class="sgroup-en">Taiwan Bilingual school sites</span><span class="sgroup-zh">本網雙語校站</span></div>
-    <div class="slist">
-      <a class="srow" href="https://tbes.taiwan-bilingual.org/" target="_blank" rel="noopener">
-        <span class="lvl">🏫</span>
-        <span class="body"><span class="nm">Taibao Elementary <span class="zh">太保國小</span></span><span class="meta">Elementary · 嘉義縣太保市 Chiayi</span></span>
-        <span class="go">Visit ↗</span>
+    <div class="sgroup-head"><span class="sgroup-en">Featured bilingual school sites</span><span class="sgroup-zh">精選雙語校站</span></div>
+    <p style="margin:-6px 0 4px;font-size:16px;color:var(--ink-soft);">Swipe through schools already telling their story in English. ｜橫向滑動,看看這些已用英文說自己故事的學校。</p>
+
+    <div class="shelf-wrap">
+      <button class="shelf-btn prev" aria-label="Scroll left" hidden>‹</button>
+      <button class="shelf-btn next" aria-label="Scroll right">›</button>
+      <div class="shelf">
+      <a class="scard" href="https://tbes.taiwan-bilingual.org/" target="_blank" rel="noopener" style="--a1:#d6a45f;--a2:#bd863f;--chipbg:#f7f0e2">
+        <span class="cover"><span class="lvl-tag">Elementary</span><span class="zh-name">太保國小</span></span>
+        <span class="body">
+          <span class="en-name">Taibao Elementary</span>
+          <span class="chip">Chiayi 嘉義</span>
+          <span class="hl">Hometown of the hub's founding teacher, by the HSR and Palace Museum South.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
       </a>
-      <a class="srow" href="https://tbjh.taiwan-bilingual.org/" target="_blank" rel="noopener">
-        <span class="lvl">🏫</span>
-        <span class="body"><span class="nm">Taibao Junior High <span class="zh">太保國中</span></span><span class="meta">Junior High · 嘉義縣太保市 Chiayi</span></span>
-        <span class="go">Visit ↗</span>
+      <a class="scard" href="https://tbjh.taiwan-bilingual.org/" target="_blank" rel="noopener" style="--a1:#dcb24a;--a2:#b88a13;--chipbg:#f8f1da">
+        <span class="cover"><span class="lvl-tag">Junior High</span><span class="zh-name">太保國中</span></span>
+        <span class="body">
+          <span class="en-name">Taibao Junior High</span>
+          <span class="chip">Chiayi 嘉義</span>
+          <span class="hl">A bilingual junior high in the high-speed-rail town of Taibao.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
       </a>
-      <a class="srow" href="https://klnes.taiwan-bilingual.org/" target="_blank" rel="noopener">
-        <span class="lvl">🏫</span>
-        <span class="body"><span class="nm">KangLang Elementary <span class="zh">槺榔國小</span></span><span class="meta">Elementary · 臺中市清水區 Taichung</span></span>
-        <span class="go">Visit ↗</span>
+      <a class="scard" href="https://ycsh.taiwan-bilingual.org/" target="_blank" rel="noopener" style="--a1:#cf7d92;--a2:#b25068;--chipbg:#f6e9ec">
+        <span class="cover"><span class="lvl-tag">Senior High</span><span class="zh-name">永慶高中</span></span>
+        <span class="body">
+          <span class="en-name">Young Docents</span>
+          <span class="chip">Chiayi 嘉義</span>
+          <span class="hl">Student docents guiding visitors at the Palace Museum's Southern Branch.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
       </a>
-      <a class="srow" href="https://fces.taiwan-bilingual.org/" target="_blank" rel="noopener">
-        <span class="lvl">🏫</span>
-        <span class="body"><span class="nm">FengChou Elementary <span class="zh">豐洲國小</span></span><span class="meta">Elementary · 臺中市神岡區 Taichung</span></span>
-        <span class="go">Visit ↗</span>
+      <a class="scard" href="https://klnes.taiwan-bilingual.org/" target="_blank" rel="noopener" style="--a1:#4bb3c9;--a2:#0a8aab;--chipbg:#e3f1f5">
+        <span class="cover"><span class="lvl-tag">Elementary</span><span class="zh-name">槺榔國小</span></span>
+        <span class="body">
+          <span class="en-name">KangLang Elementary</span>
+          <span class="chip">Taichung 臺中</span>
+          <span class="hl">A coastal Qingshui campus near the Gaomei wetlands and windmills.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
       </a>
-      <a class="srow" href="https://ycsh.taiwan-bilingual.org/" target="_blank" rel="noopener">
-        <span class="lvl">🎓</span>
-        <span class="body"><span class="nm">Young Docents · 永慶高中 <span class="zh">故宮南院小小導覽員</span></span><span class="meta">Senior High · 嘉義縣 Chiayi</span></span>
-        <span class="go">Visit ↗</span>
+      <a class="scard" href="https://changhua-bilingual.org/schools/yangming-jhs/" target="_blank" rel="noopener" style="--a1:#6f9fce;--a2:#3f6fa3;--chipbg:#eaf0f6">
+        <span class="cover"><span class="lvl-tag">Junior High</span><span class="zh-name">陽明國中</span></span>
+        <span class="body">
+          <span class="en-name">Yangming Junior High</span>
+          <span class="chip">Changhua 彰化</span>
+          <span class="hl">The typographic model campus of the Changhua bilingual hub.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
       </a>
+      <a class="scard" href="https://changhua-bilingual.org/schools/datong/" target="_blank" rel="noopener" style="--a1:#4bb3c9;--a2:#0a8aab;--chipbg:#e3f1f5">
+        <span class="cover"><span class="lvl-tag">Elementary</span><span class="zh-name">大同國小</span></span>
+        <span class="body">
+          <span class="en-name">Datong Elementary</span>
+          <span class="chip">Shengang 伸港</span>
+          <span class="hl">A coastal Shengang campus with sea-toned design and photo lessons.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
+      </a>
+      <a class="scard" href="https://changhua-bilingual.org/schools/hsinmin/" target="_blank" rel="noopener" style="--a1:#ab73ba;--a2:#8a4d9a;--chipbg:#f3e9f6">
+        <span class="cover"><span class="lvl-tag">Elementary</span><span class="zh-name">新民國小</span></span>
+        <span class="body">
+          <span class="en-name">Hsinmin Elementary</span>
+          <span class="chip">Changhua 彰化</span>
+          <span class="hl">A plum-and-gold, music-loving campus with Word-of-the-Day units.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
+      </a>
+      <a class="scard" href="https://changhua-bilingual.org/schools/jianxin/" target="_blank" rel="noopener" style="--a1:#d6a45f;--a2:#bd863f;--chipbg:#f7f0e2">
+        <span class="cover"><span class="lvl-tag">Elementary</span><span class="zh-name">建新國小</span></span>
+        <span class="body">
+          <span class="en-name">Jianxin Elementary</span>
+          <span class="chip">Changhua 彰化</span>
+          <span class="hl">A carrot-orange campus with its own English village.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
+      </a>
+      <a class="scard" href="https://changhua-bilingual.org/schools/chunghsing/" target="_blank" rel="noopener" style="--a1:#57a883;--a2:#1e7f5c;--chipbg:#e6f3ec">
+        <span class="cover"><span class="lvl-tag">Elementary</span><span class="zh-name">中興國小</span></span>
+        <span class="body">
+          <span class="en-name">Chunghsing Elementary</span>
+          <span class="chip">Changhua 彰化</span>
+          <span class="hl">Taiko drums, Cool English and a 70-year-old classics tree.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
+      </a>
+      <a class="scard" href="https://changhua-bilingual.org/schools/raoming/" target="_blank" rel="noopener" style="--a1:#cf7d92;--a2:#b25068;--chipbg:#f6e9ec">
+        <span class="cover"><span class="lvl-tag">Elementary</span><span class="zh-name">饒明國小</span></span>
+        <span class="body">
+          <span class="en-name">Raoming Elementary</span>
+          <span class="chip">Changhua 彰化</span>
+          <span class="hl">Lion-dance English — six lessons with spoken-dialogue practice.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
+      </a>
+      <a class="scard" href="https://changhua-bilingual.org/schools/mingli/" target="_blank" rel="noopener" style="--a1:#dcb24a;--a2:#b88a13;--chipbg:#f8f1da">
+        <span class="cover"><span class="lvl-tag">Elementary</span><span class="zh-name">明禮國小</span></span>
+        <span class="body">
+          <span class="en-name">Mingli Elementary</span>
+          <span class="chip">Tianzhong 田中</span>
+          <span class="hl">A green-and-gold campus in the town of Tianzhong.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
+      </a>
+      <a class="scard" href="https://changhua-bilingual.org/schools/dongfang/" target="_blank" rel="noopener" style="--a1:#8aa86a;--a2:#5f7d3a;--chipbg:#eef2e6">
+        <span class="cover"><span class="lvl-tag">Elementary</span><span class="zh-name">東芳國小</span></span>
+        <span class="body">
+          <span class="en-name">Dongfang Elementary</span>
+          <span class="chip">Changhua 彰化</span>
+          <span class="hl">A soccer school, green and gold, with its own foreign teacher.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
+      </a>
+      <a class="scard" href="https://changhua-bilingual.org/schools/lufeng/" target="_blank" rel="noopener" style="--a1:#57a883;--a2:#1e7f5c;--chipbg:#e6f3ec">
+        <span class="cover"><span class="lvl-tag">Elementary</span><span class="zh-name">陸豐國小</span></span>
+        <span class="body">
+          <span class="en-name">Lufeng Elementary</span>
+          <span class="chip">Tianwei 田尾</span>
+          <span class="hl">A garden-green campus in Taiwan's flower town of Tianwei.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
+      </a>
+      <a class="scard" href="https://changhua-bilingual.org/schools/jhutang/" target="_blank" rel="noopener" style="--a1:#8aa86a;--a2:#5f7d3a;--chipbg:#eef2e6">
+        <span class="cover"><span class="lvl-tag">Elementary</span><span class="zh-name">竹塘國小</span></span>
+        <span class="body">
+          <span class="en-name">Zhutang Elementary</span>
+          <span class="chip">Zhutang 竹塘</span>
+          <span class="hl">A century-old school in the home of champion rice.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
+      </a>
+      <a class="scard" href="https://changhua-bilingual.org/schools/dches/" target="_blank" rel="noopener" style="--a1:#4bb3c9;--a2:#0a8aab;--chipbg:#e3f1f5">
+        <span class="cover"><span class="lvl-tag">Elementary</span><span class="zh-name">大成國小</span></span>
+        <span class="body">
+          <span class="en-name">Dacheng Elementary</span>
+          <span class="chip">Changhua City 彰化市</span>
+          <span class="hl">A bright crest-colored campus in the heart of Changhua City.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
+      </a>
+      <a class="scard" href="https://changhua-bilingual.org/schools/chengkung/" target="_blank" rel="noopener" style="--a1:#d6a45f;--a2:#bd863f;--chipbg:#f7f0e2">
+        <span class="cover"><span class="lvl-tag">Elementary</span><span class="zh-name">成功國小</span></span>
+        <span class="body">
+          <span class="en-name">Chenggong Elementary</span>
+          <span class="chip">Xizhou 溪州</span>
+          <span class="hl">A Hakka-flavored campus in the riverside town of Xizhou.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
+      </a>
+      <a class="scard" href="https://changhua-bilingual.org/schools/fengshya/" target="_blank" rel="noopener" style="--a1:#cf7d92;--a2:#b25068;--chipbg:#f6e9ec">
+        <span class="cover"><span class="lvl-tag">Elementary</span><span class="zh-name">鳳霞國小</span></span>
+        <span class="body">
+          <span class="en-name">Fengshya Elementary</span>
+          <span class="chip">Changhua 彰化</span>
+          <span class="hl">A bilingual campus site with its own deep-dive program pages.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
+      </a>
+      <a class="scard" href="https://changhua-bilingual.org/schools/daan/" target="_blank" rel="noopener" style="--a1:#6f9fce;--a2:#3f6fa3;--chipbg:#eaf0f6">
+        <span class="cover"><span class="lvl-tag">Elementary</span><span class="zh-name">大安國小</span></span>
+        <span class="body">
+          <span class="en-name">Daan Elementary</span>
+          <span class="chip">Tianzhong 田中</span>
+          <span class="hl">A Tianzhong campus with a bilingual honor-roll news wall.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
+      </a>
+      <a class="scard" href="https://changhua-bilingual.org/schools/hubei/" target="_blank" rel="noopener" style="--a1:#ab73ba;--a2:#8a4d9a;--chipbg:#f3e9f6">
+        <span class="cover"><span class="lvl-tag">Elementary</span><span class="zh-name">湖北國小</span></span>
+        <span class="body">
+          <span class="en-name">Hubei Elementary</span>
+          <span class="chip">Changhua 彰化</span>
+          <span class="hl">A scenic-campus bilingual site full of local landscape photos.</span>
+          <span class="go">Visit site <span class="arr">↗</span></span>
+        </span>
+      </a>
+      <a class="scard seeall" href="https://changhua-bilingual.org/schools/" target="_blank" rel="noopener">
+        <span class="big">100+ more schools across Changhua</span>
+        <p>Changhua County has its own bilingual hub, with sites for over a hundred elementary and junior-high schools. ｜彰化縣專屬雙語資源網,逾百所國中小校站。</p>
+        <span class="go">Browse them all <span class="arr">→</span></span>
+      </a>
+      </div>
     </div>
 
-    <div class="sgroup-head" style="margin-top:40px;"><span class="sgroup-en">Changhua Bilingual Hub</span><span class="sgroup-zh">彰化雙語資源網</span></div>
-    <div class="hubcard">
-      <span class="ic">🌐</span>
-      <div class="t">
-        <h3>Over 100 schools across Changhua County</h3>
-        <p>Changhua has its own bilingual hub, with bilingual sites for many elementary and junior-high schools across the county — built over the past year. ｜彰化縣有專屬的雙語資源網,已為縣內超過一百所國中小建置雙語校站。</p>
-      </div>
-      <a class="btn" href="https://changhua-bilingual.org/schools/" target="_blank" rel="noopener">Browse Changhua schools ↗</a>
+    <div class="seeall-bar">
+      <a href="https://changhua-bilingual.org/schools/" target="_blank" rel="noopener">🌐 Browse all 100+ Changhua schools ↗</a>
     </div>
+
 
     <!-- JOIN -->
     <div class="join">
@@ -155,5 +349,19 @@
 </footer>
 
   <script src="/assets/js/nav.js"></script>
+<script>
+(function(){
+  document.querySelectorAll('.shelf-wrap').forEach(function(w){
+    var sh=w.querySelector('.shelf'), prev=w.querySelector('.prev'), next=w.querySelector('.next');
+    if(!sh)return;
+    function step(){var c=sh.querySelector('.scard');return (c?c.getBoundingClientRect().width:290)+20;}
+    function upd(){var max=sh.scrollWidth-sh.clientWidth-2; if(prev)prev.hidden=sh.scrollLeft<=2; if(next)next.hidden=sh.scrollLeft>=max;}
+    if(prev)prev.addEventListener('click',function(){sh.scrollBy({left:-step()*1.5,behavior:'smooth'});});
+    if(next)next.addEventListener('click',function(){sh.scrollBy({left:step()*1.5,behavior:'smooth'});});
+    sh.addEventListener('scroll',upd,{passive:true}); window.addEventListener('resize',upd);
+    upd(); setTimeout(upd,200);
+  });
+})();
+</script>
 </body>
 </html>
