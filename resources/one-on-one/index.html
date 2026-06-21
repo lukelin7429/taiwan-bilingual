@@ -172,6 +172,12 @@
 </section>
 
 <main class="wrap">
+<div class="list-search">
+  <span class="ls-ic">🔍</span>
+  <input type="search" data-search=".theme" data-search-group=".grid-section" data-search-empty="#ls-empty-oo" placeholder="Search topics… 搜尋主題…" aria-label="Search">
+</div>
+<p id="ls-empty-oo" class="ls-empty" hidden>No matches. ｜找不到符合的項目。</p>
+
   <section class="grid-section">
     <h2 class="grid-section__title">Themes <small>主題課程 · 每個主題可上 1–2 週</small></h2>
     <div class="grid">
@@ -356,5 +362,6 @@
   </div>
 </footer>
 <script src="/assets/js/nav.js"></script>
+  <script src="/assets/js/list-search.js"></script>
 </body>
 </html>
