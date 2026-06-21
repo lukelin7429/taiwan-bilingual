@@ -1,0 +1,253 @@
+/* =========================================================
+   Bilingual Campus topic pages
+   Shared layout for all teacher-PD style topic pages under
+   /resources/bilingual-campus/* — Morning Assembly, School
+   Tours, Self-Intro, Sister School, Practice Corner, etc.
+   ========================================================= */
+
+/* ---------- MOE policy alignment card ---------- */
+.bc-moe-card {
+  background: linear-gradient(135deg, #f0f6fc 0%, #e3eef8 100%);
+  border-left: 5px solid var(--c-blue);
+  border-radius: 10px;
+  padding: 28px 32px;
+  margin: 0 auto;
+  max-width: 880px;
+  box-shadow: 0 2px 12px rgba(28, 77, 126, 0.06);
+}
+
+.bc-moe-card p {
+  margin: 0 0 12px;
+  line-height: 1.7;
+  color: var(--hub-ink);
+  font-size: 1rem;
+}
+
+.bc-moe-card p:last-child {
+  margin-bottom: 0;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px dashed rgba(28, 77, 126, 0.25);
+  font-size: .97rem;
+}
+
+.bc-moe-card strong { color: var(--c-blue-deep); font-weight: 600; }
+
+.bc-moe-card .hub-zh {
+  font-family: var(--hub-zh-font);
+  color: var(--hub-ink-soft);
+  line-height: 1.85;
+}
+
+/* ---------- Section grid ---------- */
+.bc-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+/* ---------- Section card ---------- */
+.bc-activity {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #ece8de;
+  border-top: 6px solid var(--bc-c, var(--c-blue));
+  overflow: hidden;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.04);
+}
+
+.bc-activity.t-blue   { --bc-c: var(--c-blue);   --bc-c-deep: var(--c-blue-deep);   --bc-c-soft: var(--c-blue-soft); }
+.bc-activity.t-green  { --bc-c: var(--c-green);  --bc-c-deep: var(--c-green-deep);  --bc-c-soft: var(--c-green-soft); }
+.bc-activity.t-orange { --bc-c: var(--c-orange); --bc-c-deep: var(--c-orange-deep); --bc-c-soft: var(--c-orange-soft); }
+.bc-activity.t-purple { --bc-c: var(--c-purple); --bc-c-deep: var(--c-purple-deep); --bc-c-soft: var(--c-purple-soft); }
+
+/* ---------- Section head ---------- */
+.bc-activity-head {
+  background: var(--bc-c-soft);
+  padding: 22px 28px 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.bc-activity-num {
+  display: inline-block;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--bc-c-deep);
+  background: rgba(255, 255, 255, 0.65);
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.bc-activity-title {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--bc-c-deep);
+  line-height: 1.25;
+}
+
+.bc-activity-zh {
+  margin: 4px 0 10px;
+  font-family: var(--hub-zh-font);
+  font-size: 1.05rem;
+  color: var(--hub-ink-soft);
+  font-weight: 500;
+  letter-spacing: .03em;
+}
+
+.bc-activity-duration {
+  display: inline-block;
+  font-size: .85rem;
+  color: var(--bc-c-deep);
+  font-weight: 500;
+  letter-spacing: .02em;
+}
+
+/* ---------- Section body ---------- */
+.bc-activity-body {
+  padding: 22px 28px 26px;
+  display: grid;
+  gap: 22px;
+}
+
+.bc-h3 {
+  margin: 0 0 8px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--bc-c-deep);
+  letter-spacing: .01em;
+}
+
+.bc-activity-body p {
+  margin: 0 0 6px;
+  line-height: 1.7;
+  color: var(--hub-ink);
+  font-size: .98rem;
+}
+
+.bc-activity-body .hub-zh {
+  font-family: var(--hub-zh-font);
+  color: var(--hub-ink-soft);
+  line-height: 1.85;
+  word-break: keep-all;
+  line-break: strict;
+}
+
+/* ---------- Script / dialog box ---------- */
+.bc-script-box {
+  background: #fafaf6;
+  border: 1px solid #ece8de;
+  border-left: 3px solid var(--bc-c);
+  border-radius: 6px;
+  padding: 16px 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.bc-script-line {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+  font-size: .95rem;
+  line-height: 1.6;
+}
+
+.bc-script-line strong {
+  color: var(--bc-c-deep);
+  font-weight: 600;
+  font-size: .82rem;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
+.bc-script-line span {
+  color: var(--hub-ink);
+  font-family: var(--hub-en-font), var(--hub-zh-font);
+}
+
+/* ---------- Vocab chip row ---------- */
+.bc-vocab {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.bc-vocab .chip {
+  background: var(--bc-c-soft);
+  color: var(--bc-c-deep);
+  font-size: .88rem;
+  font-weight: 500;
+  padding: 5px 11px;
+  border-radius: 14px;
+  letter-spacing: .01em;
+}
+
+.bc-vocab .chip small {
+  font-family: var(--hub-zh-font);
+  font-weight: 500;
+  margin-left: 4px;
+  opacity: .82;
+}
+
+/* ---------- Checklist ---------- */
+.bc-checklist {
+  max-width: 760px;
+  margin: 0 auto;
+  display: grid;
+  gap: 14px;
+}
+
+.bc-checklist label {
+  display: block;
+  background: #fff;
+  border: 1px solid #ece8de;
+  border-left: 4px solid var(--hub-primary);
+  border-radius: 6px;
+  padding: 14px 18px;
+  line-height: 1.65;
+  font-size: .98rem;
+  color: var(--hub-ink);
+  cursor: pointer;
+  transition: background .15s ease, border-color .15s ease;
+}
+
+.bc-checklist label:hover {
+  background: #fcfaf3;
+  border-left-color: var(--c-orange);
+}
+
+.bc-checklist input[type="checkbox"] {
+  margin-right: 10px;
+  transform: translateY(1px);
+  accent-color: var(--hub-primary);
+}
+
+.bc-checklist .hub-zh {
+  display: inline-block;
+  margin-top: 4px;
+  margin-left: 26px;
+  font-family: var(--hub-zh-font);
+  color: var(--hub-ink-soft);
+  font-size: .94rem;
+  line-height: 1.75;
+  word-break: keep-all;
+  line-break: strict;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .bc-moe-card { padding: 22px 20px; }
+  .bc-activity-head { padding: 18px 20px 14px; }
+  .bc-activity-body { padding: 18px 20px 22px; }
+  .bc-activity-title { font-size: 1.32rem; }
+  .bc-checklist label { padding: 12px 14px; }
+  .bc-checklist .hub-zh { margin-left: 0; }
+}

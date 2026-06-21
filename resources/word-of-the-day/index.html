@@ -237,8 +237,7 @@
 
   fetch('/assets/data/wotd.json').then(function(r){return r.json();}).then(function(d){
     items=d.items||[];
-    document.getElementById('wcredit').innerHTML='Data: <b>'+items.length.toLocaleString()+'</b> words from the '
-      +'<a href="https://changhua-bilingual.org/word-of-the-day/" target="_blank" rel="noopener">Changhua Bilingual Hub</a> Word-of-the-Day playlist, filmed by Taiwan’s students. ｜資料來自彰化雙語資源網每日一字播放清單,由臺灣學生拍攝。';
+    document.getElementById('wcredit').innerHTML='A bank of <b>'+items.length.toLocaleString()+'</b> everyday English words, filmed by Taiwan’s students and produced by <a href="https://www.mycultureconnect.org" target="_blank" rel="noopener">My Culture Connect 人師教育協會</a>. ｜由臺灣學生拍攝、人師教育協會製作的每日一字單字庫。';
     buildControls();
     applyFilter();
   }).catch(function(){emptyEl.textContent='Could not load the word list. 無法載入單字資料。';emptyEl.style.display='block';});
