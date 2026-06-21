@@ -137,6 +137,12 @@
     <div class="sgroup-head"><span class="sgroup-en">Featured bilingual school sites</span><span class="sgroup-zh">精選雙語校站</span></div>
     <p style="margin:-6px 0 4px;font-size:16px;color:var(--ink-soft);">Swipe through schools already telling their story in English. ｜橫向滑動,看看這些已用英文說自己故事的學校。</p>
 
+    <div class="list-search">
+      <span class="ls-ic">🔍</span>
+      <input type="search" data-search=".scard" data-search-scope=".shelf" data-search-empty="#schools-empty" placeholder="Search by school name, level or county… 搜尋學校名稱、學制或縣市…" aria-label="Search schools">
+    </div>
+    <p id="schools-empty" class="ls-empty" hidden>No schools match your search. ｜找不到符合的學校。</p>
+
     <div class="shelf-wrap">
       <button class="shelf-btn prev" aria-label="Scroll left" hidden>‹</button>
       <button class="shelf-btn next" aria-label="Scroll right">›</button>
@@ -379,6 +385,7 @@
 </footer>
 
   <script src="/assets/js/nav.js"></script>
+  <script src="/assets/js/list-search.js"></script>
 <script>
 (function(){
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;

@@ -93,6 +93,12 @@
 
 <section class="section">
   <div class="wrap">
+    <div class="list-search">
+      <span class="ls-ic">🔍</span>
+      <input type="search" data-search=".scard" data-search-scope="#shelves" data-search-group=".shelf-row" data-search-empty="#res-empty" placeholder="Search resources… 搜尋資源…" aria-label="Search resources">
+    </div>
+    <p id="res-empty" class="ls-empty" hidden>No resources match your search. ｜找不到符合的資源。</p>
+
     <div id="shelves"></div>
 
     <p class="res-note">
@@ -234,5 +240,6 @@
 </script>
 
   <script src="/assets/js/nav.js"></script>
+  <script src="/assets/js/list-search.js"></script>
 </body>
 </html>

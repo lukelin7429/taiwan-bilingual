@@ -38,6 +38,14 @@ a{color:var(--jade-deep);text-decoration:none;transition:color .2s;}
 a:hover{color:var(--jade);}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
 
+/* ============ LIST SEARCH (reusable per-page filter) ============ */
+.list-search{position:relative;max-width:480px;margin:0 0 10px;}
+.list-search input[type=search]{width:100%;font-family:inherit;font-size:16px;color:var(--ink);padding:13px 18px 13px 46px;border:1.5px solid var(--line);border-radius:999px;outline:none;background:#fff;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;}
+.list-search input[type=search]::placeholder{color:var(--ink-soft);}
+.list-search input[type=search]:focus{border-color:var(--jade);box-shadow:0 0 0 3px var(--jade-soft);}
+.list-search .ls-ic{position:absolute;left:18px;top:50%;transform:translateY(-50%);font-size:16px;color:var(--ink-soft);pointer-events:none;}
+.ls-empty{margin:6px 0 0;font-size:16px;color:var(--ink-soft);}
+
 /* ============ TOPBAR ============ */
 .topbar{
   background:rgba(255,255,255,.94);
