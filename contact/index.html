@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
   <style>
     :root {
       --jade: #008477;
@@ -48,26 +49,9 @@
       text-decoration: none;
     }
 
-    .topbar {
-      background: rgba(255, 255, 255, .92);
-      border-bottom: 1px solid var(--line);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      backdrop-filter: blur(14px);
-    }
-
     .wrap {
       width: min(1120px, calc(100% - 40px));
       margin: 0 auto;
-    }
-
-    .topbar-inner {
-      min-height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
     }
 
     .brand {
@@ -432,19 +416,20 @@
   </style>
 </head>
 <body>
-  <header class="topbar">
+  <div class="topbar">
     <div class="wrap topbar-inner">
-      <a class="brand" href="../">
-        Taiwan Bilingual Hub
-        <small>臺灣雙語資源網</small>
-      </a>
-      <nav class="nav" aria-label="主要導覽">
-        <a href="../">Home</a>
-        <a href="../get-started/">Get Started</a>
-        <a href="mailto:luke@mycultureconnect.org">Email</a>
+      <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
+      <nav class="topbar-nav">
+        <a href="/">Home</a>
+        <a href="/bilingual-2030/">Bilingual 2030</a>
+        <a href="/counties/">Counties/Cities</a>
+        <a href="/schools/">Schools</a>
+        <a href="/partners/">Partners</a>
+        <a href="/resources/">Resources</a>
       </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
-  </header>
+  </div>
 
   <main>
     <section class="hero">

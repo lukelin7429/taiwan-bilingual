@@ -63,6 +63,7 @@ a:hover{color:var(--jade);}
    topbar's layout so NO page .wrap override can reach it. */
 .topbar .topbar-inner{
   max-width:var(--max);
+  width:auto;
   margin:0 auto;
   padding:0 24px;
   min-height:0;
