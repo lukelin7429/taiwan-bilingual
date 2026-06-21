@@ -38,6 +38,9 @@ a:hover{color:var(--jade);}
   position:sticky;top:0;z-index:50;
   backdrop-filter:blur(8px);
   overflow:visible;
+  /* keep the top bar consistent across every page, even ones that
+     override body font (e.g. festival pages using Inter) */
+  font-family:'Lato','PingFang TC','Apple LiGothic Medium','Microsoft JhengHei',sans-serif;
 }
 .topbar-inner{
   display:flex;align-items:center;justify-content:space-between;gap:18px;
