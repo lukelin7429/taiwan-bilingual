@@ -62,13 +62,11 @@
   .g-q .num{flex:0 0 auto;width:30px;height:30px;border-radius:8px;background:#e3f1f5;color:#0a6e8a;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;}
   .g-q .tx{flex:1;font-size:17.5px;font-weight:600;color:var(--ink);line-height:1.4;}
   .g-q .say{flex:0 0 auto;margin-top:2px;}
-  .g-thumb{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#103a48 0%,#0a6e8a 60%,#0e7f86 100%);cursor:pointer;overflow:hidden;border-top:1px solid var(--line);}
-  .g-thumb::after{content:"";position:absolute;top:-30px;right:-24px;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.16) 0%,transparent 70%);pointer-events:none;}
+  .g-thumb{position:relative;aspect-ratio:16/9;background:#08201a;cursor:pointer;overflow:hidden;border-top:1px solid var(--line);}
   .g-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
-  .g-thumb .pl{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:inline-flex;align-items:center;justify-content:center;gap:7px;flex-direction:column;padding:14px 20px;border-radius:18px;color:#fff;background:rgba(0,0,0,.52);box-shadow:0 6px 18px rgba(0,0,0,.42);transition:transform .18s,background .18s;pointer-events:none;}
-  .g-thumb .pl .ico{font-size:26px;padding-left:3px;}
-  .g-thumb .pl .lab{font-size:13px;font-weight:700;letter-spacing:.03em;background:rgba(255,255,255,.2);padding:3px 12px;border-radius:999px;}
-  .g-thumb:hover .pl{background:#0a6e8a;transform:translate(-50%,-50%) scale(1.05);}
+  .g-thumb .pl{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:23px;padding-left:3px;color:#fff;background:rgba(0,0,0,.5);box-shadow:0 6px 18px rgba(0,0,0,.4);transition:transform .18s,background .18s;pointer-events:none;}
+  .g-thumb:hover .pl{background:#0a6e8a;transform:translate(-50%,-50%) scale(1.08);}
+  .g-thumb .mlab{position:absolute;top:8px;left:8px;background:rgba(0,0,0,.55);color:#fff;font-size:12px;font-weight:700;letter-spacing:.02em;padding:3px 11px;border-radius:999px;pointer-events:none;}
   .g-thumb iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
 
   .g-more{text-align:center;margin-top:30px;}
@@ -174,7 +172,9 @@
       + '<div class="g-q"><span class="num">'+(idx+1)+'</span><span class="tx">'+qx+'</span>'
       + '<button class="say sm" data-say="'+qx+'" aria-label="Hear question">🔊</button></div>'
       + '<div class="g-thumb" data-v="'+esc(it.v)+'">'
-      + '<span class="pl"><span class="ico">▶</span><span class="lab">Model answer 示範答案</span></span></div>'
+      + '<img src="https://i.ytimg.com/vi/'+esc(it.v)+'/mqdefault.jpg" loading="lazy" alt="">'
+      + '<span class="mlab">Model answer · 示範答案</span>'
+      + '<span class="pl"><span class="ico">▶</span></span></div>'
       + '</article>';
   }
   var LV={elementary:{en:'Elementary',zh:'初級'},intermediate:{en:'Intermediate',zh:'中級'}};
