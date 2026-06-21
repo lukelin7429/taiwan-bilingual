@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="/assets/favicon/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+<meta name="theme-color" content="#007f78">
+<title>Quiz Arcade · 小考遊樂場 — Taiwan Bilingual Hub</title>
+<meta name="description" content="Quick self-check vocabulary quizzes with 🔊 pronunciation, score and streak. Free to use and free to copy. 快速自我檢測單字小考,附發音、計分與連勝,免費使用、自由複製。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
+<style>
+  /* ============================================================
+     QUIZ ARCADE — self-contained multiple-choice vocabulary quiz.
+     Questions are generated from the DECKS list near the bottom.
+     TEACHERS: edit DECKS (en / zh / e emoji) — that's all.
+     ============================================================ */
+  :root{ --g1:#7a3d8a; --g2:#a85bc0; }
+  .game-band{background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;padding:42px 0 110px;position:relative;overflow:hidden;}
+  .game-band::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 0%,rgba(255,255,255,.16),transparent 55%);pointer-events:none;}
+  .game-band .crumb{font-size:14px;font-weight:700;}
+  .game-band .crumb a{color:#f0ddf6;}
+  .game-band h1{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(30px,5vw,46px);font-weight:700;margin-top:10px;position:relative;z-index:1;}
+  .game-band .sub{margin-top:10px;font-size:18px;color:#f6ebfa;max-width:60ch;position:relative;z-index:1;}
+
+  .stage{max-width:680px;margin:-78px auto 0;padding:0 18px 10px;position:relative;z-index:2;}
+  .panel{background:#fff;border-radius:24px;box-shadow:var(--shadow);padding:26px 26px 30px;}
+
+  /* start screen */
+  .start{text-align:center;}
+  .start h2{font-family:'Playfair Display',serif;font-size:24px;color:var(--ink);margin-bottom:4px;}
+  .start p{font-size:15px;color:var(--ink-soft);margin-bottom:18px;}
+  .decks{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-bottom:20px;}
+  .deck-chip{background:#fff;border:2px solid var(--line);border-radius:999px;padding:9px 17px;font-size:15px;font-weight:700;color:var(--ink);cursor:pointer;transition:transform .15s;}
+  .deck-chip:hover{transform:translateY(-2px);}
+  .deck-chip[aria-pressed="true"]{color:#fff;border-color:transparent;background:var(--g1);}
+  .go-btn{background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;border:none;border-radius:16px;padding:15px 36px;font-size:18px;font-weight:900;cursor:pointer;box-shadow:var(--shadow-sm);transition:transform .15s;}
+  .go-btn:hover{transform:translateY(-2px);}
+
+  /* quiz screen */
+  .quiz{display:none;}
+  .quiz.show{display:block;}
+  .qtop{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;font-size:14px;font-weight:800;color:var(--ink-soft);}
+  .qtop .streak{color:var(--g1);}
+  .bar{height:9px;border-radius:999px;background:var(--line);overflow:hidden;margin-bottom:22px;}
+  .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--g1),var(--g2));transition:width .35s;}
+  .prompt{text-align:center;margin-bottom:8px;}
+  .prompt .pic{font-size:clamp(54px,12vw,86px);line-height:1;}
+  .prompt .ask{font-size:15px;font-weight:700;color:var(--ink-soft);margin-top:6px;}
+  .prompt .term{font-size:clamp(26px,6vw,40px);font-weight:900;color:var(--ink);margin-top:2px;display:inline-flex;align-items:center;gap:12px;}
+  .sayq{width:46px;height:46px;border-radius:50%;border:none;background:var(--g1);color:#fff;font-size:21px;cursor:pointer;transition:transform .15s;}
+  .sayq:hover{transform:scale(1.1);}
+  .sayq.is-speaking{animation:pulse .7s infinite;}
+  @keyframes pulse{50%{transform:scale(1.16);}}
+
+  .opts{display:grid;gap:12px;margin-top:22px;}
+  .opt{display:flex;align-items:center;gap:12px;background:#fff;border:2.5px solid var(--line);border-radius:16px;padding:16px 18px;font-size:19px;font-weight:800;color:var(--ink);cursor:pointer;text-align:left;transition:transform .12s,border-color .12s,background .12s;}
+  .opt:hover{transform:translateY(-2px);border-color:var(--g2);}
+  .opt .k{flex:0 0 auto;width:30px;height:30px;border-radius:8px;background:var(--jade-soft);color:var(--g1);font-size:15px;display:flex;align-items:center;justify-content:center;font-weight:900;}
+  .opt.correct{border-color:#1f9d6b;background:#eafaf2;color:#147a52;}
+  .opt.correct .k{background:#1f9d6b;color:#fff;}
+  .opt.wrong{border-color:#d9484a;background:#fdeeee;color:#b02a2c;}
+  .opt.wrong .k{background:#d9484a;color:#fff;}
+  .opt:disabled{cursor:default;}
+  .opt.dim{opacity:.5;}
+
+  .feedback{text-align:center;min-height:30px;margin-top:18px;font-size:17px;font-weight:800;}
+  .feedback.ok{color:#1f9d6b;} .feedback.no{color:#d9484a;}
+  .nextq{display:none;margin:14px auto 0;background:var(--g1);color:#fff;border:none;border-radius:14px;padding:13px 30px;font-size:16px;font-weight:800;cursor:pointer;}
+  .nextq.show{display:block;}
+
+  /* result */
+  .result{display:none;text-align:center;}
+  .result.show{display:block;animation:fade .4s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(8px);}}
+  .result .face{font-size:66px;}
+  .result h2{font-family:'Playfair Display',serif;font-size:30px;color:var(--g1);margin-top:4px;}
+  .result .score{font-size:44px;font-weight:900;color:var(--ink);margin:8px 0;}
+  .result p{font-size:16px;color:var(--ink-soft);}
+  .result .again{margin-top:20px;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;border:none;border-radius:15px;padding:14px 30px;font-size:17px;font-weight:900;cursor:pointer;}
+
+  .teach-note{max-width:680px;margin:40px auto 0;background:var(--jade-soft);border-radius:16px;padding:22px 26px;font-size:15px;color:#3c4a44;line-height:1.75;}
+  .teach-note h3{font-family:'Playfair Display',serif;font-size:18px;color:var(--jade-deep);margin-bottom:8px;}
+  .teach-note code{background:#fff;border:1px solid var(--line);border-radius:6px;padding:1px 7px;font-size:13px;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
+    <nav class="topbar-nav">
+      <a href="/">Home</a>
+      <a href="/bilingual-2030/">Bilingual 2030</a>
+      <a href="/counties/">Counties/Cities</a>
+      <a href="/schools/">Schools</a>
+      <a href="/partners/">Partners</a>
+      <a href="/resources/" aria-current="page">Resources</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</div>
+
+<header class="game-band">
+  <div class="wrap">
+    <p class="crumb"><a href="/resources/">← Resources</a> · Play &amp; games</p>
+    <h1>🧩 Quiz Arcade · 小考遊樂場</h1>
+    <p class="sub">Ten quick questions. See a picture, pick the right English word, then hear it. Build your streak! 十題快問,看圖選出正確英文,再聽發音,挑戰連勝!</p>
+  </div>
+</header>
+
+<main class="stage">
+  <div class="panel">
+
+    <!-- START -->
+    <section class="start" id="start">
+      <h2>Pick a topic · 選一個主題</h2>
+      <p>10 questions · pick the English word, then hear it 🔊 ｜ 10 題 · 選英文單字、聽發音</p>
+      <div class="decks" id="decks" role="group" aria-label="Choose a topic"></div>
+      <p style="font-size:13px;color:var(--ink-soft);margin-bottom:14px">See the picture and Chinese, choose the matching English word. ｜看圖與中文,選出正確英文單字。</p>
+      <button class="go-btn" id="goBtn">▶ Start quiz · 開始</button>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="quiz" id="quiz" aria-live="polite">
+      <div class="qtop">
+        <span id="qnum">Question 1 / 10</span>
+        <span class="streak" id="streak">🔥 0</span>
+      </div>
+      <div class="bar"><i id="barfill"></i></div>
+      <div class="prompt">
+        <div class="pic" id="q-pic">🐶</div>
+        <div class="ask">Which English word? · 哪一個英文單字?</div>
+        <div class="term"><span id="q-term">狗</span>
+          <button class="sayq" id="q-say" aria-label="Hear the word" hidden>🔊</button>
+        </div>
+      </div>
+      <div class="opts" id="opts"></div>
+      <div class="feedback" id="feedback"></div>
+      <button class="nextq" id="nextq">Next →</button>
+    </section>
+
+    <!-- RESULT -->
+    <section class="result" id="result">
+      <div class="face" id="r-face">🎉</div>
+      <h2 id="r-title">Great job!</h2>
+      <div class="score"><span id="r-score">8</span> / 10</div>
+      <p id="r-msg">做得好!</p>
+      <button class="again" id="r-again">Play again · 再玩一次</button>
+    </section>
+
+  </div>
+
+  <div class="teach-note">
+    <h3>For teachers · 給老師</h3>
+    Questions and wrong answers are <strong>generated automatically</strong> from the word list, so you never write multiple-choice options by hand. Download this file (it runs offline, no login) and edit the <code>DECKS</code> list at the bottom to quiz any topic. ｜題目與誘答選項由單字表<strong>自動產生</strong>,不必手寫選項。下載後離線可用,編輯底部 <code>DECKS</code> 即可改成任何主題。
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-top">
+      <div class="footer-lead">
+        <p class="footer-brand">Taiwan Bilingual Hub · 臺灣雙語資源網</p>
+        <p class="footer-note">A teacher-led initiative supporting Taiwan's 2030 Bilingual Nation policy.<br>支援「2030 雙語國家」政策 · 由老師發起的雙語教育計畫。</p>
+      </div>
+      <div class="footer-org">
+        <span class="footer-links-label">An initiative by · 發起單位</span>
+        <a class="footer-org-link" href="https://www.mycultureconnect.org">My Culture Connect <span class="far">↗</span></a>
+        <a class="footer-org-link" href="https://www.twrses.org">人師教育協會 <span class="far">↗</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-contact">Contact · 林吉祥老師 Luke Lin · <a href="mailto:luke@mycultureconnect.org">luke@mycultureconnect.org</a></p>
+      <p class="footer-copy">© 2026 Taiwan Bilingual Hub · 臺灣雙語資源網</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     DECKS — edit to add your own topics and words.
+     Each word: { en:"English", zh:"中文", e:"emoji" }
+     ============================================================ -->
+<script id="decks-data" type="application/json">
+{ "decks":[
+  { "id":"animals","en":"Animals","zh":"動物","emoji":"🐾","words":[
+    {"en":"dog","zh":"狗","e":"🐶"},{"en":"cat","zh":"貓","e":"🐱"},{"en":"rabbit","zh":"兔子","e":"🐰"},{"en":"bird","zh":"鳥","e":"🐦"},
+    {"en":"fish","zh":"魚","e":"🐟"},{"en":"bear","zh":"熊","e":"🐻"},{"en":"tiger","zh":"老虎","e":"🐯"},{"en":"elephant","zh":"大象","e":"🐘"}]},
+  { "id":"food","en":"Food","zh":"食物","emoji":"🍎","words":[
+    {"en":"apple","zh":"蘋果","e":"🍎"},{"en":"banana","zh":"香蕉","e":"🍌"},{"en":"bread","zh":"麵包","e":"🍞"},{"en":"rice","zh":"飯","e":"🍚"},
+    {"en":"egg","zh":"蛋","e":"🥚"},{"en":"milk","zh":"牛奶","e":"🥛"},{"en":"cake","zh":"蛋糕","e":"🍰"},{"en":"noodles","zh":"麵","e":"🍜"}]},
+  { "id":"school","en":"School","zh":"學校","emoji":"🎒","words":[
+    {"en":"book","zh":"書","e":"📖"},{"en":"pen","zh":"筆","e":"🖊️"},{"en":"bag","zh":"書包","e":"🎒"},{"en":"desk","zh":"書桌","e":"🪑"},
+    {"en":"ruler","zh":"尺","e":"📏"},{"en":"clock","zh":"時鐘","e":"🕐"},{"en":"teacher","zh":"老師","e":"👩‍🏫"},{"en":"pencil","zh":"鉛筆","e":"✏️"}]},
+  { "id":"feelings","en":"Feelings","zh":"心情","emoji":"😊","words":[
+    {"en":"happy","zh":"開心","e":"😊"},{"en":"sad","zh":"難過","e":"😢"},{"en":"angry","zh":"生氣","e":"😠"},{"en":"tired","zh":"累","e":"😴"},
+    {"en":"hungry","zh":"餓","e":"🍽️"},{"en":"scared","zh":"害怕","e":"😨"},{"en":"excited","zh":"興奮","e":"🤩"},{"en":"surprised","zh":"驚訝","e":"😲"}]},
+  { "id":"colors","en":"Colors","zh":"顏色","emoji":"🌈","words":[
+    {"en":"red","zh":"紅色","e":"🔴"},{"en":"blue","zh":"藍色","e":"🔵"},{"en":"yellow","zh":"黃色","e":"🟡"},{"en":"green","zh":"綠色","e":"🟢"},
+    {"en":"purple","zh":"紫色","e":"🟣"},{"en":"orange","zh":"橘色","e":"🟠"},{"en":"black","zh":"黑色","e":"⚫"},{"en":"white","zh":"白色","e":"⚪"}]},
+  { "id":"weather","en":"Weather","zh":"天氣","emoji":"☀️","words":[
+    {"en":"sunny","zh":"晴天","e":"☀️"},{"en":"rainy","zh":"下雨","e":"🌧️"},{"en":"cloudy","zh":"多雲","e":"☁️"},{"en":"windy","zh":"颳風","e":"💨"},
+    {"en":"snowy","zh":"下雪","e":"❄️"},{"en":"hot","zh":"熱","e":"🔥"},{"en":"cold","zh":"冷","e":"🥶"},{"en":"rainbow","zh":"彩虹","e":"🌈"}]}
+]}
+</script>
+
+<script>
+(function(){
+  var DECKS = JSON.parse(document.getElementById('decks-data').textContent).decks;
+  var TOTAL = 10;
+  var deckIdx = 0, pool = [], questions = [], qi = 0, score = 0, streak = 0, best = 0, answered = false;
+  var LETTERS = ['A','B','C','D'];
+
+  var elDecks = document.getElementById('decks'),
+      startEl = document.getElementById('start'),
+      quizEl = document.getElementById('quiz'),
+      resultEl = document.getElementById('result'),
+      opts = document.getElementById('opts'),
+      feedback = document.getElementById('feedback'),
+      nextBtn = document.getElementById('nextq'),
+      saysBtn = document.getElementById('q-say');
+
+  function speak(text, btn){
+    if(!('speechSynthesis' in window)) return;
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = 'en-US'; u.rate = 0.85; u.pitch = 1.05;
+    if(btn){ btn.classList.add('is-speaking');
+      u.onend=function(){btn.classList.remove('is-speaking');};
+      u.onerror=function(){btn.classList.remove('is-speaking');}; }
+    speechSynthesis.speak(u);
+  }
+  function shuffle(a){ for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i];a[i]=a[j];a[j]=t; } return a; }
+
+  function buildChips(){
+    DECKS.forEach(function(d,i){
+      var b=document.createElement('button');
+      b.className='deck-chip'; b.type='button';
+      b.setAttribute('aria-pressed', i===deckIdx?'true':'false');
+      b.innerHTML=d.emoji+' '+d.en+' · '+d.zh;
+      b.addEventListener('click',function(){
+        deckIdx=i;
+        [].forEach.call(elDecks.children,function(x,k){ x.setAttribute('aria-pressed',k===i?'true':'false'); });
+      });
+      elDecks.appendChild(b);
+    });
+  }
+
+  function makeQuestions(){
+    var d = DECKS[deckIdx];
+    var words = d.words.slice();
+    // pool of all English words for distractors (options stay pure English)
+    var allEn = words.map(function(w){ return w.en; });
+    questions = shuffle(words.slice()).slice(0, Math.min(TOTAL, words.length));
+    // if deck smaller than TOTAL, repeat shuffled to reach TOTAL
+    while(questions.length < TOTAL){
+      questions = questions.concat(shuffle(words.slice()));
+    }
+    questions = questions.slice(0, TOTAL);
+    questions = questions.map(function(w){
+      var wrong = shuffle(allEn.filter(function(en){ return en!==w.en; })).slice(0,3);
+      var options = shuffle([w.en].concat(wrong));
+      return { en:w.en, e:w.e, zh:w.zh, options:options };
+    });
+  }
+
+  function start(){
+    score=0; streak=0; best=0; qi=0;
+    makeQuestions();
+    startEl.style.display='none';
+    resultEl.classList.remove('show');
+    quizEl.classList.add('show');
+    renderQ();
+  }
+
+  function renderQ(){
+    answered=false;
+    var q = questions[qi];
+    document.getElementById('qnum').textContent = 'Question '+(qi+1)+' / '+TOTAL;
+    document.getElementById('streak').textContent = '🔥 '+streak;
+    document.getElementById('barfill').style.width = (qi/TOTAL*100)+'%';
+    document.getElementById('q-pic').textContent = q.e;
+    document.getElementById('q-term').textContent = q.zh;
+    saysBtn.hidden = true;
+    feedback.textContent=''; feedback.className='feedback';
+    nextBtn.classList.remove('show');
+    opts.innerHTML='';
+    q.options.forEach(function(opt,i){
+      var b=document.createElement('button');
+      b.className='opt'; b.type='button';
+      b.innerHTML='<span class="k">'+LETTERS[i]+'</span><span>'+opt+'</span>';
+      b.addEventListener('click',function(){ answer(b, opt, q); });
+      opts.appendChild(b);
+    });
+  }
+
+  function answer(btn, opt, q){
+    if(answered) return;
+    answered=true;
+    var buttons = opts.querySelectorAll('.opt');
+    [].forEach.call(buttons,function(b){ b.disabled=true; });
+    saysBtn.hidden = false;          // reveal listen button after answering
+    speak(q.en, saysBtn);            // hear the correct English word
+    if(opt===q.en){
+      btn.classList.add('correct');
+      score++; streak++; if(streak>best) best=streak;
+      feedback.textContent='✓ Correct! · 答對了! ('+q.en+' = '+q.zh+')'; feedback.className='feedback ok';
+    } else {
+      btn.classList.add('wrong');
+      streak=0;
+      [].forEach.call(buttons,function(b){
+        if(b.querySelector('span:last-child').textContent===q.en) b.classList.add('correct');
+        else if(b!==btn) b.classList.add('dim');
+      });
+      feedback.textContent='✗  '+q.en+' = '+q.zh; feedback.className='feedback no';
+    }
+    document.getElementById('streak').textContent = '🔥 '+streak;
+    document.getElementById('barfill').style.width = ((qi+1)/TOTAL*100)+'%';
+    nextBtn.classList.add('show');
+  }
+
+  function next(){
+    qi++;
+    if(qi>=TOTAL){ finish(); return; }
+    renderQ();
+  }
+
+  function finish(){
+    quizEl.classList.remove('show');
+    document.getElementById('r-score').textContent = score;
+    var pct = score/TOTAL;
+    var face, title, msg;
+    if(pct===1){ face='🏆'; title='Perfect!'; msg='全部答對,太厲害了! Best streak 🔥'+best; }
+    else if(pct>=0.7){ face='🎉'; title='Great job!'; msg='做得很好! Best streak 🔥'+best; }
+    else if(pct>=0.4){ face='👍'; title='Good try!'; msg='不錯喔,再玩一次會更好! Best streak 🔥'+best; }
+    else { face='💪'; title='Keep going!'; msg='多練習幾次就會進步! Best streak 🔥'+best; }
+    document.getElementById('r-face').textContent=face;
+    document.getElementById('r-title').textContent=title;
+    document.getElementById('r-msg').textContent=msg;
+    resultEl.classList.add('show');
+  }
+
+  saysBtn.addEventListener('click',function(){ speak(questions[qi].en, saysBtn); });
+  nextBtn.addEventListener('click', next);
+  document.getElementById('goBtn').addEventListener('click', start);
+  document.getElementById('r-again').addEventListener('click', function(){
+    resultEl.classList.remove('show');
+    startEl.style.display='block';
+  });
+
+  buildChips();
+})();
+</script>
+
+<script src="/assets/js/nav.js"></script>
+</body>
+</html>

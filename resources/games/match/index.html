@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="/assets/favicon/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+<meta name="theme-color" content="#007f78">
+<title>Memory Match · 記憶配對 — Taiwan Bilingual Hub</title>
+<meta name="description" content="Flip cards to match the picture with the English word, with 🔊 pronunciation. Free to use and free to copy. 翻牌把圖配對英文單字,附發音,免費使用、自由複製。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
+<style>
+  /* ============================================================
+     MEMORY MATCH — self-contained picture/word matching game.
+     TEACHERS: edit the DECKS list near the bottom to add topics.
+     Each word needs en / zh / e (an emoji). Save and open — done.
+     ============================================================ */
+  :root{ --g1:#b5392e; --g2:#e26a4e; }
+  .game-band{background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;padding:42px 0 110px;position:relative;overflow:hidden;}
+  .game-band::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 0%,rgba(255,255,255,.16),transparent 55%);pointer-events:none;}
+  .game-band .crumb{font-size:14px;font-weight:700;}
+  .game-band .crumb a{color:#ffe3da;}
+  .game-band h1{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(30px,5vw,46px);font-weight:700;margin-top:10px;position:relative;z-index:1;}
+  .game-band .sub{margin-top:10px;font-size:18px;color:#ffeae3;max-width:60ch;position:relative;z-index:1;}
+
+  .stage{max-width:820px;margin:-78px auto 0;padding:0 18px 10px;position:relative;z-index:2;}
+
+  .panel{background:#fff;border-radius:22px;box-shadow:var(--shadow);padding:22px 22px 26px;}
+  .decks{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:14px;}
+  .deck-chip{background:#fff;border:2px solid var(--line);border-radius:999px;padding:7px 15px;font-size:14px;font-weight:700;color:var(--ink);cursor:pointer;transition:transform .15s;}
+  .deck-chip:hover{transform:translateY(-2px);}
+  .deck-chip[aria-pressed="true"]{color:#fff;border-color:transparent;}
+
+  .scorebar{display:flex;align-items:center;justify-content:center;gap:24px;margin:6px 0 18px;flex-wrap:wrap;}
+  .stat{text-align:center;}
+  .stat b{display:block;font-size:26px;font-weight:900;color:var(--g1);line-height:1;}
+  .stat span{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);}
+  .restart{background:var(--g1);color:#fff;border:none;border-radius:12px;padding:11px 18px;font-size:15px;font-weight:800;cursor:pointer;transition:transform .15s;}
+  .restart:hover{transform:translateY(-2px);}
+
+  .grid{display:grid;gap:11px;grid-template-columns:repeat(4,1fr);}
+  @media(max-width:560px){ .grid{gap:8px;} }
+  .mc{aspect-ratio:3/4;perspective:900px;cursor:pointer;}
+  .mc-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .4s;}
+  .mc.up .mc-inner,.mc.done .mc-inner{transform:rotateY(180deg);}
+  .mc-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:15px;display:flex;align-items:center;justify-content:center;text-align:center;padding:6px;box-shadow:var(--shadow-sm);}
+  .mc-back{background:linear-gradient(150deg,var(--deckc,#e26a4e),var(--g1));color:#fff;font-size:30px;}
+  .mc-front{background:#fff;border:2px solid #eef0ec;transform:rotateY(180deg);}
+  .mc-front .em{font-size:clamp(32px,7vw,52px);line-height:1;}
+  .mc-front .wd{font-size:clamp(15px,3.4vw,22px);font-weight:900;color:var(--ink);}
+  .mc.done .mc-inner{animation:pop .45s ease;}
+  .mc.done .mc-front{border-color:var(--deckc,#e26a4e);background:#fff7f4;}
+  .mc.wrong .mc-front{border-color:#d34;background:#fff0f0;}
+  @keyframes pop{40%{transform:rotateY(180deg) scale(1.08);}}
+
+  .win{display:none;text-align:center;padding:34px 10px 8px;}
+  .win.show{display:block;animation:fade .4s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(8px);}}
+  .win .trophy{font-size:64px;}
+  .win h2{font-family:'Playfair Display',serif;font-size:30px;color:var(--g1);margin-top:6px;}
+  .win p{font-size:17px;color:var(--ink-soft);margin-top:8px;}
+  .win .again{margin-top:18px;background:var(--g1);color:#fff;border:none;border-radius:14px;padding:14px 28px;font-size:17px;font-weight:800;cursor:pointer;}
+
+  .levels{display:flex;justify-content:center;gap:10px;margin-top:16px;font-size:14px;}
+  .levels button{background:none;border:2px solid var(--line);border-radius:10px;padding:7px 14px;font-weight:700;color:var(--ink-soft);cursor:pointer;}
+  .levels button[aria-pressed="true"]{border-color:var(--g1);color:var(--g1);}
+
+  .teach-note{max-width:820px;margin:40px auto 0;background:var(--jade-soft);border-radius:16px;padding:22px 26px;font-size:15px;color:#3c4a44;line-height:1.75;}
+  .teach-note h3{font-family:'Playfair Display',serif;font-size:18px;color:var(--jade-deep);margin-bottom:8px;}
+  .teach-note code{background:#fff;border:1px solid var(--line);border-radius:6px;padding:1px 7px;font-size:13px;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="topbar-brand" href="/"><div class="topbar-name">Taiwan Bilingual Hub<small>臺灣雙語資源網</small></div></a>
+    <nav class="topbar-nav">
+      <a href="/">Home</a>
+      <a href="/bilingual-2030/">Bilingual 2030</a>
+      <a href="/counties/">Counties/Cities</a>
+      <a href="/schools/">Schools</a>
+      <a href="/partners/">Partners</a>
+      <a href="/resources/" aria-current="page">Resources</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</div>
+
+<header class="game-band">
+  <div class="wrap">
+    <p class="crumb"><a href="/resources/">← Resources</a> · Play &amp; games</p>
+    <h1>🧠 Memory Match · 記憶配對</h1>
+    <p class="sub">Flip two cards to match the picture with its English word. Hear every word you match. 翻開兩張牌,把圖片配上正確的英文單字,配對成功就聽發音。</p>
+  </div>
+</header>
+
+<main class="stage">
+  <div class="panel">
+    <div class="decks" id="decks" role="group" aria-label="Choose a topic"></div>
+    <div class="scorebar">
+      <div class="stat"><b id="moves">0</b><span>Moves · 步數</span></div>
+      <div class="stat"><b id="pairs">0</b><span>Pairs · 配對</span></div>
+      <button class="restart" id="restart">↻ New game · 重新開始</button>
+    </div>
+    <div class="grid" id="grid" aria-label="Memory cards"></div>
+    <div class="win" id="win">
+      <div class="trophy">🏆</div>
+      <h2>You matched them all!</h2>
+      <p id="win-msg">全部配對成功!</p>
+      <button class="again" id="again">Play again · 再玩一次</button>
+    </div>
+    <div class="levels" role="group" aria-label="Difficulty">
+      <button data-n="4" aria-pressed="false">Easy · 4 pairs</button>
+      <button data-n="6" aria-pressed="true">Medium · 6 pairs</button>
+      <button data-n="8" aria-pressed="false">Hard · 8 pairs</button>
+    </div>
+  </div>
+
+  <div class="teach-note">
+    <h3>For teachers · 給老師</h3>
+    Free to use and <strong>free to copy</strong> — download this file and it runs offline, no login needed. To make your own matching set, open the file and edit the <code>DECKS</code> list at the bottom (English word, Chinese, and an emoji for each). ｜可自由下載、離線使用、複製到自己的網站。要做自己的配對組,編輯底部的 <code>DECKS</code> 即可。
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-top">
+      <div class="footer-lead">
+        <p class="footer-brand">Taiwan Bilingual Hub · 臺灣雙語資源網</p>
+        <p class="footer-note">A teacher-led initiative supporting Taiwan's 2030 Bilingual Nation policy.<br>支援「2030 雙語國家」政策 · 由老師發起的雙語教育計畫。</p>
+      </div>
+      <div class="footer-org">
+        <span class="footer-links-label">An initiative by · 發起單位</span>
+        <a class="footer-org-link" href="https://www.mycultureconnect.org">My Culture Connect <span class="far">↗</span></a>
+        <a class="footer-org-link" href="https://www.twrses.org">人師教育協會 <span class="far">↗</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-contact">Contact · 林吉祥老師 Luke Lin · <a href="mailto:luke@mycultureconnect.org">luke@mycultureconnect.org</a></p>
+      <p class="footer-copy">© 2026 Taiwan Bilingual Hub · 臺灣雙語資源網</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     DECKS — edit to add your own topics and words.
+     Each word: { en:"English", zh:"中文", e:"emoji" }
+     ============================================================ -->
+<script id="decks-data" type="application/json">
+{ "decks":[
+  { "id":"animals","en":"Animals","zh":"動物","c":"#f0944a","emoji":"🐾","words":[
+    {"en":"dog","zh":"狗","e":"🐶"},{"en":"cat","zh":"貓","e":"🐱"},{"en":"rabbit","zh":"兔子","e":"🐰"},{"en":"bird","zh":"鳥","e":"🐦"},
+    {"en":"fish","zh":"魚","e":"🐟"},{"en":"bear","zh":"熊","e":"🐻"},{"en":"tiger","zh":"老虎","e":"🐯"},{"en":"elephant","zh":"大象","e":"🐘"}]},
+  { "id":"food","en":"Food","zh":"食物","c":"#e0563f","emoji":"🍎","words":[
+    {"en":"apple","zh":"蘋果","e":"🍎"},{"en":"banana","zh":"香蕉","e":"🍌"},{"en":"bread","zh":"麵包","e":"🍞"},{"en":"rice","zh":"飯","e":"🍚"},
+    {"en":"egg","zh":"蛋","e":"🥚"},{"en":"milk","zh":"牛奶","e":"🥛"},{"en":"cake","zh":"蛋糕","e":"🍰"},{"en":"noodles","zh":"麵","e":"🍜"}]},
+  { "id":"school","en":"School","zh":"學校","c":"#3f8fb0","emoji":"🎒","words":[
+    {"en":"book","zh":"書","e":"📖"},{"en":"pen","zh":"筆","e":"🖊️"},{"en":"bag","zh":"書包","e":"🎒"},{"en":"desk","zh":"書桌","e":"🪑"},
+    {"en":"ruler","zh":"尺","e":"📏"},{"en":"clock","zh":"時鐘","e":"🕐"},{"en":"teacher","zh":"老師","e":"👩‍🏫"},{"en":"pencil","zh":"鉛筆","e":"✏️"}]},
+  { "id":"feelings","en":"Feelings","zh":"心情","c":"#c46fb0","emoji":"😊","words":[
+    {"en":"happy","zh":"開心","e":"😊"},{"en":"sad","zh":"難過","e":"😢"},{"en":"angry","zh":"生氣","e":"😠"},{"en":"tired","zh":"累","e":"😴"},
+    {"en":"hungry","zh":"餓","e":"🍽️"},{"en":"scared","zh":"害怕","e":"😨"},{"en":"excited","zh":"興奮","e":"🤩"},{"en":"surprised","zh":"驚訝","e":"😲"}]},
+  { "id":"colors","en":"Colors","zh":"顏色","c":"#6c8c3a","emoji":"🌈","words":[
+    {"en":"red","zh":"紅色","e":"🔴"},{"en":"blue","zh":"藍色","e":"🔵"},{"en":"yellow","zh":"黃色","e":"🟡"},{"en":"green","zh":"綠色","e":"🟢"},
+    {"en":"purple","zh":"紫色","e":"🟣"},{"en":"orange","zh":"橘色","e":"🟠"},{"en":"black","zh":"黑色","e":"⚫"},{"en":"white","zh":"白色","e":"⚪"}]},
+  { "id":"weather","en":"Weather","zh":"天氣","c":"#3f86c4","emoji":"☀️","words":[
+    {"en":"sunny","zh":"晴天","e":"☀️"},{"en":"rainy","zh":"下雨","e":"🌧️"},{"en":"cloudy","zh":"多雲","e":"☁️"},{"en":"windy","zh":"颳風","e":"💨"},
+    {"en":"snowy","zh":"下雪","e":"❄️"},{"en":"hot","zh":"熱","e":"🔥"},{"en":"cold","zh":"冷","e":"🥶"},{"en":"rainbow","zh":"彩虹","e":"🌈"}]}
+]}
+</script>
+
+<script>
+(function(){
+  var DECKS = JSON.parse(document.getElementById('decks-data').textContent).decks;
+  var deckIdx = 0, nPairs = 6, deck = [], first = null, lock = false, moves = 0, matched = 0;
+
+  var elDecks = document.getElementById('decks'),
+      grid = document.getElementById('grid'),
+      win = document.getElementById('win'),
+      elMoves = document.getElementById('moves'),
+      elPairs = document.getElementById('pairs');
+
+  function speak(text){
+    if(!('speechSynthesis' in window)) return;
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = 'en-US'; u.rate = 0.85; u.pitch = 1.05;
+    speechSynthesis.speak(u);
+  }
+  function shuffle(a){ for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i];a[i]=a[j];a[j]=t; } return a; }
+
+  function buildChips(){
+    DECKS.forEach(function(d,i){
+      var b = document.createElement('button');
+      b.className='deck-chip'; b.type='button';
+      b.setAttribute('aria-pressed', i===deckIdx?'true':'false');
+      if(i===deckIdx) b.style.background = d.c;
+      b.innerHTML = d.emoji+' '+d.en;
+      b.addEventListener('click', function(){ deckIdx=i; newGame(); });
+      elDecks.appendChild(b);
+    });
+  }
+  function syncChips(){
+    [].forEach.call(elDecks.children,function(b,i){
+      var on=i===deckIdx; b.setAttribute('aria-pressed',on?'true':'false');
+      b.style.background = on?DECKS[i].c:'#fff';
+    });
+  }
+
+  function newGame(){
+    var d = DECKS[deckIdx];
+    document.documentElement.style.setProperty('--deckc', d.c);
+    syncChips();
+    win.classList.remove('show'); grid.style.display='grid';
+    moves=0; matched=0; first=null; lock=false;
+    elMoves.textContent='0'; elPairs.textContent='0';
+
+    var words = shuffle(d.words.slice()).slice(0, nPairs);
+    deck = [];
+    words.forEach(function(w){
+      deck.push({ key:w.en, kind:'emoji', emoji:w.e, en:w.en });
+      deck.push({ key:w.en, kind:'word', emoji:w.e, en:w.en });
+    });
+    shuffle(deck);
+
+    grid.innerHTML='';
+    grid.style.gridTemplateColumns = 'repeat('+(nPairs<=4?4:4)+',1fr)';
+    deck.forEach(function(c,i){
+      var cell = document.createElement('div');
+      cell.className='mc'; cell.dataset.i=i;
+      cell.innerHTML =
+        '<div class="mc-inner">'
+        + '<div class="mc-face mc-back">?</div>'
+        + '<div class="mc-face mc-front">'
+          + (c.kind==='emoji' ? '<span class="em">'+c.emoji+'</span>' : '<span class="wd">'+c.en+'</span>')
+        + '</div></div>';
+      cell.addEventListener('click', function(){ pick(cell, c); });
+      grid.appendChild(cell);
+    });
+  }
+
+  function pick(cell, c){
+    if(lock || cell.classList.contains('up') || cell.classList.contains('done')) return;
+    cell.classList.add('up');
+    if(!first){ first = {cell:cell, c:c}; return; }
+    if(first.cell === cell) return;
+    moves++; elMoves.textContent = moves;
+
+    if(first.c.key === c.key){
+      first.cell.classList.add('done'); cell.classList.add('done');
+      speak(c.en);
+      matched++; elPairs.textContent = matched;
+      first = null;
+      if(matched === nPairs) setTimeout(finish, 600);
+    } else {
+      lock = true;
+      var a = first.cell, b = cell;
+      a.classList.add('wrong'); b.classList.add('wrong');
+      setTimeout(function(){
+        a.classList.remove('up','wrong'); b.classList.remove('up','wrong');
+        first=null; lock=false;
+      }, 850);
+    }
+  }
+
+  function finish(){
+    grid.style.display='none';
+    document.getElementById('win-msg').textContent = '配對成功! 用了 '+moves+' 步 · Done in '+moves+' moves';
+    win.classList.add('show');
+  }
+
+  document.getElementById('restart').addEventListener('click', newGame);
+  document.getElementById('again').addEventListener('click', newGame);
+  document.querySelectorAll('.levels button').forEach(function(b){
+    b.addEventListener('click', function(){
+      document.querySelectorAll('.levels button').forEach(function(x){ x.setAttribute('aria-pressed','false'); });
+      b.setAttribute('aria-pressed','true');
+      nPairs = parseInt(b.dataset.n,10); newGame();
+    });
+  });
+
+  buildChips(); newGame();
+})();
+</script>
+
+<script src="/assets/js/nav.js"></script>
+</body>
+</html>
