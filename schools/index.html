@@ -61,47 +61,24 @@
   .join .cta{display:inline-block;margin-top:16px;background:var(--gold,#d4a017);color:#3a2c08;font-weight:700;font-size:16px;padding:12px 24px;border-radius:999px;}
   .join .cta:hover{filter:brightness(.95);}
 
-  /* ===== Apple-style horizontal shelf ===== */
-  .shelf-wrap{position:relative;margin-top:6px;}
-  .shelf{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x proximity;scroll-behavior:smooth;
-    padding:6px 4px 24px;scroll-padding-left:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
-  .shelf::-webkit-scrollbar{display:none;}
-  .scard{flex:0 0 290px;scroll-snap-align:start;display:flex;flex-direction:column;background:#fff;
-    border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow-sm);
-    transition:transform .2s,box-shadow .2s;color:var(--ink);}
-  .scard:hover{transform:translateY(-6px);box-shadow:var(--shadow);}
-  .scard .cover{position:relative;height:160px;display:flex;align-items:flex-end;padding:18px;
-    background:linear-gradient(150deg,var(--a1) 0%,var(--a2) 100%);overflow:hidden;}
-  .scard .cover::before{content:"";position:absolute;top:-46px;right:-34px;width:170px;height:170px;border-radius:50%;
-    background:radial-gradient(circle,rgba(255,255,255,.20) 0%,transparent 70%);}
-  .scard .cover .zh-name{font-family:'Playfair Display','PingFang TC',serif;font-size:30px;font-weight:700;color:#fff;
-    line-height:1.12;letter-spacing:.02em;position:relative;z-index:1;text-shadow:0 2px 12px rgba(0,0,0,.20);}
-  .scard .cover .lvl-tag{position:absolute;top:14px;left:16px;font-size:11px;font-weight:700;letter-spacing:.1em;
-    text-transform:uppercase;color:#fff;background:rgba(255,255,255,.24);padding:4px 11px;border-radius:999px;z-index:1;}
-  .scard .body{flex:1;display:flex;flex-direction:column;padding:16px 18px 18px;}
-  .scard .en-name{font-size:18px;font-weight:700;color:var(--ink);line-height:1.2;}
-  .scard .chip{align-self:flex-start;margin-top:9px;font-size:12.5px;font-weight:700;color:var(--a2);background:var(--chipbg);
-    padding:3px 11px;border-radius:999px;}
-  .scard .hl{margin-top:11px;font-size:14.5px;color:var(--ink-soft);line-height:1.5;flex:1;}
-  .scard .go{margin-top:14px;font-size:14px;font-weight:700;color:var(--a2);}
-  .scard .go .arr{display:inline-block;transition:transform .18s;}
-  .scard:hover .go .arr{transform:translateX(4px);}
-  .scard.seeall{background:linear-gradient(150deg,var(--jade) 0%,var(--jade-deep) 100%);color:#fff;justify-content:center;padding:26px 24px;}
-  .scard.seeall .big{font-family:'Playfair Display','PingFang TC',serif;font-size:23px;font-weight:700;line-height:1.22;}
-  .scard.seeall p{margin-top:10px;font-size:14.5px;color:rgba(255,255,255,.9);line-height:1.55;}
-  .scard.seeall .go{margin-top:18px;color:#fff;}
-  .shelf-btn{position:absolute;top:80px;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;
-    border:1px solid var(--line);background:rgba(255,255,255,.94);box-shadow:var(--shadow);font-size:19px;
+  /* ===== Netflix-style horizontal shelf (overrides the .school-grid grid for this page) ===== */
+  .shelf-wrap{position:relative;margin-top:10px;}
+  .school-grid{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x proximity;scroll-behavior:smooth;
+    padding:8px 4px 26px;scroll-padding-left:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+  .school-grid::-webkit-scrollbar{display:none;}
+  .school-grid > .school-card{flex:0 0 288px;scroll-snap-align:start;}
+  .shelf-btn{position:absolute;top:108px;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;
+    border:1px solid var(--line);background:rgba(255,255,255,.95);box-shadow:var(--shadow);font-size:24px;line-height:1;
     color:var(--jade-deep);cursor:pointer;display:none;align-items:center;justify-content:center;z-index:4;
     transition:background .15s,transform .15s;}
-  .shelf-btn:hover{background:#fff;transform:translateY(-50%) scale(1.07);}
-  .shelf-btn.prev{left:-12px;} .shelf-btn.next{right:-12px;}
+  .shelf-btn:hover{background:#fff;transform:translateY(-50%) scale(1.08);}
+  .shelf-btn.prev{left:-14px;} .shelf-btn.next{right:-14px;}
   .shelf-btn[hidden]{display:none!important;}
   @media(min-width:880px){.shelf-btn{display:flex;}}
   .seeall-bar{margin-top:6px;}
   .seeall-bar a{display:inline-flex;align-items:center;gap:8px;background:var(--jade-deep);color:#fff;font-weight:700;font-size:15.5px;padding:12px 24px;border-radius:999px;}
   .seeall-bar a:hover{background:var(--jade);color:#fff;}
-  @media (prefers-reduced-motion: reduce){.shelf{scroll-behavior:auto;} .scard{transition:none;}}
+  @media (prefers-reduced-motion: reduce){.school-grid{scroll-behavior:auto;} .school-card{transition:none;}}
 </style>
 <link rel="stylesheet" href="/assets/css/motion.css">
 </head>
@@ -143,6 +120,9 @@
     </div>
     <p id="schools-empty" class="ls-empty" hidden>No schools match your search. ｜找不到符合的學校。</p>
 
+    <div class="shelf-wrap">
+      <button class="shelf-btn prev" type="button" aria-label="Scroll left" hidden>‹</button>
+      <button class="shelf-btn next" type="button" aria-label="Scroll right">›</button>
         <div class="school-grid">
       <a class="school-card" style="--accent:#3f6fa3;--accent-soft:#eaf0f6" href="https://changhua-bilingual.org/schools/yangming-jhs/" target="_blank" rel="noopener">
         <img class="sc-photo" src="/assets/images/schools/yangming-jhs.jpg" alt="Yangming Junior High" loading="lazy">
@@ -360,6 +340,7 @@
         </div>
       </a>
     </div>
+    </div>
 
     <div class="seeall-bar">
       <a href="https://changhua-bilingual.org/schools/" target="_blank" rel="noopener">🌐 Browse all 100+ Changhua schools ↗</a>
@@ -407,9 +388,9 @@
 (function(){
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   document.querySelectorAll('.shelf-wrap').forEach(function(w){
-    var sh=w.querySelector('.shelf'), prev=w.querySelector('.prev'), next=w.querySelector('.next');
+    var sh=w.querySelector('.school-grid'), prev=w.querySelector('.prev'), next=w.querySelector('.next');
     if(!sh) return;
-    function step(){var c=sh.querySelector('.scard');return (c?c.getBoundingClientRect().width:290)+20;}
+    function step(){var c=sh.querySelector('.school-card');return (c?c.getBoundingClientRect().width:288)+22;}
     function maxX(){return sh.scrollWidth - sh.clientWidth - 2;}
     function upd(){if(prev)prev.hidden=sh.scrollLeft<=2; if(next)next.hidden=sh.scrollLeft>=maxX();}
     if(prev)prev.addEventListener('click',function(){sh.scrollBy({left:-step()*1.5,behavior:'smooth'});});
