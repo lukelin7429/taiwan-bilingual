@@ -66,25 +66,24 @@
   .school-grid{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x proximity;scroll-behavior:smooth;
     padding:8px 4px 26px;scroll-padding-left:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
   .school-grid::-webkit-scrollbar{display:none;}
-  /* Each card is a 16:9 landscape tile — photo left, text right */
-  .school-grid > .school-card{flex:0 0 min(86vw,448px);scroll-snap-align:start;
-    aspect-ratio:16/9;flex-direction:row;align-items:stretch;}
-  .school-grid > .school-card .sc-photo{flex:0 0 42%;width:42%;height:100%;aspect-ratio:auto;object-fit:cover;}
-  .school-grid > .school-card .sc-body{flex:1;min-width:0;overflow:hidden;padding:16px 20px;justify-content:center;}
-  .school-grid > .school-card .card-tag{margin-bottom:11px;}
-  .school-grid > .school-card .card-name{font-size:20px;line-height:1.18;
+  /* Each card is a 1:1 square tile — photo on top, text below */
+  .school-grid > .school-card{flex:0 0 min(80vw,324px);scroll-snap-align:start;
+    aspect-ratio:1/1;flex-direction:column;}
+  .school-grid > .school-card .sc-photo{flex:0 0 44%;width:100%;height:44%;aspect-ratio:auto;object-fit:cover;}
+  .school-grid > .school-card .sc-body{flex:1;min-width:0;overflow:hidden;padding:15px 20px 16px;justify-content:flex-start;}
+  .school-grid > .school-card .card-tag{margin-bottom:10px;}
+  .school-grid > .school-card .card-name{font-size:19px;line-height:1.16;
     display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
-  .school-grid > .school-card .card-zh{margin-top:4px;font-size:14.5px;}
-  .school-grid > .school-card .card-line{margin-top:9px;font-size:13.5px;line-height:1.45;
-    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
-  .school-grid > .school-card .card-loc{margin-top:10px;font-size:12.5px;}
-  .school-grid > .school-card .card-go{margin-top:7px;font-size:14px;}
+  .school-grid > .school-card .card-zh{margin-top:4px;font-size:14px;}
+  /* the long description doesn't fit a square tile — keep tiles clean (full text lives on the homepage cards) */
+  .school-grid > .school-card .card-line{display:none;}
+  .school-grid > .school-card .card-loc{margin-top:auto;padding-top:8px;font-size:12px;}
+  .school-grid > .school-card .card-go{margin-top:5px;font-size:13.5px;}
   @media(max-width:600px){
-    .school-grid > .school-card .card-line{display:none;}
     .school-grid > .school-card .card-name{font-size:17px;}
-    .school-grid > .school-card .sc-body{padding:13px 16px;}
+    .school-grid > .school-card .sc-body{padding:13px 17px 14px;}
   }
-  .shelf-btn{position:absolute;top:132px;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;
+  .shelf-btn{position:absolute;top:169px;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;
     border:1px solid var(--line);background:rgba(255,255,255,.95);box-shadow:var(--shadow);font-size:24px;line-height:1;
     color:var(--jade-deep);cursor:pointer;display:none;align-items:center;justify-content:center;z-index:4;
     transition:background .15s,transform .15s;}
