@@ -320,6 +320,10 @@ a:hover{color:var(--jade);}
 .school-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);}
 .school-card .sc-photo{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--line);}
 .school-card .sc-body{display:flex;flex-direction:column;padding:22px 26px 24px;}
+/* Photo school cards in a responsive grid (the /schools/ listing) */
+.school-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:22px;}
+.school-card .sc-fallback{display:flex;align-items:flex-end;padding:16px 18px;background:linear-gradient(150deg,var(--accent,#2f5d4f) 0%,#1f4338 100%);}
+.school-card .sc-fallback span{font-family:'Playfair Display','PingFang TC',serif;font-size:24px;font-weight:700;color:#fff;line-height:1.15;text-shadow:0 2px 10px rgba(0,0,0,.3);}
 .card{
   display:flex;flex-direction:column;
   background:#fff;
