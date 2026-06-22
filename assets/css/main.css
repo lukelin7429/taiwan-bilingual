@@ -318,7 +318,7 @@ a:hover{color:var(--jade);}
   color:var(--ink);text-decoration:none;
 }
 .school-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);}
-.school-card .sc-photo{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--line);}
+.school-card .sc-photo{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--line);}
 .school-card .sc-body{display:flex;flex-direction:column;padding:22px 26px 24px;}
 /* Photo school cards in a responsive grid (the /schools/ listing) */
 .school-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:22px;}
