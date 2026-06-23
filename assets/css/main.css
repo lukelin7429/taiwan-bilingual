@@ -52,6 +52,7 @@ a:hover{color:var(--jade);}
   border-bottom:1px solid var(--line);
   padding:14px 0;
   position:sticky;top:0;z-index:50;
+  -webkit-backdrop-filter:blur(8px);
   backdrop-filter:blur(8px);
   overflow:visible;
   /* keep the top bar consistent across every page, even ones that
@@ -122,6 +123,17 @@ a:hover{color:var(--jade);}
 .nav-open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
 
 @media(max-width:899px){
+  /* iOS Safari clips/disables descendants that overflow a backdrop-filter
+     element's box. The mobile dropdown sits BELOW the topbar (top:100%+10px),
+     i.e. outside it, so on iPhone it rendered untappable ("選單點選無效").
+     Drop the blur on mobile and use a solid bar instead — the dropdown then
+     hit-tests normally. Desktop keeps the blur (its nav is inline, not a
+     overflowing dropdown). */
+  .topbar{
+    -webkit-backdrop-filter:none;
+    backdrop-filter:none;
+    background:#fff;
+  }
   .nav-toggle{display:flex;}
   .topbar-nav{
     position:absolute;
