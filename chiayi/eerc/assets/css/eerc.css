@@ -669,3 +669,256 @@ a:hover { color: var(--forest); }
 /* ── Reveal animation (getBoundingClientRect-based) ──────── */
 .rvl { opacity: 0; transform: translateY(22px); transition: opacity .55s ease, transform .55s ease; }
 .rvl.revealed { opacity: 1; transform: none; }
+
+/* ================================================================
+   EERC MOTION LAYER — Keyframes + Interactive Animations
+   ================================================================ */
+
+@keyframes eerc-float {
+  0%,100% { transform: translateY(0) scale(1); }
+  50%     { transform: translateY(-18px) scale(1.04); }
+}
+@keyframes eerc-float2 {
+  0%,100% { transform: translateY(0) rotate(0deg); }
+  33%     { transform: translateY(-10px) rotate(6deg); }
+  66%     { transform: translateY(7px) rotate(-4deg); }
+}
+@keyframes eerc-bounce {
+  0%,100% { transform: translateY(0) scale(1); }
+  30%     { transform: translateY(-10px) scale(1.18); }
+  60%     { transform: translateY(-4px) scale(1.06); }
+}
+@keyframes eerc-ripple {
+  0%   { transform: scale(0); opacity: .5; }
+  100% { transform: scale(5); opacity: 0; }
+}
+@keyframes eerc-speak-pulse {
+  0%,100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(196,160,85,.5); }
+  50%     { transform: scale(1.07); box-shadow: 0 0 0 9px rgba(196,160,85,0); }
+}
+@keyframes eerc-gold-pulse {
+  0%,100% { border-color: var(--forest); }
+  50%     { border-color: var(--mist); box-shadow: 0 0 0 4px rgba(196,160,85,.18); }
+}
+@keyframes eerc-gradient-drift {
+  0%,100% { background-position: 0% 50%; }
+  50%     { background-position: 100% 50%; }
+}
+
+/* ── Animated orb ──── */
+.page-banner-orb {
+  animation: eerc-float 7s ease-in-out infinite;
+}
+.page-banner-orb::before {
+  content: '';
+  position: absolute;
+  width: 55%; height: 55%;
+  background: rgba(196,160,85,.12);
+  border-radius: 50%;
+  bottom: -18%; right: -8%;
+  animation: eerc-float2 9s ease-in-out infinite;
+}
+.page-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+    rgba(196,160,85,.0) 0%,
+    rgba(196,160,85,.05) 50%,
+    rgba(196,160,85,.0) 100%);
+  background-size: 200% 200%;
+  animation: eerc-gradient-drift 10s ease infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ── Photo banner ──── */
+.page-banner.has-photo {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.page-banner.has-photo .page-banner-content {
+  background: linear-gradient(to right,
+    rgba(14,38,16,.92) 0%,
+    rgba(14,38,16,.62) 55%,
+    rgba(14,38,16,.18) 100%) !important;
+}
+.photo-credit {
+  position: absolute;
+  bottom: 8px; right: 14px;
+  font-size: 11px;
+  color: rgba(255,255,255,.48);
+  z-index: 10;
+}
+.photo-credit a { color: rgba(255,255,255,.55); }
+
+/* ── Township cards ──── */
+.township-card {
+  position: relative; overflow: hidden; will-change: transform;
+  transition: transform .28s cubic-bezier(.34,1.56,.64,1),
+              box-shadow .28s ease, border-color .28s ease !important;
+}
+.township-card::before {
+  content: ''; position: absolute; top: 50%; left: 50%;
+  width: 0; height: 0; background: rgba(196,160,85,.13);
+  border-radius: 50%; transform: translate(-50%,-50%);
+  transition: width .5s ease, height .5s ease, opacity .5s ease;
+  opacity: 0; pointer-events: none; z-index: 0;
+}
+.township-card > * { position: relative; z-index: 1; }
+.township-card:hover {
+  transform: translateY(-7px) scale(1.025) !important;
+  box-shadow: 0 18px 44px rgba(30,66,32,.22), 0 0 0 2px var(--mist) !important;
+}
+.township-card:hover::before { width: 320px; height: 320px; opacity: 1; }
+.township-card:hover .township-emoji {
+  animation: eerc-bounce .55s cubic-bezier(.34,1.56,.64,1);
+  display: inline-block;
+}
+.township-card:active { transform: translateY(-2px) scale(.98) !important; }
+
+/* ── Highlight cards ──── */
+.highlight-card {
+  position: relative; overflow: hidden; cursor: pointer; will-change: transform;
+  transition: transform .25s cubic-bezier(.34,1.56,.64,1),
+              box-shadow .25s ease, background .25s ease, border-color .25s ease !important;
+}
+.highlight-card::before {
+  content: ''; position: absolute;
+  top: -60%; left: -70%; width: 55%; height: 220%;
+  background: rgba(255,255,255,.1); transform: skewX(-14deg);
+  transition: left .45s ease; pointer-events: none;
+}
+.highlight-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 14px 38px rgba(30,66,32,.18) !important;
+  background: var(--forest-light) !important;
+  border-color: rgba(196,160,85,.5) !important;
+}
+.highlight-card:hover::before { left: 140%; }
+.highlight-card:hover .highlight-icon {
+  animation: eerc-bounce .5s cubic-bezier(.34,1.56,.64,1);
+  display: inline-block;
+}
+
+/* ── Vocab cards ──── */
+.vocab-card {
+  will-change: transform;
+  transition: transform .22s cubic-bezier(.34,1.56,.64,1),
+              box-shadow .22s ease, border-color .22s ease, background .22s ease !important;
+}
+.vocab-card:hover {
+  transform: translateY(-4px) scale(1.018) !important;
+  box-shadow: 0 10px 28px rgba(30,66,32,.16) !important;
+  border-color: var(--mist) !important;
+}
+.vocab-card.speaking {
+  animation: eerc-gold-pulse .85s ease infinite !important;
+  background: var(--mist-light) !important;
+}
+
+/* ── Say buttons ──── */
+.say-btn, .ce-say, .fest-say, .ann-say {
+  transition: transform .18s cubic-bezier(.34,1.56,.64,1), box-shadow .18s ease !important;
+}
+.say-btn:hover, .ce-say:hover, .fest-say:hover, .ann-say:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 4px 12px rgba(30,66,32,.25) !important;
+}
+.say-btn:active, .ce-say:active, .fest-say:active, .ann-say:active {
+  transform: scale(.92) !important;
+}
+.say-btn.speaking, .ce-say.speaking, .fest-say.speaking, .ann-say.speaking {
+  animation: eerc-speak-pulse .75s ease infinite !important;
+}
+
+/* ── Fact items ──── */
+.fact-item {
+  border-left: 3px solid transparent; border-radius: 0 8px 8px 0;
+  transition: transform .22s ease, border-left-color .22s ease,
+              padding-left .22s ease, background .22s ease !important;
+}
+.fact-item:hover {
+  transform: translateX(7px) !important;
+  border-left-color: var(--mist) !important;
+  padding-left: 14px !important;
+  background: rgba(196,160,85,.05) !important;
+}
+
+/* ── Resource cards ──── */
+.resource-card {
+  position: relative; overflow: hidden; will-change: transform;
+  transition: transform .28s cubic-bezier(.34,1.56,.64,1),
+              box-shadow .28s ease, border-color .28s ease !important;
+}
+.resource-card::before {
+  content: ''; position: absolute;
+  top: -50%; left: -70%; width: 50%; height: 200%;
+  background: rgba(255,255,255,.07); transform: skewX(-14deg);
+  transition: left .5s ease; pointer-events: none;
+}
+.resource-card:hover {
+  transform: translateY(-9px) scale(1.02) !important;
+  box-shadow: 0 22px 54px rgba(30,66,32,.26) !important;
+  border-color: rgba(196,160,85,.4) !important;
+}
+.resource-card:hover::before { left: 145%; }
+.resource-card:hover .resource-card-icon {
+  animation: eerc-bounce .5s cubic-bezier(.34,1.56,.64,1);
+  display: inline-block;
+}
+
+/* ── School tags ──── */
+.school-tag {
+  cursor: default;
+  transition: background .2s ease, color .2s ease,
+              transform .2s cubic-bezier(.34,1.56,.64,1), box-shadow .2s ease !important;
+}
+.school-tag:hover {
+  background: var(--forest) !important; color: #fff !important;
+  transform: scale(1.04) !important;
+  box-shadow: 0 4px 12px rgba(30,66,32,.25) !important;
+}
+.school-tag:hover .school-zh { color: rgba(255,255,255,.75) !important; }
+
+/* ── Nav underline slide ──── */
+.topbar-nav a { position: relative; }
+.topbar-nav a::after {
+  content: ''; position: absolute;
+  bottom: -2px; left: 50%; width: 0; height: 2px;
+  background: var(--mist); border-radius: 2px;
+  transition: width .25s ease, left .25s ease;
+}
+.topbar-nav a:hover::after,
+.topbar-nav a.is-active::after { width: 100%; left: 0; }
+
+/* ── Back link ──── */
+.back-link {
+  display: inline-flex; align-items: center; gap: 4px;
+  transition: transform .2s ease !important;
+}
+.back-link:hover { transform: translateX(-5px) !important; }
+
+/* ── Map hover ──── */
+#chiayi-map { transition: box-shadow .3s ease; }
+#chiayi-map:hover { box-shadow: 0 10px 36px rgba(30,66,32,.22); }
+
+/* ── Ripple ──── */
+.eerc-ripple {
+  position: absolute; border-radius: 50%;
+  background: rgba(196,160,85,.28);
+  animation: eerc-ripple .65s ease-out forwards;
+  pointer-events: none; z-index: 99;
+  width: 40px; height: 40px;
+  margin-left: -20px; margin-top: -20px;
+}
+
+/* ── Mobile: lighter transforms ──── */
+@media (max-width: 720px) {
+  .township-card:hover  { transform: translateY(-3px) scale(1.01) !important; }
+  .resource-card:hover  { transform: translateY(-4px) scale(1.01) !important; }
+  .highlight-card:hover { transform: translateY(-2px) !important; }
+  .vocab-card:hover     { transform: translateY(-2px) scale(1.01) !important; }
+  .page-banner-orb { animation-duration: 10s; }
+}
