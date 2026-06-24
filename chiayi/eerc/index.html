@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chiayi County EERC — English Education Resource Center · 嘉義縣英語教育資源中心</title>
+<meta name="description" content="Bilingual English learning resources for Chiayi County schools — township exploration, classroom English, festivals, and more. 嘉義縣英語教育資源中心雙語學習資源。">
+<meta property="og:title" content="Chiayi County EERC · 嘉義縣英語教育資源中心">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="assets/css/eerc.css">
+</head>
+<body>
+
+<!-- ── Topbar ──────────────────────────────────────────────── -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-brand" href="./index.html">
+      <div class="brand-badge">🌲</div>
+      <div class="brand-text">
+        <span class="brand-en">Chiayi EERC</span>
+        <span class="brand-zh">嘉義縣英語教育資源中心</span>
+      </div>
+    </a>
+    <nav class="topbar-nav">
+      <a href="./index.html" class="is-active">Home</a>
+      <a href="./townships/index.html">Townships</a>
+      <a href="./resources/index.html">Resources</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<!-- ── Hero ────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-orb hero-orb-3"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Chiayi County · 嘉義縣 · Est. 2025</p>
+    <h1 class="hero-h1">English Education<br>Resource Center</h1>
+    <p class="hero-h1-zh">嘉義縣英語教育資源中心</p>
+    <p class="hero-tagline">
+      Explore Chiayi County's 18 unique townships through bilingual lenses —
+      culture, nature, and language woven together for students and teachers.
+    </p>
+    <p class="hero-tagline-zh">
+      透過雙語視角探索嘉義縣 18 個鄉鎮的文化、自然與語言學習資源。
+    </p>
+  </div>
+</section>
+
+<!-- ── Interactive Map ─────────────────────────────────────── -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head rvl">
+      <p class="section-eyebrow">Interactive Map · 互動地圖</p>
+      <h2 class="section-h2">Explore the 18 Townships</h2>
+      <p class="section-h2-zh">點擊地圖，探索嘉義縣各鄉鎮</p>
+      <p class="section-lead">
+        Click any marker to see the township name in English and Chinese —
+        then jump straight to its dedicated learning page.
+      </p>
+    </div>
+    <div class="map-wrap rvl">
+      <div id="chiayi-map"></div>
+      <p class="map-hint">🖱️ Click a marker to explore — 點擊標記探索鄉鎮</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Township Quick Nav ──────────────────────────────────── -->
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head rvl">
+      <p class="section-eyebrow">18 Townships · 18 個鄉鎮</p>
+      <h2 class="section-h2">Choose a Township</h2>
+      <p class="section-h2-zh">選擇鄉鎮，開始探索</p>
+    </div>
+    <div class="township-grid">
+      <a class="township-card rvl" href="townships/alishan/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#1a3525,#2d5c1e)">🌸</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Alishan Township</p>
+          <p class="township-card-zh">阿里山鄉</p>
+          <p class="township-card-desc">Sacred mountains, sea of clouds, cherry blossoms, and the Tsou indigenous people.</p>
+        </div>
+      </a>
+      <a class="township-card rvl" href="townships/taibao/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#1e3a5f,#2d6080)">🏛️</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Taibao City</p>
+          <p class="township-card-zh">太保市</p>
+          <p class="township-card-desc">County seat, government hub, and home to prestigious universities.</p>
+        </div>
+      </a>
+      <a class="township-card rvl" href="townships/xingang/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#6b1e1e,#8a3030)">🏮</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Xingang Township</p>
+          <p class="township-card-zh">新港鄉</p>
+          <p class="township-card-desc">Home to the famous Fengtian Temple and centuries of Mazu devotion.</p>
+        </div>
+      </a>
+      <a class="township-card rvl" href="townships/dongshi/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#1e4a6b,#2a6090)">🦪</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Dongshi Township</p>
+          <p class="township-card-zh">東石鄉</p>
+          <p class="township-card-desc">Famous for oysters, tidal flats, and the Dongshi Fishing Harbor.</p>
+        </div>
+      </a>
+      <a class="township-card rvl" href="townships/meishan/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#1e3a50,#2a5070)">🍵</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Meishan Township</p>
+          <p class="township-card-zh">梅山鄉</p>
+          <p class="township-card-desc">High-mountain tea, cloud-sea scenery, and the winding Mountain Road 18.</p>
+        </div>
+      </a>
+      <a class="township-card rvl" href="townships/minxiong/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#6b5a1e,#8a7030)">🍍</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Minxiong Township</p>
+          <p class="township-card-zh">民雄鄉</p>
+          <p class="township-card-desc">Pineapple paradise, university town, and home to mysterious local legends.</p>
+        </div>
+      </a>
+      <a class="township-card rvl" href="townships/zhuqi/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#3d1e6b,#5a3090)">🚂</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Zhuqi Township</p>
+          <p class="township-card-zh">竹崎鄉</p>
+          <p class="township-card-desc">Gateway to the Alishan Forest Railway and traditional bamboo craft culture.</p>
+        </div>
+      </a>
+      <a class="township-card rvl" href="townships/budai/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#1a5e8a,#2070a8)">🦐</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Budai Township</p>
+          <p class="township-card-zh">布袋鎮</p>
+          <p class="township-card-desc">Salt flats, seafood, and a vibrant fishing port on the Taiwan Strait.</p>
+        </div>
+      </a>
+      <a class="township-card rvl" href="townships/dalin/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#5a3a1e,#7a5030)">🚉</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Dalin Township</p>
+          <p class="township-card-zh">大林鎮</p>
+          <p class="township-card-desc">Railway junction town, sugarcane fields, and a major medical center.</p>
+        </div>
+      </a>
+      <a class="township-card rvl" href="townships/zhongpu/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#3a1e6b,#5030a0)">🦋</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Zhongpu Township</p>
+          <p class="township-card-zh">中埔鄉</p>
+          <p class="township-card-desc">Durian, tropical fruits, butterfly reserves, and serene mountain valleys.</p>
+        </div>
+      </a>
+      <a class="township-card rvl" href="townships/puzi/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#1a5e3a,#2a7a50)">🏙️</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Puzi City</p>
+          <p class="township-card-zh">朴子市</p>
+          <p class="township-card-desc">Cultural hub of western Chiayi — arts, commerce, and the Peitian Temple.</p>
+        </div>
+      </a>
+      <a class="township-card rvl" href="townships/fanlu/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#1e4220,#2d6032)">🌲</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Fanlu Township</p>
+          <p class="township-card-zh">番路鄉</p>
+          <p class="township-card-desc">Gateway to Alishan, persimmon orchards, and ancient Japanese cedar forests.</p>
+        </div>
+      </a>
+      <a class="township-card rvl" href="townships/shuishang/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#1e5a6b,#2a7080)">✈️</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Shuishang Township</p>
+          <p class="township-card-zh">水上鄉</p>
+          <p class="township-card-desc">Chiayi Airport, water resources, and one of Taiwan's best lotus ponds.</p>
+        </div>
+      </a>
+      <a class="township-card rvl" href="townships/liujiao/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#5a6b1e,#6a8030)">🌻</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Liujiao Township</p>
+          <p class="township-card-zh">六腳鄉</p>
+          <p class="township-card-desc">Agricultural heritage, sunflower fields, and Taiwan Sugar railway remnants.</p>
+        </div>
+      </a>
+      <a class="township-card rvl" href="townships/dapu/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#2d5a1e,#3d7030)">🏞️</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Dapu Township</p>
+          <p class="township-card-zh">大埔鄉</p>
+          <p class="township-card-desc">Zengwen Reservoir, bamboo forests, and Taiwan's smallest mountain township.</p>
+        </div>
+      </a>
+      <a class="township-card rvl" href="townships/yizhu/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#1e6b3a,#2a8050)">🍉</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Yizhu Township</p>
+          <p class="township-card-zh">義竹鄉</p>
+          <p class="township-card-desc">Watermelon fields, peanuts, and the quiet rhythms of a southern plains village.</p>
+        </div>
+      </a>
+      <a class="township-card rvl" href="townships/lucao/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#4a6b1e,#5a8030)">🦌</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Lucao Township</p>
+          <p class="township-card-zh">鹿草鄉</p>
+          <p class="township-card-desc">Named for deer and grass, this rural township is known for garlic and folk temples.</p>
+        </div>
+      </a>
+      <a class="township-card rvl" href="townships/xikou/">
+        <div class="township-card-thumb" style="background:linear-gradient(135deg,#3a6b1e,#4a8030)">🌾</div>
+        <div class="township-card-body">
+          <p class="township-card-en">Xikou Township</p>
+          <p class="township-card-zh">溪口鄉</p>
+          <p class="township-card-desc">Where the Puzi River meets farmland — rice paddies, sweet potatoes, and folk traditions.</p>
+        </div>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:36px">
+      <a href="townships/index.html" style="display:inline-flex;align-items:center;gap:8px;background:var(--forest);color:#fff;border-radius:999px;padding:14px 32px;font-size:18px;font-weight:600;text-decoration:none;transition:background .2s">
+        View All Townships in Detail →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Resources Preview ───────────────────────────────────── -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head rvl">
+      <p class="section-eyebrow">Resources · 學習資源</p>
+      <h2 class="section-h2">Learning Resources for Schools</h2>
+      <p class="section-h2-zh">為嘉義縣各學校提供的雙語學習資源</p>
+    </div>
+    <div class="resource-grid">
+      <a class="resource-card rvl" href="resources/classroom-english/">
+        <div class="resource-card-icon">🗣️</div>
+        <p class="resource-card-en">Classroom English</p>
+        <p class="resource-card-zh">課室英文</p>
+        <p class="resource-card-desc">
+          Ready-to-use bilingual phrases for everyday classroom situations —
+          greetings, instructions, praise, and more.
+          <br><span style="font-size:16px;color:var(--ink-soft)">教室日常用語，中英對照，即學即用。</span>
+        </p>
+        <span class="resource-card-cta">Explore phrases →</span>
+      </a>
+      <a class="resource-card rvl" href="resources/bilingual-announcements/">
+        <div class="resource-card-icon">📢</div>
+        <p class="resource-card-en">Bilingual Announcements</p>
+        <p class="resource-card-zh">雙語公告</p>
+        <p class="resource-card-desc">
+          School-ready bilingual announcement templates for morning broadcasts,
+          events, and daily school communication.
+          <br><span style="font-size:16px;color:var(--ink-soft)">早播、活動通知與行政公告雙語模板。</span>
+        </p>
+        <span class="resource-card-cta">Browse templates →</span>
+      </a>
+      <a class="resource-card rvl" href="resources/festivals/">
+        <div class="resource-card-icon">🎉</div>
+        <p class="resource-card-en">Festivals &amp; Holidays</p>
+        <p class="resource-card-zh">節慶活動</p>
+        <p class="resource-card-desc">
+          Bilingual festival guides covering Taiwan's major holidays —
+          vocabulary, stories, and cultural context for English learners.
+          <br><span style="font-size:16px;color:var(--ink-soft)">台灣節慶雙語指南，含單字、故事與文化背景。</span>
+        </p>
+        <span class="resource-card-cta">Discover festivals →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ─────────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-brand">
+      <p class="brand-en">Chiayi County EERC</p>
+      <p class="brand-zh">嘉義縣英語教育資源中心</p>
+      <p class="footer-credit" style="margin-top:8px">Powered by <a href="https://www.mycultureconnect.org/" target="_blank" rel="noopener" style="color:rgba(255,255,255,.55);text-decoration:underline">My Culture Connect 人師教育協會</a></p>
+    </div>
+    <div>
+      <div class="footer-links">
+        <a href="./index.html">Home</a>
+        <a href="./townships/index.html">Townships</a>
+        <a href="./resources/index.html">Resources</a>
+        <a href="https://taiwan-bilingual.org/" target="_blank" rel="noopener">Taiwan Bilingual Hub</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/topojson-client@3/dist/topojson-client.min.js"></script>
+<script src="assets/js/map.js"></script>
+<script src="assets/js/eerc.js"></script>
+<script>
+  if(typeof initChiayiMap === 'function') initChiayiMap();
+</script>
+</body>
+</html>

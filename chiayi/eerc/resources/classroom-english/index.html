@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Classroom English — Chiayi County EERC · 課室英文</title>
+<meta name="description" content="Ten everyday classroom situations with bilingual phrases and speaker buttons — for Chiayi County schools.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../../assets/css/eerc.css">
+<style>
+.ce-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:22px; margin-top:44px; }
+.ce-card { background:#fff; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow-sm); }
+.ce-head { padding:20px 24px; }
+.ce-num { font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; opacity:.7; margin-bottom:4px; }
+.ce-title-en { font-family:'Playfair Display',serif; font-size:21px; font-weight:700; margin-bottom:3px; }
+.ce-title-zh { font-size:14px; opacity:.75; }
+.ce-phrases { padding:4px 24px 20px; }
+.ce-phrase { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; padding:13px 0; border-bottom:1px solid rgba(255,255,255,.18); }
+.ce-phrase:last-child { border-bottom:none; }
+.ce-phrase-texts { flex:1; }
+.ce-en { font-size:18px; font-weight:500; color:#fff; line-height:1.45; }
+.ce-zh { font-size:14px; opacity:.75; margin-top:4px; color:#fff; }
+.ce-say { background:rgba(255,255,255,.18); border:1px solid rgba(255,255,255,.3); border-radius:999px; padding:5px 12px; font-size:13px; font-weight:600; color:#fff; cursor:pointer; white-space:nowrap; font-family:inherit; transition:background .18s; flex-shrink:0; }
+.ce-say:hover { background:rgba(255,255,255,.32); }
+.ce-say.speaking { background:rgba(255,255,255,.5); }
+/* Card accent colors */
+.t-green .ce-head { background:var(--forest); }
+.t-gold  .ce-head { background:#7a6020; }
+.t-teal  .ce-head { background:#1a5a6b; }
+.t-violet .ce-head { background:#4a2d7a; }
+.t-green .ce-phrases { background:var(--forest-mid); }
+.t-gold  .ce-phrases { background:#8a7030; }
+.t-teal  .ce-phrases { background:#1e6b7a; }
+.t-violet .ce-phrases { background:#5a3a8a; }
+@media(max-width:720px){ .ce-grid{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-brand" href="../../index.html">
+      <div class="brand-badge">🌲</div>
+      <div class="brand-text">
+        <span class="brand-en">Chiayi EERC</span>
+        <span class="brand-zh">嘉義縣英語教育資源中心</span>
+      </div>
+    </a>
+    <nav class="topbar-nav">
+      <a href="../../index.html">Home</a>
+      <a href="../../townships/index.html">Townships</a>
+      <a href="../index.html" class="is-active">Resources</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="page-banner">
+  <div class="page-banner-orb"></div>
+  <div class="page-banner-content">
+    <p class="page-banner-eyebrow">Resources · 學習資源</p>
+    <h1>🗣️ Classroom English</h1>
+    <p class="h1-zh">課室英文</p>
+    <p class="page-desc">
+      Ten everyday classroom situations with ready-to-use bilingual phrases.
+      Click 🔊 on any phrase to hear it spoken aloud — listen and repeat!
+    </p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <a class="back-link" href="../index.html">← Back to Resources</a>
+    <div class="section-head rvl">
+      <p class="section-eyebrow">Ten Situations · 十大情境</p>
+      <h2 class="section-h2">Phrases for Every Classroom Moment</h2>
+      <p class="section-h2-zh">涵蓋課堂每個時刻的實用短句</p>
+      <p class="section-lead">
+        These ten situations cover the full school day — from morning greetings to end-of-class farewells.
+        Every phrase includes a Chinese translation and a 🔊 speaker button for pronunciation practice.
+      </p>
+    </div>
+
+    <div class="ce-grid">
+
+      <!-- 01 Greetings & Attendance -->
+      <div class="ce-card rvl t-green">
+        <div class="ce-head">
+          <p class="ce-num">Situation 01</p>
+          <p class="ce-title-en">Greetings &amp; Attendance</p>
+          <p class="ce-title-zh">問候語與點名</p>
+        </div>
+        <div class="ce-phrases">
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Good morning, everyone!</p><p class="ce-zh">大家早安！</p></div><button class="ce-say" onclick="say('Good morning, everyone!',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Let me take attendance.</p><p class="ce-zh">讓我來點名。</p></div><button class="ce-say" onclick="say('Let me take attendance.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Please say "present" when I call your name.</p><p class="ce-zh">叫到你的名字時請說「到」。</p></div><button class="ce-say" onclick="say('Please say present when I call your name.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Who is absent today?</p><p class="ce-zh">今天誰沒來？</p></div><button class="ce-say" onclick="say('Who is absent today?',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Is everyone here?</p><p class="ce-zh">大家都到了嗎？</p></div><button class="ce-say" onclick="say('Is everyone here?',this)">🔊</button></div>
+        </div>
+      </div>
+
+      <!-- 02 Pre-class Preparation -->
+      <div class="ce-card rvl t-gold">
+        <div class="ce-head">
+          <p class="ce-num">Situation 02</p>
+          <p class="ce-title-en">Pre-Class Preparation</p>
+          <p class="ce-title-zh">課前準備</p>
+        </div>
+        <div class="ce-phrases">
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Please take out your textbook.</p><p class="ce-zh">請拿出課本。</p></div><button class="ce-say" onclick="say('Please take out your textbook.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Open to page twenty-four.</p><p class="ce-zh">翻到第 24 頁。</p></div><button class="ce-say" onclick="say('Open to page twenty-four.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Have your pencil and notebook ready.</p><p class="ce-zh">準備好鉛筆和筆記本。</p></div><button class="ce-say" onclick="say('Have your pencil and notebook ready.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Please put away your phones.</p><p class="ce-zh">請收起手機。</p></div><button class="ce-say" onclick="say('Please put away your phones.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Let's get started!</p><p class="ce-zh">我們開始吧！</p></div><button class="ce-say" onclick="say('Let\'s get started!',this)">🔊</button></div>
+        </div>
+      </div>
+
+      <!-- 03 Giving Instructions -->
+      <div class="ce-card rvl t-teal">
+        <div class="ce-head">
+          <p class="ce-num">Situation 03</p>
+          <p class="ce-title-en">Giving Instructions</p>
+          <p class="ce-title-zh">給予指示</p>
+        </div>
+        <div class="ce-phrases">
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Listen carefully, please.</p><p class="ce-zh">請仔細聽。</p></div><button class="ce-say" onclick="say('Listen carefully, please.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Repeat after me.</p><p class="ce-zh">跟著我說。</p></div><button class="ce-say" onclick="say('Repeat after me.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Work with your partner.</p><p class="ce-zh">跟你的夥伴一起做。</p></div><button class="ce-say" onclick="say('Work with your partner.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">You have five minutes to finish.</p><p class="ce-zh">你們有五分鐘完成。</p></div><button class="ce-say" onclick="say('You have five minutes to finish.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Please write your answers on the board.</p><p class="ce-zh">請把答案寫在黑板上。</p></div><button class="ce-say" onclick="say('Please write your answers on the board.',this)">🔊</button></div>
+        </div>
+      </div>
+
+      <!-- 04 Asking for Understanding -->
+      <div class="ce-card rvl t-violet">
+        <div class="ce-head">
+          <p class="ce-num">Situation 04</p>
+          <p class="ce-title-en">Checking Understanding</p>
+          <p class="ce-title-zh">確認理解</p>
+        </div>
+        <div class="ce-phrases">
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Does everyone understand?</p><p class="ce-zh">大家都明白嗎？</p></div><button class="ce-say" onclick="say('Does everyone understand?',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Can you give me an example?</p><p class="ce-zh">你能給我一個例子嗎？</p></div><button class="ce-say" onclick="say('Can you give me an example?',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Let me say that again, more slowly.</p><p class="ce-zh">我再說一次，慢一點。</p></div><button class="ce-say" onclick="say('Let me say that again, more slowly.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Do you have any questions?</p><p class="ce-zh">你們有任何問題嗎？</p></div><button class="ce-say" onclick="say('Do you have any questions?',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">What does this word mean?</p><p class="ce-zh">這個詞是什麼意思？</p></div><button class="ce-say" onclick="say('What does this word mean?',this)">🔊</button></div>
+        </div>
+      </div>
+
+      <!-- 05 Praise & Encouragement -->
+      <div class="ce-card rvl t-green">
+        <div class="ce-head">
+          <p class="ce-num">Situation 05</p>
+          <p class="ce-title-en">Praise &amp; Encouragement</p>
+          <p class="ce-title-zh">稱讚與鼓勵</p>
+        </div>
+        <div class="ce-phrases">
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">That's right! Well done!</p><p class="ce-zh">答對了！做得好！</p></div><button class="ce-say" onclick="say('That\'s right! Well done!',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Excellent! I'm very proud of you.</p><p class="ce-zh">太棒了！我非常以你為榮。</p></div><button class="ce-say" onclick="say('Excellent! I am very proud of you.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Good try! Let's try again.</p><p class="ce-zh">嘗試得不錯！我們再試一次。</p></div><button class="ce-say" onclick="say('Good try! Let\'s try again.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Keep going — you're almost there!</p><p class="ce-zh">繼續加油——快到了！</p></div><button class="ce-say" onclick="say('Keep going, you are almost there!',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">I like the way you explained that.</p><p class="ce-zh">我喜歡你解釋那件事的方式。</p></div><button class="ce-say" onclick="say('I like the way you explained that.',this)">🔊</button></div>
+        </div>
+      </div>
+
+      <!-- 06 Classroom Rules -->
+      <div class="ce-card rvl t-gold">
+        <div class="ce-head">
+          <p class="ce-num">Situation 06</p>
+          <p class="ce-title-en">Classroom Rules</p>
+          <p class="ce-title-zh">課堂規則</p>
+        </div>
+        <div class="ce-phrases">
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Please raise your hand before speaking.</p><p class="ce-zh">發言前請舉手。</p></div><button class="ce-say" onclick="say('Please raise your hand before speaking.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Please be quiet and pay attention.</p><p class="ce-zh">請安靜並專心聽講。</p></div><button class="ce-say" onclick="say('Please be quiet and pay attention.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">No talking during the test.</p><p class="ce-zh">考試時不可交談。</p></div><button class="ce-say" onclick="say('No talking during the test.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Eyes on me, please!</p><p class="ce-zh">請看著我！</p></div><button class="ce-say" onclick="say('Eyes on me, please!',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Respect your classmates at all times.</p><p class="ce-zh">隨時尊重你的同學。</p></div><button class="ce-say" onclick="say('Respect your classmates at all times.',this)">🔊</button></div>
+        </div>
+      </div>
+
+      <!-- 07 Group Activities -->
+      <div class="ce-card rvl t-teal">
+        <div class="ce-head">
+          <p class="ce-num">Situation 07</p>
+          <p class="ce-title-en">Group Activities</p>
+          <p class="ce-title-zh">分組活動</p>
+        </div>
+        <div class="ce-phrases">
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Let's get into groups of four.</p><p class="ce-zh">我們四人一組。</p></div><button class="ce-say" onclick="say('Let\'s get into groups of four.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Each group needs a leader and a reporter.</p><p class="ce-zh">每組需要一位組長和一位報告人。</p></div><button class="ce-say" onclick="say('Each group needs a leader and a reporter.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Discuss your ideas with your group.</p><p class="ce-zh">在組內討論你們的想法。</p></div><button class="ce-say" onclick="say('Discuss your ideas with your group.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Now share your results with the class.</p><p class="ce-zh">現在把你們的結果跟全班分享。</p></div><button class="ce-say" onclick="say('Now share your results with the class.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Great teamwork, everyone!</p><p class="ce-zh">大家合作得很棒！</p></div><button class="ce-say" onclick="say('Great teamwork, everyone!',this)">🔊</button></div>
+        </div>
+      </div>
+
+      <!-- 08 Transitions & Movement -->
+      <div class="ce-card rvl t-violet">
+        <div class="ce-head">
+          <p class="ce-num">Situation 08</p>
+          <p class="ce-title-en">Transitions &amp; Movement</p>
+          <p class="ce-title-zh">轉換與移動</p>
+        </div>
+        <div class="ce-phrases">
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Please line up at the door.</p><p class="ce-zh">請在門口排隊。</p></div><button class="ce-say" onclick="say('Please line up at the door.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Move your desks into a circle.</p><p class="ce-zh">把桌子移成圓形。</p></div><button class="ce-say" onclick="say('Move your desks into a circle.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Walk, don't run, in the hallway.</p><p class="ce-zh">在走廊要走路，不要跑。</p></div><button class="ce-say" onclick="say('Walk, don\'t run, in the hallway.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Come back to your seats, please.</p><p class="ce-zh">請回到你們的座位。</p></div><button class="ce-say" onclick="say('Come back to your seats, please.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">We're going to the computer lab today.</p><p class="ce-zh">今天我們要去電腦教室。</p></div><button class="ce-say" onclick="say('We are going to the computer lab today.',this)">🔊</button></div>
+        </div>
+      </div>
+
+      <!-- 09 Homework & Assessment -->
+      <div class="ce-card rvl t-green">
+        <div class="ce-head">
+          <p class="ce-num">Situation 09</p>
+          <p class="ce-title-en">Homework &amp; Assessment</p>
+          <p class="ce-title-zh">作業與評量</p>
+        </div>
+        <div class="ce-phrases">
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Tonight's homework is on page thirty.</p><p class="ce-zh">今晚的作業在第 30 頁。</p></div><button class="ce-say" onclick="say('Tonight\'s homework is on page thirty.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Please hand in your homework by Friday.</p><p class="ce-zh">請在週五前交作業。</p></div><button class="ce-say" onclick="say('Please hand in your homework by Friday.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">We will have a short quiz next week.</p><p class="ce-zh">下週我們會有一個小考。</p></div><button class="ce-say" onclick="say('We will have a short quiz next week.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Please check your answers carefully.</p><p class="ce-zh">請仔細檢查你的答案。</p></div><button class="ce-say" onclick="say('Please check your answers carefully.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Time is up — put your pencils down.</p><p class="ce-zh">時間到了——放下你的鉛筆。</p></div><button class="ce-say" onclick="say('Time is up, put your pencils down.',this)">🔊</button></div>
+        </div>
+      </div>
+
+      <!-- 10 End of Class -->
+      <div class="ce-card rvl t-gold">
+        <div class="ce-head">
+          <p class="ce-num">Situation 10</p>
+          <p class="ce-title-en">End of Class</p>
+          <p class="ce-title-zh">下課</p>
+        </div>
+        <div class="ce-phrases">
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">That's all for today.</p><p class="ce-zh">今天就到這裡。</p></div><button class="ce-say" onclick="say('That\'s all for today.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Great work today, everyone!</p><p class="ce-zh">今天大家表現得很棒！</p></div><button class="ce-say" onclick="say('Great work today, everyone!',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Don't forget to study for the test.</p><p class="ce-zh">別忘了複習備考。</p></div><button class="ce-say" onclick="say('Don\'t forget to study for the test.',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">See you next time! Goodbye!</p><p class="ce-zh">下次見！再見！</p></div><button class="ce-say" onclick="say('See you next time! Goodbye!',this)">🔊</button></div>
+          <div class="ce-phrase"><div class="ce-phrase-texts"><p class="ce-en">Have a great day!</p><p class="ce-zh">祝你今天愉快！</p></div><button class="ce-say" onclick="say('Have a great day!',this)">🔊</button></div>
+        </div>
+      </div>
+
+    </div><!-- /ce-grid -->
+
+    <!-- Quick Reference Banner -->
+    <div class="rvl" style="margin-top:56px;background:var(--forest);border-radius:var(--radius);padding:36px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+      <div>
+        <p style="font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#fff;margin-bottom:6px">Practice Tip 學習小撇步</p>
+        <p style="font-size:19px;color:rgba(255,255,255,.82);max-width:54ch;line-height:1.55">Listen to each phrase 3 times, then cover the Chinese and try to say it from memory. Repeat daily for two weeks and the phrases will stick!</p>
+        <p style="font-size:16px;color:rgba(255,255,255,.6);margin-top:8px">每個短句聽 3 次，然後遮住中文自己試著說出來。每天練習兩週，這些短句就會變成反射動作！</p>
+      </div>
+      <div style="font-size:64px">🎯</div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-brand">
+      <p class="brand-en">Chiayi County EERC</p>
+      <p class="brand-zh">嘉義縣英語教育資源中心</p>
+      <p class="footer-credit" style="margin-top:8px">Powered by <a href="https://www.mycultureconnect.org/" target="_blank" rel="noopener" style="color:rgba(255,255,255,.55);text-decoration:underline">My Culture Connect 人師教育協會</a></p>
+    </div>
+    <div class="footer-links">
+      <a href="../../index.html">Home</a>
+      <a href="../../townships/index.html">Townships</a>
+      <a href="../index.html">Resources</a>
+      <a href="https://taiwan-bilingual.org/" target="_blank" rel="noopener">Taiwan Bilingual Hub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/js/eerc.js"></script>
+</body>
+</html>
