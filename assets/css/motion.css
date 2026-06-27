@@ -1,10 +1,11 @@
 /* ============================================================
-   motion.css · sitewide hero/band motion layer
-   Drifting gradient orbs + staggered entrance for the jade
-   hub header band (.pg-band). Linked AFTER each page's inline
-   <style> so these rules win. County detail pages get the same
-   treatment via .cty-band in county.css; the homepage hero has
-   its own motion in main.css.
+   motion.css · sitewide motion layer
+   1) Hero/band drifting orbs + staggered entrance (.pg-band)
+   2) Universal card hover (lift + shadow)
+   3) Scroll-reveal (gated on html.mtn, driven by motion.js)
+   Linked AFTER each page's inline <style> and main.css so these
+   rules win. County detail pages reuse .cty-band in county.css;
+   the homepage hero has its own motion in main.css.
    ============================================================ */
 .pg-band{position:relative;overflow:hidden;}
 
@@ -27,7 +28,61 @@
 .pg-band .sub-zh{animation-delay:.40s;}
 @keyframes bandUp{to{opacity:1;transform:none;}}
 
+/* ============================================================
+   2) UNIVERSAL CARD HOVER — works with or without JS.
+   These classes are the repeating content-card units across the
+   hub. Resting transition lives on the element; entering hover is
+   snapped faster via the :hover transition override.
+   ============================================================ */
+.card,.hub-card,.hub-school-card,.school-card,.fet-card,.about-card,
+.story-card,.ce-card,.policy-card,.policy-feature,.bllc-card,.bc-moe-card,
+.sdg-card,.sdg,.ccard,.cty-feat,.person,.theme,.dom-card,.progcard{
+  transition:transform .42s cubic-bezier(.2,.7,.2,1),box-shadow .3s ease,border-color .3s ease;
+}
+.card:hover,.hub-card:hover,.hub-school-card:hover,.school-card:hover,.fet-card:hover,
+.about-card:hover,.story-card:hover,.ce-card:hover,.policy-card:hover,.policy-feature:hover,
+.bllc-card:hover,.bc-moe-card:hover,.sdg-card:hover,.sdg:hover,.ccard:hover,.cty-feat:hover,
+.person:hover,.theme:hover,.dom-card:hover,.progcard:hover{
+  transform:translateY(-6px);
+  box-shadow:0 22px 50px -20px rgba(31,67,56,.42);
+  transition:transform .26s cubic-bezier(.2,.7,.2,1),box-shadow .26s ease;
+}
+
+/* ============================================================
+   3) SCROLL REVEAL — only active when the head guard set html.mtn
+   (so no flash, and no-JS / disabled-JS users still see content).
+   motion.js adds .mtn-in as each element scrolls into view.
+   ============================================================ */
+html.mtn .card,html.mtn .hub-card,html.mtn .hub-school-card,html.mtn .school-card,
+html.mtn .fet-card,html.mtn .about-card,html.mtn .story-card,html.mtn .ce-card,
+html.mtn .policy-card,html.mtn .policy-feature,html.mtn .bllc-card,html.mtn .bc-moe-card,
+html.mtn .sdg-card,html.mtn .sdg,html.mtn .ccard,html.mtn .cty-feat,html.mtn .person,
+html.mtn .theme,html.mtn .dom-card,html.mtn .progcard,html.mtn .partner,
+html.mtn [data-mtn]{
+  opacity:0;transform:translateY(26px);
+  transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);
+  will-change:opacity,transform;
+}
+html.mtn .card.mtn-in,html.mtn .hub-card.mtn-in,html.mtn .hub-school-card.mtn-in,
+html.mtn .school-card.mtn-in,html.mtn .fet-card.mtn-in,html.mtn .about-card.mtn-in,
+html.mtn .story-card.mtn-in,html.mtn .ce-card.mtn-in,html.mtn .policy-card.mtn-in,
+html.mtn .policy-feature.mtn-in,html.mtn .bllc-card.mtn-in,html.mtn .bc-moe-card.mtn-in,
+html.mtn .sdg-card.mtn-in,html.mtn .sdg.mtn-in,html.mtn .ccard.mtn-in,
+html.mtn .cty-feat.mtn-in,html.mtn .person.mtn-in,html.mtn .theme.mtn-in,
+html.mtn .dom-card.mtn-in,html.mtn .progcard.mtn-in,html.mtn .partner.mtn-in,
+html.mtn [data-mtn].mtn-in{opacity:1;transform:none;}
+
 @media (prefers-reduced-motion: reduce){
   .pg-band::before,.pg-band::after{animation:none;}
   .pg-band .eyebrow,.pg-band h1,.pg-band .sub,.pg-band .sub-zh{opacity:1;transform:none;animation:none;}
+  html.mtn .card,html.mtn .hub-card,html.mtn .hub-school-card,html.mtn .school-card,
+  html.mtn .fet-card,html.mtn .about-card,html.mtn .story-card,html.mtn .ce-card,
+  html.mtn .policy-card,html.mtn .policy-feature,html.mtn .bllc-card,html.mtn .bc-moe-card,
+  html.mtn .sdg-card,html.mtn .sdg,html.mtn .ccard,html.mtn .cty-feat,html.mtn .person,
+  html.mtn .theme,html.mtn .dom-card,html.mtn .progcard,html.mtn .partner,
+  html.mtn [data-mtn]{opacity:1!important;transform:none!important;transition:none!important;}
+  .card:hover,.hub-card:hover,.hub-school-card:hover,.school-card:hover,.fet-card:hover,
+  .about-card:hover,.story-card:hover,.ce-card:hover,.policy-card:hover,.policy-feature:hover,
+  .bllc-card:hover,.bc-moe-card:hover,.sdg-card:hover,.sdg:hover,.ccard:hover,.cty-feat:hover,
+  .person:hover,.theme:hover,.dom-card:hover,.progcard:hover{transform:none;}
 }
