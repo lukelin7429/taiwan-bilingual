@@ -10,17 +10,19 @@
 /* Per-page colour comes from --b1/--b2/--b3 on each .pg-band (set in the
    page's own <style>); jade fallbacks keep any un-migrated page looking right.
    The light/shadow life lives here, shared by every hub page. */
-.pg-band{position:relative;overflow:hidden;
+.pg-band{position:relative;overflow:hidden;padding-bottom:64px;
   background-color:var(--b2,#2f7d6f);
   background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 48' preserveAspectRatio='none'%3E%3Cpath d='M0,48 L1200,48 L1200,20 C940,52 560,4 0,26 Z' fill='%23ffffff'/%3E%3C/svg%3E"),
     linear-gradient(115deg,transparent 30%,rgba(255,255,255,.10) 45%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.10) 55%,transparent 70%),
     linear-gradient(135deg,var(--b1,#1b5c44) 0%,var(--b2,#2f7d6f) 62%,var(--b3,#3a7766) 100%);
-  background-size:280% 100%,100% 100%;
-  background-position:140% 0,0 0;
+  background-size:100% 48px,280% 100%,100% 100%;
+  background-position:50% 100%,140% 0,0 0;
   background-repeat:no-repeat;
   animation:bandSweep 9s ease-in-out infinite;}
-/* a soft diagonal light sweeps across the band, then rests off-screen */
-@keyframes bandSweep{0%{background-position:140% 0,0 0;}55%,100%{background-position:-40% 0,0 0;}}
+/* a soft diagonal light sweeps across the band (the white wave stays pinned
+   to the bottom, carving a Changhua-style curved edge into the white below) */
+@keyframes bandSweep{0%{background-position:50% 100%,140% 0,0 0;}55%,100%{background-position:50% 100%,-40% 0,0 0;}}
 
 /* drifting + breathing orbs (the existing ::before is orb 1; ::after is new) */
 .pg-band::before{background:radial-gradient(circle,rgba(255,255,255,.20) 0%,transparent 68%);
@@ -94,7 +96,7 @@ html.mtn .dom-card.mtn-in,html.mtn .progcard.mtn-in,html.mtn .partner.mtn-in,
 html.mtn [data-mtn].mtn-in{opacity:1;transform:none;}
 
 @media (prefers-reduced-motion: reduce){
-  .pg-band{animation:none;background-position:0 0,0 0;}
+  .pg-band{animation:none;background-position:50% 100%,0 0,0 0;}
   .pg-band::before,.pg-band::after{animation:none;}
   .pg-band .eyebrow,.pg-band h1,.pg-band .sub,.pg-band .sub-zh{opacity:1;transform:none;animation:none;}
   html.mtn .card,html.mtn .hub-card,html.mtn .hub-school-card,html.mtn .school-card,
