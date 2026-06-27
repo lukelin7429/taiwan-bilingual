@@ -7,15 +7,30 @@
    rules win. County detail pages reuse .cty-band in county.css;
    the homepage hero has its own motion in main.css.
    ============================================================ */
-.pg-band{position:relative;overflow:hidden;}
+/* Per-page colour comes from --b1/--b2/--b3 on each .pg-band (set in the
+   page's own <style>); jade fallbacks keep any un-migrated page looking right.
+   The light/shadow life lives here, shared by every hub page. */
+.pg-band{position:relative;overflow:hidden;
+  background-color:var(--b2,#2f7d6f);
+  background-image:
+    linear-gradient(115deg,transparent 30%,rgba(255,255,255,.10) 45%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.10) 55%,transparent 70%),
+    linear-gradient(135deg,var(--b1,#1b5c44) 0%,var(--b2,#2f7d6f) 62%,var(--b3,#3a7766) 100%);
+  background-size:280% 100%,100% 100%;
+  background-position:140% 0,0 0;
+  background-repeat:no-repeat;
+  animation:bandSweep 9s ease-in-out infinite;}
+/* a soft diagonal light sweeps across the band, then rests off-screen */
+@keyframes bandSweep{0%{background-position:140% 0,0 0;}55%,100%{background-position:-40% 0,0 0;}}
 
-/* drifting orbs (the existing ::before becomes orb 1; ::after is new) */
-.pg-band::before{animation:bandOrb1 17s ease-in-out infinite;}
-.pg-band::after{content:"";position:absolute;bottom:-150px;left:-80px;width:360px;height:360px;
-  border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.12) 0%,transparent 70%);
-  pointer-events:none;z-index:0;animation:bandOrb2 21s ease-in-out infinite;}
+/* drifting + breathing orbs (the existing ::before is orb 1; ::after is new) */
+.pg-band::before{background:radial-gradient(circle,rgba(255,255,255,.20) 0%,transparent 68%);
+  animation:bandOrb1 17s ease-in-out infinite,bandGlow 7.5s ease-in-out infinite;}
+.pg-band::after{content:"";position:absolute;bottom:-160px;left:-90px;width:380px;height:380px;
+  border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.16) 0%,transparent 70%);
+  pointer-events:none;z-index:0;animation:bandOrb2 21s ease-in-out infinite,bandGlow 9.5s ease-in-out infinite;}
 @keyframes bandOrb1{0%,100%{transform:translate(0,0);}50%{transform:translate(-30px,28px);}}
 @keyframes bandOrb2{0%,100%{transform:translate(0,0);}50%{transform:translate(36px,-24px);}}
+@keyframes bandGlow{0%,100%{opacity:.5;}50%{opacity:1;}}
 
 /* staggered fade-up entrance for the band heading + subtitles */
 .pg-band .eyebrow,.pg-band h1,.pg-band .sub,.pg-band .sub-zh{
@@ -27,6 +42,12 @@
 .pg-band .sub{animation-delay:.30s;}
 .pg-band .sub-zh{animation-delay:.40s;}
 @keyframes bandUp{to{opacity:1;transform:none;}}
+
+/* neutral light text so the band reads cleanly on ANY page colour
+   (pages used to hard-code a mint tint that only suited the jade band) */
+.pg-band .eyebrow{color:rgba(255,255,255,.82);}
+.pg-band .sub{color:rgba(255,255,255,.95);}
+.pg-band .sub-zh{color:rgba(255,255,255,.88);}
 
 /* ============================================================
    2) UNIVERSAL CARD HOVER — works with or without JS.
@@ -73,6 +94,7 @@ html.mtn .dom-card.mtn-in,html.mtn .progcard.mtn-in,html.mtn .partner.mtn-in,
 html.mtn [data-mtn].mtn-in{opacity:1;transform:none;}
 
 @media (prefers-reduced-motion: reduce){
+  .pg-band{animation:none;background-position:0 0,0 0;}
   .pg-band::before,.pg-band::after{animation:none;}
   .pg-band .eyebrow,.pg-band h1,.pg-band .sub,.pg-band .sub-zh{opacity:1;transform:none;animation:none;}
   html.mtn .card,html.mtn .hub-card,html.mtn .hub-school-card,html.mtn .school-card,
