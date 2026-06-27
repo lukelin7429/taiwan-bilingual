@@ -25,20 +25,26 @@
   .pg-band .sub{margin-top:16px;font-size:20px;color:#e7f3ee;max-width:62ch;position:relative;z-index:1;}
   .pg-band .sub-zh{margin-top:8px;font-size:18px;color:#cfe6dd;max-width:56ch;line-height:1.85;position:relative;z-index:1;}
 
-  .partner{display:grid;grid-template-columns:1fr;gap:28px;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow-sm);margin-bottom:30px;position:relative;border-left:7px solid var(--pc,var(--jade));}
-  @media(min-width:760px){.partner{grid-template-columns:230px 1fr;gap:0;}}
-  .partner-photo{background:var(--pc-deep,var(--jade-deep));}
-  .partner-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;min-height:240px;}
-  .partner-body{padding:32px 34px;}
-  .partner-tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--pc,var(--jade));background:var(--pc-soft,var(--jade-soft));padding:5px 12px;border-radius:999px;margin-bottom:14px;}
-  .partner-body h2{font-family:'Playfair Display','PingFang TC',serif;font-size:30px;color:var(--ink);line-height:1.1;}
-  .partner-body .role{margin-top:6px;font-size:17px;font-weight:600;color:var(--pc,var(--jade));}
-  .partner-body p{margin-top:14px;font-size:18px;color:var(--ink-soft);line-height:1.7;}
-  .partner-body p.zh{font-size:16.5px;line-height:1.85;}
+  /* Individual partners — equal-weight vertical cards, one row */
+  .partner-grid{display:grid;grid-template-columns:1fr;gap:26px;margin-bottom:34px;}
+  @media(min-width:640px){.partner-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(min-width:980px){.partner-grid{grid-template-columns:repeat(3,1fr);}}
+  .partner{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow-sm);position:relative;border-top:7px solid var(--pc,var(--jade));transition:transform .28s cubic-bezier(.2,.7,.2,1),box-shadow .28s ease;}
+  .partner:hover{transform:translateY(-8px);box-shadow:0 22px 50px -18px rgba(10,40,40,.4);}
+  .partner-photo{background:var(--pc-deep,var(--jade-deep));overflow:hidden;}
+  .partner-photo img{width:100%;height:250px;object-fit:cover;object-position:center top;display:block;transition:transform .5s cubic-bezier(.2,.7,.2,1);}
+  .partner:hover .partner-photo img{transform:scale(1.05);}
+  .partner-body{padding:26px 28px 30px;display:flex;flex-direction:column;flex:1;}
+  .partner-tag{display:inline-block;align-self:flex-start;font-size:12.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--pc,var(--jade));background:var(--pc-soft,var(--jade-soft));padding:5px 12px;border-radius:999px;margin-bottom:14px;}
+  .partner-body h2{font-family:'Playfair Display','PingFang TC',serif;font-size:27px;color:var(--ink);line-height:1.12;}
+  .partner-body .role{margin-top:6px;font-size:16px;font-weight:600;color:var(--pc,var(--jade));}
+  .partner-body p{margin-top:14px;font-size:16.5px;color:var(--ink-soft);line-height:1.7;}
+  .partner-body p.zh{font-size:15.5px;line-height:1.85;}
   .partner-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
-  .partner-meta span{font-size:14px;font-weight:600;color:var(--pc-deep,var(--jade-deep));background:var(--pc-soft,var(--jade-soft));padding:5px 12px;border-radius:999px;}
-  .partner-go{display:inline-block;margin-top:20px;background:var(--pc,var(--jade));color:#fff;font-weight:700;font-size:16px;padding:12px 24px;border-radius:999px;}
-  .partner-go:hover{filter:brightness(.92);color:#fff;}
+  .partner-meta span{font-size:13.5px;font-weight:600;color:var(--pc-deep,var(--jade-deep));background:var(--pc-soft,var(--jade-soft));padding:5px 12px;border-radius:999px;}
+  .partner-go{display:inline-block;align-self:flex-start;margin-top:auto;background:var(--pc,var(--jade));color:#fff;font-weight:700;font-size:15.5px;padding:12px 22px;border-radius:999px;transition:filter .2s ease,transform .2s ease;}
+  .partner-go-wrap{margin-top:20px;}
+  .partner-go:hover{filter:brightness(.92);color:#fff;transform:translateX(3px);}
   .pc-edward{--pc:#0a3d62;--pc-deep:#062940;--pc-soft:#e8eef4;}
   .pc-dom{--pc:#0a1f5c;--pc-deep:#081848;--pc-soft:#eaedf6;}
   .pc-leon{--pc:#c2641a;--pc-deep:#5d2c10;--pc-soft:#fbeede;}
@@ -112,6 +118,8 @@
 <section class="section">
   <div class="wrap">
 
+    <div class="partner-grid">
+
     <!-- Edward -->
     <article class="partner pc-edward">
       <div class="partner-photo"><img src="/edward-huang/photos/edward-portrait.jpg" alt="Edward Huang"></div>
@@ -153,6 +161,8 @@
         <a class="partner-go" href="/partners/leon-la-couvee/">View profile →</a>
       </div>
     </article>
+
+    </div><!-- /.partner-grid -->
 
     <!-- In Memoriam — Grandpa Mike -->
     <article class="memoriam">
