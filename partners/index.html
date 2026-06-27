@@ -53,38 +53,39 @@
   .pgroup .ph-label{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#c2410c;margin-bottom:6px;}
   .pgroup h2{font-family:'Playfair Display','PingFang TC',serif;font-size:26px;color:var(--ink);line-height:1.2;}
   .pgroup p{font-size:17px;color:var(--ink-soft);line-height:1.7;margin-top:6px;max-width:64ch;}
-  .progcard{display:flex;flex-direction:column;gap:0;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow-sm);border-left:7px solid #c2410c;transition:transform .25s ease,box-shadow .25s ease;text-decoration:none;}
-  @media(min-width:760px){.progcard{flex-direction:row;}}
-  .progcard:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
-  .progcard-thumb{position:relative;background:#7c2d12;flex:none;}
-  @media(min-width:760px){.progcard-thumb{width:300px;}}
-  .progcard-thumb img{width:100%;height:100%;object-fit:cover;display:block;min-height:190px;aspect-ratio:16/9;}
+  /* Org / program partners — same square vertical card as the people, 2 per row */
+  .progcard{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow-sm);border-top:7px solid #c2410c;transition:transform .28s cubic-bezier(.2,.7,.2,1),box-shadow .28s ease;text-decoration:none;}
+  .progcard:hover{transform:translateY(-8px);box-shadow:0 22px 50px -18px rgba(10,40,40,.4);}
+  .progcard-thumb{position:relative;background:#7c2d12;overflow:hidden;}
+  .progcard-thumb img{width:100%;height:210px;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.2,.7,.2,1);}
+  .progcard:hover .progcard-thumb img{transform:scale(1.05);}
   .progcard-thumb .pp{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:40px;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.5);}
-  .progcard-body{padding:28px 32px;}
-  .progcard-body .tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#c2410c;background:#fbe7da;padding:5px 12px;border-radius:999px;margin-bottom:12px;}
-  .progcard-body h3{font-family:'Playfair Display','PingFang TC',serif;font-size:27px;color:var(--ink);line-height:1.1;}
-  .progcard-body .role{margin-top:6px;font-size:16.5px;font-weight:600;color:#c2410c;}
-  .progcard-body p{margin-top:12px;font-size:17px;color:var(--ink-soft);line-height:1.7;}
-  .progcard-body .go{display:inline-block;margin-top:16px;color:#7c2d12;font-weight:700;font-size:16px;}
+  .progcard-body{padding:26px 28px 30px;display:flex;flex-direction:column;flex:1;}
+  .progcard-body .tag{display:inline-block;align-self:flex-start;font-size:12.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#c2410c;background:#fbe7da;padding:5px 12px;border-radius:999px;margin-bottom:12px;}
+  .progcard-body h3{font-family:'Playfair Display','PingFang TC',serif;font-size:25px;color:var(--ink);line-height:1.12;}
+  .progcard-body .role{margin-top:6px;font-size:15.5px;font-weight:600;color:#c2410c;}
+  .progcard-body p{margin-top:12px;font-size:16px;color:var(--ink-soft);line-height:1.7;}
+  .progcard-body .go{display:inline-block;align-self:flex-start;margin-top:auto;padding-top:16px;color:#7c2d12;font-weight:700;font-size:15.5px;}
 
   .more{background:var(--jade-soft);border-radius:16px;padding:30px 32px;text-align:center;}
   .more h3{font-family:'Playfair Display','PingFang TC',serif;font-size:22px;color:var(--jade-deep);margin-bottom:8px;}
   .more p{font-size:17px;color:#3c4a44;line-height:1.7;max-width:60ch;margin:0 auto;}
   .more a{color:var(--jade-deep);font-weight:700;}
 
-  /* In Memoriam — set apart from active partners */
-  .memoriam{position:relative;display:grid;grid-template-columns:1fr;gap:0;background:linear-gradient(135deg,#fbf6ec 0%,#f3e9d4 100%);border:1px solid #e7dcc6;border-left:7px solid #9a7b43;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-sm);margin:8px 0 30px;}
-  @media(min-width:760px){.memoriam{grid-template-columns:220px 1fr;}}
-  .memoriam-photo{background:#4f3f29;}
-  .memoriam-photo img{width:100%;height:100%;object-fit:cover;object-position:center 28%;min-height:230px;}
-  .memoriam-body{padding:30px 34px;}
-  .memoriam-ribbon{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7a5f38;background:#efe2c8;padding:5px 14px;border-radius:999px;margin-bottom:14px;}
-  .memoriam-body h2{font-family:'Playfair Display','PingFang TC',serif;font-size:30px;color:#4f3f29;line-height:1.1;}
-  .memoriam-body .role{margin-top:6px;font-size:17px;font-weight:600;color:#7a5f38;}
-  .memoriam-body p{margin-top:14px;font-size:18px;color:#5b5147;line-height:1.7;}
-  .memoriam-body p.zh{font-size:16px;line-height:1.85;}
-  .memoriam-go{display:inline-block;margin-top:18px;background:#9a7b43;color:#fff;font-weight:700;font-size:16px;padding:11px 24px;border-radius:999px;}
-  .memoriam-go:hover{filter:brightness(.93);color:#fff;}
+  /* In Memoriam — same square card as the people grid, cream/gold treatment */
+  .memoriam{display:flex;flex-direction:column;background:linear-gradient(135deg,#fbf6ec 0%,#f3e9d4 100%);border:1px solid #e7dcc6;border-top:7px solid #9a7b43;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .28s cubic-bezier(.2,.7,.2,1),box-shadow .28s ease;}
+  .memoriam:hover{transform:translateY(-8px);box-shadow:0 22px 50px -18px rgba(10,40,40,.4);}
+  .memoriam-photo{background:#4f3f29;overflow:hidden;}
+  .memoriam-photo img{width:100%;height:300px;object-fit:cover;object-position:center 22%;display:block;transition:transform .5s cubic-bezier(.2,.7,.2,1);}
+  .memoriam:hover .memoriam-photo img{transform:scale(1.05);}
+  .memoriam-body{padding:26px 28px 30px;display:flex;flex-direction:column;flex:1;}
+  .memoriam-ribbon{display:inline-block;align-self:flex-start;font-size:12.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#7a5f38;background:#efe2c8;padding:5px 14px;border-radius:999px;margin-bottom:14px;}
+  .memoriam-body h2{font-family:'Playfair Display','PingFang TC',serif;font-size:27px;color:#4f3f29;line-height:1.12;}
+  .memoriam-body .role{margin-top:6px;font-size:15.5px;font-weight:600;color:#7a5f38;}
+  .memoriam-body p{margin-top:14px;font-size:16px;color:#5b5147;line-height:1.7;}
+  .memoriam-body p.zh{font-size:15.5px;line-height:1.85;}
+  .memoriam-go{display:inline-block;align-self:flex-start;margin-top:auto;background:#9a7b43;color:#fff;font-weight:700;font-size:15.5px;padding:12px 22px;border-radius:999px;transition:filter .2s ease,transform .2s ease;}
+  .memoriam-go:hover{filter:brightness(.92);color:#fff;transform:translateX(3px);}
 </style>
 <link rel="stylesheet" href="/assets/css/motion.css">
 <script>/*MTN-GUARD*/document.documentElement.classList.add('mtn');addEventListener('load',function(){setTimeout(function(){window.__mtn||document.documentElement.classList.remove('mtn')},1)})</script>
@@ -162,9 +163,7 @@
       </div>
     </article>
 
-    </div><!-- /.partner-grid -->
-
-    <!-- In Memoriam — Grandpa Mike -->
+    <!-- In Memoriam — Grandpa Mike (sits in the people grid) -->
     <article class="memoriam">
       <div class="memoriam-photo"><img src="/partners/grandpa-mike/photos/mike-portrait.jpg" alt="Grandpa Mike — Michael Dishnow"></div>
       <div class="memoriam-body">
@@ -177,13 +176,17 @@
       </div>
     </article>
 
+    </div><!-- /.partner-grid -->
+
     <div class="pgroup">
       <div class="ph-label">University &amp; Program Partners · 大學與計畫夥伴</div>
       <h2>Schools &amp; organizations in partnership</h2>
       <p>Beyond individual advocates, the hub is built on partnerships with schools, universities and sister organizations — ongoing and foundational — that share our mission across the Pacific. 除了個人倡議者,資源網也建立在與學校、大學及姊妹組織的夥伴情誼之上——既有現正進行、也有最早奠基的合作,共享橫跨太平洋的使命。</p>
     </div>
 
-    <a class="progcard" style="border-left-color:#009edb;" href="/partners/una-oc/">
+    <div class="partner-grid">
+
+    <a class="progcard" style="border-top-color:#009edb;" href="/partners/una-oc/">
       <div class="progcard-thumb" style="background:#0b3552;"><img src="/partners/una-oc/img/una-oc-sdg.jpg" alt="UN Sustainable Development Goals color wheel"></div>
       <div class="progcard-body">
         <span class="tag" style="color:#0a5a9c;background:#e6f2fb;">🌐 United Nations Association of Orange County</span>
@@ -194,7 +197,7 @@
       </div>
     </a>
 
-    <a class="progcard" style="border-left-color:#00703c;" href="/partners/dlsu-d/">
+    <a class="progcard" style="border-top-color:#00703c;" href="/partners/dlsu-d/">
       <div class="progcard-thumb" style="background:#024d2a;"><img src="https://i.ytimg.com/vi/nHXZsvoPG7c/hqdefault.jpg" alt="Sister-school signing ceremony between Chung Shih Vocational High School and DLSU-D"><span class="pp">▶</span></div>
       <div class="progcard-body">
         <span class="tag" style="color:#00703c;background:#e2f1e8;">🇵🇭 De La Salle University–Dasmariñas · High School</span>
@@ -205,7 +208,7 @@
       </div>
     </a>
 
-    <a class="progcard" style="border-left-color:#C8A24B;" href="/partners/chinese-culture-connection/">
+    <a class="progcard" style="border-top-color:#C8A24B;" href="/partners/chinese-culture-connection/">
       <div class="progcard-thumb" style="background:#221a18;"><img src="/partners/chinese-culture-connection/img/gala.png" alt="Chinese Culture Connection"></div>
       <div class="progcard-body">
         <span class="tag" style="color:#7c0a1a;background:#f3e6cf;">🌉 Chinese Culture Connection · 華夏文化協會</span>
@@ -216,7 +219,7 @@
       </div>
     </a>
 
-    <a class="progcard" style="border-left-color:#0d7377;" href="/partners/books-for-taiwan/">
+    <a class="progcard" style="border-top-color:#0d7377;" href="/partners/books-for-taiwan/">
       <div class="progcard-thumb" style="background:#0a5557;"><img src="https://i.ytimg.com/vi/Y45jz0N6Zk0/hqdefault.jpg" alt="Books for Taiwan founder Amy Lin"><span class="pp">▶</span></div>
       <div class="progcard-body">
         <span class="tag" style="color:#0d7377;background:#ddf0ef;">📚 Books for Taiwan · 送書到台灣 · Since 2012</span>
@@ -227,7 +230,7 @@
       </div>
     </a>
 
-    <a class="progcard" style="border-left-color:#b1322e;" href="/partners/ccc-chinese-school/">
+    <a class="progcard" style="border-top-color:#b1322e;" href="/partners/ccc-chinese-school/">
       <div class="progcard-thumb" style="background:#7d211e;"><img src="https://i.ytimg.com/vi/Q7E2vrl2uRQ/hqdefault.jpg" alt="CCC Chinese School in Changhua"><span class="pp">▶</span></div>
       <div class="progcard-body">
         <span class="tag" style="color:#b1322e;background:#f7e3e1;">🇺🇸 CCC Chinese School · Since 2022</span>
@@ -238,7 +241,7 @@
       </div>
     </a>
 
-    <a class="progcard" style="border-left-color:#2c6e49;" href="/partners/nmu/">
+    <a class="progcard" style="border-top-color:#2c6e49;" href="/partners/nmu/">
       <div class="progcard-thumb" style="background:#184a31;"><img src="/partners/nmu/img/nmu-principal-group.jpg" alt="NMU student teachers at Yangming Junior High, Changhua"></div>
       <div class="progcard-body">
         <span class="tag" style="color:#2c6e49;background:#e3efe8;">🎓 Northern Michigan University · 2026</span>
@@ -259,6 +262,8 @@
         <span class="go">View partnership · 22 videos →</span>
       </div>
     </a>
+
+    </div><!-- /.org-grid -->
 
     <div class="more">
       <h3>More partners joining</h3>
