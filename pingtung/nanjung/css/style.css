@@ -242,4 +242,4 @@ a.card .more{color:var(--plum)}
 }
 
 /* unify card hover with main hub — ruyimeditation float (lift + layered shadow) */
-.card:hover,.tcard:hover{transform:translateY(-8px)!important;box-shadow:0 26px 50px -14px rgba(20,24,31,.30),0 10px 22px -10px rgba(20,24,31,.20)!important;}
+.card:hover,.tcard:hover{transform:translateY(-8px)!important;box-shadow:0 26px 52px -18px var(--accent,var(--gold,#b0863f)),0 8px 18px rgba(20,24,31,.10)!important;}

@@ -607,4 +607,4 @@ a.epac{color:var(--green);font-weight:700;border-bottom:1px solid rgba(30,132,73
 }
 
 /* unify card hover with main hub — ruyimeditation float (lift + layered shadow) */
-.enav-card:hover,.eaud-card:hover{transform:translateY(-8px)!important;box-shadow:0 26px 50px -14px rgba(20,24,31,.30),0 10px 22px -10px rgba(20,24,31,.20)!important;}
+.enav-card:hover,.eaud-card:hover{transform:translateY(-8px)!important;box-shadow:0 26px 52px -18px var(--ac,var(--navy,#0a3d62)),0 8px 18px rgba(20,24,31,.10)!important;}

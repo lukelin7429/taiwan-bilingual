@@ -924,4 +924,4 @@ a:hover { color: var(--forest); }
 }
 
 /* unify card hover with main hub — ruyimeditation float (lift + layered shadow) */
-.township-card:hover,.highlight-card:hover,.resource-card:hover,.festival-card:hover{transform:translateY(-8px)!important;box-shadow:0 26px 50px -14px rgba(20,24,31,.30),0 10px 22px -10px rgba(20,24,31,.20)!important;}
+.township-card:hover,.highlight-card:hover,.resource-card:hover,.festival-card:hover{transform:translateY(-8px)!important;box-shadow:0 26px 52px -18px var(--ac,#0c8599),0 8px 18px rgba(20,24,31,.10)!important;}
