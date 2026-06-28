@@ -135,6 +135,7 @@
   @media(prefers-reduced-motion:reduce){.has-js .reveal{opacity:1;transform:none;transition:none;}.l-hero::before,.l-hero::after{animation:none;}}
 </style>
 <script>/*MTN-GUARD*/document.documentElement.classList.add('mtn');addEventListener('load',function(){setTimeout(function(){window.__mtn||document.documentElement.classList.remove('mtn')},1)})</script>
+  <link rel="stylesheet" href="/assets/css/search.css">
 </head>
 <body>
 
@@ -149,6 +150,7 @@
       <a href="/partners/" aria-current="page">Partners</a>
       <a href="/resources/">Resources</a>
     </nav>
+    <button type="button" class="nav-search-btn" id="siteSearchBtn" aria-label="Search this site" title="Search (press /)"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.5" y2="16.5"></line></svg><span class="nav-search-label">Search</span></button>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </div>
@@ -326,5 +328,6 @@
 </script>
   <script src="/assets/js/nav.js"></script>
   <script src="/assets/js/motion.js"></script>
+  <script defer src="/assets/js/search.js"></script>
 </body>
 </html>
