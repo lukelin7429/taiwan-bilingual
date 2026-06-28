@@ -10,13 +10,13 @@
 /* Per-page colour comes from --b1/--b2/--b3 on each .pg-band (set in the
    page's own <style>); jade fallbacks keep any un-migrated page looking right.
    The light/shadow life lives here, shared by every hub page. */
-.pg-band{position:relative;overflow:hidden;padding-bottom:64px;
+.pg-band{position:relative;overflow:hidden;padding-bottom:82px;
   background-color:var(--b2,#2f7d6f);
   background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 48' preserveAspectRatio='none'%3E%3Cpath d='M0,48 L1200,48 L1200,20 C940,52 560,4 0,26 Z' fill='%23ffffff'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 90' preserveAspectRatio='none'%3E%3Cpath d='M0,90 L1200,90 L1200,30 C860,104 360,2 0,52 Z' fill='%23ffffff'/%3E%3C/svg%3E"),
     linear-gradient(115deg,transparent 30%,rgba(255,255,255,.10) 45%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.10) 55%,transparent 70%),
     linear-gradient(135deg,var(--b1,#1b5c44) 0%,var(--b2,#2f7d6f) 62%,var(--b3,#3a7766) 100%);
-  background-size:100% 48px,280% 100%,100% 100%;
+  background-size:100% 90px,280% 100%,100% 100%;
   background-position:50% 100%,140% 0,0 0;
   background-repeat:no-repeat;
   animation:bandSweep 9s ease-in-out infinite;}
@@ -57,18 +57,19 @@
    hub. Resting transition lives on the element; entering hover is
    snapped faster via the :hover transition override.
    ============================================================ */
+/* Card hover modelled on the ruyimeditation cards: a clear lift, a layered
+   soft+near shadow for real depth, and the border firming up. */
 .card,.hub-card,.hub-school-card,.school-card,.fet-card,.about-card,
 .story-card,.ce-card,.policy-card,.policy-feature,.bllc-card,.bc-moe-card,
-.sdg-card,.sdg,.ccard,.cty-feat,.person,.theme,.dom-card,.progcard{
-  transition:transform .42s cubic-bezier(.2,.7,.2,1),box-shadow .3s ease,border-color .3s ease;
+.sdg-card,.sdg,.ccard,.cty-feat,.person,.theme,.dom-card,.progcard,.partner{
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
 }
 .card:hover,.hub-card:hover,.hub-school-card:hover,.school-card:hover,.fet-card:hover,
 .about-card:hover,.story-card:hover,.ce-card:hover,.policy-card:hover,.policy-feature:hover,
 .bllc-card:hover,.bc-moe-card:hover,.sdg-card:hover,.sdg:hover,.ccard:hover,.cty-feat:hover,
-.person:hover,.theme:hover,.dom-card:hover,.progcard:hover{
-  transform:translateY(-6px);
-  box-shadow:0 22px 50px -20px rgba(31,67,56,.42);
-  transition:transform .26s cubic-bezier(.2,.7,.2,1),box-shadow .26s ease;
+.person:hover,.theme:hover,.dom-card:hover,.progcard:hover,.partner:hover{
+  transform:translateY(-7px);
+  box-shadow:0 20px 44px rgba(20,24,31,.13),0 6px 16px rgba(20,24,31,.10);
 }
 
 /* ============================================================
@@ -94,6 +95,20 @@ html.mtn .sdg-card.mtn-in,html.mtn .sdg.mtn-in,html.mtn .ccard.mtn-in,
 html.mtn .cty-feat.mtn-in,html.mtn .person.mtn-in,html.mtn .theme.mtn-in,
 html.mtn .dom-card.mtn-in,html.mtn .progcard.mtn-in,html.mtn .partner.mtn-in,
 html.mtn [data-mtn].mtn-in{opacity:1;transform:none;}
+
+/* Hover must out-rank the reveal rule above (which otherwise keeps a slow .7s
+   transform), so the lift stays snappy like the ruyimeditation cards. */
+html.mtn .card:hover,html.mtn .hub-card:hover,html.mtn .hub-school-card:hover,
+html.mtn .school-card:hover,html.mtn .fet-card:hover,html.mtn .about-card:hover,
+html.mtn .story-card:hover,html.mtn .ce-card:hover,html.mtn .policy-card:hover,
+html.mtn .policy-feature:hover,html.mtn .bllc-card:hover,html.mtn .bc-moe-card:hover,
+html.mtn .sdg-card:hover,html.mtn .sdg:hover,html.mtn .ccard:hover,html.mtn .cty-feat:hover,
+html.mtn .person:hover,html.mtn .theme:hover,html.mtn .dom-card:hover,
+html.mtn .progcard:hover,html.mtn .partner:hover{
+  transform:translateY(-7px);
+  box-shadow:0 20px 44px rgba(20,24,31,.13),0 6px 16px rgba(20,24,31,.10);
+  transition:transform .25s ease,box-shadow .25s ease;
+}
 
 @media (prefers-reduced-motion: reduce){
   .pg-band{animation:none;background-position:50% 100%,0 0,0 0;}
