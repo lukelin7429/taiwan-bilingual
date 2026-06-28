@@ -922,3 +922,6 @@ a:hover { color: var(--forest); }
   .vocab-card:hover     { transform: translateY(-2px) scale(1.01) !important; }
   .page-banner-orb { animation-duration: 10s; }
 }
+
+/* unify card hover with main hub — ruyimeditation float (lift + layered shadow) */
+.township-card:hover,.highlight-card:hover,.resource-card:hover,.festival-card:hover{transform:translateY(-8px)!important;box-shadow:0 26px 50px -14px rgba(20,24,31,.30),0 10px 22px -10px rgba(20,24,31,.20)!important;}

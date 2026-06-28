@@ -465,3 +465,6 @@ footer .partner a:hover{border-bottom-color:#f1d6aa;}
   .topbar-nav{gap:4px;justify-content:flex-start;}
   .topbar-nav a{font-size:15.5px;padding:6px 10px;}
 }
+
+/* unify card hover with main hub — ruyimeditation float (lift + layered shadow) */
+.life-card:hover,.ncard:hover{transform:translateY(-8px)!important;box-shadow:0 26px 50px -14px rgba(20,24,31,.30),0 10px 22px -10px rgba(20,24,31,.20)!important;}
