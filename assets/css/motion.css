@@ -84,20 +84,23 @@
   opacity:.08;pointer-events:none;z-index:0;
   transition:opacity .35s ease,transform .6s cubic-bezier(.22,.61,.36,1);
 }
-/* resting colourful border (uniform-border cards; progcard/partner keep their
-   bold coloured top bar untouched) */
-.card,.hub-card,.hub-school-card,.school-card,.fet-card,.about-card,.story-card,
-.ce-card,.policy-card,.policy-feature,.bllc-card,.bc-moe-card,.sdg-card,.sdg,
-.ccard,.cty-feat,.person,.theme,.dom-card{
-  border-color:var(--accent,rgba(20,24,31,.14));
+/* TEXT cards get a bold colour LEFT-BAR via an inset shadow — visible at rest,
+   no border/pseudo cascade fight (this is the ruyimeditation "spine"). */
+.card,.hub-card,.policy-card,.sdg-card,.sdg,.ccard,.cty-feat,.person,.theme,
+.dom-card,.story-card,.about-card,.ce-card,.bllc-card,.bc-moe-card{
+  box-shadow:inset 5px 0 0 0 var(--accent,#0d7a6e),0 1px 3px rgba(20,24,31,.05);
 }
-/* hover: lift + accent-COLOURED glow shadow + the circle grows */
-.card:hover,.hub-card:hover,.hub-school-card:hover,.school-card:hover,.fet-card:hover,
-.about-card:hover,.story-card:hover,.ce-card:hover,.policy-card:hover,.policy-feature:hover,
-.bllc-card:hover,.bc-moe-card:hover,.sdg-card:hover,.sdg:hover,.ccard:hover,.cty-feat:hover,
-.person:hover,.theme:hover,.dom-card:hover,.progcard:hover,.partner:hover{
-  transform:translateY(-8px);
-  border-color:var(--accent,rgba(20,24,31,.22));
+.card:hover,.hub-card:hover,.policy-card:hover,.sdg-card:hover,.sdg:hover,.ccard:hover,
+.cty-feat:hover,.person:hover,.theme:hover,.dom-card:hover,.story-card:hover,
+.about-card:hover,.ce-card:hover,.bllc-card:hover,.bc-moe-card:hover{
+  transform:translateY(-8px);border-color:var(--accent);
+  box-shadow:inset 5px 0 0 0 var(--accent,#0d7a6e),0 26px 52px -18px var(--accent,rgba(20,24,31,.45)),0 8px 18px rgba(20,24,31,.08);
+}
+/* PHOTO / top-bar cards: their coloured top bar carries the hue at rest; on
+   hover they lift with an accent-COLOURED glow. */
+.school-card:hover,.hub-school-card:hover,.fet-card:hover,.policy-feature:hover,
+.progcard:hover,.partner:hover{
+  transform:translateY(-8px);border-color:var(--accent);
   box-shadow:0 26px 52px -18px var(--accent,rgba(20,24,31,.45)),0 8px 18px rgba(20,24,31,.08);
 }
 .card:hover::after,.hub-card:hover::after,.hub-school-card:hover::after,.school-card:hover::after,
@@ -144,8 +147,6 @@ html.mtn .sdg-card:hover,html.mtn .sdg:hover,html.mtn .ccard:hover,html.mtn .cty
 html.mtn .person:hover,html.mtn .theme:hover,html.mtn .dom-card:hover,
 html.mtn .progcard:hover,html.mtn .partner:hover{
   transform:translateY(-8px);
-  border-color:var(--accent,rgba(20,24,31,.22));
-  box-shadow:0 26px 52px -18px var(--accent,rgba(20,24,31,.45)),0 8px 18px rgba(20,24,31,.08);
   transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
 }
 
