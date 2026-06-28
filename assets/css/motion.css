@@ -68,8 +68,17 @@
 .about-card:hover,.story-card:hover,.ce-card:hover,.policy-card:hover,.policy-feature:hover,
 .bllc-card:hover,.bc-moe-card:hover,.sdg-card:hover,.sdg:hover,.ccard:hover,.cty-feat:hover,
 .person:hover,.theme:hover,.dom-card:hover,.progcard:hover,.partner:hover{
-  transform:translateY(-7px);
-  box-shadow:0 20px 44px rgba(20,24,31,.13),0 6px 16px rgba(20,24,31,.10);
+  transform:translateY(-8px);
+  box-shadow:0 26px 50px -14px rgba(20,24,31,.30),0 10px 22px -10px rgba(20,24,31,.20);
+}
+/* the card edge lights up in its accent on hover (ruyimeditation signature).
+   Only cards with a uniform border — NOT the border-top-accent progcard/partner,
+   whose coloured top bar must stay. */
+.card:hover,.hub-card:hover,.hub-school-card:hover,.school-card:hover,.fet-card:hover,
+.about-card:hover,.story-card:hover,.ce-card:hover,.policy-card:hover,.policy-feature:hover,
+.bllc-card:hover,.bc-moe-card:hover,.sdg-card:hover,.sdg:hover,.ccard:hover,.cty-feat:hover,
+.person:hover,.theme:hover,.dom-card:hover{
+  border-color:var(--accent,rgba(20,24,31,.22));
 }
 
 /* ============================================================
@@ -105,9 +114,17 @@ html.mtn .policy-feature:hover,html.mtn .bllc-card:hover,html.mtn .bc-moe-card:h
 html.mtn .sdg-card:hover,html.mtn .sdg:hover,html.mtn .ccard:hover,html.mtn .cty-feat:hover,
 html.mtn .person:hover,html.mtn .theme:hover,html.mtn .dom-card:hover,
 html.mtn .progcard:hover,html.mtn .partner:hover{
-  transform:translateY(-7px);
-  box-shadow:0 20px 44px rgba(20,24,31,.13),0 6px 16px rgba(20,24,31,.10);
-  transition:transform .25s ease,box-shadow .25s ease;
+  transform:translateY(-8px);
+  box-shadow:0 26px 50px -14px rgba(20,24,31,.30),0 10px 22px -10px rgba(20,24,31,.20);
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+html.mtn .card:hover,html.mtn .hub-card:hover,html.mtn .hub-school-card:hover,
+html.mtn .school-card:hover,html.mtn .fet-card:hover,html.mtn .about-card:hover,
+html.mtn .story-card:hover,html.mtn .ce-card:hover,html.mtn .policy-card:hover,
+html.mtn .policy-feature:hover,html.mtn .bllc-card:hover,html.mtn .bc-moe-card:hover,
+html.mtn .sdg-card:hover,html.mtn .sdg:hover,html.mtn .ccard:hover,html.mtn .cty-feat:hover,
+html.mtn .person:hover,html.mtn .theme:hover,html.mtn .dom-card:hover{
+  border-color:var(--accent,rgba(20,24,31,.22));
 }
 
 @media (prefers-reduced-motion: reduce){
