@@ -67,3 +67,11 @@
 - 雙語頁全 inline single-page；只列校長不列主任；每校客製不複用模板
 
 > 各校完整脈絡（含製作方向決策 04）見 vault `組織事務/人師教育協會/跨縣市學校服務/[縣市]/[校名]/`，與 memory `project_cross_county_school_service`。
+
+---
+
+## 全站搜尋（site-wide search）
+- 每頁的搜尋框（按 `/` 或 ⌘K 開）＋索引由 `scripts/build_search.py` 維護。
+- **新增或改名任何頁面後要重跑** `python3 scripts/build_search.py` 再 commit——它會(1)重建 `search.json`、(2)把搜尋鈕 idempotent 注入有共用 topbar 的頁。
+- 索引涵蓋全部頁；搜尋鈕只進「標準 topbar」頁（`<nav class="topbar-nav">`）。Edward / 南榮 / tutoring 等自訂 header 的子站**找得到但不顯示搜尋鈕**。
+- 資產 `assets/css/search.css`（island-jade，含 var fallback 自包）、`assets/js/search.js`。
