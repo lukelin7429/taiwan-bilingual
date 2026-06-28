@@ -52,34 +52,63 @@
 .pg-band .sub-zh{color:rgba(255,255,255,.88);}
 
 /* ============================================================
-   2) UNIVERSAL CARD HOVER — works with or without JS.
-   These classes are the repeating content-card units across the
-   hub. Resting transition lives on the element; entering hover is
-   snapped faster via the :hover transition override.
+   2) COLOURFUL CARDS — faithful to the ruyimeditation cards.
+   Each card carries a hue in --accent. Pages that set --accent
+   inline keep their curated colour; the rest cycle a warm 6-hue
+   palette. The hue drives: a soft corner colour-circle that grows
+   on hover, the resting border, the accent-COLOURED lift shadow
+   (the glow), and the tag/CTA colour.
    ============================================================ */
-/* Card hover modelled on the ruyimeditation cards: a clear lift, a layered
-   soft+near shadow for real depth, and the border firming up. */
 .card,.hub-card,.hub-school-card,.school-card,.fet-card,.about-card,
 .story-card,.ce-card,.policy-card,.policy-feature,.bllc-card,.bc-moe-card,
 .sdg-card,.sdg,.ccard,.cty-feat,.person,.theme,.dom-card,.progcard,.partner{
-  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+  position:relative;
+  transition:transform .28s cubic-bezier(.2,.7,.2,1),box-shadow .28s ease,border-color .28s ease;
 }
+/* cycle a hue per card where the page didn't set --accent inline (low-specificity
+   :where so inline curated colours and --pc still win) */
+:where(.card,.hub-card,.hub-school-card,.school-card,.fet-card,.about-card,.story-card,.ce-card,.policy-card,.policy-feature,.bllc-card,.bc-moe-card,.sdg-card,.sdg,.ccard,.cty-feat,.person,.theme,.dom-card,.progcard):nth-child(6n+1){--accent:#b8431c;}
+:where(.card,.hub-card,.hub-school-card,.school-card,.fet-card,.about-card,.story-card,.ce-card,.policy-card,.policy-feature,.bllc-card,.bc-moe-card,.sdg-card,.sdg,.ccard,.cty-feat,.person,.theme,.dom-card,.progcard):nth-child(6n+2){--accent:#0c8599;}
+:where(.card,.hub-card,.hub-school-card,.school-card,.fet-card,.about-card,.story-card,.ce-card,.policy-card,.policy-feature,.bllc-card,.bc-moe-card,.sdg-card,.sdg,.ccard,.cty-feat,.person,.theme,.dom-card,.progcard):nth-child(6n+3){--accent:#7048e8;}
+:where(.card,.hub-card,.hub-school-card,.school-card,.fet-card,.about-card,.story-card,.ce-card,.policy-card,.policy-feature,.bllc-card,.bc-moe-card,.sdg-card,.sdg,.ccard,.cty-feat,.person,.theme,.dom-card,.progcard):nth-child(6n+4){--accent:#2f9e44;}
+:where(.card,.hub-card,.hub-school-card,.school-card,.fet-card,.about-card,.story-card,.ce-card,.policy-card,.policy-feature,.bllc-card,.bc-moe-card,.sdg-card,.sdg,.ccard,.cty-feat,.person,.theme,.dom-card,.progcard):nth-child(6n+5){--accent:#d6336c;}
+:where(.card,.hub-card,.hub-school-card,.school-card,.fet-card,.about-card,.story-card,.ce-card,.policy-card,.policy-feature,.bllc-card,.bc-moe-card,.sdg-card,.sdg,.ccard,.cty-feat,.person,.theme,.dom-card,.progcard):nth-child(6n+6){--accent:#e8590c;}
+.partner{--accent:var(--pc);}
+/* soft colour-circle in the top-right corner; grows + brightens on hover */
+.card::after,.hub-card::after,.hub-school-card::after,.school-card::after,.fet-card::after,
+.about-card::after,.story-card::after,.ce-card::after,.policy-card::after,.policy-feature::after,
+.bllc-card::after,.bc-moe-card::after,.sdg-card::after,.sdg::after,.ccard::after,.cty-feat::after,
+.person::after,.theme::after,.dom-card::after,.progcard::after,.partner::after{
+  content:"";position:absolute;right:-55px;top:-55px;width:160px;height:160px;border-radius:50%;
+  background:radial-gradient(circle at 32% 32%,var(--accent,#0d7a6e),transparent 70%);
+  opacity:.08;pointer-events:none;z-index:0;
+  transition:opacity .35s ease,transform .6s cubic-bezier(.22,.61,.36,1);
+}
+/* resting colourful border (uniform-border cards; progcard/partner keep their
+   bold coloured top bar untouched) */
+.card,.hub-card,.hub-school-card,.school-card,.fet-card,.about-card,.story-card,
+.ce-card,.policy-card,.policy-feature,.bllc-card,.bc-moe-card,.sdg-card,.sdg,
+.ccard,.cty-feat,.person,.theme,.dom-card{
+  border-color:var(--accent,rgba(20,24,31,.14));
+}
+/* hover: lift + accent-COLOURED glow shadow + the circle grows */
 .card:hover,.hub-card:hover,.hub-school-card:hover,.school-card:hover,.fet-card:hover,
 .about-card:hover,.story-card:hover,.ce-card:hover,.policy-card:hover,.policy-feature:hover,
 .bllc-card:hover,.bc-moe-card:hover,.sdg-card:hover,.sdg:hover,.ccard:hover,.cty-feat:hover,
 .person:hover,.theme:hover,.dom-card:hover,.progcard:hover,.partner:hover{
   transform:translateY(-8px);
-  box-shadow:0 26px 50px -14px rgba(20,24,31,.30),0 10px 22px -10px rgba(20,24,31,.20);
-}
-/* the card edge lights up in its accent on hover (ruyimeditation signature).
-   Only cards with a uniform border — NOT the border-top-accent progcard/partner,
-   whose coloured top bar must stay. */
-.card:hover,.hub-card:hover,.hub-school-card:hover,.school-card:hover,.fet-card:hover,
-.about-card:hover,.story-card:hover,.ce-card:hover,.policy-card:hover,.policy-feature:hover,
-.bllc-card:hover,.bc-moe-card:hover,.sdg-card:hover,.sdg:hover,.ccard:hover,.cty-feat:hover,
-.person:hover,.theme:hover,.dom-card:hover{
   border-color:var(--accent,rgba(20,24,31,.22));
+  box-shadow:0 26px 52px -18px var(--accent,rgba(20,24,31,.45)),0 8px 18px rgba(20,24,31,.08);
 }
+.card:hover::after,.hub-card:hover::after,.hub-school-card:hover::after,.school-card:hover::after,
+.fet-card:hover::after,.about-card:hover::after,.story-card:hover::after,.ce-card:hover::after,
+.policy-card:hover::after,.policy-feature:hover::after,.bllc-card:hover::after,.bc-moe-card:hover::after,
+.sdg-card:hover::after,.sdg:hover::after,.ccard:hover::after,.cty-feat:hover::after,
+.person:hover::after,.theme:hover::after,.dom-card:hover::after,.progcard:hover::after,.partner:hover::after{
+  opacity:.2;transform:scale(1.35);
+}
+/* the small tag + CTA pick up the card hue */
+.card-tag,.card-go,.card-action,.card-meta,.card-loc+.card-go{color:var(--accent);}
 
 /* ============================================================
    3) SCROLL REVEAL — only active when the head guard set html.mtn
@@ -115,16 +144,9 @@ html.mtn .sdg-card:hover,html.mtn .sdg:hover,html.mtn .ccard:hover,html.mtn .cty
 html.mtn .person:hover,html.mtn .theme:hover,html.mtn .dom-card:hover,
 html.mtn .progcard:hover,html.mtn .partner:hover{
   transform:translateY(-8px);
-  box-shadow:0 26px 50px -14px rgba(20,24,31,.30),0 10px 22px -10px rgba(20,24,31,.20);
-  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
-}
-html.mtn .card:hover,html.mtn .hub-card:hover,html.mtn .hub-school-card:hover,
-html.mtn .school-card:hover,html.mtn .fet-card:hover,html.mtn .about-card:hover,
-html.mtn .story-card:hover,html.mtn .ce-card:hover,html.mtn .policy-card:hover,
-html.mtn .policy-feature:hover,html.mtn .bllc-card:hover,html.mtn .bc-moe-card:hover,
-html.mtn .sdg-card:hover,html.mtn .sdg:hover,html.mtn .ccard:hover,html.mtn .cty-feat:hover,
-html.mtn .person:hover,html.mtn .theme:hover,html.mtn .dom-card:hover{
   border-color:var(--accent,rgba(20,24,31,.22));
+  box-shadow:0 26px 52px -18px var(--accent,rgba(20,24,31,.45)),0 8px 18px rgba(20,24,31,.08);
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
 }
 
 @media (prefers-reduced-motion: reduce){
