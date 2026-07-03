@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
 <link rel="manifest" href="/assets/favicon/site.webmanifest">
 <title>Hsinchu City Schools 新竹市 · Schools — Taiwan Bilingual Hub</title>
-<meta name="description" content="Hsinchu City County/City's school directory is coming soon to the Taiwan Bilingual Hub.">
+<meta name="description" content="Every public elementary, junior high and senior high school in Hsinchu City, Taiwan, grouped by township — schools with their own bilingual website are marked, along with links to schools' own official websites where available.">
 <meta property="og:title" content="Hsinchu City Schools · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +18,47 @@
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/motion.css">
 <link rel="stylesheet" href="/assets/css/county.css">
+<link rel="stylesheet" href="/assets/css/search.css">
+<style>
+  .cs-town{margin-bottom:34px;}
+  .cs-town-head{display:flex;align-items:baseline;gap:12px;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--line);flex-wrap:wrap;}
+  .cs-zip{font-family:'Lato',monospace;font-size:13px;font-weight:700;color:#fff;background:var(--ink-soft);border-radius:6px;padding:2px 7px;letter-spacing:.03em;}
+  .cs-town-head h3{font-family:'Playfair Display','PingFang TC',serif;font-size:21px;font-weight:700;color:var(--jade-deep);}
+  .cs-town-head .zh{font-size:15px;color:var(--ink-soft);font-weight:600;margin-left:6px;}
+  .cs-count{margin-left:auto;font-size:13px;color:var(--ink-soft);}
+  .cs-list{display:grid;grid-template-columns:1fr;gap:10px;}
+  @media(min-width:720px){.cs-list{grid-template-columns:1fr 1fr;}}
+  .srow{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:1px solid var(--line);border-radius:12px;
+    padding:13px 16px;transition:transform .15s,box-shadow .15s,border-color .15s;color:var(--ink);}
+  .srow:not(.srow-empty):hover{transform:translateY(-2px);box-shadow:var(--shadow-sm);border-color:var(--jade);}
+  .srow .body{display:flex;flex-direction:column;align-items:flex-start;gap:4px;min-width:0;}
+  .srow .nm{font-size:15.5px;font-weight:600;color:var(--ink);display:flex;align-items:baseline;gap:4px;flex-wrap:wrap;}
+  .lvl-tag{order:-1;flex:0 0 auto;font-size:10.5px;font-weight:800;letter-spacing:.03em;padding:2px 6px;border-radius:5px;color:#fff;}
+  .lvl-elementary{background:#4f8f6c;} .lvl-junior-high{background:#3f6fa3;} .lvl-senior-high{background:#8a4d9a;}
+  .lvl-university{background:#b07d3c;}
+  .cs-he{margin-bottom:44px;padding-bottom:36px;border-bottom:3px solid var(--line);}
+  .cs-he-head{display:flex;align-items:baseline;gap:12px;margin-bottom:6px;}
+  .cs-he-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:24px;font-weight:700;color:#8a5a25;}
+  .cs-he-head .zh{font-size:16px;color:var(--ink-soft);font-weight:600;}
+  .cs-he p.note{font-size:14.5px;color:var(--ink-soft);margin-bottom:16px;}
+  .cs-he .cs-list{grid-template-columns:1fr;}
+  @media(min-width:720px){.cs-he .cs-list{grid-template-columns:1fr 1fr 1fr;}}
+  .badge{flex:0 0 auto;font-size:11px;font-weight:700;letter-spacing:.02em;padding:4px 10px;border-radius:999px;white-space:nowrap;}
+  .badge-full{background:var(--jade-soft);color:var(--jade-deep);}
+  .badge-official{background:#e9edf2;color:#4a5a6a;}
+  .badge-soon{background:#f1efe9;color:var(--ink-soft);}
+  .srow-empty{opacity:.6;cursor:default;}
+  .cs-legend{display:flex;flex-wrap:wrap;gap:16px;margin:18px 0 24px;font-size:14px;color:var(--ink-soft);}
+  .cs-legend span{display:inline-flex;align-items:center;gap:7px;}
+  .cs-legend i{width:10px;height:10px;border-radius:50%;display:inline-block;}
+  .cs-legend .i-full{background:var(--jade);} .cs-legend .i-official{background:#7c8b9a;} .cs-legend .i-soon{background:#b9b4a8;}
+  .cs-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px;}
+  .cs-tab{font-size:14px;font-weight:700;color:var(--ink-soft);background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:8px 18px;cursor:pointer;transition:all .15s;}
+  .cs-tab:hover{border-color:var(--jade);color:var(--jade-deep);}
+  .cs-tab.active{background:var(--jade-deep);border-color:var(--jade-deep);color:#fff;}
+  .cs-town[hidden], .srow[hidden]{display:none!important;}
+  .cs-note{font-size:14.5px;color:var(--ink-soft);margin-bottom:20px;background:var(--jade-soft);border-radius:12px;padding:14px 18px;}
+</style>
 </head>
 <body>
 
@@ -44,15 +85,423 @@
       <h1>Hsinchu City Schools</h1>
       <span class="zh">新竹市</span>
     </div>
-    <p class="cty-pos">This county's school directory hasn't been built yet — Changhua is live first, with other counties being added county by county.</p>
-    <p class="cty-pos-zh">這個縣市的學校列表尚未建置——彰化縣先上線，其他縣市陸續加入中。</p>
+    <p class="cty-pos">Every public elementary, junior high and senior high school in Hsinchu City — 51 schools across 3 townships/districts.</p>
+    <p class="cty-pos-zh">新竹市所有公立國中小及高中職——51 校，橫跨 3 個鄉鎮市區。</p>
   </div>
 </header>
 
 <section class="section">
-  <div class="wrap" style="max-width:640px;">
-    <p style="font-size:17px;color:var(--ink-soft);line-height:1.8;">In the meantime, see the <a href="/schools/changhua/">Changhua County school directory</a> for a preview of what's coming, or head back to <a href="/schools/">all Schools</a>.</p>
-    <p style="margin-top:10px;font-size:16px;color:var(--ink-soft);">同時可先參考已上線的<a href="/schools/changhua/">彰化縣學校列表</a>，或回到<a href="/schools/">學校總覽</a>。</p>
+  <div class="wrap">
+
+
+    <div class="cs-he">
+      <div class="cs-he-head"><h2>Higher Education</h2><span class="zh">大學校院</span></div>
+      <p class="note">Universities serve the whole county, not one township — listed separately, with their own profile format still to come.｜大學服務全縣而非單一鄉鎮，另外呈現，介紹頁格式待建置。</p>
+      <div class="cs-list">
+      <div class="srow srow-empty" data-level="university">
+        <div class="body">
+          <span class="lvl-tag lvl-university">UNI</span>
+          <div class="nm">National Tsing Hua University <span class="zh">國立清華大學</span></div>
+          <div class="cs-town-sub">East District 東區</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="university">
+        <div class="body">
+          <span class="lvl-tag lvl-university">UNI</span>
+          <div class="nm">National Yang Ming Chiao Tung University <span class="zh">國立陽明交通大學</span></div>
+          <div class="cs-town-sub">East District 東區</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      </div>
+    </div>
+
+    <div class="cs-legend">
+      <span><i class="i-full"></i>Full independent bilingual site (opens in new tab)</span>
+      <span><i class="i-official"></i>School's own official website (Chinese)</span>
+      <span><i class="i-soon"></i>No confirmed website yet</span>
+    </div>
+
+    <div class="cs-tabs" role="tablist" aria-label="Filter by school level">
+      <button class="cs-tab active" data-filter="all">All Levels</button>
+      <button class="cs-tab" data-filter="elementary">Elementary 國小</button>
+      <button class="cs-tab" data-filter="junior-high">Junior High 國中</button>
+      <button class="cs-tab" data-filter="senior-high">Senior High 高中</button>
+    </div>
+
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">300</span><h3>East District <span class="zh">東區</span></h3><span class="cs-count">26 schools</span></div>
+      <div class="cs-list">
+      <div class="srow srow-empty" data-level="senior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-senior-high">SH</span>
+          <div class="nm">國立新竹女子高級中學</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="senior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-senior-high">SH</span>
+          <div class="nm">國立新竹科學園區實驗高級中等學校</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="senior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-senior-high">SH</span>
+          <div class="nm">國立新竹高級中學</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="senior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-senior-high">SH</span>
+          <div class="nm">國立新竹高級商業職業學校</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="senior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-senior-high">SH</span>
+          <div class="nm">國立新竹高級工業職業學校</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="senior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-senior-high">SH</span>
+          <div class="nm">新竹市立建功高級中學</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">三民國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">光武國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">培英國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">建華國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">新科國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">育賢國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">三民國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">建功國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">新竹國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">東園國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">東門國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">水源國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">科園國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">竹蓮國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">關埔國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">關東國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">陽光國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">青草湖國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">高峰國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">龍山國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      </div>
+    </div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">300</span><h3>North District <span class="zh">北區</span></h3><span class="cs-count">10 schools</span></div>
+      <div class="cs-list">
+      <div class="srow srow-empty" data-level="senior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-senior-high">SH</span>
+          <div class="nm">新竹市立成德高級中學</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">光華國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">南華國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">竹光國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">北門國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">南寮國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">民富國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">舊社國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">西門國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">載熙國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      </div>
+    </div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">300</span><h3>Xiangshan District <span class="zh">香山區</span></h3><span class="cs-count">15 schools</span></div>
+      <div class="cs-list">
+      <div class="srow srow-empty" data-level="senior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-senior-high">SH</span>
+          <div class="nm">新竹市立數位實驗高級中等學校</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="senior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-senior-high">SH</span>
+          <div class="nm">新竹市立香山高級中學</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">內湖國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">富禮國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">虎林國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">內湖國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">南隘國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">大庄國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">大湖國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">朝山國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">港南國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">茄苳國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">虎林國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">頂埔國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">香山國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -75,7 +524,30 @@
     </div>
   </div>
 </footer>
+
 <script src="/assets/js/nav.js"></script>
 <script src="/assets/js/motion.js"></script>
+<script defer src="/assets/js/search.js"></script>
+<script>
+(function(){
+  var tabs = document.querySelectorAll('.cs-tab');
+  var rows = document.querySelectorAll('.cs-list .srow[data-level]');
+  var towns = document.querySelectorAll('.cs-town');
+  tabs.forEach(function(tab){
+    tab.addEventListener('click', function(){
+      tabs.forEach(function(t){t.classList.remove('active');});
+      tab.classList.add('active');
+      var f = tab.getAttribute('data-filter');
+      rows.forEach(function(r){
+        r.hidden = (f !== 'all' && r.getAttribute('data-level') !== f);
+      });
+      towns.forEach(function(town){
+        var visible = town.querySelectorAll('.srow:not([hidden])').length;
+        town.hidden = (visible === 0);
+      });
+    });
+  });
+})();
+</script>
 </body>
 </html>
