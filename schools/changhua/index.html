@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
 <link rel="manifest" href="/assets/favicon/site.webmanifest">
 <title>Changhua Schools 彰化縣學校 · Schools — Taiwan Bilingual Hub</title>
-<meta name="description" content="Every elementary, junior high and senior high school in Changhua County, grouped by township — schools with their own bilingual website, and simple profile pages for the rest.">
+<meta name="description" content="Every elementary, junior high, senior high and university in Changhua County, grouped by township — schools with their own bilingual website, and simple profile pages for the rest.">
 <meta property="og:title" content="Changhua Schools 彰化縣學校 · Taiwan Bilingual Hub">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,25 +22,42 @@
 <style>
   .cs-town{margin-bottom:34px;}
   .cs-town-head{display:flex;align-items:baseline;gap:12px;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--line);flex-wrap:wrap;}
+  .cs-zip{font-family:'Lato',monospace;font-size:13px;font-weight:700;color:#fff;background:var(--ink-soft);border-radius:6px;padding:2px 7px;letter-spacing:.03em;}
   .cs-town-head h3{font-family:'Playfair Display','PingFang TC',serif;font-size:21px;font-weight:700;color:var(--jade-deep);}
   .cs-town-head .zh{font-size:15px;color:var(--ink-soft);font-weight:600;margin-left:6px;}
   .cs-count{margin-left:auto;font-size:13px;color:var(--ink-soft);}
+  .cs-town-sub{font-size:12.5px;color:var(--ink-soft);margin-top:2px;}
   .cs-list{display:grid;grid-template-columns:1fr;gap:10px;}
   @media(min-width:720px){.cs-list{grid-template-columns:1fr 1fr;}}
   .srow{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:1px solid var(--line);border-radius:12px;
     padding:13px 16px;transition:transform .15s,box-shadow .15s,border-color .15s;color:var(--ink);}
   .srow:not(.srow-empty):hover{transform:translateY(-2px);box-shadow:var(--shadow-sm);border-color:var(--jade);}
-  .srow .nm{font-size:15.5px;font-weight:600;color:var(--ink);}
-  .srow .nm .zh{color:var(--ink-soft);font-weight:500;font-size:14px;margin-left:6px;}
+  .srow .body{display:flex;flex-direction:column;align-items:flex-start;gap:4px;min-width:0;}
+  .srow .nm{font-size:15.5px;font-weight:600;color:var(--ink);display:flex;align-items:baseline;gap:4px;flex-wrap:wrap;}
+  .srow .nm .zh{color:var(--ink-soft);font-weight:500;font-size:14px;margin-left:2px;}
+  .lvl-tag{order:-1;flex:0 0 auto;font-size:10.5px;font-weight:800;letter-spacing:.03em;padding:2px 6px;border-radius:5px;color:#fff;}
+  .lvl-elementary{background:#4f8f6c;} .lvl-junior-high{background:#3f6fa3;} .lvl-senior-high{background:#8a4d9a;} .lvl-university{background:#b07d3c;}
   .badge{flex:0 0 auto;font-size:11px;font-weight:700;letter-spacing:.02em;padding:4px 10px;border-radius:999px;white-space:nowrap;}
   .badge-full{background:var(--jade-soft);color:var(--jade-deep);}
   .badge-yp{background:#fdf3de;color:#8a6110;}
   .badge-soon{background:#f1efe9;color:var(--ink-soft);}
   .srow-empty{opacity:.6;cursor:default;}
-  .cs-legend{display:flex;flex-wrap:wrap;gap:16px;margin:18px 0 30px;font-size:14px;color:var(--ink-soft);}
+  .cs-legend{display:flex;flex-wrap:wrap;gap:16px;margin:18px 0 24px;font-size:14px;color:var(--ink-soft);}
   .cs-legend span{display:inline-flex;align-items:center;gap:7px;}
   .cs-legend i{width:10px;height:10px;border-radius:50%;display:inline-block;}
   .cs-legend .i-full{background:var(--jade);} .cs-legend .i-yp{background:#c99a2e;} .cs-legend .i-soon{background:#b9b4a8;}
+  .cs-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px;}
+  .cs-tab{font-size:14px;font-weight:700;color:var(--ink-soft);background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:8px 18px;cursor:pointer;transition:all .15s;}
+  .cs-tab:hover{border-color:var(--jade);color:var(--jade-deep);}
+  .cs-tab.active{background:var(--jade-deep);border-color:var(--jade-deep);color:#fff;}
+  .cs-he{margin-bottom:44px;padding-bottom:36px;border-bottom:3px solid var(--line);}
+  .cs-he-head{display:flex;align-items:baseline;gap:12px;margin-bottom:6px;}
+  .cs-he-head h2{font-family:'Playfair Display','PingFang TC',serif;font-size:24px;font-weight:700;color:#8a5a25;}
+  .cs-he-head .zh{font-size:16px;color:var(--ink-soft);font-weight:600;}
+  .cs-he p.note{font-size:14.5px;color:var(--ink-soft);margin-bottom:16px;}
+  .cs-he .cs-list{grid-template-columns:1fr;}
+  @media(min-width:720px){.cs-he .cs-list{grid-template-columns:1fr 1fr 1fr;}}
+  .cs-town[hidden], .srow[hidden]{display:none!important;}
 </style>
 </head>
 <body>
@@ -68,1415 +85,1667 @@
       <h1>Changhua County Schools</h1>
       <span class="zh">彰化縣學校</span>
     </div>
-    <p class="cty-pos">Every elementary, junior high and senior high school in Changhua County — 128 with their own bilingual website, 84 more getting a simple English-language profile.</p>
-    <p class="cty-pos-zh">彰化縣所有國中小及高中——128 校已有自己的雙語網站，另有 84 校正陸續建立簡易英文介紹頁。</p>
+    <p class="cty-pos">Every elementary, junior high and senior high school in Changhua County — 128 with their own bilingual website, 84 more getting a simple English-language profile — plus the county's universities.</p>
+    <p class="cty-pos-zh">彰化縣所有國中小、高中及大學院校——128 校已有自己的雙語網站，另有 84 校正陸續建立簡易英文介紹頁。</p>
   </div>
 </header>
 
 <section class="section">
   <div class="wrap">
+
+    <div class="cs-he">
+      <div class="cs-he-head"><h2>Higher Education</h2><span class="zh">大學校院</span></div>
+      <p class="note">Universities serve the whole county, not one township — listed separately, with their own profile format still to come. ｜大學服務全縣而非單一鄉鎮，另外呈現，介紹頁格式待建置。</p>
+      <div class="cs-list">
+      <div class="srow srow-empty" data-level="university">
+        <div class="body">
+          <span class="lvl-tag lvl-university">UNI</span>
+          <div class="nm">National Changhua University of Education <span class="zh">國立彰化師範大學</span></div>
+          <div class="cs-town-sub">Changhua City 彰化市</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="university">
+        <div class="body">
+          <span class="lvl-tag lvl-university">UNI</span>
+          <div class="nm">Dayeh University <span class="zh">大葉大學</span></div>
+          <div class="cs-town-sub">Dacun Township 大村鄉</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="university">
+        <div class="body">
+          <span class="lvl-tag lvl-university">UNI</span>
+          <div class="nm">Chien Kuo Technology University <span class="zh">建國科技大學</span></div>
+          <div class="cs-town-sub">Changhua City 彰化市</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      </div>
+    </div>
+
     <div class="cs-legend">
       <span><i class="i-full"></i>Full independent bilingual site (opens in new tab)</span>
       <span><i class="i-yp"></i>Simple one-page profile on this Hub</span>
       <span><i class="i-soon"></i>Profile page coming soon</span>
     </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Changhua City <span class="zh">彰化市</span></h3><span class="cs-count">22 schools</span></div>
+
+    <div class="cs-tabs" role="tablist" aria-label="Filter by school level">
+      <button class="cs-tab active" data-filter="all">All Levels</button>
+      <button class="cs-tab" data-filter="elementary">Elementary 國小</button>
+      <button class="cs-tab" data-filter="junior-high">Junior High 國中</button>
+      <button class="cs-tab" data-filter="senior-high">Senior High 高中</button>
+    </div>
+
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">500</span><h3>Changhua City <span class="zh">彰化市</span></h3><span class="cs-count">22 schools</span></div>
       <div class="cs-list">
-      <a class="srow" href="https://sites.google.com/chash.chc.edu.tw/csusm-iep/home" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/chungshan/" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Changhua Arts HS <span class="zh">彰化藝術高中</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/changsing-jhs/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Changsing JH <span class="zh">彰興國中</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://sites.google.com/ctsjh.chc.edu.tw/bilingual/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Changtai JH <span class="zh">彰泰國中</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/chungshan/" target="_blank" rel="noopener">
-        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Chungshan <span class="zh">中山國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/dches/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/dches/" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Dacheng <span class="zh">大成國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/dongfang/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/dongfang/" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Dongfang <span class="zh">東芳國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://guosheng.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://guosheng.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Guosheng <span class="zh">國聖國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/hsinyi/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://kuaiguan.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Hsinyi <span class="zh">信義國中小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://kuaiguan.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Kuaiguan <span class="zh">快官國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://liansing.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://liansing.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Liansing <span class="zh">聯興國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/minsheng/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/minsheng/" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Minsheng <span class="zh">民生國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/nanhsing/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/nanhsing/" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Nanhsing <span class="zh">南興國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://pinghe.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://pinghe.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Pinghe <span class="zh">平和國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://sites.google.com/chc.edu.tw/sanmin-english/home" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://sites.google.com/chc.edu.tw/sanmin-english/home" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Sanmin <span class="zh">三民國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/tachu/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/tachu/" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Tachu <span class="zh">大竹國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/taihe/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/taihe/" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Taihe <span class="zh">泰和國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/yangming-jhs/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://sites.google.com/jsps.chc.edu.tw/changhua-zhongxiao" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Yangming JHS <span class="zh">陽明國中</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://sites.google.com/jsps.chc.edu.tw/changhua-zhongxiao" target="_blank" rel="noopener">
-        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Zhongxiao <span class="zh">忠孝國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <div class="srow srow-empty">
+      <a class="srow" data-level="junior-high" href="https://changhua-bilingual.org/schools/changsing-jhs/" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">Changsing JH <span class="zh">彰興國中</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="junior-high" href="https://sites.google.com/ctsjh.chc.edu.tw/bilingual/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">Changtai JH <span class="zh">彰泰國中</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="junior-high" href="https://changhua-bilingual.org/schools/hsinyi/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">Hsinyi <span class="zh">信義國中小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="junior-high" href="https://changhua-bilingual.org/schools/yangming-jhs/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">Yangming JHS <span class="zh">陽明國中</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="senior-high" href="https://sites.google.com/chash.chc.edu.tw/csusm-iep/home" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-senior-high">SH</span>
+          <div class="nm">Changhua Arts HS <span class="zh">彰化藝術高中</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">南郭國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="junior-high">
         <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
           <div class="nm">彰安國中</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="junior-high">
         <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
           <div class="nm">彰德國中</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">石牌國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
       </div>
     </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Yuanlin City <span class="zh">員林市</span></h3><span class="cs-count">13 schools</span></div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">502</span><h3>Fenyuan Township <span class="zh">芬園鄉</span></h3><span class="cs-count">7 schools</span></div>
       <div class="cs-list">
-      <a class="srow" href="https://sites.google.com/csps.chc.edu.tw/chiaohsin" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/tongan/" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Chiaohsin <span class="zh">僑信國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://chingshan.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Chingshan <span class="zh">青山國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://chungshih.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Chungshih VHS <span class="zh">崇實高工</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/dongshan/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Dongshan <span class="zh">東山國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/raoming/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Raoming <span class="zh">饒明國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://yuying.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Yuying <span class="zh">育英國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">員東國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">員林國中</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">員林國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">大同國中</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">明倫國中</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">明湖國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">靜修國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      </div>
-    </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Hemei Township <span class="zh">和美鎮</span></h3><span class="cs-count">9 schools</span></div>
-      <div class="cs-list">
-      <a class="srow" href="https://sites.google.com/dres.chc.edu.tw/english/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Darong <span class="zh">大榮國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://hemei.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Hemei <span class="zh">和美國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://hemeihs.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Hemei HS <span class="zh">和美高中</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://heren.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Heren <span class="zh">和仁國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://sites.google.com/view/pyesbilingual" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Peiying <span class="zh">培英國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://sinjuang.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Sinjuang <span class="zh">新庄國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">和東國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">和群國中</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">大嘉國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      </div>
-    </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Lukang Township <span class="zh">鹿港鎮</span></h3><span class="cs-count">12 schools</span></div>
-      <div class="cs-list">
-      <a class="srow" href="https://dingfan.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Dingfan <span class="zh">頂番國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://dongshing.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Dongshing <span class="zh">東興國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://loojing.twrses.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Lojin <span class="zh">洛津國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://sites.google.com/ljis.chc.edu.tw/thematic-course" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Lujiang Intl S <span class="zh">鹿江國中小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://lukang.twrses.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Lukang <span class="zh">鹿港國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://luming.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Luming JH <span class="zh">鹿鳴國中</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://wenkai.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Wenkai <span class="zh">文開國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">新興國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">海埔國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">草港國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">鹿東國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">鹿港國中</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      </div>
-    </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Xihu Township <span class="zh">溪湖鎮</span></h3><span class="cs-count">9 schools</span></div>
-      <div class="cs-list">
-      <a class="srow" href="https://chengkung.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Chenggong HS <span class="zh">成功高中</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/hubei/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Hubei <span class="zh">湖北國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://sites.google.com/twrses.org/mechell-englishwithme" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Hudong <span class="zh">湖東國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://huxi.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Huxi <span class="zh">湖西國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://sites.google.com/view/mtesenglishweb" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Matsuo <span class="zh">媽厝國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">東溪國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">湖南國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">溪湖國中</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">溪湖國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      </div>
-    </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Tianzhong Township <span class="zh">田中鎮</span></h3><span class="cs-count">8 schools</span></div>
-      <div class="cs-list">
-      <a class="srow" href="https://changhua-bilingual.org/schools/daan/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Daan <span class="zh">大安國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/hsinmin/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Hsinmin <span class="zh">新民國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/mingli/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Mingli <span class="zh">明禮國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://santan.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Santan <span class="zh">三潭國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://tianjhong.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Tianjhong <span class="zh">田中國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">內安國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">東和國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">田中高中</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      </div>
-    </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Beidou Township <span class="zh">北斗鎮</span></h3><span class="cs-count">6 schools</span></div>
-      <div class="cs-list">
-      <a class="srow" href="https://beidou.twrses.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Beidou <span class="zh">北斗國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/beidou-jhs/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Beidou JH <span class="zh">北斗國中</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://dashin.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Dashin <span class="zh">大新國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/luoqing/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Luoqing <span class="zh">螺青國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://luoyang.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Luoyang <span class="zh">螺陽國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/wanlai/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Wanlai <span class="zh">萬來國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      </div>
-    </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Erlin Township <span class="zh">二林鎮</span></h3><span class="cs-count">13 schools</span></div>
-      <div class="cs-list">
-      <a class="srow" href="https://changhua-bilingual.org/schools/chunghsing/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Chung Hsing <span class="zh">中興國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://erhlin.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Erlin <span class="zh">二林國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/guangxing/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Guangxing <span class="zh">廣興國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/siangtian/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Siangtian <span class="zh">香田國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/wanshing-jh/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Wanshing JH <span class="zh">萬興國中</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://wanshing.twrses.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Wansing <span class="zh">萬興國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://yude.twrses.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Yude <span class="zh">育德國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/zhongzheng/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Zhongzheng <span class="zh">中正國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">二林高中</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">原斗國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">新生國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">興華國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">萬合國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      </div>
-    </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Shengang Township <span class="zh">伸港鄉</span></h3><span class="cs-count">5 schools</span></div>
-      <div class="cs-list">
-      <a class="srow" href="https://changhua-bilingual.org/schools/datong/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Datong <span class="zh">大同國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://shengang.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Shengang JH <span class="zh">伸港國中</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://shingang.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Shingang <span class="zh">新港國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">伸仁國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">伸東國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      </div>
-    </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Xianxi Township <span class="zh">線西鄉</span></h3><span class="cs-count">3 schools</span></div>
-      <div class="cs-list">
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">曉陽國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">線西國中</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">線西國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      </div>
-    </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Fuxing Township <span class="zh">福興鄉</span></h3><span class="cs-count">8 schools</span></div>
-      <div class="cs-list">
-      <a class="srow" href="https://changhua-bilingual.org/schools/fusing-jhs/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Fusing JH <span class="zh">福興國中</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/guanyu/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Guanyu <span class="zh">管嶼國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://sites.google.com/rses.chc.edu.tw/english" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Rihsin <span class="zh">日新國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://xishi.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Xishi <span class="zh">西勢國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://yongfeng.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Yongfeng <span class="zh">永豐國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/yushin/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Yushin <span class="zh">育新國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">大興國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">文昌國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      </div>
-    </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Xiushui Township <span class="zh">秀水鄉</span></h3><span class="cs-count">7 schools</span></div>
-      <div class="cs-list">
-      <a class="srow" href="https://sites.google.com/chc.edu.tw/msenglish" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Maxing <span class="zh">馬興國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://mingjheng.mycultureconnect.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Mingjheng <span class="zh">明正國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://sites.google.com/twrses.org/teacher-dex/welcome-to-our-school" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Shanxi <span class="zh">陝西國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://sites.google.com/chc.edu.tw/ymes-bilingualprogram-site" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Yumin <span class="zh">育民國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">秀水國中</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">秀水國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">華龍國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      </div>
-    </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Huatan Township <span class="zh">花壇鄉</span></h3><span class="cs-count">7 schools</span></div>
-      <div class="cs-list">
-      <a class="srow" href="https://changhua-bilingual.org/schools/huatan/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Huatan <span class="zh">花壇國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/huatan-jhs/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Huatan JHS <span class="zh">花壇國中</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://wunsiang.twrses.org" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Wunsiang <span class="zh">文祥國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">三春國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">僑愛國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">白沙國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">華南國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      </div>
-    </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Fenyuan Township <span class="zh">芬園鄉</span></h3><span class="cs-count">7 schools</span></div>
-      <div class="cs-list">
-      <a class="srow" href="https://changhua-bilingual.org/schools/tongan/" target="_blank" rel="noopener">
-        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Tongan <span class="zh">同安國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://wunde.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://wunde.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Wunde <span class="zh">文德國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">富山國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">寶山國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="junior-high">
         <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
           <div class="nm">芬園國中</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">芬園國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">茄荖國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
       </div>
     </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Dacun Township <span class="zh">大村鄉</span></h3><span class="cs-count">5 schools</span></div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">503</span><h3>Huatan Township <span class="zh">花壇鄉</span></h3><span class="cs-count">7 schools</span></div>
       <div class="cs-list">
-      <a class="srow" href="https://changhua-bilingual.org/schools/cundong/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/huatan/" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Cundong <span class="zh">村東國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Huatan <span class="zh">花壇國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://ttjhchc.my.canva.site/dagq4mkqhhs/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://wunsiang.twrses.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Dacun JH <span class="zh">大村國中</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Wunsiang <span class="zh">文祥國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://sites.google.com/chc.edu.tw/dasiweb" target="_blank" rel="noopener">
+      <a class="srow" data-level="junior-high" href="https://changhua-bilingual.org/schools/huatan-jhs/" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Dasi <span class="zh">大西國小</span></div>
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">Huatan JHS <span class="zh">花壇國中</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://tsunshang.mycultureconnect.org" target="_blank" rel="noopener">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
-          <div class="nm">Tsunshang <span class="zh">村上國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">三春國小</div>
         </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <div class="srow srow-empty">
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
-          <div class="nm">大村國小</div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">僑愛國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">白沙國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">華南國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
       </div>
     </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Puyan Township <span class="zh">埔鹽鄉</span></h3><span class="cs-count">8 schools</span></div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">504</span><h3>Xiushui Township <span class="zh">秀水鄉</span></h3><span class="cs-count">7 schools</span></div>
       <div class="cs-list">
-      <a class="srow" href="https://dayuan.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://sites.google.com/chc.edu.tw/msenglish" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Dayuan <span class="zh">大園國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Maxing <span class="zh">馬興國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://sites.google.com/hsps.chc.edu.tw/haohxiu/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://mingjheng.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Haoxiu <span class="zh">好修國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Mingjheng <span class="zh">明正國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://gina016.wixsite.com/sdgs-sses" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://sites.google.com/twrses.org/teacher-dex/welcome-to-our-school" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Xinshui <span class="zh">新水國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Shanxi <span class="zh">陝西國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <div class="srow srow-empty">
+      <a class="srow" data-level="elementary" href="https://sites.google.com/chc.edu.tw/ymes-bilingualprogram-site" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">南港國小</div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Yumin <span class="zh">育民國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">秀水國中</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
-          <div class="nm">埔鹽國中</div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">秀水國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
-          <div class="nm">埔鹽國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">天盛國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">永樂國小</div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">華龍國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
       </div>
     </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Puxin Township <span class="zh">埔心鄉</span></h3><span class="cs-count">8 schools</span></div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">505</span><h3>Lukang Township <span class="zh">鹿港鎮</span></h3><span class="cs-count">12 schools</span></div>
       <div class="cs-list">
-      <a class="srow" href="https://changhua-bilingual.org/schools/fengshya/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://dingfan.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Fengshya <span class="zh">鳳霞國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Dingfan <span class="zh">頂番國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://sites.google.com/jges.chc.edu.tw/bilingual" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://dongshing.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Jiouguan <span class="zh">舊館國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Dongshing <span class="zh">東興國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://pusinjh.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://loojing.twrses.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Pusin JH <span class="zh">埔心國中</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Lojin <span class="zh">洛津國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://taiping.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://lukang.twrses.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Taiping <span class="zh">太平國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Lukang <span class="zh">鹿港國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://wufeng.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://wenkai.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Wufeng <span class="zh">梧鳳國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Wenkai <span class="zh">文開國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <div class="srow srow-empty">
+      <a class="srow" data-level="junior-high" href="https://sites.google.com/ljis.chc.edu.tw/thematic-course" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">埔心國小</div>
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">Lujiang Intl S <span class="zh">鹿江國中小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="junior-high" href="https://luming.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">Luming JH <span class="zh">鹿鳴國中</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">新興國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
-          <div class="nm">明聖國小</div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">海埔國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
-          <div class="nm">羅厝國小</div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">草港國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">鹿東國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">鹿港國中</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
       </div>
     </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Yongjing Township <span class="zh">永靖鄉</span></h3><span class="cs-count">6 schools</span></div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">506</span><h3>Fuxing Township <span class="zh">福興鄉</span></h3><span class="cs-count">8 schools</span></div>
       <div class="cs-list">
-      <a class="srow" href="https://desing.twrses.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/guanyu/" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Desing <span class="zh">德興國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Guanyu <span class="zh">管嶼國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://fude.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://sites.google.com/rses.chc.edu.tw/english" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Fude <span class="zh">福德國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Rihsin <span class="zh">日新國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://fushing.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://xishi.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Fushing <span class="zh">福興國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Xishi <span class="zh">西勢國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://sites.google.com/chc.edu.tw/ysps" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://yongfeng.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Yongshing <span class="zh">永興國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Yongfeng <span class="zh">永豐國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <div class="srow srow-empty">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/yushin/" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">永靖國中</div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Yushin <span class="zh">育新國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="junior-high" href="https://changhua-bilingual.org/schools/fusing-jhs/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">Fusing JH <span class="zh">福興國中</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">大興國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
-          <div class="nm">永靖國小</div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">文昌國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
       </div>
     </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Shetou Township <span class="zh">社頭鄉</span></h3><span class="cs-count">8 schools</span></div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">507</span><h3>Xianxi Township <span class="zh">線西鄉</span></h3><span class="cs-count">3 schools</span></div>
       <div class="cs-list">
-      <a class="srow" href="https://chaohsing.mycultureconnect.org" target="_blank" rel="noopener">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">曉陽國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">線西國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">線西國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      </div>
+    </div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">508</span><h3>Hemei Township <span class="zh">和美鎮</span></h3><span class="cs-count">9 schools</span></div>
+      <div class="cs-list">
+      <a class="srow" data-level="elementary" href="https://sites.google.com/dres.chc.edu.tw/english/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Darong <span class="zh">大榮國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://hemei.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Hemei <span class="zh">和美國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://heren.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Heren <span class="zh">和仁國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://sites.google.com/view/pyesbilingual" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Peiying <span class="zh">培英國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://sinjuang.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Sinjuang <span class="zh">新庄國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="senior-high" href="https://hemeihs.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-senior-high">SH</span>
+          <div class="nm">Hemei HS <span class="zh">和美高中</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">和東國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">和群國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">大嘉國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      </div>
+    </div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">509</span><h3>Shengang Township <span class="zh">伸港鄉</span></h3><span class="cs-count">5 schools</span></div>
+      <div class="cs-list">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/datong/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Datong <span class="zh">大同國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://shingang.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Shingang <span class="zh">新港國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="junior-high" href="https://shengang.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">Shengang JH <span class="zh">伸港國中</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">伸仁國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">伸東國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      </div>
+    </div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">510</span><h3>Yuanlin City <span class="zh">員林市</span></h3><span class="cs-count">13 schools</span></div>
+      <div class="cs-list">
+      <a class="srow" data-level="elementary" href="https://sites.google.com/csps.chc.edu.tw/chiaohsin" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Chiaohsin <span class="zh">僑信國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://chingshan.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Chingshan <span class="zh">青山國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/dongshan/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Dongshan <span class="zh">東山國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/raoming/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Raoming <span class="zh">饒明國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://yuying.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Yuying <span class="zh">育英國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="senior-high" href="https://chungshih.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-senior-high">SH</span>
+          <div class="nm">Chungshih VHS <span class="zh">崇實高工</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">員東國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">員林國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">員林國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">大同國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">明倫國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">明湖國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">靜修國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      </div>
+    </div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">511</span><h3>Shetou Township <span class="zh">社頭鄉</span></h3><span class="cs-count">8 schools</span></div>
+      <div class="cs-list">
+      <a class="srow" data-level="elementary" href="https://chaohsing.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Chaohsing <span class="zh">朝興國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/jioushe/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/jioushe/" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Jioushe <span class="zh">舊社國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://nanya.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://nanya.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Nanya <span class="zh">湳雅國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">崙雅國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">橋頭國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">清水國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="junior-high">
         <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
           <div class="nm">社頭國中</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">社頭國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
       </div>
     </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Ershui Township <span class="zh">二水鄉</span></h3><span class="cs-count">4 schools</span></div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">512</span><h3>Yongjing Township <span class="zh">永靖鄉</span></h3><span class="cs-count">6 schools</span></div>
       <div class="cs-list">
-      <a class="srow" href="https://changhua-bilingual.org/schools/ershui/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://desing.twrses.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Ershui <span class="zh">二水國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Desing <span class="zh">德興國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://sites.google.com/fsses.chc.edu.tw/english/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://fude.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Fuxing <span class="zh">復興國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Fude <span class="zh">福德國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://ycps.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://fushing.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Yuanchyuan <span class="zh">源泉國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Fushing <span class="zh">福興國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <div class="srow srow-empty">
+      <a class="srow" data-level="elementary" href="https://sites.google.com/chc.edu.tw/ysps" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">二水國中</div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Yongshing <span class="zh">永興國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">永靖國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">永靖國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
       </div>
     </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Tianwei Township <span class="zh">田尾鄉</span></h3><span class="cs-count">5 schools</span></div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">513</span><h3>Puxin Township <span class="zh">埔心鄉</span></h3><span class="cs-count">8 schools</span></div>
       <div class="cs-list">
-      <a class="srow" href="https://changhua-bilingual.org/schools/lufeng/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/fengshya/" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Fengshya <span class="zh">鳳霞國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://sites.google.com/jges.chc.edu.tw/bilingual" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Jiouguan <span class="zh">舊館國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://taiping.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Taiping <span class="zh">太平國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://wufeng.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Wufeng <span class="zh">梧鳳國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="junior-high" href="https://pusinjh.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">Pusin JH <span class="zh">埔心國中</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">埔心國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">明聖國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">羅厝國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      </div>
+    </div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">514</span><h3>Xihu Township <span class="zh">溪湖鎮</span></h3><span class="cs-count">9 schools</span></div>
+      <div class="cs-list">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/hubei/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Hubei <span class="zh">湖北國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://sites.google.com/twrses.org/mechell-englishwithme" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Hudong <span class="zh">湖東國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://huxi.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Huxi <span class="zh">湖西國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://sites.google.com/view/mtesenglishweb" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Matsuo <span class="zh">媽厝國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="senior-high" href="https://chengkung.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-senior-high">SH</span>
+          <div class="nm">Chenggong HS <span class="zh">成功高中</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">東溪國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">湖南國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">溪湖國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">溪湖國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      </div>
+    </div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">515</span><h3>Dacun Township <span class="zh">大村鄉</span></h3><span class="cs-count">5 schools</span></div>
+      <div class="cs-list">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/cundong/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Cundong <span class="zh">村東國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://sites.google.com/chc.edu.tw/dasiweb" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Dasi <span class="zh">大西國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://tsunshang.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Tsunshang <span class="zh">村上國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="junior-high" href="https://ttjhchc.my.canva.site/dagq4mkqhhs/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">Dacun JH <span class="zh">大村國中</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">大村國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      </div>
+    </div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">516</span><h3>Puyan Township <span class="zh">埔鹽鄉</span></h3><span class="cs-count">8 schools</span></div>
+      <div class="cs-list">
+      <a class="srow" data-level="elementary" href="https://dayuan.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Dayuan <span class="zh">大園國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://sites.google.com/hsps.chc.edu.tw/haohxiu/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Haoxiu <span class="zh">好修國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://gina016.wixsite.com/sdgs-sses" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Xinshui <span class="zh">新水國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">南港國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">埔鹽國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">埔鹽國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">天盛國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">永樂國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      </div>
+    </div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">520</span><h3>Tianzhong Township <span class="zh">田中鎮</span></h3><span class="cs-count">8 schools</span></div>
+      <div class="cs-list">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/daan/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Daan <span class="zh">大安國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/hsinmin/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Hsinmin <span class="zh">新民國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/mingli/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Mingli <span class="zh">明禮國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://santan.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Santan <span class="zh">三潭國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://tianjhong.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Tianjhong <span class="zh">田中國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">內安國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">東和國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="senior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-senior-high">SH</span>
+          <div class="nm">田中高中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      </div>
+    </div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">521</span><h3>Beidou Township <span class="zh">北斗鎮</span></h3><span class="cs-count">6 schools</span></div>
+      <div class="cs-list">
+      <a class="srow" data-level="elementary" href="https://beidou.twrses.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Beidou <span class="zh">北斗國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://dashin.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Dashin <span class="zh">大新國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/luoqing/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Luoqing <span class="zh">螺青國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://luoyang.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Luoyang <span class="zh">螺陽國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/wanlai/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Wanlai <span class="zh">萬來國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="junior-high" href="https://changhua-bilingual.org/schools/beidou-jhs/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">Beidou JH <span class="zh">北斗國中</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      </div>
+    </div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">522</span><h3>Tianwei Township <span class="zh">田尾鄉</span></h3><span class="cs-count">5 schools</span></div>
+      <div class="cs-list">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/lufeng/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Lufeng <span class="zh">陸豐國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://renfeng.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://renfeng.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Renfeng <span class="zh">仁豐國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">南鎮國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="junior-high">
         <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
           <div class="nm">田尾國中</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <a class="srow" href="/schools/tianwei-es/">
+      <a class="srow" data-level="elementary" href="/schools/tianwei-es/">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">田尾國小</div>
         </div>
         <span class="badge badge-yp">Profile</span>
       </a>
       </div>
     </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Pitou Township <span class="zh">埤頭鄉</span></h3><span class="cs-count">7 schools</span></div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">523</span><h3>Pitou Township <span class="zh">埤頭鄉</span></h3><span class="cs-count">7 schools</span></div>
       <div class="cs-list">
-      <a class="srow" href="https://fuchao.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://fuchao.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Fuchao <span class="zh">芙朝國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/hosin/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/hosin/" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Hosin <span class="zh">合興國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://jhonghe.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://jhonghe.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Jhonghe <span class="zh">中和國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://pitoujh.twrses.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="junior-high" href="https://pitoujh.twrses.org" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
           <div class="nm">Pitou JH <span class="zh">埤頭國中</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">埤頭國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">大湖國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">豐崙國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
       </div>
     </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Fangyuan Township <span class="zh">芳苑鄉</span></h3><span class="cs-count">12 schools</span></div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">524</span><h3>Xizhou Township <span class="zh">溪州鄉</span></h3><span class="cs-count">11 schools</span></div>
       <div class="cs-list">
-      <a class="srow" href="https://fangyuan.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/chengkung/" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Fangyuan <span class="zh">芳苑國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Chengkung <span class="zh">成功國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/houliao/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://chiaoyi.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Houliao <span class="zh">後寮國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Chiaoyi <span class="zh">僑義國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/jianxin/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/dajuang/" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Jianxin <span class="zh">建新國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Dajuang <span class="zh">大莊國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://lushang.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/nanjhou/" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Lushang <span class="zh">路上國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Nanjhou <span class="zh">南州國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/sinbao/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://santiao.twrses.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Sinbao <span class="zh">新寶國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Santiao <span class="zh">三條國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/yuhua/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://shuiwei.twrses.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Yuhua <span class="zh">育華國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Shuiwei <span class="zh">水尾國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <div class="srow srow-empty">
+      <a class="srow" data-level="elementary" href="https://sijhou.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">民權國小</div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Sijhou <span class="zh">溪州國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="junior-high" href="https://sijhoujh.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">Sijhou JH <span class="zh">溪州國中</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">圳寮國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="junior-high">
         <div class="body">
-          <div class="nm">漢寶國小</div>
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">溪陽國中</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
-          <div class="nm">王功國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">芳苑國中</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">草湖國中</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">草湖國小</div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">潮洋國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
       </div>
     </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Dacheng Township <span class="zh">大城鄉</span></h3><span class="cs-count">4 schools</span></div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">525</span><h3>Zhutang Township <span class="zh">竹塘鄉</span></h3><span class="cs-count">5 schools</span></div>
       <div class="cs-list">
-      <a class="srow" href="https://changhua-bilingual.org/schools/dacheng/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changan.twrses.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Dacheng <span class="zh">大城國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/dacheng-jh/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Dacheng JHS <span class="zh">大城國中</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/sigang/" target="_blank" rel="noopener">
-        <div class="body">
-          <div class="nm">Sigang <span class="zh">西港國小</span></div>
-        </div>
-        <span class="badge badge-full">Full Site ↗</span>
-      </a>
-      <div class="srow srow-empty">
-        <div class="body">
-          <div class="nm">美豐國小</div>
-        </div>
-        <span class="badge badge-soon">Coming soon</span>
-      </div>
-      </div>
-    </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Zhutang Township <span class="zh">竹塘鄉</span></h3><span class="cs-count">5 schools</span></div>
-      <div class="cs-list">
-      <a class="srow" href="https://changan.twrses.org" target="_blank" rel="noopener">
-        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Changan <span class="zh">長安國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/jhutang/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/jhutang/" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Jhutang <span class="zh">竹塘國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/tiantou/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/tiantou/" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Tiantou <span class="zh">田頭國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/tuku/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/tuku/" target="_blank" rel="noopener">
         <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
           <div class="nm">Tuku <span class="zh">土庫國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="junior-high">
         <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
           <div class="nm">竹塘國中</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
       </div>
     </div>
-    <div class="cs-town">
-      <div class="cs-town-head"><h3>Xizhou Township <span class="zh">溪州鄉</span></h3><span class="cs-count">11 schools</span></div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">526</span><h3>Erlin Township <span class="zh">二林鎮</span></h3><span class="cs-count">13 schools</span></div>
       <div class="cs-list">
-      <a class="srow" href="https://changhua-bilingual.org/schools/chengkung/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/chunghsing/" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Chengkung <span class="zh">成功國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Chung Hsing <span class="zh">中興國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://chiaoyi.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://erhlin.mycultureconnect.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Chiaoyi <span class="zh">僑義國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Erlin <span class="zh">二林國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/dajuang/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/guangxing/" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Dajuang <span class="zh">大莊國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Guangxing <span class="zh">廣興國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://changhua-bilingual.org/schools/nanjhou/" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/siangtian/" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Nanjhou <span class="zh">南州國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Siangtian <span class="zh">香田國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://santiao.twrses.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://wanshing.twrses.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Santiao <span class="zh">三條國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Wansing <span class="zh">萬興國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://shuiwei.twrses.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://yude.twrses.org" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Shuiwei <span class="zh">水尾國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Yude <span class="zh">育德國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://sijhou.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/zhongzheng/" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Sijhou <span class="zh">溪州國小</span></div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Zhongzheng <span class="zh">中正國小</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <a class="srow" href="https://sijhoujh.mycultureconnect.org" target="_blank" rel="noopener">
+      <a class="srow" data-level="junior-high" href="https://changhua-bilingual.org/schools/wanshing-jh/" target="_blank" rel="noopener">
         <div class="body">
-          <div class="nm">Sijhou JH <span class="zh">溪州國中</span></div>
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">Wanshing JH <span class="zh">萬興國中</span></div>
         </div>
         <span class="badge badge-full">Full Site ↗</span>
       </a>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="senior-high">
         <div class="body">
-          <div class="nm">圳寮國小</div>
+          <span class="lvl-tag lvl-senior-high">SH</span>
+          <div class="nm">二林高中</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
-          <div class="nm">溪陽國中</div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">原斗國小</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
-      <div class="srow srow-empty">
+      <div class="srow srow-empty" data-level="elementary">
         <div class="body">
-          <div class="nm">潮洋國小</div>
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">新生國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">興華國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">萬合國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      </div>
+    </div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">527</span><h3>Dacheng Township <span class="zh">大城鄉</span></h3><span class="cs-count">4 schools</span></div>
+      <div class="cs-list">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/dacheng/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Dacheng <span class="zh">大城國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/sigang/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Sigang <span class="zh">西港國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="junior-high" href="https://changhua-bilingual.org/schools/dacheng-jh/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">Dacheng JHS <span class="zh">大城國中</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">美豐國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      </div>
+    </div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">528</span><h3>Fangyuan Township <span class="zh">芳苑鄉</span></h3><span class="cs-count">12 schools</span></div>
+      <div class="cs-list">
+      <a class="srow" data-level="elementary" href="https://fangyuan.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Fangyuan <span class="zh">芳苑國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/houliao/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Houliao <span class="zh">後寮國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/jianxin/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Jianxin <span class="zh">建新國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://lushang.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Lushang <span class="zh">路上國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/sinbao/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Sinbao <span class="zh">新寶國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/yuhua/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Yuhua <span class="zh">育華國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">民權國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">漢寶國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">王功國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">芳苑國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">草湖國中</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      <div class="srow srow-empty" data-level="elementary">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">草湖國小</div>
+        </div>
+        <span class="badge badge-soon">Coming soon</span>
+      </div>
+      </div>
+    </div>
+    <div class="cs-town" data-town="1">
+      <div class="cs-town-head"><span class="cs-zip">530</span><h3>Ershui Township <span class="zh">二水鄉</span></h3><span class="cs-count">4 schools</span></div>
+      <div class="cs-list">
+      <a class="srow" data-level="elementary" href="https://changhua-bilingual.org/schools/ershui/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Ershui <span class="zh">二水國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://sites.google.com/fsses.chc.edu.tw/english/" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Fuxing <span class="zh">復興國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <a class="srow" data-level="elementary" href="https://ycps.mycultureconnect.org" target="_blank" rel="noopener">
+        <div class="body">
+          <span class="lvl-tag lvl-elementary">ES</span>
+          <div class="nm">Yuanchyuan <span class="zh">源泉國小</span></div>
+        </div>
+        <span class="badge badge-full">Full Site ↗</span>
+      </a>
+      <div class="srow srow-empty" data-level="junior-high">
+        <div class="body">
+          <span class="lvl-tag lvl-junior-high">JH</span>
+          <div class="nm">二水國中</div>
         </div>
         <span class="badge badge-soon">Coming soon</span>
       </div>
@@ -1508,5 +1777,26 @@
 <script src="/assets/js/nav.js"></script>
 <script src="/assets/js/motion.js"></script>
 <script defer src="/assets/js/search.js"></script>
+<script>
+(function(){
+  var tabs = document.querySelectorAll('.cs-tab');
+  var rows = document.querySelectorAll('.cs-list .srow[data-level]');
+  var towns = document.querySelectorAll('.cs-town');
+  tabs.forEach(function(tab){
+    tab.addEventListener('click', function(){
+      tabs.forEach(function(t){t.classList.remove('active');});
+      tab.classList.add('active');
+      var f = tab.getAttribute('data-filter');
+      rows.forEach(function(r){
+        r.hidden = (f !== 'all' && r.getAttribute('data-level') !== f);
+      });
+      towns.forEach(function(town){
+        var visible = town.querySelectorAll('.srow:not([hidden])').length;
+        town.hidden = (visible === 0);
+      });
+    });
+  });
+})();
+</script>
 </body>
 </html>
