@@ -1,0 +1,23 @@
+=== Batch11 ===
+- slug: shalugongye-hs | 臺中市立沙鹿工業高級中等學校 | Shalu District 沙鹿區 | level: senior-high
+- slug: gongming-jh | 公明國中 | Shalu District 沙鹿區 | level: junior-high
+- slug: beishi-jh | 北勢國中 | Shalu District 沙鹿區 | level: junior-high
+- slug: shalu-jh | 沙鹿國中 | Shalu District 沙鹿區 | level: junior-high
+- slug: luliao-jh | 鹿寮國中 | Shalu District 沙鹿區 | level: junior-high
+- slug: gongming-es | 公明國小 | Shalu District 沙鹿區 | level: elementary
+- slug: tc-gongguan-es | 公館國小 | Shalu District 沙鹿區 | level: elementary
+- slug: tc-beishi-es | 北勢國小 | Shalu District 沙鹿區 | level: elementary
+- slug: tc-wenguang-es | 文光國小 | Shalu District 沙鹿區 | level: elementary
+- slug: shalu-es | 沙鹿國小 | Shalu District 沙鹿區 | level: elementary
+- slug: tc-zhulin-es | 竹林國小 | Shalu District 沙鹿區 | level: elementary
+- slug: lufeng-es | 鹿峰國小 | Shalu District 沙鹿區 | level: elementary
+- slug: luyang-es | 鹿陽國小 | Shalu District 沙鹿區 | level: elementary
+- slug: xinshe-hs | 臺中市立新社高級中學 | Xinshe District 新社區 | level: senior-high
+- slug: tc-zhonghe-es | 中和國小 | Xinshe District 新社區 | level: elementary
+- slug: xiecheng-es | 協成國小 | Xinshe District 新社區 | level: elementary
+- slug: tc-danan-es | 大南國小 | Xinshe District 新社區 | level: elementary
+- slug: tc-dalin-es | 大林國小 | Xinshe District 新社區 | level: elementary
+- slug: tc-kunshan-es | 崑山國小 | Xinshe District 新社區 | level: elementary
+- slug: tc-xinshe-es | 新社國小 | Xinshe District 新社區 | level: elementary
+- slug: xinshe-dongxing-es | 東興國小 | Xinshe District 新社區 | level: elementary
+- slug: fumin-es | 福民國小 | Xinshe District 新社區 | level: elementary

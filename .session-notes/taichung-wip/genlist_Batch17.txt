@@ -1,0 +1,9 @@
+=== Batch17 ===
+- slug: zhonggang-hs | 臺中市立中港高級中學 | Wuqi District 梧棲區 | level: senior-high
+- slug: wuqi-jh | 梧棲國中 | Wuqi District 梧棲區 | level: junior-high
+- slug: wuqi-zhongzheng-es | 中正國小 | Wuqi District 梧棲區 | level: elementary
+- slug: tc-zhonggang-es | 中港國小 | Wuqi District 梧棲區 | level: elementary
+- slug: dade-es | 大德國小 | Wuqi District 梧棲區 | level: elementary
+- slug: wunan-es | 梧南國小 | Wuqi District 梧棲區 | level: elementary
+- slug: wuqi-es | 梧棲國小 | Wuqi District 梧棲區 | level: elementary
+- slug: yongning-es | 永寧國小 | Wuqi District 梧棲區 | level: elementary

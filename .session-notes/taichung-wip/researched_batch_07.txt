@@ -1,0 +1,181 @@
+## Nantun District 南屯區
+
+### 臺中市立惠文高級中學
+- URL: https://hwsh.tc.edu.tw/
+- Founded: ROC 89 / Western 2000
+- Facts: Complete (JH+SH) municipal high school built as part of the 7th Redevelopment Zone core educational cluster.
+- Culture connection: Its birth alongside 惠文國小 anchored the newly-planned 七期 zone as Nantun's modern educational and civic heart, contrasting with the district's much older 犁頭店 old-street core.
+- Address: 臺中市南屯區公益路二段298號
+- Level: SH (complete JH+SH)
+
+### 大墩國中
+- URL: https://ddjh.tc.edu.tw/
+- Founded: ROC 99 / Western 2010
+- Facts: School song "希望森林" was written by celebrity lyricist Fangwenshan with music by singer Yuan Yong-lin.
+- Culture connection: Named after "大墩" (Big Mound), the old Qing-era name for central Taichung, linking a brand-new campus to the city's historic toponym.
+- Address: 臺中市南屯區惠中路三段98號
+- Level: JH
+
+### 大業國中
+- URL: https://dyjh.tc.edu.tw/
+- Founded: ROC 82 / Western 1993 (first students 1996)
+- Facts: Built to serve the fast-developing 5th Redevelopment Zone, which previously had no junior high.
+- Culture connection: Represents Nantun's transition from agricultural land to Taichung's expanding urban redevelopment zones in the 1990s.
+- Address: 臺中市南屯區大業路100號
+- Level: JH
+
+### 萬和國中
+- URL: https://whjh.tc.edu.tw/
+- Founded: ROC 82 / Western 1993 (classes began 1995)
+- Facts: Initially slated to be named "永春國中" before being renamed.
+- Culture connection: Named for 萬和宮, South Nantun's storied Mazu temple (dating to 1684) that anchors the historic 犁頭店 old street nearby.
+- Address: 臺中市南屯區永春東路885號
+- Level: JH
+
+### 黎明國中
+- URL: https://lmjh.tc.edu.tw/
+- Founded: ROC 55 / Western 1966 (renamed 黎明 1971)
+- Facts: Underwent full campus reconstruction, moving to a new address completed October 2014.
+- Culture connection: The name "黎明" (Dawn) reflects the optimistic naming convention of many schools built during Taiwan's 1960s-70s education expansion.
+- Address: 臺中市南屯區干城街88號
+- Level: JH
+
+### 南屯國小
+- URL: https://ntes.tc.edu.tw/
+- Founded: Western 1898 (as 犁頭店公學校, first held classes in the 文昌祠 temple)
+- Facts: One of the oldest schools in Taichung, over 125 years old; neighbors 萬和宮, 文昌公廟, and Nantun Old Street.
+- Culture connection: Born directly out of the 犁頭店 settlement — Nantun's original Qing-dynasty trading hub.
+- Address: 臺中市南屯區黎明路一段968號
+- Level: ES
+
+### 大墩國小
+- URL: https://ddes.tc.edu.tw/
+- Founded: ROC 98 / Western 2009
+- Facts: Won the National Excellent Construction Award (Gold) in 2010 for its campus architecture.
+- Culture connection: Shares its name with the old Qing-era toponym for central Taichung ("大墩"), evoking the city's historic core even though it sits in a thoroughly modern district.
+- Address: 臺中市南屯區向上路二段201號
+- Level: ES
+
+### 大新國小
+- URL: https://dses.tc.edu.tw
+- Founded: ROC 87 / Western 1998
+- Facts: One of the largest elementary schools in Taichung by enrollment (reportedly 3rd largest citywide).
+- Culture connection: Reflects Nantun's rapid 1990s population boom as the 五期/七期 zones urbanized around the old 犁頭店 town center.
+- Address: 臺中市南屯區文心路一段280號
+- Level: ES
+
+### 惠文國小
+- URL: https://hwes.tc.edu.tw/
+- Founded: ROC 88 / Western 1999 (first students 2001)
+- Facts: Built together with 惠文高中 as twinned schools in the 七期 redevelopment zone.
+- Culture connection: Part of the deliberately-planned "core cultural-education block" of the 七期 zone, illustrating Nantun's shift from farmland to a master-planned residential/educational district.
+- Address: 臺中市南屯區公益路二段300號
+- Level: ES
+
+### 文山國小
+- URL: https://wses.tc.edu.tw/
+- Founded: ROC 42 / Western 1953
+- Facts: Later gave rise to its own sister junior high, 文山國中; offers bilingual instruction, digital-learning programs.
+- Culture connection: Located near Nantun's precision-machinery science park area, reflecting the district's newer high-tech industrial growth alongside its older agrarian roots.
+- Address: 臺中市南屯區忠勇路97號
+- Level: ES
+
+### 春安國小
+- URL: https://caes.tc.edu.tw/
+- Founded: ROC 53 / Western 1964 (branch of 文山國民學校; independent 1966)
+- Facts: Grew out of post-war military-dependent housing ("陸軍眷舍") population growth.
+- Culture connection: Its founding traces directly to the settlement of army-veteran housing communities in Nantun during the 1950s-60s.
+- Address: 臺中市南屯區春安路109號
+- Level: ES
+
+### 東興國小 (Nantun District) — NOTE: a DIFFERENT, unrelated 東興國小 also exists in Taichung's Xinshe District (founded 1926) — township-qualify both slugs
+- URL: https://txes.tc.edu.tw/
+- Founded: ROC 79 / Western 1990
+- Facts: Active in English singing and reader's-theater competitions; strong Taiwanese-language instruction program.
+- Culture connection: A newer campus reflecting Nantun's late-20th-century suburban growth rather than the district's older agrarian core.
+- Address: 臺中市南屯區大隆路71號
+- Level: ES
+
+### 永春國小
+- URL: https://yces.tc.edu.tw/
+- Founded: ROC 88 / Western 1999 (enrollment began 2001)
+- Facts: Well known locally for its distinctive Mesopotamian/"castle-style" campus architecture.
+- Culture connection: Sits in the 七期 zone alongside 萬和國中 (originally to be named after this school).
+- Address: 臺中市南屯區永春東路288號
+- Level: ES
+
+### 鎮平國小
+- URL: https://zpes.tc.edu.tw/
+- Founded: ROC 48 / Western 1959 (branch of 南屯國小; independent 1962)
+- Facts: One of several schools whose lineage traces back to 南屯國小.
+- Culture connection: Its "branch→independent" history mirrors the broader pattern of Nantun's rural hamlets gaining their own schools as the area urbanized.
+- Address: 臺中市南屯區黎明路一段425號
+- Level: ES
+
+### 黎明國小
+- URL: https://lmes.tc.edu.tw/
+- Founded: ROC 63 / Western 1974 (approx.)
+- Facts: Sits at the edge of the 七期 redevelopment zone; recently celebrated its 50th anniversary with a Cloud Gate Dance Theatre performance.
+- Culture connection: Positioned at the literal and figurative border between old rural Nantun and the new 七期 high-rise district.
+- Address: 臺中市南屯區黎明路二段555號
+- Level: ES
+
+## Waipu District 外埔區
+
+### 外埔國中
+- URL: https://wpjh.tc.edu.tw/
+- Founded: ROC 57 / Western 1968
+- Facts: Original campus rebuilt after being deemed seismically insufficient post-921 earthquake; the only junior high serving all of Waipu District.
+- Culture connection: As Waipu's sole junior high, it draws from farming communities across the district that sits between the Dajia and Da'an rivers.
+- Address: 臺中市外埔區甲后路505號
+- Level: JH
+
+### 外埔國小
+- URL: https://wpes.tc.edu.tw/
+- Founded: Western 1918 (branch of Houlong Public School; independent and renamed 1922)
+- Facts: Celebrated its centennial; serves as Waipu's central/flagship elementary school; surrounded by rice paddies with views of Tieqiao Mountain and Huoyan Mountain.
+- Culture connection: Its rural, mountain-flanked setting reflects Waipu's agricultural identity.
+- Address: 臺中市外埔區外埔路878號
+- Level: ES
+
+### 安定國小
+- URL: https://ades.tc.edu.tw/
+- Founded: Western 1940 (branch; independent 1946)
+- Facts: Celebrated its 80th anniversary; long lineage tied to 外埔國小 as its parent institution.
+- Culture connection: Named for 安定/土城, reflecting the subdivision of Waipu's farming hamlets into separate school catchments after Taiwan's retrocession.
+- Address: 臺中市外埔區土城西路55號
+- Level: ES
+
+### 水美國小
+- URL: https://smes.tc.edu.tw
+- Founded: ROC 51 / Western 1962
+- Facts: A small, boutique-scale school ("小而美") with only 6 general classes plus 3 kindergarten classes.
+- Culture connection: Located in Waipu's southwest corner backed by Shuiwei Mountain and fronting the Dajia River, directly named for its riverside/hill setting.
+- Address: 臺中市外埔區水美里二崁路390巷63號
+- Level: ES
+
+### 鐵山國小
+- URL: https://tsps.tc.edu.tw
+- Founded: unknown (small school, ~6 classes, ~60 students)
+- Facts: Sits at the southern foot of Tieqiao Mountain along Changsheng Rd.
+- Culture connection: Its location at the base of Tieqiao Mountain ties it to the mountain's famous "Sword Well" legend associated with Ming loyalist general Koxinga.
+- Address: 臺中市外埔區鐵山里長生路576號
+- Level: ES
+
+### 馬鳴國小
+- URL: https://mmps.tc.edu.tw/
+- Founded: ROC 53 / Western 1964 (approximate, unconfirmed)
+- Facts: Serves 馬鳴里 and part of 中山里; sits at the geographic center of Waipu District.
+- Culture connection: Named for a local folk legend — "馬鳴埔" (Horse-Neighing Plain), said to derive from a Ming-Qing-era incident when Indigenous raiders fled after hearing phantom horses at night.
+- Address: 臺中市外埔區中山里東西巷13號
+- Level: ES
+
+## Zhong District 中區 (Taichung's old downtown core)
+
+### 光復國小
+- URL: https://gfes.tc.edu.tw/
+- Founded: Western 1919 (as "台中第二尋常高等小學校"; renamed 光復國小 after 1945 retrocession)
+- Facts: Over a century old; its early Little League baseball program produced several professional players; school district covers seven historic Central District neighborhoods.
+- Culture connection: Located on 三民路 in the heart of Taichung's original Japanese-era planned downtown, near the old 臺中州廳 government complex and train station.
+- Address: 臺中市中區三民路二段148號
+- Level: ES

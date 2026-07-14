@@ -1,0 +1,20 @@
+=== Batch05 ===
+- slug: xingda-hs | 國立中興大學附屬高級中學 | Dali District 大里區 | level: senior-high
+- slug: tc-dali-hs | 臺中市立大里高級中學 | Dali District 大里區 | level: senior-high
+- slug: tc-guangrong-jh | 光榮國中 | Dali District 大里區 | level: junior-high
+- slug: guangzheng-jh | 光正國中 | Dali District 大里區 | level: junior-high
+- slug: tc-chenggong-jh | 成功國中 | Dali District 大里區 | level: junior-high
+- slug: shuangwen-jh | 爽文國中 | Dali District 大里區 | level: junior-high
+- slug: lixin-jh | 立新國中 | Dali District 大里區 | level: junior-high
+- slug: neixin-es | 內新國小 | Dali District 大里區 | level: elementary
+- slug: tc-tucheng-es | 塗城國小 | Dali District 大里區 | level: elementary
+- slug: tc-dayuan-es | 大元國小 | Dali District 大里區 | level: elementary
+- slug: tc-dali-es | 大里國小 | Dali District 大里區 | level: elementary
+- slug: chongguang-es | 崇光國小 | Dali District 大里區 | level: elementary
+- slug: yonglong-es | 永隆國小 | Dali District 大里區 | level: elementary
+- slug: ruicheng-es | 瑞城國小 | Dali District 大里區 | level: elementary
+- slug: yimin-es | 益民國小 | Dali District 大里區 | level: elementary
+- slug: lixin-es | 立新國小 | Dali District 大里區 | level: elementary
+- slug: zhuzaikeng-es | 竹仔坑國小 | Dali District 大里區 | level: elementary
+- slug: meiqun-es | 美群國小 | Dali District 大里區 | level: elementary
+- slug: tc-caohu-es | 草湖國小 | Dali District 大里區 | level: elementary

@@ -1,0 +1,20 @@
+=== Batch04 ===
+- slug: changyi-hs | 臺中市立長億高級中學 | Taiping District 太平區 | level: senior-high
+- slug: tc-zhongping-jh | 中平國中 | Taiping District 太平區 | level: junior-high
+- slug: taiping-jh | 太平國中 | Taiping District 太平區 | level: junior-high
+- slug: xinguang-jh | 新光國中 | Taiping District 太平區 | level: junior-high
+- slug: taiping-zhonghua-es | 中華國小 | Taiping District 太平區 | level: elementary
+- slug: guanglong-es | 光隆國小 | Taiping District 太平區 | level: elementary
+- slug: tc-pinglin-es | 坪林國小 | Taiping District 太平區 | level: elementary
+- slug: taipingqu-taiping-es | 太平國小 | Taiping District 太平區 | level: elementary
+- slug: yixin-es | 宜欣國小 | Taiping District 太平區 | level: elementary
+- slug: jianping-es | 建平國小 | Taiping District 太平區 | level: elementary
+- slug: tc-xinguang-es | 新光國小 | Taiping District 太平區 | level: elementary
+- slug: xinping-es | 新平國小 | Taiping District 太平區 | level: elementary
+- slug: xingao-es | 新高國小 | Taiping District 太平區 | level: elementary
+- slug: dongping-es | 東平國小 | Taiping District 太平區 | level: elementary
+- slug: dongbianshiyan-es | 東汴實驗國小 | Taiping District 太平區 | level: elementary
+- slug: chelongpu-es | 車籠埔國小 | Taiping District 太平區 | level: elementary
+- slug: changyi-es | 長億國小 | Taiping District 太平區 | level: elementary
+- slug: toubian-es | 頭汴國小 | Taiping District 太平區 | level: elementary
+- slug: huangzhu-es | 黃竹國小 | Taiping District 太平區 | level: elementary

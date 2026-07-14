@@ -1,0 +1,13 @@
+=== Universities ===
+- slug: tunghai-university | 東海大學 | Xitun District
+- slug: feng-chia-university | 逢甲大學 | Xitun District
+- slug: national-chung-hsing-university | 國立中興大學 | Nan District
+- slug: providence-university | 靜宜大學 | Shalu District
+- slug: chaoyang-university-of-technology | 朝陽科技大學 | Wufeng District
+- slug: asia-university | 亞洲大學 | Wufeng District
+- slug: hungkuang-university | 弘光科技大學 | Shalu District
+- slug: overseas-chinese-university | 僑光科技大學 | Xitun District
+- slug: ling-tung-university | 嶺東科技大學 | Nantun District
+- slug: central-taiwan-university-of-science-and-technology | 中臺科技大學 | Beitun District
+- slug: hsiuping-university-of-science-and-technology | 修平科技大學 | Dali District
+- slug: national-taichung-university-of-science-and-technology | 國立臺中科技大學 | Bei District

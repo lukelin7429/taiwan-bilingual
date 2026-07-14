@@ -1,0 +1,22 @@
+=== Batch15 ===
+- slug: longjin-hs | 臺中市立龍津高級中等學校 | Longjing District 龍井區 | level: senior-high
+- slug: sizhen-jh | 四箴國中 | Longjing District 龍井區 | level: junior-high
+- slug: longjing-jh | 龍井國中 | Longjing District 龍井區 | level: junior-high
+- slug: longjing-es | 龍井國小 | Longjing District 龍井區 | level: elementary
+- slug: tc-longshan-es | 龍山國小 | Longjing District 龍井區 | level: elementary
+- slug: longfeng-es | 龍峰國小 | Longjing District 龍井區 | level: elementary
+- slug: longquan-es | 龍泉國小 | Longjing District 龍井區 | level: elementary
+- slug: longjin-es | 龍津國小 | Longjing District 龍井區 | level: elementary
+- slug: longhai-es | 龍海國小 | Longjing District 龍井區 | level: elementary
+- slug: tc-longgang-es | 龍港國小 | Longjing District 龍井區 | level: elementary
+- slug: heping-jh | 和平國中 | Heping District 和平區 | level: junior-high
+- slug: zhongkeng-es | 中坑國小 | Heping District 和平區 | level: elementary
+- slug: bowuma-es | 博屋瑪國小 | Heping District 和平區 | level: elementary
+- slug: heping-heping-es | 和平國小 | Heping District 和平區 | level: elementary
+- slug: tc-pingdeng-es | 平等國小 | Heping District 和平區 | level: elementary
+- slug: defulan-es | 德芙蘭國小 | Heping District 和平區 | level: elementary
+- slug: baileng-es | 白冷國小 | Heping District 和平區 | level: elementary
+- slug: ziyou-es | 自由國小 | Heping District 和平區 | level: elementary
+- slug: shigang-jh | 石岡國中 | Shigang District 石岡區 | level: junior-high
+- slug: tuniu-es | 土牛國小 | Shigang District 石岡區 | level: elementary
+- slug: shigang-es | 石岡國小 | Shigang District 石岡區 | level: elementary

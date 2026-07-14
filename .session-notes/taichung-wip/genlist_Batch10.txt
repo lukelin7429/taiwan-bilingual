@@ -1,0 +1,23 @@
+=== Batch10 ===
+- slug: tc-qingshui-hs | 臺中市立清水高級中等學校 | Qingshui District 清水區 | level: senior-high
+- slug: qingshui-jh | 清水國中 | Qingshui District 清水區 | level: junior-high
+- slug: qingquan-jh | 清泉國中 | Qingshui District 清水區 | level: junior-high
+- slug: qinghai-jh | 清海國中 | Qingshui District 清水區 | level: junior-high
+- slug: santian-es | 三田國小 | Qingshui District 清水區 | level: elementary
+- slug: wucuo-es | 吳厝國小 | Qingshui District 清水區 | level: elementary
+- slug: dayang-es | 大楊國小 | Qingshui District 清水區 | level: elementary
+- slug: daxiu-es | 大秀國小 | Qingshui District 清水區 | level: elementary
+- slug: tc-jianguo-es | 建國國小 | Qingshui District 清水區 | level: elementary
+- slug: tc-dongshan-es | 東山國小 | Qingshui District 清水區 | level: elementary
+- slug: tc-qingshui-es | 清水國小 | Qingshui District 清水區 | level: elementary
+- slug: tc-jianan-es | 甲南國小 | Qingshui District 清水區 | level: elementary
+- slug: xining-es | 西寧國小 | Qingshui District 清水區 | level: elementary
+- slug: gaomei-es | 高美國小 | Qingshui District 清水區 | level: elementary
+- slug: houzong-hs | 臺中市立后綜高級中學 | Houli District 后里區 | level: senior-high
+- slug: houli-jh | 后里國中 | Houli District 后里區 | level: junior-high
+- slug: qixing-es | 七星國小 | Houli District 后里區 | level: elementary
+- slug: tc-neipu-es | 內埔國小 | Houli District 后里區 | level: elementary
+- slug: houli-es | 后里國小 | Houli District 后里區 | level: elementary
+- slug: tc-yuemei-es | 月眉國小 | Houli District 后里區 | level: elementary
+- slug: houli-taian-es | 泰安國小 | Houli District 后里區 | level: elementary
+- slug: tc-yuying-es | 育英國小 | Houli District 后里區 | level: elementary

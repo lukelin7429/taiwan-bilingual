@@ -1,0 +1,14 @@
+=== Batch01 ===
+- slug: dongshan-hs | 臺中市立東山高級中學 | Beitun District 北屯區 | level: senior-high
+- slug: sanguang-jh | 三光國中 | Beitun District 北屯區 | level: junior-high
+- slug: beixin-jh | 北新國中 | Beitun District 北屯區 | level: junior-high
+- slug: tc-nanxing-jh | 南興國中 | Beitun District 北屯區 | level: junior-high
+- slug: sizhangli-jh | 四張犁國中 | Beitun District 北屯區 | level: junior-high
+- slug: dade-jh | 大德國中 | Beitun District 北屯區 | level: junior-high
+- slug: chongde-jh | 崇德國中 | Beitun District 北屯區 | level: junior-high
+- slug: buzi-jh | 廍子國中 | Beitun District 北屯區 | level: junior-high
+- slug: tc-renai-es | 仁愛國小 | Beitun District 北屯區 | level: elementary
+- slug: renmei-es | 仁美國小 | Beitun District 北屯區 | level: elementary
+- slug: qiaoxiao-es | 僑孝國小 | Beitun District 北屯區 | level: elementary
+- slug: beitun-es | 北屯國小 | Beitun District 北屯區 | level: elementary
+- slug: tc-nanxing-es | 南興國小 | Beitun District 北屯區 | level: elementary

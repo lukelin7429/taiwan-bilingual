@@ -1,0 +1,15 @@
+=== Batch02 ===
+- slug: sizhangli-es | 四張犁國小 | Beitun District 北屯區 | level: elementary
+- slug: tc-siwei-es | 四維國小 | Beitun District 北屯區 | level: elementary
+- slug: tc-dakeng-es | 大坑國小 | Beitun District 北屯區 | level: elementary
+- slug: buzi-es | 廍子國小 | Beitun District 北屯區 | level: elementary
+- slug: tc-jiangong-es | 建功國小 | Beitun District 北屯區 | level: elementary
+- slug: tc-wenxin-es | 文心國小 | Beitun District 北屯區 | level: elementary
+- slug: beitun-wenchang-es | 文昌國小 | Beitun District 北屯區 | level: elementary
+- slug: beitun-xinxing-es | 新興國小 | Beitun District 北屯區 | level: elementary
+- slug: tc-dongguang-es | 東光國小 | Beitun District 北屯區 | level: elementary
+- slug: songqiang-es | 松強國小 | Beitun District 北屯區 | level: elementary
+- slug: songzhu-es | 松竹國小 | Beitun District 北屯區 | level: elementary
+- slug: jungong-es | 軍功國小 | Beitun District 北屯區 | level: elementary
+- slug: fengjia-es | 逢甲國小 | Beitun District 北屯區 | level: elementary
+- slug: chenping-es | 陳平國小 | Beitun District 北屯區 | level: elementary

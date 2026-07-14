@@ -1,0 +1,21 @@
+=== Batch08 ===
+- slug: dajiagongye-hs | 臺中市立大甲工業高級中等學校 | Dajia District 大甲區 | level: senior-high
+- slug: dajia-hs | 臺中市立大甲高級中等學校 | Dajia District 大甲區 | level: senior-high
+- slug: dajia-jh | 大甲國中 | Dajia District 大甲區 | level: junior-high
+- slug: rinan-jh | 日南國中 | Dajia District 大甲區 | level: junior-high
+- slug: shuntian-jh | 順天國中 | Dajia District 大甲區 | level: junior-high
+- slug: tc-dajia-es | 大甲國小 | Dajia District 大甲區 | level: elementary
+- slug: dehua-es | 德化國小 | Dajia District 大甲區 | level: elementary
+- slug: dajia-wenchang-es | 文昌國小 | Dajia District 大甲區 | level: elementary
+- slug: wenwu-es | 文武國小 | Dajia District 大甲區 | level: elementary
+- slug: rinan-es | 日南國小 | Dajia District 大甲區 | level: elementary
+- slug: tc-dongming-es | 東明國小 | Dajia District 大甲區 | level: elementary
+- slug: tc-dongyang-es | 東陽國小 | Dajia District 大甲區 | level: elementary
+- slug: tc-hualong-es | 華龍國小 | Dajia District 大甲區 | level: elementary
+- slug: xiqi-es | 西岐國小 | Dajia District 大甲區 | level: elementary
+- slug: shuntian-es | 順天國小 | Dajia District 大甲區 | level: elementary
+- slug: tc-daan-jh | 大安國中 | Daan District 大安區 | level: junior-high
+- slug: tc-sanguang-es | 三光國小 | Daan District 大安區 | level: elementary
+- slug: tc-daan-es | 大安國小 | Daan District 大安區 | level: elementary
+- slug: daan-yongan-es | 永安國小 | Daan District 大安區 | level: elementary
+- slug: haiqian-es | 海墘國小 | Daan District 大安區 | level: elementary

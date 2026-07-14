@@ -1,0 +1,3053 @@
+[
+ {
+  "name": "光復國小",
+  "town": "Zhong District",
+  "zh_town": "中區",
+  "level": "elementary",
+  "name_base": "光復",
+  "slug": "tc-guangfu-es",
+  "empty_base": false
+ },
+ {
+  "name": "國立中興大學附屬臺中高級農業職業學校",
+  "town": "Dong District",
+  "zh_town": "東區",
+  "level": "senior-high",
+  "name_base": "國立中興大學附屬臺中高級農業職業學校",
+  "slug": "xingdafunong-vs",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立臺中家事商業高級中等學校",
+  "town": "Dong District",
+  "zh_town": "東區",
+  "level": "senior-high",
+  "name_base": "臺中市立臺中家事商業高級中等學校",
+  "slug": "jiashishangye-vs",
+  "empty_base": false
+ },
+ {
+  "name": "東峰國中",
+  "town": "Dong District",
+  "zh_town": "東區",
+  "level": "junior-high",
+  "name_base": "東峰",
+  "slug": "dongfeng-jh",
+  "empty_base": false
+ },
+ {
+  "name": "育英國中",
+  "town": "Dong District",
+  "zh_town": "東區",
+  "level": "junior-high",
+  "name_base": "育英",
+  "slug": "yuying-jh",
+  "empty_base": false
+ },
+ {
+  "name": "力行國小",
+  "town": "Dong District",
+  "zh_town": "東區",
+  "level": "elementary",
+  "name_base": "力行",
+  "slug": "tc-lixing-es",
+  "empty_base": false
+ },
+ {
+  "name": "大智國小",
+  "town": "Dong District",
+  "zh_town": "東區",
+  "level": "elementary",
+  "name_base": "大智",
+  "slug": "tc-dazhi-es",
+  "empty_base": false
+ },
+ {
+  "name": "成功國小",
+  "town": "Dong District",
+  "zh_town": "東區",
+  "level": "elementary",
+  "name_base": "成功",
+  "slug": "dong-chenggong-es",
+  "empty_base": false
+ },
+ {
+  "name": "樂業國小",
+  "town": "Dong District",
+  "zh_town": "東區",
+  "level": "elementary",
+  "name_base": "樂業",
+  "slug": "leye-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中國小",
+  "town": "Dong District",
+  "zh_town": "東區",
+  "level": "elementary",
+  "name_base": "臺中",
+  "slug": "taizhong-es",
+  "empty_base": false
+ },
+ {
+  "name": "進德國小",
+  "town": "Dong District",
+  "zh_town": "東區",
+  "level": "elementary",
+  "name_base": "進德",
+  "slug": "jinde-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立臺中工業高級中等學校",
+  "town": "Nan District",
+  "zh_town": "南區",
+  "level": "senior-high",
+  "name_base": "臺中市立臺中工業高級中等學校",
+  "slug": "gongye-vs",
+  "empty_base": false
+ },
+ {
+  "name": "四育國中",
+  "town": "Nan District",
+  "zh_town": "南區",
+  "level": "junior-high",
+  "name_base": "四育",
+  "slug": "siyu-jh",
+  "empty_base": false
+ },
+ {
+  "name": "崇倫國中",
+  "town": "Nan District",
+  "zh_town": "南區",
+  "level": "junior-high",
+  "name_base": "崇倫",
+  "slug": "chonglun-jh",
+  "empty_base": false
+ },
+ {
+  "name": "信義國小",
+  "town": "Nan District",
+  "zh_town": "南區",
+  "level": "elementary",
+  "name_base": "信義",
+  "slug": "tc-xinyi-es",
+  "empty_base": false
+ },
+ {
+  "name": "和平國小",
+  "town": "Nan District",
+  "zh_town": "南區",
+  "level": "elementary",
+  "name_base": "和平",
+  "slug": "nan-heping-es",
+  "empty_base": false
+ },
+ {
+  "name": "國光國小",
+  "town": "Nan District",
+  "zh_town": "南區",
+  "level": "elementary",
+  "name_base": "國光",
+  "slug": "tc-guoguang-es",
+  "empty_base": false
+ },
+ {
+  "name": "樹德國小",
+  "town": "Nan District",
+  "zh_town": "南區",
+  "level": "elementary",
+  "name_base": "樹德",
+  "slug": "shude-es",
+  "empty_base": false
+ },
+ {
+  "name": "樹義國小",
+  "town": "Nan District",
+  "zh_town": "南區",
+  "level": "elementary",
+  "name_base": "樹義",
+  "slug": "shuyi-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立忠明高級中學",
+  "town": "Xi District",
+  "zh_town": "西區",
+  "level": "senior-high",
+  "name_base": "忠明",
+  "slug": "zhongming-hs",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立臺中女子高級中等學校",
+  "town": "Xi District",
+  "zh_town": "西區",
+  "level": "senior-high",
+  "name_base": "臺中市立臺中女子高級中等學校",
+  "slug": "nvzi-hs",
+  "empty_base": false
+ },
+ {
+  "name": "光明國中",
+  "town": "Xi District",
+  "zh_town": "西區",
+  "level": "junior-high",
+  "name_base": "光明",
+  "slug": "tc-guangming-jh",
+  "empty_base": false
+ },
+ {
+  "name": "向上國中",
+  "town": "Xi District",
+  "zh_town": "西區",
+  "level": "junior-high",
+  "name_base": "向上",
+  "slug": "xiangshang-jh",
+  "empty_base": false
+ },
+ {
+  "name": "居仁國中",
+  "town": "Xi District",
+  "zh_town": "西區",
+  "level": "junior-high",
+  "name_base": "居仁",
+  "slug": "juren-jh",
+  "empty_base": false
+ },
+ {
+  "name": "中正國小",
+  "town": "Xi District",
+  "zh_town": "西區",
+  "level": "elementary",
+  "name_base": "中正",
+  "slug": "xiqu-zhongzheng-es",
+  "empty_base": false
+ },
+ {
+  "name": "大勇國小",
+  "town": "Xi District",
+  "zh_town": "西區",
+  "level": "elementary",
+  "name_base": "大勇",
+  "slug": "tc-dayong-es",
+  "empty_base": false
+ },
+ {
+  "name": "大同國小",
+  "town": "Xi District",
+  "zh_town": "西區",
+  "level": "elementary",
+  "name_base": "大同",
+  "slug": "tc-datong-es",
+  "empty_base": false
+ },
+ {
+  "name": "忠信國小",
+  "town": "Xi District",
+  "zh_town": "西區",
+  "level": "elementary",
+  "name_base": "忠信",
+  "slug": "tc-zhongxin-es",
+  "empty_base": false
+ },
+ {
+  "name": "忠孝國小",
+  "town": "Xi District",
+  "zh_town": "西區",
+  "level": "elementary",
+  "name_base": "忠孝",
+  "slug": "tc-zhongxiao-es",
+  "empty_base": false
+ },
+ {
+  "name": "忠明國小",
+  "town": "Xi District",
+  "zh_town": "西區",
+  "level": "elementary",
+  "name_base": "忠明",
+  "slug": "zhongming-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立臺中第一高級中等學校",
+  "town": "Bei District",
+  "zh_town": "北區",
+  "level": "senior-high",
+  "name_base": "臺中市立臺中第一高級中等學校",
+  "slug": "diyi-hs",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立臺中第二高級中等學校",
+  "town": "Bei District",
+  "zh_town": "北區",
+  "level": "senior-high",
+  "name_base": "臺中市立臺中第二高級中等學校",
+  "slug": "dier-hs",
+  "empty_base": false
+ },
+ {
+  "name": "五權國中",
+  "town": "Bei District",
+  "zh_town": "北區",
+  "level": "junior-high",
+  "name_base": "五權",
+  "slug": "wuquan-jh",
+  "empty_base": false
+ },
+ {
+  "name": "立人國中",
+  "town": "Bei District",
+  "zh_town": "北區",
+  "level": "junior-high",
+  "name_base": "立人",
+  "slug": "liren-jh",
+  "empty_base": false
+ },
+ {
+  "name": "雙十國中",
+  "town": "Bei District",
+  "zh_town": "北區",
+  "level": "junior-high",
+  "name_base": "雙十",
+  "slug": "shuangshi-jh",
+  "empty_base": false
+ },
+ {
+  "name": "中華國小",
+  "town": "Bei District",
+  "zh_town": "北區",
+  "level": "elementary",
+  "name_base": "中華",
+  "slug": "beiqu-zhonghua-es",
+  "empty_base": false
+ },
+ {
+  "name": "健行國小",
+  "town": "Bei District",
+  "zh_town": "北區",
+  "level": "elementary",
+  "name_base": "健行",
+  "slug": "tc-jianxing-es",
+  "empty_base": false
+ },
+ {
+  "name": "太平國小",
+  "town": "Bei District",
+  "zh_town": "北區",
+  "level": "elementary",
+  "name_base": "太平",
+  "slug": "beiqu-taiping-es",
+  "empty_base": false
+ },
+ {
+  "name": "省三國小",
+  "town": "Bei District",
+  "zh_town": "北區",
+  "level": "elementary",
+  "name_base": "省三",
+  "slug": "shengsan-es",
+  "empty_base": false
+ },
+ {
+  "name": "立人國小",
+  "town": "Bei District",
+  "zh_town": "北區",
+  "level": "elementary",
+  "name_base": "立人",
+  "slug": "tc-liren-es",
+  "empty_base": false
+ },
+ {
+  "name": "篤行國小",
+  "town": "Bei District",
+  "zh_town": "北區",
+  "level": "elementary",
+  "name_base": "篤行",
+  "slug": "duxing-es",
+  "empty_base": false
+ },
+ {
+  "name": "賴厝國小",
+  "town": "Bei District",
+  "zh_town": "北區",
+  "level": "elementary",
+  "name_base": "賴厝",
+  "slug": "laicuo-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立東山高級中學",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "senior-high",
+  "name_base": "東山",
+  "slug": "dongshan-hs",
+  "empty_base": false
+ },
+ {
+  "name": "三光國中",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "junior-high",
+  "name_base": "三光",
+  "slug": "sanguang-jh",
+  "empty_base": false
+ },
+ {
+  "name": "北新國中",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "junior-high",
+  "name_base": "北新",
+  "slug": "beixin-jh",
+  "empty_base": false
+ },
+ {
+  "name": "南興國中",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "junior-high",
+  "name_base": "南興",
+  "slug": "tc-nanxing-jh",
+  "empty_base": false
+ },
+ {
+  "name": "四張犁國中",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "junior-high",
+  "name_base": "四張犁",
+  "slug": "sizhangli-jh",
+  "empty_base": false
+ },
+ {
+  "name": "大德國中",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "junior-high",
+  "name_base": "大德",
+  "slug": "dade-jh",
+  "empty_base": false
+ },
+ {
+  "name": "崇德國中",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "junior-high",
+  "name_base": "崇德",
+  "slug": "chongde-jh",
+  "empty_base": false
+ },
+ {
+  "name": "廍子國中",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "junior-high",
+  "name_base": "廍子",
+  "slug": "buzi-jh",
+  "empty_base": false
+ },
+ {
+  "name": "仁愛國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "仁愛",
+  "slug": "tc-renai-es",
+  "empty_base": false
+ },
+ {
+  "name": "仁美國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "仁美",
+  "slug": "renmei-es",
+  "empty_base": false
+ },
+ {
+  "name": "僑孝國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "僑孝",
+  "slug": "qiaoxiao-es",
+  "empty_base": false
+ },
+ {
+  "name": "北屯國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "北屯",
+  "slug": "beitun-es",
+  "empty_base": false
+ },
+ {
+  "name": "南興國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "南興",
+  "slug": "tc-nanxing-es",
+  "empty_base": false
+ },
+ {
+  "name": "四張犁國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "四張犁",
+  "slug": "sizhangli-es",
+  "empty_base": false
+ },
+ {
+  "name": "四維國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "四維",
+  "slug": "tc-siwei-es",
+  "empty_base": false
+ },
+ {
+  "name": "大坑國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "大坑",
+  "slug": "tc-dakeng-es",
+  "empty_base": false
+ },
+ {
+  "name": "廍子國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "廍子",
+  "slug": "buzi-es",
+  "empty_base": false
+ },
+ {
+  "name": "建功國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "建功",
+  "slug": "tc-jiangong-es",
+  "empty_base": false
+ },
+ {
+  "name": "文心國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "文心",
+  "slug": "tc-wenxin-es",
+  "empty_base": false
+ },
+ {
+  "name": "文昌國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "文昌",
+  "slug": "beitun-wenchang-es",
+  "empty_base": false
+ },
+ {
+  "name": "新興國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "新興",
+  "slug": "beitun-xinxing-es",
+  "empty_base": false
+ },
+ {
+  "name": "東光國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "東光",
+  "slug": "tc-dongguang-es",
+  "empty_base": false
+ },
+ {
+  "name": "松強國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "松強",
+  "slug": "songqiang-es",
+  "empty_base": false
+ },
+ {
+  "name": "松竹國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "松竹",
+  "slug": "songzhu-es",
+  "empty_base": false
+ },
+ {
+  "name": "軍功國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "軍功",
+  "slug": "jungong-es",
+  "empty_base": false
+ },
+ {
+  "name": "逢甲國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "逢甲",
+  "slug": "fengjia-es",
+  "empty_base": false
+ },
+ {
+  "name": "陳平國小",
+  "town": "Beitun District",
+  "zh_town": "北屯區",
+  "level": "elementary",
+  "name_base": "陳平",
+  "slug": "chenping-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立文華高級中等學校",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "senior-high",
+  "name_base": "文華",
+  "slug": "wenhua-hs",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立西苑高級中學",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "senior-high",
+  "name_base": "西苑",
+  "slug": "xiyuan-hs",
+  "empty_base": false
+ },
+ {
+  "name": "中山國中",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "junior-high",
+  "name_base": "中山",
+  "slug": "tc-zhongshan-jh",
+  "empty_base": false
+ },
+ {
+  "name": "安和國中",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "junior-high",
+  "name_base": "安和",
+  "slug": "anhe-jh",
+  "empty_base": false
+ },
+ {
+  "name": "漢口國中",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "junior-high",
+  "name_base": "漢口",
+  "slug": "hankou-jh",
+  "empty_base": false
+ },
+ {
+  "name": "福科國中",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "junior-high",
+  "name_base": "福科",
+  "slug": "fuke-jh",
+  "empty_base": false
+ },
+ {
+  "name": "至善國中",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "junior-high",
+  "name_base": "至善",
+  "slug": "tc-zhishan-jh",
+  "empty_base": false
+ },
+ {
+  "name": "上安國小",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "elementary",
+  "name_base": "上安",
+  "slug": "shangan-es",
+  "empty_base": false
+ },
+ {
+  "name": "上石國小",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "elementary",
+  "name_base": "上石",
+  "slug": "shangshi-es",
+  "empty_base": false
+ },
+ {
+  "name": "何厝國小",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "elementary",
+  "name_base": "何厝",
+  "slug": "hecuo-es",
+  "empty_base": false
+ },
+ {
+  "name": "協和國小",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "elementary",
+  "name_base": "協和",
+  "slug": "xiehe-es",
+  "empty_base": false
+ },
+ {
+  "name": "國安國小",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "elementary",
+  "name_base": "國安",
+  "slug": "guoan-es",
+  "empty_base": false
+ },
+ {
+  "name": "大仁國小",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "elementary",
+  "name_base": "大仁",
+  "slug": "daren-es",
+  "empty_base": false
+ },
+ {
+  "name": "大鵬國小",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "elementary",
+  "name_base": "大鵬",
+  "slug": "tc-dapeng-es",
+  "empty_base": false
+ },
+ {
+  "name": "惠來國小",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "elementary",
+  "name_base": "惠來",
+  "slug": "huilai-es",
+  "empty_base": false
+ },
+ {
+  "name": "東海國小",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "elementary",
+  "name_base": "東海",
+  "slug": "tc-donghai-es",
+  "empty_base": false
+ },
+ {
+  "name": "永安國小",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "elementary",
+  "name_base": "永安",
+  "slug": "xitun-yongan-es",
+  "empty_base": false
+ },
+ {
+  "name": "泰安國小",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "elementary",
+  "name_base": "泰安",
+  "slug": "xitun-taian-es",
+  "empty_base": false
+ },
+ {
+  "name": "西屯國小",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "elementary",
+  "name_base": "西屯",
+  "slug": "xitun-es",
+  "empty_base": false
+ },
+ {
+  "name": "重慶國小",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "elementary",
+  "name_base": "重慶",
+  "slug": "tc-chongqing-es",
+  "empty_base": false
+ },
+ {
+  "name": "長安國小",
+  "town": "Xitun District",
+  "zh_town": "西屯區",
+  "level": "elementary",
+  "name_base": "長安",
+  "slug": "tc-changan-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立惠文高級中學",
+  "town": "Nantun District",
+  "zh_town": "南屯區",
+  "level": "senior-high",
+  "name_base": "惠文",
+  "slug": "huiwen-hs",
+  "empty_base": false
+ },
+ {
+  "name": "大墩國中",
+  "town": "Nantun District",
+  "zh_town": "南屯區",
+  "level": "junior-high",
+  "name_base": "大墩",
+  "slug": "dadun-jh",
+  "empty_base": false
+ },
+ {
+  "name": "大業國中",
+  "town": "Nantun District",
+  "zh_town": "南屯區",
+  "level": "junior-high",
+  "name_base": "大業",
+  "slug": "tc-daye-jh",
+  "empty_base": false
+ },
+ {
+  "name": "萬和國中",
+  "town": "Nantun District",
+  "zh_town": "南屯區",
+  "level": "junior-high",
+  "name_base": "萬和",
+  "slug": "wanhe-jh",
+  "empty_base": false
+ },
+ {
+  "name": "黎明國中",
+  "town": "Nantun District",
+  "zh_town": "南屯區",
+  "level": "junior-high",
+  "name_base": "黎明",
+  "slug": "liming-jh",
+  "empty_base": false
+ },
+ {
+  "name": "南屯國小",
+  "town": "Nantun District",
+  "zh_town": "南屯區",
+  "level": "elementary",
+  "name_base": "南屯",
+  "slug": "nantun-es",
+  "empty_base": false
+ },
+ {
+  "name": "大墩國小",
+  "town": "Nantun District",
+  "zh_town": "南屯區",
+  "level": "elementary",
+  "name_base": "大墩",
+  "slug": "dadun-es",
+  "empty_base": false
+ },
+ {
+  "name": "大新國小",
+  "town": "Nantun District",
+  "zh_town": "南屯區",
+  "level": "elementary",
+  "name_base": "大新",
+  "slug": "tc-daxin-es",
+  "empty_base": false
+ },
+ {
+  "name": "惠文國小",
+  "town": "Nantun District",
+  "zh_town": "南屯區",
+  "level": "elementary",
+  "name_base": "惠文",
+  "slug": "huiwen-es",
+  "empty_base": false
+ },
+ {
+  "name": "文山國小",
+  "town": "Nantun District",
+  "zh_town": "南屯區",
+  "level": "elementary",
+  "name_base": "文山",
+  "slug": "tc-wenshan-es",
+  "empty_base": false
+ },
+ {
+  "name": "春安國小",
+  "town": "Nantun District",
+  "zh_town": "南屯區",
+  "level": "elementary",
+  "name_base": "春安",
+  "slug": "chunan-es",
+  "empty_base": false
+ },
+ {
+  "name": "東興國小",
+  "town": "Nantun District",
+  "zh_town": "南屯區",
+  "level": "elementary",
+  "name_base": "東興",
+  "slug": "nantun-dongxing-es",
+  "empty_base": false
+ },
+ {
+  "name": "永春國小",
+  "town": "Nantun District",
+  "zh_town": "南屯區",
+  "level": "elementary",
+  "name_base": "永春",
+  "slug": "yongchun-es",
+  "empty_base": false
+ },
+ {
+  "name": "鎮平國小",
+  "town": "Nantun District",
+  "zh_town": "南屯區",
+  "level": "elementary",
+  "name_base": "鎮平",
+  "slug": "zhenping-es",
+  "empty_base": false
+ },
+ {
+  "name": "黎明國小",
+  "town": "Nantun District",
+  "zh_town": "南屯區",
+  "level": "elementary",
+  "name_base": "黎明",
+  "slug": "tc-liming-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立長億高級中學",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "senior-high",
+  "name_base": "長億",
+  "slug": "changyi-hs",
+  "empty_base": false
+ },
+ {
+  "name": "中平國中",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "junior-high",
+  "name_base": "中平",
+  "slug": "tc-zhongping-jh",
+  "empty_base": false
+ },
+ {
+  "name": "太平國中",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "junior-high",
+  "name_base": "太平",
+  "slug": "taiping-jh",
+  "empty_base": false
+ },
+ {
+  "name": "新光國中",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "junior-high",
+  "name_base": "新光",
+  "slug": "xinguang-jh",
+  "empty_base": false
+ },
+ {
+  "name": "中華國小",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "elementary",
+  "name_base": "中華",
+  "slug": "taiping-zhonghua-es",
+  "empty_base": false
+ },
+ {
+  "name": "光隆國小",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "elementary",
+  "name_base": "光隆",
+  "slug": "guanglong-es",
+  "empty_base": false
+ },
+ {
+  "name": "坪林國小",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "elementary",
+  "name_base": "坪林",
+  "slug": "tc-pinglin-es",
+  "empty_base": false
+ },
+ {
+  "name": "太平國小",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "elementary",
+  "name_base": "太平",
+  "slug": "taipingqu-taiping-es",
+  "empty_base": false
+ },
+ {
+  "name": "宜欣國小",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "elementary",
+  "name_base": "宜欣",
+  "slug": "yixin-es",
+  "empty_base": false
+ },
+ {
+  "name": "建平國小",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "elementary",
+  "name_base": "建平",
+  "slug": "jianping-es",
+  "empty_base": false
+ },
+ {
+  "name": "新光國小",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "elementary",
+  "name_base": "新光",
+  "slug": "tc-xinguang-es",
+  "empty_base": false
+ },
+ {
+  "name": "新平國小",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "elementary",
+  "name_base": "新平",
+  "slug": "xinping-es",
+  "empty_base": false
+ },
+ {
+  "name": "新高國小",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "elementary",
+  "name_base": "新高",
+  "slug": "xingao-es",
+  "empty_base": false
+ },
+ {
+  "name": "東平國小",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "elementary",
+  "name_base": "東平",
+  "slug": "dongping-es",
+  "empty_base": false
+ },
+ {
+  "name": "東汴實驗國小",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "elementary",
+  "name_base": "東汴實驗",
+  "slug": "dongbianshiyan-es",
+  "empty_base": false
+ },
+ {
+  "name": "車籠埔國小",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "elementary",
+  "name_base": "車籠埔",
+  "slug": "chelongpu-es",
+  "empty_base": false
+ },
+ {
+  "name": "長億國小",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "elementary",
+  "name_base": "長億",
+  "slug": "changyi-es",
+  "empty_base": false
+ },
+ {
+  "name": "頭汴國小",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "elementary",
+  "name_base": "頭汴",
+  "slug": "toubian-es",
+  "empty_base": false
+ },
+ {
+  "name": "黃竹國小",
+  "town": "Taiping District",
+  "zh_town": "太平區",
+  "level": "elementary",
+  "name_base": "黃竹",
+  "slug": "huangzhu-es",
+  "empty_base": false
+ },
+ {
+  "name": "國立中興大學附屬高級中學",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "senior-high",
+  "name_base": "國立中興大學附屬高級中學",
+  "slug": "xingda-hs",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立大里高級中學",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "senior-high",
+  "name_base": "大里",
+  "slug": "tc-dali-hs",
+  "empty_base": false
+ },
+ {
+  "name": "光榮國中",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "junior-high",
+  "name_base": "光榮",
+  "slug": "tc-guangrong-jh",
+  "empty_base": false
+ },
+ {
+  "name": "光正國中",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "junior-high",
+  "name_base": "光正",
+  "slug": "guangzheng-jh",
+  "empty_base": false
+ },
+ {
+  "name": "成功國中",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "junior-high",
+  "name_base": "成功",
+  "slug": "tc-chenggong-jh",
+  "empty_base": false
+ },
+ {
+  "name": "爽文國中",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "junior-high",
+  "name_base": "爽文",
+  "slug": "shuangwen-jh",
+  "empty_base": false
+ },
+ {
+  "name": "立新國中",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "junior-high",
+  "name_base": "立新",
+  "slug": "lixin-jh",
+  "empty_base": false
+ },
+ {
+  "name": "內新國小",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "elementary",
+  "name_base": "內新",
+  "slug": "neixin-es",
+  "empty_base": false
+ },
+ {
+  "name": "塗城國小",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "elementary",
+  "name_base": "塗城",
+  "slug": "tc-tucheng-es",
+  "empty_base": false
+ },
+ {
+  "name": "大元國小",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "elementary",
+  "name_base": "大元",
+  "slug": "tc-dayuan-es",
+  "empty_base": false
+ },
+ {
+  "name": "大里國小",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "elementary",
+  "name_base": "大里",
+  "slug": "tc-dali-es",
+  "empty_base": false
+ },
+ {
+  "name": "崇光國小",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "elementary",
+  "name_base": "崇光",
+  "slug": "chongguang-es",
+  "empty_base": false
+ },
+ {
+  "name": "永隆國小",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "elementary",
+  "name_base": "永隆",
+  "slug": "yonglong-es",
+  "empty_base": false
+ },
+ {
+  "name": "瑞城國小",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "elementary",
+  "name_base": "瑞城",
+  "slug": "ruicheng-es",
+  "empty_base": false
+ },
+ {
+  "name": "益民國小",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "elementary",
+  "name_base": "益民",
+  "slug": "yimin-es",
+  "empty_base": false
+ },
+ {
+  "name": "立新國小",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "elementary",
+  "name_base": "立新",
+  "slug": "lixin-es",
+  "empty_base": false
+ },
+ {
+  "name": "竹仔坑國小",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "elementary",
+  "name_base": "竹仔坑",
+  "slug": "zhuzaikeng-es",
+  "empty_base": false
+ },
+ {
+  "name": "美群國小",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "elementary",
+  "name_base": "美群",
+  "slug": "meiqun-es",
+  "empty_base": false
+ },
+ {
+  "name": "草湖國小",
+  "town": "Dali District",
+  "zh_town": "大里區",
+  "level": "elementary",
+  "name_base": "草湖",
+  "slug": "tc-caohu-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立霧峰農業工業高級中等學校",
+  "town": "Wufeng District",
+  "zh_town": "霧峰區",
+  "level": "senior-high",
+  "name_base": "霧峰農業工業",
+  "slug": "wufengnongyegongye-hs",
+  "empty_base": false
+ },
+ {
+  "name": "霧峰國中",
+  "town": "Wufeng District",
+  "zh_town": "霧峰區",
+  "level": "junior-high",
+  "name_base": "霧峰",
+  "slug": "tc-wufeng-jh",
+  "empty_base": false
+ },
+ {
+  "name": "五福國小",
+  "town": "Wufeng District",
+  "zh_town": "霧峰區",
+  "level": "elementary",
+  "name_base": "五福",
+  "slug": "tc-wufu-es",
+  "empty_base": false
+ },
+ {
+  "name": "僑榮國小",
+  "town": "Wufeng District",
+  "zh_town": "霧峰區",
+  "level": "elementary",
+  "name_base": "僑榮",
+  "slug": "qiaorong-es",
+  "empty_base": false
+ },
+ {
+  "name": "光正國小",
+  "town": "Wufeng District",
+  "zh_town": "霧峰區",
+  "level": "elementary",
+  "name_base": "光正",
+  "slug": "guangzheng-es",
+  "empty_base": false
+ },
+ {
+  "name": "吉峰國小",
+  "town": "Wufeng District",
+  "zh_town": "霧峰區",
+  "level": "elementary",
+  "name_base": "吉峰",
+  "slug": "jifeng-es",
+  "empty_base": false
+ },
+ {
+  "name": "四德國小",
+  "town": "Wufeng District",
+  "zh_town": "霧峰區",
+  "level": "elementary",
+  "name_base": "四德",
+  "slug": "side-es",
+  "empty_base": false
+ },
+ {
+  "name": "峰谷國小",
+  "town": "Wufeng District",
+  "zh_town": "霧峰區",
+  "level": "elementary",
+  "name_base": "峰谷",
+  "slug": "fenggu-es",
+  "empty_base": false
+ },
+ {
+  "name": "復興國小",
+  "town": "Wufeng District",
+  "zh_town": "霧峰區",
+  "level": "elementary",
+  "name_base": "復興",
+  "slug": "tc-fuxing-es",
+  "empty_base": false
+ },
+ {
+  "name": "桐林國小",
+  "town": "Wufeng District",
+  "zh_town": "霧峰區",
+  "level": "elementary",
+  "name_base": "桐林",
+  "slug": "tc-tonglin-es",
+  "empty_base": false
+ },
+ {
+  "name": "萬豐國小",
+  "town": "Wufeng District",
+  "zh_town": "霧峰區",
+  "level": "elementary",
+  "name_base": "萬豐",
+  "slug": "wanfeng-es",
+  "empty_base": false
+ },
+ {
+  "name": "霧峰國小",
+  "town": "Wufeng District",
+  "zh_town": "霧峰區",
+  "level": "elementary",
+  "name_base": "霧峰",
+  "slug": "tc-wufeng-es",
+  "empty_base": false
+ },
+ {
+  "name": "光德國中",
+  "town": "Wuri District",
+  "zh_town": "烏日區",
+  "level": "junior-high",
+  "name_base": "光德",
+  "slug": "guangde-jh",
+  "empty_base": false
+ },
+ {
+  "name": "溪南國中",
+  "town": "Wuri District",
+  "zh_town": "烏日區",
+  "level": "junior-high",
+  "name_base": "溪南",
+  "slug": "xinan-jh",
+  "empty_base": false
+ },
+ {
+  "name": "烏日國中",
+  "town": "Wuri District",
+  "zh_town": "烏日區",
+  "level": "junior-high",
+  "name_base": "烏日",
+  "slug": "wuri-jh",
+  "empty_base": false
+ },
+ {
+  "name": "九德國小",
+  "town": "Wuri District",
+  "zh_town": "烏日區",
+  "level": "elementary",
+  "name_base": "九德",
+  "slug": "jiude-es",
+  "empty_base": false
+ },
+ {
+  "name": "五光國小",
+  "town": "Wuri District",
+  "zh_town": "烏日區",
+  "level": "elementary",
+  "name_base": "五光",
+  "slug": "wuguang-es",
+  "empty_base": false
+ },
+ {
+  "name": "僑仁國小",
+  "town": "Wuri District",
+  "zh_town": "烏日區",
+  "level": "elementary",
+  "name_base": "僑仁",
+  "slug": "qiaoren-es",
+  "empty_base": false
+ },
+ {
+  "name": "喀哩國小",
+  "town": "Wuri District",
+  "zh_town": "烏日區",
+  "level": "elementary",
+  "name_base": "喀哩",
+  "slug": "kali-es",
+  "empty_base": false
+ },
+ {
+  "name": "旭光國小",
+  "town": "Wuri District",
+  "zh_town": "烏日區",
+  "level": "elementary",
+  "name_base": "旭光",
+  "slug": "xuguang-es",
+  "empty_base": false
+ },
+ {
+  "name": "東園國小",
+  "town": "Wuri District",
+  "zh_town": "烏日區",
+  "level": "elementary",
+  "name_base": "東園",
+  "slug": "tc-dongyuan-es",
+  "empty_base": false
+ },
+ {
+  "name": "溪尾國小",
+  "town": "Wuri District",
+  "zh_town": "烏日區",
+  "level": "elementary",
+  "name_base": "溪尾",
+  "slug": "xiwei-es",
+  "empty_base": false
+ },
+ {
+  "name": "烏日國小",
+  "town": "Wuri District",
+  "zh_town": "烏日區",
+  "level": "elementary",
+  "name_base": "烏日",
+  "slug": "wuri-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立豐原商業高級中等學校",
+  "town": "Fengyuan District",
+  "zh_town": "豐原區",
+  "level": "senior-high",
+  "name_base": "豐原商業",
+  "slug": "fengyuanshangye-hs",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立豐原高級中等學校",
+  "town": "Fengyuan District",
+  "zh_town": "豐原區",
+  "level": "senior-high",
+  "name_base": "豐原",
+  "slug": "fengyuan-hs",
+  "empty_base": false
+ },
+ {
+  "name": "豐南國中",
+  "town": "Fengyuan District",
+  "zh_town": "豐原區",
+  "level": "junior-high",
+  "name_base": "豐南",
+  "slug": "fengnan-jh",
+  "empty_base": false
+ },
+ {
+  "name": "豐原國中",
+  "town": "Fengyuan District",
+  "zh_town": "豐原區",
+  "level": "junior-high",
+  "name_base": "豐原",
+  "slug": "fengyuan-jh",
+  "empty_base": false
+ },
+ {
+  "name": "豐東國中",
+  "town": "Fengyuan District",
+  "zh_town": "豐原區",
+  "level": "junior-high",
+  "name_base": "豐東",
+  "slug": "fengdong-jh",
+  "empty_base": false
+ },
+ {
+  "name": "豐陽國中",
+  "town": "Fengyuan District",
+  "zh_town": "豐原區",
+  "level": "junior-high",
+  "name_base": "豐陽",
+  "slug": "fengyang-jh",
+  "empty_base": false
+ },
+ {
+  "name": "南陽國小",
+  "town": "Fengyuan District",
+  "zh_town": "豐原區",
+  "level": "elementary",
+  "name_base": "南陽",
+  "slug": "nanyang-es",
+  "empty_base": false
+ },
+ {
+  "name": "合作國小",
+  "town": "Fengyuan District",
+  "zh_town": "豐原區",
+  "level": "elementary",
+  "name_base": "合作",
+  "slug": "hezuo-es",
+  "empty_base": false
+ },
+ {
+  "name": "富春國小",
+  "town": "Fengyuan District",
+  "zh_town": "豐原區",
+  "level": "elementary",
+  "name_base": "富春",
+  "slug": "fuchun-es",
+  "empty_base": false
+ },
+ {
+  "name": "瑞穗國小",
+  "town": "Fengyuan District",
+  "zh_town": "豐原區",
+  "level": "elementary",
+  "name_base": "瑞穗",
+  "slug": "tc-ruisui-es",
+  "empty_base": false
+ },
+ {
+  "name": "福陽國小",
+  "town": "Fengyuan District",
+  "zh_town": "豐原區",
+  "level": "elementary",
+  "name_base": "福陽",
+  "slug": "fuyang-es",
+  "empty_base": false
+ },
+ {
+  "name": "翁子國小",
+  "town": "Fengyuan District",
+  "zh_town": "豐原區",
+  "level": "elementary",
+  "name_base": "翁子",
+  "slug": "wengzi-es",
+  "empty_base": false
+ },
+ {
+  "name": "葫蘆墩國小",
+  "town": "Fengyuan District",
+  "zh_town": "豐原區",
+  "level": "elementary",
+  "name_base": "葫蘆墩",
+  "slug": "huludun-es",
+  "empty_base": false
+ },
+ {
+  "name": "豐原國小",
+  "town": "Fengyuan District",
+  "zh_town": "豐原區",
+  "level": "elementary",
+  "name_base": "豐原",
+  "slug": "tc-fengyuan-es",
+  "empty_base": false
+ },
+ {
+  "name": "豐村國小",
+  "town": "Fengyuan District",
+  "zh_town": "豐原區",
+  "level": "elementary",
+  "name_base": "豐村",
+  "slug": "fengcun-es",
+  "empty_base": false
+ },
+ {
+  "name": "豐田國小",
+  "town": "Fengyuan District",
+  "zh_town": "豐原區",
+  "level": "elementary",
+  "name_base": "豐田",
+  "slug": "tc-fengtian-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立后綜高級中學",
+  "town": "Houli District",
+  "zh_town": "后里區",
+  "level": "senior-high",
+  "name_base": "后綜",
+  "slug": "houzong-hs",
+  "empty_base": false
+ },
+ {
+  "name": "后里國中",
+  "town": "Houli District",
+  "zh_town": "后里區",
+  "level": "junior-high",
+  "name_base": "后里",
+  "slug": "houli-jh",
+  "empty_base": false
+ },
+ {
+  "name": "七星國小",
+  "town": "Houli District",
+  "zh_town": "后里區",
+  "level": "elementary",
+  "name_base": "七星",
+  "slug": "qixing-es",
+  "empty_base": false
+ },
+ {
+  "name": "內埔國小",
+  "town": "Houli District",
+  "zh_town": "后里區",
+  "level": "elementary",
+  "name_base": "內埔",
+  "slug": "tc-neipu-es",
+  "empty_base": false
+ },
+ {
+  "name": "后里國小",
+  "town": "Houli District",
+  "zh_town": "后里區",
+  "level": "elementary",
+  "name_base": "后里",
+  "slug": "houli-es",
+  "empty_base": false
+ },
+ {
+  "name": "月眉國小",
+  "town": "Houli District",
+  "zh_town": "后里區",
+  "level": "elementary",
+  "name_base": "月眉",
+  "slug": "tc-yuemei-es",
+  "empty_base": false
+ },
+ {
+  "name": "泰安國小",
+  "town": "Houli District",
+  "zh_town": "后里區",
+  "level": "elementary",
+  "name_base": "泰安",
+  "slug": "houli-taian-es",
+  "empty_base": false
+ },
+ {
+  "name": "育英國小",
+  "town": "Houli District",
+  "zh_town": "后里區",
+  "level": "elementary",
+  "name_base": "育英",
+  "slug": "tc-yuying-es",
+  "empty_base": false
+ },
+ {
+  "name": "石岡國中",
+  "town": "Shigang District",
+  "zh_town": "石岡區",
+  "level": "junior-high",
+  "name_base": "石岡",
+  "slug": "shigang-jh",
+  "empty_base": false
+ },
+ {
+  "name": "土牛國小",
+  "town": "Shigang District",
+  "zh_town": "石岡區",
+  "level": "elementary",
+  "name_base": "土牛",
+  "slug": "tuniu-es",
+  "empty_base": false
+ },
+ {
+  "name": "石岡國小",
+  "town": "Shigang District",
+  "zh_town": "石岡區",
+  "level": "elementary",
+  "name_base": "石岡",
+  "slug": "shigang-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立東勢工業高級中等學校",
+  "town": "Dongshi District",
+  "zh_town": "東勢區",
+  "level": "senior-high",
+  "name_base": "東勢工業",
+  "slug": "dongshigongye-hs",
+  "empty_base": false
+ },
+ {
+  "name": "東勢國中",
+  "town": "Dongshi District",
+  "zh_town": "東勢區",
+  "level": "junior-high",
+  "name_base": "東勢",
+  "slug": "tc-dongshi-jh",
+  "empty_base": false
+ },
+ {
+  "name": "東新國中",
+  "town": "Dongshi District",
+  "zh_town": "東勢區",
+  "level": "junior-high",
+  "name_base": "東新",
+  "slug": "tc-dongxin-jh",
+  "empty_base": false
+ },
+ {
+  "name": "東華國中",
+  "town": "Dongshi District",
+  "zh_town": "東勢區",
+  "level": "junior-high",
+  "name_base": "東華",
+  "slug": "donghua-jh",
+  "empty_base": false
+ },
+ {
+  "name": "中山國小",
+  "town": "Dongshi District",
+  "zh_town": "東勢區",
+  "level": "elementary",
+  "name_base": "中山",
+  "slug": "tc-zhongshan-es",
+  "empty_base": false
+ },
+ {
+  "name": "中科國小",
+  "town": "Dongshi District",
+  "zh_town": "東勢區",
+  "level": "elementary",
+  "name_base": "中科",
+  "slug": "zhongke-es",
+  "empty_base": false
+ },
+ {
+  "name": "成功國小",
+  "town": "Dongshi District",
+  "zh_town": "東勢區",
+  "level": "elementary",
+  "name_base": "成功",
+  "slug": "dongshi-chenggong-es",
+  "empty_base": false
+ },
+ {
+  "name": "新成國小",
+  "town": "Dongshi District",
+  "zh_town": "東勢區",
+  "level": "elementary",
+  "name_base": "新成",
+  "slug": "tc-xincheng-es",
+  "empty_base": false
+ },
+ {
+  "name": "新盛國小",
+  "town": "Dongshi District",
+  "zh_town": "東勢區",
+  "level": "elementary",
+  "name_base": "新盛",
+  "slug": "tc-xinsheng-es",
+  "empty_base": false
+ },
+ {
+  "name": "明正國小",
+  "town": "Dongshi District",
+  "zh_town": "東勢區",
+  "level": "elementary",
+  "name_base": "明正",
+  "slug": "mingzheng-es",
+  "empty_base": false
+ },
+ {
+  "name": "東勢國小",
+  "town": "Dongshi District",
+  "zh_town": "東勢區",
+  "level": "elementary",
+  "name_base": "東勢",
+  "slug": "tc-dongshi-es",
+  "empty_base": false
+ },
+ {
+  "name": "東新國小",
+  "town": "Dongshi District",
+  "zh_town": "東勢區",
+  "level": "elementary",
+  "name_base": "東新",
+  "slug": "tc-dongxin-es",
+  "empty_base": false
+ },
+ {
+  "name": "石城國小",
+  "town": "Dongshi District",
+  "zh_town": "東勢區",
+  "level": "elementary",
+  "name_base": "石城",
+  "slug": "shicheng-es",
+  "empty_base": false
+ },
+ {
+  "name": "石角國小",
+  "town": "Dongshi District",
+  "zh_town": "東勢區",
+  "level": "elementary",
+  "name_base": "石角",
+  "slug": "shijiao-es",
+  "empty_base": false
+ },
+ {
+  "name": "和平國中",
+  "town": "Heping District",
+  "zh_town": "和平區",
+  "level": "junior-high",
+  "name_base": "和平",
+  "slug": "heping-jh",
+  "empty_base": false
+ },
+ {
+  "name": "中坑國小",
+  "town": "Heping District",
+  "zh_town": "和平區",
+  "level": "elementary",
+  "name_base": "中坑",
+  "slug": "zhongkeng-es",
+  "empty_base": false
+ },
+ {
+  "name": "博屋瑪國小",
+  "town": "Heping District",
+  "zh_town": "和平區",
+  "level": "elementary",
+  "name_base": "博屋瑪",
+  "slug": "bowuma-es",
+  "empty_base": false
+ },
+ {
+  "name": "和平國小",
+  "town": "Heping District",
+  "zh_town": "和平區",
+  "level": "elementary",
+  "name_base": "和平",
+  "slug": "heping-heping-es",
+  "empty_base": false
+ },
+ {
+  "name": "平等國小",
+  "town": "Heping District",
+  "zh_town": "和平區",
+  "level": "elementary",
+  "name_base": "平等",
+  "slug": "tc-pingdeng-es",
+  "empty_base": false
+ },
+ {
+  "name": "德芙蘭國小",
+  "town": "Heping District",
+  "zh_town": "和平區",
+  "level": "elementary",
+  "name_base": "德芙蘭",
+  "slug": "defulan-es",
+  "empty_base": false
+ },
+ {
+  "name": "白冷國小",
+  "town": "Heping District",
+  "zh_town": "和平區",
+  "level": "elementary",
+  "name_base": "白冷",
+  "slug": "baileng-es",
+  "empty_base": false
+ },
+ {
+  "name": "自由國小",
+  "town": "Heping District",
+  "zh_town": "和平區",
+  "level": "elementary",
+  "name_base": "自由",
+  "slug": "ziyou-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立新社高級中學",
+  "town": "Xinshe District",
+  "zh_town": "新社區",
+  "level": "senior-high",
+  "name_base": "新社",
+  "slug": "xinshe-hs",
+  "empty_base": false
+ },
+ {
+  "name": "中和國小",
+  "town": "Xinshe District",
+  "zh_town": "新社區",
+  "level": "elementary",
+  "name_base": "中和",
+  "slug": "tc-zhonghe-es",
+  "empty_base": false
+ },
+ {
+  "name": "協成國小",
+  "town": "Xinshe District",
+  "zh_town": "新社區",
+  "level": "elementary",
+  "name_base": "協成",
+  "slug": "xiecheng-es",
+  "empty_base": false
+ },
+ {
+  "name": "大南國小",
+  "town": "Xinshe District",
+  "zh_town": "新社區",
+  "level": "elementary",
+  "name_base": "大南",
+  "slug": "tc-danan-es",
+  "empty_base": false
+ },
+ {
+  "name": "大林國小",
+  "town": "Xinshe District",
+  "zh_town": "新社區",
+  "level": "elementary",
+  "name_base": "大林",
+  "slug": "tc-dalin-es",
+  "empty_base": false
+ },
+ {
+  "name": "崑山國小",
+  "town": "Xinshe District",
+  "zh_town": "新社區",
+  "level": "elementary",
+  "name_base": "崑山",
+  "slug": "tc-kunshan-es",
+  "empty_base": false
+ },
+ {
+  "name": "新社國小",
+  "town": "Xinshe District",
+  "zh_town": "新社區",
+  "level": "elementary",
+  "name_base": "新社",
+  "slug": "tc-xinshe-es",
+  "empty_base": false
+ },
+ {
+  "name": "東興國小",
+  "town": "Xinshe District",
+  "zh_town": "新社區",
+  "level": "elementary",
+  "name_base": "東興",
+  "slug": "xinshe-dongxing-es",
+  "empty_base": false
+ },
+ {
+  "name": "福民國小",
+  "town": "Xinshe District",
+  "zh_town": "新社區",
+  "level": "elementary",
+  "name_base": "福民",
+  "slug": "fumin-es",
+  "empty_base": false
+ },
+ {
+  "name": "潭子國中",
+  "town": "Tanzi District",
+  "zh_town": "潭子區",
+  "level": "junior-high",
+  "name_base": "潭子",
+  "slug": "tanzi-jh",
+  "empty_base": false
+ },
+ {
+  "name": "潭秀國中",
+  "town": "Tanzi District",
+  "zh_town": "潭子區",
+  "level": "junior-high",
+  "name_base": "潭秀",
+  "slug": "tanxiu-jh",
+  "empty_base": false
+ },
+ {
+  "name": "僑忠國小",
+  "town": "Tanzi District",
+  "zh_town": "潭子區",
+  "level": "elementary",
+  "name_base": "僑忠",
+  "slug": "qiaozhong-es",
+  "empty_base": false
+ },
+ {
+  "name": "新興國小",
+  "town": "Tanzi District",
+  "zh_town": "潭子區",
+  "level": "elementary",
+  "name_base": "新興",
+  "slug": "tanzi-xinxing-es",
+  "empty_base": false
+ },
+ {
+  "name": "東寶國小",
+  "town": "Tanzi District",
+  "zh_town": "潭子區",
+  "level": "elementary",
+  "name_base": "東寶",
+  "slug": "dongbao-es",
+  "empty_base": false
+ },
+ {
+  "name": "潭子國小",
+  "town": "Tanzi District",
+  "zh_town": "潭子區",
+  "level": "elementary",
+  "name_base": "潭子",
+  "slug": "tanzi-es",
+  "empty_base": false
+ },
+ {
+  "name": "潭陽國小",
+  "town": "Tanzi District",
+  "zh_town": "潭子區",
+  "level": "elementary",
+  "name_base": "潭陽",
+  "slug": "tanyang-es",
+  "empty_base": false
+ },
+ {
+  "name": "頭家國小",
+  "town": "Tanzi District",
+  "zh_town": "潭子區",
+  "level": "elementary",
+  "name_base": "頭家",
+  "slug": "toujia-es",
+  "empty_base": false
+ },
+ {
+  "name": "大華國中",
+  "town": "Daya District",
+  "zh_town": "大雅區",
+  "level": "junior-high",
+  "name_base": "大華",
+  "slug": "dahua-jh",
+  "empty_base": false
+ },
+ {
+  "name": "大雅國中",
+  "town": "Daya District",
+  "zh_town": "大雅區",
+  "level": "junior-high",
+  "name_base": "大雅",
+  "slug": "daya-jh",
+  "empty_base": false
+ },
+ {
+  "name": "三和國小",
+  "town": "Daya District",
+  "zh_town": "大雅區",
+  "level": "elementary",
+  "name_base": "三和",
+  "slug": "tc-sanhe-es",
+  "empty_base": false
+ },
+ {
+  "name": "上楓國小",
+  "town": "Daya District",
+  "zh_town": "大雅區",
+  "level": "elementary",
+  "name_base": "上楓",
+  "slug": "shangfeng-es",
+  "empty_base": false
+ },
+ {
+  "name": "六寶國小",
+  "town": "Daya District",
+  "zh_town": "大雅區",
+  "level": "elementary",
+  "name_base": "六寶",
+  "slug": "liubao-es",
+  "empty_base": false
+ },
+ {
+  "name": "大明國小",
+  "town": "Daya District",
+  "zh_town": "大雅區",
+  "level": "elementary",
+  "name_base": "大明",
+  "slug": "tc-daming-es",
+  "empty_base": false
+ },
+ {
+  "name": "大雅國小",
+  "town": "Daya District",
+  "zh_town": "大雅區",
+  "level": "elementary",
+  "name_base": "大雅",
+  "slug": "daya-es",
+  "empty_base": false
+ },
+ {
+  "name": "文雅國小",
+  "town": "Daya District",
+  "zh_town": "大雅區",
+  "level": "elementary",
+  "name_base": "文雅",
+  "slug": "tc-wenya-es",
+  "empty_base": false
+ },
+ {
+  "name": "汝鎏國小",
+  "town": "Daya District",
+  "zh_town": "大雅區",
+  "level": "elementary",
+  "name_base": "汝鎏",
+  "slug": "ruliu-es",
+  "empty_base": false
+ },
+ {
+  "name": "陽明國小",
+  "town": "Daya District",
+  "zh_town": "大雅區",
+  "level": "elementary",
+  "name_base": "陽明",
+  "slug": "tc-yangming-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立神岡高級工業職業學校",
+  "town": "Shengang District",
+  "zh_town": "神岡區",
+  "level": "senior-high",
+  "name_base": "神岡",
+  "slug": "shengang-hs",
+  "empty_base": false
+ },
+ {
+  "name": "神圳國中",
+  "town": "Shengang District",
+  "zh_town": "神岡區",
+  "level": "junior-high",
+  "name_base": "神圳",
+  "slug": "shenzhen-jh",
+  "empty_base": false
+ },
+ {
+  "name": "圳堵國小",
+  "town": "Shengang District",
+  "zh_town": "神岡區",
+  "level": "elementary",
+  "name_base": "圳堵",
+  "slug": "zhendu-es",
+  "empty_base": false
+ },
+ {
+  "name": "岸裡國小",
+  "town": "Shengang District",
+  "zh_town": "神岡區",
+  "level": "elementary",
+  "name_base": "岸裡",
+  "slug": "anli-es",
+  "empty_base": false
+ },
+ {
+  "name": "社口國小",
+  "town": "Shengang District",
+  "zh_town": "神岡區",
+  "level": "elementary",
+  "name_base": "社口",
+  "slug": "tc-shekou-es",
+  "empty_base": false
+ },
+ {
+  "name": "神岡國小",
+  "town": "Shengang District",
+  "zh_town": "神岡區",
+  "level": "elementary",
+  "name_base": "神岡",
+  "slug": "shengang-es",
+  "empty_base": false
+ },
+ {
+  "name": "大道國中",
+  "town": "Dadu District",
+  "zh_town": "大肚區",
+  "level": "junior-high",
+  "name_base": "大道",
+  "slug": "dadao-jh",
+  "empty_base": false
+ },
+ {
+  "name": "大忠國小",
+  "town": "Dadu District",
+  "zh_town": "大肚區",
+  "level": "elementary",
+  "name_base": "大忠",
+  "slug": "tc-dazhong-es",
+  "empty_base": false
+ },
+ {
+  "name": "大肚國小",
+  "town": "Dadu District",
+  "zh_town": "大肚區",
+  "level": "elementary",
+  "name_base": "大肚",
+  "slug": "tc-dadu-es",
+  "empty_base": false
+ },
+ {
+  "name": "山陽國小",
+  "town": "Dadu District",
+  "zh_town": "大肚區",
+  "level": "elementary",
+  "name_base": "山陽",
+  "slug": "shanyang-es",
+  "empty_base": false
+ },
+ {
+  "name": "永順國小",
+  "town": "Dadu District",
+  "zh_town": "大肚區",
+  "level": "elementary",
+  "name_base": "永順",
+  "slug": "tc-yongshun-es",
+  "empty_base": false
+ },
+ {
+  "name": "瑞井國小",
+  "town": "Dadu District",
+  "zh_town": "大肚區",
+  "level": "elementary",
+  "name_base": "瑞井",
+  "slug": "ruijing-es",
+  "empty_base": false
+ },
+ {
+  "name": "瑞峰國小",
+  "town": "Dadu District",
+  "zh_town": "大肚區",
+  "level": "elementary",
+  "name_base": "瑞峰",
+  "slug": "tc-ruifeng-es",
+  "empty_base": false
+ },
+ {
+  "name": "追分國小",
+  "town": "Dadu District",
+  "zh_town": "大肚區",
+  "level": "elementary",
+  "name_base": "追分",
+  "slug": "zhuifen-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立沙鹿工業高級中等學校",
+  "town": "Shalu District",
+  "zh_town": "沙鹿區",
+  "level": "senior-high",
+  "name_base": "沙鹿工業",
+  "slug": "shalugongye-hs",
+  "empty_base": false
+ },
+ {
+  "name": "公明國中",
+  "town": "Shalu District",
+  "zh_town": "沙鹿區",
+  "level": "junior-high",
+  "name_base": "公明",
+  "slug": "gongming-jh",
+  "empty_base": false
+ },
+ {
+  "name": "北勢國中",
+  "town": "Shalu District",
+  "zh_town": "沙鹿區",
+  "level": "junior-high",
+  "name_base": "北勢",
+  "slug": "beishi-jh",
+  "empty_base": false
+ },
+ {
+  "name": "沙鹿國中",
+  "town": "Shalu District",
+  "zh_town": "沙鹿區",
+  "level": "junior-high",
+  "name_base": "沙鹿",
+  "slug": "shalu-jh",
+  "empty_base": false
+ },
+ {
+  "name": "鹿寮國中",
+  "town": "Shalu District",
+  "zh_town": "沙鹿區",
+  "level": "junior-high",
+  "name_base": "鹿寮",
+  "slug": "luliao-jh",
+  "empty_base": false
+ },
+ {
+  "name": "公明國小",
+  "town": "Shalu District",
+  "zh_town": "沙鹿區",
+  "level": "elementary",
+  "name_base": "公明",
+  "slug": "gongming-es",
+  "empty_base": false
+ },
+ {
+  "name": "公館國小",
+  "town": "Shalu District",
+  "zh_town": "沙鹿區",
+  "level": "elementary",
+  "name_base": "公館",
+  "slug": "tc-gongguan-es",
+  "empty_base": false
+ },
+ {
+  "name": "北勢國小",
+  "town": "Shalu District",
+  "zh_town": "沙鹿區",
+  "level": "elementary",
+  "name_base": "北勢",
+  "slug": "tc-beishi-es",
+  "empty_base": false
+ },
+ {
+  "name": "文光國小",
+  "town": "Shalu District",
+  "zh_town": "沙鹿區",
+  "level": "elementary",
+  "name_base": "文光",
+  "slug": "tc-wenguang-es",
+  "empty_base": false
+ },
+ {
+  "name": "沙鹿國小",
+  "town": "Shalu District",
+  "zh_town": "沙鹿區",
+  "level": "elementary",
+  "name_base": "沙鹿",
+  "slug": "shalu-es",
+  "empty_base": false
+ },
+ {
+  "name": "竹林國小",
+  "town": "Shalu District",
+  "zh_town": "沙鹿區",
+  "level": "elementary",
+  "name_base": "竹林",
+  "slug": "tc-zhulin-es",
+  "empty_base": false
+ },
+ {
+  "name": "鹿峰國小",
+  "town": "Shalu District",
+  "zh_town": "沙鹿區",
+  "level": "elementary",
+  "name_base": "鹿峰",
+  "slug": "lufeng-es",
+  "empty_base": false
+ },
+ {
+  "name": "鹿陽國小",
+  "town": "Shalu District",
+  "zh_town": "沙鹿區",
+  "level": "elementary",
+  "name_base": "鹿陽",
+  "slug": "luyang-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立龍津高級中等學校",
+  "town": "Longjing District",
+  "zh_town": "龍井區",
+  "level": "senior-high",
+  "name_base": "龍津",
+  "slug": "longjin-hs",
+  "empty_base": false
+ },
+ {
+  "name": "四箴國中",
+  "town": "Longjing District",
+  "zh_town": "龍井區",
+  "level": "junior-high",
+  "name_base": "四箴",
+  "slug": "sizhen-jh",
+  "empty_base": false
+ },
+ {
+  "name": "龍井國中",
+  "town": "Longjing District",
+  "zh_town": "龍井區",
+  "level": "junior-high",
+  "name_base": "龍井",
+  "slug": "longjing-jh",
+  "empty_base": false
+ },
+ {
+  "name": "龍井國小",
+  "town": "Longjing District",
+  "zh_town": "龍井區",
+  "level": "elementary",
+  "name_base": "龍井",
+  "slug": "longjing-es",
+  "empty_base": false
+ },
+ {
+  "name": "龍山國小",
+  "town": "Longjing District",
+  "zh_town": "龍井區",
+  "level": "elementary",
+  "name_base": "龍山",
+  "slug": "tc-longshan-es",
+  "empty_base": false
+ },
+ {
+  "name": "龍峰國小",
+  "town": "Longjing District",
+  "zh_town": "龍井區",
+  "level": "elementary",
+  "name_base": "龍峰",
+  "slug": "longfeng-es",
+  "empty_base": false
+ },
+ {
+  "name": "龍泉國小",
+  "town": "Longjing District",
+  "zh_town": "龍井區",
+  "level": "elementary",
+  "name_base": "龍泉",
+  "slug": "longquan-es",
+  "empty_base": false
+ },
+ {
+  "name": "龍津國小",
+  "town": "Longjing District",
+  "zh_town": "龍井區",
+  "level": "elementary",
+  "name_base": "龍津",
+  "slug": "longjin-es",
+  "empty_base": false
+ },
+ {
+  "name": "龍海國小",
+  "town": "Longjing District",
+  "zh_town": "龍井區",
+  "level": "elementary",
+  "name_base": "龍海",
+  "slug": "longhai-es",
+  "empty_base": false
+ },
+ {
+  "name": "龍港國小",
+  "town": "Longjing District",
+  "zh_town": "龍井區",
+  "level": "elementary",
+  "name_base": "龍港",
+  "slug": "tc-longgang-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立中港高級中學",
+  "town": "Wuqi District",
+  "zh_town": "梧棲區",
+  "level": "senior-high",
+  "name_base": "中港",
+  "slug": "zhonggang-hs",
+  "empty_base": false
+ },
+ {
+  "name": "梧棲國中",
+  "town": "Wuqi District",
+  "zh_town": "梧棲區",
+  "level": "junior-high",
+  "name_base": "梧棲",
+  "slug": "wuqi-jh",
+  "empty_base": false
+ },
+ {
+  "name": "中正國小",
+  "town": "Wuqi District",
+  "zh_town": "梧棲區",
+  "level": "elementary",
+  "name_base": "中正",
+  "slug": "wuqi-zhongzheng-es",
+  "empty_base": false
+ },
+ {
+  "name": "中港國小",
+  "town": "Wuqi District",
+  "zh_town": "梧棲區",
+  "level": "elementary",
+  "name_base": "中港",
+  "slug": "tc-zhonggang-es",
+  "empty_base": false
+ },
+ {
+  "name": "大德國小",
+  "town": "Wuqi District",
+  "zh_town": "梧棲區",
+  "level": "elementary",
+  "name_base": "大德",
+  "slug": "dade-es",
+  "empty_base": false
+ },
+ {
+  "name": "梧南國小",
+  "town": "Wuqi District",
+  "zh_town": "梧棲區",
+  "level": "elementary",
+  "name_base": "梧南",
+  "slug": "wunan-es",
+  "empty_base": false
+ },
+ {
+  "name": "梧棲國小",
+  "town": "Wuqi District",
+  "zh_town": "梧棲區",
+  "level": "elementary",
+  "name_base": "梧棲",
+  "slug": "wuqi-es",
+  "empty_base": false
+ },
+ {
+  "name": "永寧國小",
+  "town": "Wuqi District",
+  "zh_town": "梧棲區",
+  "level": "elementary",
+  "name_base": "永寧",
+  "slug": "yongning-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立清水高級中等學校",
+  "town": "Qingshui District",
+  "zh_town": "清水區",
+  "level": "senior-high",
+  "name_base": "清水",
+  "slug": "tc-qingshui-hs",
+  "empty_base": false
+ },
+ {
+  "name": "清水國中",
+  "town": "Qingshui District",
+  "zh_town": "清水區",
+  "level": "junior-high",
+  "name_base": "清水",
+  "slug": "qingshui-jh",
+  "empty_base": false
+ },
+ {
+  "name": "清泉國中",
+  "town": "Qingshui District",
+  "zh_town": "清水區",
+  "level": "junior-high",
+  "name_base": "清泉",
+  "slug": "qingquan-jh",
+  "empty_base": false
+ },
+ {
+  "name": "清海國中",
+  "town": "Qingshui District",
+  "zh_town": "清水區",
+  "level": "junior-high",
+  "name_base": "清海",
+  "slug": "qinghai-jh",
+  "empty_base": false
+ },
+ {
+  "name": "三田國小",
+  "town": "Qingshui District",
+  "zh_town": "清水區",
+  "level": "elementary",
+  "name_base": "三田",
+  "slug": "santian-es",
+  "empty_base": false
+ },
+ {
+  "name": "吳厝國小",
+  "town": "Qingshui District",
+  "zh_town": "清水區",
+  "level": "elementary",
+  "name_base": "吳厝",
+  "slug": "wucuo-es",
+  "empty_base": false
+ },
+ {
+  "name": "大楊國小",
+  "town": "Qingshui District",
+  "zh_town": "清水區",
+  "level": "elementary",
+  "name_base": "大楊",
+  "slug": "dayang-es",
+  "empty_base": false
+ },
+ {
+  "name": "大秀國小",
+  "town": "Qingshui District",
+  "zh_town": "清水區",
+  "level": "elementary",
+  "name_base": "大秀",
+  "slug": "daxiu-es",
+  "empty_base": false
+ },
+ {
+  "name": "建國國小",
+  "town": "Qingshui District",
+  "zh_town": "清水區",
+  "level": "elementary",
+  "name_base": "建國",
+  "slug": "tc-jianguo-es",
+  "empty_base": false
+ },
+ {
+  "name": "東山國小",
+  "town": "Qingshui District",
+  "zh_town": "清水區",
+  "level": "elementary",
+  "name_base": "東山",
+  "slug": "tc-dongshan-es",
+  "empty_base": false
+ },
+ {
+  "name": "清水國小",
+  "town": "Qingshui District",
+  "zh_town": "清水區",
+  "level": "elementary",
+  "name_base": "清水",
+  "slug": "tc-qingshui-es",
+  "empty_base": false
+ },
+ {
+  "name": "甲南國小",
+  "town": "Qingshui District",
+  "zh_town": "清水區",
+  "level": "elementary",
+  "name_base": "甲南",
+  "slug": "tc-jianan-es",
+  "empty_base": false
+ },
+ {
+  "name": "西寧國小",
+  "town": "Qingshui District",
+  "zh_town": "清水區",
+  "level": "elementary",
+  "name_base": "西寧",
+  "slug": "xining-es",
+  "empty_base": false
+ },
+ {
+  "name": "高美國小",
+  "town": "Qingshui District",
+  "zh_town": "清水區",
+  "level": "elementary",
+  "name_base": "高美",
+  "slug": "gaomei-es",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立大甲工業高級中等學校",
+  "town": "Dajia District",
+  "zh_town": "大甲區",
+  "level": "senior-high",
+  "name_base": "大甲工業",
+  "slug": "dajiagongye-hs",
+  "empty_base": false
+ },
+ {
+  "name": "臺中市立大甲高級中等學校",
+  "town": "Dajia District",
+  "zh_town": "大甲區",
+  "level": "senior-high",
+  "name_base": "大甲",
+  "slug": "dajia-hs",
+  "empty_base": false
+ },
+ {
+  "name": "大甲國中",
+  "town": "Dajia District",
+  "zh_town": "大甲區",
+  "level": "junior-high",
+  "name_base": "大甲",
+  "slug": "dajia-jh",
+  "empty_base": false
+ },
+ {
+  "name": "日南國中",
+  "town": "Dajia District",
+  "zh_town": "大甲區",
+  "level": "junior-high",
+  "name_base": "日南",
+  "slug": "rinan-jh",
+  "empty_base": false
+ },
+ {
+  "name": "順天國中",
+  "town": "Dajia District",
+  "zh_town": "大甲區",
+  "level": "junior-high",
+  "name_base": "順天",
+  "slug": "shuntian-jh",
+  "empty_base": false
+ },
+ {
+  "name": "大甲國小",
+  "town": "Dajia District",
+  "zh_town": "大甲區",
+  "level": "elementary",
+  "name_base": "大甲",
+  "slug": "tc-dajia-es",
+  "empty_base": false
+ },
+ {
+  "name": "德化國小",
+  "town": "Dajia District",
+  "zh_town": "大甲區",
+  "level": "elementary",
+  "name_base": "德化",
+  "slug": "dehua-es",
+  "empty_base": false
+ },
+ {
+  "name": "文昌國小",
+  "town": "Dajia District",
+  "zh_town": "大甲區",
+  "level": "elementary",
+  "name_base": "文昌",
+  "slug": "dajia-wenchang-es",
+  "empty_base": false
+ },
+ {
+  "name": "文武國小",
+  "town": "Dajia District",
+  "zh_town": "大甲區",
+  "level": "elementary",
+  "name_base": "文武",
+  "slug": "wenwu-es",
+  "empty_base": false
+ },
+ {
+  "name": "日南國小",
+  "town": "Dajia District",
+  "zh_town": "大甲區",
+  "level": "elementary",
+  "name_base": "日南",
+  "slug": "rinan-es",
+  "empty_base": false
+ },
+ {
+  "name": "東明國小",
+  "town": "Dajia District",
+  "zh_town": "大甲區",
+  "level": "elementary",
+  "name_base": "東明",
+  "slug": "tc-dongming-es",
+  "empty_base": false
+ },
+ {
+  "name": "東陽國小",
+  "town": "Dajia District",
+  "zh_town": "大甲區",
+  "level": "elementary",
+  "name_base": "東陽",
+  "slug": "tc-dongyang-es",
+  "empty_base": false
+ },
+ {
+  "name": "華龍國小",
+  "town": "Dajia District",
+  "zh_town": "大甲區",
+  "level": "elementary",
+  "name_base": "華龍",
+  "slug": "tc-hualong-es",
+  "empty_base": false
+ },
+ {
+  "name": "西岐國小",
+  "town": "Dajia District",
+  "zh_town": "大甲區",
+  "level": "elementary",
+  "name_base": "西岐",
+  "slug": "xiqi-es",
+  "empty_base": false
+ },
+ {
+  "name": "順天國小",
+  "town": "Dajia District",
+  "zh_town": "大甲區",
+  "level": "elementary",
+  "name_base": "順天",
+  "slug": "shuntian-es",
+  "empty_base": false
+ },
+ {
+  "name": "外埔國中",
+  "town": "Waipu District",
+  "zh_town": "外埔區",
+  "level": "junior-high",
+  "name_base": "外埔",
+  "slug": "waipu-jh",
+  "empty_base": false
+ },
+ {
+  "name": "外埔國小",
+  "town": "Waipu District",
+  "zh_town": "外埔區",
+  "level": "elementary",
+  "name_base": "外埔",
+  "slug": "tc-waipu-es",
+  "empty_base": false
+ },
+ {
+  "name": "安定國小",
+  "town": "Waipu District",
+  "zh_town": "外埔區",
+  "level": "elementary",
+  "name_base": "安定",
+  "slug": "tc-anding-es",
+  "empty_base": false
+ },
+ {
+  "name": "水美國小",
+  "town": "Waipu District",
+  "zh_town": "外埔區",
+  "level": "elementary",
+  "name_base": "水美",
+  "slug": "tc-shuimei-es",
+  "empty_base": false
+ },
+ {
+  "name": "鐵山國小",
+  "town": "Waipu District",
+  "zh_town": "外埔區",
+  "level": "elementary",
+  "name_base": "鐵山",
+  "slug": "tieshan-es",
+  "empty_base": false
+ },
+ {
+  "name": "馬鳴國小",
+  "town": "Waipu District",
+  "zh_town": "外埔區",
+  "level": "elementary",
+  "name_base": "馬鳴",
+  "slug": "maming-es",
+  "empty_base": false
+ },
+ {
+  "name": "大安國中",
+  "town": "Daan District",
+  "zh_town": "大安區",
+  "level": "junior-high",
+  "name_base": "大安",
+  "slug": "tc-daan-jh",
+  "empty_base": false
+ },
+ {
+  "name": "三光國小",
+  "town": "Daan District",
+  "zh_town": "大安區",
+  "level": "elementary",
+  "name_base": "三光",
+  "slug": "tc-sanguang-es",
+  "empty_base": false
+ },
+ {
+  "name": "大安國小",
+  "town": "Daan District",
+  "zh_town": "大安區",
+  "level": "elementary",
+  "name_base": "大安",
+  "slug": "tc-daan-es",
+  "empty_base": false
+ },
+ {
+  "name": "永安國小",
+  "town": "Daan District",
+  "zh_town": "大安區",
+  "level": "elementary",
+  "name_base": "永安",
+  "slug": "daan-yongan-es",
+  "empty_base": false
+ },
+ {
+  "name": "海墘國小",
+  "town": "Daan District",
+  "zh_town": "大安區",
+  "level": "elementary",
+  "name_base": "海墘",
+  "slug": "haiqian-es",
+  "empty_base": false
+ },
+ {
+  "name": "東海大學",
+  "town": "Xitun District",
+  "zh_town": "",
+  "level": "university",
+  "name_base": "Tunghai University",
+  "slug": "tunghai-university",
+  "empty_base": false
+ },
+ {
+  "name": "逢甲大學",
+  "town": "Xitun District",
+  "zh_town": "",
+  "level": "university",
+  "name_base": "Feng Chia University",
+  "slug": "feng-chia-university",
+  "empty_base": false
+ },
+ {
+  "name": "國立中興大學",
+  "town": "Nan District",
+  "zh_town": "",
+  "level": "university",
+  "name_base": "National Chung Hsing University",
+  "slug": "national-chung-hsing-university",
+  "empty_base": false
+ },
+ {
+  "name": "靜宜大學",
+  "town": "Shalu District",
+  "zh_town": "",
+  "level": "university",
+  "name_base": "Providence University",
+  "slug": "providence-university",
+  "empty_base": false
+ },
+ {
+  "name": "朝陽科技大學",
+  "town": "Wufeng District",
+  "zh_town": "",
+  "level": "university",
+  "name_base": "Chaoyang University of Technology",
+  "slug": "chaoyang-university-of-technology",
+  "empty_base": false
+ },
+ {
+  "name": "亞洲大學",
+  "town": "Wufeng District",
+  "zh_town": "",
+  "level": "university",
+  "name_base": "Asia University",
+  "slug": "asia-university",
+  "empty_base": false
+ },
+ {
+  "name": "弘光科技大學",
+  "town": "Shalu District",
+  "zh_town": "",
+  "level": "university",
+  "name_base": "Hungkuang University",
+  "slug": "hungkuang-university",
+  "empty_base": false
+ },
+ {
+  "name": "僑光科技大學",
+  "town": "Xitun District",
+  "zh_town": "",
+  "level": "university",
+  "name_base": "Overseas Chinese University",
+  "slug": "overseas-chinese-university",
+  "empty_base": false
+ },
+ {
+  "name": "嶺東科技大學",
+  "town": "Nantun District",
+  "zh_town": "",
+  "level": "university",
+  "name_base": "Ling Tung University",
+  "slug": "ling-tung-university",
+  "empty_base": false
+ },
+ {
+  "name": "中臺科技大學",
+  "town": "Beitun District",
+  "zh_town": "",
+  "level": "university",
+  "name_base": "Central Taiwan University of Science and Technology",
+  "slug": "central-taiwan-university-of-science-and-technology",
+  "empty_base": false
+ },
+ {
+  "name": "修平科技大學",
+  "town": "Dali District",
+  "zh_town": "",
+  "level": "university",
+  "name_base": "Hsiuping University of Science and Technology",
+  "slug": "hsiuping-university-of-science-and-technology",
+  "empty_base": false
+ },
+ {
+  "name": "國立臺中科技大學",
+  "town": "Bei District",
+  "zh_town": "",
+  "level": "university",
+  "name_base": "National Taichung University of Science and Technology",
+  "slug": "national-taichung-university-of-science-and-technology",
+  "empty_base": false
+ }
+]

@@ -1,0 +1,23 @@
+=== Batch12 ===
+- slug: diyi-hs | 臺中市立臺中第一高級中等學校 | Bei District 北區 | level: senior-high
+- slug: dier-hs | 臺中市立臺中第二高級中等學校 | Bei District 北區 | level: senior-high
+- slug: wuquan-jh | 五權國中 | Bei District 北區 | level: junior-high
+- slug: liren-jh | 立人國中 | Bei District 北區 | level: junior-high
+- slug: shuangshi-jh | 雙十國中 | Bei District 北區 | level: junior-high
+- slug: beiqu-zhonghua-es | 中華國小 | Bei District 北區 | level: elementary
+- slug: tc-jianxing-es | 健行國小 | Bei District 北區 | level: elementary
+- slug: beiqu-taiping-es | 太平國小 | Bei District 北區 | level: elementary
+- slug: shengsan-es | 省三國小 | Bei District 北區 | level: elementary
+- slug: tc-liren-es | 立人國小 | Bei District 北區 | level: elementary
+- slug: duxing-es | 篤行國小 | Bei District 北區 | level: elementary
+- slug: laicuo-es | 賴厝國小 | Bei District 北區 | level: elementary
+- slug: xingdafunong-vs | 國立中興大學附屬臺中高級農業職業學校 | Dong District 東區 | level: senior-high
+- slug: jiashishangye-vs | 臺中市立臺中家事商業高級中等學校 | Dong District 東區 | level: senior-high
+- slug: dongfeng-jh | 東峰國中 | Dong District 東區 | level: junior-high
+- slug: yuying-jh | 育英國中 | Dong District 東區 | level: junior-high
+- slug: tc-lixing-es | 力行國小 | Dong District 東區 | level: elementary
+- slug: tc-dazhi-es | 大智國小 | Dong District 東區 | level: elementary
+- slug: dong-chenggong-es | 成功國小 | Dong District 東區 | level: elementary
+- slug: leye-es | 樂業國小 | Dong District 東區 | level: elementary
+- slug: taizhong-es | 臺中國小 | Dong District 東區 | level: elementary
+- slug: jinde-es | 進德國小 | Dong District 東區 | level: elementary

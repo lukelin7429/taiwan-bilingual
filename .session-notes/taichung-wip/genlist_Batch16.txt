@@ -1,0 +1,17 @@
+=== Batch16 ===
+- slug: tanzi-jh | 潭子國中 | Tanzi District 潭子區 | level: junior-high
+- slug: tanxiu-jh | 潭秀國中 | Tanzi District 潭子區 | level: junior-high
+- slug: qiaozhong-es | 僑忠國小 | Tanzi District 潭子區 | level: elementary
+- slug: tanzi-xinxing-es | 新興國小 | Tanzi District 潭子區 | level: elementary
+- slug: dongbao-es | 東寶國小 | Tanzi District 潭子區 | level: elementary
+- slug: tanzi-es | 潭子國小 | Tanzi District 潭子區 | level: elementary
+- slug: tanyang-es | 潭陽國小 | Tanzi District 潭子區 | level: elementary
+- slug: toujia-es | 頭家國小 | Tanzi District 潭子區 | level: elementary
+- slug: dadao-jh | 大道國中 | Dadu District 大肚區 | level: junior-high
+- slug: tc-dazhong-es | 大忠國小 | Dadu District 大肚區 | level: elementary
+- slug: tc-dadu-es | 大肚國小 | Dadu District 大肚區 | level: elementary
+- slug: shanyang-es | 山陽國小 | Dadu District 大肚區 | level: elementary
+- slug: tc-yongshun-es | 永順國小 | Dadu District 大肚區 | level: elementary
+- slug: ruijing-es | 瑞井國小 | Dadu District 大肚區 | level: elementary
+- slug: tc-ruifeng-es | 瑞峰國小 | Dadu District 大肚區 | level: elementary
+- slug: zhuifen-es | 追分國小 | Dadu District 大肚區 | level: elementary

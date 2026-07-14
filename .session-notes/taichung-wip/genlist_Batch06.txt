@@ -1,0 +1,23 @@
+=== Batch06 ===
+- slug: fengyuanshangye-hs | 臺中市立豐原商業高級中等學校 | Fengyuan District 豐原區 | level: senior-high
+- slug: fengyuan-hs | 臺中市立豐原高級中等學校 | Fengyuan District 豐原區 | level: senior-high
+- slug: fengnan-jh | 豐南國中 | Fengyuan District 豐原區 | level: junior-high
+- slug: fengyuan-jh | 豐原國中 | Fengyuan District 豐原區 | level: junior-high
+- slug: fengdong-jh | 豐東國中 | Fengyuan District 豐原區 | level: junior-high
+- slug: fengyang-jh | 豐陽國中 | Fengyuan District 豐原區 | level: junior-high
+- slug: nanyang-es | 南陽國小 | Fengyuan District 豐原區 | level: elementary
+- slug: hezuo-es | 合作國小 | Fengyuan District 豐原區 | level: elementary
+- slug: fuchun-es | 富春國小 | Fengyuan District 豐原區 | level: elementary
+- slug: tc-ruisui-es | 瑞穗國小 | Fengyuan District 豐原區 | level: elementary
+- slug: fuyang-es | 福陽國小 | Fengyuan District 豐原區 | level: elementary
+- slug: wengzi-es | 翁子國小 | Fengyuan District 豐原區 | level: elementary
+- slug: huludun-es | 葫蘆墩國小 | Fengyuan District 豐原區 | level: elementary
+- slug: tc-fengyuan-es | 豐原國小 | Fengyuan District 豐原區 | level: elementary
+- slug: fengcun-es | 豐村國小 | Fengyuan District 豐原區 | level: elementary
+- slug: tc-fengtian-es | 豐田國小 | Fengyuan District 豐原區 | level: elementary
+- slug: shengang-hs | 臺中市立神岡高級工業職業學校 | Shengang District 神岡區 | level: senior-high
+- slug: shenzhen-jh | 神圳國中 | Shengang District 神岡區 | level: junior-high
+- slug: zhendu-es | 圳堵國小 | Shengang District 神岡區 | level: elementary
+- slug: anli-es | 岸裡國小 | Shengang District 神岡區 | level: elementary
+- slug: tc-shekou-es | 社口國小 | Shengang District 神岡區 | level: elementary
+- slug: shengang-es | 神岡國小 | Shengang District 神岡區 | level: elementary

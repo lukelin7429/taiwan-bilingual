@@ -1,0 +1,22 @@
+=== Batch03 ===
+- slug: wenhua-hs | 臺中市立文華高級中等學校 | Xitun District 西屯區 | level: senior-high
+- slug: xiyuan-hs | 臺中市立西苑高級中學 | Xitun District 西屯區 | level: senior-high
+- slug: tc-zhongshan-jh | 中山國中 | Xitun District 西屯區 | level: junior-high
+- slug: anhe-jh | 安和國中 | Xitun District 西屯區 | level: junior-high
+- slug: hankou-jh | 漢口國中 | Xitun District 西屯區 | level: junior-high
+- slug: fuke-jh | 福科國中 | Xitun District 西屯區 | level: junior-high
+- slug: tc-zhishan-jh | 至善國中 | Xitun District 西屯區 | level: junior-high
+- slug: shangan-es | 上安國小 | Xitun District 西屯區 | level: elementary
+- slug: shangshi-es | 上石國小 | Xitun District 西屯區 | level: elementary
+- slug: hecuo-es | 何厝國小 | Xitun District 西屯區 | level: elementary
+- slug: xiehe-es | 協和國小 | Xitun District 西屯區 | level: elementary
+- slug: guoan-es | 國安國小 | Xitun District 西屯區 | level: elementary
+- slug: daren-es | 大仁國小 | Xitun District 西屯區 | level: elementary
+- slug: tc-dapeng-es | 大鵬國小 | Xitun District 西屯區 | level: elementary
+- slug: huilai-es | 惠來國小 | Xitun District 西屯區 | level: elementary
+- slug: tc-donghai-es | 東海國小 | Xitun District 西屯區 | level: elementary
+- slug: xitun-yongan-es | 永安國小 | Xitun District 西屯區 | level: elementary
+- slug: xitun-taian-es | 泰安國小 | Xitun District 西屯區 | level: elementary
+- slug: xitun-es | 西屯國小 | Xitun District 西屯區 | level: elementary
+- slug: tc-chongqing-es | 重慶國小 | Xitun District 西屯區 | level: elementary
+- slug: tc-changan-es | 長安國小 | Xitun District 西屯區 | level: elementary

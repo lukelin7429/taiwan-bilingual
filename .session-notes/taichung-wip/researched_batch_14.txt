@@ -1,0 +1,175 @@
+### 臺中市立忠明高級中學
+- URL: https://cmsh.tc.edu.tw/
+- Founded: ROC 46 / Western 1957
+- Facts: Originally "Taichung Municipal Third Junior Middle School"; became a complete secondary school in 2000, current name 2001; located near the National Taiwan Museum of Fine Arts area.
+- Culture connection: Its evolution from a 1950s junior middle school into one of West District's flagship complete high schools tracks Taichung's postwar expansion of secondary education in the city center.
+- Address: 臺中市西區博館路166號
+- Level: SH (complete JH+SH)
+
+### 臺中市立臺中女子高級中等學校
+- URL: https://tcgs.tc.edu.tw/
+- Founded: Western 1919 (founded April 1, 1919 as "公立臺中高等女學校")
+- Facts: One of central Taiwan's most historic and prestigious girls' schools; ~54 classes; offers science-gifted, creative-science-experimental, and humanities/social-science gifted tracks.
+- Culture connection: As the region's oldest girls' secondary school, "臺中女中" is a cornerstone of West District's identity as Taichung's historic educational and cultural core, alongside 臺中一中.
+- Address: 臺中市西區自由路一段95號
+- Level: SH
+
+### 光明國中
+- URL: https://kmjh.tc.edu.tw/
+- Founded: ROC 57 / Western 1968 (as "台中市立第九國民中學")
+- Facts: Originally built beside Datong Elementary; renamed "光明" in 1972; relocated in 1996–1997 due to overcrowding.
+- Culture connection: Its 1997 relocation reflects West District's mid-1990s urban redevelopment as older, cramped inner-city school sites gave way to larger modern campuses.
+- Address: 臺中市西區自由路一段75號
+- Level: JH
+
+### 向上國中
+- URL: https://hsjh.tc.edu.tw/
+- Founded: ROC 57 / Western 1968 (as "臺中市第十國民中學"; renamed 向上 1971)
+- Facts: Construction began April 1968; opened to first students September 1968; located near the National Taiwan Museum of Fine Arts.
+- Culture connection: Located on 美村路, in the arts-and-culture corridor of West District that also hosts NTMoFA and Green Way.
+- Address: 臺中市西區美村路一段389號
+- Level: JH
+
+### 居仁國中
+- URL: https://cjjh.tc.edu.tw/
+- Founded: ROC 35 / Western 1946 (opened Sept 18, 1946 as "臺中市立初級中學")
+- Facts: Used part of the former Japanese-era Meiji School (now Datong Elementary) as its first campus; briefly ran a senior-high division (1949); became "臺中市立第一中學" in 1957 before its 1971 renaming.
+- Culture connection: Its founding on the grounds of a Japanese-era school building directly links it to the layered colonial-to-postwar educational history of central West District.
+- Address: 臺中市西區自由路一段97號
+- Level: JH
+
+### 中正國小
+- URL: https://cces.tc.edu.tw/
+- Founded: ROC 57 / Western 1968
+- Facts: School buildings completed and occupied from February 1970; a same-named but unrelated school also exists in Wuqi District.
+- Culture connection: Named for Chiang Kai-shek era commemorative naming conventions common to schools founded in Taiwan's post-war 1960s expansion of compulsory education.
+- Address: 臺中市西區英才路423號
+- Level: ES
+
+### 大勇國小
+- URL: https://dyes.tc.edu.tw/
+- Founded: ROC 81 / Western 1992
+- Facts: Established to relieve overcrowding at nearby 忠孝國小 and 和平國小; adjacent to Chonglun Park and the National Taiwan Museum of Fine Arts.
+- Culture connection: Its founding purpose — easing pressure on two much older West District elementary schools — reflects the district's steady residential growth through the late 20th century.
+- Address: 臺中市西區忠明南路515號
+- Level: ES
+
+### 大同國小
+- URL: https://dtes.tc.edu.tw/
+- Founded: Western 1899 (as "臺中小學校")
+- Facts: One of Taiwan's oldest schools; its front building was registered as a Taichung historic building in 2004 — the only elementary campus with such a designation locally.
+- Culture connection: As a 120+ year-old former "Meiji Elementary School," it is a living link to West District's identity as the administrative/educational heart of Japanese-era Taichū City.
+- Address: 臺中市西區自由路一段138號
+- Level: ES
+
+### 忠信國小
+- URL: https://zxes.tc.edu.tw/
+- Founded: ROC 44/1955 (branch of 忠孝國小); independent ROC 46/1957
+- Facts: Split off from 忠孝國小 as "忠信分班" before becoming independent; campus sits within West District's arts corridor.
+- Culture connection: Surrounded by NTMoFA, the historic Taichung Butokuden, Dadun Cultural Center, and the National Public Information Library.
+- Address: 臺中市西區林森路155號
+- Level: ES
+
+### 忠孝國小
+- URL: https://jses.tc.edu.tw/
+- Founded: Western 1896 (as "臺中國語傳習所")
+- Facts: The oldest existing elementary school in Taichung City; over a century of continuous operation.
+- Culture connection: As Taichung's oldest school (predating even Datong), it embodies the very start of modern Japanese-era education in what became West District.
+- Address: 臺中市西區三民路一段171號
+- Level: ES
+
+### 忠明國小
+- URL: https://zmes.tc.edu.tw/
+- Founded: ROC 42 / Western 1953 (as "台中市西區忠明國民學校")
+- Facts: The first elementary school established in Taichung after retrocession; on the Taiwan Boulevard BRT corridor (BRT stop bears its name).
+- Culture connection: Its postwar "first new school" status marks a symbolic milestone in West District's transition from Japanese colonial administration to Republic of China governance.
+- Address: 臺中市西區台灣大道二段556號
+- Level: ES
+
+### 光德國中
+- URL: https://gdjh.tc.edu.tw/
+- Founded: ROC 87 / Western 1998
+- Facts: One of Wuri's newer junior highs; name "光德" is a composite drawn from its multiple feeder villages.
+- Culture connection: Its name directly encodes the rural village geography of Wuri District that it was created to serve.
+- Address: 臺中市烏日區信義街99號
+- Level: JH
+
+### 溪南國中
+- URL: https://snjh.tc.edu.tw
+- Founded: ROC 67 / Western 1978
+- Facts: Name means "south of the [Dali] creek," describing its location.
+- Culture connection: Its name is a direct geographic reference to the Dali River, the waterway defining Wuri District's northern boundary.
+- Address: 臺中市烏日區溪南路一段731號
+- Level: JH
+
+### 烏日國中
+- URL: https://wjjh.tc.edu.tw/
+- Founded: ROC 55 / Western 1966
+- Facts: District covers five local communities — Wuri, Hu, Sanhe, Xuetian, Rongquan.
+- Culture connection: As Wuri District's namesake junior high, it anchors education in the district that today also hosts the Taichung HSR station.
+- Address: 臺中市烏日區新興路457號
+- Level: JH
+
+### 九德國小
+- URL: https://jdps.tc.edu.tw/
+- Founded: ROC 81 / Western 1992 (enrollment began 1993)
+- Facts: Bordered by Taichung EPA office, Wuri Train Station, Mingdao High School, Nantun District.
+- Culture connection: Its location straddling the Taichung–Changhua boundary reflects Wuri's historic role as the gateway/transit link between Taichung City and Changhua County.
+- Address: 臺中市烏日區長春街300號
+- Level: ES
+
+### 五光國小
+- URL: https://wges.tc.edu.tw
+- Founded: ROC 47 / Western 1958 (from merged 1957 branch classrooms)
+- Facts: Formed from the 1957 merger of two branch classrooms (五光 and 光明).
+- Culture connection: Its formation from merged village branch schools traces the incremental settlement pattern of small farming hamlets in western Wuri.
+- Address: 臺中市烏日區光明路40號
+- Level: ES
+
+### 僑仁國小
+- URL: https://cjes.tc.edu.tw/
+- Founded: Western 1961 (ROC 50)
+- Facts: Built using donations from overseas Chinese communities for reconstruction after the catastrophic August 7, 1959 flood — hence the "僑" in its name.
+- Culture connection: The school's very name commemorates the 1959 flood disaster relief effort, tying it directly to a defining historical event for the Wuri/Dali river basin area.
+- Address: 臺中市烏日區中山路一段341號
+- Level: ES
+
+### 喀哩國小
+- URL: https://kles.tc.edu.tw
+- Founded: ROC 7 / Western 1918
+- Facts: One of the oldest schools in Wuri District; campus known for its ancient protected heritage trees, nicknamed "thousand-year-old grandfathers."
+- Culture connection: "喀哩" preserves an old Indigenous/Taiwanese place name for the area.
+- Address: 臺中市烏日區溪南路二段370號
+- Level: ES
+
+### 旭光國小
+- URL: https://xkes.tc.edu.tw/
+- Founded: ROC 46 / Western 1957 (merged from 1954 branch classes)
+- Facts: Relocated in 2017 into a new campus within the Taichung HSR land-readjustment zone.
+- Culture connection: Its 2017 relocation into the HSR zone directly reflects Wuri's transformation since the 2006 opening of Taichung HSR Station.
+- Address: 臺中市烏日區健行路501號
+- Level: ES
+
+### 東園國小
+- URL: https://typs.tc.edu.tw/
+- Founded: unknown (not confirmed in available sources)
+- Facts: Located centrally in Wuri District, south of the Dali River and east of the Wu River.
+- Culture connection: Its position between the Dali and Wu rivers places it squarely within Wuri's core alluvial-plain farmland.
+- Address: 臺中市烏日區溪南路一段238巷198號
+- Level: ES
+
+### 溪尾國小
+- URL: https://cwps.tc.edu.tw/
+- Founded: ROC 43/1954 (independent; branch of 喀哩國小 from 1945)
+- Facts: The only elementary school in Wuri District situated on the south bank of the Wu River.
+- Culture connection: Its riverbank location on the south side of the Wu River makes it geographically distinct within Wuri.
+- Address: (exact street address unconfirmed, south bank of Wu River, Wuri District)
+- Level: ES
+
+### 烏日國小
+- URL: https://wres.tc.edu.tw
+- Founded: Western 1915 (as "犁頭店公學校烏日分校"; independent 1919 as "烏日公學校")
+- Facts: A century-old school; ~740 students, 30 regular classes plus 2 special-ed classes.
+- Culture connection: As the namesake elementary school of Wuri District, its century-plus history parallels Wuri's transformation from a rural crossroads village into a major transport hub anchored by the HSR station.
+- Address: 臺中市烏日區中山路二段196號
+- Level: ES

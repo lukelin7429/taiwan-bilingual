@@ -1,0 +1,23 @@
+=== Batch13 ===
+- slug: wufengnongyegongye-hs | 臺中市立霧峰農業工業高級中等學校 | Wufeng District 霧峰區 | level: senior-high
+- slug: tc-wufeng-jh | 霧峰國中 | Wufeng District 霧峰區 | level: junior-high
+- slug: tc-wufu-es | 五福國小 | Wufeng District 霧峰區 | level: elementary
+- slug: qiaorong-es | 僑榮國小 | Wufeng District 霧峰區 | level: elementary
+- slug: guangzheng-es | 光正國小 | Wufeng District 霧峰區 | level: elementary
+- slug: jifeng-es | 吉峰國小 | Wufeng District 霧峰區 | level: elementary
+- slug: side-es | 四德國小 | Wufeng District 霧峰區 | level: elementary
+- slug: fenggu-es | 峰谷國小 | Wufeng District 霧峰區 | level: elementary
+- slug: tc-fuxing-es | 復興國小 | Wufeng District 霧峰區 | level: elementary
+- slug: tc-tonglin-es | 桐林國小 | Wufeng District 霧峰區 | level: elementary
+- slug: wanfeng-es | 萬豐國小 | Wufeng District 霧峰區 | level: elementary
+- slug: tc-wufeng-es | 霧峰國小 | Wufeng District 霧峰區 | level: elementary
+- slug: dahua-jh | 大華國中 | Daya District 大雅區 | level: junior-high
+- slug: daya-jh | 大雅國中 | Daya District 大雅區 | level: junior-high
+- slug: tc-sanhe-es | 三和國小 | Daya District 大雅區 | level: elementary
+- slug: shangfeng-es | 上楓國小 | Daya District 大雅區 | level: elementary
+- slug: liubao-es | 六寶國小 | Daya District 大雅區 | level: elementary
+- slug: tc-daming-es | 大明國小 | Daya District 大雅區 | level: elementary
+- slug: daya-es | 大雅國小 | Daya District 大雅區 | level: elementary
+- slug: tc-wenya-es | 文雅國小 | Daya District 大雅區 | level: elementary
+- slug: ruliu-es | 汝鎏國小 | Daya District 大雅區 | level: elementary
+- slug: tc-yangming-es | 陽明國小 | Daya District 大雅區 | level: elementary

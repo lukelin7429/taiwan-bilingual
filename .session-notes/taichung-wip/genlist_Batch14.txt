@@ -1,0 +1,23 @@
+=== Batch14 ===
+- slug: zhongming-hs | 臺中市立忠明高級中學 | Xi District 西區 | level: senior-high
+- slug: nvzi-hs | 臺中市立臺中女子高級中等學校 | Xi District 西區 | level: senior-high
+- slug: tc-guangming-jh | 光明國中 | Xi District 西區 | level: junior-high
+- slug: xiangshang-jh | 向上國中 | Xi District 西區 | level: junior-high
+- slug: juren-jh | 居仁國中 | Xi District 西區 | level: junior-high
+- slug: xiqu-zhongzheng-es | 中正國小 | Xi District 西區 | level: elementary
+- slug: tc-dayong-es | 大勇國小 | Xi District 西區 | level: elementary
+- slug: tc-datong-es | 大同國小 | Xi District 西區 | level: elementary
+- slug: tc-zhongxin-es | 忠信國小 | Xi District 西區 | level: elementary
+- slug: tc-zhongxiao-es | 忠孝國小 | Xi District 西區 | level: elementary
+- slug: zhongming-es | 忠明國小 | Xi District 西區 | level: elementary
+- slug: guangde-jh | 光德國中 | Wuri District 烏日區 | level: junior-high
+- slug: xinan-jh | 溪南國中 | Wuri District 烏日區 | level: junior-high
+- slug: wuri-jh | 烏日國中 | Wuri District 烏日區 | level: junior-high
+- slug: jiude-es | 九德國小 | Wuri District 烏日區 | level: elementary
+- slug: wuguang-es | 五光國小 | Wuri District 烏日區 | level: elementary
+- slug: qiaoren-es | 僑仁國小 | Wuri District 烏日區 | level: elementary
+- slug: kali-es | 喀哩國小 | Wuri District 烏日區 | level: elementary
+- slug: xuguang-es | 旭光國小 | Wuri District 烏日區 | level: elementary
+- slug: tc-dongyuan-es | 東園國小 | Wuri District 烏日區 | level: elementary
+- slug: xiwei-es | 溪尾國小 | Wuri District 烏日區 | level: elementary
+- slug: wuri-es | 烏日國小 | Wuri District 烏日區 | level: elementary

@@ -1,0 +1,23 @@
+=== Batch09 ===
+- slug: dongshigongye-hs | 臺中市立東勢工業高級中等學校 | Dongshi District 東勢區 | level: senior-high
+- slug: tc-dongshi-jh | 東勢國中 | Dongshi District 東勢區 | level: junior-high
+- slug: tc-dongxin-jh | 東新國中 | Dongshi District 東勢區 | level: junior-high
+- slug: donghua-jh | 東華國中 | Dongshi District 東勢區 | level: junior-high
+- slug: tc-zhongshan-es | 中山國小 | Dongshi District 東勢區 | level: elementary
+- slug: zhongke-es | 中科國小 | Dongshi District 東勢區 | level: elementary
+- slug: dongshi-chenggong-es | 成功國小 | Dongshi District 東勢區 | level: elementary
+- slug: tc-xincheng-es | 新成國小 | Dongshi District 東勢區 | level: elementary
+- slug: tc-xinsheng-es | 新盛國小 | Dongshi District 東勢區 | level: elementary
+- slug: mingzheng-es | 明正國小 | Dongshi District 東勢區 | level: elementary
+- slug: tc-dongshi-es | 東勢國小 | Dongshi District 東勢區 | level: elementary
+- slug: tc-dongxin-es | 東新國小 | Dongshi District 東勢區 | level: elementary
+- slug: shicheng-es | 石城國小 | Dongshi District 東勢區 | level: elementary
+- slug: shijiao-es | 石角國小 | Dongshi District 東勢區 | level: elementary
+- slug: gongye-vs | 臺中市立臺中工業高級中等學校 | Nan District 南區 | level: senior-high
+- slug: siyu-jh | 四育國中 | Nan District 南區 | level: junior-high
+- slug: chonglun-jh | 崇倫國中 | Nan District 南區 | level: junior-high
+- slug: tc-xinyi-es | 信義國小 | Nan District 南區 | level: elementary
+- slug: nan-heping-es | 和平國小 | Nan District 南區 | level: elementary
+- slug: tc-guoguang-es | 國光國小 | Nan District 南區 | level: elementary
+- slug: shude-es | 樹德國小 | Nan District 南區 | level: elementary
+- slug: shuyi-es | 樹義國小 | Nan District 南區 | level: elementary

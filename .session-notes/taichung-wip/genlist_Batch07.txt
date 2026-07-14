@@ -1,0 +1,23 @@
+=== Batch07 ===
+- slug: huiwen-hs | 臺中市立惠文高級中學 | Nantun District 南屯區 | level: senior-high
+- slug: dadun-jh | 大墩國中 | Nantun District 南屯區 | level: junior-high
+- slug: tc-daye-jh | 大業國中 | Nantun District 南屯區 | level: junior-high
+- slug: wanhe-jh | 萬和國中 | Nantun District 南屯區 | level: junior-high
+- slug: liming-jh | 黎明國中 | Nantun District 南屯區 | level: junior-high
+- slug: nantun-es | 南屯國小 | Nantun District 南屯區 | level: elementary
+- slug: dadun-es | 大墩國小 | Nantun District 南屯區 | level: elementary
+- slug: tc-daxin-es | 大新國小 | Nantun District 南屯區 | level: elementary
+- slug: huiwen-es | 惠文國小 | Nantun District 南屯區 | level: elementary
+- slug: tc-wenshan-es | 文山國小 | Nantun District 南屯區 | level: elementary
+- slug: chunan-es | 春安國小 | Nantun District 南屯區 | level: elementary
+- slug: nantun-dongxing-es | 東興國小 | Nantun District 南屯區 | level: elementary
+- slug: yongchun-es | 永春國小 | Nantun District 南屯區 | level: elementary
+- slug: zhenping-es | 鎮平國小 | Nantun District 南屯區 | level: elementary
+- slug: tc-liming-es | 黎明國小 | Nantun District 南屯區 | level: elementary
+- slug: waipu-jh | 外埔國中 | Waipu District 外埔區 | level: junior-high
+- slug: tc-waipu-es | 外埔國小 | Waipu District 外埔區 | level: elementary
+- slug: tc-anding-es | 安定國小 | Waipu District 外埔區 | level: elementary
+- slug: tc-shuimei-es | 水美國小 | Waipu District 外埔區 | level: elementary
+- slug: tieshan-es | 鐵山國小 | Waipu District 外埔區 | level: elementary
+- slug: maming-es | 馬鳴國小 | Waipu District 外埔區 | level: elementary
+- slug: tc-guangfu-es | 光復國小 | Zhong District 中區 | level: elementary

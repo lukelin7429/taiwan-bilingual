@@ -1,0 +1,131 @@
+## Tanzi District 潭子區
+
+### 潭子國中
+- URL: https://ttjhs.tc.edu.tw/
+- Founded: ROC 57 / Western 1968
+- Facts: Located about 600m from Tanzi Train Station; added a supplementary (night) junior-high program in 1973.
+- Culture connection: Sits astride the rail corridor linking Taichung and Fengyuan, reflecting Tanzi's historic role as a transit town.
+- Address: 臺中市潭子區潭興路二段419巷1號
+- Level: JH
+
+### 潭秀國中
+- URL: https://tsjhs.tc.edu.tw/
+- Founded: ROC 81 / Western 1992
+- Facts: Created to relieve overcrowding at Tanzi Jr. High as the district industrialized; hosted the 1993 Taiwan Region Middle School Athletic Meet.
+- Culture connection: Founded specifically because children were crossing the rail line and highway that cut through Tanzi to reach school.
+- Address: 臺中市潭子區雅潭路一段175號
+- Level: JH
+
+### 僑忠國小
+- URL: https://czes.tc.edu.tw/
+- Founded: ROC 39 / Western 1950
+- Facts: One of 31 schools nationwide built with overseas-Chinese donations after the 1959 "8/7 Flood" relief fund — hence the "僑" in its name.
+- Culture connection: Its very name commemorates a wave of overseas Chinese charity that rebuilt flood-stricken schools across central and southern Taiwan.
+- Address: 臺中市潭子區中山路2段31號
+- Level: ES
+
+### 新興國小
+- URL: https://hhes.tc.edu.tw/
+- Founded: ROC 43 / Western 1954
+- Facts: Sole elementary school serving the Juxing and Xintian neighborhoods; celebrated its 70th anniversary.
+- Culture connection: Functions as the single neighborhood school for two small agricultural hamlets, typical of Tanzi's village-cluster settlement pattern.
+- Address: 臺中市潭子區潭興路一段25號
+- Level: ES
+
+### 東寶國小
+- URL: https://tbes.tc.edu.tw/
+- Founded: 1945 (branch; independent 1946)
+- Facts: Renamed several times (東員寶→東寶).
+- Culture connection: Named after the old Qing-era village 員寶莊, local legend holding that round river stones used for house foundations here were considered "treasures."
+- Address: 臺中市潭子區雅潭路三段2號
+- Level: ES
+
+### 潭子國小
+- URL: https://tzps.tc.edu.tw
+- Founded: 1909 (as "Hulunton Public School Tanzikou Branch")
+- Facts: Over a century old; its Japanese-style school building is a registered Taichung historic building.
+- Culture connection: The district's oldest school, its preserved Japanese-era schoolhouse is a physical link to Tanzi's early 20th-century agricultural settlement.
+- Address: 臺中市潭子區中山路二段435號
+- Level: ES
+
+### 潭陽國小
+- URL: https://tyes.tc.edu.tw/
+- Founded: ROC 80 / Western 1991
+- Facts: Opened with 546 students, now ~1,317 students.
+- Culture connection: Built in 1991 to absorb Tanzi's rapid suburban population growth as Taichung's urban sprawl reached the district.
+- Address: 臺中市潭子區潭陽路19號
+- Level: ES
+
+### 頭家國小
+- URL: https://tjes.tc.edu.tw/
+- Founded: ROC 88 / Western 1999
+- Facts: Built specifically because new apartment towers in the 僑忠國小 zone caused a student-number spike; strong swimming and martial-arts teams.
+- Culture connection: Its creation traces Tanzi's shift from farmland to high-density residential development in the 1990s.
+- Address: 臺中市潭子區得福街185號
+- Level: ES
+
+## Dadu District 大肚區
+
+### 大道國中
+- URL: https://ddjhs.tc.edu.tw/
+- Founded: ROC 51 / Western 1962 (branch of Shalu Jr. High from 1961)
+- Facts: The only public junior high in Dadu District; name drawn from the Confucian classic Book of Rites.
+- Culture connection: Its name plays on Dadu's own place-name (大肚→大度→大道), reframing the district's identity through a Confucian ideal.
+- Address: 臺中市大肚區大東里仁德路60號
+- Level: JH
+
+### 大忠國小
+- URL: https://dcps.tc.edu.tw/
+- Founded: ROC 60 / Western 1971 (branch of 追分國小); independent ROC 72/1983
+- Facts: Located in the 社腳里 hamlet.
+- Culture connection: Its slow path from branch school to independent institution mirrors the gradual settlement pattern of Dadu Plateau farming hamlets.
+- Address: 臺中市大肚區沙田路一段854巷24號
+- Level: ES
+
+### 大肚國小
+- URL: https://ttes.tc.edu.tw/
+- Founded: 1899 (first held classes at the Huangxi Academy's Wenchang shrine)
+- Facts: District's oldest school; designated a "Leadership Lighthouse School"; relocated twice before settling on donated land in 1938.
+- Culture connection: Founded literally inside 磺溪書院 (Huangxi Academy), a Qing-dynasty Confucian academy, directly continuing Dadu's 19th-century literati educational tradition.
+- Address: 臺中市大肚區華山路77號
+- Level: ES
+
+### 山陽國小
+- URL: https://syps.tc.edu.tw/
+- Founded: ROC 89 / Western 2000
+- Facts: One of the district's youngest schools; small, purpose-built campus.
+- Culture connection: Located in 山陽里, a hillside neighborhood on the Dadu Plateau, reflecting the upland geography distinct from the district's coastal-plain villages.
+- Address: 臺中市大肚區山陽里榮華街630號
+- Level: ES
+
+### 永順國小
+- URL: https://yses.tc.edu.tw/
+- Founded: ROC 55 / Western 1966 (branch from 1959)
+- Facts: Serves the 永順、磺溪、成功 village cluster.
+- Culture connection: Sits at the geographic transition where the southwestern end of the Dadu Plateau meets the Qingshui raised coastal plain.
+- Address: 臺中市大肚區永順里文昌路二段586號
+- Level: ES
+
+### 瑞井國小
+- URL: https://rjps.tc.edu.tw/
+- Founded: ROC 90 / Western 2001 (enrollment began 2005)
+- Facts: Split off from 瑞峰國小 as Taichung Industrial Park, Taiwan Boulevard, Tunghai University, Veterans General Hospital, and Taichung Harbor development drove local population growth.
+- Culture connection: Its founding directly tracks Dadu's transformation from farm village to industrial/port-linked Taichung suburb.
+- Address: 臺中市大肚區瑞井里華山路680號
+- Level: ES
+
+### 瑞峰國小
+- URL: https://rfes.tc.edu.tw/
+- Founded: ROC 55 / Western 1966 (branch); independent ROC 56/1967
+- Facts: Founded so Ruijing and Zhegao village children wouldn't have to trek to Longjing's Longfeng Elementary; first classroom was literally a borrowed cattle shed.
+- Culture connection: A grassroots community-building story emblematic of small Dadu Plateau hamlets, where local gentry personally funded and housed the school before any building existed.
+- Address: 臺中市大肚區太平路1號
+- Level: ES
+
+### 追分國小
+- URL: https://cfps.tc.edu.tw/
+- Founded: 1919 (as 社腳分教場; renamed 追分公學校 1926)
+- Facts: Over 90 years of history; wind band placed first in the Taiwan Music Competition preliminary round.
+- Culture connection: Its name "追分" is Japanese for "fork/junction," referencing adjacent Zhuifen Station — the historic junction of the Taiwan Railway's mountain and coastal lines, source of the famous "Zhuifen-to-Chenggong" (追分成功, "chase then succeed") lucky ticket pairing.
+- Address: 臺中市大肚區沙田路一段364號
+- Level: ES
