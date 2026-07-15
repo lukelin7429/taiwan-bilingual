@@ -1,0 +1,18 @@
+=== Batch02 ===
+- slug: nancheng-es | 南成國小 | Fongshan District 鳳山區 | level: elementary
+- slug: dadong-es | 大東國小 | Fongshan District 鳳山區 | level: elementary
+- slug: fengshan-zhongxiao-es | 忠孝國小 | Fongshan District 鳳山區 | level: elementary
+- slug: ks-wenshan-es | 文山國小 | Fongshan District 鳳山區 | level: elementary
+- slug: ks-wende-es | 文德國小 | Fongshan District 鳳山區 | level: elementary
+- slug: ks-wenhua-es | 文華國小 | Fongshan District 鳳山區 | level: elementary
+- slug: ks-xinjia-es | 新甲國小 | Fongshan District 鳳山區 | level: elementary
+- slug: caogong-es | 曹公國小 | Fongshan District 鳳山區 | level: elementary
+- slug: ks-zhengyi-es | 正義國小 | Fongshan District 鳳山區 | level: elementary
+- slug: ks-ruixing-es | 瑞興國小 | Fongshan District 鳳山區 | level: elementary
+- slug: fucheng-es | 福誠國小 | Fongshan District 鳳山區 | level: elementary
+- slug: chengzheng-es | 誠正國小 | Fongshan District 鳳山區 | level: elementary
+- slug: guopi-es | 過埤國小 | Fongshan District 鳳山區 | level: elementary
+- slug: zhenbei-es | 鎮北國小 | Fongshan District 鳳山區 | level: elementary
+- slug: ks-fengshan-es | 鳳山國小 | Fongshan District 鳳山區 | level: elementary
+- slug: fengxiang-es | 鳳翔國小 | Fongshan District 鳳山區 | level: elementary
+- slug: fengxi-es | 鳳西國小 | Fongshan District 鳳山區 | level: elementary

@@ -1,0 +1,22 @@
+=== Batch11 ===
+- slug: qishan-vs | 國立旗山高級農工職業學校 | Cishan District 旗山區 | level: senior-high
+- slug: qimei-hs | 國立旗美高級中學 | Cishan District 旗山區 | level: senior-high
+- slug: yuanfu-jh | 圓富國民中學 | Cishan District 旗山區 | level: junior-high
+- slug: dazhou-jh | 大洲國民中學 | Cishan District 旗山區 | level: junior-high
+- slug: qishan-jh | 旗山國民中學 | Cishan District 旗山區 | level: junior-high
+- slug: yuantan-es | 圓潭國小 | Cishan District 旗山區 | level: elementary
+- slug: lingkou-es | 嶺口國小 | Cishan District 旗山區 | level: elementary
+- slug: qiwei-es | 旗尾國小 | Cishan District 旗山區 | level: elementary
+- slug: qishan-es | 旗山國小 | Cishan District 旗山區 | level: elementary
+- slug: ks-xizhou-es | 溪洲國小 | Cishan District 旗山區 | level: elementary
+- slug: qishan-gushan-es | 鼓山國小 | Cishan District 旗山區 | level: elementary
+- slug: zhongzhenggaozhong-hs | 中正高中 | Lingya District 苓雅區 | level: senior-high
+- slug: nknu-fushu-hs | 國立高雄師範大學附屬高級中學 | Lingya District 苓雅區 | level: senior-high
+- slug: daren-jh | 大仁國中 | Lingya District 苓雅區 | level: junior-high
+- slug: lingya-jh | 苓雅國中 | Lingya District 苓雅區 | level: junior-high
+- slug: lingya-zhongzheng-es | 中正國小 | Lingya District 苓雅區 | level: elementary
+- slug: wuquan-es | 五權國小 | Lingya District 苓雅區 | level: elementary
+- slug: ks-siwei-es | 四維國小 | Lingya District 苓雅區 | level: elementary
+- slug: lingya-chenggong-es | 成功國小 | Lingya District 苓雅區 | level: elementary
+- slug: fudong-es | 福東國小 | Lingya District 苓雅區 | level: elementary
+- slug: lingzhou-es | 苓洲國小 | Lingya District 苓雅區 | level: elementary

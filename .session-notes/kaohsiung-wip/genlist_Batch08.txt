@@ -1,0 +1,14 @@
+=== Batch08 ===
+- slug: gangshan-hs | 國立岡山高級中學 | Gangshan District 岡山區 | level: senior-high
+- slug: gangshan-vs | 國立岡山高級農工職業學校 | Gangshan District 岡山區 | level: senior-high
+- slug: qianfeng-jh | 前峰國民中學 | Gangshan District 岡山區 | level: junior-high
+- slug: ks-jiaxing-jh | 嘉興國民中學 | Gangshan District 岡山區 | level: junior-high
+- slug: gangshan-jh | 岡山國民中學 | Gangshan District 岡山區 | level: junior-high
+- slug: zhaoxiang-es | 兆湘國小 | Gangshan District 岡山區 | level: elementary
+- slug: qianfeng-es | 前峰國小 | Gangshan District 岡山區 | level: elementary
+- slug: ks-heping-es | 和平國小 | Gangshan District 岡山區 | level: elementary
+- slug: ks-jiaxing-es | 嘉興國小 | Gangshan District 岡山區 | level: elementary
+- slug: shoutian-es | 壽天國小 | Gangshan District 岡山區 | level: elementary
+- slug: gangshan-es | 岡山國小 | Gangshan District 岡山區 | level: elementary
+- slug: houhong-es | 後紅國小 | Gangshan District 岡山區 | level: elementary
+- slug: ks-zhuwei-es | 竹圍國小 | Gangshan District 岡山區 | level: elementary

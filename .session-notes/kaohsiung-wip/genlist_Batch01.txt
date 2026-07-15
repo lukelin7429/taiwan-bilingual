@@ -1,0 +1,18 @@
+=== Batch01 ===
+- slug: fengshan-hs | 國立鳳山高級中學 | Fongshan District 鳳山區 | level: senior-high
+- slug: fengshan-vs | 國立鳳山高級商工職業學校 | Fongshan District 鳳山區 | level: senior-high
+- slug: fengxin-hs | 國立鳳新高級中學 | Fongshan District 鳳山區 | level: senior-high
+- slug: fucheng-hs | 高雄市立福誠高級中學 | Fongshan District 鳳山區 | level: senior-high
+- slug: zhonglun-jh | 中崙國民中學 | Fongshan District 鳳山區 | level: junior-high
+- slug: wujia-jh | 五甲國民中學 | Fongshan District 鳳山區 | level: junior-high
+- slug: ks-zhongxiao-jh | 忠孝國民中學 | Fongshan District 鳳山區 | level: junior-high
+- slug: qingnian-jh | 青年國民中學 | Fongshan District 鳳山區 | level: junior-high
+- slug: fengshan-jh | 鳳山國民中學 | Fongshan District 鳳山區 | level: junior-high
+- slug: fengjia-jh | 鳳甲國民中學 | Fongshan District 鳳山區 | level: junior-high
+- slug: fengxiang-jh | 鳳翔國民中學 | Fongshan District 鳳山區 | level: junior-high
+- slug: fengxi-jh | 鳳西國民中學 | Fongshan District 鳳山區 | level: junior-high
+- slug: fengshan-zhongshan-es | 中山國小 | Fongshan District 鳳山區 | level: elementary
+- slug: zhonglun-es | 中崙國小 | Fongshan District 鳳山區 | level: elementary
+- slug: fengshan-zhongzheng-es | 中正國小 | Fongshan District 鳳山區 | level: elementary
+- slug: ks-wujia-es | 五甲國小 | Fongshan District 鳳山區 | level: elementary
+- slug: ks-wufu-es | 五福國小 | Fongshan District 鳳山區 | level: elementary

@@ -1,0 +1,20 @@
+=== Batch18 ===
+- slug: ks-yongan-jh | 永安國民中學 | Yong'an District 永安區 | level: junior-high
+- slug: ks-xingang-es | 新港國小 | Yong'an District 永安區 | level: elementary
+- slug: ks-yongan-es | 永安國小 | Yong'an District 永安區 | level: elementary
+- slug: weixin-es | 維新國小 | Yong'an District 永安區 | level: elementary
+- slug: qijin-jh | 旗津國中 | Cijin District 旗津區 | level: junior-high
+- slug: ks-zhongzhou-es | 中洲國小 | Cijin District 旗津區 | level: elementary
+- slug: qijin-es | 旗津國小 | Cijin District 旗津區 | level: elementary
+- slug: tianliao-jh | 田寮國民中學 | Tianliao District 田寮區 | level: junior-high
+- slug: ks-chongde-es | 崇德國小 | Tianliao District 田寮區 | level: elementary
+- slug: tianliao-xinxing-es | 新興國小 | Tianliao District 田寮區 | level: elementary
+- slug: jiaxian-jh | 甲仙國民中學 | Jiasian District 甲仙區 | level: junior-high
+- slug: xiaolin-es | 小林國小 | Jiasian District 甲仙區 | level: elementary
+- slug: jiaxian-es | 甲仙國小 | Jiasian District 甲仙區 | level: elementary
+- slug: namaxia-jh | 那瑪夏國民中學 | Namasia District 那瑪夏區 | level: junior-high
+- slug: namaxia-minquan-es | 民權國小 | Namasia District 那瑪夏區 | level: elementary
+- slug: ks-minsheng-es | 民生國小 | Namasia District 那瑪夏區 | level: elementary
+- slug: maolin-jh | 茂林國民中學 | Maolin District 茂林區 | level: junior-high
+- slug: duona-es | 多納國小 | Maolin District 茂林區 | level: elementary
+- slug: maolin-es | 茂林國小 | Maolin District 茂林區 | level: elementary

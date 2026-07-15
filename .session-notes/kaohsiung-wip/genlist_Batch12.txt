@@ -1,0 +1,21 @@
+=== Batch12 ===
+- slug: luzhu-hs | 高雄市立路竹高級中學 | Lujhu District 路竹區 | level: senior-high
+- slug: yijia-jh | 一甲國民中學 | Lujhu District 路竹區 | level: junior-high
+- slug: yijia-es | 一甲國小 | Lujhu District 路竹區 | level: elementary
+- slug: sanpi-es | 三埤國小 | Lujhu District 路竹區 | level: elementary
+- slug: xiakeng-es | 下坑國小 | Lujhu District 路竹區 | level: elementary
+- slug: beiling-es | 北嶺國小 | Lujhu District 路竹區 | level: elementary
+- slug: luzhu-dashe-es | 大社國小 | Lujhu District 路竹區 | level: elementary
+- slug: ks-zhuhu-es | 竹滬國小 | Lujhu District 路竹區 | level: elementary
+- slug: caiwen-es | 蔡文國小 | Lujhu District 路竹區 | level: elementary
+- slug: ks-luzhu-es | 路竹國小 | Lujhu District 路竹區 | level: elementary
+- slug: dashu-jh | 大樹國民中學 | Dashu District 大樹區 | level: junior-high
+- slug: xipu-jh | 溪埔國民中學 | Dashu District 大樹區 | level: junior-high
+- slug: jiuqu-es | 九曲國小 | Dashu District 大樹區 | level: elementary
+- slug: dashu-es | 大樹國小 | Dashu District 大樹區 | level: elementary
+- slug: dashu-gushan-es | 姑山國小 | Dashu District 大樹區 | level: elementary
+- slug: xiaoping-es | 小坪國小 | Dashu District 大樹區 | level: elementary
+- slug: shuiliao-es | 水寮國小 | Dashu District 大樹區 | level: elementary
+- slug: xipu-es | 溪埔國小 | Dashu District 大樹區 | level: elementary
+- slug: xingtian-es | 興田國小 | Dashu District 大樹區 | level: elementary
+- slug: longmu-es | 龍目國小 | Dashu District 大樹區 | level: elementary

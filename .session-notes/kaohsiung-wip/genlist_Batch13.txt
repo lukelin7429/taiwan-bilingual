@@ -1,0 +1,19 @@
+=== Batch13 ===
+- slug: linyuan-hs | 高雄市立林園高級中學 | Linyuan District 林園區 | level: senior-high
+- slug: zhongyun-jh | 中芸國民中學 | Linyuan District 林園區 | level: junior-high
+- slug: zhongyun-es | 中芸國小 | Linyuan District 林園區 | level: elementary
+- slug: guangying-es | 廣應國小 | Linyuan District 林園區 | level: elementary
+- slug: linyuan-es | 林園國小 | Linyuan District 林園區 | level: elementary
+- slug: shanwei-es | 汕尾國小 | Linyuan District 林園區 | level: elementary
+- slug: gangpu-es | 港埔國小 | Linyuan District 林園區 | level: elementary
+- slug: ks-wanggong-es | 王公國小 | Linyuan District 林園區 | level: elementary
+- slug: jintan-es | 金潭國小 | Linyuan District 林園區 | level: elementary
+- slug: liugui-hs | 高雄市立六龜高級中學 | Liouguei District 六龜區 | level: senior-high
+- slug: liougui-fushu-jh | 六龜高級中學附屬國民中學 | Liouguei District 六龜區 | level: junior-high
+- slug: baolai-jh | 寶來國民中學 | Liouguei District 六龜區 | level: junior-high
+- slug: liugui-es | 六龜國小 | Liouguei District 六龜區 | level: elementary
+- slug: baolai-es | 寶來國小 | Liouguei District 六龜區 | level: elementary
+- slug: ks-xinwei-es | 新威國小 | Liouguei District 六龜區 | level: elementary
+- slug: xinfa-es | 新發國小 | Liouguei District 六龜區 | level: elementary
+- slug: laonong-es | 荖濃國小 | Liouguei District 六龜區 | level: elementary
+- slug: ks-longxing-es | 龍興國小 | Liouguei District 六龜區 | level: elementary

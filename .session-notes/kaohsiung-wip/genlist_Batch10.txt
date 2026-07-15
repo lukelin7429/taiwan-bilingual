@@ -1,0 +1,24 @@
+=== Batch10 ===
+- slug: nanlong-jh | 南隆國民中學 | Meinong District 美濃區 | level: junior-high
+- slug: meinong-jh | 美濃國民中學 | Meinong District 美濃區 | level: junior-high
+- slug: longdu-jh | 龍肚國民中學 | Meinong District 美濃區 | level: junior-high
+- slug: zhongtan-es | 中壇國小 | Meinong District 美濃區 | level: elementary
+- slug: jidong-es | 吉東國小 | Meinong District 美濃區 | level: elementary
+- slug: jiyang-es | 吉洋國小 | Meinong District 美濃區 | level: elementary
+- slug: ks-guangxing-es | 廣興國小 | Meinong District 美濃區 | level: elementary
+- slug: ks-dongmen-es | 東門國小 | Meinong District 美濃區 | level: elementary
+- slug: meinong-fuan-es | 福安國小 | Meinong District 美濃區 | level: elementary
+- slug: meinong-es | 美濃國小 | Meinong District 美濃區 | level: elementary
+- slug: ks-longshan-es | 龍山國小 | Meinong District 美濃區 | level: elementary
+- slug: longdu-es | 龍肚國小 | Meinong District 美濃區 | level: elementary
+- slug: gushan-hs | 鼓山高級中學 | Gushan District 鼓山區 | level: senior-high
+- slug: qixian-jh | 七賢國中 | Gushan District 鼓山區 | level: junior-high
+- slug: shoushan-jh | 壽山國中 | Gushan District 鼓山區 | level: junior-high
+- slug: minghua-jh | 明華國中 | Gushan District 鼓山區 | level: junior-high
+- slug: gushan-zhongshan-es | 中山國小 | Gushan District 鼓山區 | level: elementary
+- slug: ks-jiuru-es | 九如國小 | Gushan District 鼓山區 | level: elementary
+- slug: neiwei-es | 內惟國小 | Gushan District 鼓山區 | level: elementary
+- slug: ks-shoushan-es | 壽山國小 | Gushan District 鼓山區 | level: elementary
+- slug: gushan-es | 鼓山國小 | Gushan District 鼓山區 | level: elementary
+- slug: guyan-es | 鼓岩國小 | Gushan District 鼓山區 | level: elementary
+- slug: longhua-es | 龍華國小 | Gushan District 鼓山區 | level: elementary

@@ -1,0 +1,20 @@
+=== Batch06 ===
+- slug: sanmin-vs | 高雄市立三民高級家事商業職業學校 | Zuoying District 左營區 | level: senior-high
+- slug: zuoying-hs | 高雄市立左營高級中學 | Zuoying District 左營區 | level: senior-high
+- slug: ks-xinzhuang-hs | 高雄市立新莊高級中學 | Zuoying District 左營區 | level: senior-high
+- slug: haiqing-vs | 高雄市立海青高級工商職業學校 | Zuoying District 左營區 | level: senior-high
+- slug: dayi-jh | 大義國中 | Zuoying District 左營區 | level: junior-high
+- slug: zuoying-jh | 左營國中 | Zuoying District 左營區 | level: junior-high
+- slug: wenfu-jh | 文府國中 | Zuoying District 左營區 | level: junior-high
+- slug: fushan-jh | 福山國中 | Zuoying District 左營區 | level: junior-high
+- slug: lide-jh | 立德國中 | Zuoying District 左營區 | level: junior-high
+- slug: longhua-jh | 龍華國中 | Zuoying District 左營區 | level: junior-high
+- slug: ks-shengli-es | 勝利國小 | Zuoying District 左營區 | level: elementary
+- slug: zuoying-es | 左營國小 | Zuoying District 左營區 | level: elementary
+- slug: wenfu-es | 文府國小 | Zuoying District 左營區 | level: elementary
+- slug: ks-xinguang-es | 新光國小 | Zuoying District 左營區 | level: elementary
+- slug: ks-xinmin-es | 新民國小 | Zuoying District 左營區 | level: elementary
+- slug: zuoying-xinzhuang-es | 新莊國小 | Zuoying District 左營區 | level: elementary
+- slug: ks-mingde-es | 明德國小 | Zuoying District 左營區 | level: elementary
+- slug: yongqing-es | 永清國小 | Zuoying District 左營區 | level: elementary
+- slug: ks-fushan-es | 福山國小 | Zuoying District 左營區 | level: elementary

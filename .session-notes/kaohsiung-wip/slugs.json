@@ -1,0 +1,2470 @@
+{
+  "rows": [
+    {
+      "township_en": "Sinsing District",
+      "township_zh": "新興區",
+      "name": "高雄市立新興高級中學",
+      "level": "senior-high",
+      "slug": "xinxing-hs"
+    },
+    {
+      "township_en": "Sinsing District",
+      "township_zh": "新興區",
+      "name": "高雄市立高雄高級商業職業學校",
+      "level": "senior-high",
+      "slug": "kaoshang-vs"
+    },
+    {
+      "township_en": "Sinsing District",
+      "township_zh": "新興區",
+      "name": "七賢國小",
+      "level": "elementary",
+      "slug": "qixian-es"
+    },
+    {
+      "township_en": "Sinsing District",
+      "township_zh": "新興區",
+      "name": "信義國小",
+      "level": "elementary",
+      "slug": "ks-xinyi-es"
+    },
+    {
+      "township_en": "Sinsing District",
+      "township_zh": "新興區",
+      "name": "大同國小",
+      "level": "elementary",
+      "slug": "ks-datong-es"
+    },
+    {
+      "township_en": "Sinsing District",
+      "township_zh": "新興區",
+      "name": "新興國小",
+      "level": "elementary",
+      "slug": "ks-xinxing-es"
+    },
+    {
+      "township_en": "Cianjin District",
+      "township_zh": "前金區",
+      "name": "高雄女中",
+      "level": "senior-high",
+      "slug": "gaoxiongnvzhong-hs"
+    },
+    {
+      "township_en": "Cianjin District",
+      "township_zh": "前金區",
+      "name": "前金國中",
+      "level": "junior-high",
+      "slug": "qianjin-jh"
+    },
+    {
+      "township_en": "Cianjin District",
+      "township_zh": "前金區",
+      "name": "前金國小",
+      "level": "elementary",
+      "slug": "ks-qianjin-es"
+    },
+    {
+      "township_en": "Cianjin District",
+      "township_zh": "前金區",
+      "name": "建國國小",
+      "level": "elementary",
+      "slug": "ks-jianguo-es"
+    },
+    {
+      "township_en": "Lingya District",
+      "township_zh": "苓雅區",
+      "name": "中正高中",
+      "level": "senior-high",
+      "slug": "zhongzhenggaozhong-hs"
+    },
+    {
+      "township_en": "Lingya District",
+      "township_zh": "苓雅區",
+      "name": "國立高雄師範大學附屬高級中學",
+      "level": "senior-high",
+      "slug": "nknu-fushu-hs"
+    },
+    {
+      "township_en": "Lingya District",
+      "township_zh": "苓雅區",
+      "name": "大仁國中",
+      "level": "junior-high",
+      "slug": "daren-jh"
+    },
+    {
+      "township_en": "Lingya District",
+      "township_zh": "苓雅區",
+      "name": "苓雅國中",
+      "level": "junior-high",
+      "slug": "lingya-jh"
+    },
+    {
+      "township_en": "Lingya District",
+      "township_zh": "苓雅區",
+      "name": "中正國小",
+      "level": "elementary",
+      "slug": "lingya-zhongzheng-es"
+    },
+    {
+      "township_en": "Lingya District",
+      "township_zh": "苓雅區",
+      "name": "五權國小",
+      "level": "elementary",
+      "slug": "wuquan-es"
+    },
+    {
+      "township_en": "Lingya District",
+      "township_zh": "苓雅區",
+      "name": "四維國小",
+      "level": "elementary",
+      "slug": "ks-siwei-es"
+    },
+    {
+      "township_en": "Lingya District",
+      "township_zh": "苓雅區",
+      "name": "成功國小",
+      "level": "elementary",
+      "slug": "lingya-chenggong-es"
+    },
+    {
+      "township_en": "Lingya District",
+      "township_zh": "苓雅區",
+      "name": "福東國小",
+      "level": "elementary",
+      "slug": "fudong-es"
+    },
+    {
+      "township_en": "Lingya District",
+      "township_zh": "苓雅區",
+      "name": "苓洲國小",
+      "level": "elementary",
+      "slug": "lingzhou-es"
+    },
+    {
+      "township_en": "Yancheng District",
+      "township_zh": "鹽埕區",
+      "name": "鹽埕國中",
+      "level": "junior-high",
+      "slug": "yancheng-jh"
+    },
+    {
+      "township_en": "Yancheng District",
+      "township_zh": "鹽埕區",
+      "name": "光榮國小",
+      "level": "elementary",
+      "slug": "ks-guangrong-es"
+    },
+    {
+      "township_en": "Yancheng District",
+      "township_zh": "鹽埕區",
+      "name": "忠孝國小",
+      "level": "elementary",
+      "slug": "yancheng-zhongxiao-es"
+    },
+    {
+      "township_en": "Yancheng District",
+      "township_zh": "鹽埕區",
+      "name": "鹽埕國小",
+      "level": "elementary",
+      "slug": "yancheng-es"
+    },
+    {
+      "township_en": "Gushan District",
+      "township_zh": "鼓山區",
+      "name": "鼓山高級中學",
+      "level": "senior-high",
+      "slug": "gushan-hs"
+    },
+    {
+      "township_en": "Gushan District",
+      "township_zh": "鼓山區",
+      "name": "七賢國中",
+      "level": "junior-high",
+      "slug": "qixian-jh"
+    },
+    {
+      "township_en": "Gushan District",
+      "township_zh": "鼓山區",
+      "name": "壽山國中",
+      "level": "junior-high",
+      "slug": "shoushan-jh"
+    },
+    {
+      "township_en": "Gushan District",
+      "township_zh": "鼓山區",
+      "name": "明華國中",
+      "level": "junior-high",
+      "slug": "minghua-jh"
+    },
+    {
+      "township_en": "Gushan District",
+      "township_zh": "鼓山區",
+      "name": "中山國小",
+      "level": "elementary",
+      "slug": "gushan-zhongshan-es"
+    },
+    {
+      "township_en": "Gushan District",
+      "township_zh": "鼓山區",
+      "name": "九如國小",
+      "level": "elementary",
+      "slug": "ks-jiuru-es"
+    },
+    {
+      "township_en": "Gushan District",
+      "township_zh": "鼓山區",
+      "name": "內惟國小",
+      "level": "elementary",
+      "slug": "neiwei-es"
+    },
+    {
+      "township_en": "Gushan District",
+      "township_zh": "鼓山區",
+      "name": "壽山國小",
+      "level": "elementary",
+      "slug": "ks-shoushan-es"
+    },
+    {
+      "township_en": "Gushan District",
+      "township_zh": "鼓山區",
+      "name": "鼓山國小",
+      "level": "elementary",
+      "slug": "gushan-es"
+    },
+    {
+      "township_en": "Gushan District",
+      "township_zh": "鼓山區",
+      "name": "鼓岩國小",
+      "level": "elementary",
+      "slug": "guyan-es"
+    },
+    {
+      "township_en": "Gushan District",
+      "township_zh": "鼓山區",
+      "name": "龍華國小",
+      "level": "elementary",
+      "slug": "longhua-es"
+    },
+    {
+      "township_en": "Cijin District",
+      "township_zh": "旗津區",
+      "name": "旗津國中",
+      "level": "junior-high",
+      "slug": "qijin-jh"
+    },
+    {
+      "township_en": "Cijin District",
+      "township_zh": "旗津區",
+      "name": "中洲國小",
+      "level": "elementary",
+      "slug": "ks-zhongzhou-es"
+    },
+    {
+      "township_en": "Cijin District",
+      "township_zh": "旗津區",
+      "name": "旗津國小",
+      "level": "elementary",
+      "slug": "qijin-es"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "中正高工",
+      "level": "senior-high",
+      "slug": "zhongzhenggaogong-hs"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "前鎮高中",
+      "level": "senior-high",
+      "slug": "qianzhengaozhong-hs"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "瑞祥高中",
+      "level": "senior-high",
+      "slug": "ruixianggaozhong-hs"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "光華國中",
+      "level": "junior-high",
+      "slug": "ks-guanghua-jh"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "前鎮國中",
+      "level": "junior-high",
+      "slug": "qianzhen-jh"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "獅甲國中",
+      "level": "junior-high",
+      "slug": "shijia-jh"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "瑞豐國中",
+      "level": "junior-high",
+      "slug": "ruifeng-jh"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "興仁國中",
+      "level": "junior-high",
+      "slug": "xingren-jh"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "仁愛國小",
+      "level": "elementary",
+      "slug": "ks-renai-es"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "佛公國小",
+      "level": "elementary",
+      "slug": "fugong-es"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "光華國小",
+      "level": "elementary",
+      "slug": "ks-guanghua-es"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "前鎮國小",
+      "level": "elementary",
+      "slug": "qianzhen-es"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "復興國小",
+      "level": "elementary",
+      "slug": "ks-fuxing-es"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "愛群國小",
+      "level": "elementary",
+      "slug": "aiqun-es"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "明正國小",
+      "level": "elementary",
+      "slug": "ks-mingzheng-es"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "樂群國小",
+      "level": "elementary",
+      "slug": "lequn-es"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "民權國小",
+      "level": "elementary",
+      "slug": "qianzhen-minquan-es"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "獅甲國小",
+      "level": "elementary",
+      "slug": "shijia-es"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "瑞祥國小",
+      "level": "elementary",
+      "slug": "ks-ruixiang-es"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "瑞豐國小",
+      "level": "elementary",
+      "slug": "ks-ruifeng-es"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "紅毛港國小",
+      "level": "elementary",
+      "slug": "hongmaogang-es"
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "name": "鎮昌國小",
+      "level": "elementary",
+      "slug": "zhenchang-es"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "高雄市立三民高級中學",
+      "level": "senior-high",
+      "slug": "ks-sanmin-hs"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "高雄市立高雄高級中學",
+      "level": "senior-high",
+      "slug": "xiongzhong-hs"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "高雄市立高雄高級工業職業學校",
+      "level": "senior-high",
+      "slug": "kaogong-vs"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "三民國中",
+      "level": "junior-high",
+      "slug": "ks-sanmin-jh"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "正興國中",
+      "level": "junior-high",
+      "slug": "zhengxing-jh"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "民族國中",
+      "level": "junior-high",
+      "slug": "minzu-jh"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "陽明國中",
+      "level": "junior-high",
+      "slug": "ks-yangming-jh"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "鼎金國中",
+      "level": "junior-high",
+      "slug": "dingjin-jh"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "三民國小",
+      "level": "elementary",
+      "slug": "ks-sanmin-es"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "光武國小",
+      "level": "elementary",
+      "slug": "guangwu-es"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "十全國小",
+      "level": "elementary",
+      "slug": "ks-shiquan-es"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "博愛國小",
+      "level": "elementary",
+      "slug": "ks-boai-es"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "愛國國小",
+      "level": "elementary",
+      "slug": "ks-aiguo-es"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "東光國小",
+      "level": "elementary",
+      "slug": "ks-dongguang-es"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "正興國小",
+      "level": "elementary",
+      "slug": "zhengxing-es"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "民族國小",
+      "level": "elementary",
+      "slug": "ks-minzu-es"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "河堤國小",
+      "level": "elementary",
+      "slug": "ks-hedi-es"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "河濱國小",
+      "level": "elementary",
+      "slug": "hebin-es"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "獅湖國小",
+      "level": "elementary",
+      "slug": "shihu-es"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "莊敬國小",
+      "level": "elementary",
+      "slug": "ks-zhuangjing-es"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "陽明國小",
+      "level": "elementary",
+      "slug": "ks-yangming-es"
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "name": "鼎金國小",
+      "level": "elementary",
+      "slug": "dingjin-es"
+    },
+    {
+      "township_en": "Nanzih District",
+      "township_zh": "楠梓區",
+      "name": "中山高級中學",
+      "level": "senior-high",
+      "slug": "zhongshan-hs"
+    },
+    {
+      "township_en": "Nanzih District",
+      "township_zh": "楠梓區",
+      "name": "國光高級中學",
+      "level": "senior-high",
+      "slug": "guoguang-hs"
+    },
+    {
+      "township_en": "Nanzih District",
+      "township_zh": "楠梓區",
+      "name": "楠梓高級中學",
+      "level": "senior-high",
+      "slug": "nanzi-hs"
+    },
+    {
+      "township_en": "Nanzih District",
+      "township_zh": "楠梓區",
+      "name": "右昌國中",
+      "level": "junior-high",
+      "slug": "youchang-jh"
+    },
+    {
+      "township_en": "Nanzih District",
+      "township_zh": "楠梓區",
+      "name": "國昌國中",
+      "level": "junior-high",
+      "slug": "guochang-jh"
+    },
+    {
+      "township_en": "Nanzih District",
+      "township_zh": "楠梓區",
+      "name": "後勁國中",
+      "level": "junior-high",
+      "slug": "houjin-jh"
+    },
+    {
+      "township_en": "Nanzih District",
+      "township_zh": "楠梓區",
+      "name": "楠梓國中",
+      "level": "junior-high",
+      "slug": "nanzi-jh"
+    },
+    {
+      "township_en": "Nanzih District",
+      "township_zh": "楠梓區",
+      "name": "翠屏國民中小學",
+      "level": "junior-high",
+      "slug": "cuiping-jhes"
+    },
+    {
+      "township_en": "Nanzih District",
+      "township_zh": "楠梓區",
+      "name": "加昌國小",
+      "level": "elementary",
+      "slug": "jiachang-es"
+    },
+    {
+      "township_en": "Nanzih District",
+      "township_zh": "楠梓區",
+      "name": "右昌國小",
+      "level": "elementary",
+      "slug": "youchang-es"
+    },
+    {
+      "township_en": "Nanzih District",
+      "township_zh": "楠梓區",
+      "name": "後勁國小",
+      "level": "elementary",
+      "slug": "houjin-es"
+    },
+    {
+      "township_en": "Nanzih District",
+      "township_zh": "楠梓區",
+      "name": "援中國小",
+      "level": "elementary",
+      "slug": "yuanzhong-es"
+    },
+    {
+      "township_en": "Nanzih District",
+      "township_zh": "楠梓區",
+      "name": "楠梓國小",
+      "level": "elementary",
+      "slug": "nanzi-es"
+    },
+    {
+      "township_en": "Nanzih District",
+      "township_zh": "楠梓區",
+      "name": "楠陽國小",
+      "level": "elementary",
+      "slug": "ks-nanyang-es"
+    },
+    {
+      "township_en": "Nanzih District",
+      "township_zh": "楠梓區",
+      "name": "油廠國小",
+      "level": "elementary",
+      "slug": "youchang-refinery-es"
+    },
+    {
+      "township_en": "Nanzih District",
+      "township_zh": "楠梓區",
+      "name": "莒光國小",
+      "level": "elementary",
+      "slug": "ks-juguang-es"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "小港高中",
+      "level": "senior-high",
+      "slug": "xiaoganggaozhong-hs"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "高鳳工家",
+      "level": "senior-high",
+      "slug": "gaofenggongjia-hs"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "中山國中",
+      "level": "junior-high",
+      "slug": "ks-zhongshan-jh"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "小港國中",
+      "level": "junior-high",
+      "slug": "xiaogang-jh"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "明義國中",
+      "level": "junior-high",
+      "slug": "mingyi-jh"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "鳳林國中",
+      "level": "junior-high",
+      "slug": "ks-fenglin-jh"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "二苓國小",
+      "level": "elementary",
+      "slug": "erling-es"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "坪頂國小",
+      "level": "elementary",
+      "slug": "ks-pingding-es"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "太平國小",
+      "level": "elementary",
+      "slug": "ks-taiping-es"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "小港國小",
+      "level": "elementary",
+      "slug": "xiaogang-es"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "明義國小",
+      "level": "elementary",
+      "slug": "ks-mingyi-es"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "桂林國小",
+      "level": "elementary",
+      "slug": "ks-guilin-es"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "港和國小",
+      "level": "elementary",
+      "slug": "ganghe-es"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "漢民國小",
+      "level": "elementary",
+      "slug": "hanmin-es"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "華山國小",
+      "level": "elementary",
+      "slug": "huashan-es"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "青山國小",
+      "level": "elementary",
+      "slug": "ks-qingshan-es"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "鳳林國小",
+      "level": "elementary",
+      "slug": "ks-fenglin-es"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "鳳陽國小",
+      "level": "elementary",
+      "slug": "fengyang-es"
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "name": "鳳鳴國小",
+      "level": "elementary",
+      "slug": "ks-fengming-es"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "高雄市立三民高級家事商業職業學校",
+      "level": "senior-high",
+      "slug": "sanmin-vs"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "高雄市立左營高級中學",
+      "level": "senior-high",
+      "slug": "zuoying-hs"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "高雄市立新莊高級中學",
+      "level": "senior-high",
+      "slug": "ks-xinzhuang-hs"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "高雄市立海青高級工商職業學校",
+      "level": "senior-high",
+      "slug": "haiqing-vs"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "大義國中",
+      "level": "junior-high",
+      "slug": "dayi-jh"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "左營國中",
+      "level": "junior-high",
+      "slug": "zuoying-jh"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "文府國中",
+      "level": "junior-high",
+      "slug": "wenfu-jh"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "福山國中",
+      "level": "junior-high",
+      "slug": "fushan-jh"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "立德國中",
+      "level": "junior-high",
+      "slug": "lide-jh"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "龍華國中",
+      "level": "junior-high",
+      "slug": "longhua-jh"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "勝利國小",
+      "level": "elementary",
+      "slug": "ks-shengli-es"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "左營國小",
+      "level": "elementary",
+      "slug": "zuoying-es"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "文府國小",
+      "level": "elementary",
+      "slug": "wenfu-es"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "新光國小",
+      "level": "elementary",
+      "slug": "ks-xinguang-es"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "新民國小",
+      "level": "elementary",
+      "slug": "ks-xinmin-es"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "新莊國小",
+      "level": "elementary",
+      "slug": "zuoying-xinzhuang-es"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "明德國小",
+      "level": "elementary",
+      "slug": "ks-mingde-es"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "永清國小",
+      "level": "elementary",
+      "slug": "yongqing-es"
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "name": "福山國小",
+      "level": "elementary",
+      "slug": "ks-fushan-es"
+    },
+    {
+      "township_en": "Renwu District",
+      "township_zh": "仁武區",
+      "name": "仁武高級中學",
+      "level": "senior-high",
+      "slug": "renwu-hs"
+    },
+    {
+      "township_en": "Renwu District",
+      "township_zh": "仁武區",
+      "name": "大灣國民中學",
+      "level": "junior-high",
+      "slug": "dawan-jh"
+    },
+    {
+      "township_en": "Renwu District",
+      "township_zh": "仁武區",
+      "name": "仁武國小",
+      "level": "elementary",
+      "slug": "renwu-es"
+    },
+    {
+      "township_en": "Renwu District",
+      "township_zh": "仁武區",
+      "name": "八卦國小",
+      "level": "elementary",
+      "slug": "bagua-es"
+    },
+    {
+      "township_en": "Renwu District",
+      "township_zh": "仁武區",
+      "name": "灣內國小",
+      "level": "elementary",
+      "slug": "ks-wannei-es"
+    },
+    {
+      "township_en": "Renwu District",
+      "township_zh": "仁武區",
+      "name": "烏林國小",
+      "level": "elementary",
+      "slug": "renwu-wulin-es"
+    },
+    {
+      "township_en": "Renwu District",
+      "township_zh": "仁武區",
+      "name": "登發國小",
+      "level": "elementary",
+      "slug": "dengfa-es"
+    },
+    {
+      "township_en": "Renwu District",
+      "township_zh": "仁武區",
+      "name": "竹後國小",
+      "level": "elementary",
+      "slug": "zhuhou-es"
+    },
+    {
+      "township_en": "Dashe District",
+      "township_zh": "大社區",
+      "name": "大社國民中學",
+      "level": "junior-high",
+      "slug": "dashe-jh"
+    },
+    {
+      "township_en": "Dashe District",
+      "township_zh": "大社區",
+      "name": "嘉誠國小",
+      "level": "elementary",
+      "slug": "jiacheng-es"
+    },
+    {
+      "township_en": "Dashe District",
+      "township_zh": "大社區",
+      "name": "大社國小",
+      "level": "elementary",
+      "slug": "ks-dashe-es"
+    },
+    {
+      "township_en": "Dashe District",
+      "township_zh": "大社區",
+      "name": "觀音國小",
+      "level": "elementary",
+      "slug": "ks-guanyin-es"
+    },
+    {
+      "township_en": "Gangshan District",
+      "township_zh": "岡山區",
+      "name": "國立岡山高級中學",
+      "level": "senior-high",
+      "slug": "gangshan-hs"
+    },
+    {
+      "township_en": "Gangshan District",
+      "township_zh": "岡山區",
+      "name": "國立岡山高級農工職業學校",
+      "level": "senior-high",
+      "slug": "gangshan-vs"
+    },
+    {
+      "township_en": "Gangshan District",
+      "township_zh": "岡山區",
+      "name": "前峰國民中學",
+      "level": "junior-high",
+      "slug": "qianfeng-jh"
+    },
+    {
+      "township_en": "Gangshan District",
+      "township_zh": "岡山區",
+      "name": "嘉興國民中學",
+      "level": "junior-high",
+      "slug": "ks-jiaxing-jh"
+    },
+    {
+      "township_en": "Gangshan District",
+      "township_zh": "岡山區",
+      "name": "岡山國民中學",
+      "level": "junior-high",
+      "slug": "gangshan-jh"
+    },
+    {
+      "township_en": "Gangshan District",
+      "township_zh": "岡山區",
+      "name": "兆湘國小",
+      "level": "elementary",
+      "slug": "zhaoxiang-es"
+    },
+    {
+      "township_en": "Gangshan District",
+      "township_zh": "岡山區",
+      "name": "前峰國小",
+      "level": "elementary",
+      "slug": "qianfeng-es"
+    },
+    {
+      "township_en": "Gangshan District",
+      "township_zh": "岡山區",
+      "name": "和平國小",
+      "level": "elementary",
+      "slug": "ks-heping-es"
+    },
+    {
+      "township_en": "Gangshan District",
+      "township_zh": "岡山區",
+      "name": "嘉興國小",
+      "level": "elementary",
+      "slug": "ks-jiaxing-es"
+    },
+    {
+      "township_en": "Gangshan District",
+      "township_zh": "岡山區",
+      "name": "壽天國小",
+      "level": "elementary",
+      "slug": "shoutian-es"
+    },
+    {
+      "township_en": "Gangshan District",
+      "township_zh": "岡山區",
+      "name": "岡山國小",
+      "level": "elementary",
+      "slug": "gangshan-es"
+    },
+    {
+      "township_en": "Gangshan District",
+      "township_zh": "岡山區",
+      "name": "後紅國小",
+      "level": "elementary",
+      "slug": "houhong-es"
+    },
+    {
+      "township_en": "Gangshan District",
+      "township_zh": "岡山區",
+      "name": "竹圍國小",
+      "level": "elementary",
+      "slug": "ks-zhuwei-es"
+    },
+    {
+      "township_en": "Lujhu District",
+      "township_zh": "路竹區",
+      "name": "高雄市立路竹高級中學",
+      "level": "senior-high",
+      "slug": "luzhu-hs"
+    },
+    {
+      "township_en": "Lujhu District",
+      "township_zh": "路竹區",
+      "name": "一甲國民中學",
+      "level": "junior-high",
+      "slug": "yijia-jh"
+    },
+    {
+      "township_en": "Lujhu District",
+      "township_zh": "路竹區",
+      "name": "一甲國小",
+      "level": "elementary",
+      "slug": "yijia-es"
+    },
+    {
+      "township_en": "Lujhu District",
+      "township_zh": "路竹區",
+      "name": "三埤國小",
+      "level": "elementary",
+      "slug": "sanpi-es"
+    },
+    {
+      "township_en": "Lujhu District",
+      "township_zh": "路竹區",
+      "name": "下坑國小",
+      "level": "elementary",
+      "slug": "xiakeng-es"
+    },
+    {
+      "township_en": "Lujhu District",
+      "township_zh": "路竹區",
+      "name": "北嶺國小",
+      "level": "elementary",
+      "slug": "beiling-es"
+    },
+    {
+      "township_en": "Lujhu District",
+      "township_zh": "路竹區",
+      "name": "大社國小",
+      "level": "elementary",
+      "slug": "luzhu-dashe-es"
+    },
+    {
+      "township_en": "Lujhu District",
+      "township_zh": "路竹區",
+      "name": "竹滬國小",
+      "level": "elementary",
+      "slug": "ks-zhuhu-es"
+    },
+    {
+      "township_en": "Lujhu District",
+      "township_zh": "路竹區",
+      "name": "蔡文國小",
+      "level": "elementary",
+      "slug": "caiwen-es"
+    },
+    {
+      "township_en": "Lujhu District",
+      "township_zh": "路竹區",
+      "name": "路竹國小",
+      "level": "elementary",
+      "slug": "ks-luzhu-es"
+    },
+    {
+      "township_en": "Alian District",
+      "township_zh": "阿蓮區",
+      "name": "阿蓮國民中學",
+      "level": "junior-high",
+      "slug": "alian-jh"
+    },
+    {
+      "township_en": "Alian District",
+      "township_zh": "阿蓮區",
+      "name": "中路國小",
+      "level": "elementary",
+      "slug": "zhonglu-es"
+    },
+    {
+      "township_en": "Alian District",
+      "township_zh": "阿蓮區",
+      "name": "復安國小",
+      "level": "elementary",
+      "slug": "alian-fuan-es"
+    },
+    {
+      "township_en": "Alian District",
+      "township_zh": "阿蓮區",
+      "name": "阿蓮國小",
+      "level": "elementary",
+      "slug": "alian-es"
+    },
+    {
+      "township_en": "Tianliao District",
+      "township_zh": "田寮區",
+      "name": "田寮國民中學",
+      "level": "junior-high",
+      "slug": "tianliao-jh"
+    },
+    {
+      "township_en": "Tianliao District",
+      "township_zh": "田寮區",
+      "name": "崇德國小",
+      "level": "elementary",
+      "slug": "ks-chongde-es"
+    },
+    {
+      "township_en": "Tianliao District",
+      "township_zh": "田寮區",
+      "name": "新興國小",
+      "level": "elementary",
+      "slug": "tianliao-xinxing-es"
+    },
+    {
+      "township_en": "Yanchao District",
+      "township_zh": "燕巢區",
+      "name": "燕巢國民中學",
+      "level": "junior-high",
+      "slug": "yanchao-jh"
+    },
+    {
+      "township_en": "Yanchao District",
+      "township_zh": "燕巢區",
+      "name": "安招國小",
+      "level": "elementary",
+      "slug": "anzhao-es"
+    },
+    {
+      "township_en": "Yanchao District",
+      "township_zh": "燕巢區",
+      "name": "橫山國小",
+      "level": "elementary",
+      "slug": "ks-hengshan-es"
+    },
+    {
+      "township_en": "Yanchao District",
+      "township_zh": "燕巢區",
+      "name": "深水國小",
+      "level": "elementary",
+      "slug": "shenshui-es"
+    },
+    {
+      "township_en": "Yanchao District",
+      "township_zh": "燕巢區",
+      "name": "燕巢國小",
+      "level": "elementary",
+      "slug": "yanchao-es"
+    },
+    {
+      "township_en": "Yanchao District",
+      "township_zh": "燕巢區",
+      "name": "金山國小",
+      "level": "elementary",
+      "slug": "ks-jinshan-es"
+    },
+    {
+      "township_en": "Yanchao District",
+      "township_zh": "燕巢區",
+      "name": "鳳雄國小",
+      "level": "elementary",
+      "slug": "fengxiong-es"
+    },
+    {
+      "township_en": "Ciaotou District",
+      "township_zh": "橋頭區",
+      "name": "國立高科實驗高級中等學校",
+      "level": "senior-high",
+      "slug": "gaoke-hs"
+    },
+    {
+      "township_en": "Ciaotou District",
+      "township_zh": "橋頭區",
+      "name": "國立高科實驗高級中等學校",
+      "level": "junior-high",
+      "slug": "gaoke-hs"
+    },
+    {
+      "township_en": "Ciaotou District",
+      "township_zh": "橋頭區",
+      "name": "橋頭國民中學",
+      "level": "junior-high",
+      "slug": "qiaotou-jh"
+    },
+    {
+      "township_en": "Ciaotou District",
+      "township_zh": "橋頭區",
+      "name": "五林國小",
+      "level": "elementary",
+      "slug": "ciaotou-wulin-es"
+    },
+    {
+      "township_en": "Ciaotou District",
+      "township_zh": "橋頭區",
+      "name": "仕隆國小",
+      "level": "elementary",
+      "slug": "shilong-es"
+    },
+    {
+      "township_en": "Ciaotou District",
+      "township_zh": "橋頭區",
+      "name": "橋頭國小",
+      "level": "elementary",
+      "slug": "ks-qiaotou-es"
+    },
+    {
+      "township_en": "Ciaotou District",
+      "township_zh": "橋頭區",
+      "name": "甲圍國小",
+      "level": "elementary",
+      "slug": "jiawei-es"
+    },
+    {
+      "township_en": "Ciaotou District",
+      "township_zh": "橋頭區",
+      "name": "興糖國小",
+      "level": "elementary",
+      "slug": "xingtang-es"
+    },
+    {
+      "township_en": "Zihguan District",
+      "township_zh": "梓官區",
+      "name": "梓官國民中學",
+      "level": "junior-high",
+      "slug": "ziguan-jh"
+    },
+    {
+      "township_en": "Zihguan District",
+      "township_zh": "梓官區",
+      "name": "蚵寮國民中學",
+      "level": "junior-high",
+      "slug": "heliao-jh"
+    },
+    {
+      "township_en": "Zihguan District",
+      "township_zh": "梓官區",
+      "name": "梓官國小",
+      "level": "elementary",
+      "slug": "ziguan-es"
+    },
+    {
+      "township_en": "Zihguan District",
+      "township_zh": "梓官區",
+      "name": "蚵寮國小",
+      "level": "elementary",
+      "slug": "ks-heliao-es"
+    },
+    {
+      "township_en": "Mituo District",
+      "township_zh": "彌陀區",
+      "name": "彌陀國民中學",
+      "level": "junior-high",
+      "slug": "mituo-jh"
+    },
+    {
+      "township_en": "Mituo District",
+      "township_zh": "彌陀區",
+      "name": "南安國小",
+      "level": "elementary",
+      "slug": "ks-nanan-es"
+    },
+    {
+      "township_en": "Mituo District",
+      "township_zh": "彌陀區",
+      "name": "壽齡國小",
+      "level": "elementary",
+      "slug": "shouling-es"
+    },
+    {
+      "township_en": "Mituo District",
+      "township_zh": "彌陀區",
+      "name": "彌陀國小",
+      "level": "elementary",
+      "slug": "mituo-es"
+    },
+    {
+      "township_en": "Yong'an District",
+      "township_zh": "永安區",
+      "name": "永安國民中學",
+      "level": "junior-high",
+      "slug": "ks-yongan-jh"
+    },
+    {
+      "township_en": "Yong'an District",
+      "township_zh": "永安區",
+      "name": "新港國小",
+      "level": "elementary",
+      "slug": "ks-xingang-es"
+    },
+    {
+      "township_en": "Yong'an District",
+      "township_zh": "永安區",
+      "name": "永安國小",
+      "level": "elementary",
+      "slug": "ks-yongan-es"
+    },
+    {
+      "township_en": "Yong'an District",
+      "township_zh": "永安區",
+      "name": "維新國小",
+      "level": "elementary",
+      "slug": "weixin-es"
+    },
+    {
+      "township_en": "Hunei District",
+      "township_zh": "湖內區",
+      "name": "湖內國民中學",
+      "level": "junior-high",
+      "slug": "hunei-jh"
+    },
+    {
+      "township_en": "Hunei District",
+      "township_zh": "湖內區",
+      "name": "三侯國小",
+      "level": "elementary",
+      "slug": "sanhou-es"
+    },
+    {
+      "township_en": "Hunei District",
+      "township_zh": "湖內區",
+      "name": "大湖國小",
+      "level": "elementary",
+      "slug": "ks-dahu-es"
+    },
+    {
+      "township_en": "Hunei District",
+      "township_zh": "湖內區",
+      "name": "文賢國小",
+      "level": "elementary",
+      "slug": "ks-wenxian-es"
+    },
+    {
+      "township_en": "Hunei District",
+      "township_zh": "湖內區",
+      "name": "明宗國小",
+      "level": "elementary",
+      "slug": "mingzong-es"
+    },
+    {
+      "township_en": "Hunei District",
+      "township_zh": "湖內區",
+      "name": "海埔國小",
+      "level": "elementary",
+      "slug": "ks-haipu-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "國立鳳山高級中學",
+      "level": "senior-high",
+      "slug": "fengshan-hs"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "國立鳳山高級商工職業學校",
+      "level": "senior-high",
+      "slug": "fengshan-vs"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "國立鳳新高級中學",
+      "level": "senior-high",
+      "slug": "fengxin-hs"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "高雄市立福誠高級中學",
+      "level": "senior-high",
+      "slug": "fucheng-hs"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "中崙國民中學",
+      "level": "junior-high",
+      "slug": "zhonglun-jh"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "五甲國民中學",
+      "level": "junior-high",
+      "slug": "wujia-jh"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "忠孝國民中學",
+      "level": "junior-high",
+      "slug": "ks-zhongxiao-jh"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "青年國民中學",
+      "level": "junior-high",
+      "slug": "qingnian-jh"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "鳳山國民中學",
+      "level": "junior-high",
+      "slug": "fengshan-jh"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "鳳甲國民中學",
+      "level": "junior-high",
+      "slug": "fengjia-jh"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "鳳翔國民中學",
+      "level": "junior-high",
+      "slug": "fengxiang-jh"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "鳳西國民中學",
+      "level": "junior-high",
+      "slug": "fengxi-jh"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "中山國小",
+      "level": "elementary",
+      "slug": "fengshan-zhongshan-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "中崙國小",
+      "level": "elementary",
+      "slug": "zhonglun-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "中正國小",
+      "level": "elementary",
+      "slug": "fengshan-zhongzheng-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "五甲國小",
+      "level": "elementary",
+      "slug": "ks-wujia-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "五福國小",
+      "level": "elementary",
+      "slug": "ks-wufu-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "南成國小",
+      "level": "elementary",
+      "slug": "nancheng-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "大東國小",
+      "level": "elementary",
+      "slug": "dadong-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "忠孝國小",
+      "level": "elementary",
+      "slug": "fengshan-zhongxiao-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "文山國小",
+      "level": "elementary",
+      "slug": "ks-wenshan-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "文德國小",
+      "level": "elementary",
+      "slug": "ks-wende-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "文華國小",
+      "level": "elementary",
+      "slug": "ks-wenhua-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "新甲國小",
+      "level": "elementary",
+      "slug": "ks-xinjia-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "曹公國小",
+      "level": "elementary",
+      "slug": "caogong-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "正義國小",
+      "level": "elementary",
+      "slug": "ks-zhengyi-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "瑞興國小",
+      "level": "elementary",
+      "slug": "ks-ruixing-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "福誠國小",
+      "level": "elementary",
+      "slug": "fucheng-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "誠正國小",
+      "level": "elementary",
+      "slug": "chengzheng-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "過埤國小",
+      "level": "elementary",
+      "slug": "guopi-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "鎮北國小",
+      "level": "elementary",
+      "slug": "zhenbei-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "鳳山國小",
+      "level": "elementary",
+      "slug": "ks-fengshan-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "鳳翔國小",
+      "level": "elementary",
+      "slug": "fengxiang-es"
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "name": "鳳西國小",
+      "level": "elementary",
+      "slug": "fengxi-es"
+    },
+    {
+      "township_en": "Daliao District",
+      "township_zh": "大寮區",
+      "name": "中庄國民中學",
+      "level": "junior-high",
+      "slug": "zhongzhuang-jh"
+    },
+    {
+      "township_en": "Daliao District",
+      "township_zh": "大寮區",
+      "name": "大寮國民中學",
+      "level": "junior-high",
+      "slug": "daliao-jh"
+    },
+    {
+      "township_en": "Daliao District",
+      "township_zh": "大寮區",
+      "name": "潮寮國民中學",
+      "level": "junior-high",
+      "slug": "chaoliao-jh"
+    },
+    {
+      "township_en": "Daliao District",
+      "township_zh": "大寮區",
+      "name": "中庄國小",
+      "level": "elementary",
+      "slug": "zhongzhuang-es"
+    },
+    {
+      "township_en": "Daliao District",
+      "township_zh": "大寮區",
+      "name": "大寮國小",
+      "level": "elementary",
+      "slug": "daliao-es"
+    },
+    {
+      "township_en": "Daliao District",
+      "township_zh": "大寮區",
+      "name": "山頂國小",
+      "level": "elementary",
+      "slug": "ks-shanding-es"
+    },
+    {
+      "township_en": "Daliao District",
+      "township_zh": "大寮區",
+      "name": "後庄國小",
+      "level": "elementary",
+      "slug": "ks-houzhuang-es"
+    },
+    {
+      "township_en": "Daliao District",
+      "township_zh": "大寮區",
+      "name": "忠義國小",
+      "level": "elementary",
+      "slug": "ks-zhongyi-es"
+    },
+    {
+      "township_en": "Daliao District",
+      "township_zh": "大寮區",
+      "name": "昭明國小",
+      "level": "elementary",
+      "slug": "zhaoming-es"
+    },
+    {
+      "township_en": "Daliao District",
+      "township_zh": "大寮區",
+      "name": "永芳國小",
+      "level": "elementary",
+      "slug": "yongfang-es"
+    },
+    {
+      "township_en": "Daliao District",
+      "township_zh": "大寮區",
+      "name": "溪寮國小",
+      "level": "elementary",
+      "slug": "xiliao-es"
+    },
+    {
+      "township_en": "Daliao District",
+      "township_zh": "大寮區",
+      "name": "潮寮國小",
+      "level": "elementary",
+      "slug": "chaoliao-es"
+    },
+    {
+      "township_en": "Daliao District",
+      "township_zh": "大寮區",
+      "name": "翁園國小",
+      "level": "elementary",
+      "slug": "wengyuan-es"
+    },
+    {
+      "township_en": "Linyuan District",
+      "township_zh": "林園區",
+      "name": "高雄市立林園高級中學",
+      "level": "senior-high",
+      "slug": "linyuan-hs"
+    },
+    {
+      "township_en": "Linyuan District",
+      "township_zh": "林園區",
+      "name": "中芸國民中學",
+      "level": "junior-high",
+      "slug": "zhongyun-jh"
+    },
+    {
+      "township_en": "Linyuan District",
+      "township_zh": "林園區",
+      "name": "中芸國小",
+      "level": "elementary",
+      "slug": "zhongyun-es"
+    },
+    {
+      "township_en": "Linyuan District",
+      "township_zh": "林園區",
+      "name": "廣應國小",
+      "level": "elementary",
+      "slug": "guangying-es"
+    },
+    {
+      "township_en": "Linyuan District",
+      "township_zh": "林園區",
+      "name": "林園國小",
+      "level": "elementary",
+      "slug": "linyuan-es"
+    },
+    {
+      "township_en": "Linyuan District",
+      "township_zh": "林園區",
+      "name": "汕尾國小",
+      "level": "elementary",
+      "slug": "shanwei-es"
+    },
+    {
+      "township_en": "Linyuan District",
+      "township_zh": "林園區",
+      "name": "港埔國小",
+      "level": "elementary",
+      "slug": "gangpu-es"
+    },
+    {
+      "township_en": "Linyuan District",
+      "township_zh": "林園區",
+      "name": "王公國小",
+      "level": "elementary",
+      "slug": "ks-wanggong-es"
+    },
+    {
+      "township_en": "Linyuan District",
+      "township_zh": "林園區",
+      "name": "金潭國小",
+      "level": "elementary",
+      "slug": "jintan-es"
+    },
+    {
+      "township_en": "Niaosong District",
+      "township_zh": "鳥松區",
+      "name": "高雄市立文山高級中學",
+      "level": "senior-high",
+      "slug": "wenshan-hs"
+    },
+    {
+      "township_en": "Niaosong District",
+      "township_zh": "鳥松區",
+      "name": "鳥松國民中學",
+      "level": "junior-high",
+      "slug": "niaosong-jh"
+    },
+    {
+      "township_en": "Niaosong District",
+      "township_zh": "鳥松區",
+      "name": "仁美國小",
+      "level": "elementary",
+      "slug": "ks-renmei-es"
+    },
+    {
+      "township_en": "Niaosong District",
+      "township_zh": "鳥松區",
+      "name": "大華國小",
+      "level": "elementary",
+      "slug": "ks-dahua-es"
+    },
+    {
+      "township_en": "Niaosong District",
+      "township_zh": "鳥松區",
+      "name": "鳥松國小",
+      "level": "elementary",
+      "slug": "niaosong-es"
+    },
+    {
+      "township_en": "Dashu District",
+      "township_zh": "大樹區",
+      "name": "大樹國民中學",
+      "level": "junior-high",
+      "slug": "dashu-jh"
+    },
+    {
+      "township_en": "Dashu District",
+      "township_zh": "大樹區",
+      "name": "溪埔國民中學",
+      "level": "junior-high",
+      "slug": "xipu-jh"
+    },
+    {
+      "township_en": "Dashu District",
+      "township_zh": "大樹區",
+      "name": "九曲國小",
+      "level": "elementary",
+      "slug": "jiuqu-es"
+    },
+    {
+      "township_en": "Dashu District",
+      "township_zh": "大樹區",
+      "name": "大樹國小",
+      "level": "elementary",
+      "slug": "dashu-es"
+    },
+    {
+      "township_en": "Dashu District",
+      "township_zh": "大樹區",
+      "name": "姑山國小",
+      "level": "elementary",
+      "slug": "dashu-gushan-es"
+    },
+    {
+      "township_en": "Dashu District",
+      "township_zh": "大樹區",
+      "name": "小坪國小",
+      "level": "elementary",
+      "slug": "xiaoping-es"
+    },
+    {
+      "township_en": "Dashu District",
+      "township_zh": "大樹區",
+      "name": "水寮國小",
+      "level": "elementary",
+      "slug": "shuiliao-es"
+    },
+    {
+      "township_en": "Dashu District",
+      "township_zh": "大樹區",
+      "name": "溪埔國小",
+      "level": "elementary",
+      "slug": "xipu-es"
+    },
+    {
+      "township_en": "Dashu District",
+      "township_zh": "大樹區",
+      "name": "興田國小",
+      "level": "elementary",
+      "slug": "xingtian-es"
+    },
+    {
+      "township_en": "Dashu District",
+      "township_zh": "大樹區",
+      "name": "龍目國小",
+      "level": "elementary",
+      "slug": "longmu-es"
+    },
+    {
+      "township_en": "Cishan District",
+      "township_zh": "旗山區",
+      "name": "國立旗山高級農工職業學校",
+      "level": "senior-high",
+      "slug": "qishan-vs"
+    },
+    {
+      "township_en": "Cishan District",
+      "township_zh": "旗山區",
+      "name": "國立旗美高級中學",
+      "level": "senior-high",
+      "slug": "qimei-hs"
+    },
+    {
+      "township_en": "Cishan District",
+      "township_zh": "旗山區",
+      "name": "圓富國民中學",
+      "level": "junior-high",
+      "slug": "yuanfu-jh"
+    },
+    {
+      "township_en": "Cishan District",
+      "township_zh": "旗山區",
+      "name": "大洲國民中學",
+      "level": "junior-high",
+      "slug": "dazhou-jh"
+    },
+    {
+      "township_en": "Cishan District",
+      "township_zh": "旗山區",
+      "name": "旗山國民中學",
+      "level": "junior-high",
+      "slug": "qishan-jh"
+    },
+    {
+      "township_en": "Cishan District",
+      "township_zh": "旗山區",
+      "name": "圓潭國小",
+      "level": "elementary",
+      "slug": "yuantan-es"
+    },
+    {
+      "township_en": "Cishan District",
+      "township_zh": "旗山區",
+      "name": "嶺口國小",
+      "level": "elementary",
+      "slug": "lingkou-es"
+    },
+    {
+      "township_en": "Cishan District",
+      "township_zh": "旗山區",
+      "name": "旗尾國小",
+      "level": "elementary",
+      "slug": "qiwei-es"
+    },
+    {
+      "township_en": "Cishan District",
+      "township_zh": "旗山區",
+      "name": "旗山國小",
+      "level": "elementary",
+      "slug": "qishan-es"
+    },
+    {
+      "township_en": "Cishan District",
+      "township_zh": "旗山區",
+      "name": "溪洲國小",
+      "level": "elementary",
+      "slug": "ks-xizhou-es"
+    },
+    {
+      "township_en": "Cishan District",
+      "township_zh": "旗山區",
+      "name": "鼓山國小",
+      "level": "elementary",
+      "slug": "qishan-gushan-es"
+    },
+    {
+      "township_en": "Meinong District",
+      "township_zh": "美濃區",
+      "name": "南隆國民中學",
+      "level": "junior-high",
+      "slug": "nanlong-jh"
+    },
+    {
+      "township_en": "Meinong District",
+      "township_zh": "美濃區",
+      "name": "美濃國民中學",
+      "level": "junior-high",
+      "slug": "meinong-jh"
+    },
+    {
+      "township_en": "Meinong District",
+      "township_zh": "美濃區",
+      "name": "龍肚國民中學",
+      "level": "junior-high",
+      "slug": "longdu-jh"
+    },
+    {
+      "township_en": "Meinong District",
+      "township_zh": "美濃區",
+      "name": "中壇國小",
+      "level": "elementary",
+      "slug": "zhongtan-es"
+    },
+    {
+      "township_en": "Meinong District",
+      "township_zh": "美濃區",
+      "name": "吉東國小",
+      "level": "elementary",
+      "slug": "jidong-es"
+    },
+    {
+      "township_en": "Meinong District",
+      "township_zh": "美濃區",
+      "name": "吉洋國小",
+      "level": "elementary",
+      "slug": "jiyang-es"
+    },
+    {
+      "township_en": "Meinong District",
+      "township_zh": "美濃區",
+      "name": "廣興國小",
+      "level": "elementary",
+      "slug": "ks-guangxing-es"
+    },
+    {
+      "township_en": "Meinong District",
+      "township_zh": "美濃區",
+      "name": "東門國小",
+      "level": "elementary",
+      "slug": "ks-dongmen-es"
+    },
+    {
+      "township_en": "Meinong District",
+      "township_zh": "美濃區",
+      "name": "福安國小",
+      "level": "elementary",
+      "slug": "meinong-fuan-es"
+    },
+    {
+      "township_en": "Meinong District",
+      "township_zh": "美濃區",
+      "name": "美濃國小",
+      "level": "elementary",
+      "slug": "meinong-es"
+    },
+    {
+      "township_en": "Meinong District",
+      "township_zh": "美濃區",
+      "name": "龍山國小",
+      "level": "elementary",
+      "slug": "ks-longshan-es"
+    },
+    {
+      "township_en": "Meinong District",
+      "township_zh": "美濃區",
+      "name": "龍肚國小",
+      "level": "elementary",
+      "slug": "longdu-es"
+    },
+    {
+      "township_en": "Liouguei District",
+      "township_zh": "六龜區",
+      "name": "高雄市立六龜高級中學",
+      "level": "senior-high",
+      "slug": "liugui-hs"
+    },
+    {
+      "township_en": "Liouguei District",
+      "township_zh": "六龜區",
+      "name": "六龜高級中學附屬國民中學",
+      "level": "junior-high",
+      "slug": "liougui-fushu-jh"
+    },
+    {
+      "township_en": "Liouguei District",
+      "township_zh": "六龜區",
+      "name": "寶來國民中學",
+      "level": "junior-high",
+      "slug": "baolai-jh"
+    },
+    {
+      "township_en": "Liouguei District",
+      "township_zh": "六龜區",
+      "name": "六龜國小",
+      "level": "elementary",
+      "slug": "liugui-es"
+    },
+    {
+      "township_en": "Liouguei District",
+      "township_zh": "六龜區",
+      "name": "寶來國小",
+      "level": "elementary",
+      "slug": "baolai-es"
+    },
+    {
+      "township_en": "Liouguei District",
+      "township_zh": "六龜區",
+      "name": "新威國小",
+      "level": "elementary",
+      "slug": "ks-xinwei-es"
+    },
+    {
+      "township_en": "Liouguei District",
+      "township_zh": "六龜區",
+      "name": "新發國小",
+      "level": "elementary",
+      "slug": "xinfa-es"
+    },
+    {
+      "township_en": "Liouguei District",
+      "township_zh": "六龜區",
+      "name": "荖濃國小",
+      "level": "elementary",
+      "slug": "laonong-es"
+    },
+    {
+      "township_en": "Liouguei District",
+      "township_zh": "六龜區",
+      "name": "龍興國小",
+      "level": "elementary",
+      "slug": "ks-longxing-es"
+    },
+    {
+      "township_en": "Neimen District",
+      "township_zh": "內門區",
+      "name": "內門國民中學",
+      "level": "junior-high",
+      "slug": "neimen-jh"
+    },
+    {
+      "township_en": "Neimen District",
+      "township_zh": "內門區",
+      "name": "內門國小",
+      "level": "elementary",
+      "slug": "neimen-es"
+    },
+    {
+      "township_en": "Neimen District",
+      "township_zh": "內門區",
+      "name": "木柵國小",
+      "level": "elementary",
+      "slug": "ks-mushan-es"
+    },
+    {
+      "township_en": "Neimen District",
+      "township_zh": "內門區",
+      "name": "溝坪國小",
+      "level": "elementary",
+      "slug": "gouping-es"
+    },
+    {
+      "township_en": "Neimen District",
+      "township_zh": "內門區",
+      "name": "觀亭國小",
+      "level": "elementary",
+      "slug": "guanting-es"
+    },
+    {
+      "township_en": "Neimen District",
+      "township_zh": "內門區",
+      "name": "金竹國小",
+      "level": "elementary",
+      "slug": "jinzhu-es"
+    },
+    {
+      "township_en": "Shanlin District",
+      "township_zh": "杉林區",
+      "name": "巴楠花部落中小學",
+      "level": "junior-high",
+      "slug": "banahua-jhes"
+    },
+    {
+      "township_en": "Shanlin District",
+      "township_zh": "杉林區",
+      "name": "杉林國民中學",
+      "level": "junior-high",
+      "slug": "shanlin-jh"
+    },
+    {
+      "township_en": "Shanlin District",
+      "township_zh": "杉林區",
+      "name": "上平國小",
+      "level": "elementary",
+      "slug": "ks-shangping-es"
+    },
+    {
+      "township_en": "Shanlin District",
+      "township_zh": "杉林區",
+      "name": "巴楠花部落中小學",
+      "level": "elementary",
+      "slug": "banahua-jhes"
+    },
+    {
+      "township_en": "Shanlin District",
+      "township_zh": "杉林區",
+      "name": "新莊國小",
+      "level": "elementary",
+      "slug": "shanlin-xinzhuang-es"
+    },
+    {
+      "township_en": "Shanlin District",
+      "township_zh": "杉林區",
+      "name": "月美國小",
+      "level": "elementary",
+      "slug": "ks-yuemei-es"
+    },
+    {
+      "township_en": "Shanlin District",
+      "township_zh": "杉林區",
+      "name": "杉林國小",
+      "level": "elementary",
+      "slug": "shanlin-es"
+    },
+    {
+      "township_en": "Shanlin District",
+      "township_zh": "杉林區",
+      "name": "集來國小",
+      "level": "elementary",
+      "slug": "jilai-es"
+    },
+    {
+      "township_en": "Jiasian District",
+      "township_zh": "甲仙區",
+      "name": "甲仙國民中學",
+      "level": "junior-high",
+      "slug": "jiaxian-jh"
+    },
+    {
+      "township_en": "Jiasian District",
+      "township_zh": "甲仙區",
+      "name": "小林國小",
+      "level": "elementary",
+      "slug": "xiaolin-es"
+    },
+    {
+      "township_en": "Jiasian District",
+      "township_zh": "甲仙區",
+      "name": "甲仙國小",
+      "level": "elementary",
+      "slug": "jiaxian-es"
+    },
+    {
+      "township_en": "Taoyuan District (Kaohsiung)",
+      "township_zh": "桃源區",
+      "name": "桃源國民中學",
+      "level": "junior-high",
+      "slug": "ks-taoyuan-jh"
+    },
+    {
+      "township_en": "Taoyuan District (Kaohsiung)",
+      "township_zh": "桃源區",
+      "name": "寶山國小",
+      "level": "elementary",
+      "slug": "ks-baoshan-es"
+    },
+    {
+      "township_en": "Taoyuan District (Kaohsiung)",
+      "township_zh": "桃源區",
+      "name": "建山國小",
+      "level": "elementary",
+      "slug": "ks-jianshan-es"
+    },
+    {
+      "township_en": "Taoyuan District (Kaohsiung)",
+      "township_zh": "桃源區",
+      "name": "桃源國小",
+      "level": "elementary",
+      "slug": "ks-taoyuan-es"
+    },
+    {
+      "township_en": "Taoyuan District (Kaohsiung)",
+      "township_zh": "桃源區",
+      "name": "樟山實驗國民小學",
+      "level": "elementary",
+      "slug": "zhangshanshiyan-es"
+    },
+    {
+      "township_en": "Taoyuan District (Kaohsiung)",
+      "township_zh": "桃源區",
+      "name": "興中國小",
+      "level": "elementary",
+      "slug": "ks-xingzhong-es"
+    },
+    {
+      "township_en": "Namasia District",
+      "township_zh": "那瑪夏區",
+      "name": "那瑪夏國民中學",
+      "level": "junior-high",
+      "slug": "namaxia-jh"
+    },
+    {
+      "township_en": "Namasia District",
+      "township_zh": "那瑪夏區",
+      "name": "民權國小",
+      "level": "elementary",
+      "slug": "namaxia-minquan-es"
+    },
+    {
+      "township_en": "Namasia District",
+      "township_zh": "那瑪夏區",
+      "name": "民生國小",
+      "level": "elementary",
+      "slug": "ks-minsheng-es"
+    },
+    {
+      "township_en": "Maolin District",
+      "township_zh": "茂林區",
+      "name": "茂林國民中學",
+      "level": "junior-high",
+      "slug": "maolin-jh"
+    },
+    {
+      "township_en": "Maolin District",
+      "township_zh": "茂林區",
+      "name": "多納國小",
+      "level": "elementary",
+      "slug": "duona-es"
+    },
+    {
+      "township_en": "Maolin District",
+      "township_zh": "茂林區",
+      "name": "茂林國小",
+      "level": "elementary",
+      "slug": "maolin-es"
+    },
+    {
+      "township_en": "Cieding District",
+      "township_zh": "茄萣區",
+      "name": "茄萣國民中學",
+      "level": "junior-high",
+      "slug": "jiading-jh"
+    },
+    {
+      "township_en": "Cieding District",
+      "township_zh": "茄萣區",
+      "name": "成功國小",
+      "level": "elementary",
+      "slug": "jiading-chenggong-es"
+    },
+    {
+      "township_en": "Cieding District",
+      "township_zh": "茄萣區",
+      "name": "砂崙國小",
+      "level": "elementary",
+      "slug": "ks-shalun-es"
+    },
+    {
+      "township_en": "Cieding District",
+      "township_zh": "茄萣區",
+      "name": "興達國小",
+      "level": "elementary",
+      "slug": "xingda-es"
+    },
+    {
+      "township_en": "Cieding District",
+      "township_zh": "茄萣區",
+      "name": "茄萣國小",
+      "level": "elementary",
+      "slug": "jiading-es"
+    }
+  ],
+  "universities": [
+    {
+      "eng": "National Sun Yat-sen University",
+      "zh": "國立中山大學",
+      "sub": "Gushan District 鼓山區",
+      "badge": "soon",
+      "slug": "national-sun-yat-sen-university"
+    },
+    {
+      "eng": "National Kaohsiung University of Science and Technology",
+      "zh": "國立高雄科技大學",
+      "sub": "Yancheng District 鹽埕區",
+      "badge": "soon",
+      "slug": "national-kaohsiung-university-of-science-and-technology"
+    },
+    {
+      "eng": "National Kaohsiung Normal University",
+      "zh": "國立高雄師範大學",
+      "sub": "Lingya District 苓雅區",
+      "badge": "soon",
+      "slug": "national-kaohsiung-normal-university"
+    },
+    {
+      "eng": "Kaohsiung Medical University",
+      "zh": "高雄醫學大學",
+      "sub": "Sanmin District 三民區",
+      "badge": "soon",
+      "slug": "kaohsiung-medical-university"
+    }
+  ]
+}

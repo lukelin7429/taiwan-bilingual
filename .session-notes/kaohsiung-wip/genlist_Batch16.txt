@@ -1,0 +1,23 @@
+=== Batch16 ===
+- slug: neimen-jh | 內門國民中學 | Neimen District 內門區 | level: junior-high
+- slug: neimen-es | 內門國小 | Neimen District 內門區 | level: elementary
+- slug: ks-mushan-es | 木柵國小 | Neimen District 內門區 | level: elementary
+- slug: gouping-es | 溝坪國小 | Neimen District 內門區 | level: elementary
+- slug: guanting-es | 觀亭國小 | Neimen District 內門區 | level: elementary
+- slug: jinzhu-es | 金竹國小 | Neimen District 內門區 | level: elementary
+- slug: ks-taoyuan-jh | 桃源國民中學 | Taoyuan District (Kaohsiung) 桃源區 | level: junior-high
+- slug: ks-baoshan-es | 寶山國小 | Taoyuan District (Kaohsiung) 桃源區 | level: elementary
+- slug: ks-jianshan-es | 建山國小 | Taoyuan District (Kaohsiung) 桃源區 | level: elementary
+- slug: ks-taoyuan-es | 桃源國小 | Taoyuan District (Kaohsiung) 桃源區 | level: elementary
+- slug: zhangshanshiyan-es | 樟山實驗國民小學 | Taoyuan District (Kaohsiung) 桃源區 | level: elementary
+- slug: ks-xingzhong-es | 興中國小 | Taoyuan District (Kaohsiung) 桃源區 | level: elementary
+- slug: wenshan-hs | 高雄市立文山高級中學 | Niaosong District 鳥松區 | level: senior-high
+- slug: niaosong-jh | 鳥松國民中學 | Niaosong District 鳥松區 | level: junior-high
+- slug: ks-renmei-es | 仁美國小 | Niaosong District 鳥松區 | level: elementary
+- slug: ks-dahua-es | 大華國小 | Niaosong District 鳥松區 | level: elementary
+- slug: niaosong-es | 鳥松國小 | Niaosong District 鳥松區 | level: elementary
+- slug: jiading-jh | 茄萣國民中學 | Cieding District 茄萣區 | level: junior-high
+- slug: jiading-chenggong-es | 成功國小 | Cieding District 茄萣區 | level: elementary
+- slug: ks-shalun-es | 砂崙國小 | Cieding District 茄萣區 | level: elementary
+- slug: xingda-es | 興達國小 | Cieding District 茄萣區 | level: elementary
+- slug: jiading-es | 茄萣國小 | Cieding District 茄萣區 | level: elementary

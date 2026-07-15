@@ -1,0 +1,25 @@
+=== Batch17 ===
+- slug: gaoxiongnvzhong-hs | 高雄女中 | Cianjin District 前金區 | level: senior-high
+- slug: qianjin-jh | 前金國中 | Cianjin District 前金區 | level: junior-high
+- slug: ks-qianjin-es | 前金國小 | Cianjin District 前金區 | level: elementary
+- slug: ks-jianguo-es | 建國國小 | Cianjin District 前金區 | level: elementary
+- slug: yancheng-jh | 鹽埕國中 | Yancheng District 鹽埕區 | level: junior-high
+- slug: ks-guangrong-es | 光榮國小 | Yancheng District 鹽埕區 | level: elementary
+- slug: yancheng-zhongxiao-es | 忠孝國小 | Yancheng District 鹽埕區 | level: elementary
+- slug: yancheng-es | 鹽埕國小 | Yancheng District 鹽埕區 | level: elementary
+- slug: dashe-jh | 大社國民中學 | Dashe District 大社區 | level: junior-high
+- slug: jiacheng-es | 嘉誠國小 | Dashe District 大社區 | level: elementary
+- slug: ks-dashe-es | 大社國小 | Dashe District 大社區 | level: elementary
+- slug: ks-guanyin-es | 觀音國小 | Dashe District 大社區 | level: elementary
+- slug: alian-jh | 阿蓮國民中學 | Alian District 阿蓮區 | level: junior-high
+- slug: zhonglu-es | 中路國小 | Alian District 阿蓮區 | level: elementary
+- slug: alian-fuan-es | 復安國小 | Alian District 阿蓮區 | level: elementary
+- slug: alian-es | 阿蓮國小 | Alian District 阿蓮區 | level: elementary
+- slug: ziguan-jh | 梓官國民中學 | Zihguan District 梓官區 | level: junior-high
+- slug: heliao-jh | 蚵寮國民中學 | Zihguan District 梓官區 | level: junior-high
+- slug: ziguan-es | 梓官國小 | Zihguan District 梓官區 | level: elementary
+- slug: ks-heliao-es | 蚵寮國小 | Zihguan District 梓官區 | level: elementary
+- slug: mituo-jh | 彌陀國民中學 | Mituo District 彌陀區 | level: junior-high
+- slug: ks-nanan-es | 南安國小 | Mituo District 彌陀區 | level: elementary
+- slug: shouling-es | 壽齡國小 | Mituo District 彌陀區 | level: elementary
+- slug: mituo-es | 彌陀國小 | Mituo District 彌陀區 | level: elementary

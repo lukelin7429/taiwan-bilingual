@@ -1,0 +1,2074 @@
+{
+  "by_town": [
+    {
+      "township_en": "Sinsing District",
+      "township_zh": "新興區",
+      "zip": "800",
+      "count_declared": 6,
+      "schools": [
+        {
+          "name": "高雄市立新興高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "高雄市立高雄高級商業職業學校",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "七賢國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "信義國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "大同國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "新興國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Cianjin District",
+      "township_zh": "前金區",
+      "zip": "801",
+      "count_declared": 4,
+      "schools": [
+        {
+          "name": "高雄女中",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "前金國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "前金國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "建國國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Lingya District",
+      "township_zh": "苓雅區",
+      "zip": "802",
+      "count_declared": 10,
+      "schools": [
+        {
+          "name": "中正高中",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "國立高雄師範大學附屬高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "大仁國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "苓雅國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "中正國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "五權國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "四維國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "成功國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "福東國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "苓洲國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Yancheng District",
+      "township_zh": "鹽埕區",
+      "zip": "803",
+      "count_declared": 4,
+      "schools": [
+        {
+          "name": "鹽埕國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "光榮國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "忠孝國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "鹽埕國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Gushan District",
+      "township_zh": "鼓山區",
+      "zip": "804",
+      "count_declared": 11,
+      "schools": [
+        {
+          "name": "鼓山高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "七賢國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "壽山國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "明華國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "中山國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "九如國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "內惟國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "壽山國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "鼓山國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "鼓岩國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "龍華國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Cijin District",
+      "township_zh": "旗津區",
+      "zip": "805",
+      "count_declared": 3,
+      "schools": [
+        {
+          "name": "旗津國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "中洲國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "旗津國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Cianjhen District",
+      "township_zh": "前鎮區",
+      "zip": "806",
+      "count_declared": 22,
+      "schools": [
+        {
+          "name": "中正高工",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "前鎮高中",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "瑞祥高中",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "光華國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "前鎮國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "獅甲國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "瑞豐國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "興仁國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "仁愛國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "佛公國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "光華國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "前鎮國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "復興國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "愛群國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "明正國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "樂群國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "民權國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "獅甲國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "瑞祥國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "瑞豐國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "紅毛港國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "鎮昌國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Sanmin District",
+      "township_zh": "三民區",
+      "zip": "807",
+      "count_declared": 22,
+      "schools": [
+        {
+          "name": "高雄市立三民高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "高雄市立高雄高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "高雄市立高雄高級工業職業學校",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "三民國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "正興國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "民族國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "陽明國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "鼎金國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "三民國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "光武國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "十全國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "博愛國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "愛國國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "東光國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "正興國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "民族國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "河堤國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "河濱國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "獅湖國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "莊敬國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "陽明國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "鼎金國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Nanzih District",
+      "township_zh": "楠梓區",
+      "zip": "811",
+      "count_declared": 16,
+      "schools": [
+        {
+          "name": "中山高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "國光高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "楠梓高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "右昌國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "國昌國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "後勁國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "楠梓國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "翠屏國民中小學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "加昌國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "右昌國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "後勁國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "援中國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "楠梓國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "楠陽國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "油廠國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "莒光國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Siaogang District",
+      "township_zh": "小港區",
+      "zip": "812",
+      "count_declared": 19,
+      "schools": [
+        {
+          "name": "小港高中",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "高鳳工家",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "中山國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "小港國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "明義國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "鳳林國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "二苓國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "坪頂國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "太平國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "小港國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "明義國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "桂林國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "港和國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "漢民國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "華山國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "青山國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "鳳林國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "鳳陽國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "鳳鳴國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Zuoying District",
+      "township_zh": "左營區",
+      "zip": "813",
+      "count_declared": 19,
+      "schools": [
+        {
+          "name": "高雄市立三民高級家事商業職業學校",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "高雄市立左營高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "高雄市立新莊高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "高雄市立海青高級工商職業學校",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "大義國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "左營國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "文府國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "福山國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "立德國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "龍華國中",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "勝利國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "左營國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "文府國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "新光國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "新民國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "新莊國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "明德國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "永清國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "福山國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Renwu District",
+      "township_zh": "仁武區",
+      "zip": "814",
+      "count_declared": 8,
+      "schools": [
+        {
+          "name": "仁武高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "大灣國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "仁武國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "八卦國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "灣內國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "烏林國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "登發國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "竹後國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Dashe District",
+      "township_zh": "大社區",
+      "zip": "815",
+      "count_declared": 4,
+      "schools": [
+        {
+          "name": "大社國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "嘉誠國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "大社國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "觀音國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Gangshan District",
+      "township_zh": "岡山區",
+      "zip": "820",
+      "count_declared": 13,
+      "schools": [
+        {
+          "name": "國立岡山高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "國立岡山高級農工職業學校",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "前峰國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "嘉興國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "岡山國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "兆湘國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "前峰國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "和平國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "嘉興國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "壽天國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "岡山國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "後紅國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "竹圍國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Lujhu District",
+      "township_zh": "路竹區",
+      "zip": "821",
+      "count_declared": 10,
+      "schools": [
+        {
+          "name": "高雄市立路竹高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "一甲國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "一甲國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "三埤國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "下坑國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "北嶺國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "大社國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "竹滬國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "蔡文國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "路竹國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Alian District",
+      "township_zh": "阿蓮區",
+      "zip": "822",
+      "count_declared": 4,
+      "schools": [
+        {
+          "name": "阿蓮國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "中路國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "復安國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "阿蓮國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Tianliao District",
+      "township_zh": "田寮區",
+      "zip": "823",
+      "count_declared": 3,
+      "schools": [
+        {
+          "name": "田寮國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "崇德國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "新興國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Yanchao District",
+      "township_zh": "燕巢區",
+      "zip": "824",
+      "count_declared": 7,
+      "schools": [
+        {
+          "name": "燕巢國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "安招國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "橫山國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "深水國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "燕巢國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "金山國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "鳳雄國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Ciaotou District",
+      "township_zh": "橋頭區",
+      "zip": "825",
+      "count_declared": 8,
+      "schools": [
+        {
+          "name": "國立高科實驗高級中等學校",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "國立高科實驗高級中等學校",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "橋頭國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "五林國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "仕隆國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "橋頭國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "甲圍國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "興糖國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Zihguan District",
+      "township_zh": "梓官區",
+      "zip": "826",
+      "count_declared": 4,
+      "schools": [
+        {
+          "name": "梓官國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "蚵寮國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "梓官國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "蚵寮國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Mituo District",
+      "township_zh": "彌陀區",
+      "zip": "827",
+      "count_declared": 4,
+      "schools": [
+        {
+          "name": "彌陀國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "南安國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "壽齡國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "彌陀國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Yong'an District",
+      "township_zh": "永安區",
+      "zip": "828",
+      "count_declared": 4,
+      "schools": [
+        {
+          "name": "永安國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "新港國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "永安國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "維新國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Hunei District",
+      "township_zh": "湖內區",
+      "zip": "829",
+      "count_declared": 6,
+      "schools": [
+        {
+          "name": "湖內國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "三侯國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "大湖國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "文賢國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "明宗國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "海埔國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Fongshan District",
+      "township_zh": "鳳山區",
+      "zip": "830",
+      "count_declared": 34,
+      "schools": [
+        {
+          "name": "國立鳳山高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "國立鳳山高級商工職業學校",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "國立鳳新高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "高雄市立福誠高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "中崙國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "五甲國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "忠孝國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "青年國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "鳳山國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "鳳甲國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "鳳翔國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "鳳西國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "中山國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "中崙國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "中正國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "五甲國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "五福國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "南成國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "大東國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "忠孝國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "文山國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "文德國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "文華國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "新甲國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "曹公國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "正義國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "瑞興國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "福誠國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "誠正國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "過埤國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "鎮北國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "鳳山國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "鳳翔國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "鳳西國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Daliao District",
+      "township_zh": "大寮區",
+      "zip": "831",
+      "count_declared": 13,
+      "schools": [
+        {
+          "name": "中庄國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "大寮國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "潮寮國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "中庄國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "大寮國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "山頂國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "後庄國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "忠義國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "昭明國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "永芳國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "溪寮國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "潮寮國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "翁園國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Linyuan District",
+      "township_zh": "林園區",
+      "zip": "832",
+      "count_declared": 9,
+      "schools": [
+        {
+          "name": "高雄市立林園高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "中芸國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "中芸國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "廣應國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "林園國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "汕尾國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "港埔國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "王公國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "金潭國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Niaosong District",
+      "township_zh": "鳥松區",
+      "zip": "833",
+      "count_declared": 5,
+      "schools": [
+        {
+          "name": "高雄市立文山高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "鳥松國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "仁美國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "大華國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "鳥松國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Dashu District",
+      "township_zh": "大樹區",
+      "zip": "840",
+      "count_declared": 10,
+      "schools": [
+        {
+          "name": "大樹國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "溪埔國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "九曲國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "大樹國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "姑山國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "小坪國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "水寮國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "溪埔國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "興田國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "龍目國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Cishan District",
+      "township_zh": "旗山區",
+      "zip": "842",
+      "count_declared": 11,
+      "schools": [
+        {
+          "name": "國立旗山高級農工職業學校",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "國立旗美高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "圓富國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "大洲國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "旗山國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "圓潭國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "嶺口國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "旗尾國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "旗山國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "溪洲國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "鼓山國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Meinong District",
+      "township_zh": "美濃區",
+      "zip": "843",
+      "count_declared": 12,
+      "schools": [
+        {
+          "name": "南隆國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "美濃國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "龍肚國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "中壇國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "吉東國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "吉洋國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "廣興國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "東門國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "福安國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "美濃國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "龍山國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "龍肚國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Liouguei District",
+      "township_zh": "六龜區",
+      "zip": "844",
+      "count_declared": 9,
+      "schools": [
+        {
+          "name": "高雄市立六龜高級中學",
+          "level": "senior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "六龜高級中學附屬國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "寶來國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "六龜國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "寶來國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "新威國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "新發國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "荖濃國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "龍興國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Neimen District",
+      "township_zh": "內門區",
+      "zip": "845",
+      "count_declared": 6,
+      "schools": [
+        {
+          "name": "內門國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "內門國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "木柵國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "溝坪國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "觀亭國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "金竹國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Shanlin District",
+      "township_zh": "杉林區",
+      "zip": "846",
+      "count_declared": 8,
+      "schools": [
+        {
+          "name": "巴楠花部落中小學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "杉林國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "上平國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "巴楠花部落中小學",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "新莊國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "月美國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "杉林國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "集來國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Jiasian District",
+      "township_zh": "甲仙區",
+      "zip": "847",
+      "count_declared": 3,
+      "schools": [
+        {
+          "name": "甲仙國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "小林國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "甲仙國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Taoyuan District (Kaohsiung)",
+      "township_zh": "桃源區",
+      "zip": "848",
+      "count_declared": 6,
+      "schools": [
+        {
+          "name": "桃源國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "寶山國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "建山國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "桃源國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "樟山實驗國民小學",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "興中國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Namasia District",
+      "township_zh": "那瑪夏區",
+      "zip": "849",
+      "count_declared": 3,
+      "schools": [
+        {
+          "name": "那瑪夏國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "民權國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "民生國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Maolin District",
+      "township_zh": "茂林區",
+      "zip": "851",
+      "count_declared": 3,
+      "schools": [
+        {
+          "name": "茂林國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "多納國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "茂林國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    },
+    {
+      "township_en": "Cieding District",
+      "township_zh": "茄萣區",
+      "zip": "852",
+      "count_declared": 5,
+      "schools": [
+        {
+          "name": "茄萣國民中學",
+          "level": "junior-high",
+          "badge": "soon"
+        },
+        {
+          "name": "成功國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "砂崙國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "興達國小",
+          "level": "elementary",
+          "badge": "soon"
+        },
+        {
+          "name": "茄萣國小",
+          "level": "elementary",
+          "badge": "soon"
+        }
+      ]
+    }
+  ],
+  "universities": [
+    {
+      "eng": "National Sun Yat-sen University",
+      "zh": "國立中山大學",
+      "sub": "Gushan District 鼓山區",
+      "badge": "soon"
+    },
+    {
+      "eng": "National Kaohsiung University of Science and Technology",
+      "zh": "國立高雄科技大學",
+      "sub": "Yancheng District 鹽埕區",
+      "badge": "soon"
+    },
+    {
+      "eng": "National Kaohsiung Normal University",
+      "zh": "國立高雄師範大學",
+      "sub": "Lingya District 苓雅區",
+      "badge": "soon"
+    },
+    {
+      "eng": "Kaohsiung Medical University",
+      "zh": "高雄醫學大學",
+      "sub": "Sanmin District 三民區",
+      "badge": "soon"
+    }
+  ]
+}

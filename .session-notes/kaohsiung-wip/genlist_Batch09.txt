@@ -1,0 +1,14 @@
+=== Batch09 ===
+- slug: zhongzhuang-jh | 中庄國民中學 | Daliao District 大寮區 | level: junior-high
+- slug: daliao-jh | 大寮國民中學 | Daliao District 大寮區 | level: junior-high
+- slug: chaoliao-jh | 潮寮國民中學 | Daliao District 大寮區 | level: junior-high
+- slug: zhongzhuang-es | 中庄國小 | Daliao District 大寮區 | level: elementary
+- slug: daliao-es | 大寮國小 | Daliao District 大寮區 | level: elementary
+- slug: ks-shanding-es | 山頂國小 | Daliao District 大寮區 | level: elementary
+- slug: ks-houzhuang-es | 後庄國小 | Daliao District 大寮區 | level: elementary
+- slug: ks-zhongyi-es | 忠義國小 | Daliao District 大寮區 | level: elementary
+- slug: zhaoming-es | 昭明國小 | Daliao District 大寮區 | level: elementary
+- slug: yongfang-es | 永芳國小 | Daliao District 大寮區 | level: elementary
+- slug: xiliao-es | 溪寮國小 | Daliao District 大寮區 | level: elementary
+- slug: chaoliao-es | 潮寮國小 | Daliao District 大寮區 | level: elementary
+- slug: wengyuan-es | 翁園國小 | Daliao District 大寮區 | level: elementary

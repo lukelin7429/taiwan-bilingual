@@ -1,0 +1,17 @@
+=== Batch07 ===
+- slug: zhongshan-hs | 中山高級中學 | Nanzih District 楠梓區 | level: senior-high
+- slug: guoguang-hs | 國光高級中學 | Nanzih District 楠梓區 | level: senior-high
+- slug: nanzi-hs | 楠梓高級中學 | Nanzih District 楠梓區 | level: senior-high
+- slug: youchang-jh | 右昌國中 | Nanzih District 楠梓區 | level: junior-high
+- slug: guochang-jh | 國昌國中 | Nanzih District 楠梓區 | level: junior-high
+- slug: houjin-jh | 後勁國中 | Nanzih District 楠梓區 | level: junior-high
+- slug: nanzi-jh | 楠梓國中 | Nanzih District 楠梓區 | level: junior-high
+- slug: cuiping-jhes | 翠屏國民中小學 | Nanzih District 楠梓區 | level: junior-high
+- slug: jiachang-es | 加昌國小 | Nanzih District 楠梓區 | level: elementary
+- slug: youchang-es | 右昌國小 | Nanzih District 楠梓區 | level: elementary
+- slug: houjin-es | 後勁國小 | Nanzih District 楠梓區 | level: elementary
+- slug: yuanzhong-es | 援中國小 | Nanzih District 楠梓區 | level: elementary
+- slug: nanzi-es | 楠梓國小 | Nanzih District 楠梓區 | level: elementary
+- slug: ks-nanyang-es | 楠陽國小 | Nanzih District 楠梓區 | level: elementary
+- slug: youchang-refinery-es | 油廠國小 | Nanzih District 楠梓區 | level: elementary
+- slug: ks-juguang-es | 莒光國小 | Nanzih District 楠梓區 | level: elementary

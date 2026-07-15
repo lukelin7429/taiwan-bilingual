@@ -1,0 +1,5 @@
+=== Universities ===
+- slug: national-sun-yat-sen-university | 國立中山大學 | Gushan District 鼓山區
+- slug: national-kaohsiung-university-of-science-and-technology | 國立高雄科技大學 | Yancheng District 鹽埕區
+- slug: national-kaohsiung-normal-university | 國立高雄師範大學 | Lingya District 苓雅區
+- slug: kaohsiung-medical-university | 高雄醫學大學 | Sanmin District 三民區

@@ -1,0 +1,20 @@
+=== Batch15 ===
+- slug: yanchao-jh | 燕巢國民中學 | Yanchao District 燕巢區 | level: junior-high
+- slug: anzhao-es | 安招國小 | Yanchao District 燕巢區 | level: elementary
+- slug: ks-hengshan-es | 橫山國小 | Yanchao District 燕巢區 | level: elementary
+- slug: shenshui-es | 深水國小 | Yanchao District 燕巢區 | level: elementary
+- slug: yanchao-es | 燕巢國小 | Yanchao District 燕巢區 | level: elementary
+- slug: ks-jinshan-es | 金山國小 | Yanchao District 燕巢區 | level: elementary
+- slug: fengxiong-es | 鳳雄國小 | Yanchao District 燕巢區 | level: elementary
+- slug: xinxing-hs | 高雄市立新興高級中學 | Sinsing District 新興區 | level: senior-high
+- slug: kaoshang-vs | 高雄市立高雄高級商業職業學校 | Sinsing District 新興區 | level: senior-high
+- slug: qixian-es | 七賢國小 | Sinsing District 新興區 | level: elementary
+- slug: ks-xinyi-es | 信義國小 | Sinsing District 新興區 | level: elementary
+- slug: ks-datong-es | 大同國小 | Sinsing District 新興區 | level: elementary
+- slug: ks-xinxing-es | 新興國小 | Sinsing District 新興區 | level: elementary
+- slug: hunei-jh | 湖內國民中學 | Hunei District 湖內區 | level: junior-high
+- slug: sanhou-es | 三侯國小 | Hunei District 湖內區 | level: elementary
+- slug: ks-dahu-es | 大湖國小 | Hunei District 湖內區 | level: elementary
+- slug: ks-wenxian-es | 文賢國小 | Hunei District 湖內區 | level: elementary
+- slug: mingzong-es | 明宗國小 | Hunei District 湖內區 | level: elementary
+- slug: ks-haipu-es | 海埔國小 | Hunei District 湖內區 | level: elementary

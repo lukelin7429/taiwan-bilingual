@@ -1,0 +1,20 @@
+=== Batch05 ===
+- slug: xiaoganggaozhong-hs | 小港高中 | Siaogang District 小港區 | level: senior-high
+- slug: gaofenggongjia-hs | 高鳳工家 | Siaogang District 小港區 | level: senior-high
+- slug: ks-zhongshan-jh | 中山國中 | Siaogang District 小港區 | level: junior-high
+- slug: xiaogang-jh | 小港國中 | Siaogang District 小港區 | level: junior-high
+- slug: mingyi-jh | 明義國中 | Siaogang District 小港區 | level: junior-high
+- slug: ks-fenglin-jh | 鳳林國中 | Siaogang District 小港區 | level: junior-high
+- slug: erling-es | 二苓國小 | Siaogang District 小港區 | level: elementary
+- slug: ks-pingding-es | 坪頂國小 | Siaogang District 小港區 | level: elementary
+- slug: ks-taiping-es | 太平國小 | Siaogang District 小港區 | level: elementary
+- slug: xiaogang-es | 小港國小 | Siaogang District 小港區 | level: elementary
+- slug: ks-mingyi-es | 明義國小 | Siaogang District 小港區 | level: elementary
+- slug: ks-guilin-es | 桂林國小 | Siaogang District 小港區 | level: elementary
+- slug: ganghe-es | 港和國小 | Siaogang District 小港區 | level: elementary
+- slug: hanmin-es | 漢民國小 | Siaogang District 小港區 | level: elementary
+- slug: huashan-es | 華山國小 | Siaogang District 小港區 | level: elementary
+- slug: ks-qingshan-es | 青山國小 | Siaogang District 小港區 | level: elementary
+- slug: ks-fenglin-es | 鳳林國小 | Siaogang District 小港區 | level: elementary
+- slug: fengyang-es | 鳳陽國小 | Siaogang District 小港區 | level: elementary
+- slug: ks-fengming-es | 鳳鳴國小 | Siaogang District 小港區 | level: elementary

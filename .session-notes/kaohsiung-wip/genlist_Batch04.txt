@@ -1,0 +1,23 @@
+=== Batch04 ===
+- slug: ks-sanmin-hs | 高雄市立三民高級中學 | Sanmin District 三民區 | level: senior-high
+- slug: xiongzhong-hs | 高雄市立高雄高級中學 | Sanmin District 三民區 | level: senior-high
+- slug: kaogong-vs | 高雄市立高雄高級工業職業學校 | Sanmin District 三民區 | level: senior-high
+- slug: ks-sanmin-jh | 三民國中 | Sanmin District 三民區 | level: junior-high
+- slug: zhengxing-jh | 正興國中 | Sanmin District 三民區 | level: junior-high
+- slug: minzu-jh | 民族國中 | Sanmin District 三民區 | level: junior-high
+- slug: ks-yangming-jh | 陽明國中 | Sanmin District 三民區 | level: junior-high
+- slug: dingjin-jh | 鼎金國中 | Sanmin District 三民區 | level: junior-high
+- slug: ks-sanmin-es | 三民國小 | Sanmin District 三民區 | level: elementary
+- slug: guangwu-es | 光武國小 | Sanmin District 三民區 | level: elementary
+- slug: ks-shiquan-es | 十全國小 | Sanmin District 三民區 | level: elementary
+- slug: ks-boai-es | 博愛國小 | Sanmin District 三民區 | level: elementary
+- slug: ks-aiguo-es | 愛國國小 | Sanmin District 三民區 | level: elementary
+- slug: ks-dongguang-es | 東光國小 | Sanmin District 三民區 | level: elementary
+- slug: zhengxing-es | 正興國小 | Sanmin District 三民區 | level: elementary
+- slug: ks-minzu-es | 民族國小 | Sanmin District 三民區 | level: elementary
+- slug: ks-hedi-es | 河堤國小 | Sanmin District 三民區 | level: elementary
+- slug: hebin-es | 河濱國小 | Sanmin District 三民區 | level: elementary
+- slug: shihu-es | 獅湖國小 | Sanmin District 三民區 | level: elementary
+- slug: ks-zhuangjing-es | 莊敬國小 | Sanmin District 三民區 | level: elementary
+- slug: ks-yangming-es | 陽明國小 | Sanmin District 三民區 | level: elementary
+- slug: dingjin-es | 鼎金國小 | Sanmin District 三民區 | level: elementary

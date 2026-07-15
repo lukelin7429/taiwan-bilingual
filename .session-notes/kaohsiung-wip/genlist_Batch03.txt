@@ -1,0 +1,23 @@
+=== Batch03 ===
+- slug: zhongzhenggaogong-hs | 中正高工 | Cianjhen District 前鎮區 | level: senior-high
+- slug: qianzhengaozhong-hs | 前鎮高中 | Cianjhen District 前鎮區 | level: senior-high
+- slug: ruixianggaozhong-hs | 瑞祥高中 | Cianjhen District 前鎮區 | level: senior-high
+- slug: ks-guanghua-jh | 光華國中 | Cianjhen District 前鎮區 | level: junior-high
+- slug: qianzhen-jh | 前鎮國中 | Cianjhen District 前鎮區 | level: junior-high
+- slug: shijia-jh | 獅甲國中 | Cianjhen District 前鎮區 | level: junior-high
+- slug: ruifeng-jh | 瑞豐國中 | Cianjhen District 前鎮區 | level: junior-high
+- slug: xingren-jh | 興仁國中 | Cianjhen District 前鎮區 | level: junior-high
+- slug: ks-renai-es | 仁愛國小 | Cianjhen District 前鎮區 | level: elementary
+- slug: fugong-es | 佛公國小 | Cianjhen District 前鎮區 | level: elementary
+- slug: ks-guanghua-es | 光華國小 | Cianjhen District 前鎮區 | level: elementary
+- slug: qianzhen-es | 前鎮國小 | Cianjhen District 前鎮區 | level: elementary
+- slug: ks-fuxing-es | 復興國小 | Cianjhen District 前鎮區 | level: elementary
+- slug: aiqun-es | 愛群國小 | Cianjhen District 前鎮區 | level: elementary
+- slug: ks-mingzheng-es | 明正國小 | Cianjhen District 前鎮區 | level: elementary
+- slug: lequn-es | 樂群國小 | Cianjhen District 前鎮區 | level: elementary
+- slug: qianzhen-minquan-es | 民權國小 | Cianjhen District 前鎮區 | level: elementary
+- slug: shijia-es | 獅甲國小 | Cianjhen District 前鎮區 | level: elementary
+- slug: ks-ruixiang-es | 瑞祥國小 | Cianjhen District 前鎮區 | level: elementary
+- slug: ks-ruifeng-es | 瑞豐國小 | Cianjhen District 前鎮區 | level: elementary
+- slug: hongmaogang-es | 紅毛港國小 | Cianjhen District 前鎮區 | level: elementary
+- slug: zhenchang-es | 鎮昌國小 | Cianjhen District 前鎮區 | level: elementary
