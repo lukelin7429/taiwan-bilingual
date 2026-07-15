@@ -1,0 +1,164 @@
+### 高雄市立路竹高級中學
+- URL: https://www.lchs.kh.edu.tw/
+- Founded: 1952 (民國41年), originally "臺灣省立岡山中學路竹分部"
+- Facts: A complete school (JH+SH); part of the "High School Quality Enhancement" program; varsity teams in soccer, korfball, boxing, weightlifting.
+- Culture connection: District name Luzhu ("road bamboo") recalls the bamboo groves that once lined the old trade route between Tainan and the Kaohsiung plain.
+- Address: 高雄市路竹區中華路292號
+- Level: senior-high (complete school)
+
+### 一甲國民中學
+- URL: https://www.yjm.kh.edu.tw/
+- Founded: 1996 (民國85年)
+- Facts: Relatively young school; bilingual experimental class and sports experimental class; school-zone covers 甲南/甲北/社東/社西/社南/社中/竹園/下坑 villages.
+- Culture connection: "一甲" ("first jia") reflects the Qing-era land-survey unit used to divide reclaimed farmland.
+- Address: 高雄市路竹區一甲路111號
+- Level: junior-high
+
+### 一甲國小
+- URL: https://www.yjp.kh.edu.tw/
+- Founded: 1964 (民國53年)
+- Facts: ~318 students; Chinese orchestra club (founded 2002) repeatedly represents Kaohsiung at national competitions.
+- Culture connection: Shares the same "一甲" place-name origin as the junior high above.
+- Address: 高雄市路竹區甲南里大智路43號
+- Level: elementary
+
+### 三埤國小
+- URL: https://www.spi.kh.edu.tw/
+- Founded: not found (historical "mother school" that spun off 北嶺國小 as a branch in 1952)
+- Facts: very small rural school (~61 students, 2023); nationally recognized 傀儡戲 (traditional puppet theatre) troupe.
+- Culture connection: "三埤" ("three ponds") names the historic irrigation reservoirs that watered the surrounding farmland.
+- Address: 高雄市路竹區三爺里民權路7號
+- Level: elementary
+
+### 下坑國小
+- URL: https://www.xkp.kh.edu.tw/
+- Founded: 1922 (民國11年), founded as "大社公學校新園分教場," initially borrowing space in the local 福善宮 temple
+- Facts: independent since 1946; added kindergarten 1977, special-ed class 1992, hot lunch 1981.
+- Culture connection: Its origin story — literally starting in a temple hall — reflects how rural Luzhu communities relied on local temples as civic/educational anchors before formal school buildings existed.
+- Address: 高雄市路竹區下坑里太平路384號
+- Level: elementary
+
+### 北嶺國小
+- URL: https://www.blp.kh.edu.tw/
+- Founded: 1952 (民國41年) as a branch of 路竹國民學校; became a branch of 三埤國小 1971; independent 1977 (民國66年)
+- Facts: UNUSUAL — in Sept 2025 (民國114年) officially relaunched as Taiwan's first public Taiwanese-language (台語) experimental elementary school, nationally covered by BBC News Chinese and local media. Very recent (~10 months old) — should be verified as still accurate before publishing.
+- Culture connection: Its adoption as the nation's pilot Hoklo/Taiwanese-medium school ties directly to Luzhu's historically strong Hoklo-speaking farming community.
+- Address: not found (only district known: 路竹區北嶺里)
+- Level: elementary
+
+### 大社國小 (Lujhu District, slug lujhu-dashe-es)
+- URL: https://www.lds.kh.edu.tw/
+- Founded: 1900 (民國前12年, Japanese colonial era)
+- Facts: over 124 school anniversaries celebrated; solar-powered ecological greenhouse (unique in Kaohsiung); taiko drum team placed 2nd nationally; 路竹國小 split off from this school 1943.
+- Culture connection: "大社" ("great settlement") marks one of the oldest Han settlements in the Luzhu plain.
+- Address: 高雄市路竹區大社路243號
+- Level: elementary
+- CONFIRMED DISTINCT from the separate "大社國小" in Dashe District (dso.kh.edu.tw) — same Chinese name, different district, genuinely different institution, same pattern as the 姑山/鼓山 disambiguation.
+
+### 竹滬國小
+- URL: https://www.zfp.kh.edu.tw/
+- Founded: 1922 (民國11年) as "湖內鄉第一公學校竹滬分教場"; independent 1944 as "湖內鄉竹滬國民學校"; transferred from Hunei to Luzhu township 1950
+- Facts: featured in a 2019 CNA story about the century-old school reinventing itself around local history.
+- Culture connection: Located in 竹滬 (near Zhuhu Fishing Port), a historic Han-Taiwanese fishing/salt-farming settlement on the Taiwan Strait coast.
+- Address: 高雄市路竹區竹滬里成功路2號
+- Level: elementary
+
+### 蔡文國小
+- URL: https://www.tsw.kh.edu.tw/
+- Founded: 2001 (民國90年) — split off from 路竹國小 as "竹西國小籌備處" March 2001, renamed 蔡文國小 December 2001
+- Facts: name chosen after local historical research revealed the area was originally "蔡文庄," commemorating Cai Wen, a general under Koxinga who led military-agricultural colonization here.
+- Culture connection: directly named for Ming-loyalist general Cai Wen's 17th-century military-farming settlement.
+- Address: 高雄市路竹區國昌路548號
+- Level: elementary
+
+### 路竹國小
+- URL: https://www.lzp.kh.edu.tw/
+- Founded: 1943 (民國32年) — split off from 大社國小, merged with a 三爺 branch campus
+- Facts: parent school to both 竹滬國小 (via lineage) and later branches.
+- Culture connection: The district's flagship elementary school, named for and anchoring the Luzhu town center.
+- Address: 高雄市路竹區中山路712巷16號
+- Level: elementary
+
+### 大樹國民中學
+- URL: https://www.dsm.kh.edu.tw/
+- Founded: 1958 (民國47年) as "高雄縣鳳山中學大樹分部"; independent 1960 (民國49年)
+- Facts: established a 溪埔分部 branch 1976, which later became independent 溪埔國中.
+- Culture connection: named for Dashu ("big tree") District, whose name references large old trees that once marked the area.
+- Address: 高雄市大樹區九曲路500號
+- Level: junior-high
+
+### 溪埔國民中學
+- URL: https://www.xpm.kh.edu.tw/
+- Founded: began as 大樹國中's 溪埔分部, established 1976 (民國65年); exact independence date not found
+- Facts: has a covered/windproof basketball court.
+- Culture connection: "溪埔" ("river floodplain") names the low-lying land along the Gaoping River — historically flood-prone farmland.
+- Address: not found (only district area confirmed)
+- Level: junior-high
+- NOTE: co-located with 溪埔國小 (ES) sharing the Xipu place-name — a normal JH/ES pairing, not a duplicate.
+
+### 九曲國小
+- URL: https://www.jqp.kh.edu.tw/
+- Founded: not found
+- Facts: about 25 classes, ~549 students; located on Jiuqu Road, same road as 大樹國中.
+- Culture connection: "九曲" ("nine bends") describes the winding course of the nearby Gaoping River.
+- Address: not found (near 九曲路)
+- Level: elementary
+
+### 大樹國小
+- URL: https://www.dsp.kh.edu.tw/
+- Founded: 1913 (民國2年, Japanese colonial era) as "大樹腳公學校," originally meeting in the local 保安宮 temple
+- Facts: renamed 大樹國民小學 1968; spun off a 和山分校 (1969) and 龍目分校 (1971, later independent 龍目國小); over a century of history.
+- Culture connection: the district's namesake school, "big tree" referring to old-growth trees once used as local landmarks.
+- Address: not found (district administrative center area)
+- Level: elementary
+
+### 姑山國小 (slug dashu-gushan-es)
+- URL: https://www.gsp.kh.edu.tw/
+- Founded: 1965 (民國54年) as "溪埔國民學校姑山分班"; independent 1981 (民國70年) as 高雄縣姑山國民小學
+- Facts: campus grew from 0.3 to 0.9 hectares after independence.
+- Culture connection: named for a local hill (姑山, "Aunt Mountain") in the Dashu foothills.
+- Address: 高雄市大樹區姑山里1號
+- Level: elementary
+- CONFIRMED DISTINCT from 鼓山國小 (Gushan District) — different Chinese characters (姑=aunt vs 鼓=drum), different district, no ambiguity.
+
+### 小坪國小
+- URL: https://www.xpn.kh.edu.tw/
+- Founded: not found (likely another former 大樹國小 branch given the area's pattern, not verified)
+- Facts: limited facts found beyond location and attached kindergarten.
+- Culture connection: "小坪" ("small terrace/plateau") describes its position on a small flat foothill terrace in the Dashu highlands.
+- Address: 高雄市大樹區小坪路73號
+- Level: elementary
+
+### 水寮國小
+- URL: https://www.slp.kh.edu.tw/
+- Founded: 1960 (民國49年) — inferred from a documented 60th-anniversary celebration Dec 2020
+- Facts: celebrated 60th anniversary Dec 2020 with student performances.
+- Culture connection: "水寮" ("water hut/shed") reflects its origin as a small settlement built around water-management huts serving irrigation channels.
+- Address: 高雄市大樹區水寮里中華路國小巷1號
+- Level: elementary
+
+### 溪埔國小
+- URL: not directly fetchable (frame-based site)
+- Founded: not found
+- Facts: bilingual education program and special-education resources; distinct institution from 溪埔國中 (JH) though sharing the place-name and district.
+- Culture connection: shares the "溪埔" river-floodplain place-name history described under 溪埔國中 above.
+- Address: 高雄市大樹區溪埔里43號
+- Level: elementary
+
+### 興田國小
+- URL: https://www.xtp.kh.edu.tw/
+- Founded: not found
+- Facts: limited facts found beyond address/phone.
+- Culture connection: "興田" ("thriving fields") names a rural farming community in the same historic Xipu floodplain area.
+- Address: 高雄市大樹區興田路59號
+- Level: elementary
+
+### 龍目國小
+- URL: https://www.lmp.kh.edu.tw/
+- Founded: 1971 (民國60年) — became independent from 大樹國小's 龍目分校
+- Facts: known locally as the "green forest elementary school" — hillside campus with an ecology pond and hidden forest park behind the school, a minor local tourist attraction.
+- Culture connection: nestled at the foot of the hills in Longmu ("dragon eye") Village, named after a local geographic/dragon-eye landform feature.
+- Address: 高雄市大樹區龍目里龍目路56號
+- Level: elementary
+
+SUMMARY FLAGS: (1) 北嶺國小 underwent a major, very recent (Sept 2025) transformation into Taiwan's first public Taiwanese-language experimental school — confirm still accurate before publishing; (2) 大社國小 (this list, Lujhu) confirmed distinct from Dashe District's same-named school; (3) 溪埔國中/溪埔國小 are a normal JH/ES pairing, not duplicates; (4) several schools' founding years/addresses not found (三埤, 九曲, 大樹國小, 小坪, 溪埔國小, 興田, 溪埔國中's exact address, 大樹國小's exact address) — marked honestly.

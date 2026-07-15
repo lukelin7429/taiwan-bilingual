@@ -1,0 +1,107 @@
+### 國立岡山高級中學 (Gangshan Senior High School)
+- URL: https://www.kssh.khc.edu.tw/
+- Founded: Nov 11 1946 (民國35年) as "Taiwan Provincial Kaohsiung Third Middle School"
+- Facts: Renamed "Taiwan Provincial Gangshan Middle School" 1947; senior-high-only since 1970; national since 2000; 1,411 students/45 classes; approaching 80th anniversary.
+- Culture connection: Sits beside Gangshan's landmark Mazu temple 壽天宮 in 壽天里, the historic religious center of old Akangtiam (阿公店), the Qing-era name for Gangshan.
+- Address: 高雄市岡山區壽天里公園路52號
+- Level: senior-high
+
+### 國立岡山高級農工職業學校 (slug gangshan-vs)
+- URL: https://www.ksvs.khc.edu.tw/
+- Founded: March 1936 (民國25年) as "Gangshan Agricultural National School"
+- Facts: ~1,700 students; renamed several times before becoming national in 2000; school emblem depicts a mountain (Gangshan), rice ear (agriculture), and gear (industry).
+- Culture connection: Original 1937 campus sat east of the 阿公店溪 (Agongdian Creek), the waterway around which the historic settlement of Akangtiam grew.
+- Address: 高雄市岡山區岡山路533號
+- Level: senior-high (vocational)
+
+### 前峰國民中學 (Qianfeng Junior High School)
+- URL: https://www.qfm.kh.edu.tw/
+- Founded: Aug 1965 (民國54年) as "Gangshan Middle School Gangshan Branch"; independent 前峰國中 1968
+- Facts: >1,600 students; new 2007 campus is a recognized Taiwan green-building case; historically spun off both 永安國中 (1979) and 嘉興國中.
+- Culture connection: Neighborhood name 前峰 comes from a Ming-Zheng era military-agricultural garrison (前鋒鎮右營); 鋒 later changed to 峰 for numerological reasons.
+- Address: 高雄市岡山區樹人路一號
+- Level: junior-high
+
+### 嘉興國民中學 (Jiaxing Junior High School)
+- URL: https://www.jsm.kh.edu.tw/
+- Founded: began as "前峰國中嘉興分部" April 1989 (民國78年); independent April 26 1997 (民國86年)
+- Facts: Founding pushed by local village heads of 嘉興/嘉峰/潭底/華崗/三和/大莊 里.
+- Culture connection: The 嘉興 area was recorded in 1898 as 五甲尾, later renamed with the auspicious characters 嘉興 ("fine and flourishing").
+- Address: 高雄市岡山區信中街486號
+- Level: junior-high
+- FLAG: sources disagree on founding/independence dates — this school's own history gives 1989/1997, while 前峰國中's own account gives 1995/1996. Needs verification.
+
+### 岡山國民中學 (Gangshan Junior High School)
+- URL: https://www.gsm.kh.edu.tw/
+- Founded: Oct 24 1956 (民國45年), initially borrowing classrooms from Gangshan Elementary
+- Facts: 61 classes with a sports class and special-ed class in every grade; campus 41,336 m²; historically spun off junior highs in 阿蓮/湖內/梓官/燕巢.
+- Culture connection: Founded as Gangshan (formerly Akangtiam) rapidly urbanized as the commercial hub between Tainan and Zuoying.
+- Address: not found (only district/road level info located)
+- Level: junior-high
+
+### 兆湘國小 (Zhaoxiang Elementary School)
+- URL: https://www.zxn.kh.edu.tw/
+- Founded: April 1 1949 (民國38年), originally "Air Force Gangshan Servicemen's Children's School"
+- Facts: Named in memory of Air Force martyr 王兆湘; the only elementary school in Gangshan District named after a person; a decommissioned AT-3 training aircraft displayed on campus since 2014.
+- Culture connection: Reflects Gangshan's mid-20th-century identity as home to a major ROC Air Force base and its dependents' community.
+- Address: 高雄市岡山區介壽路60號
+- Level: elementary
+
+### 前峰國小 (Qianfeng Elementary School)
+- URL: https://www.qfp.kh.edu.tw/
+- Founded: Sept 1 1950 (民國39年) as "高雄縣岡山鎮前峰國民學校"; renamed 前峰國民小學 1968
+- Facts: 34 classes, 785 students, 65 teachers.
+- Culture connection: Shares the 前峰 place name rooted in the Ming-Zheng era military farming garrison.
+- Address: 高雄市岡山區仁壽里育英路35號
+- Level: elementary
+
+### 和平國小 (Heping/Peace Elementary School)
+- URL: https://www.hpp.kh.edu.tw/
+- Founded: Aug 1 1985 (民國74年)
+- Facts: One of the newer elementary schools in the district.
+- Culture connection: A relatively young school built as Gangshan's urban population expanded in the 1980s, named with the aspirational "peace" rather than a historic place name.
+- Address: 高雄市岡山區和平路一號
+- Level: elementary
+
+### 嘉興國小 (Jiaxing Elementary School)
+- URL: https://www.jsp.kh.edu.tw/
+- Founded: April 1 1920 (Japanese colonial era)
+- Facts: Operated former branch schools at 小崗山 (1955) and 崗德 (1967).
+- Culture connection: The 嘉興 area was recorded in 1898 as 五甲尾, later given the auspicious name 嘉興 during Japanese-era administrative reorganization.
+- Address: 高雄市岡山區嘉興里嘉興路322號
+- Level: elementary
+
+### 壽天國小 (Shoutian Elementary School)
+- URL: https://www.stp.kh.edu.tw/
+- Founded: 2000 (民國89年) per a single secondary source — could not independently confirm
+- Facts: One of the newest elementary schools in central Gangshan; located near Gangshan Park.
+- Culture connection: Named after 壽天里 and the neighborhood's landmark Mazu temple 壽天宮 (dating to ~1712), the traditional religious center of old Gangshan.
+- Address: 高雄市岡山區壽天里公園東路55號
+- Level: elementary
+- FLAG: founding year confidence is low — needs direct verification.
+
+### 岡山國小 (Gangshan Elementary School)
+- URL: https://www.gsn.kh.edu.tw/
+- Founded: 1898 (Japanese colonial era) — originally a branch of 鳳山公學校 at 阿公店 (Akangtiam); independent "阿公店公學校" 1899
+- Facts: The oldest and longest-running school in the greater Dagangshan area, called "岡山首學"; most postwar-era school principals in the surrounding region were alumni of this school.
+- Culture connection: Its founding name 阿公店公學校 directly reflects Gangshan's pre-1920 name, Akangtiam, said to derive from an elderly man who ran a roadside teahouse/inn on this trade route between Tainan and Zuoying.
+- Address: 高雄市岡山區柳橋東路36號
+- Level: elementary
+
+### 後紅國小 (Houhong Elementary School)
+- URL: https://www.hfp.kh.edu.tw/
+- Founded: 1964 (民國53年)
+- Facts: The only school in Taiwan named "後紅."
+- Culture connection: The 後紅 settlement was historically divided into 頂後紅 and 下後紅; split administratively into 碧紅里/後紅里 in 1982, nearly two decades after the school was founded.
+- Address: 高雄市岡山區岡燕路2巷88號
+- Level: elementary
+
+### 竹圍國小 (Zhuwei Elementary School, slug ks-zhuwei-es)
+- URL: https://www.zw.kh.edu.tw/
+- Founded: Aug 1992 (民國81年), first principal 李清吉; campus built in phases 1994-2001
+- Facts: Established to serve population growth after the 1987 Gangshan urban land readjustment.
+- Culture connection: "竹圍" ("bamboo enclosure") is a common Taiwanese place name; this community transformed from farming village into modern residential area after 1987.
+- Address: 高雄市岡山區大仁北路一號
+- Level: elementary
+
+SUMMARY FLAGS: (1) 嘉興國中 — conflicting founding/independence dates (1989/1997 vs 1995/1996), needs verification; (2) 壽天國小 founding year rests on a single weak source; (3) 岡山國民中學 exact address not found; (4) four separate "Gangshan-named" schools confirmed genuinely distinct; (5) 岡山國小 (1898) and 嘉興國小 (1920) both pre-date 1945, flagged as Japanese colonial era.

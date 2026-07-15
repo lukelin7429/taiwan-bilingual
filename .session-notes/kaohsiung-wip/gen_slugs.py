@@ -40,7 +40,11 @@ SUFFIXES = [
     "高級海事水產職業學校", "高級工業職業學校", "高級商業職業學校",
     "高級中等學校", "高級中學",
     "國民中小學", "國中小", "國民小學", "國民中學", "國小", "國中",
+    # short colloquial forms the county directory sometimes uses directly
+    # instead of the full official name (e.g. "中正高中" not "中正高級中學")
+    "高工", "高中",
 ]
+VOC_SHORT_SUFFIXES = {"高工"}  # short-form suffix that itself implies vocational
 
 
 def strip_suffix(name):

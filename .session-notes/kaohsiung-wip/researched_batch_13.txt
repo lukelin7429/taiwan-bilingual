@@ -1,0 +1,139 @@
+### 高雄市立林園高級中學
+- URL: https://www.ly.kh.edu.tw/
+- Founded: 1935 (Japanese colonial era) as 林園庄立林園農業專修學校
+- Facts: Multiple renames tracked Taiwan's education-system changes (agricultural vocational → junior high → complete high school); briefly stopped senior-high enrollment 1968-1996; operates a junior-high division (含國中部) under one administration; became a Kaohsiung City school after 2010 merger.
+- Culture connection: Founded to train agricultural talent for Kaohsiung's coastal Linyuan farming/fishing community.
+- Address: 高雄市林園區林園北路481號
+- Level: senior-high (complete school, includes JH division)
+
+### 中芸國民中學
+- URL: https://www.zym.kh.edu.tw/
+- Founded: 1988 (民國77年) as a branch of a nearby school, independent since 1991 (民國80年)
+- Facts: Located in Zhongyun, a coastal fishing community; campus land reclaimed from salt-tolerant tidal/fishpond soil.
+- Culture connection: The school's land itself was "built from the sea" — reclaimed from brackish fishpond terrain typical of Linyuan's coastal aquaculture villages.
+- Address: 高雄市林園區中芸里中芸路3之100號
+- Level: junior-high
+
+### 中芸國小
+- URL: not found (frame-based site; official domain appears to be zyp.kh.edu.tw)
+- Founded: 1944 (Japanese colonial era) as 林園國民學校中芸分教場; renamed 高雄縣中芸國民學校 1946
+- Facts: Attached kindergarten established 1988; in the same coastal Zhongyun community as 中芸國中.
+- Culture connection: Reflects Linyuan's identity as a lagoon/fishing settlement — "中芸" village grew directly from coastal salt-flat land.
+- Address: 高雄市林園區中芸里中芸路1號
+- Level: elementary
+
+### 廣應國小 — FLAGGED: SCHOOL LIKELY DOES NOT EXIST
+- Could not find any evidence this school exists. Kaohsiung's official Linyuan District Office page lists exactly 6 elementary schools + 1 junior high for the district (中芸國小, 林園國小, 王公國小, 港埔國小, 金潭國小, 汕尾國小 + 中芸國中) — no 廣應國小 appears. "廣應" is a real neighborhood/village (里) name in Linyuan, served by 王公國小, not a separate school. Best guess: the genlist conflated the village name 廣應里 with a non-existent school name.
+- RECOMMENDATION: do NOT build a page for this entry — leave as "Coming soon" pending confirmation, matching the project's standing pattern for unconfirmed/nonexistent schools (e.g. Hsinchu County's 香園國小, Taitung's 垂柳國小).
+- Level: elementary (as given, existence unconfirmed)
+
+### 林園國小
+- URL: https://www.lyp.kh.edu.tw/
+- Founded: June 5 1902 (Japanese colonial era) as 頂林仔邊公學校
+- Facts: Renamed multiple times; arts-talent class since 1994; oldest school in the district, its original campus later used as temporary quarters for Linyuan Senior High's predecessor.
+- Culture connection: Its founding name "頂林仔邊" preserves the old place-name of Linyuan before it was renamed.
+- Address: 高雄市林園區忠孝西路20號
+- Level: elementary
+
+### 汕尾國小
+- URL: https://www.swp.kh.edu.tw/
+- Founded: not found (only the 2010 post-merger administrative rename is documented)
+- Facts: Ocean-themed campus design; located in Kaohsiung's southernmost coastal area.
+- Culture connection: "汕尾" (sandbar's tail) names a coastal sandbar landform at the southern tip of Linyuan's coastline.
+- Address: 高雄市林園區中汕里北汕路2巷58號
+- Level: elementary
+
+### 港埔國小
+- URL: https://www.gpp.kh.edu.tw/
+- Founded: Sept 1953 (民國42年) as a branch of Linyuan Elementary; independent Aug 1 1955
+- Facts: Attached kindergarten 1995; special-education resource class 1996.
+- Culture connection: "港埔" (harbor flat) reflects the area's origin as a small fishing-port sandflat.
+- Address: 高雄市林園區頂厝里校前路1號
+- Level: elementary
+
+### 王公國小
+- URL: https://www.wgp.kh.edu.tw/
+- Founded: Aug 1 2000 (民國89年) — one of the newest schools in the district, after multi-phase municipal land expropriation starting 1978
+- Facts: ~687 students, 29 classes, 54 teachers (2022 data); serves the 廣應里 (Guangying) neighborhood among others.
+- Culture connection: Named after "王公" (a folk-deity/king title common in local temple names), reflecting Linyuan's coastal folk-religion tradition.
+- Address: 高雄市林園區王公二路100號
+- Level: elementary
+
+### 金潭國小
+- URL: https://www.jtp.kh.edu.tw/
+- Founded: not found (baseball team founded 1995)
+- Facts: Nationally known for its student baseball team, many players from disadvantaged and Indigenous families (some from Namasia and Taoyuan Districts); competed at the Little League World Series in Williamsport, won multiple national/international titles.
+- Culture connection: The team's cross-district recruitment of Indigenous mountain-village children reflects Kaohsiung's broader north-south social geography.
+- Address: 高雄市林園區金潭路40號
+- Level: elementary
+
+### 高雄市立六龜高級中學（含附屬國民中學） — SINGLE COMBINED INSTITUTION, one page
+- URL: https://www.lgm.kh.edu.tw/
+- IMPORTANT: 高雄市立六龜高級中學 and 六龜高級中學附屬國民中學 are ONE combined institution, not two separate schools — a single 完全中學 with one principal, one campus, one administration since being upgraded to complete-school status in 2000. The "附屬國民中學" label is simply the formal/administrative name for its junior-high division (used for school-code/statistics purposes), the same pattern as 林園高中's own JH division above. Build ONE page, both genlist slugs route to "liugui-hs".
+- Founded: Sept 1956 (民國45年) as 高雄縣立美濃中學六龜分部 (branch of Meinong Middle School); independent 1958 as 高雄縣立六龜初級中學; became 高雄縣立六龜國民中學 1968; upgraded to complete high school 2000; city-run after 2010 merger
+- Facts: The only complete school (JH+SH) in the greater Qishan/Liouguei mountain region; ~409 students (2014); campus ~2.98 hectares; Indigenous rugby team and choral group; sister-school relationship with a Japanese agricultural high school (Kumamoto Prefecture).
+- Culture connection: Originally spun off from Meinong (a Hakka cultural center) to serve the more remote, mountainous Liouguei area along the Liaonong River.
+- Address: 高雄市六龜區義寶里光復路212號
+- Level: senior-high (complete school, JH+SH combined — see note above)
+
+### 寶來國民中學
+- URL: https://www.blm.kh.edu.tw/
+- Founded: Sept 1972 (民國61年) as "高雄縣立六龜國民中學桃源分部"; renamed "寶來分部" 1973; independent Aug 1977 (民國66年)
+- Facts: Historically linked to 六龜高中's lineage but today an independent school; has its own track-and-field facility.
+- Culture connection: Baolai (寶來, "wealth arrives") is named for its famous hot springs, likened by Japanese settlers to "Penglai" (a mythical paradise).
+- Address: 高雄市六龜區寶來里中正路137號
+- Level: junior-high
+
+### 六龜國小
+- URL: https://www.lgp.kh.edu.tw/
+- Founded: 1912 (民國1年, Japanese colonial era) as "蕃薯寮公學校六龜里分校"
+- Facts: Campus features Roman-column architecture blended with local motifs; ceramic murals depicting the "Six Turtles" landscape and Laonong River.
+- Culture connection: "六龜" (Six Turtles) refers to six turtle-shaped limestone hills along the Laonong River historically used as navigation landmarks; old name "蕃薯寮" (sweet-potato hut) reflects its origin as a small agricultural outpost.
+- Address: 高雄市六龜區義寶村光復路40號
+- Level: elementary
+
+### 寶來國小
+- URL: https://www.bla.kh.edu.tw/
+- Founded: not found (renamed to current form Dec 25 2010 after county-city merger)
+- Facts: Small school — 41 students, 14 teachers (2023); located in the Baolai hot-spring tourist area.
+- Culture connection: Shares its village's namesake hot springs.
+- Address: 高雄市六龜區寶來里中正路89號
+- Level: elementary
+
+### 新威國小
+- URL: https://www.xwp.kh.edu.tw/
+- Founded: June 1 1921 (民國10年, Japanese colonial era) as "六龜公學校新威分離教室"
+- Facts: One of the oldest schools in the Liouguei area; near the Xinwei Arboretum/Suspension Bridge, a well-known scenic attraction.
+- Culture connection: Adjacent to Xinwei's famous camphor/forestry heritage area, tying it to Liouguei's historic Japanese-era logging industry.
+- Address: 高雄市六龜區新興里新威路212號
+- Level: elementary
+
+### 新發國小
+- URL: https://www.xfp.kh.edu.tw/
+- Founded: 1948 (民國37年) as "荖濃國民學校新發分班"; independent Sept 1954 (民國43年)
+- Facts: Grew out of and was administratively tied to nearby Laonong Elementary before independence.
+- Culture connection: "新發" ("newly prospering") reflects a settlement that grew as an offshoot community along the Laonong River valley.
+- Address: 高雄市六龜區和平路115號
+- Level: elementary
+
+### 荖濃國小
+- URL: not found (no distinct branded domain; official school.kh.edu.tw WebID=31)
+- Founded: April 1925 (民國14年, Japanese colonial era), established at the private Dinglaonong study hall as "六龜公學校荖濃分教場"
+- Facts: One of several schools along the Laonong River tracing roots to a shared parent school (六龜公學校) during the Japanese era.
+- Culture connection: Sits directly on the Laonong River, the major waterway that shaped Liouguei's settlement pattern.
+- Address: 高雄市六龜區南橫路72號
+- Level: elementary
+
+### 龍興國小
+- URL: https://www.lxp.kh.edu.tw/
+- Founded: 1966 (民國55年) — the sixth and last school established in the Liouguei basin
+- Facts: Sits on a river terrace on the east bank of the Laonong River below Lingxiang Mountain; serves three villages spanning a 25km-long catchment ("forest school"); uses nearby Shibaluohan Mountain as a core curriculum theme.
+- Culture connection: Located beside Shibaluohan Mountain, a distinctive conglomerate-rock landscape considered one of Kaohsiung's notable natural scenic areas.
+- Address: 高雄市六龜區中興里中庄193號
+- Level: elementary
+
+SUMMARY FLAGS:
+1. 廣應國小 (Linyuan District) — LIKELY DOES NOT EXIST. Do not build a page; leave as "Coming soon", flag to Luke, matching the project's standing pattern for unconfirmed schools.
+2. 高雄市立六龜高級中學 and 六龜高級中學附屬國民中學 are ONE institution — build a single combined page (slug liugui-hs for both genlist rows), not two separate pages.
+3. Several founding years not confirmed despite search: 汕尾國小, 金潭國小, 寶來國小 (only later administrative renaming dates confirmed).
+4. No polyphone/ambiguous-character issues found in this batch's school names.

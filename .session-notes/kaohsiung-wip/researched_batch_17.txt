@@ -1,0 +1,199 @@
+### 高雄女中 (Kaohsiung Girls' Senior High School)
+- URL: https://www.kghs.kh.edu.tw/
+- Founded: 1924 (Taisho 13, Japanese colonial era) as 高雄州立高雄高等女學校; renamed 台灣省立高雄第一女子中學 1945; current name after Kaohsiung became a special municipality. Centennial celebrated 2024.
+- Facts: ~2,250 students in 63 classes; alumni include TV anchor 沈春華, Mayor 陳其邁, numerous legislators/judges; joint "over a century" reunion events with sister school 雄中 in 2024.
+- Culture connection: Its 1924 founding tracks the same wave of Japanese-era girls' schools built as Takao was renamed "Kaohsiung" in 1920.
+- Address: 高雄市前金區五福三路122號
+- Level: senior-high
+- Common name: 高雄女中/女中 confirmed.
+
+### 前金國中 (Qianjin Junior High)
+- URL: https://www.ccjh.kh.edu.tw/
+- Founded: 1946 (民國35年) as 高雄市立第二初級中學; renamed 前金國中 1968 with coeducation
+- Facts: Absorbed the short-lived 市立第三初級中學 1947; added senior-high division 1954 (briefly combined); central Kaohsiung's first PU running track 1990; gifted/music/arts-talent classes.
+- Culture connection: Sits in Cianjin (前金), one of old Takao's earliest-settled hamlets, named after a historic capital fund ("前金" literally "advance capital") tied to early land reclamation near the Love River estuary.
+- Address: 高雄市前金區六合二路278號
+- Level: junior-high
+
+### 前金國小 (Qianjin Elementary)
+- URL: https://www.chejps.kh.edu.tw/
+- Founded: April 1937 (Showa 12, Japanese colonial era), originally serving Japanese settlers' children
+- Facts: not found beyond founding context (JS-rendered site).
+- Culture connection: Founded in the Japanese-administered core of "Takao Shi" during the 1920s-30s urban expansion of what is now downtown Kaohsiung.
+- Address: not found (school is in Cianjin District)
+- Level: elementary
+
+### 建國國小 (Jianguo Elementary, slug ks-jianguo-es)
+- URL: https://www.chkops.kh.edu.tw/
+- Founded: 1954 (民國43年)
+- Facts: Small school, 14 classes, 271 students; principal 朱柏州.
+- Culture connection: Named "建國" (nation-building), part of the wave of post-1949 ROC-era elementary schools built in Qianjin.
+- Address: 高雄市前金區自立二路111號
+- Level: elementary
+
+### 鹽埕國中 (Yancheng Junior High)
+- URL: https://www.yacjh.kh.edu.tw/
+- Founded: not found precisely (YouTube handle "@yacjh1968" suggests a possible 1968 origin, consistent with the citywide compulsory-education wave, but unconfirmed)
+- Facts: not found beyond address/contact.
+- Culture connection: Located in Yancheng (鹽埕), "salt yard" — the district was built on Qing-era salt flats reclaimed as Kaohsiung Harbor was dredged (1908).
+- Address: 高雄市鹽埕區新樂街46號
+- Level: junior-high
+
+### 光榮國小 (Guangrong Elementary, slug ks-guangrong-es)
+- URL: https://www.kjes.kh.edu.tw/
+- Founded: not found (searches conflated it with an unrelated New Taipei City school of the same name)
+- Facts: Small school — only two classes per grade; old-fashioned, low-density campus with no concrete perimeter wall.
+- Culture connection: Situated in the reclaimed former salt-flat/harbor-fill land that turned Yancheng into Kaohsiung's earliest commercial hub.
+- Address: 高雄市鹽埕區大智路150號
+- Level: elementary
+
+### 忠孝國小 (Yancheng, slug ks-zhongxiao-es)
+- URL: https://www.chuhps.kh.edu.tw/
+- Founded: not found
+- Facts: ~500 students, 31 teachers; branded a small-school "Maker learning base" (fabric-craft, 3D printing, drone, coding).
+- Culture connection: One of several schools serving Yancheng's historic salt-flat-turned-harbor-commercial district.
+- Address: 高雄市鹽埕區大智路71號
+- Level: elementary
+- NOTE: distinct from the like-named 高雄市鳳山區忠孝國小 and 高雄市立忠孝國民中學 — all separate Kaohsiung schools sharing the common name "忠孝."
+
+### 鹽埕國小 (Yancheng Elementary)
+- URL: https://www.yacps.kh.edu.tw/
+- Founded: 1921 (Taisho 10, Japanese colonial era) as 高雄第二尋常高等小學校; renamed 堀江尋常高等小學校 1937; became 鹽埕國民學校 1947, current name 1968
+- Facts: Main brick building completed 1926; notable alumni include 彭明敏; centennial retrospective article "被遺忘的百年「高雄二小」" (2021).
+- Culture connection: Established in Horiie-chō (堀江町), the Japanese-settler quarter of the old salt-flat district, embodying Yancheng's transformation from salt yard to colonial urban core.
+- Address: not found (precise current street address not confirmed)
+- Level: elementary
+
+### 大社國民中學 (Dashe Junior High)
+- URL: https://www.dam.kh.edu.tw/
+- Founded: Aug 1 1971 (民國60年), commissioned by then-Renwu JH principal 謝雄飛; first principal 張淙嗚 appointed 1972
+- Facts: renamed from Kaohsiung County to Kaohsiung City school after 2010 merger.
+- Culture connection: Sits on the site once called "阿加大社" — a former Siraya-Makatau (平埔族) settlement, from which the district and school take their name ("大社" = "great settlement").
+- Address: 高雄市大社區翠屏路100號
+- Level: junior-high
+
+### 嘉誠國小 (Jiacheng Elementary)
+- URL: https://www.jtn.kh.edu.tw/
+- Founded: not found (likely originated as a branch of 大社國小 given rural remote-school status, unconfirmed)
+- Facts: Classified as a remote/isolated school; located in the northeast corner of Dashe District beneath Guanyin Mountain, described as a small, forest-like campus.
+- Culture connection: Nestled against Guanyin Mountain, part of the volcanic mudstone hill range that also gives nearby 觀音國小 its name.
+- Address: 高雄市大社區嘉誠村嘉誠路22號
+- Level: elementary
+
+### 大社國小 (Dashe Elementary)
+- URL: https://www.dso.kh.edu.tw/
+- Founded: April 1 1938 (Showa 13, Japanese colonial era) as 仁武庄大社公學校
+- Facts: renamed Dashe National Elementary School post-1968 reform; as of 2025, 724 students across 27 classes on a 3.25-hectare campus.
+- Culture connection: Built on the historic Siraya-Makatau settlement site that gave Dashe District its name.
+- Address: 高雄市大社區三民路336號
+- Level: elementary
+- CONFIRMED DISTINCT from the other 大社國小 in Lujhu District — no further action needed.
+
+### 觀音國小 (Guanyin Elementary)
+- URL: https://www.gi.kh.edu.tw/
+- Founded: 1992 (民國81年) — celebrated 32 years of operation as of a recent reference
+- Facts: A relatively young, small campus in Dashe District.
+- Culture connection: Named for Guanyin Mountain (觀音山), the volcanic mudstone ridge overlooking Dashe.
+- Address: 高雄市大社區文明路100號
+- Level: elementary
+
+### 阿蓮國民中學 (Alian Junior High)
+- URL: https://www.alm.kh.edu.tw/
+- Founded: 1957 (民國46年), organized as 縣立岡山初中阿蓮分部; independent as 高雄縣立阿蓮初級中學 by 1958-59; renamed 阿蓮國民中學 1968
+- Facts: Added a supplementary/remedial school 1986.
+- Culture connection: Alian's name derives from Siraya language — "Ali" referencing the ancestral spirit Alizu (阿立祖) and "-en" meaning "place of" — later reinterpreted in 1946 as "阿蓮" (lotus) for its Buddhist Pure Land associations, linking Alian and neighboring Mituo District's names.
+- Address: 高雄市阿蓮區民生路178號
+- Level: junior-high
+
+### 中路國小 (Zhonglu Elementary)
+- URL: https://www.zlp.kh.edu.tw/
+- Founded: circa 1922-1923 (Taisho 11/12, Japanese colonial era) — sources vary; 100th-anniversary celebrated 2022-2023 with Mayor 陳其邁 attending
+- Facts: baseball team, taiko drumming, violin programs.
+- Culture connection: Located about 4 km from central Alian along a rural road.
+- Address: 高雄市阿蓮區中路村272號
+- Level: elementary
+
+### 復安國小 (Alian, slug alian-fuan-es)
+- URL: https://www.fap.kh.edu.tw/
+- Founded: Sept 1955 (民國44年), starting as a single first-grade class held in a private house, as a branch of 阿蓮國校; fully independent 1959 (民國48年)
+- Facts: computer room, music room, AV room, English classroom, library, gymnasium.
+- Culture connection: Emerged from Alian's Siraya-linked farming hamlets.
+- Address: not found (village-level only: 高雄市阿蓮區復安里)
+- Level: elementary
+- CONFIRMED DISTINCT from 福安國小 in Meinong District — same pinyin, different characters, different district, township-qualified slug correctly disambiguates.
+
+### 阿蓮國小 (Alian Elementary)
+- URL: https://www.alp.kh.edu.tw/
+- Founded: not found (Facebook handle "100alp" appears to be an ID number, not a reliable anniversary indicator)
+- Facts: Parent school to several area branch schools that later became independent (e.g., 復安國小).
+- Culture connection: Sits at the historic center of Alian.
+- Address: 高雄市阿蓮區民族路163號
+- Level: elementary
+
+### 梓官國民中學 (Ziguan Junior High)
+- URL: https://www.zgm.kh.edu.tw/
+- Founded: Sept 1960 (民國49年) as 高雄縣立岡山初級中學梓官分部; independent 1966 (民國55年, first principal 張光海); renamed 1968; established a Mituo branch 1973 which became independent as 彌陀國中 1975
+- Facts: parent institution of 彌陀國中 until 1975.
+- Culture connection: Ziguan's name reportedly derives either from an early settler "Wang Zi" honored as "Ziguan," or from "梓" (carpenter) + "官," reflecting the district's historic shipbuilding/carpentry trade.
+- Address: 高雄市梓官區中學路71號
+- Level: junior-high
+
+### 蚵寮國民中學 (Heliao Junior High)
+- URL: https://www.klm.kh.edu.tw/
+- Founded: not found (official history page content not retrievable)
+- Facts: not found beyond address/contact.
+- Culture connection: "蚵寮" (Oyster Shacks) references the ~200-year-old oyster-farming huts built by Zhangzhou/Quanzhou settlers along the estuary here.
+- Address: 高雄市梓官區中正二街60號
+- Level: junior-high
+- NOTE: do not confuse with the differently-founded, unrelated 蚵寮國小 in Beimen District, Tainan City (founded 1920) — different schools despite identical name, and the JH here vs Tainan's ES are also unrelated.
+
+### 梓官國小 (Ziguan Elementary)
+- URL: https://www.zgp.kh.edu.tw/
+- Founded: unconfirmed — one source states 1908 (民國前4年), not independently verified from a second source
+- Facts: 36 classes, ~860 students.
+- Culture connection: Located in the historic shipbuilding/carpentry settlement that gave Ziguan District its name.
+- Address: 高雄市梓官區進學路61號
+- Level: elementary
+
+### 蚵寮國小 (Heliao Elementary, Ziguan)
+- URL: https://www.klp.kh.edu.tw/
+- Founded: not found
+- Facts: current principal 方珮玲.
+- Culture connection: Named for the historic oyster-farming shacks that gave the fishing village — now the tourist-oriented 蚵仔寮漁港 fish market — its name.
+- Address: 高雄市梓官區禮蚵里光明路177號
+- Level: elementary
+- NOTE: not to be confused with the unrelated, separately-founded 蚵寮國小 in Beimen District, Tainan (founded 1920) — search engines repeatedly conflated the two, confirmed genuinely distinct schools.
+
+### 彌陀國民中學 (Mituo Junior High)
+- URL: https://www.mtm.kh.edu.tw/
+- Founded: 1975 (民國64年), independent from 梓官國中's Mituo branch (established 1973)
+- Facts: promotional tagline "「彌」戀學習「陀」展漁鄉."
+- Culture connection: Mituo's name evolved from the old port name "彌羅港"/"微羅港," later reinterpreted as "彌陀" after Amitabha Buddha; the district is also Taiwan's historic center of shadow-puppet theater, reputedly introduced ~300 years ago with Koxinga's forces.
+- Address: 高雄市彌陀區海尾村進學路136號
+- Level: junior-high
+
+### 南安國小 (Nan'an Elementary)
+- URL: https://www.nap.kh.edu.tw/
+- Founded: Sept 1 1953 (民國42年) as "彌陀國校南安分校," serving the remote Nanliao and Lutai villages where seasonal flooding made travel to Mituo dangerous; independent Sept 1 1954 (民國43年)
+- Facts: first incoming class had 82 students in a single classroom; classes initially held partly in a local temple.
+- Culture connection: Founded specifically to solve a local transportation/flooding hardship for coastal Nanliao/Lutai children — a direct product of Mituo's low-lying coastal geography.
+- Address: 高雄市彌陀區漯底里樂安路1號
+- Level: elementary
+
+### 壽齡國小 (Shouling Elementary)
+- URL: https://www.sli.kh.edu.tw/
+- Founded: Aug 1 1952 (民國41年) as a branch of 彌陀國民學校 called 文吉分校; independent Sept 1 1954 (民國43年) as 文吉國民學校; renamed "壽齡" Aug 1 1958 (民國47年) to honor local benefactor 張壽齡, who donated the school land
+- Facts: Name directly commemorates an individual land donor rather than a place name.
+- Culture connection: A rare example among these schools of a name honoring a private philanthropist rather than a geographic reference.
+- Address: 高雄市彌陀區文安里國校路1號
+- Level: elementary
+
+### 彌陀國小 (Mituo Elementary)
+- URL: https://www.mtp.kh.edu.tw/
+- Founded: 1913 (Taisho 2, Japanese colonial era) — over a century of history
+- Facts: located ~2 km from the western coastline; runs a paper shadow-puppet troupe program to keep the local shadow-puppet tradition alive.
+- Culture connection: Mituo is nationally known as Taiwan's shadow-puppet-theater heartland ("皮影戲窟"), and this elementary school actively teaches the art form as living heritage.
+- Address: not found (village-level location only: 彌陀區海尾里)
+- Level: elementary
+
+SUMMARY FLAGS: (1) Several founding years/addresses not found across this batch (marked honestly); (2) 梓官國小's 1908 founding year is a single low-authority claim, unverified; (3) 忠孝國小 (Yancheng) confirmed distinct from Fongshan and 忠孝國中 counterparts; (4) 蚵寮國小/蚵寮國中 in Ziguan confirmed distinct from an unrelated same-named Tainan school; (5) 中路國小's founding year inconsistently 1922 or 1923 across sources.

@@ -1,0 +1,157 @@
+### 永安國民中學 (Yong'an Junior High School)
+- URL: https://www.yam.kh.edu.tw
+- Founded: Aug 1975 (民國64年); independent as Kaohsiung County Yong'an Junior High 1979 (民國68年)
+- Facts: Field-hockey team, taekwondo team, pottery/ceramics club.
+- Culture connection: Yong'an District takes its name from the old and new "Yong'an" fish ponds (永安塭) that dotted its coastline, reflecting its long history as a saltwater aquaculture and fishing area.
+- Address: 高雄市永安區保寧里保興一路3號
+- Level: junior-high
+
+### 新港國小 (Xingang Elementary School, Yong'an)
+- URL: https://www.xgp.kh.edu.tw
+- Founded: not found
+- Facts: Small rural school — 6 classes, 37 students, 12 teachers (2022); baseball team, roller-skating club, silk-and-bamboo traditional music ensemble.
+- Culture connection: Sits in Xingang and Yantian villages along Yong'an's lagoon coast, part of the historic "Miluogang" (彌羅港) wetland area whose Siraya/Makatao-derived name is thought to mean "bamboo."
+- Address: 高雄市永安區新港里新興路25號
+- Level: elementary
+- FLAG: extremely common school name in Taiwan (Miaoli, Changhua, Hsinchu, Chiayi all have one) — confirmed this Kaohsiung Yong'an one via domain xgp.kh.edu.tw.
+
+### 永安國小 (Yong'an Elementary School)
+- URL: https://www.yap.kh.edu.tw
+- Founded: not found (history page is JS/frame-based, not retrievable)
+- Facts: 204 students, 12 classes, 22 teachers (2022); special-education resource classes for physically disabled students, drum corps, ukulele class, track team.
+- Culture connection: The core namesake school of the district named for its fish ponds; district was historically also called "Wushulin" (烏樹林) for its coastal mangroves, and "Zhuzigang" (竹仔港, "bamboo harbor").
+- Address: 高雄市永安區永安路32號 (also seen as 永華路49號 in one source — flagged for verification)
+- Level: elementary
+- FLAG: one of the most common school names in Taiwan (Taipei, Taichung, Taoyuan, Chiayi all have one) — confirmed this Kaohsiung Yong'an one via domain yap.kh.edu.tw.
+
+### 維新國小 (Weixin Elementary School)
+- URL: https://www.wxn.kh.edu.tw
+- Founded: not found
+- Facts: Small coastal-village school in the historic Zhuzigang settlement area.
+- Culture connection: Weixin Village was originally called "Zhuzigang"; the name traces to the Ming-Zheng era when troops under Prince Ningjing's retainers first settled the area, before being renamed "Weixin" after the 2010 county-city merger.
+- Address: 高雄市永安區維新里維新路光明九巷69-10號
+- Level: elementary
+
+### 旗津國民中學 (Cijin Junior High School)
+- URL: https://www.cjjh.kh.edu.tw
+- Founded: 1964 (民國53年) as "市立第十初級中學"; renamed Cijin JH 1968
+- Facts: Expanded campus ~50,057 m² via a 1985 land transfer; Taiwan's first HACCP-certified school kitchen (2001); karate team.
+- Culture connection: Cijin District is considered the birthplace of Kaohsiung city, home to the historic Qihou and Zhongzhou settlements at the mouth of Takao Harbor, where Makatao Indigenous people lived some 400 years ago before Han settlement began in 1673.
+- Address: 高雄市旗津區中洲二路207號
+- Level: junior-high
+
+### 中洲國小 (Zhongzhou Elementary School, slug ks-zhongzhou-es)
+- URL: https://www.chucps.kh.edu.tw
+- Founded: April 1 1921 (民國10年) as a branch of "高雄第一公學校中洲分校"; independent 1938 (民國27年)
+- Facts: First principal after independence was Furuya Kanemune; started with 4 class levels.
+- Culture connection: "Zhongzhou" (中洲, "mid-sandbar") is named for its position on the sandbar between Kaohsiung Harbor and the open sea.
+- Address: 高雄市旗津區旗津二路435號
+- Level: elementary
+
+### 旗津國小 (Cijin Elementary School)
+- URL: https://www.chijps.kh.edu.tw
+- Founded: 1898 (Japanese colonial era) — traces to the "Takao Japanese-Language Training Institute" founded June 1897 at a temporary classroom in the Linshuigong temple; formally chartered "Takao Public School" Oct 1 1898; moved to present site 1914; renamed Cijin Elementary 1968
+- Facts: Evacuated to Shoushan National School Feb 1945 due to US bombing; first Taiwanese principal after 1945 was alumnus Lin Shoupan.
+- Culture connection: One of Kaohsiung's oldest schools; its history mirrors the "Qihou" settlement's name — the sandbar's shape resembling a flag behind a hill gave rise to "Qihou," while the peninsula later took the name "Cijin" from a Japanese-era literary society, the "Cijin Poetry Society."
+- Address: 高雄市旗津區中洲三路623號
+- Level: elementary
+
+### 田寮國民中學 (Tianliao Junior High School)
+- URL: https://www.tia.kh.edu.tw
+- Founded: sources conflict — most commonly cited as 1969 (民國58年), one source says 1971. Circa 1968-1971, needs confirmation.
+- Facts: Only junior high in Tianliao District; locally-themed reading/literacy program featured in CommonWealth Magazine.
+- Culture connection: Tianliao ("field huts") is named for the simple field shelters early Ming-Zheng-era military-colonist farmers built; the district is famous for its "Moon World" (月世界) badlands terrain, named in 1937 by a Japanese-era Kaohsiung governor.
+- Address: 高雄市田寮區南安里崗安路48號 (older county-era listing, not reconfirmed post-merger)
+- Level: junior-high
+
+### 崇德國小 (Chongde Elementary School, Tianliao)
+- URL: https://www.tdp.kh.edu.tw
+- Founded: predecessor "Gouyunyin Public School" renamed "Gouyunyin National School" Feb 1 1946; renamed Chongde National Elementary 1968 (民國57年)
+- Facts: Rural mountain-foothill school.
+- Culture connection: Sits within Tianliao's famous "Moon World" badlands region.
+- Address: 高雄市田寮區崇德里崇德路101號
+- Level: elementary
+
+### 新興國小 (Tianliao, slug tianliao-xinxing-es)
+- URL: https://www.xxp.kh.edu.tw
+- Founded: April 1 1944 (民國33年) as "Niuchoupu" branch school; independent 1946 as Niuchoupu National School; renamed Xinxing 1947; renamed municipal 2010
+- Facts: Very small school — ~32 students (2023).
+- Culture connection: One of several small farming-village schools scattered across Tianliao's rugged badlands terrain.
+- Address: 高雄市田寮區新興里大新路2號
+- Level: elementary
+
+### 甲仙國民中學 (Jiaxian Junior High School)
+- URL: https://www.jxm.kh.edu.tw
+- Founded: May 1963 (民國52年) as a branch of Qishan JH; independent Jan 6 1968 (民國57年)
+- Facts: Campus area 3.0532 hectares.
+- Culture connection: Jiaxian (formerly 甲仙埔) sits in the Nanzixian River valley, historically hunting ground of the Cou (Kanakanavu-related) peoples and later settled by Siraya/Taivoan (大武壠) communities; the name is believed to derive from a Hoklo contraction of "Kalala" (an old exonym for local Indigenous groups) plus the river's "仙" and "埔" ("plain").
+- Address: 高雄市甲仙區東安里文化南路6號
+- Level: junior-high
+
+### 小林國小 (Xiaolin Elementary School)
+- URL: https://www.xln.kh.edu.tw
+- Founded: 1937 (Japanese colonial era) at the original Xiaolin village site
+- Facts: The original school and the entire Xiaolin community (neighborhoods 9-18) were destroyed Aug 9 2009 during Typhoon Morakot, when a landslide-dammed lake breach buried the village — 491 people missing/deceased per official accounts. Rebuilt at Wuli-pu (五里埔), reopened 2012; the original buried site is preserved as the "Xiaolin Village Memorial Park."
+- Culture connection: The community itself identifies as ethnically Taivoan (a Siraya-related Plains Indigenous group; some sources term it "大武壠族"); as the community's own account puts it, "as long as the culture remains, Xiaolin will remain" — the rebuilt school carries forward Taivoan cultural identity following the disaster and community relocation. THIS SENSITIVE HISTORY MUST BE HANDLED WITH DIGNITY, NO SENSATIONALIZING, per project standard for disaster-affected schools.
+- Address: 高雄市甲仙區小林里五里路24-2號
+- Level: elementary
+
+### 甲仙國小 (Jiaxian Elementary School)
+- URL: https://www.jxp.kh.edu.tw
+- Founded: circa 1907 (民國前5年10月4日, Japanese colonial era — a positive pre-ROC date, do NOT force-convert to an ROC year)
+- Facts: Over 110 years of continuous history.
+- Culture connection: Located in Jiaxian, known as Taiwan's "hometown of taro" — the district's volcanic-mineral-rich soil and abundant mountain spring water produce the notably firm-textured taro used in the town's famous taro ice cream and cakes.
+- Address: 高雄市甲仙區西安里文化路45號
+- Level: elementary
+
+### 那瑪夏國民中學 (Namasia Junior High School)
+- URL: https://www.sm.kh.edu.tw
+- Founded: traces to "Mangazhi Aboriginal Children's Education Institute," established 1904 (Japanese colonial era); junior-high division added 1996 under merged "Sanmin Junior-Senior High School"; separated into standalone Namasia JH April 20 2011
+- Facts: Serves the mountain Indigenous Namasia community.
+- Culture connection: Namasia is named — per the Kanakanavu people's own oral tradition — after "Namaasia/Maasia," a young man in Kanakanavu legend who died after saving his people (accounts vary). The Nanzixian River running through the district is called Namasia in his memory. The district was long known as Sanmin (Minquan/Minzu/Minsheng) before reverting to its Indigenous-rooted name Namasia in 2007. PRESENT THIS EXPLICITLY AS ORAL TRADITION, NOT LITERAL HISTORY.
+- Address: 高雄市那瑪夏區瑪雅里平和巷171號
+- Level: junior-high
+
+### 民權國小 (Namasia, slug ks-minquan-es)
+- URL: https://www.mcp.kh.edu.tw
+- Founded: predecessor "Magatun Aboriginal Children's Education Institute" 1904; renamed "Minquan National School" 1951; became current name 1968
+- Facts: ~66 students (2019), predominantly Bunun with Kanakanavu and Hla'alua students. Original campus buried by a Typhoon Morakot landslide (2009); students temporarily relocated to Guanting Elementary and Sanmin JH. Rebuilt 2011 with Delta Electronics Foundation support on the elevated "Minquan platform," achieving Taiwan's highest "Diamond-level" green building certification; now doubles as a typhoon-season community shelter.
+- Culture connection: Per the community's own oral history, the district and river carry the name of a Kanakanavu youth, Maasia, who sacrificed himself for his people — the rebuilt school stands as both an educational and cultural resilience symbol after Morakot.
+- Address: 高雄市那瑪夏區瑪雅里平和巷220號
+- Level: elementary
+- CONFIRMED DISTINCT from 民權國小 in Cianjhen District (Kaohsiung's own urban area) — this is genuinely the older, mountain Indigenous-community school.
+
+### 民生國小 (Namasia, Minsheng Elementary)
+- URL: https://www.msp.kh.edu.tw
+- Founded: predecessor "Takanuwa Aboriginal Children's Education Institute" became "Minsheng Class" post-war; became "Minsheng National School" 1958 (民國47年); renamed "Minsheng Elementary School" 1968
+- Facts: 74 students, 6 classes, 34 staff (2024); student body predominantly Bunun with Kanakanavu and some Amis students.
+- Culture connection: Located in Dakanuwa (達卡努瓦) village; unlike neighboring Minquan Elementary, Minsheng's campus and hillside were NOT damaged by the 2009 Morakot landslides — one of the district's structurally intact original-site schools.
+- Address: 高雄市那瑪夏區達卡努瓦里大光巷159號
+- Level: elementary
+
+### 茂林國民中學 (Maolin Junior High School)
+- URL: https://www.ml.kh.edu.tw
+- Founded: Japanese colonial era, ~1917 (Taisho 6 — sources render this as "民國六年," a coincidental calendar overlap, NOT an ROC year; treat as Japanese colonial era) as a 4-year Type-A Aboriginal Children's Education Institute; reestablished "Meiya Elementary School" Sept 1946; renamed "Maolin Elementary School" Sept 1957; JH division added 1999 as a combined institution, separated into standalone Maolin JH 2005
+- Facts: Serves the Rukai (魯凱) Indigenous community, the predominant ethnic group of Maolin District.
+- Culture connection: Maolin District is Rukai territory and home to Taiwan's famous purple crow butterfly (紫斑蝶) valley, one of the world's few known purple crow overwintering sites.
+- Address: not found
+- Level: junior-high
+- FLAG: 茂林國中 and 茂林國小 (below) trace back to the SAME founding institution (1917 Aboriginal Children's Education Institute) before splitting into separate elementary and junior-high schools in 1999/2005 — sibling institutions, not independent foundings. Write their histories consistently, sharing the pre-split origin.
+
+### 多納國小 (Duona Elementary School)
+- URL: https://www.dn.kh.edu.tw
+- Founded: Oct 1926 (大正15年, Japanese colonial era) as "Dona Type-A Aboriginal Children's Education Institute"; became "Dona Village National School" 1945; independent Jan 1952 (民國41年); renamed "Duona Elementary School" 1968; renamed for Kaohsiung City 2010
+- Facts: Designated an "Indigenous key school" 2004; transformed 2017 into an official Rukai-language experimental school, also called "Kungadavane Rukai Ethnic Experimental Elementary School" (Kungadavane being the Rukai name for Duona village).
+- Culture connection: Duona/Kungadavane is one of the classic Rukai Indigenous villages of Maolin District, known for its stone-slab traditional architecture; the school's 2017 conversion into a Rukai-language immersion school reflects the community's own effort at cultural and linguistic continuity.
+- Address: 高雄市茂林區多納里1-2號
+- Level: elementary
+
+### 茂林國小 (Maolin Elementary School)
+- URL: https://www.mlp.kh.edu.tw
+- Founded: Japanese colonial era, ~1917 (Taisho 6) as a 4-year Type-A Aboriginal Children's Education Institute; renamed "Education Institute" 1932; later became Meiya/Maolin Elementary through the same lineage as Maolin Junior High above
+- Facts: Shares direct institutional lineage with Maolin Junior High (see flag above) — one school until splitting in 1999/2005.
+- Culture connection: Serves the Rukai community of Maolin, the district famous for the Maolin purple crow butterfly valley.
+- Address: 高雄市茂林區茂林里4-3號
+- Level: elementary
+
+SUMMARY FLAGS: (1) 甲仙國小 founding date is pre-ROC (~1907) — report as Japanese colonial era, do NOT force-convert; (2) 茂林國小/茂林國中 share one founding history (1917), split 1999/2005 — write consistently; (3) 田寮國中 founding year inconsistently reported (1968/1969/1971), needs direct confirmation; (4) 永安國小/新港國小 (Yong'an) are extremely common names — confirmed correct via domain; (5) 小林國小 (Xiaolin) carries extremely sensitive Typhoon Morakot history (491 dead/missing) — handle with dignity, Taivoan identity framing presented as the community's own account; (6) 那瑪夏 (Namasia) name legend explicitly oral tradition, not literal history; (7) several founding years not found (新港國小, 永安國小, 維新國小) — marked honestly.

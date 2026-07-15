@@ -1,0 +1,152 @@
+### 小港高中 (Kaohsiung Municipal Xiaogang Senior High School)
+- URL: https://www.hkhs.kh.edu.tw/
+- Founded: approved 1990 (民國79年); formally established 1992 (民國81年), first freshman class Aug 1992
+- Facts: Campus built in phases through 1998; student-run baseball team founded 2010.
+- Culture connection: District name "小港" ("small harbor") recalls the tidal inlet before land reclamation turned the area into Kaohsiung's airport/seaport site.
+- Address: 高雄市小港區學府路117號
+- Level: senior-high
+
+### 高鳳工家 (Gaofeng Industrial & Home Economics Vocational School) — CLOSED
+- URL: none active — school has ceased operations
+- Founded: 1971 (民國60年)
+- Facts: Private vocational school (高雄市私立高鳳高級工業家事職業學校); had youth baseball and evening/continuing-education programs.
+- Culture connection: Its closure is part of a broader wave of private vocational-school shutdowns in Kaohsiung driven by Taiwan's declining birth rate.
+- Address: 高雄市小港區松崗路119號 (per district-office directory; may be stale)
+- Level: senior-high
+- FLAG: stopped accepting new students starting the 109 academic year (2020) and is now closed. No live official website exists. Should likely be dropped or explicitly marked as a historical/closed institution — matches this project's standing closed-school pattern (hujing-es/shangzhi-es), not a normal profile.
+
+### 中山國中 (Zhongshan Junior High School)
+- URL: https://www.csjh.kh.edu.tw/
+- Founded: 1985 (民國74年)
+- Facts: Disaster-prevention model campus.
+- Culture connection: Named for Sun Yat-sen (中山), following common Taiwan-wide school-naming practice.
+- Address: 高雄市小港區漢民路352號
+- Level: junior-high
+
+### 小港國中 (Xiaogang Junior High School)
+- URL: https://www.hkjh.kh.edu.tw/
+- Founded: began 1956 as branch of Linyuan JH; independent 1958 (民國47年)
+- Facts: First classes held in borrowed Xiaogang Elementary classrooms; permanent campus built 1957 on land leased from the Taiwan Sugar Corporation's Xiaogang refinery.
+- Culture connection: Founding on former Taiwan Sugar Corp land reflects Xiaogang's agricultural/sugar-refining past before industrialization.
+- Address: 高雄市小港區平和南路185號
+- Level: junior-high
+
+### 明義國中 (Mingyi Junior High School)
+- URL: https://www.myjh.kh.edu.tw/
+- Founded: 1991 (民國80年) — the newest junior high in the district
+- Facts: Third-phase campus completed 1994, ribbon-cut by then-mayor Wu Den-yih.
+- Culture connection: "明義" (illuminating righteousness) reflects the Confucian-virtue naming convention of 1990s school expansion.
+- Address: 高雄市小港區明義街2號
+- Level: junior-high
+
+### 鳳林國中 (Fenglin Junior High School)
+- URL: https://www.fljh.kh.edu.tw/
+- Founded: 1979 (民國68年), the same year Xiaogang Township was annexed into Kaohsiung City
+- Facts: Nicknamed "海角希望學園"; administratively linked to the Honggang (紅毛港) resettlement program.
+- Culture connection: The "鳳" (phoenix) name ties to the historic Fongbitou/Dalinpu coastal villages later relocated for Kaohsiung port and steel-industry expansion.
+- Address: 高雄市小港區龍鳳路559號
+- Level: junior-high
+
+### 二苓國小 (Erling Elementary School)
+- URL: https://www.zlps.kh.edu.tw/
+- Founded: approved 1980, formally established July 1981; first principal 張燈壽
+- Facts: Campus built in three phases (1983, 1984, 1987).
+- Culture connection: "二苓" reflects coastal Kaohsiung's old reed/wetland ("苓") place-naming pattern.
+- Address: 高雄市小港區立群路6號
+- Level: elementary
+
+### 坪頂國小 (Pingding Elementary School, slug ks-pingding-es)
+- URL: https://www.pdes.kh.edu.tw/
+- Founded: August 1962 (民國51年) as 高雄縣小港鄉坪頂國民學校; renamed when Xiaogang joined Kaohsiung City 1979
+- Facts: not found beyond founding/renaming history
+- Culture connection: "坪頂" ("top of the flatland") is a common Taiwanese toponym for elevated farmland terraces.
+- Address: 高雄市小港區大坪路2號
+- Level: elementary
+
+### 太平國小 (Taiping Elementary School, slug ks-taiping-es)
+- URL: https://www.tpps.kh.edu.tw/
+- Founded: April 1 1920 (Japanese colonial era) as "小港公學校大坪頂分教場"; independent 太平公學校 1937
+- Facts: Renamed several times; celebrated full centennial with a commemorative volume.
+- Culture connection: Named "太平" ("great peace"), a common auspicious Taiwan school name.
+- Address: 高雄市小港區營口路1號
+- Level: elementary
+
+### 小港國小 (Xiaogang Elementary School)
+- URL: https://www.hkps.kh.edu.tw/
+- Founded: April 1 1909 (Japanese colonial era) as "鳳山公學校港仔墘分教場" — the oldest school in the district
+- Facts: Renamed 港仔墘公學校 1920, later took the Xiaogang name.
+- Culture connection: Name directly preserves "小港" ("small harbor"), the tidal inlet that gave the whole district its name.
+- Address: 高雄市小港區平和路1號
+- Level: elementary
+
+### 明義國小 (Mingyi Elementary School)
+- URL: https://www.myes.kh.edu.tw/
+- Founded: Aug 1 2004 (民國93年)
+- Facts: Built with an explicitly modern, IT-enabled, barrier-free campus design.
+- Address: 高雄市小港區明義街77號
+- Level: elementary
+
+### 桂林國小 (Guilin Elementary School, slug ks-guilin-es)
+- URL: https://www.klps.kh.edu.tw/
+- Founded: uncertain — best estimate ~1983-84 based on a documented 40th-anniversary celebration in 2023-24
+- Facts: not found (limited detail, JS/frame-based site)
+- Address: 高雄市小港區桂陽路390號
+- Level: elementary
+- FLAG: search results also surfaced an unrelated "founded 1979, drew students from Haishan/Fenglin/Fengming" story that more plausibly belongs to 鳳林國中/鳳鳴國小 — this looks like search-engine content bleed from a shared district source, not fact specific to Guilin. Used the 1983/84 estimate instead.
+
+### 港和國小 (Ganghe Elementary School)
+- URL: https://www.khops.kh.edu.tw/
+- Founded: prep office 1997; construction 1998; formally established July 1 1999 (民國88年)
+- Facts: Designated a flagship astronomy-education school with an on-campus astronomy hall.
+- Culture connection: Name combines "港" (harbor, from Xiaogang) and "和" (harmony).
+- Address: 高雄市小港區平和南路300號
+- Level: elementary
+
+### 漢民國小 (Hanmin Elementary School)
+- URL: https://www.hmes.kh.edu.tw/
+- Founded: 1990 (民國79年)
+- Facts: not found (limited detail)
+- Address: 高雄市小港區漢民路500號
+- Level: elementary
+
+### 華山國小 (Huashan Elementary School)
+- URL: https://www.hshanps.kh.edu.tw/
+- Founded: July 1 1998 (民國87年)
+- Facts: Sits at the boundary where former Kaohsiung County and City areas met; enrollment ~683 (2008) to ~480 (2022-23).
+- Address: 高雄市小港區華仁街1號
+- Level: elementary
+
+### 青山國小 (Qingshan Elementary School, slug ks-qingshan-es)
+- URL: https://www.chsnps.kh.edu.tw/
+- Founded: fall 1950 (民國39年), originally "聯合勤務總司令部附設高雄子弟學校" — a school for children of Joint Logistics Command personnel
+- Facts: First classes in thatch-roofed buildings amid rice paddies outside the Command's uniform factory; renamed to current name 1979.
+- Culture connection: Its origin as a military-dependents' school reflects Xiaogang's postwar military/industrial land use.
+- Address: 高雄市小港區飛機路153號
+- Level: elementary
+
+### 鳳林國小 (Fenglin Elementary School, slug ks-fenglin-es)
+- URL: https://www.flps.kh.edu.tw/
+- Founded: April 20 1918 (大正7年, Japanese colonial era) as 台南廳大林蒲公學校
+- Facts: Renamed 鳳林國民學校 1951 (spinning off 鳳鳴分校 same year); Kaohsiung's first school with a nutritious school-lunch program (1962); sister-schooled with a Japanese school (1983) and with Hualien County's own 鳳林國小 (2008); final 100th-anniversary celebration Nov 2017 before village relocation.
+- Culture connection: Central to the Dalinpu (大林蒲) village relocation story — the community is being relocated for Kaohsiung port/steel-industry expansion (南星計畫); the original campus is expected to become industrial land afterward.
+- Address: 高雄市小港區鳳林路207號
+- Level: elementary
+- FLAG: strongly tied to the ongoing/recent Dalinpu village relocation — confirm whether the school has since relocated or still operates at the historic site before publishing.
+
+### 鳳陽國小 (Fengyang Elementary School)
+- URL: https://www.fyps.kh.edu.tw/
+- Founded: Aug 1 2004 (民國93年)
+- Facts: Built on land reclaimed from dredged Second Harbor Entrance channel silt, part of the Nanxing (南星) reclamation zone; established to relieve overcrowding at 華山國小.
+- Culture connection: The campus's very land is reclaimed harbor-dredging spoil.
+- Address: 高雄市小港區鳳陽街2號
+- Level: elementary
+
+### 鳳鳴國小 (Fengming Elementary School, slug ks-fengming-es)
+- URL: https://www.fmps.kh.edu.tw/
+- Founded: split off as branch of 鳳林國小 Oct 1951; independence date as its own school uncertain
+- Facts: not found (frame-based site)
+- Address: 高雄市小港區鳳鳴路191號
+- Level: elementary
+- FLAG: same content-bleed issue as 桂林國小 above — a "1979, Haishan/Fenglin/Fengming graduates" story attributed to this school more logically belongs to 鳳林國中. Only the 1951 branch-campus origin is well corroborated.
+
+SUMMARY FLAGS: (1) 高鳳工家 CLOSED (stopped enrolling 2020) — recommend closed-institution pattern, not a normal profile; (2) 鳳鳴國小/桂林國小 founding-year claims appear cross-contaminated with 鳳林國中's text — use only the well-sourced facts; (3) 鳳林國小 tied to ongoing Dalinpu relocation, verify current campus status; (4) 紅毛港國小 (a different school, Qianzhen District) is NOT the same as this district's schools despite shared relocation history — confirmed correctly excluded from this batch; (5) no polyphone issues found.

@@ -1,0 +1,180 @@
+### 仁武高級中學 (Renwu Senior High School)
+- URL: https://www.rwm.kh.edu.tw/
+- Founded: 1963 (民國52年) as "Kaohsiung County Fengshan Junior High Renwu Branch"; independent 1967; combined JH+SH 1998; renamed Renwu Senior High 2001; city-run after 2010 merger
+- Facts: 543 students, 21 classes (2022-23); bilingual education program, sports class, photography/dance/boxing clubs.
+- Culture connection: Renwu District's origin as a Ming-dynasty Koxinga-era military garrison-farming settlement ("仁武鎮").
+- Address: not found (street address not located)
+- Level: senior-high
+
+### 大灣國民中學 (Dawan Junior High School)
+- URL: https://www.dwm.kh.edu.tw/
+- Founded: Aug 1 1999 (民國88年); first principal Cai Senhuang
+- Facts: 814 students (2023); largest campus land area among former Kaohsiung County junior highs; built in phases 1999-2009.
+- Culture connection: Built to serve nine villages near Chengcing Lake and Shuanghu Forest Park, reflecting 1990s suburbanization.
+- Address: 高雄市仁武區大灣村仁雄路99號
+- Level: junior-high
+
+### 仁武國小 (Renwu Elementary School)
+- URL: https://www.rwp.kh.edu.tw/
+- Founded: not found (predates 1953, since both 灣內國小 and 八卦國小 began as its branch schools)
+- Facts: 1,169 students (2023) — largest school in this batch; parent school to several nearby elementary schools.
+- Culture connection: The historic "mother school" of Renwu, anchoring the old town core near the original Ming-era garrison settlement.
+- Address: 高雄市仁武區中正路94號
+- Level: elementary
+
+### 八卦國小 (Bagua Elementary School)
+- URL: https://www.bgp.kh.edu.tw/
+- Founded: Aug 1 1959 (民國48年) as a branch of Renwu Elementary; independent 1968
+- Facts: 1,021 students, 42 classes (2022-23); historically known for baseball, now emphasizes dance/dodgeball/wind-band.
+- Culture connection: Near the Dazhong Freeway Interchange between the Renwu Industrial Park and Chengcing Lake, reflecting the shift from farmland to industrial/residential mix.
+- Address: not found (original 1959 address was 八德一路221號; current address unconfirmed)
+- Level: elementary
+
+### 灣內國小 (Wannei Elementary School)
+- URL: https://www.wnp.kh.edu.tw/
+- Founded: April 20 1953 (民國42年) as a branch of Renwu Elementary
+- Facts: 354 students (2022); relocated to a brand-new combined childcare/kindergarten/elementary complex Jan 2022.
+- Culture connection: Named for 灣內里 ("inside the bend"), referencing a bend in a local waterway.
+- Address: 高雄市仁武區八德東路568號
+- Level: elementary
+
+### 烏林國小 (Wulin Elementary School, Renwu, slug renwu-wulin-es)
+- URL: https://www.wlp.kh.edu.tw/
+- Founded: Sept 1975 (民國64年), began in the Wulin community activity center and a Beiji Temple
+- Facts: 115 students (2023) — a small school.
+- Culture connection: Class location borrowed from a local temple in its founding years reflects how community temples doubled as civic/educational spaces in rural Taiwan.
+- Address: 高雄市仁武區烏林里林森巷23號
+- Level: elementary
+- CONFIRMED DISTINCT from 五林國小 in Ciaotou District (different school, similarly-romanized "Wulin" name) — slug renwu-wulin-es correctly disambiguates by township.
+
+### 登發國小 (Dengfa Elementary School)
+- URL: https://www.df.kh.edu.tw/
+- Founded: established Aug 1 1992, began enrollment Aug 1993 with 18 classes transferred from overcrowded Wannei ES
+- Facts: Named after Yu Dengfa (余登發, 1904-1989), a pro-democracy pioneer and 4th Kaohsiung County Magistrate; grew to roughly double its originally planned 24 classes.
+- Culture connection: Built because Chengcing Lake Special Zone converted from farmland to dense commercial/residential zone, overwhelming Wannei ES.
+- Address: not found
+- Level: elementary
+
+### 竹後國小 (Zhuhou Elementary School)
+- URL: https://www.zh.kh.edu.tw/
+- Founded: not found
+- Facts: 69-71 students, 6 classes (2022) — one of the smallest schools in Renwu District; made local news in 2022 for ~80 air conditioners installed for only 52 students.
+- Culture connection: Serves Zhuhou village, whose name ("bamboo grove behind") reflects the area's agrarian bamboo-cultivation heritage.
+- Address: not found
+- Level: elementary
+
+### 國立高科實驗高級中等學校 (gaoke-hs) — Combined JH+SH, single page (both genlist rows route here)
+- URL: https://www.nehs.kh.edu.tw/
+- Founded: May 24 2023 — Ministry of Education approval; formally established Aug 1 2025 (民國114年)
+- Facts: Brand-new national school under the National Science and Technology Council, administratively independent from (though closely tied to) NKUST despite referencing "高科" in its name. Currently operating temporarily on the campus of 右昌國中 (Youchang JH) in Nanzi District while its permanent Ciaotou campus is built (~2028 target). K-12 span including a bilingual division, designed to serve science-park workers' children and returning/foreign professionals.
+- Culture connection: Its planned Ciaotou New Town site reflects Kaohsiung's 21st-century push to build science-park communities atop former sugar-plantation land tied to the nearby Ciaotou Sugar Refinery.
+- Address (current temporary campus): No. 161, Shengchang St., Nanzi District, Kaohsiung City 811005 (permanent Ciaotou campus address not yet available)
+- Level: Combined JH+SH
+- FLAG: genuinely new (2025) institution; currently physically operating in Nanzi District even though its designated permanent district is Ciaotou.
+
+### 橋頭國民中學 (Ciaotou Junior High School)
+- URL: https://www.qtm.kh.edu.tw/
+- Founded: predecessor branch of Provincial Kaohsiung Girls' Senior High (~1956); independent Kaohsiung County Ciaotou Junior High 1964; renamed 1968
+- Facts: Only junior high in Ciaotou District; has an on-campus swimming pool.
+- Culture connection: Ciaotou district's name ("bridge head") comes from a small arched bridge built over an irrigation canal in the Qing era.
+- Address: 高雄市橋頭區新興路70號
+- Level: junior-high
+
+### 五林國小 (Wulin Elementary School, Ciaotou, slug ciaotou-wulin-es)
+- URL: https://www.wln.kh.edu.tw/
+- Founded: April 1 1943 (民國32年), founding principal a Japanese national (Okada Kasagō)
+- Facts: Over 80 years of history.
+- Culture connection: Founded during the Japanese colonial era, illustrating how Taiwan's rural school network was largely built out before 1945.
+- Address: 高雄市橋頭區東林里五林路160號
+- Level: elementary
+- CONFIRMED DISTINCT from 烏林國小 in Renwu District (see note above).
+
+### 仕隆國小 (Shilong Elementary School)
+- URL: https://www.sln.kh.edu.tw/
+- Founded: 1917 (Taishō 6, Japanese colonial era) — the first elementary school in the Ciaotou area
+- Facts: 100th anniversary 2016; alumni include former Interior Minister Yu Cheng-hsien.
+- Culture connection: Oldest school in Ciaotou, predating even the district's famous sugar refinery school.
+- Address: 高雄市橋頭區仕隆路進校巷16號
+- Level: elementary
+
+### 橋頭國小 (Ciaotou Elementary School)
+- URL: https://www.qtp.kh.edu.tw/
+- Founded: Aug 1 1997 (民國86年) — the newest elementary school in Ciaotou District, after a 1994 community petition
+- Facts: Explicitly the "most recently established elementary school in the district."
+- Culture connection: Its founding traces directly to Ciaotou's transformation from a sugar-industry town into a planned "new town" residential area in the 1990s.
+- Address: 高雄市橋頭區樹德路200號
+- Level: elementary
+
+### 甲圍國小 (Jiawei Elementary School)
+- URL: https://www.jwp.kh.edu.tw/
+- Founded: Aug 1 1964 (民國53年), became independent from a branch campus of Shilong Elementary
+- Facts: Currently the smallest-enrollment elementary school in Ciaotou District.
+- Culture connection: Village name "甲圍" ("armor enclosure/stockade") likely references an early Qing-era fortified settlement.
+- Address: 高雄市橋頭區甲北里甲昌路250號
+- Level: elementary
+
+### 興糖國小 (Xingtang Elementary School)
+- URL: https://www.xtn.kh.edu.tw/
+- Founded: Sept 1 1947 (民國36年), established by the Taiwan Sugar Corporation for grades 1-4; transferred to government administration and renamed 1968 when TSC divested company schools
+- Facts: Nicknamed the "magical forest school of nine-and-three-quarters"; uses the historic Ciaotou Sugar Refinery's colonial architecture and old trains/sugar carts as teaching resources.
+- Culture connection: Directly tied to the Ciaotou Sugar Refinery (est. 1902), Taiwan's first modern mechanized sugar factory — the school was originally a company school for refinery workers' children.
+- Address: 高雄市橋頭區興糖路19巷1號
+- Level: elementary
+
+### 巴楠花部落中小學 (banahua-jhes) — Combined ES+JH, single page (both genlist rows route here)
+- URL: https://www.mzu.kh.edu.tw/
+- Founded: complex history — originally 那瑪夏民族國小; after 2009 Typhoon Morakot, operated 2.5 years in Cishan, relocated to Shanlin as "民族大愛國小"; became an Indigenous-focus experimental school in 2017; restructured into combined ES+JH in 2019.
+- Facts: 122 students (2022); principal (Bunun name Along) developed a curriculum centered on millet culture and Bunun seasonal ceremonies.
+- Culture connection: The name "巴楠" derives from the Bunun word "padan," referring to a resilient silvergrass — ACCORDING TO THE SCHOOL'S OWN ACCOUNT, this symbolizes the Bunun people's resilience in rebuilding after disaster. This name-origin explanation must be presented as the school's own stated interpretation/tradition, NOT asserted as verified etymology or literal fact.
+- Address: 高雄市杉林區大愛里和氣街15號
+- Level: Combined ES+JH
+
+### 杉林國民中學 (Shanlin Junior High School)
+- URL: https://www.slm.kh.edu.tw/
+- Founded: Aug 1 1957 (民國46年) as a branch of Kaohsiung County Qishan Junior High; independent April 1962
+- Facts: Only 83 students (2022) — reflects significant rural depopulation; school song composed by noted pianist Chang Tsai-shiang.
+- Culture connection: Reflects Shanlin's identity as a small, historically Hakka-majority farming district.
+- Address: not found
+- Level: junior-high
+
+### 上平國小 (Shangping Elementary School)
+- URL: https://www.spn.kh.edu.tw/
+- Founded: 1917 (民國6年, Japanese colonial era) as "瀰濃公學校崁頂分校"
+- Facts: Multiple name changes across the Japanese-colonial-to-ROC transition (renamed Yuemei Public School 1939, Shangping National School 1959).
+- Culture connection: Its convoluted lineage traces the historical administrative overlap between Meinong (a major Hakka town) and Shanlin's smaller settlements.
+- Address: 高雄市杉林區上平里山仙路212號
+- Level: elementary
+
+### 新莊國小 (genlist name) / 新庄國小 (actual official name), Shanlin — slug shanlin-xinzhuang-es
+- URL: https://www.szp.kh.edu.tw/
+- Founded: not found
+- Facts: Small rural school — enrollment as low as 66 students in one dataset.
+- Culture connection: Village name "新庄" ("new settlement") is a common Taiwanese place name for post-Qing agricultural expansion communities.
+- Address: 高雄市杉林區新庄里司馬路45巷5號
+- Level: elementary
+- FLAG — NAME CORRECTION: the genlist spells this school's name as 新莊國小 (character 莊), but the school's actual official name and all primary sources use 新庄國小 (character 庄) — different characters, both read "zhuāng," not interchangeable typos. RECOMMENDATION: build the page under the correct name 新庄國小, keep 新莊國小 (the directory's name) as the badge-matching key when updating the county page — same pattern as the Magong precedent for directory naming errors. Distinct from the much larger, unrelated 新莊高級中學/新莊國小 schools in Zuoying District (Kaohsiung) and New Taipei City.
+
+### 月美國小 (Yuemei Elementary School)
+- URL: https://www.ymp.kh.edu.tw/
+- Founded: May 1954 (民國43年), began as a branch of Shangping Elementary's Yuemei branch; independent Aug 1954
+- Facts: Founding was notably difficult — uneven terrain leveled by hand and ox-cart; earliest classrooms built from corrugated iron and mud-and-tile. Now a bilingual experimental school.
+- Culture connection: Named for Yuemei village ("crescent-moon eyebrow" — a river-bend toponym), reflecting the area's hardscrabble settlement history.
+- Address: 高雄市杉林區月眉里象寮巷39號
+- Level: elementary
+
+### 杉林國小 (Shanlin Elementary School)
+- URL: https://www.sal.kh.edu.tw/
+- Founded: April 1 1922 (民國11年) as "杉林公學校杉林分教場," originally 10 boys and 8 girls in one class
+- Facts: Located in a "非山非市" (neither mountain-remote nor urban-adjacent) designated community; integrates aesthetic education with local food-culture and textile-craft courses.
+- Culture connection: Shanlin District's own name comes from its Japanese-era (1901) renaming — previously called "楠梓山" (Nanzi Mountain), renamed "杉林" ("cedar forest") for its dense original cedar woodland.
+- Address: 高雄市杉林區杉林里合森巷41號
+- Level: elementary
+
+### 集來國小 — NOT IN GENLIST, INFORMATIONAL ONLY (mentioned by the research agent but not part of this project's school list — confirm it is not otherwise required)
+- This school was formally CLOSED August 2024 after 77 years, due to severe enrollment decline following Typhoon Morakot resettlement (residents moved to Da'ai village, drawing students away). No page should be built for it since it is not on the genlist; noted here only for context on why the Bananhua Tribal School's community includes former 集來 students.
+
+SUMMARY FLAGS:
+1. 國立高科實驗高級中等學校 (gaoke-hs) — brand-new (2025), operating temporarily in Nanzi District. Combined JH+SH, one page.
+2. 巴楠花部落中小學 (banahua-jhes) — combined ES+JH, one page. Present the Bunun name-origin story explicitly as the school's own account, not literal fact.
+3. 新莊國小/新庄國小 (Shanlin) — genlist has the wrong character (莊 instead of 庄). Build under the correct name 新庄國小, keep the genlist's 新莊國小 as the badge-matching key (Magong-precedent pattern).
+4. No other closed, merged, or nonexistent schools found among this batch's actual genlist entries. Several addresses/founding years not found despite search effort (marked honestly above).

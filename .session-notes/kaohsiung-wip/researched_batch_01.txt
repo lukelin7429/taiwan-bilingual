@@ -1,0 +1,142 @@
+### 國立鳳山高級中學
+- URL: https://www.fssh.khc.edu.tw/
+- Founded: 1939 (民國28年) as 鳳山園藝專修學校 (Japanese colonial era); became national senior high 2000 (民國89年)
+- Facts: ~55 classes, 1,934 students; math/science gifted classes since 1990; first secondary school in Taiwan to admit both male and female students (1945); offers Japanese/German/Vietnamese/Korean/Spanish/French electives; dual-diploma with a US high school since 2021.
+- Culture connection: Sits within old Fongshan (鳳山, "Phoenix Mountain") — historic seat of Fongshan County under Qing rule.
+- Address: 高雄市鳳山區光復路二段130號
+- Level: senior-high
+
+### 國立鳳山高級商工職業學校
+- URL: https://www.fsvs.khc.edu.tw/
+- Founded: 1956 (民國45年) as a branch of Taiwan Provincial Kaohsiung Commercial Vocational School; independent 1965 (民國54年)
+- Facts: Added an industrial division 1981 (molds, machining, furniture/woodworking); has an attached continuing-education division.
+- Culture connection: Reflects Fongshan's long role as a commercial/craft hub of southern Taiwan since its Qing-dynasty market-town days.
+- Address: 高雄市鳳山區文衡路51號
+- Level: senior-high (vocational)
+
+### 國立鳳新高級中學
+- URL: https://www.fhsh.khc.edu.tw/
+- Founded: planning began 1990 (民國79年); formally established July 1 1992 (民國81年)
+- Facts: Originally slated to be named "五甲高中" but local objection (site wasn't actually in Wujia) led to renaming; ~80% of graduates go to national universities; bilingual experimental classes.
+- Culture connection: The naming dispute is a small piece of local geography lore — Fongshan residents distinguish their sub-communities (Wujia vs. Fongshan proper) precisely.
+- Address: 高雄市鳳山區新富路257號
+- Level: senior-high
+
+### 高雄市立福誠高級中學
+- URL: https://www.ftm.kh.edu.tw/
+- Founded: junior high section 1991 (民國80年); own campus 1995; senior high section added 2000; municipal after 2010 merger
+- Facts: Created because the single existing junior high (五甲國中) could no longer serve the fast-growing Wujia population; initially borrowed classrooms from Wujia JH.
+- Culture connection: Its founding story is a direct record of Wujia's explosive postwar population growth.
+- Address: 高雄市鳳山區五甲三路176號
+- Level: senior-high
+- NOTE: distinct from the unrelated 福誠國小 (elementary, same area) — do not conflate.
+
+### 中崙國民中學
+- URL: https://www.zlm.kh.edu.tw/
+- Founded: not found precisely (campus won a 2001 architecture award, suggesting a late-1990s build/founding date)
+- Facts: "Open space" campus design; sits across Fongshan Creek from 中正預校; only 6 classes / ~144 students (2024).
+- Culture connection: 中崙 is named for the public-housing complex built on former Taiwan Sugar Corporation sugarcane land.
+- Address: 高雄市鳳山區中崙二路397號
+- Level: junior-high
+
+### 五甲國民中學
+- URL: https://www.wzm.kh.edu.tw/
+- Founded: not found (predates 1991, since 福誠國中 was later split off to relieve its overcrowding)
+- Facts: Serves the historic Wujia (五甲) community.
+- Culture connection: "五甲" ("Fifth Jia") is a Qing-era land-tax/survey unit name.
+- Address: 高雄市鳳山區龍成路111號
+- Level: junior-high
+
+### 忠孝國民中學 (slug ks-zhongxiao-jh)
+- URL: https://www.zxm.kh.edu.tw/
+- Founded: approved Feb 1981 (民國70年); formally established Aug 1981
+- Facts: Hosted a facility built for the 1984 Taiwan Area Secondary Schools Games.
+- Culture connection: "忠孝" (loyalty and filial piety) — extremely common Confucian-values school name in postwar Taiwan.
+- Address: not found (extensive search failed; official site frame-based)
+- Level: junior-high
+- CONFIRMED (via Wikipedia disambiguation): at least 5 separate junior highs nationally named 忠孝國中/忠孝國民中學 (Hsinchu County, Taipei, New Taipei, Tainan, Kaohsiung) — this is genuinely distinct, matching the ks- disambiguating prefix.
+
+### 青年國民中學
+- URL: https://www.qnm.kh.edu.tw/
+- Founded: planning began 1996 (民國85年); first intake 1997 (564 students/14 classes); renamed municipal Dec 25 2010
+- Facts: Relatively young among Fongshan's junior highs.
+- Culture connection: Named for 青年路 (Youth Road) — a modern, aspirational street name typical of postwar urban planning.
+- Address: 高雄市鳳山區青年路二段89號
+- Level: junior-high
+
+### 鳳山國民中學
+- URL: https://www.fsm.kh.edu.tw/
+- Founded: predecessor 私立誠正中學 established 1939 in Guizhou, China as an army-dependents' school; relocated to Fongshan 1948; county-run 1957; renamed 鳳山國民中學 1968; municipal 2010
+- Facts: ~1,500+ students, 61 classes; the Kaohsiung MRT Orange Line station "鳳山國中" (O14) is named directly for this school.
+- Culture connection: Its 1939 Guizhou origin and 1948 relocation is a direct thread of the 1949 Nationalist retreat to Taiwan.
+- Address: 高雄市鳳山區中山東路227號
+- Level: junior-high
+
+### 鳳甲國民中學
+- URL: https://www.fjm.kh.edu.tw/
+- Founded: approved May 1980 (民國69年); renamed municipal 2010
+- Facts: First intake 6 classes; initially borrowed classrooms from 五甲國小.
+- Culture connection: "鳳甲" is a portmanteau of 鳳山 (Fongshan) and 五甲 (Wujia).
+- Address: 高雄市鳳山區輜汽路300號
+- Level: junior-high
+- NOTE: similar-sounding name to 鳳翔國中 below, but confirmed as a separate, much older school (1980 vs. 2012) — not a duplicate.
+
+### 鳳翔國民中學
+- URL: https://www.flyjh.kh.edu.tw/
+- Founded: 2012
+- Facts: Funded by the Kaohsiung Port/Harbor Bureau as an offset project tied to the Kaohsiung Port Intercontinental Container Center; features "Taiwan's first solar-powered covered basketball court."
+- Culture connection: A rare direct link between Kaohsiung's harbor/container-shipping economy and inland Fongshan.
+- Address: 高雄市鳳山區保義街100號
+- Level: junior-high
+
+### 鳳西國民中學
+- URL: https://www.fxm.kh.edu.tw/
+- Founded: approved Dec 19 1970 (民國59年); renamed municipal after 2010 merger
+- Facts: No further distinguishing facts found.
+- Culture connection: "鳳西" ("west of Fongshan") is a directional place name relative to the old Fongshan county seat.
+- Address: 高雄市鳳山區興中里光華路69號
+- Level: junior-high
+
+### 中山國小 (slug fengshan-zhongshan-es)
+- URL: https://www.zsp.kh.edu.tw/
+- Founded: 1965 (民國54年), originally a branch (鎮西分校) of 鳳山國小
+- Facts: Located in prime downtown Fongshan near the city government's Fongshan Administrative Center.
+- Culture connection: Named for Sun Yat-sen (中山) — one of the most common school names nationwide.
+- Address: 高雄市鳳山區光復路一段120巷8號
+- Level: elementary
+
+### 中崙國小
+- URL: https://www.zlu.kh.edu.tw/
+- Founded: approved 1996 (民國85年); campus completed 1998
+- Facts: Built to serve the newly constructed 中崙國宅 public-housing community; district was formerly Taiwan Sugar Corporation sugarcane fields.
+- Culture connection: Embodies the transformation of Taiwan Sugar Corp agricultural land into state-planned public housing.
+- Address: 高雄市鳳山區中崙四路25號
+- Level: elementary
+
+### 中正國小 (slug fengshan-zhongzheng-es)
+- URL: https://www.zzp.kh.edu.tw/
+- Founded: 1958 (民國47年); land was Navy-owned property donated 1957 specifically to build a school for military-dependents'-village (眷村) children
+- Facts: First principal 朱翠娥 (1958-1966).
+- Culture connection: Named for Chiang Kai-shek (中正); its founding for military-dependents' children directly reflects Fongshan's history as a major KMT military garrison town after 1949.
+- Address: 高雄市鳳山區勝利路2號
+- Level: elementary
+- NOTE: distinct from the unrelated 高雄市苓雅區中正國民小學 tracked elsewhere in this project.
+
+### 五甲國小 (slug ks-wujia-es)
+- URL: https://www.wzp.kh.edu.tw/
+- Founded: 1921 (大正10年, Japanese colonial era) as a branch of 鳳山公學校; formally established 1924 as 五甲公學校
+- Facts: Over 100 years old — the oldest school in this batch by far.
+- Culture connection: Its century-plus history embodies Wujia's long agricultural community life spanning Qing, Japanese colonial, and ROC eras.
+- Address: 高雄市鳳山區五甲二路424號
+- Level: elementary
+
+### 五福國小 (slug ks-wufu-es)
+- URL: https://www.wfp.kh.edu.tw/
+- Founded: approved March 25 1975; officially established Aug 1 1975 (民國64年)
+- Facts: No further distinguishing facts found.
+- Culture connection: "五福" ("Five Blessings") is an auspicious traditional Chinese naming motif.
+- Address: 高雄市鳳山區福德街145號
+- Level: elementary
+- NOTE: distinct from an unrelated 高雄市苓雅區五福國民中學 (different district/level) and a Miaoli County 五福國小 — confirmed genuinely separate institutions, consistent with the ks- disambiguating prefix.
+
+SUMMARY FLAGS: (1) 忠孝國中 street address genuinely unfindable despite extensive search — confirmed 5 same-named schools nationally, this Kaohsiung one is distinct; (2) several founding years approximate/not found (中崙國中, 五甲國中, 中崙國小); (3) 鳳甲國中 vs 鳳翔國中 confirmed distinct despite similar naming.

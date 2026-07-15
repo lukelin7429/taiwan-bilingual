@@ -1,0 +1,191 @@
+### 南隆國民中學 (Nanlong Junior High School)
+- URL: https://www.nl.kh.edu.tw/
+- Founded: 1965 (民國54年) as a branch of Meinong JH; independent Feb 1968
+- Facts: ~215 students, 30 teachers; bilingual-course school since 2019; joined immersive Hakka/digital learning program.
+- Culture connection: 南隆 was a Japanese-era agricultural colonization settlement (南隆農場) in Meinong, reflecting the district's Hakka farming heritage.
+- Address: not found
+- Level: junior-high
+
+### 美濃國民中學 (Meinong Junior High School)
+- URL: https://www.mnm.kh.edu.tw/
+- Founded: Oct 1946 (民國35年), opened Nov 23 1946, originally "高雄縣立美濃初級中學"; renamed municipal Dec 2010
+- Facts: First principal Lin En-gui; specializes in Hakka cultural heritage education; Hakka theatrical performance team award-winning.
+- Culture connection: Meinong is Kaohsiung's best-known Hakka enclave; the school's arts programs actively transmit Hakka opera/theatre traditions.
+- Address: 高雄市美濃區合和里中正路一段191號
+- Level: junior-high
+
+### 龍肚國民中學 (Longdu Junior High School)
+- URL: https://www.ldm.kh.edu.tw/
+- Founded: not found
+- Facts: located in same Longdu area as the century-old Longdu Elementary School
+- Culture connection: Longdu ("Dragon's Belly") sits at the foot of Chading Mountain, an old Hakka farming village core of Meinong.
+- Address: 高雄市美濃區中華路68號
+- Level: junior-high
+
+### 中壇國小 (Zhongtan Elementary School)
+- URL: https://www.ztp.kh.edu.tw/
+- Founded: not found
+- Facts: serves Zhongtan Village and parts of Luxing/Fu'an/Dexing villages
+- Culture connection: Zhongtan is the geographic/administrative heart of Meinong.
+- Address: not found precisely
+- Level: elementary
+
+### 吉東國小 (Jidong Elementary School)
+- URL: https://www.jdp.kh.edu.tw/
+- Founded: Sept 1953 (民國42年); split off from Jiyang Elementary's district due to long/unsafe commute
+- Facts: Kaohsiung's 6th "campus maker base"; first Hakka-humanities themed experimental school in Taiwan (approved 2018).
+- Culture connection: The school's entire curriculum is now built around Hakka humanities and local food/agriculture education.
+- Address: 高雄市美濃區吉東里吉頂路19號
+- Level: elementary
+
+### 吉洋國小 (Jiyang Elementary School)
+- URL: https://www.jyp.kh.edu.tw/
+- Founded: April 1 1919 (Japanese colonial era) as 瀰濃公學校手巾寮分校; land donated by Nanlong Farm; opened with 3 classes, 87 students
+- Facts: 2022 had 7 classes, 86 students — a very small rural school.
+- Culture connection: "手巾寮" (Shoujinliao) was an early Hakka hamlet name in Meinong tied to the local irrigation/farming settlement pattern.
+- Address: 高雄市美濃區忠孝路二段59號
+- Level: elementary
+
+### 廣興國小 (Guangxing Elementary School)
+- URL: https://www.gxp.kh.edu.tw/
+- Founded: approx. 1940 (民國29年), calculated from a 2015 news report of "75 years of history" — not independently confirmed
+- Facts: Taiwan's first Hakka-language school anthem, composed by musicians Lin Sheng-hsiang and Chung Tieh-chun.
+- Culture connection: A Hakka farming community in Meinong; the Hakka-language school song project ties the school to Hakka-language preservation efforts.
+- Address: 高雄市美濃區廣興街124號
+- Level: elementary
+
+### 東門國小 (Dongmen Elementary School)
+- URL: https://www.dmp.kh.edu.tw/
+- Founded: Sept 1 1962 (民國51年) established as a branch of Fu'an Elementary (東門分校); exact independence year not found
+- Facts: located in Meinong's old East Gate area
+- Culture connection: Named for one of the historic gates of Meinong's old walled settlement, tying it to the town's early Hakka defensive/settlement layout.
+- Address: 高雄市美濃區民族路36巷2號
+- Level: elementary
+
+### 福安國小 (Fu'an Elementary School, slug meinong-fuan-es)
+- URL: https://www.fag.kh.edu.tw/
+- Founded: Sept 1 1953 (民國42年), receiving transferred grade 1-5 students; Dongmen branch established 1962
+- Facts: campus buildings styled after traditional Hakka tobacco-curing barns ("菸樓造型").
+- Culture connection: Tobacco cultivation and curing barns were historically central to Meinong's Hakka economy; the school's architecture directly commemorates this.
+- Address: 高雄市美濃區福安里中山路二段358號
+- Level: elementary
+- CONFIRMED DISTINCT from 復安國小 in Alian District — same pinyin, different characters, different district, township-qualified slug correctly disambiguates.
+
+### 美濃國小 (Meinong Elementary School)
+- URL: https://www.mnp.kh.edu.tw/
+- Founded: 1900 (民前12年) originally "瀰濃公學校"
+- Facts: 397 students, 20 classes; located below Yueguang (Moonlight) Mountain, with Meinong Creek in front and Qiangzailiao Creek/Hengkou behind.
+- Culture connection: Oldest and namesake school of the Meinong Hakka township, physically anchored between the district's signature mountain and creek.
+- Address: 高雄市美濃區泰安里永安路190號
+- Level: elementary
+
+### 龍山國小 (Longshan Elementary School)
+- URL: https://www.lsp.kh.edu.tw/
+- Founded: Aug 1953 (民國42年) as a branch of Longdu Elementary (龍山分校); independent Aug 1954 (民國43年)
+- Facts: not found beyond founding history
+- Culture connection: Split off from the century-old Longdu school, reflecting Meinong's postwar population growth.
+- Address: not found precisely
+- Level: elementary
+
+### 龍肚國小 (Longdu Elementary School)
+- URL: https://www.ldp.kh.edu.tw/
+- Founded: 1920 (Japanese colonial era, Taisho 9), originally "美濃公學校龍肚分校"; independent as 龍肚公學校 ~1923
+- Facts: Over 100 years of history; 1928 added a 2-year agricultural continuing school, moved to Qishan in 1935 becoming Qishan Practical Agricultural School; known today for food/agriculture education with rice production-traceability certification (2024).
+- Culture connection: Sits at the foot of Chading Mountain; the school's century of continuous agricultural-education tradition mirrors Meinong's rice- and tobacco-farming Hakka identity.
+- Address: 高雄市美濃區龍肚里龍東街43號
+- Level: elementary
+
+### 鼓山高級中學 (Gushan Senior High School)
+- URL: https://www.kusjh.kh.edu.tw/
+- Founded: 1958 (民國47年) as "高雄市立第七初級中學"; renamed 高雄市立鼓山國民中學 1968; became complete school 1997; renamed 鼓山高級中學 Oct 2000
+- Facts: Combined JH+SH complete school; ~1,050 students; campus ~5.2 hectares at the city's western edge.
+- Culture connection: Its original 1958 name ("Seventh Junior High") reflects Kaohsiung's rapid postwar school-numbering expansion.
+- Address: 高雄市鼓山區明德路2號
+- Level: senior-high (complete school)
+
+### 七賢國中 (Qixian Junior High School, Gushan)
+- URL: https://www.chihjh.kh.edu.tw/
+- Founded: 1969 (民國58年) in Qianjin District, first principal Guo Xingfang
+- Facts: Historically one of the "三七五" trio (with 三民國中 and 五福國中) — top feeder schools into Kaohsiung Senior High/Girls' High; relocated to current Gushan District campus 2009-2012, old Qianjin site decommissioned; ~1,377 students.
+- Culture connection: Though its name/founding tie to Qianjin's historic "Seven Sages" area, its relocation to Gushan's art-museum district reflects Kaohsiung's shifting urban development.
+- Address: 高雄市鼓山區美術東三路110號
+- Level: junior-high
+- NOTE: unrelated to the elementary school 七賢國小 tracked elsewhere (Xinxing District) — same name area but distinct institution/level.
+
+### 壽山國中 (Shoushan Junior High School)
+- URL: https://www.ssjh.kh.edu.tw/
+- Founded: not found
+- Facts: located on Shoushan Mountain, near Ai River
+- Culture connection: Named for and situated on Shoushan ("Longevity Mountain"), the limestone hill and national nature park dominating Gushan District's geography.
+- Address: 高雄市鼓山區鼓山二路37巷108號
+- Level: junior-high
+- NOTE: co-located but genuinely distinct from 壽山國小 (elementary) below, not duplicates.
+
+### 明華國中 (Minghua Junior High School)
+- URL: https://www.mhjh.kh.edu.tw/
+- Founded: 2001 (民國90年); borrowed 大義國中 campus 2003 for first intake; phase-1 buildings 2004, phase-2 2006
+- Facts: ~1,703 students — large for a JH; underground 3-story activity center.
+- Culture connection: One of Kaohsiung's newest junior highs, built to serve the rapidly-developed Art Museum/Mingcheng residential district.
+- Address: not found (only intersection area known)
+- Level: junior-high
+
+### 中山國小 (Gushan, slug gushan-zhongshan-es)
+- URL: https://www.csps.kh.edu.tw/
+- Founded: prep approved Sept 1960; officially opened autumn 1961, first principal Zhong Ruda
+- Facts: 1,735 students, 63 classes, 110 teachers; relocated to new campus starting 2012.
+- Culture connection: Named for Sun Yat-sen (中山).
+- Address: 高雄市鼓山區雄峰路18號
+- Level: elementary
+
+### 九如國小 (Jiuru Elementary School, slug ks-jiuru-es)
+- URL: https://www.jrps.kh.edu.tw/
+- Founded: 1977 (民國66年), split off to relieve 內惟國小's enrollment pressure
+- Facts: relatively young school.
+- Culture connection: Named for Jiuru Road, part of the "nine-numbered road" grid system in Kaohsiung's postwar urban planning.
+- Address: 高雄市鼓山區九如四路763號
+- Level: elementary
+
+### 內惟國小 (Neiwei Elementary School)
+- URL: https://www.nwps.kh.edu.tw/
+- Founded: April 1 1920 (Japanese colonial era) as "舊城公學校內惟分教室"
+- Facts: 905 students, 31 classes; Chaishan Ecological Education Center opened on campus 2009; celebrated 100th anniversary.
+- Culture connection: "Neiwei" was a hamlet inside the old Zuoying walled city's outskirts; founding as a branch of "Jiucheng" (Old City) Public School ties it to Zuoying's Qing-era walled city history.
+- Address: 高雄市鼓山區內惟路73號
+- Level: elementary
+
+### 壽山國小 (Shoushan Elementary School, slug ks-shoushan-es)
+- URL: https://www.ssps.kh.edu.tw/
+- Founded: not found precisely (~60-year history suggests 1960s founding)
+- Facts: 184 students, 13 classes; converted to public-run experimental education school Aug 2018, themed "ecological aesthetics" with anthroposophy-grounded curriculum; sits beside Shoushan National Nature Park and Zoo.
+- Culture connection: Directly integrates Shoushan's limestone-hill ecology into its pedagogical identity.
+- Address: 高雄市鼓山區鼓山二路37巷38弄24號
+- Level: elementary
+
+### 鼓山國小 (Gushan Elementary School)
+- URL: https://www.kusps.kh.edu.tw/
+- Founded: May 24 1907 (Japanese colonial era) as "打狗尋常高等小學校," for children of Japanese officials/merchants only
+- Facts: 111+ years old, third-oldest elementary school in Kaohsiung; sits in the historic Hamasen (哈瑪星) railway hub area, one of Kaohsiung's first modernized districts under Japanese rule.
+- Culture connection: The school's own renaming history (Takao → Kaohsiung No.1 → Minato-machi → Minato) traces the port city's shifting administrative names.
+- Address: 高雄市鼓山區臨海二路50號
+- Level: elementary
+- CONFIRMED DISTINCT from 姑山國小 (Dashu District) and from a separate school in Qishan District — three same/similar-named "Gushan/Guyan" elementary schools exist across different Kaohsiung districts; this is specifically the Gushan District one at Linhai 2nd Road.
+
+### 鼓岩國小 (Guyan Elementary School)
+- URL: https://www.kyps.kh.edu.tw/
+- Founded: not found (search kept returning results for the similarly-named 鼓山國小 instead)
+- Facts: 72 students, 9 classes; drumming/arts/gymnastics/badminton/jump-rope/Scratch clubs.
+- Culture connection: "鼓岩" ("Drum Rock") likely references the same Shoushan limestone outcrop geography as neighboring Gushan ("Drum Mountain").
+- Address: 高雄市鼓山區河邊街155號
+- Level: elementary
+- FLAG: distinguish carefully from 鼓山國小 above — very similar Chinese names, same district, search engines repeatedly conflated the two; confirmed as two separate schools with separate websites and enrollment figures.
+
+### 龍華國小 (Longhua Elementary School)
+- URL: https://www.lhps.kh.edu.tw/
+- Founded: 1978 (民國67年), created to relieve overcrowding at Shiquan Elementary and ease commuting in the Longzi Li/Aozihdi area
+- Facts: new campus completed June 1 2009.
+- Culture connection: Serves the Aozihdi area, one of Kaohsiung's major redeveloped commercial/residential districts.
+- Address: 高雄市鼓山區大順一路858號
+- Level: elementary
+- NOTE: unrelated to 高雄市鼓山區龍華國民小學's namesake collision with an unrelated Zuoying JH of similar name (龍華國中) tracked in another batch — confirmed distinct.
+
+SUMMARY FLAGS: (1) 鼓山國小 vs 鼓岩國小 — confirmed distinct despite very similar names and same district; (2) 鼓山國小 (Gushan District) vs 姑山國小 (Dashu) vs a Qishan District namesake — all confirmed distinct; (3) 壽山國中/壽山國小 co-located but distinct; (4) 七賢國中 (Gushan, this batch) founded 1969 in Qianjin, only relocated to Gushan 2009-2012 — flag institutional-history vs. campus-location distinction; (5) several founding years/addresses not found (南隆國中, 龍肚國中, 中壇國小, 龍山國小, 明華國中 exact address).
