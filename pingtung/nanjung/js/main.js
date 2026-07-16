@@ -4,9 +4,10 @@
   var body = document.body;
 
   function setLang(lang) {
-    body.classList.remove('lang-en', 'lang-ja');
+    if (lang !== 'en' && !document.querySelector('.lang-' + lang)) lang = 'en';
+    body.classList.remove('lang-en', 'lang-ja', 'lang-ko');
     body.classList.add('lang-' + lang);
-    document.documentElement.lang = (lang === 'ja') ? 'ja' : 'en';
+    document.documentElement.lang = lang;
     try { localStorage.setItem(KEY, lang); } catch (e) {}
     document.querySelectorAll('.lang-toggle button').forEach(function (b) {
       b.classList.toggle('on', b.dataset.lang === lang);

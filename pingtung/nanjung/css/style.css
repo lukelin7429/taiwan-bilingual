@@ -29,8 +29,10 @@ body{
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 .lang-ja{font-family:'Hiragino Sans','Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif}
-body.lang-en .lang-ja{display:none}
-body.lang-ja .lang-en{display:none}
+.lang-ko{font-family:'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif}
+body.lang-en .lang-ja,body.lang-en .lang-ko{display:none}
+body.lang-ja .lang-en,body.lang-ja .lang-ko{display:none}
+body.lang-ko .lang-en,body.lang-ko .lang-ja{display:none}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
 
 /* ---------- nav ---------- */
@@ -60,7 +62,7 @@ body.lang-ja .lang-en{display:none}
 .hero-text .wrap{padding-bottom:54px}
 .hero .kicker{font-size:15px;letter-spacing:3px;text-transform:uppercase;color:#f3dcc0;font-weight:600;margin-bottom:14px;text-shadow:0 1px 8px rgba(0,0,0,.5)}
 .hero h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:60px;line-height:1.05;letter-spacing:.5px;text-shadow:0 2px 22px rgba(0,0,0,.45)}
-.hero .lang-ja h1{font-size:46px}
+.hero .lang-ja h1,.hero .lang-ko h1{font-size:46px}
 .hero .sub{font-size:22px;margin-top:18px;max-width:660px;color:#f4efe8;text-shadow:0 1px 12px rgba(0,0,0,.55)}
 
 /* ---------- sub-page banner ---------- */
@@ -73,6 +75,7 @@ body.lang-ja .lang-en{display:none}
 .subhero .eyebrow{color:#f3dcc0;text-shadow:0 1px 8px rgba(0,0,0,.5)}
 .subhero h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:46px;line-height:1.08;text-shadow:0 2px 18px rgba(0,0,0,.45)}
 .subhero .lang-ja h1{font-family:'Hiragino Sans',sans-serif;font-size:38px}
+.subhero .lang-ko h1{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:38px}
 
 /* ---------- sections ---------- */
 section{padding:84px 0}
@@ -81,8 +84,10 @@ section{padding:84px 0}
 .eyebrow{font-size:15px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:14px}
 h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:40px;line-height:1.12;color:var(--ink)}
 .lang-ja h2{font-family:'Hiragino Sans',sans-serif;font-weight:600;font-size:34px}
+.lang-ko h2{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-weight:600;font-size:34px}
 h3{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:26px;line-height:1.2}
 .lang-ja h3{font-family:'Hiragino Sans',sans-serif;font-size:23px}
+.lang-ko h3{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:23px}
 p{margin-top:16px;color:var(--ink-soft)}
 p.lead{font-size:23px;color:var(--ink);line-height:1.65}
 .rule{width:64px;height:3px;background:var(--gold);margin:0 0 26px}
@@ -171,6 +176,7 @@ p.lead{font-size:23px;color:var(--ink);line-height:1.65}
 .quote{max-width:840px;margin:0 auto;text-align:center}
 .quote blockquote{font-family:'Fraunces',Georgia,serif;font-size:30px;line-height:1.4;color:var(--ink);font-style:italic}
 .lang-ja blockquote{font-family:'Hiragino Mincho ProN','Hiragino Sans',serif;font-size:25px}
+.lang-ko blockquote{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:25px}
 .quote cite{display:block;margin-top:22px;font-size:18px;color:var(--ink-soft);font-style:normal}
 
 /* footer */
@@ -178,6 +184,7 @@ footer{background:#1c1820;color:#cdc6cf;padding:64px 0 40px;font-size:17px}
 footer .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
 footer h4{color:#fff;font-family:'Fraunces',serif;font-size:20px;margin-bottom:14px;font-weight:600}
 .lang-ja footer h4{font-family:'Hiragino Sans',sans-serif}
+.lang-ko footer h4{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif}
 footer a:hover{color:#fff}
 footer .frow{margin-top:8px;color:#b3aab5}
 .credit{border-top:1px solid #322b35;margin-top:44px;padding-top:22px;font-size:14px;color:#938a96;text-align:center;line-height:1.7}
@@ -190,10 +197,10 @@ footer .frow{margin-top:8px;color:#b3aab5}
   .menu.open{display:flex;position:absolute;top:78px;left:0;right:0;flex-direction:column;background:#fff;border-bottom:1px solid var(--line);padding:16px 28px;gap:18px}
   .brand .en-name{font-size:19px}.brand .zh-name{font-size:12px}.brand .logo{height:44px}
   .hero{height:74vh;min-height:440px}
-  .hero h1{font-size:40px}.hero .lang-ja h1{font-size:31px}.hero .sub{font-size:19px}
-  .subhero h1{font-size:33px}.subhero .lang-ja h1{font-size:28px}
+  .hero h1{font-size:40px}.hero .lang-ja h1,.hero .lang-ko h1{font-size:31px}.hero .sub{font-size:19px}
+  .subhero h1{font-size:33px}.subhero .lang-ja h1,.subhero .lang-ko h1{font-size:28px}
   section{padding:56px 0}
-  h2{font-size:30px}.lang-ja h2{font-size:26px}
+  h2{font-size:30px}.lang-ja h2,.lang-ko h2{font-size:26px}
   p.lead{font-size:21px}
   .feature{grid-template-columns:1fr;gap:28px}.feature.flip .ftxt{order:0}.feature.portrait .fimg{max-width:none}
   .feature+.feature{margin-top:54px}
@@ -201,20 +208,20 @@ footer .frow{margin-top:8px;color:#b3aab5}
   .gallery{grid-template-columns:1fr 1fr}
   footer .fgrid{grid-template-columns:1fr;gap:30px}
   .motto .ch{width:78px;height:78px;line-height:74px;font-size:40px}.motto .chars{gap:22px}
-  .quote blockquote{font-size:24px}.lang-ja blockquote{font-size:21px}
+  .quote blockquote{font-size:24px}.lang-ja blockquote,.lang-ko blockquote{font-size:21px}
 }
 
 /* article (full news story) */
 .article{max-width:780px;margin:0 auto}
 .article p{font-size:21px;line-height:1.9;color:var(--ink);margin:0 0 24px}
-.article .lang-ja p{font-size:20px;line-height:1.95}
+.article .lang-ja p,.article .lang-ko p{font-size:20px;line-height:1.95}
 a.card{color:inherit}
 a.card .more{color:var(--plum)}
-@media(max-width:880px){.article p{font-size:19px}.article .lang-ja p{font-size:18px}}
+@media(max-width:880px){.article p{font-size:19px}.article .lang-ja p,.article .lang-ko p{font-size:18px}}
 
 /* deep story article */
 .article h3{font-size:25px;margin:40px 0 4px}
-.lang-ja .article h3{font-size:22px}
+.lang-ja .article h3,.lang-ko .article h3{font-size:22px}
 .article .rule{margin:10px 0 20px}
 .article figure{margin:32px 0}
 .article figure img{border-radius:6px;width:100%}
@@ -222,14 +229,17 @@ a.card .more{color:var(--plum)}
 .article .pull{border-left:3px solid var(--gold);padding:4px 0 4px 26px;margin:36px 0;
   font-family:'Fraunces',Georgia,serif;font-size:25px;line-height:1.45;color:var(--ink);font-style:italic}
 .lang-ja .article .pull{font-family:'Hiragino Mincho ProN','Hiragino Sans',serif;font-size:21px;font-style:normal}
+.lang-ko .article .pull{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:21px;font-style:normal}
 .article .pull cite{display:block;font-family:'Inter',sans-serif;font-style:normal;font-size:16px;color:var(--ink-soft);margin-top:12px}
 .lang-ja .article .pull cite{font-family:'Hiragino Sans',sans-serif}
+.lang-ko .article .pull cite{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif}
 
 /* testimonials */
 .tgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:980px;margin:0 auto}
 .tcard{border:1px solid var(--line);border-radius:8px;padding:30px 30px 26px;background:#fff}
 .tcard .tq{font-family:'Fraunces',Georgia,serif;font-size:21px;line-height:1.5;color:var(--ink)}
 .lang-ja .tcard .tq{font-family:'Hiragino Mincho ProN','Hiragino Sans',serif;font-size:18px}
+.lang-ko .tcard .tq{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:18px}
 .tcard .tn{font-size:16px;color:var(--ink-soft);margin-top:16px}
 .tcard .tn strong{color:var(--plum)}
 @media(max-width:880px){.tgrid{grid-template-columns:1fr}.tcard .tq{font-size:19px}}
