@@ -9,7 +9,8 @@
     '.section-head', '.about-text', '.lineage', '.pillar', '.principal-card',
     '.life-card', '.life-cta', '.visit-grid > *', '.principal-portrait',
     '.prose-inner', '.commit', '.curriculum-card', '.playlist-wrap',
-    '.stations-intro', '.station', '.history-table'
+    '.stations-intro', '.station', '.history-table',
+    '.camp-fact', '.resource-card', '.video-pending'
   ].join(',');
 
   function init() {

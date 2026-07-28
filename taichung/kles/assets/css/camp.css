@@ -1,0 +1,86 @@
+/* ============ Summer Camp 2026 · page-specific styles ============ */
+
+/* ---- Quick facts strip (under the hero) ---- */
+.camp-facts{background:#fff;border-bottom:1px solid var(--line);}
+.camp-facts .wrap{
+  display:flex;flex-wrap:wrap;gap:0;
+  padding:26px 24px;
+}
+.camp-fact{
+  flex:1 1 160px;text-align:center;
+  padding:10px 14px;
+  border-left:1px solid var(--line);
+}
+.camp-fact:first-child{border-left:none;}
+.camp-fact .num{
+  font-family:'Cormorant Garamond',serif;font-weight:700;
+  font-size:30px;color:var(--teal-deep);line-height:1.1;
+}
+.camp-fact .lbl{
+  margin-top:4px;font-size:13.5px;color:var(--ink-soft);
+  line-height:1.4;
+}
+.camp-fact .lbl small{display:block;font-family:'PingFang TC',sans-serif;font-size:12.5px;margin-top:1px;}
+
+/* ---- Video (pending) placeholder ---- */
+.video-pending-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:24px;max-width:900px;margin:30px auto 0;
+}
+.video-pending{
+  aspect-ratio:16/9;border-radius:16px;
+  border:2px dashed var(--line);
+  background:linear-gradient(180deg,var(--teal-soft) 0%,#fff 100%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:10px;text-align:center;padding:20px;
+}
+.video-pending .glyph{font-size:34px;opacity:.75;}
+.video-pending .t{font-weight:700;color:var(--teal-deep);font-size:15.5px;}
+.video-pending .z{font-family:'PingFang TC',sans-serif;font-size:14px;color:var(--ink-soft);}
+@media (max-width:680px){ .video-pending-grid{grid-template-columns:1fr;} }
+
+/* ---- Downloadable resources ---- */
+.resources-section{background:linear-gradient(180deg,#fff 0%,var(--sand-soft) 100%);}
+.resources-wrap{max-width:960px;margin:0 auto;}
+.resource-group{margin-bottom:38px;}
+.resource-group:last-child{margin-bottom:0;}
+.resource-group__label{
+  font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--sand-deep);margin-bottom:14px;
+  display:flex;align-items:center;gap:8px;
+}
+.resource-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  gap:14px;
+}
+.resource-card{
+  display:flex;align-items:center;gap:14px;
+  background:#fff;border:1px solid var(--line);border-radius:14px;
+  padding:16px 18px;
+  box-shadow:var(--shadow-sm);
+  transition:transform .2s,box-shadow .2s,border-color .2s;
+}
+.resource-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--teal);color:inherit;}
+.resource-card__icon{
+  width:40px;height:40px;flex:none;border-radius:10px;
+  background:var(--teal-soft);color:var(--teal-deep);
+  display:flex;align-items:center;justify-content:center;font-size:19px;
+}
+.resource-card__body{min-width:0;}
+.resource-card__en{font-weight:700;color:var(--ink);font-size:15.5px;line-height:1.3;}
+.resource-card__zh{font-family:'PingFang TC',sans-serif;font-size:13.5px;color:var(--ink-soft);margin-top:2px;}
+.resources-note{
+  margin-top:30px;font-size:15px;color:var(--ink-soft);
+  text-align:center;line-height:1.7;
+}
+
+/* ---- Pinned/featured news card accent ---- */
+.news-card--pinned{border:2px solid var(--sand);position:relative;}
+.news-card--pinned .news-card__tag{background:var(--sand);color:#2b1f0d;}
+.news-card__pin{
+  position:absolute;top:14px;right:14px;z-index:2;
+  background:var(--teal-deep);color:#fff;
+  font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:5px 11px;border-radius:99px;
+  box-shadow:0 4px 10px rgba(0,0,0,.25);
+}
