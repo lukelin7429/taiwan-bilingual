@@ -10,7 +10,7 @@
     '.life-card', '.life-cta', '.visit-grid > *', '.principal-portrait',
     '.prose-inner', '.commit', '.curriculum-card', '.playlist-wrap',
     '.stations-intro', '.station', '.history-table',
-    '.camp-fact', '.resource-card', '.video-pending'
+    '.camp-fact', '.resource-card'
   ].join(',');
 
   function init() {

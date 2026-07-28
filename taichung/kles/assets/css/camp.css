@@ -22,23 +22,6 @@
 }
 .camp-fact .lbl small{display:block;font-family:'PingFang TC',sans-serif;font-size:12.5px;margin-top:1px;}
 
-/* ---- Video (pending) placeholder ---- */
-.video-pending-grid{
-  display:grid;grid-template-columns:repeat(2,1fr);
-  gap:24px;max-width:900px;margin:30px auto 0;
-}
-.video-pending{
-  aspect-ratio:16/9;border-radius:16px;
-  border:2px dashed var(--line);
-  background:linear-gradient(180deg,var(--teal-soft) 0%,#fff 100%);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:10px;text-align:center;padding:20px;
-}
-.video-pending .glyph{font-size:34px;opacity:.75;}
-.video-pending .t{font-weight:700;color:var(--teal-deep);font-size:15.5px;}
-.video-pending .z{font-family:'PingFang TC',sans-serif;font-size:14px;color:var(--ink-soft);}
-@media (max-width:680px){ .video-pending-grid{grid-template-columns:1fr;} }
-
 /* ---- Downloadable resources ---- */
 .resources-section{background:linear-gradient(180deg,#fff 0%,var(--sand-soft) 100%);}
 .resources-wrap{max-width:960px;margin:0 auto;}
