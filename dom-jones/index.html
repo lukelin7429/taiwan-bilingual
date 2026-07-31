@@ -96,7 +96,7 @@
   .d-feature img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;}
   .d-feature figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px 22px;background:linear-gradient(to top,rgba(10,31,92,.92),rgba(10,31,92,.4) 60%,transparent);color:#fff;font-size:16px;}
   .d-feature figcaption strong{display:block;font-size:18px;font-weight:700;margin-bottom:3px;}
-  .d-vcount{margin-top:20px;font-size:15px;color:var(--ink-soft);}
+  .d-vcount{margin-top:20px;font-size:17px;color:var(--ink-soft);}
   .d-vcount b{color:var(--indigo);}
   .d-vgrid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:12px;}
   @media(min-width:560px){.d-vgrid{grid-template-columns:1fr 1fr;}}
@@ -109,8 +109,8 @@
   .d-vthumb:hover .pl{background:rgba(10,31,92,.14);}
   .d-vthumb iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
   .d-vmeta{padding:14px 16px 16px;}
-  .d-vmeta h4{font-size:16.5px;font-weight:700;color:var(--ink);}
-  .d-vmeta .sub{font-size:13.5px;color:var(--ink-soft);margin-top:3px;}
+  .d-vmeta h4{font-size:19px;font-weight:700;color:var(--ink);}
+  .d-vmeta .sub{font-size:17px;color:var(--ink-soft);margin-top:3px;}
 
   /* contact */
   .d-contact{background:var(--indigo);color:#fff;border-radius:18px;padding:34px 36px;text-align:center;}
@@ -121,6 +121,25 @@
   .d-contact .links a.gold{background:var(--gold);border-color:var(--gold);color:var(--indigo);}
   .d-contact .links a:hover{background:rgba(255,255,255,.22);}
   .d-contact .links a.gold:hover{filter:brightness(.95);}
+
+  /* Video library tabs — sticky switch between the two collections */
+  .d-tabs{position:sticky;top:0;z-index:30;display:flex;gap:10px;flex-wrap:nowrap;overflow-x:auto;
+    margin:22px 0 6px;padding:12px 0;background:#fff;box-shadow:0 1px 0 var(--line);scrollbar-width:none;}
+  .d-tabs::-webkit-scrollbar{display:none;}
+  .d-tab{flex:0 0 auto;display:flex;align-items:center;gap:9px;cursor:pointer;background:#fff;
+    border:1px solid var(--line);border-radius:999px;padding:10px 20px;font:inherit;line-height:1.25;}
+  .d-tab .en{font-size:17px;font-weight:700;color:var(--ink);}
+  .d-tab .zh{font-size:15px;color:var(--ink-soft);}
+  .d-tab .n{font-size:14px;font-weight:700;color:var(--ink-soft);background:#f0f2f7;
+    border-radius:999px;padding:2px 9px;min-width:28px;text-align:center;}
+  .d-tab.on{background:var(--indigo);border-color:var(--indigo);}
+  .d-tab.on .en,.d-tab.on .zh{color:#fff;}
+  .d-tab.on .n{background:rgba(255,255,255,.24);color:#fff;}
+  .d-panel{display:none;}
+  .d-panel.on{display:block;}
+  .d-vmore{margin-top:26px;text-align:center;font-size:17px;}
+  .d-vmore a{color:var(--amber);font-weight:700;text-decoration:none;}
+  @media(max-width:560px){.d-tab{padding:9px 15px;} .d-tab .zh{display:none;}}
 </style>
 <script>/*MTN-GUARD*/document.documentElement.classList.add('mtn');addEventListener('load',function(){setTimeout(function(){window.__mtn||document.documentElement.classList.remove('mtn')},1)})</script>
   <link rel="stylesheet" href="/assets/css/search.css">
@@ -272,8 +291,25 @@
       <figcaption><strong>With the students of Yuxin Elementary 育新國小</strong>One of the many campuses on Dom's Taiwan tour</figcaption>
     </figure>
 
-    <p class="d-vcount" id="dvcount"></p>
-    <div class="d-vgrid" id="dvgrid"></div>
+    <div class="d-tabs" role="tablist" aria-label="Video collections 影片分類">
+      <button class="d-tab on" role="tab" aria-selected="true" data-panel="interviews">
+        <span class="en">Voices in Education</span><span class="zh">教育之聲 · 校長專訪</span><span class="n" id="dn-interviews">19</span>
+      </button>
+      <button class="d-tab" role="tab" aria-selected="false" data-panel="news">
+        <span class="en">Campus News</span><span class="zh">校園新聞 · 學生製作</span><span class="n" id="dn-news">25</span>
+      </button>
+    </div>
+
+    <div class="d-panel on" id="dpanel-interviews">
+      <p class="d-vcount" id="dicount"></p>
+      <div class="d-vgrid" id="digrid"></div>
+      <p class="d-vmore"><a href="https://www.youtube.com/playlist?list=PLXjTAIiEub1Q" target="_blank" rel="noopener">Watch all 19 on YouTube ↗</a></p>
+    </div>
+
+    <div class="d-panel" id="dpanel-news">
+      <p class="d-vcount" id="dvcount"></p>
+      <div class="d-vgrid" id="dvgrid"></div>
+    </div>
   </div>
 </section>
 
@@ -314,19 +350,43 @@
 
 <script>
 (function(){
-  var grid=document.getElementById('dvgrid');
+  var grid=document.getElementById('dvgrid'), igrid=document.getElementById('digrid');
   function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-  grid.addEventListener('click',function(e){
+  function playOnClick(e){
     var t=e.target.closest('.d-vthumb'); if(!t||t.querySelector('iframe'))return;
     var v=t.getAttribute('data-v');
-    t.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+v+'?autoplay=1&rel=0" title="Dom Jones school visit" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    t.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+v+'?autoplay=1&rel=0" title="Dom Jones video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  }
+  grid.addEventListener('click',playOnClick);
+  igrid.addEventListener('click',playOnClick);
+
+  /* sticky tabs */
+  var bar=document.querySelector('.d-tabs');
+  if(bar) bar.addEventListener('click',function(e){
+    var t=e.target.closest('.d-tab'); if(!t)return;
+    Array.prototype.forEach.call(bar.querySelectorAll('.d-tab'),function(b){
+      var on=b===t; b.classList.toggle('on',on); b.setAttribute('aria-selected',on);
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('.d-panel'),function(p){
+      p.classList.toggle('on', p.id==='dpanel-'+t.dataset.panel);
+    });
   });
+
+  function card(it,sub){
+    return '<article class="d-vcard"><div class="d-vthumb" data-v="'+esc(it.v)+'"><img src="https://i.ytimg.com/vi/'+esc(it.v)+'/mqdefault.jpg" loading="lazy" alt=""><span class="pl">▶</span></div>'
+      + '<div class="d-vmeta"><h4>'+esc(it.school)+'</h4><div class="sub">'+sub+'</div></div></article>';
+  }
   fetch('/assets/data/dom_visits.json').then(function(r){return r.json();}).then(function(d){
-    var items=d.items||[];
+    var items=d.items||[], ivs=d.interviews||[];
+    document.getElementById('dn-news').textContent=items.length;
+    document.getElementById('dn-interviews').textContent=ivs.length;
     document.getElementById('dvcount').innerHTML='<b>'+items.length+'</b> school visits filmed by students · 由學生記者拍攝的 '+items.length+' 場校園巡迴新聞';
+    document.getElementById('dicount').innerHTML='After each assembly Dom sat down with the principal and asked the same two questions: why did you choose to lead a school, and what do English and international education mean for your children? · 每一場晨會之後，Dom 與該校校長對談，共 <b>'+ivs.length+'</b> 位校長。';
     grid.innerHTML=items.map(function(it){
-      return '<article class="d-vcard"><div class="d-vthumb" data-v="'+esc(it.v)+'"><img src="https://i.ytimg.com/vi/'+esc(it.v)+'/mqdefault.jpg" loading="lazy" alt=""><span class="pl">▶</span></div>'
-        + '<div class="d-vmeta"><h4>'+esc(it.school)+'</h4><div class="sub">校園新聞 · School news'+(it.date?' · '+esc(it.date):'')+'</div></div></article>';
+      return card(it,'校園新聞 · School news'+(it.date?' · '+esc(it.date):''));
+    }).join('');
+    igrid.innerHTML=ivs.map(function(it){
+      return card(it,'教育之聲 · Ep'+esc(String(it.ep))+(it.date?' · '+esc(it.date):''));
     }).join('');
   }).catch(function(){document.getElementById('dvcount').textContent='Could not load the visit videos. 無法載入巡迴影片。';});
 })();

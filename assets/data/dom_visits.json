@@ -1,1 +1,278 @@
-{"meta": {"source": "My Culture Connect", "title": "Dom's School Visits"}, "items": [{"v": "-wW0IOjTUT4", "school": "後寮國小", "date": "2026.06.02", "raw": "彰化縣後寮國小: Dom Jones 訪問校園新聞 (2026.06.02)"}, {"v": "5Oghv3gQETU", "school": "育華國小", "date": "2026.06.02", "raw": "彰化縣育華國小: Dom Jones 訪問校園新聞 (2026.06.02)"}, {"v": "WTxOjT5OXiE", "school": "民生國小", "date": "2026.05.25", "raw": "彰化縣民生國小: Dom Jones訪問校園新聞 (2026.05.25)"}, {"v": "rCQuOmELjbM", "school": "育德國小", "date": "2026.05.25", "raw": "彰化縣育德國小: Dom Jones 訪問校園新聞 (2026.05.25)"}, {"v": "mlDqgsMuV0c", "school": "湖北國小", "date": "2026.05.19", "raw": "彰化縣湖北國小: Dom Jones訪問校園新聞 (2026.05.19)"}, {"v": "lPfb-TbozhU", "school": "萬興國小", "date": "2026.05.19", "raw": "彰化縣萬興國小: Dom Jones訪問校園新聞 (2026.05.19)"}, {"v": "7VJodV2HwnE", "school": "文昌國小", "date": "2026.05.12", "raw": "彰化縣文昌國小: Dom Jones訪問校園新聞 (2026.05.12)"}, {"v": "x--JEdN8xPY", "school": "中和國小", "date": "2026.05.12", "raw": "彰化縣中和國小: Dom Jones訪問校園新聞 (2026.05.12)"}, {"v": "2flGVrz2fDE", "school": "快官國小", "date": "2026.05.05", "raw": "彰化縣快官國小: Dom Jones訪問校園新聞 (2026.05.05)"}, {"v": "FY2SjU8L04w", "school": "溪州國小", "date": "2026.05.05", "raw": "彰化縣溪州國小: Dom Jones訪問校園新聞 (2026.05.05)"}, {"v": "1CaTsQJHkpk", "school": "僑信國小", "date": "2026.04.28", "raw": "彰化縣僑信國小: Dom Jones訪問校園新聞 (2026.04.28)"}, {"v": "ul5CBsV0QkA", "school": "新民國小", "date": "2026.04.21", "raw": "彰化縣新民國小: Dom Jones訪問校園新聞 (2026.04.21)"}, {"v": "dH0MQxB4x8o", "school": "仁豐國小", "date": "2026.04.21", "raw": "彰化縣仁豐國小: Dom Jones訪問校園新聞 (2026.04.21)"}, {"v": "ugPeclZYyQM", "school": "明禮國小", "date": "2026.04.14", "raw": "彰化縣明禮國小: Dom Jones訪問校園新聞 (2026.04.14)"}, {"v": "UHlL9GpBeco", "school": "陸豐國小", "date": "2026.04.14", "raw": "彰化縣陸豐國小: Dom Jones訪問校園新聞 (2026.04.14)"}, {"v": "kYcVaoMnYBo", "school": "育新國小", "date": "2026.04.07", "raw": "彰化縣育新國小: Dom Jones訪問校園新聞 (2026.04.07)"}, {"v": "hMMbheEwZkI", "school": "福興國中", "date": "2026.04.07", "raw": "彰化縣福興國中: Dom Jones訪問校園新聞 (2026.04.07)"}, {"v": "3a2LlsTmLIU", "school": "德興國小", "date": "2026.03.31", "raw": "彰化縣德興國小: Dom Jones訪問校園新聞 (2026.03.31)"}, {"v": "0CPDATRfMJ8", "school": "福興國小", "date": "2026.03.31", "raw": "彰化縣福興國小: Dom Jones訪問校園新聞 (2026.03.31)"}, {"v": "CRdHUTZHl_8", "school": "大城國中", "date": "", "raw": "彰化縣大城國中:Dom Jones 訪問校園新聞 (March 24, 2026)"}, {"v": "19rekCsqAjk", "school": "大城國小", "date": "", "raw": "彰化縣大城國小：Dom Jones 訪問校園新聞 (March 24, 2026)"}, {"v": "h9XbU-mVjsY", "school": "大同國小校園新聞 Small Hands, Big Impact", "date": "", "raw": "彰化縣大同國小校園新聞 Small Hands, Big Impact: Protecting Our Planet Together小小雙手，大大影響：與 Dom Jones 老師一起守護地球"}, {"v": "exNWJilPGMo", "school": "大新國小國際交流-Dom Jones", "date": "", "raw": "彰化縣大新國小國際交流-Dom Jones"}, {"v": "xQ-aT5w1e9A", "school": "北斗國小國際交流-Dom Jones", "date": "", "raw": "彰化縣北斗國小國際交流-Dom Jones"}, {"v": "gcDCu03Io2k", "school": "陽明國中邀請Dom Jones蒞校交流", "date": "", "raw": "彰化縣陽明國中邀請Dom Jones蒞校交流"}]}
+{
+  "meta": {
+    "source": "My Culture Connect",
+    "title": "Dom's School Visits"
+  },
+  "items": [
+    {
+      "v": "-wW0IOjTUT4",
+      "school": "後寮國小",
+      "date": "2026.06.02",
+      "raw": "彰化縣後寮國小: Dom Jones 訪問校園新聞 (2026.06.02)"
+    },
+    {
+      "v": "5Oghv3gQETU",
+      "school": "育華國小",
+      "date": "2026.06.02",
+      "raw": "彰化縣育華國小: Dom Jones 訪問校園新聞 (2026.06.02)"
+    },
+    {
+      "v": "WTxOjT5OXiE",
+      "school": "民生國小",
+      "date": "2026.05.25",
+      "raw": "彰化縣民生國小: Dom Jones訪問校園新聞 (2026.05.25)"
+    },
+    {
+      "v": "rCQuOmELjbM",
+      "school": "育德國小",
+      "date": "2026.05.25",
+      "raw": "彰化縣育德國小: Dom Jones 訪問校園新聞 (2026.05.25)"
+    },
+    {
+      "v": "mlDqgsMuV0c",
+      "school": "湖北國小",
+      "date": "2026.05.19",
+      "raw": "彰化縣湖北國小: Dom Jones訪問校園新聞 (2026.05.19)"
+    },
+    {
+      "v": "lPfb-TbozhU",
+      "school": "萬興國小",
+      "date": "2026.05.19",
+      "raw": "彰化縣萬興國小: Dom Jones訪問校園新聞 (2026.05.19)"
+    },
+    {
+      "v": "7VJodV2HwnE",
+      "school": "文昌國小",
+      "date": "2026.05.12",
+      "raw": "彰化縣文昌國小: Dom Jones訪問校園新聞 (2026.05.12)"
+    },
+    {
+      "v": "x--JEdN8xPY",
+      "school": "中和國小",
+      "date": "2026.05.12",
+      "raw": "彰化縣中和國小: Dom Jones訪問校園新聞 (2026.05.12)"
+    },
+    {
+      "v": "2flGVrz2fDE",
+      "school": "快官國小",
+      "date": "2026.05.05",
+      "raw": "彰化縣快官國小: Dom Jones訪問校園新聞 (2026.05.05)"
+    },
+    {
+      "v": "FY2SjU8L04w",
+      "school": "溪州國小",
+      "date": "2026.05.05",
+      "raw": "彰化縣溪州國小: Dom Jones訪問校園新聞 (2026.05.05)"
+    },
+    {
+      "v": "1CaTsQJHkpk",
+      "school": "僑信國小",
+      "date": "2026.04.28",
+      "raw": "彰化縣僑信國小: Dom Jones訪問校園新聞 (2026.04.28)"
+    },
+    {
+      "v": "ul5CBsV0QkA",
+      "school": "新民國小",
+      "date": "2026.04.21",
+      "raw": "彰化縣新民國小: Dom Jones訪問校園新聞 (2026.04.21)"
+    },
+    {
+      "v": "dH0MQxB4x8o",
+      "school": "仁豐國小",
+      "date": "2026.04.21",
+      "raw": "彰化縣仁豐國小: Dom Jones訪問校園新聞 (2026.04.21)"
+    },
+    {
+      "v": "ugPeclZYyQM",
+      "school": "明禮國小",
+      "date": "2026.04.14",
+      "raw": "彰化縣明禮國小: Dom Jones訪問校園新聞 (2026.04.14)"
+    },
+    {
+      "v": "UHlL9GpBeco",
+      "school": "陸豐國小",
+      "date": "2026.04.14",
+      "raw": "彰化縣陸豐國小: Dom Jones訪問校園新聞 (2026.04.14)"
+    },
+    {
+      "v": "kYcVaoMnYBo",
+      "school": "育新國小",
+      "date": "2026.04.07",
+      "raw": "彰化縣育新國小: Dom Jones訪問校園新聞 (2026.04.07)"
+    },
+    {
+      "v": "hMMbheEwZkI",
+      "school": "福興國中",
+      "date": "2026.04.07",
+      "raw": "彰化縣福興國中: Dom Jones訪問校園新聞 (2026.04.07)"
+    },
+    {
+      "v": "3a2LlsTmLIU",
+      "school": "德興國小",
+      "date": "2026.03.31",
+      "raw": "彰化縣德興國小: Dom Jones訪問校園新聞 (2026.03.31)"
+    },
+    {
+      "v": "0CPDATRfMJ8",
+      "school": "福興國小",
+      "date": "2026.03.31",
+      "raw": "彰化縣福興國小: Dom Jones訪問校園新聞 (2026.03.31)"
+    },
+    {
+      "v": "CRdHUTZHl_8",
+      "school": "大城國中",
+      "date": "",
+      "raw": "彰化縣大城國中:Dom Jones 訪問校園新聞 (March 24, 2026)"
+    },
+    {
+      "v": "19rekCsqAjk",
+      "school": "大城國小",
+      "date": "",
+      "raw": "彰化縣大城國小：Dom Jones 訪問校園新聞 (March 24, 2026)"
+    },
+    {
+      "v": "h9XbU-mVjsY",
+      "school": "大同國小校園新聞 Small Hands, Big Impact",
+      "date": "",
+      "raw": "彰化縣大同國小校園新聞 Small Hands, Big Impact: Protecting Our Planet Together小小雙手，大大影響：與 Dom Jones 老師一起守護地球"
+    },
+    {
+      "v": "exNWJilPGMo",
+      "school": "大新國小國際交流-Dom Jones",
+      "date": "",
+      "raw": "彰化縣大新國小國際交流-Dom Jones"
+    },
+    {
+      "v": "xQ-aT5w1e9A",
+      "school": "北斗國小國際交流-Dom Jones",
+      "date": "",
+      "raw": "彰化縣北斗國小國際交流-Dom Jones"
+    },
+    {
+      "v": "gcDCu03Io2k",
+      "school": "陽明國中邀請Dom Jones蒞校交流",
+      "date": "",
+      "raw": "彰化縣陽明國中邀請Dom Jones蒞校交流"
+    }
+  ],
+  "interviews_meta": {
+    "title": "Voices in Education",
+    "playlist": "PLXjTAIiEub1Q"
+  },
+  "interviews": [
+    {
+      "v": "xp_DbyGqnAc",
+      "school": "育華國小",
+      "date": "2026.06.02",
+      "ep": 19
+    },
+    {
+      "v": "01Wonw-UBRU",
+      "school": "後寮國小",
+      "date": "2026.06.02",
+      "ep": 18
+    },
+    {
+      "v": "zKw0WL7DGu8",
+      "school": "育德國小",
+      "date": "2026.05.25",
+      "ep": 17
+    },
+    {
+      "v": "yuf8GLlfGLs",
+      "school": "民生國小",
+      "date": "2026.05.25",
+      "ep": 16
+    },
+    {
+      "v": "EX9ECX_rOq4",
+      "school": "湖北國小",
+      "date": "2026.05.19",
+      "ep": 15
+    },
+    {
+      "v": "_AYlf-4OSl4",
+      "school": "萬興國小",
+      "date": "2026.05.19",
+      "ep": 14
+    },
+    {
+      "v": "Y1oyv7UuE7k",
+      "school": "中和國小",
+      "date": "2026.05.12",
+      "ep": 13
+    },
+    {
+      "v": "W57Ks6--3Tk",
+      "school": "文昌國小",
+      "date": "2026.05.12",
+      "ep": 12
+    },
+    {
+      "v": "NW-Ld9NzOsA",
+      "school": "溪州國小",
+      "date": "2026.05.05",
+      "ep": 11
+    },
+    {
+      "v": "AmXnzSQCirc",
+      "school": "快官國小",
+      "date": "2026.05.05",
+      "ep": 10
+    },
+    {
+      "v": "_wa-MmwTIWM",
+      "school": "僑信國小",
+      "date": "2026.04.28",
+      "ep": 9
+    },
+    {
+      "v": "u9BiSr6LefI",
+      "school": "仁豐國小",
+      "date": "2026.04.21",
+      "ep": 8
+    },
+    {
+      "v": "_SX6aqAFMoY",
+      "school": "新民國小",
+      "date": "2026.04.21",
+      "ep": 7
+    },
+    {
+      "v": "dlZvvwyHbfo",
+      "school": "明禮國小",
+      "date": "2026.04.14",
+      "ep": 6
+    },
+    {
+      "v": "V75GdrMV9OQ",
+      "school": "育新國小",
+      "date": "2026.04.07",
+      "ep": 5
+    },
+    {
+      "v": "7om_ARwwK7c",
+      "school": "福興國中",
+      "date": "2026.04.07",
+      "ep": 4
+    },
+    {
+      "v": "VSKKtyrP8JI",
+      "school": "福興國小",
+      "date": "2026.03.31",
+      "ep": 3
+    },
+    {
+      "v": "as28NTe49ic",
+      "school": "德興國小",
+      "date": "2026.03.31",
+      "ep": 2
+    },
+    {
+      "v": "LArd9gafybg",
+      "school": "大城國中",
+      "date": "2026.03.24",
+      "ep": 1
+    }
+  ]
+}
