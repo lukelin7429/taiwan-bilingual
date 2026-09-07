@@ -101,6 +101,26 @@ section:last-of-type{border-bottom:none;}
 .quote__zh{font-size:17px;color:var(--ink-soft);margin-top:10px;line-height:1.6;}
 @media(min-width:720px){.quote__zh{font-size:20px;}}
 
+/* ===== Principal portrait ===== */
+.pportrait{margin:6px auto 2px;max-width:300px;}
+.pportrait img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 15%;border-radius:20px;box-shadow:var(--shadow);display:block;border:1px solid var(--line);}
+.pportrait figcaption{margin-top:14px;font-family:'Playfair Display','PingFang TC',serif;font-size:19px;color:var(--red-deep);font-weight:700;text-align:center;}
+.pportrait figcaption small{display:block;font-family:'PingFang TC',sans-serif;font-size:15px;color:var(--ink-soft);font-weight:500;margin-top:3px;}
+
+/* Chinese gloss under an .office__list item (English + zh-sub pair) */
+.zh-sub{display:block;color:var(--ink-soft);font-size:14px;margin-top:3px;font-weight:500;}
+
+/* ===== Poem card (principal's own inaugural verse) ===== */
+.poem{background:linear-gradient(135deg,var(--red-deep) 0%,var(--red) 60%,#d8472f 100%);border-radius:20px;padding:30px 32px;margin-top:24px;box-shadow:var(--shadow);color:#fff;}
+.poem__label{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.78);margin-bottom:16px;}
+.poem__lines{display:flex;flex-direction:column;gap:11px;}
+.poem__line{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:baseline;}
+.poem__zh{font-family:'PingFang TC',sans-serif;font-size:19px;font-weight:700;color:#fff;white-space:nowrap;}
+.poem__zh b{color:var(--gold-soft);}
+.poem__en{font-family:'Playfair Display',serif;font-style:italic;font-size:14px;color:rgba(255,255,255,.86);line-height:1.5;}
+.poem__sign{margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.24);font-family:'PingFang TC',sans-serif;font-size:14px;font-weight:700;color:var(--gold-soft);}
+@media(max-width:640px){.poem__line{grid-template-columns:1fr;gap:2px;}.poem{padding:26px 22px;}}
+
 /* ===== SIGNATURE COLOURFUL CARDS (Ru-Yi house style, self-contained) =====
    Card classes used on this site: .lcard .pillar .nstory .ocard .feature
    .topic .office .factcard — each carries a cycling --accent hue.        */
@@ -133,7 +153,9 @@ section:last-of-type{border-bottom:none;}
 @media(min-width:680px){.cards{grid-template-columns:repeat(2,1fr);}}
 @media(min-width:980px){.cards.three{grid-template-columns:repeat(3,1fr);}}
 .lcard{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-top:8px solid var(--accent,var(--gold));border-radius:20px;overflow:hidden;box-shadow:var(--shadow-sm);color:inherit;}
-.lcard .cover{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;font-size:58px;color:#fff;background:linear-gradient(135deg,var(--accent,var(--red)),rgba(0,0,0,.16));}
+.lcard .cover{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;font-size:58px;color:#fff;background:linear-gradient(135deg,var(--accent,var(--red)),rgba(0,0,0,.16));overflow:hidden;}
+.lcard .cover img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s;}
+.lcard:hover .cover img{transform:scale(1.06);}
 .lcard .body{padding:22px 24px 26px;}
 .lcard h3{font-family:'Playfair Display',serif;font-size:26px;color:var(--red-deep);font-weight:700;line-height:1.15;}
 .lcard .zh{font-family:'PingFang TC',sans-serif;font-size:18px;color:var(--ink);font-weight:600;margin-top:5px;}
@@ -202,6 +224,8 @@ section:last-of-type{border-bottom:none;}
 @media(min-width:720px){.player{padding:18px;}}
 .player__ratio{position:relative;width:100%;padding-top:56.25%;border-radius:10px;overflow:hidden;background:#000;}
 .player__ratio iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.player__caption{margin-top:14px;text-align:center;font-style:italic;font-size:17px;color:var(--ink-soft);line-height:1.5;padding:0 8px;}
+.player__caption b{color:var(--red-deep);font-style:normal;}
 .player-link{margin-top:14px;display:flex;align-items:center;gap:14px;padding:16px 22px;background:#fff;border:1.5px solid var(--line);border-radius:14px;color:var(--red-deep);transition:transform .2s,box-shadow .2s,border-color .2s;}
 .player-link:hover{transform:translateY(-2px);box-shadow:var(--shadow-sm);border-color:var(--gold);color:var(--red-deep);}
 .player-link__icon{flex-shrink:0;width:42px;height:30px;border-radius:6px;background:#FF0000;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;}
@@ -242,10 +266,17 @@ section:last-of-type{border-bottom:none;}
 .cta-btn:hover{background:#fff;color:var(--red-deep);transform:translateY(-4px);box-shadow:var(--shadow);}
 .cta-btn--fb{background:#1877f2;}
 .cta-btn--fb:hover{background:#fff;color:#0c63d4;}
+.ft-ctas .cta-btn--archive{background:rgba(255,255,255,.07);border:1.5px dashed rgba(255,255,255,.38);color:#fff;box-shadow:none;}
+.ft-ctas .cta-btn--archive:hover{background:rgba(255,255,255,.16);color:#fff;transform:translateY(-4px);box-shadow:none;}
+.cta-btn--archive .cta-btn__ico{background:rgba(255,255,255,.14);color:#fff;}
+.cta-btn--archive:hover .cta-btn__ico{background:rgba(255,255,255,.24);}
+.cta-btn--archive .cta-btn__t{color:#fff;}
+.cta-btn--archive .cta-btn__zh{color:rgba(255,255,255,.72);opacity:1;}
+.cta-btn--archive .cta-btn__arrow{color:rgba(255,255,255,.85);}
 .cta-btn__ico{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:800;}
 .cta-btn__tx{flex:1;min-width:0;}
-.cta-btn__t{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;line-height:1.2;}
-.cta-btn__zh{font-size:13px;margin-top:3px;font-weight:600;opacity:.94;}
+.cta-btn__t{display:block;font-family:'Playfair Display',serif;font-size:17px;font-weight:700;line-height:1.2;}
+.cta-btn__zh{display:block;font-size:13px;margin-top:3px;font-weight:600;opacity:.94;}
 .cta-btn__arrow{font-size:20px;font-weight:700;flex-shrink:0;transition:transform .18s;}
 .cta-btn:hover .cta-btn__arrow{transform:translate(3px,-3px);}
 
