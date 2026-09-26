@@ -58,7 +58,7 @@ html.lang-zh .only-en{display:none !important;}
 }
 .ebar-inner{
   display:flex;align-items:center;gap:16px;
-  padding:12px 0;
+  padding:12px 22px;
 }
 .ebar-brand{
   display:flex;flex-direction:column;line-height:1.15;
@@ -608,3 +608,271 @@ a.epac{color:var(--green);font-weight:700;border-bottom:1px solid rgba(30,132,73
 
 /* unify card hover with main hub — ruyimeditation float (lift + layered shadow) */
 .enav-card:hover,.eaud-card:hover{transform:translateY(-8px)!important;box-shadow:0 26px 52px -18px var(--ac,var(--navy,#0a3d62)),0 8px 18px rgba(20,24,31,.10)!important;}
+
+/* ============================================================
+   2026-09 update (Edward's revision brief)
+   motion · lightbox · UNFCCC letter · collage · NYS · Top 5 ·
+   logos · gov letters · summer camp · news timeline · contact
+   ============================================================ */
+
+/* ---------- scroll reveal (only when JS is running) ---------- */
+html.ejs [data-rv]{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1);}
+html.ejs [data-rv].rv-in{opacity:1;transform:none;}
+html.ejs [data-rv="zoom"]{transform:scale(.94);}
+html.ejs [data-rv="left"]{transform:translateX(-36px);}
+html.ejs [data-rv="right"]{transform:translateX(36px);}
+html.ejs [data-rv].rv-in{transform:none;}
+
+/* ---------- buttons ---------- */
+.ebtns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;}
+.ebtn{display:inline-flex;align-items:center;gap:9px;padding:13px 22px;border-radius:999px;font-size:17px;font-weight:700;line-height:1.2;
+  background:var(--navy);color:#fff;border:2px solid var(--navy);transition:transform .18s,box-shadow .18s,background .18s,color .18s;}
+.ebtn:hover{color:#fff;background:var(--navy-deep);transform:translateY(-2px);box-shadow:var(--shadow-sm);}
+.ebtn.ghost{background:#fff;color:var(--navy);}
+.ebtn.ghost:hover{background:var(--navy-soft);color:var(--navy-deep);}
+.ebtn.green{background:var(--green);border-color:var(--green);}
+.ebtn.green:hover{background:var(--green-deep);border-color:var(--green-deep);}
+.ebtn.gold{background:var(--gold);border-color:var(--gold);color:var(--navy-deep);}
+.ebtn.gold:hover{background:#e6b422;color:var(--navy-deep);}
+.ebtn .arr{transition:transform .18s;}
+.ebtn:hover .arr{transform:translateX(4px);}
+
+/* ---------- lightbox ---------- */
+.elb{position:fixed;inset:0;z-index:200;background:rgba(3,14,24,.94);display:flex;align-items:center;justify-content:center;
+  padding:60px 70px;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s;}
+.elb.on{opacity:1;visibility:visible;}
+html.elb-lock{overflow:hidden;}
+.elb-fig{margin:0;max-width:100%;max-height:100%;display:flex;flex-direction:column;align-items:center;gap:14px;}
+.elb-fig img{max-width:100%;max-height:calc(100vh - 170px);object-fit:contain;border-radius:8px;box-shadow:0 30px 80px rgba(0,0,0,.5);
+  transform:scale(.96);transition:transform .3s;background:#fff;}
+.elb.on .elb-fig img{transform:none;}
+.elb-fig figcaption{color:#e6eef4;font-size:17px;line-height:1.5;text-align:center;max-width:70ch;}
+.elb-x,.elb-nav{position:absolute;border:0;cursor:pointer;background:rgba(255,255,255,.14);color:#fff;border-radius:50%;
+  width:48px;height:48px;font-size:30px;line-height:1;display:flex;align-items:center;justify-content:center;transition:background .2s;}
+.elb-x:hover,.elb-nav:hover{background:rgba(255,255,255,.3);}
+.elb-x{top:16px;right:16px;}
+.elb-nav{top:50%;transform:translateY(-50%);}
+.elb-nav.prev{left:14px;} .elb-nav.next{right:14px;}
+.elb.single .elb-nav{display:none;}
+@media(max-width:760px){.elb{padding:64px 12px 30px;} .elb-nav{top:auto;bottom:14px;transform:none;}}
+
+/* zoomable image hint */
+a[data-lightbox]{cursor:zoom-in;}
+
+/* ---------- overview hero · Youth Network logo ---------- */
+.ehero-org{display:inline-flex;align-items:center;gap:14px;margin-top:26px;padding:12px 20px 12px 14px;background:#fff;border-radius:16px;
+  box-shadow:0 14px 34px -14px rgba(0,0,0,.45);opacity:0;transform:translateY(16px);animation:eUp .8s cubic-bezier(.22,.61,.36,1) .58s forwards;
+  transition:transform .25s,box-shadow .25s;}
+.ehero-org:hover{transform:translateY(-3px);box-shadow:0 20px 40px -14px rgba(0,0,0,.5);}
+.ehero-org img{height:52px;width:auto;}
+.ehero-org span{font-size:15px;line-height:1.35;color:var(--ink-soft);font-weight:600;border-left:1px solid var(--line);padding-left:14px;}
+.ehero-org span b{display:block;color:var(--navy-deep);font-size:16px;}
+@keyframes eUp{to{opacity:1;transform:none;}}
+@media(prefers-reduced-motion:reduce){.ehero-org{opacity:1;transform:none;animation:none;}}
+
+/* ---------- LCOY hero band with logo ---------- */
+.eband-logo{display:inline-block;background:#fff;border-radius:14px;padding:10px 16px;margin-bottom:18px;box-shadow:0 12px 28px -12px rgba(0,0,0,.45);
+  opacity:0;animation:eUp .8s cubic-bezier(.22,.61,.36,1) .02s forwards;transform:translateY(12px);}
+.eband-logo img{height:64px;width:auto;}
+@media(prefers-reduced-motion:reduce){.eband-logo{opacity:1;transform:none;animation:none;}}
+
+/* ---------- UNFCCC endorsement letter ---------- */
+.eletter{display:grid;grid-template-columns:1fr;gap:34px;align-items:center;}
+.eletter-paper{position:relative;display:block;max-width:420px;margin:0 auto;}
+.eletter-paper img{width:100%;border-radius:6px;background:#fff;box-shadow:0 28px 60px -22px rgba(6,41,64,.45),0 2px 8px rgba(6,41,64,.12);
+  transform:rotate(-2.2deg);transition:transform .45s cubic-bezier(.22,.61,.36,1),box-shadow .45s;}
+.eletter-paper::before{content:"";position:absolute;inset:18px -14px -10px 14px;background:var(--gold-soft);border:1px solid #ecd58a;border-radius:6px;transform:rotate(3deg);z-index:-1;transition:transform .45s;}
+.eletter-paper:hover img{transform:rotate(0) scale(1.02);box-shadow:0 36px 70px -24px rgba(6,41,64,.5);}
+.eletter-paper:hover::before{transform:rotate(5deg);}
+.eletter-seal{position:absolute;right:-14px;bottom:28px;background:var(--green);color:#fff;font-size:14px;font-weight:800;letter-spacing:.06em;
+  padding:10px 16px;border-radius:999px;box-shadow:var(--shadow-sm);transform:rotate(-6deg);}
+.eletter-text .eyebrow{color:var(--green);font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px;}
+.eletter-text h2{font-family:var(--serif);font-size:clamp(28px,4vw,38px);line-height:1.18;color:var(--navy-deep);}
+.eletter-text p{font-size:19px;line-height:1.75;color:#33424f;margin-top:14px;}
+.eletter-text blockquote{margin:18px 0 0;padding:16px 20px;border-left:4px solid var(--gold);background:var(--gold-soft);border-radius:0 12px 12px 0;
+  font-family:var(--serif);font-style:italic;font-size:19px;line-height:1.6;color:var(--navy-deep);}
+.eletter-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.eletter-meta span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:15px;font-weight:700;color:var(--ink);}
+
+/* ---------- 2026 photo collage (masonry) ---------- */
+.emason{columns:2 220px;column-gap:14px;}
+.emason a{display:block;break-inside:avoid;margin:0 0 14px;position:relative;border-radius:14px;overflow:hidden;background:#0b2233;box-shadow:var(--shadow-sm);}
+.emason img{width:100%;display:block;transition:transform .6s cubic-bezier(.22,.61,.36,1),opacity .3s;}
+.emason a:hover img{transform:scale(1.06);opacity:.9;}
+.emason .lab{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 11px;color:#fff;font-size:15.5px;font-weight:600;line-height:1.4;
+  background:linear-gradient(transparent,rgba(4,20,34,.86));transform:translateY(6px);opacity:.92;transition:transform .3s,opacity .3s;}
+.emason .lab small{display:block;color:#ffd966;font-size:12.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin-bottom:2px;}
+.emason a:hover .lab{transform:none;opacity:1;}
+@media(min-width:760px){.emason{columns:3 260px;}}
+@media(min-width:1100px){.emason{column-gap:16px;} .emason a{margin-bottom:16px;}}
+
+/* ---------- National Youth Statement ---------- */
+.enys{display:grid;grid-template-columns:1fr;gap:34px;align-items:center;}
+.enys-cover{perspective:1200px;max-width:360px;margin:0 auto;}
+.enys-cover a{display:block;border-radius:10px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(6,41,64,.55);
+  transform:rotateY(-14deg) rotateX(4deg);transform-origin:left center;transition:transform .6s cubic-bezier(.22,.61,.36,1);}
+.enys-cover a:hover{transform:rotateY(0) rotateX(0) translateY(-4px);}
+.enys-cover img{width:100%;display:block;}
+.enys-flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:18px 0 4px;}
+.enys-flow span{background:var(--navy-soft);color:var(--navy-deep);border-radius:10px;padding:8px 13px;font-size:15.5px;font-weight:700;}
+.enys-flow i{font-style:normal;color:var(--gold);font-weight:800;}
+.enys-res{display:grid;grid-template-columns:1fr;gap:12px;margin-top:22px;}
+.enys-res a{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 18px;
+  transition:border-color .2s,transform .2s,box-shadow .2s;color:var(--ink);}
+.enys-res a:hover{border-color:var(--green);transform:translateY(-2px);box-shadow:var(--shadow-sm);color:var(--ink);}
+.enys-res .ic{font-size:26px;flex:0 0 auto;}
+.enys-res b{display:block;font-size:17.5px;color:var(--navy-deep);}
+.enys-res small{display:block;font-size:15px;color:var(--ink-soft);}
+.enys-res .go{margin-left:auto;color:var(--green);font-weight:800;font-size:20px;}
+@media(min-width:760px){.enys-res{grid-template-columns:1fr 1fr;}}
+
+/* ---------- Top 5 youth priorities ---------- */
+.eprio{display:grid;grid-template-columns:1fr;gap:16px;counter-reset:prio;}
+.eprio-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 26px 26px 94px;overflow:hidden;
+  transition:transform .25s,box-shadow .25s,border-color .25s;}
+.eprio-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--pc);}
+.eprio-card:hover{transform:translateY(-4px);box-shadow:0 22px 44px -20px var(--pc);border-color:var(--pc);}
+.eprio-num{position:absolute;left:22px;top:22px;width:54px;height:54px;border-radius:16px;background:var(--pc-soft);color:var(--pc);
+  display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:28px;font-weight:800;transition:transform .35s;}
+.eprio-card:hover .eprio-num{transform:rotate(-8deg) scale(1.08);}
+.eprio-card h3{font-size:21px;line-height:1.3;color:var(--navy-deep);margin-bottom:8px;}
+.eprio-card h3 .ic{margin-right:6px;}
+.eprio-card p{font-size:18px;line-height:1.72;color:#33424f;}
+.pr1{--pc:#0a6e8a;--pc-soft:#e2f1f6;} .pr2{--pc:#1e8449;--pc-soft:#e7f4ec;} .pr3{--pc:#2f7d32;--pc-soft:#e8f5e9;}
+.pr4{--pc:#7a3d8a;--pc-soft:#f3e8f6;} .pr5{--pc:#c0562a;--pc-soft:#fbece4;}
+@media(min-width:760px){.eprio{grid-template-columns:1fr 1fr;} .eprio-card.wide{grid-column:1/-1;} .eprio-card p{font-size:19px;}}
+@media(max-width:520px){.eprio-card{padding:86px 22px 24px;} .eprio-num{left:22px;top:20px;}}
+
+/* ---------- LCOY → COY → COP with logos ---------- */
+.epath{display:grid;grid-template-columns:1fr;gap:16px;align-items:stretch;}
+.epath-step{position:relative;background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px 22px 22px;text-align:center;
+  transition:transform .25s,box-shadow .25s;}
+.epath-step:hover{transform:translateY(-5px);box-shadow:var(--shadow);}
+.epath-step .num{font-family:var(--serif);font-size:34px;font-weight:800;color:var(--navy-deep);line-height:1;}
+.epath-step .lbl{font-size:17px;color:var(--ink-soft);line-height:1.5;margin-top:6px;}
+.epath-logo{height:130px;display:flex;align-items:center;justify-content:center;margin-top:18px;padding-top:16px;border-top:1px dashed var(--line);}
+.epath-logo img{max-height:118px;max-width:88%;width:auto;transition:transform .4s;}
+.epath-step:hover .epath-logo img{transform:scale(1.06);}
+.epath-arrow{display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--gold);font-weight:800;}
+@media(min-width:760px){.epath{grid-template-columns:1fr auto 1fr auto 1fr;} .epath-arrow{animation:eNudge 2.2s ease-in-out infinite;}}
+@media(max-width:759px){.epath-arrow{transform:rotate(90deg);height:24px;}}
+@keyframes eNudge{0%,100%{transform:translateX(0);}50%{transform:translateX(6px);}}
+@media(prefers-reduced-motion:reduce){.epath-arrow{animation:none;}}
+
+/* ---------- government reply letters ---------- */
+.egov{display:grid;grid-template-columns:1fr;gap:18px;margin-top:26px;}
+.egov-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);
+  transition:transform .25s,box-shadow .25s;color:var(--ink);}
+.egov-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);color:var(--ink);}
+.egov-img{height:190px;overflow:hidden;background:#f6f8fa;border-bottom:1px solid var(--line);}
+.egov-img img{width:100%;height:100%;object-fit:cover;object-position:top left;transition:transform .6s;}
+.egov-card:hover .egov-img img{transform:scale(1.04);}
+.egov-body{padding:18px 20px 20px;}
+.egov-body .org{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--green);}
+.egov-body h4{font-size:19px;color:var(--navy-deep);line-height:1.35;margin:4px 0 6px;}
+.egov-body p{font-size:17px;color:var(--ink-soft);line-height:1.6;}
+.egov-body .dt{margin-top:10px;font-size:15px;font-weight:700;color:var(--navy);}
+@media(min-width:760px){.egov{grid-template-columns:repeat(3,1fr);}}
+
+/* ---------- immersive summer camp (program page) ---------- */
+.ecamp{position:relative;border-radius:22px;overflow:hidden;background:linear-gradient(135deg,#0b4d3a 0%,#1e8449 55%,#2c9a5d 100%);color:#fff;
+  display:grid;grid-template-columns:minmax(0,1fr);box-shadow:var(--shadow);}
+.ecamp::after{content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(255,217,102,.35),transparent 70%);
+  animation:eFloat 9s ease-in-out infinite;pointer-events:none;}
+@keyframes eFloat{0%,100%{transform:translate(0,0);}50%{transform:translate(-30px,24px);}}
+@media(prefers-reduced-motion:reduce){.ecamp::after{animation:none;}}
+.ecamp-text{position:relative;z-index:1;padding:34px 32px;}
+.ecamp-text .tag{display:inline-block;background:#ffd966;color:var(--navy-deep);font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;border-radius:6px;}
+.ecamp-text h2{font-family:var(--serif);font-size:clamp(28px,4vw,40px);line-height:1.15;margin:14px 0 12px;}
+.ecamp-text p{font-size:19px;line-height:1.75;color:#e3f4ea;}
+.ecamp-text p strong{color:#fff;}
+.ecamp-facts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:20px;}
+.ecamp-fact{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:14px 16px;transition:background .2s,transform .2s;}
+.ecamp-fact:hover{background:rgba(255,255,255,.2);transform:translateY(-2px);}
+.ecamp-fact b{display:block;font-family:var(--serif);font-size:26px;color:#ffd966;line-height:1.1;}
+.ecamp-fact span{font-size:15.5px;color:#e3f4ea;line-height:1.4;}
+.ecamp-mail{display:inline-flex;align-items:center;gap:10px;margin-top:22px;background:#fff;color:var(--green-deep);font-weight:800;font-size:17px;
+  padding:13px 22px;border-radius:999px;transition:transform .2s,box-shadow .2s;max-width:100%;overflow-wrap:anywhere;}
+.ecamp-mail:hover{transform:translateY(-2px);box-shadow:0 12px 26px -10px rgba(0,0,0,.45);color:var(--green-deep);}
+.ecamp-photos{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 14px 14px;}
+.ecamp-photos a{display:block;border-radius:12px;overflow:hidden;position:relative;}
+.ecamp-photos a:first-child{grid-column:1/-1;}
+.ecamp-photos img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/2;transition:transform .6s;}
+.ecamp-photos a:first-child img{aspect-ratio:16/8;}
+.ecamp-photos a:hover img{transform:scale(1.06);}
+.ecamp-photos .lab{position:absolute;left:8px;bottom:8px;background:rgba(4,20,34,.72);color:#fff;font-size:13.5px;font-weight:700;padding:4px 10px;border-radius:6px;}
+.ecamp-unesco{display:flex;gap:14px;align-items:flex-start;margin-top:18px;background:rgba(255,217,102,.14);border:1px solid rgba(255,217,102,.4);border-radius:14px;padding:14px 16px;}
+.ecamp-unesco .ic{font-size:28px;line-height:1;}
+.ecamp-unesco p{font-size:17.5px;color:#fff6d6;line-height:1.6;margin:0;}
+@media(max-width:520px){.ecamp-text{padding:28px 20px;} .ecamp-mail{font-size:15.5px;padding:12px 16px;}}
+@media(min-width:900px){.ecamp{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);} .ecamp-photos{padding:14px 14px 14px 0;align-content:center;} .ecamp-text{padding:44px 42px;}}
+
+/* ---------- news timeline ---------- */
+.eyears{position:sticky;top:112px;z-index:5;display:flex;gap:8px;flex-wrap:wrap;padding:12px 0;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);margin-bottom:10px;}
+.eyears a{padding:8px 16px;border-radius:999px;border:1px solid var(--line);font-size:16px;font-weight:800;color:var(--navy);background:#fff;transition:background .2s,color .2s,border-color .2s;}
+.eyears a:hover,.eyears a.on{background:var(--navy);border-color:var(--navy);color:#fff;}
+.etl{position:relative;padding-left:0;}
+.etl-year{position:relative;margin:34px 0 18px;display:flex;align-items:center;gap:14px;scroll-margin-top:170px;}
+.etl-year b{font-family:var(--serif);font-size:40px;font-weight:800;color:var(--navy-deep);line-height:1;}
+.etl-year::after{content:"";flex:1;height:2px;background:linear-gradient(90deg,var(--gold),transparent);}
+.etl-year .cnt{font-size:15px;font-weight:700;color:var(--ink-soft);}
+.enews{display:grid;grid-template-columns:1fr;gap:18px;}
+.enews-card{display:grid;grid-template-columns:1fr;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow-sm);
+  transition:transform .25s,box-shadow .25s,border-color .25s;}
+.enews-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#cdd9e3;}
+.enews-img{position:relative;overflow:hidden;background:#0b2233;min-height:200px;}
+.enews-img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .7s cubic-bezier(.22,.61,.36,1);}
+.enews-card:hover .enews-img img{transform:scale(1.06);}
+.enews-img .src{position:absolute;left:12px;top:12px;background:#fff;color:var(--navy-deep);font-size:13.5px;font-weight:800;padding:5px 11px;border-radius:7px;box-shadow:0 4px 12px rgba(0,0,0,.2);}
+.enews-img .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;}
+.enews-img .play span{width:66px;height:66px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;font-size:26px;color:#c4302b;
+  box-shadow:0 10px 30px rgba(0,0,0,.35);transition:transform .25s;}
+.enews-card:hover .play span{transform:scale(1.1);}
+.enews-body{padding:22px 24px 24px;display:flex;flex-direction:column;}
+.enews-body .dt{font-size:14.5px;font-weight:800;color:var(--green);letter-spacing:.04em;}
+.enews-body h3{font-size:21px;line-height:1.4;color:var(--navy-deep);margin:6px 0 10px;}
+.enews-body p{font-size:18px;line-height:1.7;color:#3b4b59;flex:1;}
+.enews-body .loc{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+.enews-body .loc span{background:var(--navy-soft);color:var(--navy-deep);font-size:14px;font-weight:700;padding:4px 11px;border-radius:999px;}
+.enews-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.enews-links a{display:inline-flex;align-items:center;gap:7px;padding:10px 17px;border-radius:999px;background:var(--navy);color:#fff;font-weight:700;font-size:16px;transition:background .2s,transform .2s;}
+.enews-links a:hover{background:var(--green);color:#fff;transform:translateY(-1px);}
+.enews-links a.alt{background:#fff;color:var(--navy);border:1px solid var(--line);}
+.enews-links a.alt:hover{border-color:var(--green);color:var(--green);}
+.enews-card.feat{border-color:var(--gold);box-shadow:0 18px 44px -22px rgba(212,160,23,.7);}
+.enews-card.feat .dt{color:#8a6a0a;}
+.enews-video{position:relative;aspect-ratio:16/9;background:#000;}
+.enews-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+@media(min-width:860px){
+  .enews-card{grid-template-columns:340px 1fr;}
+  .enews-card.feat{grid-template-columns:1fr 1fr;}
+  .enews-img{min-height:100%;}
+}
+@media(max-width:760px){.eyears{top:111px;} .etl-year b{font-size:32px;}}
+
+/* ---------- messaging chips in contact cards ---------- */
+.emsg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
+.emsg a{display:inline-flex;align-items:center;gap:6px;padding:6px 13px;border-radius:999px;font-size:15px;font-weight:700;border:0 !important;text-decoration:none !important;transition:transform .2s,filter .2s;}
+.emsg a:hover{transform:translateY(-1px);filter:brightness(1.08);}
+.emsg .wa{background:#25d366;color:#06331a !important;}
+.emsg .ln{background:#06c755;color:#fff !important;}
+
+/* news teaser link on overview */
+.emore{margin-top:24px;text-align:center;}
+
+@media(min-width:900px){
+  .eletter{grid-template-columns:.85fr 1.15fr;gap:56px;}
+  .enys{grid-template-columns:.62fr 1.38fr;gap:54px;}
+  .eletter-paper{margin:0;}
+}
+
+/* small phones: keep the language button on screen */
+@media(max-width:480px){
+  .ebar-inner{gap:10px;}
+  .ebar-brand{flex:1 1 auto;min-width:0;}
+  .ebar-brand b{font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .ebar-spacer{display:none;}
+  .ebar-brand small{display:none;}
+  .ebar-back{font-size:13.5px;padding:5px 10px;}
+  .lang-btn{padding:7px 12px;font-size:14px;}
+}
