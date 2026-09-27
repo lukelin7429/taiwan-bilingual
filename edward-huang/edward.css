@@ -38,7 +38,7 @@ body{
   font-size:20px;
   -webkit-font-smoothing:antialiased;
 }
-img{max-width:100%;display:block;}
+img{max-width:100%;height:auto;display:block;}
 a{color:var(--navy);text-decoration:none;transition:color .2s;}
 a:hover{color:var(--green);}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 22px;}
@@ -876,3 +876,24 @@ a[data-lightbox]{cursor:zoom-in;}
   .ebar-back{font-size:13.5px;padding:5px 10px;}
   .lang-btn{padding:7px 12px;font-size:14px;}
 }
+
+/* ---------- case study card (program page → KangLang summer camp) ---------- */
+.ecase{display:grid;grid-template-columns:minmax(0,1fr);margin-top:22px;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;
+  box-shadow:var(--shadow-sm);color:var(--ink);transition:transform .25s,box-shadow .25s,border-color .25s;}
+.ecase:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--green);color:var(--ink);}
+.ecase-img{position:relative;overflow:hidden;min-height:220px;background:#0b2233;}
+.ecase-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.22,.61,.36,1);}
+.ecase:hover .ecase-img img{transform:scale(1.05);}
+.ecase-img .tag{position:absolute;left:14px;top:14px;background:var(--gold);color:var(--navy-deep);font-size:13px;font-weight:800;letter-spacing:.08em;
+  text-transform:uppercase;padding:5px 11px;border-radius:6px;}
+.ecase-body{padding:26px 28px;}
+.ecase-body .eyebrow{color:var(--green);font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;}
+.ecase-body h3{font-family:var(--serif);font-size:26px;line-height:1.25;color:var(--navy-deep);margin:6px 0 10px;}
+.ecase-body p{font-size:18px;line-height:1.7;color:#3b4b59;}
+.ecase-stats{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+.ecase-stats span{background:var(--green-soft);color:var(--green-deep);font-size:15px;font-weight:700;padding:6px 12px;border-radius:999px;}
+.ecase-go{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-weight:800;font-size:17px;color:var(--green);}
+.ecase-go .arr{transition:transform .2s;}
+.ecase:hover .ecase-go .arr{transform:translateX(5px);}
+.ecase-url{display:block;margin-top:6px;font-size:15px;color:var(--ink-soft);overflow-wrap:anywhere;}
+@media(min-width:860px){.ecase{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);} .ecase-body{padding:32px 36px;} .ecase-body p{font-size:19px;}}
