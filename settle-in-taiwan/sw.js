@@ -1,5 +1,5 @@
 // Offline support: the app, lessons, recordings and stroke data are cached on first visit.
-const VERSION = 'sit-v2';
+const VERSION = 'sit-v3';
 const SHELL = [
   './', 'index.html', 'manifest.webmanifest', 'css/app.css', 'js/app.js',
   'content/content.json', 'audio/index.json', 'vendor/hanzi-writer.min.js',

@@ -15,7 +15,7 @@ UNITS = [
     {
         "id": "hello",
         "emoji": "👋",
-        "color": "#1f6f6b",
+        "color": "#2f5d4f",
         "title": "Hello & Introductions",
         "zh": "打招呼",
         "intro": "Greet people, say who you are, and ask people to slow down.",
