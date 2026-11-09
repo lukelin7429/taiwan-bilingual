@@ -149,10 +149,10 @@ function homeView() {
         </a>`;
       }).join('')}
     </div>
-    <p class="section-title">Coming soon</p>
+    ${DATA.coming.length ? `<p class="section-title">Coming soon</p>
     <div class="units">
       ${DATA.coming.map(([e, t]) => `<div class="unit-card soon"><div class="emoji">${e}</div><h3>${esc(t)}</h3></div>`).join('')}
-    </div>
+    </div>` : ''}
     <p class="footer">Tip: add this app to your home screen to use it offline.</p>`;
 }
 

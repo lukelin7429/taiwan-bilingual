@@ -24,7 +24,10 @@ OUT = os.path.join(ROOT, "audio")
 VOICES = {"F": "zh-TW-HsiaoChenNeural", "M": "zh-TW-YunJheNeural"}
 RATES = {"n": "+0%", "s": "-45%"}
 # Who speaks each dialogue role.
-CAST = {"hello": {"A": "M", "B": "F"}, "store": {"A": "F", "B": "M"}, "food": {"A": "M", "B": "F"}}
+CAST = {"hello": {"A": "M", "B": "F"}, "store": {"A": "F", "B": "M"}, "food": {"A": "M", "B": "F"},
+        "numbers": {"A": "M", "B": "F"}, "transit": {"A": "F", "B": "M"}, "campus": {"A": "M", "B": "F"},
+        "health": {"A": "M", "B": "F"}, "home": {"A": "F", "B": "M"}, "customs": {"A": "M", "B": "F"},
+        "places": {"A": "M", "B": "F"}, "classroom": {"A": "M", "B": "F"}}
 
 
 def main():

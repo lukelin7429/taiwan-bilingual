@@ -1,5 +1,5 @@
 // Offline support: the app, lessons, recordings and stroke data are cached on first visit.
-const VERSION = 'sit-v3';
+const VERSION = 'sit-v5';
 const SHELL = [
   './', 'index.html', 'manifest.webmanifest', 'css/app.css', 'js/app.js',
   'content/content.json', 'audio/index.json', 'vendor/hanzi-writer.min.js',
@@ -20,7 +20,13 @@ self.addEventListener('activate', (e) => {
       const files = new Set();
       Object.values(idx).forEach((v) => Object.values(v).forEach((s) => Object.values(s).forEach((f) => files.add(`audio/${f}`))));
       content.units.forEach((u) => u.write.forEach((ch) => files.add(`vendor/hanzi/${encodeURIComponent(ch)}.json`)));
-      return caches.open('sit-media').then((c) => c.addAll([...files]));
+      // Download in small batches, skipping files already cached; one failure doesn't stop the rest.
+      return caches.open('sit-media').then(async (c) => {
+        const list = [...files];
+        for (let i = 0; i < list.length; i += 8) {
+          await Promise.all(list.slice(i, i + 8).map((f) => c.match(f).then((hit) => hit || c.add(f)).catch(() => {})));
+        }
+      });
     })
     .catch(() => {}));
 });

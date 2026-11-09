@@ -206,14 +206,12 @@ UNITS = [
     },
 ]
 
+# The other eight units are in content_more.py.
+from content_more import MORE  # noqa: E402
+
+UNITS += MORE
+ORDER = ["hello", "numbers", "store", "food", "transit", "campus", "health", "home", "customs", "places", "classroom"]
+UNITS.sort(key=lambda u: ORDER.index(u["id"]))
+
 # Units planned for later, shown on the home screen as "coming soon".
-COMING = [
-    ["🔢", "Numbers, Money & Time"],
-    ["🚇", "Getting Around"],
-    ["🎓", "Campus Life"],
-    ["🏥", "Health & Emergencies"],
-    ["🏠", "Home & Errands"],
-    ["🧧", "Customs & Festivals"],
-    ["🗺️", "Places to Visit"],
-    ["🧑‍🏫", "Classroom Chinese"],
-]
+COMING = []
