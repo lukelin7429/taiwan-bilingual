@@ -14,6 +14,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
 import content_src as src  # noqa: E402
+from content_story import STORIES  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HAN = re.compile(r"[㐀-鿿]")
@@ -116,11 +117,18 @@ def main():
             review.append((f"{uid}/dialogue/{i}", t))
             lines.append({"id": f"{uid}-d{i}", "who": who, "zh": zh, "t": t, "en": en})
         unit["dialogue"] = {"title": d["title"], "cast": d["cast"], "lines": lines, "quiz": d["quiz"]}
+        st = STORIES[uid]
+        sents = []
+        for i, (zh, py, en) in enumerate(st["lines"]):
+            t = tokens(zh, py, f"{uid}/story/{i}")
+            review.append((f"{uid}/story/{i}", t))
+            sents.append({"id": f"{uid}-t{i}", "zh": zh, "t": t, "en": en})
+        unit["story"] = {"title": st["title"], "zh": st["zh"], "lines": sents}
         units.append(unit)
     out = {"units": units, "coming": src.COMING}
     with open(os.path.join(ROOT, "content", "content.json"), "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, separators=(",", ":"))
-    n = sum(len(u["phrases"]) + len(u["signs"]) + len(u["dialogue"]["lines"]) for u in units)
+    n = sum(len(u["phrases"]) + len(u["signs"]) + len(u["dialogue"]["lines"]) + len(u["story"]["lines"]) for u in units)
     print(f"{len(units)} units, {n} items with audio")
     if "--check" in sys.argv:
         check(review)

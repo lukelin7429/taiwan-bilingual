@@ -1,10 +1,11 @@
 // Settle In Taiwan: everyday Chinese for newcomers. Hash router + one view per tab.
 const DEDICATION = 'Made for Ngoc, with a warm welcome from My Culture Connect.';
 const TABS = [
-  ['learn', 'Learn'], ['listen', 'Listen'], ['speak', 'Speak'],
+  ['learn', 'Learn'], ['story', 'Story'], ['listen', 'Listen'], ['speak', 'Speak'],
   ['read', 'Read'], ['write', 'Write'], ['culture', 'Culture'],
 ];
-const SKILLS = ['learn', 'listen', 'speak', 'read', 'write'];
+const SKILLS = ['learn', 'story', 'listen', 'speak', 'read', 'write'];
+const GOAL = 10; // practice items a day
 
 const $view = document.getElementById('view');
 const $title = document.getElementById('title');
@@ -24,11 +25,38 @@ const progress = load('sit-progress', {});
 
 function prog(uid) {
   progress[uid] ??= { learn: [], listen: 0, speak: [], read: [], write: [] };
+  progress[uid].story ??= 0;
   return progress[uid];
 }
 function mark(uid, skill, id) {
   const p = prog(uid);
   if (!p[skill].includes(id)) { p[skill].push(id); save('sit-progress', progress); }
+  bump(`${skill}:${id}`);
+}
+function setStory(uid, value) {
+  const p = prog(uid);
+  if (value > p.story) { p.story = value; save('sit-progress', progress); }
+}
+
+// ---------- daily habit ----------
+// Each different thing practiced today counts once toward the goal; a day that reaches the goal extends the streak.
+const days = load('sit-days', {});
+let today = load('sit-today', { date: '', keys: [] });
+const dayKey = (d = new Date()) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+function bump(key) {
+  const k = dayKey();
+  if (today.date !== k) today = { date: k, keys: [] };
+  if (today.keys.includes(key)) return;
+  today.keys.push(key);
+  days[k] = today.keys.length;
+  save('sit-today', today); save('sit-days', days);
+}
+function streak() {
+  let n = 0;
+  const d = new Date();
+  if ((days[dayKey(d)] || 0) < GOAL) d.setDate(d.getDate() - 1);
+  while ((days[dayKey(d)] || 0) >= GOAL) { n++; d.setDate(d.getDate() - 1); }
+  return n;
 }
 function unitPercent(u) {
   const p = progress[u.id];
@@ -36,6 +64,7 @@ function unitPercent(u) {
   const n = u.phrases.length;
   const parts = [
     p.learn.length / n,
+    p.story || 0,
     p.listen,
     p.speak.length / n,
     p.read.length / n,
@@ -137,6 +166,7 @@ function homeView() {
       <p>Everyday Chinese for your first months here. Each unit has phrases to listen to, say, read, and write, with real Taiwanese voices.</p>
       <p class="muted dedication">${esc(DEDICATION)}</p>
     </section>
+    ${todayCard()}
     <div class="units">
       ${DATA.units.map((u) => {
         const pct = unitPercent(u);
@@ -154,6 +184,30 @@ function homeView() {
       ${DATA.coming.map(([e, t]) => `<div class="unit-card soon"><div class="emoji">${e}</div><h3>${esc(t)}</h3></div>`).join('')}
     </div>` : ''}
     <p class="footer">Tip: add this app to your home screen to use it offline.</p>`;
+}
+
+function todayCard() {
+  const n = Math.min(GOAL, days[dayKey()] || 0);
+  const st = streak();
+  const next = DATA.units.find((u) => (progress[u.id]?.story || 0) < 1) || DATA.units[0];
+  const week = [];
+  for (let i = 6; i >= 0; i--) {
+    const d = new Date(); d.setDate(d.getDate() - i);
+    const c = days[dayKey(d)] || 0;
+    week.push(`<span class="day ${c >= GOAL ? 'full' : c ? 'some' : ''} ${i === 0 ? 'is-today' : ''}">
+      <i></i><b>${'日一二三四五六'[d.getDay()]}</b></span>`);
+  }
+  return `<section class="card today">
+    <div class="row">
+      <div class="grow"><p class="today-h">Today <span class="zh">今天</span></p>
+        <p class="muted today-sub">${n >= GOAL ? 'Goal reached! 太棒了！' : `${n} of ${GOAL} practiced`}</p></div>
+      <div class="streak">🔥 ${st}<small>${st === 1 ? 'day' : 'days'} in a row</small></div>
+    </div>
+    <div class="goal-bar"><i style="width:${n * 100 / GOAL}%"></i></div>
+    <div class="week">${week.join('')}</div>
+    <a class="btn primary today-go" style="--unit:${next.color}" href="#/u/${next.id}/story">▶ Today's story: ${next.emoji} ${esc(next.story.title)}</a>
+    <p class="muted today-tip">About 10 minutes a day: listen to one story, repeat each sentence, then say it from memory. Every phrase, sentence, and character you practice counts toward today's goal.</p>
+  </section>`;
 }
 
 // ---------- settings ----------
@@ -184,6 +238,8 @@ function settingsView() {
   $view.querySelector('#reset').onclick = () => {
     if (!confirm('Erase all progress on this phone?')) return;
     Object.keys(progress).forEach((k) => delete progress[k]); save('sit-progress', progress);
+    Object.keys(days).forEach((k) => delete days[k]); save('sit-days', days);
+    today = { date: '', keys: [] }; save('sit-today', today);
     location.hash = '#/';
   };
 }
@@ -196,7 +252,7 @@ function unitView(u, tab) {
   $view.innerHTML = `<nav class="tabs">${TABS.map(([k, l]) =>
     `<a href="#/u/${u.id}/${k}" class="${k === tab ? 'on' : ''}">${l}</a>`).join('')}</nav><div id="pane"></div>`;
   const pane = $view.querySelector('#pane');
-  ({ learn, listen, speak, read, write, culture })[tab]?.(u, pane);
+  ({ learn, story, listen, speak, read, write, culture })[tab]?.(u, pane);
   $view.querySelector('.tabs a.on')?.scrollIntoView({ inline: 'center', block: 'nearest' });
 }
 
@@ -235,6 +291,115 @@ function learn(u, pane) {
     }
     delete btn.dataset.on; btn.textContent = '▶ Play all';
   };
+}
+
+// ---------- story ----------
+// One connected paragraph per unit, for learning whole sentences by heart.
+const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+
+function story(u, pane) {
+  const s = u.story;
+  let mode = 'read', level = 'hint', showEn = false, runId = 0;
+  const revealed = new Set();
+  // Every new action bumps runId, which stops any loop that is still playing.
+  const halt = () => { runId++; stopAudio(); pane.querySelectorAll('[data-on]').forEach((b) => { delete b.dataset.on; b.textContent = b.dataset.label; }); };
+  cleanup = () => { runId++; };
+
+  const sentHTML = (l, i) => {
+    const show = mode === 'read' || revealed.has(l.id);
+    // Keep each character together with its punctuation so a line never starts with a comma.
+    const groups = [];
+    let open = '';
+    l.t.forEach((t) => {
+      if (t.p) { groups.push({ pre: open, t, post: '' }); open = ''; }
+      else if (/[「『（(]/.test(t.c) || !groups.length) open += t.c;
+      else groups[groups.length - 1].post += t.c;
+    });
+    let n = 0;
+    const inner = groups.map((g) => {
+      n++;
+      const body = show || (level === 'hint' && n <= 2) ? rubyHTML([g.t]) : '<span class="blank"></span>';
+      return `<span class="tk">${esc(g.pre)}${body}${esc(g.post)}</span>`;
+    }).join('\u200b') + esc(open);
+    return `<span class="sent" data-i="${i}">${inner}</span>`;
+  };
+  const seg = (id, opts, cur) => `<span class="seg" id="${id}">${opts.map(([v, l]) =>
+    `<button class="${cur === v ? 'on' : ''}" data-v="${v}">${l}</button>`).join('')}</span>`;
+
+  const render = () => {
+    runId++; stopAudio();
+    const done = prog(u.id).story >= 1;
+    pane.innerHTML = `
+      <h2 class="story-title">${esc(s.title)} <span class="zh">${esc(s.zh)}</span></h2>
+      <p class="intro">${mode === 'read'
+        ? 'Listen to the whole story, then repeat it sentence by sentence until you can say it by heart.'
+        : 'Say each sentence from memory, then tap it to check. Use the English as your cue.'}</p>
+      <div class="toolbar">${seg('mode', [['read', '📖 Read'], ['recite', '🧠 Recite']], mode)}
+        ${mode === 'recite' ? seg('level', [['hint', 'First words'], ['none', 'No hints']], level) : ''}</div>
+      <div class="card story-card"><p class="phrase story">${s.lines.map(sentHTML).join('')}</p></div>
+      <div class="toolbar">${speedControl()}</div>
+      <div class="btns">
+        <button class="btn primary" id="playall" data-label="▶ Play the story">▶ Play the story</button>
+        <button class="btn" id="shadow" data-label="🔁 Repeat after me">🔁 Repeat after me</button>
+      </div>
+      <p class="status" id="cue"></p>
+      ${mode === 'recite' || showEn
+        ? `<div class="card story-en">${s.lines.map((l, i) => `<span class="sent-en" data-i="${i}">${esc(l.en)}</span>`).join(' ')}</div>`
+        : '<div class="btns"><button class="btn" id="en">Show English</button></div>'}
+      ${mode === 'recite' ? `<div class="btns">
+        <button class="btn" id="reveal">Show all</button>
+        <button class="btn primary" id="got">✓ I can say it from memory</button></div>` : ''}
+      ${done ? '<p class="done-note">✓ You know this story by heart. 太棒了！</p>' : ''}`;
+    bindSpeed(pane);
+    pane.querySelectorAll('#mode button').forEach((b) => b.onclick = () => { mode = b.dataset.v; revealed.clear(); render(); });
+    pane.querySelectorAll('#level button').forEach((b) => b.onclick = () => { level = b.dataset.v; revealed.clear(); render(); });
+    const en = pane.querySelector('#en');
+    if (en) en.onclick = () => { showEn = true; render(); };
+    const reveal = pane.querySelector('#reveal');
+    if (reveal) reveal.onclick = () => { s.lines.forEach((l) => revealed.add(l.id)); render(); };
+    const got = pane.querySelector('#got');
+    if (got) got.onclick = () => { setStory(u.id, 1); bump(`recite:${u.id}`); render(); };
+    pane.querySelectorAll('.sent').forEach((el) => el.onclick = async () => {
+      const i = +el.dataset.i, l = s.lines[i];
+      if (mode === 'recite' && !revealed.has(l.id)) { revealed.add(l.id); render(); } else halt();
+      const my = runId;
+      hilite(i); await play(l.id);
+      if (my === runId) { bump(`story:${l.id}`); hilite(-1); }
+    });
+    pane.querySelector('#playall').onclick = (e) => run(e.currentTarget, false);
+    pane.querySelector('#shadow').onclick = (e) => run(e.currentTarget, true);
+  };
+  const hilite = (i) => {
+    pane.querySelectorAll('.sent, .sent-en').forEach((x) => x.classList.toggle('now', +x.dataset.i === i));
+    if (i >= 0) pane.querySelector(`.sent[data-i="${i}"]`)?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  };
+  const run = async (btn, repeat) => {
+    const wasOn = !!btn.dataset.on;
+    halt(); hilite(-1);
+    const cue = pane.querySelector('#cue');
+    cue.textContent = '';
+    if (wasOn) return;
+    const my = runId;
+    const stop = () => my !== runId;
+    btn.dataset.on = '1'; btn.textContent = '■ Stop';
+    for (let i = 0; i < s.lines.length && !stop(); i++) {
+      const l = s.lines[i];
+      hilite(i); cue.textContent = '';
+      const t0 = Date.now();
+      await play(l.id);
+      if (stop()) break;
+      bump(`story:${l.id}`);
+      if (repeat) {
+        cue.textContent = '🗣 Your turn: say it out loud';
+        await wait((Date.now() - t0) * 1.2 + 800);
+      } else await wait(350);
+    }
+    if (stop()) return;
+    hilite(-1); cue.textContent = 'Well done! 很好！';
+    delete btn.dataset.on; btn.textContent = btn.dataset.label;
+    setStory(u.id, 0.5);
+  };
+  render();
 }
 
 function listen(u, pane) {
@@ -283,6 +448,7 @@ function listen(u, pane) {
     if (qi >= d.quiz.length) {
       const score = right / d.quiz.length;
       const p = prog(u.id); p.listen = Math.max(p.listen, score); save('sit-progress', progress);
+      bump(`quiz:${u.id}`);
       quiz.innerHTML = `<div class="card"><p class="score">${right} / ${d.quiz.length}</p>
         <p>${score === 1 ? 'Perfect! 太棒了！' : 'Listen again and try once more.'}</p>
         <button class="btn" id="again">Try again</button></div>`;

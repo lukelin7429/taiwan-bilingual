@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Record every phrase, sign and dialogue line with Microsoft's Taiwan voices.
+"""Record every phrase, sign, story sentence and dialogue line with Microsoft's Taiwan voices.
 
-Each phrase and sign gets a female and a male voice; dialogue lines use the
+Each phrase, sign and story sentence gets a female and a male voice; dialogue lines use the
 voice of their speaker. Every recording is made at normal speed and at a slow
 speed (the app's 0.5x setting plays the slow file, so it sounds natural).
 
@@ -35,7 +35,7 @@ def main():
         c = json.load(f)
     jobs = []  # (item id, voice key, rate key, text)
     for u in c["units"]:
-        for p in u["phrases"] + u["signs"]:
+        for p in u["phrases"] + u["signs"] + u["story"]["lines"]:
             for v in VOICES:
                 jobs += [(p["id"], v, r, p["zh"]) for r in RATES]
         for line in u["dialogue"]["lines"]:
